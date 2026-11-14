@@ -1,0 +1,110 @@
+@import "tailwindcss";
+@import "@xyflow/react/dist/style.css";
+
+/* ————————————————————————————————
+   Fireline design tokens
+   black + NASA blue, instrument texture
+   ———————————————————————————————— */
+@theme {
+  /* surfaces */
+  --color-ink: #05070b; /* app background */
+  --color-panel: #0e1218; /* panels, canvas floor */
+  --color-panel2: #0a0d12; /* recessed surfaces */
+  --color-edge: #1c2430; /* hairline borders */
+  --color-edge2: #2a3442; /* stronger borders */
+
+  /* brand */
+  --color-blue: #0b3d91; /* nasa blue */
+  --color-bright: #4da3ff; /* interactive accent */
+  --color-brightdim: #2e6cff;
+
+  /* text */
+  --color-text: #e9eef5;
+  --color-dim: #8b95a5;
+  --color-faint: #5b6472;
+
+  /* data accents */
+  --color-amber: #ffb454;
+  --color-teal: #3ad7a3;
+  --color-flame: #ff6b6b;
+  --color-violet: #7a8bff;
+  --color-lime: #9ad84a;
+
+  --font-sans: "Space Grotesk Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --radius-md: 6px;
+  --radius-lg: 8px;
+
+  --shadow-pop: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* base */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-ink);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: color-mix(in oklch, var(--color-bright) 35%, transparent);
+}
+
+/* thin scrollbars */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-edge2) transparent;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--color-edge2);
+  border-radius: 4px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* mono numeric readouts */
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+/* hairlines */
+.hairline {
+  border: 1px solid var(--color-edge);
+}
+
+/* focus visibility */
+:focus-visible {
+  outline: 2px solid var(--color-bright);
+  outline-offset: 1px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
