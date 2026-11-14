@@ -1,20 +1,16 @@
 {
  "dataset": "PSI-159",
  "testpoint": "21088C1",
- "camera": "ACME DataCam (HOBJ)",
- "method": "axisymmetric Abel inversion (flicker-derived axis/band)",
- "sourceFile": "21088C1_Images.zip",
+ "camera": "INTNS (intensified, Mono16 TIFF)",
+ "method": "axisymmetric Abel inversion of INTNS frames",
+ "sourceFile": "PSI-159_Raw Data_21088C1_INTNS_ALL.zip",
  "frames": 120,
  "z": 256,
  "r": 128,
- "axisX": 760,
- "bandY": [
-  424,
-  1016
- ],
- "noiseFloor": 101.9,
+ "axisX": 680,
+ "ignitionFrame": 528,
+ "extinctionFrame": 1515,
  "fps": 12,
- "globalMax": 708.4393310546875,
- "forwardCorrMean": 0.758,
- "sha256": "51cfa1ece00a6247fbcf2849ef11e8086d7e81ce4af25f4b14aa33732e474fbf"
+ "globalMax": 2799.18798828125,
+ "sha256": "a2b5eb2f80c1de6eaf9b2d14d1103cf5afc2a9d0d2ff8e6c1ef8ba6334299eb1"
 }
