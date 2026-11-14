@@ -62,7 +62,7 @@ export function FlameVrView() {
   const [gravity, setGravity] = useState(0.8)
   const [palette, setPalette] = useState(0)
   const [threshold, setThreshold] = useState(0)
-  const [density, setDensity] = useState(8)
+  const [density, setDensity] = useState(26)
   const [gamma, setGamma] = useState(1)
   const [quality, setQuality] = useState(1.4)
   const [showTuning, setShowTuning] = useState(false)

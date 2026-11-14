@@ -108,7 +108,7 @@ export class FlameEngine {
   private controllerL: THREE.XRTargetRaySpace
 
   private threshold = 0.0
-  private density = 8
+  private density = 26
   private gamma = 1.0
   private palette = 0
   private quality = 1.4
@@ -186,8 +186,8 @@ export class FlameEngine {
     this.renderer.domElement.style.display = 'block'
 
     this.camera = new THREE.PerspectiveCamera(55, 1, 0.05, 20)
-    this.camera.position.set(0.85, 0.7, 1.35)
-    this.camera.lookAt(0, 0, 0)
+    this.camera.position.set(0, 1.38, 0.06)
+    this.camera.lookAt(0, 1.1, -1.7)
 
     this.uniforms = {
       uCamLocal: { value: new THREE.Vector3() },
@@ -259,6 +259,11 @@ export class FlameEngine {
   }
 
   private buildScene() {
+    // place the volume in front of the VR user's head at (0, 1.6, 0) facing −Z:
+    // the shader raymarches the box in local space, so moving/scaling the group is safe
+    this.flameGroup.position.set(0, 1.15, -1.7)
+    this.flameGroup.scale.setScalar(0.62)
+
     // burner sphere (opaque, occludes flame behind it)
     const burner = new THREE.Mesh(
       new THREE.SphereGeometry(0.05, 40, 40),
@@ -275,9 +280,9 @@ export class FlameEngine {
     )
     this.flameGroup.add(wire)
 
-    // reference floor grid below the flame
+    // reference floor grid at the VR floor plane
     const grid = new THREE.GridHelper(2.2, 22, 0x1c2430, 0x12161d)
-    grid.position.y = -0.72
+    grid.position.y = 0
     this.scene.add(grid)
 
     this.scene.add(new THREE.AmbientLight(0x9aa5b4, 0.7))
@@ -288,11 +293,11 @@ export class FlameEngine {
 
   private setupControls() {
     this.controls = new OrbitControls(this.camera, this.renderer.domElement)
-    this.controls.target.set(0, 0, 0)
+    this.controls.target.set(0, 1.1, -1.7)
     this.controls.enableDamping = true
     this.controls.dampingFactor = 0.08
-    this.controls.minDistance = 0.7
-    this.controls.maxDistance = 4.0
+    this.controls.minDistance = 0.8
+    this.controls.maxDistance = 6
     this.controls.update()
   }
 
@@ -438,7 +443,7 @@ export class FlameEngine {
       const data = new Uint8Array(per)
       for (let j = 0; j < per; j++) {
         // display-only gamma stretch so the faint HOBJ layers read in 3D
-        data[j] = Math.round(255 * Math.pow(bytes[start + j] / 255, 0.45))
+        data[j] = Math.round(255 * Math.pow(bytes[start + j] / 255, 0.25))
       }
       frames.push({ index: i, tMs: Math.round((i / meta.fps) * 1000), data })
     }
@@ -524,7 +529,7 @@ export class FlameEngine {
     if (!this.controls) return
     const target = this.controls.target
     const offset = this.camera.position.clone().sub(target)
-    const dist = Math.min(Math.max(offset.length() * scale, 0.7), 4.0)
+    const dist = Math.min(Math.max(offset.length() * scale, 0.8), 6)
     offset.setLength(dist)
     this.camera.position.copy(target).add(offset)
     this.controls.update()
@@ -533,8 +538,8 @@ export class FlameEngine {
 
   /** center the flame and restore the default framing */
   resetView() {
-    this.camera.position.set(0.85, 0.7, 1.35)
-    this.controls?.target.set(0, 0, 0)
+    this.camera.position.set(0, 1.38, 0.06)
+    this.controls?.target.set(0, 1.1, -1.7)
     this.controls?.update()
     this.emitState(true)
   }
@@ -698,8 +703,8 @@ export class FlameEngine {
       ['TCBurner', 'TCA', 'TCB', 'MFCA3FuelFlow', 'IonCurrent'].includes(x.name),
     )
     const defs = [
-      { title: `${data.testpoint} · pressures (raw V)`, series: press, pos: [-0.86, 0.16, 0.18] },
-      { title: `${data.testpoint} · thermal / flow (raw)`, series: therm, pos: [0.86, 0.16, 0.18] },
+      { title: `${data.testpoint} · pressures (raw V)`, series: press, pos: [-0.85, 1.25, -1.55] },
+      { title: `${data.testpoint} · thermal / flow (raw)`, series: therm, pos: [0.85, 1.25, -1.55] },
     ]
     for (const d of defs) {
       if (!d.series.length) continue
@@ -709,9 +714,9 @@ export class FlameEngine {
       this.drawChart(canvas, d.title, d.series, data.t, this.playhead)
       const tex = new THREE.CanvasTexture(canvas)
       const mat = new THREE.MeshBasicMaterial({ map: tex, transparent: true, side: THREE.DoubleSide })
-      const mesh = new THREE.Mesh(new THREE.PlaneGeometry(0.94, 0.5875), mat)
+      const mesh = new THREE.Mesh(new THREE.PlaneGeometry(0.78, 0.4875), mat)
       mesh.position.set(d.pos[0], d.pos[1], d.pos[2])
-      mesh.lookAt(0.85, 0.7, 1.35)
+      mesh.lookAt(0, 1.6, 0)
       this.scene.add(mesh)
       this.panels.push({ mesh, canvas, tex, series: d.series, title: d.title })
     }
@@ -731,16 +736,32 @@ export class FlameEngine {
 
   private tryGrab(controller: THREE.XRTargetRaySpace): boolean {
     if (this.grabs.some((g) => g.controller === controller)) return true
+    // controller poses are only fresh once the XR runtime has updated this frame
+    controller.updateMatrixWorld(true)
     const p = new THREE.Vector3().setFromMatrixPosition(controller.matrixWorld)
     const q = new THREE.Quaternion()
     controller.getWorldQuaternion(q)
     const dir = new THREE.Vector3(0, 0, -1).applyQuaternion(q)
-    const ray = new THREE.Raycaster(p, dir, 0, 3.6)
+    const ray = new THREE.Raycaster(p, dir, 0, 6)
     const targets: THREE.Object3D[] = [...this.panels.map((x) => x.mesh), this.box]
     if (this.previewMesh) targets.push(this.previewMesh)
     const hits = ray.intersectObjects(targets, false)
-    if (!hits.length) return false
-    const obj = hits[0].object
+    let obj: THREE.Object3D | null = hits.length ? hits[0].object : null
+    if (!obj) {
+      // proximity fallback: squeeze near an object grabs it even when the ray misses
+      const wp = new THREE.Vector3()
+      let best = 0.45
+      for (const cand of targets) {
+        const t = cand === this.box ? this.flameGroup : cand
+        t.getWorldPosition(wp)
+        const d = wp.distanceTo(p)
+        if (d <= best) {
+          best = d
+          obj = cand
+        }
+      }
+    }
+    if (!obj) return false
     const isFlame = obj === this.box
     const target: THREE.Object3D = isFlame ? this.flameGroup : obj
     const kind: 'flame' | 'panel' | 'preview' = isFlame
@@ -824,9 +845,9 @@ export class FlameEngine {
     }
     if (!files.length) return
     const mat = new THREE.MeshBasicMaterial({ color: 0x0e1218, side: THREE.DoubleSide })
-    const mesh = new THREE.Mesh(new THREE.PlaneGeometry(0.72, 0.54), mat)
-    mesh.position.set(0, -0.5, 0.12)
-    mesh.lookAt(0.85, 0.7, 1.35)
+    const mesh = new THREE.Mesh(new THREE.PlaneGeometry(0.6, 0.45), mat)
+    mesh.position.set(0, 0.72, -1.5)
+    mesh.lookAt(0, 1.6, 0)
     this.scene.add(mesh)
     this.previewMesh = mesh
     this.updatePreview(Math.max(0, Math.round(this.frameFloat)))
