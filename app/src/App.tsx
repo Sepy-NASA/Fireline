@@ -37,6 +37,14 @@ export default function App() {
     document.title = 'Fireline — microgravity combustion workspace'
   }, [])
 
+  // deep-link: open a view directly via the location hash (e.g. #vr)
+  useEffect(() => {
+    const h = location.hash.replace(/^#\/?/, '')
+    if (h === 'analyze' || h === 'explore' || h === 'visualize' || h === 'vr') setView(h)
+    // run once on mount
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
   return (
     <TooltipProvider delayDuration={200}>
       <div className="flex h-full flex-col bg-ink text-text">

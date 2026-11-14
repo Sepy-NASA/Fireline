@@ -41,6 +41,9 @@ export interface FlameVrState {
 
 const PALETTE_NAMES = ['flame', 'inferno', 'ice'] as const
 
+/** start playback on a bright, stable burn frame (pre-ignition is empty) */
+const INITIAL_FRAME_FRACTION = 0.4
+
 export class FlameEngine {
   private container: HTMLElement
   private renderer: THREE.WebGLRenderer
@@ -85,6 +88,7 @@ export class FlameEngine {
   constructor(container: HTMLElement, profile: FlameProfile = 'spherical') {
     this.container = container
     this.sequence = generateFlameSequence({ profile })
+    this.frameFloat = (this.sequence.frames.length - 1) * INITIAL_FRAME_FRACTION
 
     this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true })
     this.renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2))
@@ -289,7 +293,7 @@ export class FlameEngine {
 
   setProfile(profile: FlameProfile) {
     this.sequence = generateFlameSequence({ profile })
-    this.frameFloat = 0
+    this.frameFloat = (this.sequence.frames.length - 1) * INITIAL_FRAME_FRACTION
     this.uploadedA = -1
     this.uploadedB = -1
     this.emitState(true)
