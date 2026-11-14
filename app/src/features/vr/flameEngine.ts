@@ -140,14 +140,25 @@ export class FlameEngine {
     series: SensorSeries[]
     title: string
   }[] = []
-  private grabState: {
-    target: THREE.Object3D
-    kind: 'panel' | 'flame'
-    offset: THREE.Vector3
+  private grabs: {
     controller: THREE.XRTargetRaySpace
+    target: THREE.Object3D
+    kind: 'panel' | 'flame' | 'preview'
+    offset: THREE.Vector3
     startControllerQuat: THREE.Quaternion
     startTargetQuat: THREE.Quaternion
+  }[] = []
+  private twoHand: {
+    target: THREE.Object3D
+    d0: number
+    s0: THREE.Vector3
+    offset: THREE.Vector3
   } | null = null
+  private previewMesh: THREE.Mesh | null = null
+  private previewBase = ''
+  private previewFiles: string[] = []
+  private previewIndex = -1
+  private texCache = new Map<string, THREE.Texture>()
   private playhead = 0
   private lastPanelDraw = 0
   private handVisuals: {
@@ -236,8 +247,8 @@ export class FlameEngine {
     this.controllerL.addEventListener('squeezestart', () => {
       if (!this.presenting || !this.tryGrab(this.controllerL)) this.step(-1)
     })
-    this.controllerR.addEventListener('squeezeend', () => this.releaseGrab())
-    this.controllerL.addEventListener('squeezeend', () => this.releaseGrab())
+    this.controllerR.addEventListener('squeezeend', () => this.releaseGrab(this.controllerR))
+    this.controllerL.addEventListener('squeezeend', () => this.releaseGrab(this.controllerL))
 
     this.resizeObserver = new ResizeObserver(() => this.resize())
     this.resizeObserver.observe(container)
@@ -333,6 +344,7 @@ export class FlameEngine {
       if (this.frameFloat < 0) this.frameFloat = this.direction < 0 ? n - 1 : 0
     }
     this.updateFieldUniforms()
+    this.updatePreview(Math.round(this.frameFloat))
 
     if (this.presenting) {
       this.pollGamepads()
@@ -340,17 +352,7 @@ export class FlameEngine {
       this.updateHands()
     }
 
-    if (this.grabState) {
-      const gs = this.grabState
-      const gp = new THREE.Vector3().setFromMatrixPosition(gs.controller.matrixWorld)
-      gs.target.position.copy(gp).add(gs.offset)
-      if (gs.kind === 'flame') {
-        const cq = new THREE.Quaternion()
-        gs.controller.getWorldQuaternion(cq)
-        const delta = cq.multiply(gs.startControllerQuat.clone().invert())
-        gs.target.quaternion.copy(delta.multiply(gs.startTargetQuat))
-      }
-    }
+    this.updateGrabs()
 
     this.controls?.update()
 
@@ -728,31 +730,130 @@ export class FlameEngine {
   }
 
   private tryGrab(controller: THREE.XRTargetRaySpace): boolean {
+    if (this.grabs.some((g) => g.controller === controller)) return true
     const p = new THREE.Vector3().setFromMatrixPosition(controller.matrixWorld)
     const q = new THREE.Quaternion()
     controller.getWorldQuaternion(q)
     const dir = new THREE.Vector3(0, 0, -1).applyQuaternion(q)
-    const ray = new THREE.Raycaster(p, dir, 0, 3.4)
+    const ray = new THREE.Raycaster(p, dir, 0, 3.6)
     const targets: THREE.Object3D[] = [...this.panels.map((x) => x.mesh), this.box]
+    if (this.previewMesh) targets.push(this.previewMesh)
     const hits = ray.intersectObjects(targets, false)
     if (!hits.length) return false
-    const isFlame = hits[0].object === this.box
-    const target: THREE.Object3D = isFlame ? this.flameGroup : hits[0].object
+    const obj = hits[0].object
+    const isFlame = obj === this.box
+    const target: THREE.Object3D = isFlame ? this.flameGroup : obj
+    const kind: 'flame' | 'panel' | 'preview' = isFlame
+      ? 'flame'
+      : obj === this.previewMesh
+        ? 'preview'
+        : 'panel'
     const wp = new THREE.Vector3()
     target.getWorldPosition(wp)
-    this.grabState = {
-      target,
-      kind: isFlame ? 'flame' : 'panel',
-      offset: wp.sub(p),
+    this.grabs.push({
       controller,
+      target,
+      kind,
+      offset: wp.clone().sub(p),
       startControllerQuat: q.clone(),
       startTargetQuat: target.quaternion.clone(),
+    })
+    const same = this.grabs.filter((g) => g.target === target)
+    if (same.length === 2) {
+      const p1 = new THREE.Vector3().setFromMatrixPosition(same[0].controller.matrixWorld)
+      const p2 = new THREE.Vector3().setFromMatrixPosition(same[1].controller.matrixWorld)
+      const mid = p1.clone().add(p2).multiplyScalar(0.5)
+      const wp2 = new THREE.Vector3()
+      target.getWorldPosition(wp2)
+      this.twoHand = {
+        target,
+        d0: p1.distanceTo(p2),
+        s0: target.scale.clone(),
+        offset: wp2.sub(mid),
+      }
     }
     return true
   }
 
-  private releaseGrab() {
-    this.grabState = null
+  private releaseGrab(controller?: THREE.XRTargetRaySpace) {
+    this.grabs = controller
+      ? this.grabs.filter((g) => g.controller !== controller)
+      : []
+    this.twoHand = null
+  }
+
+  private updateGrabs() {
+    if (!this.grabs.length) return
+    if (this.twoHand) {
+      const gs = this.grabs.filter((g) => g.target === this.twoHand!.target)
+      if (gs.length < 2) {
+        this.twoHand = null
+      } else {
+        const p1 = new THREE.Vector3().setFromMatrixPosition(gs[0].controller.matrixWorld)
+        const p2 = new THREE.Vector3().setFromMatrixPosition(gs[1].controller.matrixWorld)
+        const mid = p1.clone().add(p2).multiplyScalar(0.5)
+        this.twoHand.target.position.copy(mid).add(this.twoHand.offset)
+        const ratio = p1.distanceTo(p2) / Math.max(1e-4, this.twoHand.d0)
+        const s = Math.max(0.25, Math.min(4, ratio))
+        this.twoHand.target.scale.copy(this.twoHand.s0).multiplyScalar(s)
+      }
+    }
+    for (const g of this.grabs) {
+      if (this.twoHand && this.twoHand.target === g.target) continue
+      const gp = new THREE.Vector3().setFromMatrixPosition(g.controller.matrixWorld)
+      g.target.position.copy(gp).add(g.offset)
+      if (g.kind === 'flame') {
+        const cq = new THREE.Quaternion()
+        g.controller.getWorldQuaternion(cq)
+        const delta = cq.multiply(g.startControllerQuat.clone().invert())
+        g.target.quaternion.copy(delta.multiply(g.startTargetQuat))
+      }
+    }
+  }
+
+  /** plane showing the current real DataCam frame (grabbable/resizable) */
+  setFramePreview(base: string, files: string[]) {
+    this.previewBase = base
+    this.previewFiles = files
+    this.previewIndex = -1
+    if (this.previewMesh) {
+      this.scene.remove(this.previewMesh)
+      this.previewMesh.geometry.dispose()
+      ;(this.previewMesh.material as THREE.Material).dispose()
+      this.previewMesh = null
+    }
+    if (!files.length) return
+    const mat = new THREE.MeshBasicMaterial({ color: 0x0e1218, side: THREE.DoubleSide })
+    const mesh = new THREE.Mesh(new THREE.PlaneGeometry(0.72, 0.54), mat)
+    mesh.position.set(0, -0.5, 0.12)
+    mesh.lookAt(0.85, 0.7, 1.35)
+    this.scene.add(mesh)
+    this.previewMesh = mesh
+    this.updatePreview(Math.max(0, Math.round(this.frameFloat)))
+  }
+
+  private updatePreview(index: number) {
+    if (!this.previewMesh || !this.previewFiles.length) return
+    const i = Math.max(0, Math.min(this.previewFiles.length - 1, index))
+    if (i === this.previewIndex) return
+    this.previewIndex = i
+    const url = this.previewBase + this.previewFiles[i]
+    const m = this.previewMesh.material as THREE.MeshBasicMaterial
+    const cached = this.texCache.get(url)
+    if (cached) {
+      m.map = cached
+      m.color.set(0xffffff)
+      m.needsUpdate = true
+      return
+    }
+    new THREE.TextureLoader().load(url, (tex) => {
+      this.texCache.set(url, tex)
+      if (!this.previewMesh || this.previewIndex !== i) return
+      const mm = this.previewMesh.material as THREE.MeshBasicMaterial
+      mm.map = tex
+      mm.color.set(0xffffff)
+      mm.needsUpdate = true
+    })
   }
 
   private drawChart(
@@ -999,6 +1100,12 @@ export class FlameEngine {
       ;(p.mesh.material as THREE.Material).dispose()
       p.tex.dispose()
     }
+    if (this.previewMesh) {
+      this.previewMesh.geometry.dispose()
+      ;(this.previewMesh.material as THREE.Material).dispose()
+    }
+    for (const tex of this.texCache.values()) tex.dispose()
+    this.texCache.clear()
     this.hudTex?.dispose()
     this.hud?.material?.dispose()
     this.material.dispose()

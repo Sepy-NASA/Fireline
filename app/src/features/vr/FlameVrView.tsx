@@ -124,8 +124,10 @@ export function FlameVrView() {
           .then((r) => (r.ok ? r.json() : null))
           .catch(() => null)
         if (cancelled) return
-        setRealFrames(framesMeta.frames as RealFrame[])
+        const frames = framesMeta.frames as RealFrame[]
+        setRealFrames(frames)
         engine.setRealLut(buf, lutMeta)
+        engine.setFramePreview(`/psi159/${selectedTest}/frames/`, frames.map((f) => f.file))
         if (sensors) engine.setSensors(sensors)
       } catch {
         if (!cancelled) setRealFrames(null)
