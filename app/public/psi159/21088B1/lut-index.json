@@ -1,0 +1,17 @@
+{
+ "dataset": "PSI-159",
+ "testpoint": "21088B1",
+ "camera": "ACME DataCam (HOBJ)",
+ "sourceFile": "21088B1_Images.zip",
+ "frames": 120,
+ "z": 256,
+ "r": 128,
+ "axisX": 759,
+ "bandY": [
+  468,
+  753
+ ],
+ "fps": 12,
+ "globalMax": 525.599365234375,
+ "sha256": "66055b83c1330e03d66de4bc91628f88e79759d27f013a96cfbcb4462163fc2c"
+}

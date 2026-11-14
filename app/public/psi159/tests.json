@@ -1,0 +1,9 @@
+{
+  "dataset": "PSI-159",
+  "investigation": "ACME CFI-G",
+  "tests": [
+    { "id": "21088A1", "label": "21088A1", "frames": 696, "note": "DataCam HOBJ, burn 150-632" },
+    { "id": "21088B1", "label": "21088B1", "frames": 342, "note": "DataCam HOBJ" },
+    { "id": "21088C1", "label": "21088C1", "frames": 333, "note": "DataCam HOBJ" }
+  ]
+}

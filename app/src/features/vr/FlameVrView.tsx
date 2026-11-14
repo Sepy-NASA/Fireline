@@ -51,13 +51,21 @@ export function FlameVrView() {
   const [quality, setQuality] = useState(1.4)
   const [showTuning, setShowTuning] = useState(false)
   const [realFrames, setRealFrames] = useState<RealFrame[] | null>(null)
+  const [tests, setTests] = useState<{ id: string; label: string }[]>([
+    { id: '21088A1', label: '21088A1' },
+  ])
+  const [selectedTest, setSelectedTest] = useState(
+    () => new URLSearchParams(location.search).get('test') ?? '21088A1',
+  )
 
-  // load the real DataCam frame manifest (sampled from the PSI-159 HOBJ archive)
+  // test-point catalog (PSI-159 CFI-G)
   useEffect(() => {
-    fetch('/psi159/index.json')
+    fetch('/psi159/tests.json')
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
-      .then((j: { frames: RealFrame[] }) => setRealFrames(j.frames))
-      .catch(() => setRealFrames(null))
+      .then((j: { tests: { id: string; label: string }[] }) => {
+        if (Array.isArray(j.tests) && j.tests.length) setTests(j.tests)
+      })
+      .catch(() => undefined)
   }, [])
 
   useEffect(() => {
@@ -67,21 +75,36 @@ export function FlameVrView() {
     engineRef.current = engine
     engine.onState(setState)
     engine.checkSupport()
-    // load the real HOBJ-derived LUT; fall back to the solver if unavailable
-    ;(async () => {
-      try {
-        const meta = await (await fetch('/psi159/lut-index.json')).json()
-        const buf = await (await fetch('/psi159/lut.bin')).arrayBuffer()
-        engine.setRealLut(buf, meta)
-      } catch {
-        /* keep the fallback simulation */
-      }
-    })()
     return () => {
       engine.dispose()
       engineRef.current = null
     }
   }, [])
+
+  // load the selected real-HOBJ test point: frame manifest + epsilon(r,z) LUT
+  useEffect(() => {
+    const engine = engineRef.current
+    if (!engine) return
+    let cancelled = false
+    ;(async () => {
+      try {
+        const framesMeta = await fetch(`/psi159/${selectedTest}/index.json`).then((r) => {
+          if (!r.ok) throw new Error(String(r.status))
+          return r.json()
+        })
+        const lutMeta = await fetch(`/psi159/${selectedTest}/lut-index.json`).then((r) => r.json())
+        const buf = await (await fetch(`/psi159/${selectedTest}/lut.bin`)).arrayBuffer()
+        if (cancelled) return
+        setRealFrames(framesMeta.frames as RealFrame[])
+        engine.setRealLut(buf, lutMeta)
+      } catch {
+        if (!cancelled) setRealFrames(null)
+      }
+    })()
+    return () => {
+      cancelled = true
+    }
+  }, [selectedTest])
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -129,6 +152,18 @@ export function FlameVrView() {
         </div>
 
         <div className="pointer-events-auto ml-auto flex items-center gap-2">
+          <span className="text-[10px] text-faint">Test</span>
+          <select
+            value={selectedTest}
+            onChange={(e) => setSelectedTest(e.target.value)}
+            className="h-7 rounded-md border border-edge bg-panel2 px-1.5 text-[11px] text-text focus:outline-2 focus:outline-bright"
+            aria-label="Test point"
+          >
+            {tests.map((t) => (
+              <option key={t.id} value={t.id}>{t.label}</option>
+            ))}
+          </select>
+          <div className="mx-1 h-5 w-px bg-edge" />
           <button
             onClick={() => engineRef.current?.enterVR()}
             disabled={state?.vrSupported === false || state?.presenting}
@@ -301,7 +336,7 @@ export function FlameVrView() {
           </p>
           {realFrame ? (
             <img
-              src={`/psi159/frames/${realFrame.file}`}
+              src={`/psi159/${selectedTest}/frames/${realFrame.file}`}
               alt={`Real DataCam frame ${realFrame.src}`}
               className="w-full rounded-sm border border-edge bg-black"
               draggable={false}
