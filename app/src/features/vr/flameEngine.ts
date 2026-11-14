@@ -51,6 +51,32 @@ export interface SensorData {
 
 const PALETTE_NAMES = ['flame', 'inferno', 'ice'] as const
 
+const HAND_JOINTS = [
+  'wrist',
+  'thumb-metacarpal', 'thumb-phalanx-proximal', 'thumb-phalanx-distal', 'thumb-tip',
+  'index-finger-metacarpal', 'index-finger-phalanx-proximal', 'index-finger-phalanx-intermediate', 'index-finger-phalanx-distal', 'index-finger-tip',
+  'middle-finger-metacarpal', 'middle-finger-phalanx-proximal', 'middle-finger-phalanx-intermediate', 'middle-finger-phalanx-distal', 'middle-finger-tip',
+  'ring-finger-metacarpal', 'ring-finger-phalanx-proximal', 'ring-finger-phalanx-intermediate', 'ring-finger-phalanx-distal', 'ring-finger-tip',
+  'pinky-finger-metacarpal', 'pinky-finger-phalanx-proximal', 'pinky-finger-phalanx-intermediate', 'pinky-finger-phalanx-distal', 'pinky-finger-tip',
+] as const
+
+const HAND_BONES: [string, string][] = [
+  ['wrist', 'thumb-metacarpal'], ['thumb-metacarpal', 'thumb-phalanx-proximal'],
+  ['thumb-phalanx-proximal', 'thumb-phalanx-distal'], ['thumb-phalanx-distal', 'thumb-tip'],
+  ['wrist', 'index-finger-metacarpal'], ['index-finger-metacarpal', 'index-finger-phalanx-proximal'],
+  ['index-finger-phalanx-proximal', 'index-finger-phalanx-intermediate'],
+  ['index-finger-phalanx-intermediate', 'index-finger-phalanx-distal'], ['index-finger-phalanx-distal', 'index-finger-tip'],
+  ['wrist', 'middle-finger-metacarpal'], ['middle-finger-metacarpal', 'middle-finger-phalanx-proximal'],
+  ['middle-finger-phalanx-proximal', 'middle-finger-phalanx-intermediate'],
+  ['middle-finger-phalanx-intermediate', 'middle-finger-phalanx-distal'], ['middle-finger-phalanx-distal', 'middle-finger-tip'],
+  ['wrist', 'ring-finger-metacarpal'], ['ring-finger-metacarpal', 'ring-finger-phalanx-proximal'],
+  ['ring-finger-phalanx-proximal', 'ring-finger-phalanx-intermediate'],
+  ['ring-finger-phalanx-intermediate', 'ring-finger-phalanx-distal'], ['ring-finger-phalanx-distal', 'ring-finger-tip'],
+  ['wrist', 'pinky-finger-metacarpal'], ['pinky-finger-metacarpal', 'pinky-finger-phalanx-proximal'],
+  ['pinky-finger-phalanx-proximal', 'pinky-finger-phalanx-intermediate'],
+  ['pinky-finger-phalanx-intermediate', 'pinky-finger-phalanx-distal'], ['pinky-finger-phalanx-distal', 'pinky-finger-tip'],
+]
+
 /** start playback on a bright, stable burn frame (pre-ignition is empty) */
 const INITIAL_FRAME_FRACTION = 0.6
 
@@ -61,6 +87,7 @@ export class FlameEngine {
   private camera: THREE.PerspectiveCamera
   private controls: OrbitControls | null = null
   private box!: THREE.Mesh
+  private flameGroup = new THREE.Group()
   private material!: THREE.ShaderMaterial
   private uniforms: Record<string, THREE.IUniform>
   private tmp = new THREE.Vector3()
@@ -114,12 +141,21 @@ export class FlameEngine {
     title: string
   }[] = []
   private grabState: {
-    mesh: THREE.Mesh
+    target: THREE.Object3D
+    kind: 'panel' | 'flame'
     offset: THREE.Vector3
     controller: THREE.XRTargetRaySpace
+    startControllerQuat: THREE.Quaternion
+    startTargetQuat: THREE.Quaternion
   } | null = null
   private playhead = 0
   private lastPanelDraw = 0
+  private handVisuals: {
+    hand: THREE.Group
+    handedness: 'left' | 'right'
+    spheres: THREE.Mesh[]
+    lines: THREE.LineSegments
+  }[] = []
 
   constructor(container: HTMLElement, gravity = 0.8) {
     this.container = container
@@ -169,10 +205,12 @@ export class FlameEngine {
     this.box.frustumCulled = false
     this.box.renderOrder = 10
     this.box.updateMatrixWorld(true)
-    this.scene.add(this.box)
+    this.flameGroup.add(this.box)
+    this.scene.add(this.flameGroup)
 
     this.buildScene()
     this.buildHud()
+    this.buildHandVisuals()
 
     this.material.onBeforeRender = () => {
       const cam = this.renderer.xr.isPresenting ? this.renderer.xr.getCamera() : this.camera
@@ -216,7 +254,7 @@ export class FlameEngine {
       new THREE.MeshStandardMaterial({ color: 0x6a7480, roughness: 0.35, metalness: 0.75 }),
     )
     burner.position.set(0, -0.42, 0)
-    this.scene.add(burner)
+    this.flameGroup.add(burner)
 
     // domain box wireframe: the [-0.5, 0.5]³ field bounds
     const edges = new THREE.EdgesGeometry(new THREE.BoxGeometry(1, 1, 1))
@@ -224,7 +262,7 @@ export class FlameEngine {
       edges,
       new THREE.LineBasicMaterial({ color: 0x2a3442, transparent: true, opacity: 0.55 }),
     )
-    this.scene.add(wire)
+    this.flameGroup.add(wire)
 
     // reference floor grid below the flame
     const grid = new THREE.GridHelper(2.2, 22, 0x1c2430, 0x12161d)
@@ -299,11 +337,19 @@ export class FlameEngine {
     if (this.presenting) {
       this.pollGamepads()
       this.updateHud()
+      this.updateHands()
     }
 
     if (this.grabState) {
-      const gp = new THREE.Vector3().setFromMatrixPosition(this.grabState.controller.matrixWorld)
-      this.grabState.mesh.position.copy(gp).add(this.grabState.offset)
+      const gs = this.grabState
+      const gp = new THREE.Vector3().setFromMatrixPosition(gs.controller.matrixWorld)
+      gs.target.position.copy(gp).add(gs.offset)
+      if (gs.kind === 'flame') {
+        const cq = new THREE.Quaternion()
+        gs.controller.getWorldQuaternion(cq)
+        const delta = cq.multiply(gs.startControllerQuat.clone().invert())
+        gs.target.quaternion.copy(delta.multiply(gs.startTargetQuat))
+      }
     }
 
     this.controls?.update()
@@ -487,11 +533,6 @@ export class FlameEngine {
   resetView() {
     this.camera.position.set(0.85, 0.7, 1.35)
     this.controls?.target.set(0, 0, 0)
-    if (this.grabState) {
-      const gp = new THREE.Vector3().setFromMatrixPosition(this.grabState.controller.matrixWorld)
-      this.grabState.mesh.position.copy(gp).add(this.grabState.offset)
-    }
-
     this.controls?.update()
     this.emitState(true)
   }
@@ -566,6 +607,79 @@ export class FlameEngine {
     if (session) await session.end().catch(() => undefined)
   }
 
+  /* ——— hand skeletons (WebXR hand tracking) ——— */
+
+  private buildHandVisuals() {
+    const sphereGeo = new THREE.SphereGeometry(0.0075, 8, 8)
+    const sphereMat = new THREE.MeshBasicMaterial({ color: 0x3ad7a3 })
+    const lineMat = new THREE.LineBasicMaterial({ color: 0x4da3ff, transparent: true, opacity: 0.9 })
+    const sides: ('left' | 'right')[] = ['left', 'right']
+    sides.forEach((side, i) => {
+      const hand = this.renderer.xr.getHand(i) as unknown as THREE.Group
+      this.scene.add(hand)
+      const spheres = HAND_JOINTS.map(() => {
+        const m = new THREE.Mesh(sphereGeo, sphereMat)
+        m.visible = false
+        m.frustumCulled = false
+        this.scene.add(m)
+        return m
+      })
+      const geo = new THREE.BufferGeometry()
+      geo.setAttribute('position', new THREE.BufferAttribute(new Float32Array(HAND_BONES.length * 6), 3))
+      const lines = new THREE.LineSegments(geo, lineMat)
+      lines.visible = false
+      lines.frustumCulled = false
+      this.scene.add(lines)
+      this.handVisuals.push({ hand, handedness: side, spheres, lines })
+    })
+  }
+
+  private updateHands() {
+    const session = this.renderer.xr.getSession()
+    if (!session) return
+    const present = new Set(
+      Array.from(session.inputSources)
+        .filter((src) => Boolean(src.hand))
+        .map((src) => src.handedness as string),
+    )
+    const tmp = new THREE.Vector3()
+    for (const hv of this.handVisuals) {
+      const joints = (hv.hand as unknown as { joints?: Record<string, THREE.Object3D> }).joints
+      const active = present.has(hv.handedness) && !!joints
+      if (!active) {
+        hv.lines.visible = false
+        for (const sp of hv.spheres) sp.visible = false
+        continue
+      }
+      HAND_JOINTS.forEach((name, j) => {
+        const g = joints![name]
+        if (!g) {
+          hv.spheres[j].visible = false
+          return
+        }
+        g.getWorldPosition(tmp)
+        hv.spheres[j].position.copy(tmp)
+        hv.spheres[j].visible = true
+      })
+      const posAttr = hv.lines.geometry.getAttribute('position') as THREE.BufferAttribute
+      HAND_BONES.forEach(([a, b], k) => {
+        const ga = joints![a]
+        const gb = joints![b]
+        if (ga && gb) {
+          ga.getWorldPosition(tmp)
+          posAttr.setXYZ(k * 2, tmp.x, tmp.y, tmp.z)
+          gb.getWorldPosition(tmp)
+          posAttr.setXYZ(k * 2 + 1, tmp.x, tmp.y, tmp.z)
+        } else {
+          posAttr.setXYZ(k * 2, 0, 0, 0)
+          posAttr.setXYZ(k * 2 + 1, 0, 0, 0)
+        }
+      })
+      posAttr.needsUpdate = true
+      hv.lines.visible = true
+    }
+  }
+
   /* ——— continuous-sensor chart panels ——— */
 
   setSensors(data: SensorData) {
@@ -614,16 +728,26 @@ export class FlameEngine {
   }
 
   private tryGrab(controller: THREE.XRTargetRaySpace): boolean {
-    if (!this.panels.length) return false
     const p = new THREE.Vector3().setFromMatrixPosition(controller.matrixWorld)
     const q = new THREE.Quaternion()
     controller.getWorldQuaternion(q)
     const dir = new THREE.Vector3(0, 0, -1).applyQuaternion(q)
-    const ray = new THREE.Raycaster(p, dir, 0, 2.6)
-    const hits = ray.intersectObjects(this.panels.map((x) => x.mesh), false)
+    const ray = new THREE.Raycaster(p, dir, 0, 3.4)
+    const targets: THREE.Object3D[] = [...this.panels.map((x) => x.mesh), this.box]
+    const hits = ray.intersectObjects(targets, false)
     if (!hits.length) return false
-    const mesh = hits[0].object as THREE.Mesh
-    this.grabState = { mesh, offset: mesh.position.clone().sub(p), controller }
+    const isFlame = hits[0].object === this.box
+    const target: THREE.Object3D = isFlame ? this.flameGroup : hits[0].object
+    const wp = new THREE.Vector3()
+    target.getWorldPosition(wp)
+    this.grabState = {
+      target,
+      kind: isFlame ? 'flame' : 'panel',
+      offset: wp.sub(p),
+      controller,
+      startControllerQuat: q.clone(),
+      startTargetQuat: target.quaternion.clone(),
+    }
     return true
   }
 
@@ -789,7 +913,7 @@ export class FlameEngine {
     ctx.fillText(this.testInfo || 'HOBJ reconstruction', c.width / 2, 74)
     ctx.fillStyle = '#8b95a5'
     ctx.font = '16px monospace'
-    ctx.fillText('thumbstick ← → switch test', c.width / 2, 104)
+    ctx.fillText('grip: grab flame/panel · thumbstick: test', c.width / 2, 104)
     this.hudTex.needsUpdate = true
   }
 
