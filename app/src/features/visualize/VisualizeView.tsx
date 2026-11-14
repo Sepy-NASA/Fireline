@@ -23,19 +23,21 @@ import { cn } from '../../lib/utils'
    from Explore (or added from the working set).
    ———————————————————————————————————————————— */
 
-type Template = 'scatter' | 'line' | 'bar' | 'coverage'
+type Template = 'scatter' | 'line' | 'bar' | 'coverage' | 'rover'
 
 const TEMPLATES: { id: Template; label: string; icon: React.ReactNode }[] = [
   { id: 'scatter', label: 'Scatter', icon: <ScatterIcon className="size-3.5" /> },
   { id: 'line', label: 'Line', icon: <LineIcon className="size-3.5" /> },
   { id: 'bar', label: 'Bar', icon: <BarChart2 className="size-3.5" /> },
   { id: 'coverage', label: 'Coverage map', icon: <Grid3X3 className="size-3.5" /> },
+  { id: 'rover', label: 'Rover O₂ coverage', icon: <Grid3X3 className="size-3.5" /> },
 ]
 
 const PALETTE = ['#4da3ff', '#ffb454', '#3ad7a3', '#7a8bff', '#ff6b6b', '#9ad84a', '#e9eef5']
 
 export function VisualizeView() {
-  const [template, setTemplate] = useState<Template>('scatter')
+  const vizPreset = useAppStore((s) => s.vizPreset)
+  const [template, setTemplate] = useState<Template>(vizPreset === 'rover' ? 'rover' : 'scatter')
   const [datasetId, setDatasetId] = useState<string | null>(null)
   const workingItems = useAppStore((s) => s.workingItems)
 
@@ -91,7 +93,9 @@ export function VisualizeView() {
       </div>
 
       <div className="min-h-0 flex-1">
-        {!dataset ? (
+        {template === 'rover' ? (
+          <RoverCoverage />
+        ) : !dataset ? (
           <EmptyChart />
         ) : template === 'coverage' ? (
           <CoverageMap dataset={dataset} />
@@ -409,6 +413,77 @@ function CoverageMap({ dataset }: { dataset: (typeof DATASETS)[number] }) {
           <span>{points.length} sampled tests</span>
           {flow && <span>· flow {flow.min}–{flow.max} cm/s</span>}
           <span className="ml-auto">points colored by outcome when available</span>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+/* ——— Demo: rover condition coverage (O₂ ranges from the supplied PSI tables) ——— */
+
+const ROVER_ROWS: { label: string; file: string; kind: 'solid' | 'gas'; min: number; max: number; points?: number[]; note: string }[] = [
+  { label: 'Saffire-II (PSI-99)', file: 'SAFFIRE-2.csv · rows 2-5, 2-8, 2-9', kind: 'solid', min: 21.5, max: 22.1, note: 'PMMA & SIBAL · 20 cm/s' },
+  { label: 'Saffire-I (PSI-98)', file: 'SAFFIRE-1.csv · rows S1, S2', kind: 'solid', min: 21.5, max: 21.7, note: 'SIBAL · 20 cm/s' },
+  { label: 'BASS-II (PSI-25)', file: 'BASS-II.csv · 129 rows', kind: 'solid', min: 13.6, max: 22.2, note: 'PMMA films/rods · flow free text' },
+  { label: 'ACME BRE (PSI-20)', file: 'ACME BRE.csv · 18 daily summaries', kind: 'gas', min: 21, max: 40, points: [21, 25, 26.5, 34, 40], note: 'gas burner · different fuel' },
+  { label: 'CFI-G (PSI-159)', file: 'CFI-G Normal + Inverse Flames.csv', kind: 'gas', min: 12, max: 85, note: 'gas flames · different fuel' },
+]
+
+function RoverCoverage() {
+  const W = 760
+  const left = 190
+  const right = 30
+  const x0 = 10
+  const x1 = 90
+  const sx = (v: number) => left + ((v - x0) / (x1 - x0)) * (W - left - right)
+  const rowH = 46
+  const top = 40
+  const H = top + ROVER_ROWS.length * rowH + 50
+  const ticks = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+  return (
+    <div className="flex h-full flex-col items-center justify-center gap-4 overflow-auto p-6">
+      <div className="w-full max-w-[800px]">
+        <p className="text-sm font-semibold text-text">Tested O₂ range vs rover target — PSI evidence in this bundle</p>
+        <p className="mt-0.5 text-xs text-dim">
+          Amber = solid-material tests · violet = gas flames (different fuel, context only) · blue line = rover target 30 % O₂ (engineer input)
+        </p>
+      </div>
+      <svg viewBox={`0 0 ${W} ${H}`} className="w-full max-w-[800px]" role="img" aria-label="O2 coverage of PSI evidence vs rover target">
+        {ticks.map((t) => (
+          <g key={t}>
+            <line x1={sx(t)} x2={sx(t)} y1={top - 10} y2={H - 40} stroke="#1c2430" />
+            <text x={sx(t)} y={H - 22} textAnchor="middle" fontSize="10" fill="#5b6472">{t} %</text>
+          </g>
+        ))}
+        <text x={(left + W - right) / 2} y={H - 4} textAnchor="middle" fontSize="10" fill="#8b95a5">Oxygen (% by volume)</text>
+        {ROVER_ROWS.map((r, i) => {
+          const y = top + i * rowH + rowH / 2
+          const color = r.kind === 'solid' ? '#ffb454' : '#a78bfa'
+          return (
+            <g key={r.label}>
+              <text x={8} y={y - 4} fontSize="11.5" fill="#e9eef5" fontWeight={600}>{r.label}</text>
+              <text x={8} y={y + 10} fontSize="9" fill="#5b6472">{r.file}</text>
+              <rect x={sx(r.min)} y={y - 7} width={Math.max(sx(r.max) - sx(r.min), 4)} height={14} rx={3} fill={color} fillOpacity={r.kind === 'solid' ? 0.85 : 0.3} stroke={color} />
+              {r.points?.map((p) => <circle key={p} cx={sx(p)} cy={y} r={3.5} fill={color} />)}
+              <text x={sx(r.max) + 6 > W - 200 ? sx(r.min) : sx(r.max) + 6} y={sx(r.max) + 6 > W - 200 ? y + 20 : y + 4} fontSize="9.5" fill="#8b95a5">{r.min}–{r.max} % · {r.note}</text>
+            </g>
+          )
+        })}
+        <line x1={sx(30)} x2={sx(30)} y1={top - 18} y2={H - 40} stroke="#4da3ff" strokeWidth={2} strokeDasharray="5 3" />
+        <text x={sx(30)} y={top - 22} textAnchor="middle" fontSize="10.5" fill="#4da3ff" fontWeight={600}>Rover target 30 %</text>
+      </svg>
+      <div className="grid w-full max-w-[800px] grid-cols-3 gap-2 text-[11.5px]">
+        <div className="rounded-md border border-teal/30 bg-teal/5 p-2.5 text-dim">
+          <p className="mb-0.5 font-semibold text-teal">Measured</p>
+          Solid-material rows (PMMA, SIBAL) stop at ~22 % O₂, all from low-g orbital tests.
+        </div>
+        <div className="rounded-md border border-flame/30 bg-flame/5 p-2.5 text-dim">
+          <p className="mb-0.5 font-semibold text-flame">Not covered</p>
+          No solid-material row at 30 % O₂ and no test at 1/6 g. Rover pressure & airflow not tabulated in the Saffire rows.
+        </div>
+        <div className="rounded-md border border-[#a78bfa]/30 bg-[#a78bfa]/5 p-2.5 text-dim">
+          <p className="mb-0.5 font-semibold text-[#c4b5fd]">Context only</p>
+          Gas-flame data spans 30 % but cannot serve as a solid-polymer flammability threshold.
         </div>
       </div>
     </div>

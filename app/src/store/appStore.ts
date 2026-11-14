@@ -60,6 +60,10 @@ interface AppState {
   renameWorkingGroup: (id: string, name: string) => void
   removeWorkingGroup: (id: string) => void
 
+  /* visualize preset (demo: rover condition coverage) */
+  vizPreset: string | null
+  setVizPreset: (p: string | null) => void
+
   /* ui */
   trayOpen: boolean
   setTrayOpen: (open: boolean) => void
@@ -100,7 +104,8 @@ export const useAppStore = create<AppState>()(
           sessions: s.sessions.filter((x) => x.id !== id),
           activeSessionId: s.activeSessionId === id ? (s.sessions[0]?.id ?? null) : s.activeSessionId,
         })),
-      setActiveSession: (id) => set({ activeSessionId: id }),
+      setActiveSession: (id) =>
+        set({ activeSessionId: id, selectedNodeId: null, selectedNodeIds: [], focusedBranchId: null }),
       updateResearchStatement: (id, text) =>
         set((s) => ({
           sessions: s.sessions.map((x) =>
@@ -244,11 +249,14 @@ export const useAppStore = create<AppState>()(
       removeWorkingGroup: (id) =>
         set((s) => ({ workingGroups: s.workingGroups.filter((g) => g.id !== id) })),
 
+      vizPreset: null,
+      setVizPreset: (p) => set({ vizPreset: p }),
+
       trayOpen: false,
       setTrayOpen: (open) => set({ trayOpen: open }),
     }),
     {
-      name: 'fireline',
+      name: 'fireline-rover-demo',
       partialize: (s) => ({
         sessions: s.sessions,
         activeSessionId: s.activeSessionId,

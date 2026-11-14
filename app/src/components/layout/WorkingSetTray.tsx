@@ -40,8 +40,8 @@ export function WorkingSetTray() {
   return (
     <Dialog.Root open={open} onOpenChange={setOpen}>
       <Dialog.Portal>
-        <Dialog.Overlay className="fixed inset-0 bg-black/50 backdrop-blur-[1px]" />
-        <Dialog.Content className="fixed inset-y-0 right-0 flex w-[360px] max-w-[90vw] flex-col border-l border-edge bg-panel shadow-pop focus:outline-none">
+        <Dialog.Overlay className="fixed inset-0 z-40 bg-black/50 backdrop-blur-[1px]" />
+        <Dialog.Content className="fixed inset-y-0 right-0 z-50 flex w-[360px] max-w-[90vw] flex-col border-l border-edge bg-panel shadow-pop focus:outline-none">
           <div className="flex h-11 shrink-0 items-center gap-2 border-b border-edge px-3">
             <PanelRightClose className="size-4 text-dim" />
             <Dialog.Title className="text-sm font-semibold">Working set</Dialog.Title>

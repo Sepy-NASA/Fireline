@@ -20,6 +20,7 @@ export function BranchBar({ sessionId }: { sessionId: string }) {
   const setFocused = useAppStore((s) => s.setFocusedBranchId)
   const selectedIds = useAppStore((s) => s.selectedNodeIds)
   const selectedNodeId = useAppStore((s) => s.selectedNodeId)
+  const setSelected = useAppStore((s) => s.setSelectedNode)
 
   const [naming, setNaming] = useState(false)
   const [name, setName] = useState('')
@@ -34,9 +35,14 @@ export function BranchBar({ sessionId }: { sessionId: string }) {
   const create = () => {
     const ids = [...branchCandidates]
     if (ids.length < 2) return
-    addBranch(session.id, { name: name.trim() || `Branch ${session.branches.length + 1}`, nodeIds: ids, color: '#7a8bff' })
+    addBranch(session.id, { name: name.trim() || '30% O₂ rover material evidence', nodeIds: ids, color: '#ffb454' })
     setName('')
     setNaming(false)
+    const created = useAppStore.getState().sessions.find((x) => x.id === session.id)?.branches.at(-1)
+    if (created) {
+      setSelected(null)
+      setFocused(created.id)
+    }
   }
 
   return (
@@ -45,7 +51,10 @@ export function BranchBar({ sessionId }: { sessionId: string }) {
       {session.branches.map((b) => (
         <button
           key={b.id}
-          onClick={() => setFocused(focusedBranchId === b.id ? null : b.id)}
+          onClick={() => {
+            setSelected(null)
+            setFocused(focusedBranchId === b.id ? null : b.id)
+          }}
           onDoubleClick={() => removeBranch(session.id, b.id)}
           title="Click to focus · double-click to delete"
           className={cn(
@@ -67,7 +76,7 @@ export function BranchBar({ sessionId }: { sessionId: string }) {
           className="ml-1 text-faint"
           disabled={branchCandidates.size < 2}
           onClick={() => setNaming(true)}
-          title={branchCandidates.size < 2 ? 'Select at least two nodes to create a branch' : 'Create a branch from the current selection'}
+          title={branchCandidates.size < 2 ? 'Select at least two nodes (⌘/Ctrl-click or Shift-drag) to create a branch' : 'Create a branch from the current selection'}
         >
           <Plus /> Branch
         </Button>
@@ -78,11 +87,11 @@ export function BranchBar({ sessionId }: { sessionId: string }) {
             value={name}
             onChange={(e) => setName(e.target.value)}
             onKeyDown={(e) => e.key === 'Enter' && create()}
-            onBlur={() => setNaming(false)}
-            placeholder="Branch name…"
-            className="h-6 w-36 px-1.5 text-[11px]"
+            onBlur={() => setTimeout(() => setNaming(false), 200)}
+            placeholder="30% O₂ rover material evidence"
+            className="h-6 w-52 px-1.5 text-[11px]"
           />
-          <Button size="sm" className="h-6 px-2 text-[11px]" onClick={create}>
+          <Button size="sm" className="h-6 px-2 text-[11px]" onMouseDown={(e) => e.preventDefault()} onClick={create}>
             Save
           </Button>
         </div>

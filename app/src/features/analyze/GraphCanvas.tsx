@@ -2,11 +2,13 @@ import {
   Background,
   BackgroundVariant,
   Controls,
-  MarkerType,
   MiniMap,
   ReactFlow,
   useEdgesState,
   useNodesState,
+  useReactFlow,
+  useNodesInitialized,
+  ReactFlowProvider,
   type Edge,
   type Node,
   type NodeMouseHandler,
@@ -38,6 +40,8 @@ const NODE_COLORS: Record<string, string> = {
   publication: '#8b95a5',
   note: '#e9eef5',
   externalSource: '#9ad84a',
+  missionParam: '#4da3ff',
+  gap: '#ff6b6b',
 }
 
 export function toFlowNodes(
@@ -52,7 +56,7 @@ export function toFlowNodes(
     selected: false,
     data: {
       ...n.data,
-      color: NODE_COLORS[n.type] ?? '#4da3ff',
+      color: n.data.color ?? NODE_COLORS[n.type] ?? '#4da3ff',
       inBranch: branchNodeIds.has(n.id),
       highlighted: highlightIds.includes(n.id),
     },
@@ -60,20 +64,37 @@ export function toFlowNodes(
 }
 
 export function toFlowEdges(sessionEdges: GraphEdge[]): Edge[] {
-  return sessionEdges.map((e) => ({
-    id: e.id,
-    source: e.source,
-    target: e.target,
-    label: EDGE_LABELS[e.type] ?? (e.label || ''),
-    type: 'smoothstep',
-    markerEnd: { type: MarkerType.ArrowClosed, color: '#3a4556' },
-    style: { stroke: '#3a4556' },
-    labelStyle: { fill: '#8b95a5', fontSize: 9 },
-    labelBgStyle: { fill: '#0e1218', fillOpacity: 0.85 },
-  }))
+  return sessionEdges.map((e) => {
+    const label = e.label || EDGE_LABELS[e.type] || ''
+    const context = /different fuel|follow-up/.test(label)
+    const material = /material tested/.test(label)
+    const gap = /uncovered|only/.test(label)
+    const stroke = gap ? '#ff6b6b' : context ? '#a78bfa' : material ? '#ffb454' : '#3a4556'
+    return {
+      id: e.id,
+      source: e.source,
+      target: e.target,
+      label,
+      type: 'straight',
+      style: { stroke, strokeDasharray: context || gap ? '5 4' : undefined, strokeWidth: material ? 1.6 : 1 },
+      labelStyle: { fill: material ? '#ffcf8f' : context ? '#c4b5fd' : '#8b95a5', fontSize: 9 },
+      labelBgStyle: { fill: '#0e1218', fillOpacity: 0.9 },
+    }
+  })
 }
 
-export function GraphCanvas() {
+const px = (n: number) => `${n}px` as `${number}px`
+const fitPadding = (rightInset: number) => ({ top: px(70), bottom: px(40), left: px(40), right: px(rightInset + 40) })
+
+export function GraphCanvas({ rightInset = 0 }: { rightInset?: number }) {
+  return (
+    <ReactFlowProvider>
+      <GraphCanvasInner rightInset={rightInset} />
+    </ReactFlowProvider>
+  )
+}
+
+function GraphCanvasInner({ rightInset }: { rightInset: number }) {
   const sessions = useAppStore((s) => s.sessions)
   const activeId = useAppStore((s) => s.activeSessionId)
   const session = sessions.find((x) => x.id === activeId)
@@ -87,6 +108,22 @@ export function GraphCanvas() {
   const [nodes, setNodesUi, onNodesChange] = useNodesState<Node>([])
   const [edges, setEdgesUi, onEdgesChange] = useEdgesState<Edge>([])
   const lastSync = useRef<string>('')
+  const nodeCount = useRef(0)
+  const { fitView } = useReactFlow()
+  const nodesInitialized = useNodesInitialized()
+  const pendingFit = useRef(false)
+
+  // Signature of everything that should re-render the canvas (not positions)
+  const sig = session
+    ? [
+        session.id,
+        session.nodes.map((n) => `${n.id}|${n.data.label}|${n.data.provenance ?? ''}|${n.data.badge ?? ''}|${n.data.value ?? ''}|${n.data.match ?? ''}`).join(';'),
+        session.edges.map((e) => `${e.id}|${e.label}`).join(';'),
+        session.branches.map((b) => `${b.id}:${b.nodeIds.join(',')}`).join(';'),
+        highlightIds.join(','),
+        focusedBranchId ?? '',
+      ].join('#')
+    : ''
 
   // Sync store → flow when session state changes
   useEffect(() => {
@@ -95,29 +132,73 @@ export function GraphCanvas() {
       setEdgesUi([])
       return
     }
-    const sig = `${session.id}:${session.nodes.length}:${session.edges.length}:${highlightIds.join(',')}:${focusedBranchId ?? ''}`
     if (lastSync.current === sig) return
+    const prevSession = lastSync.current.split('#')[0]
     lastSync.current = sig
     const branchIds = new Set(session.branches.flatMap((b) => b.nodeIds))
     const focused = focusedBranchId ? session.branches.find((b) => b.id === focusedBranchId) : undefined
     const dimOthers = Boolean(focused)
     const branchMembers = focused ? new Set(focused.nodeIds) : branchIds
-    setNodesUi(
-      toFlowNodes(session.nodes, branchMembers, highlightIds).map((n) => ({
+    setNodesUi((prev) => {
+      const prevSelected = new Set(prevSession === session.id ? prev.filter((p) => p.selected).map((p) => p.id) : [])
+      return toFlowNodes(session.nodes, branchMembers, highlightIds).map((n) => ({
         ...n,
+        selected: prevSelected.has(n.id),
         data: {
           ...n.data,
           dimmed: dimOthers && !branchMembers.has(n.id),
         },
-      })),
+      }))
+    })
+    setEdgesUi(
+      toFlowEdges(session.edges).map((e) =>
+        dimOthers && !(branchMembers.has(e.source) && branchMembers.has(e.target))
+          ? { ...e, style: { ...e.style, opacity: 0.12 }, labelStyle: { ...e.labelStyle, opacity: 0.15 }, labelBgStyle: { fillOpacity: 0 } }
+          : e,
+      ),
     )
-    setEdgesUi(toFlowEdges(session.edges))
+    if (prevSession !== session.id || session.nodes.length !== nodeCount.current) {
+      nodeCount.current = session.nodes.length
+      pendingFit.current = true
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [session?.id, session?.nodes.length, session?.edges.length, highlightIds, focusedBranchId])
+  }, [sig])
 
-  const onNodeClick: NodeMouseHandler = (_, node) => {
+  // Fit once React Flow has measured the (new) nodes
+  useEffect(() => {
+    if (!pendingFit.current || !nodesInitialized || nodes.length === 0) return
+    pendingFit.current = false
+    setTimeout(() => fitView({ padding: fitPadding(rightInset), duration: 450, maxZoom: 1.05 }), 30)
+  }, [nodesInitialized, nodes, fitView, rightInset])
+
+  // Re-fit when the context card opens / closes
+  const lastInset = useRef(rightInset)
+  useEffect(() => {
+    if (lastInset.current === rightInset) return
+    lastInset.current = rightInset
+    fitView({ padding: fitPadding(rightInset), duration: 400, maxZoom: 1.05 })
+  }, [rightInset, fitView])
+
+  const onNodeClick: NodeMouseHandler = (event, node) => {
+    if (event.metaKey || event.ctrlKey || event.shiftKey) {
+      // multi-select (for branches): toggle this node in the selection
+      const st = useAppStore.getState()
+      const cur = new Set(st.selectedNodeIds.length ? st.selectedNodeIds : st.selectedNodeId ? [st.selectedNodeId] : [])
+      if (cur.has(node.id)) cur.delete(node.id)
+      else cur.add(node.id)
+      useAppStore.setState({ selectedNodeIds: [...cur], selectedNodeId: node.id })
+      return
+    }
     setSelected(node.id)
   }
+
+  // Mirror the store's multi-selection onto the canvas (ring on every selected node)
+  const selectedNodeIds = useAppStore((s) => s.selectedNodeIds)
+  useEffect(() => {
+    const ids = new Set(selectedNodeIds)
+    if (!nodes.some((n) => Boolean(n.data.multi) !== ids.has(n.id))) return
+    setNodesUi((ns) => ns.map((n) => (Boolean(n.data.multi) === ids.has(n.id) ? n : { ...n, data: { ...n.data, multi: ids.has(n.id) } })))
+  }, [selectedNodeIds, nodes, setNodesUi])
 
   const onNodeDragStop: OnNodeDrag = (_, node) => {
     if (!session) return
@@ -126,8 +207,9 @@ export function GraphCanvas() {
     )
   }
 
+  // Box selection (Shift + drag) feeds the same multi-selection
   const onSelectionChange: OnSelectionChangeFunc = (params) => {
-    setSelectedNodeIds(params.nodes.map((n) => n.id))
+    if (params.nodes.length > 1) setSelectedNodeIds(params.nodes.map((n) => n.id))
   }
 
   const flowNodes = useMemo(() => nodes, [nodes])
@@ -156,12 +238,11 @@ export function GraphCanvas() {
           setSelectedNodeIds([])
         }}
         onSelectionChange={onSelectionChange}
-        fitView
-        fitViewOptions={{ padding: 0.3, maxZoom: 1.1 }}
+        multiSelectionKeyCode={null}
         minZoom={0.2}
         maxZoom={1.8}
         proOptions={{ hideAttribution: true }}
-        defaultEdgeOptions={{ type: 'smoothstep' }}
+        defaultEdgeOptions={{ type: 'straight' }}
       >
         <Background variant={BackgroundVariant.Dots} gap={26} size={1.2} color="#10161f" />
         <Controls

@@ -8,6 +8,8 @@ import { buildDemoSession, buildFreshSession } from './sessionSeed'
 import { Button } from '../../components/ui/button'
 import { cn } from '../../lib/utils'
 import type { Session } from '../../types'
+import { RV, roverInputs } from './roverScenario'
+import { PROVENANCE_META } from './nodeSystem'
 
 /* ————————————————————————————————————————————
    Analyze workspace. Three-column layout per
@@ -34,13 +36,16 @@ export function AnalyzeView() {
       useAppStore.setState((s) => ({
         sessions: [demo, ...s.sessions],
         activeSessionId: demo.id,
+                selectedNodeId: null,
+                selectedNodeIds: [],
+                focusedBranchId: null,
       }))
     }
   }, [])
 
   const sessionRail = useMemo(
     () => (
-      <div className="flex w-44 shrink-0 flex-col border-r border-edge bg-panel2">
+      <div className="flex w-40 shrink-0 flex-col border-r border-edge bg-panel2">
         <div className="flex h-9 items-center justify-between border-b border-edge px-2.5">
           <span className="text-[11px] font-semibold text-faint">Sessions</span>
           <button
@@ -49,6 +54,9 @@ export function AnalyzeView() {
               useAppStore.setState((s) => ({
                 sessions: [fresh, ...s.sessions],
                 activeSessionId: fresh.id,
+                selectedNodeId: null,
+                selectedNodeIds: [],
+                focusedBranchId: null,
               }))
             }}
             className="text-bright hover:opacity-80"
@@ -103,6 +111,9 @@ export function AnalyzeView() {
               useAppStore.setState((s) => ({
                 sessions: [demo, ...s.sessions],
                 activeSessionId: demo.id,
+                selectedNodeId: null,
+                selectedNodeIds: [],
+                focusedBranchId: null,
               }))
             }}
             className="flex w-full items-center justify-center gap-1 rounded-md border border-edge px-2 py-1.5 text-xs text-dim transition-colors hover:border-edge2 hover:text-text"
@@ -135,39 +146,89 @@ export function AnalyzeView() {
 
 function CenterPane({ session }: { session: Session }) {
   const [showContext, setShowContext] = useState(true)
+  // Collapse the context card once the agent fills the canvas with evidence (re-open any time)
+  const hasEvidence = session.nodes.some((n) => n.id === 'n_investigation_PSI-99')
+  useEffect(() => {
+    if (hasEvidence) setShowContext(false)
+  }, [hasEvidence])
+  const isRover = session.nodes.some((n) => n.id === RV.mission)
+  const r = roverInputs(session)
+  const missing = isRover
+    ? [r.pressure.prov === 'unknown' ? 'pressure' : null, r.flow.prov === 'unknown' ? 'airflow' : null].filter(Boolean)
+    : []
   return (
     <div className="relative min-w-0 flex-1">
-      <GraphCanvas />
-      {showContext && (
-        <div className="absolute left-3 top-1/2 z-10 w-60 -translate-y-1/2 rounded-md border border-edge bg-panel/95 p-3 shadow-pop backdrop-blur">
+      <GraphCanvas rightInset={showContext ? 262 : 0} />
+      {showContext ? (
+        <div className="absolute right-3 top-3 z-10 w-64 rounded-md border border-edge bg-panel/95 p-3 shadow-pop backdrop-blur">
           <div className="mb-1 flex items-center justify-between">
             <span className="text-[11px] font-semibold text-faint">Session context</span>
-            <button
-              onClick={() => setShowContext(false)}
-              className="text-faint hover:text-text"
-              aria-label="Dismiss context card"
-            >
+            <button onClick={() => setShowContext(false)} className="text-faint hover:text-text" aria-label="Dismiss context card">
               ×
             </button>
           </div>
           <div className="space-y-2.5 text-[12px] leading-relaxed text-dim">
             <div>
               <p className="mb-0.5 font-semibold text-text">Goal</p>
-              <p>{session.researchStatement}</p>
+              <p className="line-clamp-4" title={session.researchStatement}>{session.researchStatement}</p>
             </div>
-            <div>
-              <p className="mb-0.5 font-semibold text-text">Characteristics</p>
-              <p>
-                {session.nodes.length} nodes · {session.edges.length} links ·{' '}
-                {session.branches.length} branch{session.branches.length === 1 ? '' : 'es'}
-              </p>
-            </div>
-            <div>
-              <p className="mb-0.5 font-semibold text-text">Context</p>
-              <p>PSI combustion index, linked to Explore &amp; the working set.</p>
-            </div>
+            {isRover ? (
+              <>
+                <div>
+                  <p className="mb-1 font-semibold text-text">Stated conditions</p>
+                  <dl className="grid grid-cols-[62px_1fr_auto] items-center gap-x-2 gap-y-1 text-[11.5px]">
+                    {(
+                      [
+                        ['Gravity', r.gravity],
+                        ['Oxygen', r.o2],
+                        ['Pressure', r.pressure],
+                        ['Airflow', r.flow],
+                      ] as const
+                    ).map(([k, v]) => (
+                      <div key={k} className="contents">
+                        <dt className="text-faint">{k}</dt>
+                        <dd className={v.prov === 'unknown' ? 'italic text-faint' : 'text-text'}>
+                          {v.prov === 'unknown' ? 'missing' : v.text}
+                        </dd>
+                        <dd>
+                          <span className={cn('rounded border px-1 py-px text-[9px]', PROVENANCE_META[v.prov]?.cls)}>
+                            {PROVENANCE_META[v.prov]?.label}
+                          </span>
+                        </dd>
+                      </div>
+                    ))}
+                  </dl>
+                  {missing.length > 0 && (
+                    <p className="mt-1.5 rounded border border-dashed border-edge2 px-2 py-1 text-[10.5px] text-amber">
+                      Missing {missing.join(' & ')} — attach the rover design basis (Add data).
+                    </p>
+                  )}
+                </div>
+                <div>
+                  <p className="mb-0.5 font-semibold text-text">Scope</p>
+                  <p className="text-[11px]">
+                    Literature & data triage — not material certification, not a hazard probability, not a substitute for NASA-STD-6001 testing.
+                  </p>
+                </div>
+              </>
+            ) : (
+              <div>
+                <p className="mb-0.5 font-semibold text-text">Characteristics</p>
+                <p>
+                  {session.nodes.length} nodes · {session.edges.length} links · {session.branches.length} branch
+                  {session.branches.length === 1 ? '' : 'es'}
+                </p>
+              </div>
+            )}
           </div>
         </div>
+      ) : (
+        <button
+          onClick={() => setShowContext(true)}
+          className="absolute right-3 top-3 z-10 rounded-md border border-edge bg-panel/95 px-2 py-1 text-[11px] text-dim hover:text-text"
+        >
+          Session context
+        </button>
       )}
     </div>
   )
