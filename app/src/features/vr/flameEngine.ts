@@ -37,6 +37,18 @@ export interface FlameVrState {
   quality: number
 }
 
+export interface SensorSeries {
+  name: string
+  min: number
+  max: number
+  v: (number | null)[]
+}
+export interface SensorData {
+  testpoint: string
+  t: number[]
+  series: SensorSeries[]
+}
+
 const PALETTE_NAMES = ['flame', 'inferno', 'ice'] as const
 
 /** start playback on a bright, stable burn frame (pre-ignition is empty) */
@@ -93,6 +105,21 @@ export class FlameEngine {
   private hudCanvas: HTMLCanvasElement | null = null
   private hudTex: THREE.CanvasTexture | null = null
   private lastStick = 0
+  private sensorData: SensorData | null = null
+  private panels: {
+    mesh: THREE.Mesh
+    canvas: HTMLCanvasElement
+    tex: THREE.CanvasTexture
+    series: SensorSeries[]
+    title: string
+  }[] = []
+  private grabState: {
+    mesh: THREE.Mesh
+    offset: THREE.Vector3
+    controller: THREE.XRTargetRaySpace
+  } | null = null
+  private playhead = 0
+  private lastPanelDraw = 0
 
   constructor(container: HTMLElement, gravity = 0.8) {
     this.container = container
@@ -164,8 +191,15 @@ export class FlameEngine {
 
     // controller fallback controls (also used for hand-less headsets)
     this.controllerR.addEventListener('selectstart', () => this.togglePlay())
-    this.controllerR.addEventListener('squeezestart', () => this.step(1))
-    this.controllerL.addEventListener('squeezestart', () => this.step(-1))
+    this.controllerL.addEventListener('selectstart', () => this.togglePlay())
+    this.controllerR.addEventListener('squeezestart', () => {
+      if (!this.presenting || !this.tryGrab(this.controllerR)) this.step(1)
+    })
+    this.controllerL.addEventListener('squeezestart', () => {
+      if (!this.presenting || !this.tryGrab(this.controllerL)) this.step(-1)
+    })
+    this.controllerR.addEventListener('squeezeend', () => this.releaseGrab())
+    this.controllerL.addEventListener('squeezeend', () => this.releaseGrab())
 
     this.resizeObserver = new ResizeObserver(() => this.resize())
     this.resizeObserver.observe(container)
@@ -265,6 +299,11 @@ export class FlameEngine {
     if (this.presenting) {
       this.pollGamepads()
       this.updateHud()
+    }
+
+    if (this.grabState) {
+      const gp = new THREE.Vector3().setFromMatrixPosition(this.grabState.controller.matrixWorld)
+      this.grabState.mesh.position.copy(gp).add(this.grabState.offset)
     }
 
     this.controls?.update()
@@ -448,6 +487,11 @@ export class FlameEngine {
   resetView() {
     this.camera.position.set(0.85, 0.7, 1.35)
     this.controls?.target.set(0, 0, 0)
+    if (this.grabState) {
+      const gp = new THREE.Vector3().setFromMatrixPosition(this.grabState.controller.matrixWorld)
+      this.grabState.mesh.position.copy(gp).add(this.grabState.offset)
+    }
+
     this.controls?.update()
     this.emitState(true)
   }
@@ -520,6 +564,176 @@ export class FlameEngine {
   async exitXR() {
     const session = this.renderer.xr.getSession()
     if (session) await session.end().catch(() => undefined)
+  }
+
+  /* ——— continuous-sensor chart panels ——— */
+
+  setSensors(data: SensorData) {
+    this.sensorData = data
+    for (const p of this.panels) {
+      this.scene.remove(p.mesh)
+      p.mesh.geometry.dispose()
+      ;(p.mesh.material as THREE.Material).dispose()
+      p.tex.dispose()
+    }
+    this.panels = []
+    const press = data.series.filter((x) => x.name.startsWith('PTA'))
+    const therm = data.series.filter((x) =>
+      ['TCBurner', 'TCA', 'TCB', 'MFCA3FuelFlow', 'IonCurrent'].includes(x.name),
+    )
+    const defs = [
+      { title: `${data.testpoint} · pressures (raw V)`, series: press, pos: [-0.86, 0.16, 0.18] },
+      { title: `${data.testpoint} · thermal / flow (raw)`, series: therm, pos: [0.86, 0.16, 0.18] },
+    ]
+    for (const d of defs) {
+      if (!d.series.length) continue
+      const canvas = document.createElement('canvas')
+      canvas.width = 640
+      canvas.height = 400
+      this.drawChart(canvas, d.title, d.series, data.t, this.playhead)
+      const tex = new THREE.CanvasTexture(canvas)
+      const mat = new THREE.MeshBasicMaterial({ map: tex, transparent: true, side: THREE.DoubleSide })
+      const mesh = new THREE.Mesh(new THREE.PlaneGeometry(0.94, 0.5875), mat)
+      mesh.position.set(d.pos[0], d.pos[1], d.pos[2])
+      mesh.lookAt(0.85, 0.7, 1.35)
+      this.scene.add(mesh)
+      this.panels.push({ mesh, canvas, tex, series: d.series, title: d.title })
+    }
+  }
+
+  setPlayhead(t: number) {
+    this.playhead = t
+    if (!this.panels.length || !this.sensorData) return
+    const now = performance.now()
+    if (now - this.lastPanelDraw < 220) return
+    this.lastPanelDraw = now
+    for (const p of this.panels) {
+      this.drawChart(p.canvas, p.title, p.series, this.sensorData.t, t)
+      p.tex.needsUpdate = true
+    }
+  }
+
+  private tryGrab(controller: THREE.XRTargetRaySpace): boolean {
+    if (!this.panels.length) return false
+    const p = new THREE.Vector3().setFromMatrixPosition(controller.matrixWorld)
+    const q = new THREE.Quaternion()
+    controller.getWorldQuaternion(q)
+    const dir = new THREE.Vector3(0, 0, -1).applyQuaternion(q)
+    const ray = new THREE.Raycaster(p, dir, 0, 2.6)
+    const hits = ray.intersectObjects(this.panels.map((x) => x.mesh), false)
+    if (!hits.length) return false
+    const mesh = hits[0].object as THREE.Mesh
+    this.grabState = { mesh, offset: mesh.position.clone().sub(p), controller }
+    return true
+  }
+
+  private releaseGrab() {
+    this.grabState = null
+  }
+
+  private drawChart(
+    canvas: HTMLCanvasElement,
+    title: string,
+    series: SensorSeries[],
+    t: number[],
+    playhead: number,
+  ) {
+    const ctx = canvas.getContext('2d')
+    if (!ctx) return
+    const W = canvas.width
+    const H = canvas.height
+    ctx.clearRect(0, 0, W, H)
+    ctx.fillStyle = '#0a0d12'
+    ctx.fillRect(0, 0, W, H)
+    ctx.strokeStyle = '#2a3442'
+    ctx.lineWidth = 2
+    ctx.strokeRect(1, 1, W - 2, H - 2)
+    ctx.fillStyle = '#e9eef5'
+    ctx.font = 'bold 22px monospace'
+    ctx.textAlign = 'left'
+    ctx.fillText(title, 18, 32)
+    const padL = 74
+    const padR = 18
+    const padT = 52
+    const padB = 44
+    const pw = W - padL - padR
+    const ph = H - padT - padB
+    const tmin = t[0]
+    const tmax = t[t.length - 1] || 1
+    let vmin = Infinity
+    let vmax = -Infinity
+    for (const s of series) {
+      vmin = Math.min(vmin, s.min)
+      vmax = Math.max(vmax, s.max)
+    }
+    if (!isFinite(vmin)) {
+      vmin = 0
+      vmax = 1
+    }
+    if (vmax - vmin < 1e-9) vmax = vmin + 1
+    const sx = (tt: number) => padL + ((tt - tmin) / Math.max(1e-9, tmax - tmin)) * pw
+    const sy = (vv: number) => padT + ph - ((vv - vmin) / (vmax - vmin)) * ph
+    ctx.strokeStyle = '#1c2430'
+    ctx.lineWidth = 1
+    for (let g = 0; g <= 4; g++) {
+      const y = padT + (ph * g) / 4
+      ctx.beginPath()
+      ctx.moveTo(padL, y)
+      ctx.lineTo(padL + pw, y)
+      ctx.stroke()
+    }
+    for (let g = 0; g <= 5; g++) {
+      const x = padL + (pw * g) / 5
+      ctx.beginPath()
+      ctx.moveTo(x, padT)
+      ctx.lineTo(x, padT + ph)
+      ctx.stroke()
+    }
+    ctx.fillStyle = '#5b6472'
+    ctx.font = '15px monospace'
+    ctx.textAlign = 'right'
+    ctx.fillText(vmax.toFixed(3), padL - 8, padT + 10)
+    ctx.fillText(vmin.toFixed(3), padL - 8, padT + ph)
+    ctx.textAlign = 'center'
+    ctx.fillText(`${tmin.toFixed(0)}s`, padL, H - 18)
+    ctx.fillText(`${tmax.toFixed(0)}s`, padL + pw, H - 18)
+    const colors = ['#4da3ff', '#ffb454', '#3ad7a3', '#ff6b6b', '#9ad84a']
+    series.forEach((s, si) => {
+      ctx.strokeStyle = colors[si % colors.length]
+      ctx.lineWidth = 2
+      ctx.beginPath()
+      let started = false
+      for (let i = 0; i < t.length; i++) {
+        const v = s.v[i]
+        if (v == null) continue
+        const x = sx(t[i])
+        const y = sy(v)
+        if (!started) {
+          ctx.moveTo(x, y)
+          started = true
+        } else ctx.lineTo(x, y)
+      }
+      ctx.stroke()
+    })
+    if (playhead >= tmin && playhead <= tmax) {
+      const x = sx(playhead)
+      ctx.strokeStyle = 'rgba(255,255,255,0.65)'
+      ctx.lineWidth = 1.5
+      ctx.beginPath()
+      ctx.moveTo(x, padT)
+      ctx.lineTo(x, padT + ph)
+      ctx.stroke()
+    }
+    ctx.font = '16px monospace'
+    ctx.textAlign = 'left'
+    let lx = padL
+    series.forEach((s, si) => {
+      ctx.fillStyle = colors[si % colors.length]
+      ctx.fillRect(lx, H - 36, 14, 10)
+      ctx.fillStyle = '#8b95a5'
+      ctx.fillText(s.name, lx + 20, H - 26)
+      lx += 28 + ctx.measureText(s.name).width + 16
+    })
   }
 
   /* ——— in-VR test switching ——— */
@@ -656,6 +870,11 @@ export class FlameEngine {
     this.renderer.setAnimationLoop(null)
     this.resizeObserver?.disconnect()
     this.controls?.dispose()
+    for (const p of this.panels) {
+      p.mesh.geometry.dispose()
+      ;(p.mesh.material as THREE.Material).dispose()
+      p.tex.dispose()
+    }
     this.hudTex?.dispose()
     this.hud?.material?.dispose()
     this.material.dispose()

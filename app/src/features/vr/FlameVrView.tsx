@@ -120,9 +120,13 @@ export function FlameVrView() {
         })
         const lutMeta = await fetch(`/psi159/${selectedTest}/lut-index.json`).then((r) => r.json())
         const buf = await (await fetch(`/psi159/${selectedTest}/lut.bin`)).arrayBuffer()
+        const sensors = await fetch(`/psi159/${selectedTest}/sensors.json`)
+          .then((r) => (r.ok ? r.json() : null))
+          .catch(() => null)
         if (cancelled) return
         setRealFrames(framesMeta.frames as RealFrame[])
         engine.setRealLut(buf, lutMeta)
+        if (sensors) engine.setSensors(sensors)
       } catch {
         if (!cancelled) setRealFrames(null)
       }
@@ -167,6 +171,11 @@ export function FlameVrView() {
       ? (state.tMs / 1000).toFixed(2)
       : '0.00'
   const isRewinding = Boolean(state?.playing && state.direction === -1)
+
+  // move the chart playhead to the current real-frame timestamp
+  useEffect(() => {
+    if (realFrame) engineRef.current?.setPlayhead(realFrame.tMs / 1000)
+  }, [realFrame])
 
   return (
     <div className="relative h-full w-full overflow-hidden bg-ink">
