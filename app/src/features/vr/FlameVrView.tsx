@@ -18,22 +18,17 @@ import {
 import { useEffect, useRef, useState } from 'react'
 import { cn } from '../../lib/utils'
 import { PALETTE_NAMES, FlameEngine, type FlameVrState } from './flameEngine'
-import type { FlameProfile } from './flameField'
 
 /* ————————————————————————————————————————————————————————————
    Flame VR — volumetric 3D flame visualisation (WebXR-ready).
 
    The ε(r,z) field is SYNTHETIC (mock): the repo ships no PSI-159
-   INTNS frames, so a plausible microgravity flame shell is generated
-   procedurally. Colours are explicitly false-colour, not temperature.
+   The default 3D field is an axisymmetric Abel reconstruction from the
+   real PSI-159 HOBJ frames; a fluid+combustion solver is the fallback.
+   Colours are explicitly false-colour, not temperature.
    VR/AR paths are implemented but have NOT been verified on a physical
    Quest 3 — the UI records frame/error counters so this stays honest.
    ———————————————————————————————————————————————————————————— */
-
-const PROFILES: { id: FlameProfile; label: string }[] = [
-  { id: 'spherical', label: 'Inverse flame (CFI-G sphere)' },
-  { id: 'teardrop', label: 'Normal flame (teardrop)' },
-]
 
 const PALETTE_LABELS = ['Flame', 'Inferno', 'Ice']
 
@@ -48,12 +43,12 @@ export function FlameVrView() {
   const hostRef = useRef<HTMLDivElement>(null)
   const engineRef = useRef<FlameEngine | null>(null)
   const [state, setState] = useState<FlameVrState | null>(null)
-  const [profile, setProfile] = useState<FlameProfile>('spherical')
+  const [gravity, setGravity] = useState(0.8)
   const [palette, setPalette] = useState(0)
   const [threshold, setThreshold] = useState(0)
-  const [density, setDensity] = useState(1.5)
+  const [density, setDensity] = useState(8)
   const [gamma, setGamma] = useState(1)
-  const [quality, setQuality] = useState(1)
+  const [quality, setQuality] = useState(1.4)
   const [showTuning, setShowTuning] = useState(false)
   const [realFrames, setRealFrames] = useState<RealFrame[] | null>(null)
 
@@ -68,10 +63,20 @@ export function FlameVrView() {
   useEffect(() => {
     const host = hostRef.current
     if (!host) return
-    const engine = new FlameEngine(host, 'spherical')
+    const engine = new FlameEngine(host, 0.8)
     engineRef.current = engine
     engine.onState(setState)
     engine.checkSupport()
+    // load the real HOBJ-derived LUT; fall back to the solver if unavailable
+    ;(async () => {
+      try {
+        const meta = await (await fetch('/psi159/lut-index.json')).json()
+        const buf = await (await fetch('/psi159/lut.bin')).arrayBuffer()
+        engine.setRealLut(buf, meta)
+      } catch {
+        /* keep the fallback simulation */
+      }
+    })()
     return () => {
       engine.dispose()
       engineRef.current = null
@@ -220,21 +225,25 @@ export function FlameVrView() {
           {/* tuning */}
           {showTuning && (
             <div className="mt-3 grid grid-cols-2 gap-x-4 gap-y-3 border-t border-edge pt-3">
-              <Field label="Profile">
-                <select
-                  value={profile}
-                  onChange={(e) => {
-                    const v = e.target.value as FlameProfile
-                    setProfile(v)
-                    engineRef.current?.setProfile(v)
+              <div>
+                <Slider
+                  label="Gravity (0 = µg)"
+                  value={gravity}
+                  min={0}
+                  max={1}
+                  step={0.05}
+                  onChange={(v) => {
+                    setGravity(v)
+                    engineRef.current?.setGravity(v)
                   }}
-                  className="h-7 w-full rounded-md border border-edge bg-panel2 px-1.5 text-[11px] text-text focus:outline-2 focus:outline-bright"
+                />
+                <button
+                  onClick={() => engineRef.current?.resimulate()}
+                  className="mt-1 flex h-7 w-full items-center justify-center gap-1.5 rounded-md border border-bright/40 bg-bright/10 text-[11px] font-medium text-bright transition-colors hover:bg-bright/20"
                 >
-                  {PROFILES.map((p) => (
-                    <option key={p.id} value={p.id}>{p.label}</option>
-                  ))}
-                </select>
-              </Field>
+                  <Flame className="size-3" /> Re-simulate
+                </button>
+              </div>
               <Field label="False colour">
                 <select
                   value={palette}
@@ -263,6 +272,9 @@ export function FlameVrView() {
       <div className="pointer-events-none absolute left-3 top-12 flex flex-col gap-2">
         <StatusChip>
           <span className="tnum font-mono">rendered {state?.framesRendered ?? 0}</span>
+        </StatusChip>
+        <StatusChip tone={state?.source === 'real' ? 'ok' : 'muted'}>
+          {state?.source === 'real' ? 'field: real HOBJ (Abel)' : 'field: fallback simulation'}
         </StatusChip>
         {state?.presenting ? (
           <StatusChip tone="ok">
@@ -314,8 +326,8 @@ export function FlameVrView() {
             <Info className="size-3 text-bright" /> Provenance &amp; limits
           </p>
           <p>
-            <span className="text-faint">3D:</span> parametric simulation (not a scientific
-            reconstruction) — an axisymmetric flame volume, labelled as simulation.
+            <span className="text-faint">3D:</span> axisymmetric Abel reconstruction from the real
+            PSI-159 HOBJ frames (fallback: fluid + combustion simulation).
           </p>
           <p className="mt-1">
             <span className="text-faint">2D:</span> real DataCam frames from PSI-159 test 21088A1

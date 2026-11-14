@@ -1,13 +1,8 @@
 import * as THREE from 'three'
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
 import { FLAME_FRAGMENT, FLAME_VERTEX } from './flameShader'
-import {
-  generateFlameSequence,
-  LUT_R,
-  LUT_Z,
-  type FlameProfile,
-  type FlameSequence,
-} from './flameField'
+import { LUT_R, LUT_Z } from './flameField'
+import { simulateFlameSequence, type FlameSimSequence } from './flameSim'
 
 /* ————————————————————————————————————————————————————————————
    three.js engine for the axisymmetric flame volume:
@@ -26,7 +21,8 @@ export interface FlameVrState {
   playing: boolean
   /** +1 = forward, −1 = rewinding */
   direction: 1 | -1
-  profile: FlameProfile
+  gravity: number
+  source: 'real' | 'simulation'
   frameIndex: number
   frameCount: number
   fps: number
@@ -44,7 +40,7 @@ export interface FlameVrState {
 const PALETTE_NAMES = ['flame', 'inferno', 'ice'] as const
 
 /** start playback on a bright, stable burn frame (pre-ignition is empty) */
-const INITIAL_FRAME_FRACTION = 0.4
+const INITIAL_FRAME_FRACTION = 0.6
 
 export class FlameEngine {
   private container: HTMLElement
@@ -58,10 +54,13 @@ export class FlameEngine {
   private tmp = new THREE.Vector3()
   private resizeObserver: ResizeObserver | null = null
 
-  private sequence: FlameSequence
+  private sequence: FlameSimSequence
   private frameFloat = 0
   private playing = false
   private direction: 1 | -1 = 1
+  private gravity = 0.8
+  private simSeed = 1
+  private source: 'real' | 'simulation' = 'simulation'
   private uploadedA = -1
   private uploadedB = -1
   private lastTick = 0
@@ -70,10 +69,10 @@ export class FlameEngine {
   private controllerL: THREE.XRTargetRaySpace
 
   private threshold = 0.0
-  private density = 1.5
+  private density = 8
   private gamma = 1.0
   private palette = 0
-  private quality = 1.0
+  private quality = 1.4
 
   private vrSupported: boolean | null = null
   private arSupported: boolean | null = null
@@ -88,9 +87,10 @@ export class FlameEngine {
   private lastEmit = 0
   private onStateCb: ((s: FlameVrState) => void) | null = null
 
-  constructor(container: HTMLElement, profile: FlameProfile = 'spherical') {
+  constructor(container: HTMLElement, gravity = 0.8) {
     this.container = container
-    this.sequence = generateFlameSequence({ profile, frameCount: 120, fps: 6 })
+    this.gravity = gravity
+    this.sequence = this.runSimulation()
     this.frameFloat = (this.sequence.frames.length - 1) * INITIAL_FRAME_FRACTION
 
     this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true })
@@ -170,9 +170,10 @@ export class FlameEngine {
   private buildScene() {
     // burner sphere (opaque, occludes flame behind it)
     const burner = new THREE.Mesh(
-      new THREE.SphereGeometry(0.055, 40, 40),
+      new THREE.SphereGeometry(0.05, 40, 40),
       new THREE.MeshStandardMaterial({ color: 0x6a7480, roughness: 0.35, metalness: 0.75 }),
     )
+    burner.position.set(0, -0.42, 0)
     this.scene.add(burner)
 
     // domain box wireframe: the [-0.5, 0.5]³ field bounds
@@ -295,12 +296,59 @@ export class FlameEngine {
 
   /* ——— public playback API ——— */
 
-  setProfile(profile: FlameProfile) {
-    this.sequence = generateFlameSequence({ profile, frameCount: 120, fps: 6 })
+  /** buoyancy strength for the next run: 0 = microgravity, 1 = terrestrial */
+  setGravity(g: number) {
+    this.gravity = g
+    this.emitState(true)
+  }
+
+  /** re-run the fluid + combustion solver with a fresh seed */
+  resimulate() {
+    this.simSeed = (this.simSeed + 1) >>> 0
+    this.source = 'simulation'
+    this.sequence = this.runSimulation()
     this.frameFloat = (this.sequence.frames.length - 1) * INITIAL_FRAME_FRACTION
     this.uploadedA = -1
     this.uploadedB = -1
     this.emitState(true)
+  }
+
+  private runSimulation(): FlameSimSequence {
+    return simulateFlameSequence({
+      frames: 180,
+      fps: 12,
+      gravity: this.gravity,
+      vorticity: 1.2,
+      seed: this.simSeed,
+    })
+  }
+
+  /** replace the field with the real HOBJ-derived LUT (uint8 [frame][z][r]) */
+  setRealLut(
+    buffer: ArrayBuffer,
+    meta: { frames: number; z: number; r: number; fps: number },
+  ): boolean {
+    if (meta.z !== LUT_Z || meta.r !== LUT_R) return false
+    const bytes = new Uint8Array(buffer)
+    if (bytes.length !== meta.frames * LUT_Z * LUT_R) return false
+    const per = LUT_Z * LUT_R
+    const frames = []
+    for (let i = 0; i < meta.frames; i++) {
+      const start = i * per
+      const data = new Uint8Array(per)
+      for (let j = 0; j < per; j++) {
+        // display-only gamma stretch so the faint HOBJ layers read in 3D
+        data[j] = Math.round(255 * Math.pow(bytes[start + j] / 255, 0.45))
+      }
+      frames.push({ index: i, tMs: Math.round((i / meta.fps) * 1000), data })
+    }
+    this.sequence = { frames, fps: meta.fps, globalMax: 255, kind: 'simulation' }
+    this.source = 'real'
+    this.frameFloat = (frames.length - 1) * INITIAL_FRAME_FRACTION
+    this.uploadedA = -1
+    this.uploadedB = -1
+    this.emitState(true)
+    return true
   }
 
   setThreshold(v: number) {
@@ -477,7 +525,8 @@ export class FlameEngine {
       arMode: this.arMode,
       playing: this.playing,
       direction: this.direction,
-      profile: seq.profile,
+      gravity: this.gravity,
+      source: this.source,
       frameIndex: idx,
       frameCount: seq.frames.length,
       fps: seq.fps,
