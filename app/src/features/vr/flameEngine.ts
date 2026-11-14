@@ -86,6 +86,13 @@ export class FlameEngine {
   private disposed = false
   private lastEmit = 0
   private onStateCb: ((s: FlameVrState) => void) | null = null
+  private onTestSwitch: ((dir: 1 | -1) => void) | null = null
+  private testId = ''
+  private testInfo = ''
+  private hud: THREE.Sprite | null = null
+  private hudCanvas: HTMLCanvasElement | null = null
+  private hudTex: THREE.CanvasTexture | null = null
+  private lastStick = 0
 
   constructor(container: HTMLElement, gravity = 0.8) {
     this.container = container
@@ -138,6 +145,7 @@ export class FlameEngine {
     this.scene.add(this.box)
 
     this.buildScene()
+    this.buildHud()
 
     this.material.onBeforeRender = () => {
       const cam = this.renderer.xr.isPresenting ? this.renderer.xr.getCamera() : this.camera
@@ -253,6 +261,11 @@ export class FlameEngine {
       if (this.frameFloat < 0) this.frameFloat = this.direction < 0 ? n - 1 : 0
     }
     this.updateFieldUniforms()
+
+    if (this.presenting) {
+      this.pollGamepads()
+      this.updateHud()
+    }
 
     this.controls?.update()
 
@@ -497,6 +510,7 @@ export class FlameEngine {
   }
 
   private onSessionEnd = () => {
+    if (this.hud) this.hud.visible = false
     this.renderer.setClearColor(0x05070b, 1)
     this.presenting = false
     this.arMode = false
@@ -506,6 +520,93 @@ export class FlameEngine {
   async exitXR() {
     const session = this.renderer.xr.getSession()
     if (session) await session.end().catch(() => undefined)
+  }
+
+  /* ——— in-VR test switching ——— */
+
+  onTestSwitchChange(cb: (dir: 1 | -1) => void) {
+    this.onTestSwitch = cb
+  }
+
+  setTestId(id: string, info = '') {
+    if (this.testId === id && this.testInfo === info) return
+    this.testId = id
+    this.testInfo = info
+    this.drawHud()
+  }
+
+  private buildHud() {
+    const canvas = document.createElement('canvas')
+    canvas.width = 512
+    canvas.height = 128
+    this.hudCanvas = canvas
+    this.hudTex = new THREE.CanvasTexture(canvas)
+    const mat = new THREE.SpriteMaterial({
+      map: this.hudTex,
+      transparent: true,
+      depthTest: false,
+      depthWrite: false,
+    })
+    this.hud = new THREE.Sprite(mat)
+    this.hud.scale.set(0.56, 0.14, 1)
+    this.hud.visible = false
+    this.hud.renderOrder = 100
+    this.scene.add(this.hud)
+    this.drawHud()
+  }
+
+  private drawHud() {
+    const c = this.hudCanvas
+    if (!c || !this.hudTex) return
+    const ctx = c.getContext('2d')
+    if (!ctx) return
+    ctx.clearRect(0, 0, c.width, c.height)
+    ctx.fillStyle = 'rgba(5,7,11,0.78)'
+    ctx.fillRect(0, 0, c.width, c.height)
+    ctx.strokeStyle = 'rgba(77,163,255,0.6)'
+    ctx.lineWidth = 3
+    ctx.strokeRect(2, 2, c.width - 4, c.height - 4)
+    ctx.textAlign = 'center'
+    ctx.fillStyle = '#4da3ff'
+    ctx.font = 'bold 34px monospace'
+    ctx.fillText(this.testId || '—', c.width / 2, 42)
+    ctx.fillStyle = '#e9eef5'
+    ctx.font = '18px monospace'
+    ctx.fillText(this.testInfo || 'HOBJ reconstruction', c.width / 2, 74)
+    ctx.fillStyle = '#8b95a5'
+    ctx.font = '16px monospace'
+    ctx.fillText('thumbstick ← → switch test', c.width / 2, 104)
+    this.hudTex.needsUpdate = true
+  }
+
+  private pollGamepads() {
+    const session = this.renderer.xr.getSession()
+    if (!session) return
+    let x = 0
+    for (const src of session.inputSources) {
+      const gp = src.gamepad
+      if (!gp) continue
+      const ax = gp.axes
+      const cand =
+        ax.length >= 4 ? (Math.abs(ax[2]) > Math.abs(ax[0]) ? ax[2] : ax[0]) : (ax[0] ?? 0)
+      if (Math.abs(cand) > Math.abs(x)) x = cand
+    }
+    if (Math.abs(x) > 0.75) {
+      const now = performance.now()
+      if (now - this.lastStick > 350) {
+        this.lastStick = now
+        this.onTestSwitch?.(x > 0 ? 1 : -1)
+      }
+    }
+  }
+
+  private updateHud() {
+    if (!this.hud) return
+    this.hud.visible = this.presenting
+    if (!this.presenting) return
+    const cam = this.renderer.xr.getCamera()
+    const fwd = new THREE.Vector3(0, 0, -1).applyQuaternion(cam.quaternion)
+    this.hud.position.copy(cam.position).addScaledVector(fwd, 0.85)
   }
 
   /* ——— state / lifecycle ——— */
@@ -555,6 +656,8 @@ export class FlameEngine {
     this.renderer.setAnimationLoop(null)
     this.resizeObserver?.disconnect()
     this.controls?.dispose()
+    this.hudTex?.dispose()
+    this.hud?.material?.dispose()
     this.material.dispose()
     ;(this.uniforms.uFieldA.value as THREE.Texture).dispose()
     ;(this.uniforms.uFieldB.value as THREE.Texture).dispose()

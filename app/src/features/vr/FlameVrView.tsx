@@ -39,6 +39,22 @@ interface RealFrame {
   tMs: number
 }
 
+interface TestPoint {
+  id: string
+  label: string
+  frames?: number
+  params?: {
+    fuel: string
+    o2: number
+    p: number
+    burnSec: number
+    outcome: string
+    tBurnerC: number
+    tadK: number
+    note?: string
+  }
+}
+
 export function FlameVrView() {
   const hostRef = useRef<HTMLDivElement>(null)
   const engineRef = useRef<FlameEngine | null>(null)
@@ -51,9 +67,11 @@ export function FlameVrView() {
   const [quality, setQuality] = useState(1.4)
   const [showTuning, setShowTuning] = useState(false)
   const [realFrames, setRealFrames] = useState<RealFrame[] | null>(null)
-  const [tests, setTests] = useState<{ id: string; label: string }[]>([
-    { id: '21088A1', label: '21088A1' },
-  ])
+  const [tests, setTests] = useState<TestPoint[]>([{ id: '21088A1', label: '21088A1' }])
+  const testsRef = useRef<TestPoint[]>(tests)
+  useEffect(() => {
+    testsRef.current = tests
+  }, [tests])
   const [selectedTest, setSelectedTest] = useState(
     () => new URLSearchParams(location.search).get('test') ?? '21088A1',
   )
@@ -62,7 +80,7 @@ export function FlameVrView() {
   useEffect(() => {
     fetch('/psi159/tests.json')
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
-      .then((j: { tests: { id: string; label: string }[] }) => {
+      .then((j: { tests: TestPoint[] }) => {
         if (Array.isArray(j.tests) && j.tests.length) setTests(j.tests)
       })
       .catch(() => undefined)
@@ -75,6 +93,14 @@ export function FlameVrView() {
     engineRef.current = engine
     engine.onState(setState)
     engine.checkSupport()
+    engine.onTestSwitchChange((dir) => {
+      setSelectedTest((prev) => {
+        const list = testsRef.current
+        const i = list.findIndex((t) => t.id === prev)
+        if (i < 0 || list.length < 2) return prev
+        return list[(i + dir + list.length) % list.length].id
+      })
+    })
     return () => {
       engine.dispose()
       engineRef.current = null
@@ -105,6 +131,16 @@ export function FlameVrView() {
       cancelled = true
     }
   }, [selectedTest])
+
+  // push the selected test + its experiment parameters to the in-VR HUD
+  useEffect(() => {
+    const tp = tests.find((x) => x.id === selectedTest)
+    const p = tp?.params
+    const info = p
+      ? `${p.fuel} · O₂ ${(p.o2 * 100).toFixed(1)}% · ${p.p.toFixed(2)} bar · ${p.burnSec}s · ${p.outcome}`
+      : ''
+    engineRef.current?.setTestId(selectedTest, info)
+  }, [selectedTest, tests])
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -163,6 +199,14 @@ export function FlameVrView() {
               <option key={t.id} value={t.id}>{t.label}</option>
             ))}
           </select>
+          {(() => {
+            const p = tests.find((x) => x.id === selectedTest)?.params
+            return p ? (
+              <span className="hidden max-w-[320px] truncate text-[9px] text-faint xl:inline">
+                {p.fuel} · O₂ {(p.o2 * 100).toFixed(1)}% · {p.p.toFixed(2)} bar · burn {p.burnSec}s · {p.outcome}
+              </span>
+            ) : null
+          })()}
           <div className="mx-1 h-5 w-px bg-edge" />
           <button
             onClick={() => engineRef.current?.enterVR()}
