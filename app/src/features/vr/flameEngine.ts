@@ -24,6 +24,8 @@ export interface FlameVrState {
   presenting: boolean
   arMode: boolean
   playing: boolean
+  /** +1 = forward, −1 = rewinding */
+  direction: 1 | -1
   profile: FlameProfile
   frameIndex: number
   frameCount: number
@@ -59,6 +61,7 @@ export class FlameEngine {
   private sequence: FlameSequence
   private frameFloat = 0
   private playing = false
+  private direction: 1 | -1 = 1
   private uploadedA = -1
   private uploadedB = -1
   private lastTick = 0
@@ -87,7 +90,7 @@ export class FlameEngine {
 
   constructor(container: HTMLElement, profile: FlameProfile = 'spherical') {
     this.container = container
-    this.sequence = generateFlameSequence({ profile })
+    this.sequence = generateFlameSequence({ profile, frameCount: 120, fps: 6 })
     this.frameFloat = (this.sequence.frames.length - 1) * INITIAL_FRAME_FRACTION
 
     this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true })
@@ -243,9 +246,10 @@ export class FlameEngine {
     this.lastTick = now
 
     if (this.playing) {
-      this.frameFloat += (dt / 1000) * this.sequence.fps
+      this.frameFloat += this.direction * (dt / 1000) * this.sequence.fps
       const n = this.sequence.frames.length
-      if (this.frameFloat >= n - 1) this.frameFloat = 0
+      if (this.frameFloat > n - 1) this.frameFloat = this.direction > 0 ? 0 : n - 1
+      if (this.frameFloat < 0) this.frameFloat = this.direction < 0 ? n - 1 : 0
     }
     this.updateFieldUniforms()
 
@@ -292,7 +296,7 @@ export class FlameEngine {
   /* ——— public playback API ——— */
 
   setProfile(profile: FlameProfile) {
-    this.sequence = generateFlameSequence({ profile })
+    this.sequence = generateFlameSequence({ profile, frameCount: 120, fps: 6 })
     this.frameFloat = (this.sequence.frames.length - 1) * INITIAL_FRAME_FRACTION
     this.uploadedA = -1
     this.uploadedB = -1
@@ -331,6 +335,14 @@ export class FlameEngine {
 
   play() {
     this.playing = true
+    this.direction = 1
+    this.emitState(true)
+  }
+
+  /** rewind: play backwards through the sequence */
+  rewind() {
+    this.playing = true
+    this.direction = -1
     this.emitState(true)
   }
 
@@ -341,6 +353,7 @@ export class FlameEngine {
 
   togglePlay() {
     this.playing = !this.playing
+    if (this.playing) this.direction = 1
     this.emitState(true)
   }
 
@@ -355,6 +368,26 @@ export class FlameEngine {
 
   seekFraction(f: number) {
     this.frameFloat = Math.min(Math.max(f, 0), 1) * (this.sequence.frames.length - 1)
+    this.emitState(true)
+  }
+
+  /** dolly in/out (mouse-wheel equivalent, also available to touch/controller UI) */
+  zoomBy(scale: number) {
+    if (!this.controls) return
+    const target = this.controls.target
+    const offset = this.camera.position.clone().sub(target)
+    const dist = Math.min(Math.max(offset.length() * scale, 0.7), 4.0)
+    offset.setLength(dist)
+    this.camera.position.copy(target).add(offset)
+    this.controls.update()
+    this.emitState(true)
+  }
+
+  /** center the flame and restore the default framing */
+  resetView() {
+    this.camera.position.set(0.85, 0.7, 1.35)
+    this.controls?.target.set(0, 0, 0)
+    this.controls?.update()
     this.emitState(true)
   }
 
@@ -443,6 +476,7 @@ export class FlameEngine {
       presenting: this.presenting,
       arMode: this.arMode,
       playing: this.playing,
+      direction: this.direction,
       profile: seq.profile,
       frameIndex: idx,
       frameCount: seq.frames.length,

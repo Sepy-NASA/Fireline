@@ -3,13 +3,17 @@ import {
   Flame,
   Glasses,
   Info,
+  Maximize,
   Pause,
   Play,
+  Rewind,
   RotateCcw,
   Settings2,
   SkipBack,
   SkipForward,
   TriangleAlert,
+  ZoomIn,
+  ZoomOut,
 } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
 import { cn } from '../../lib/utils'
@@ -33,6 +37,13 @@ const PROFILES: { id: FlameProfile; label: string }[] = [
 
 const PALETTE_LABELS = ['Flame', 'Inferno', 'Ice']
 
+interface RealFrame {
+  i: number
+  src: number
+  file: string
+  tMs: number
+}
+
 export function FlameVrView() {
   const hostRef = useRef<HTMLDivElement>(null)
   const engineRef = useRef<FlameEngine | null>(null)
@@ -44,6 +55,15 @@ export function FlameVrView() {
   const [gamma, setGamma] = useState(1)
   const [quality, setQuality] = useState(1)
   const [showTuning, setShowTuning] = useState(false)
+  const [realFrames, setRealFrames] = useState<RealFrame[] | null>(null)
+
+  // load the real DataCam frame manifest (sampled from the PSI-159 HOBJ archive)
+  useEffect(() => {
+    fetch('/psi159/index.json')
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
+      .then((j: { frames: RealFrame[] }) => setRealFrames(j.frames))
+      .catch(() => setRealFrames(null))
+  }, [])
 
   useEffect(() => {
     const host = hostRef.current
@@ -76,7 +96,13 @@ export function FlameVrView() {
 
   const frames = state?.frameCount ?? 0
   const progress = frames > 1 ? (state?.frameIndex ?? 0) / (frames - 1) : 0
-  const seconds = state ? (state.tMs / 1000).toFixed(2) : '0.00'
+  const realFrame = realFrames?.[state?.frameIndex ?? 0] ?? null
+  const seconds = realFrame
+    ? (realFrame.tMs / 1000).toFixed(2)
+    : state
+      ? (state.tMs / 1000).toFixed(2)
+      : '0.00'
+  const isRewinding = Boolean(state?.playing && state.direction === -1)
 
   return (
     <div className="relative h-full w-full overflow-hidden bg-ink">
@@ -127,18 +153,25 @@ export function FlameVrView() {
 
       {/* control deck */}
       <div className="pointer-events-none absolute inset-x-0 bottom-0 flex justify-center pb-3">
-        <div className="pointer-events-auto w-[min(560px,calc(100%-16px))] rounded-lg border border-edge bg-panel/90 p-3 shadow-pop backdrop-blur-sm">
+        <div className="pointer-events-auto w-[min(680px,calc(100%-16px))] rounded-lg border border-edge bg-panel/90 p-3 shadow-pop backdrop-blur-sm">
           {/* transport */}
           <div className="flex items-center gap-2">
             <IconBtn onClick={() => engineRef.current?.step(-1)} label="Previous frame (←)">
               <SkipBack className="size-4" />
             </IconBtn>
             <IconBtn
+              onClick={() => (isRewinding ? engineRef.current?.pause() : engineRef.current?.rewind())}
+              label="Rewind — play backwards"
+              active={isRewinding}
+            >
+              <Rewind className="size-4" />
+            </IconBtn>
+            <IconBtn
               onClick={() => engineRef.current?.togglePlay()}
-              label="Play / pause (Space)"
+              label="Play forward / pause (Space)"
               accent
             >
-              {state?.playing ? <Pause className="size-4" /> : <Play className="size-4" />}
+              {state?.playing && !isRewinding ? <Pause className="size-4" /> : <Play className="size-4" />}
             </IconBtn>
             <IconBtn onClick={() => engineRef.current?.step(1)} label="Next frame (→)">
               <SkipForward className="size-4" />
@@ -159,13 +192,29 @@ export function FlameVrView() {
               className="min-w-0 flex-1 accent-[#4da3ff]"
               aria-label="Timeline"
             />
-            <span className="tnum w-40 shrink-0 text-right font-mono text-[11px] text-dim">
+            <span className="tnum w-32 shrink-0 text-right font-mono text-[11px] text-dim">
               {(state?.frameIndex ?? 0) + 1}/{frames} · {seconds}s
             </span>
 
             <IconBtn onClick={() => setShowTuning((v) => !v)} label="Tuning" active={showTuning}>
               <Settings2 className="size-4" />
             </IconBtn>
+          </div>
+
+          {/* camera + hints (always visible) */}
+          <div className="mt-2 flex items-center gap-2 border-t border-edge pt-2">
+            <IconBtn onClick={() => engineRef.current?.zoomBy(1.18)} label="Zoom out">
+              <ZoomOut className="size-4" />
+            </IconBtn>
+            <IconBtn onClick={() => engineRef.current?.zoomBy(0.85)} label="Zoom in">
+              <ZoomIn className="size-4" />
+            </IconBtn>
+            <IconBtn onClick={() => engineRef.current?.resetView()} label="Reset view">
+              <Maximize className="size-4" />
+            </IconBtn>
+            <p className="ml-1 text-[10px] leading-tight text-faint">
+              LPM obrót · PPM przesuń · rolka zoom · ←/→ klatka · Spacja play/pauza
+            </p>
           </div>
 
           {/* tuning */}
@@ -232,6 +281,30 @@ export function FlameVrView() {
         {(state?.renderErrors.length ?? 0) > 0 && (
           <StatusChip tone="bad">render errors: {state?.renderErrors.length}</StatusChip>
         )}
+
+        {/* real DataCam frame — synced with the simulation timeline */}
+        <div className="pointer-events-auto w-[200px] rounded-md border border-edge bg-panel/85 p-2 backdrop-blur-sm">
+          <p className="mb-1 flex items-center gap-1 text-[10px] font-semibold text-text">
+            <Eye className="size-3 text-bright" /> Real frame · DataCam
+          </p>
+          {realFrame ? (
+            <img
+              src={`/psi159/frames/${realFrame.file}`}
+              alt={`Real DataCam frame ${realFrame.src}`}
+              className="w-full rounded-sm border border-edge bg-black"
+              draggable={false}
+            />
+          ) : (
+            <div className="flex h-[150px] items-center justify-center text-[10px] text-faint">
+              loading…
+            </div>
+          )}
+          <p className="tnum mt-1 text-[9px] leading-tight text-faint">
+            src #{realFrame?.src ?? '—'} · {seconds}s
+            <br />
+            raw 1360×1024 · fixed 0–2000 scale
+          </p>
+        </div>
       </div>
 
       {/* provenance / disclaimer (right) */}
@@ -241,8 +314,12 @@ export function FlameVrView() {
             <Info className="size-3 text-bright" /> Provenance &amp; limits
           </p>
           <p>
-            <span className="text-faint">Field:</span> synthetic mock — no PSI-159 INTNS LUT is
-            bundled. Symmetry is axisymmetric by construction.
+            <span className="text-faint">3D:</span> parametric simulation (not a scientific
+            reconstruction) — an axisymmetric flame volume, labelled as simulation.
+          </p>
+          <p className="mt-1">
+            <span className="text-faint">2D:</span> real DataCam frames from PSI-159 test 21088A1
+            (120 sampled HOBJ frames, synced to the timeline).
           </p>
           <p className="mt-1">
             <span className="text-faint">Colour:</span> explicit false-colour ({PALETTE_NAMES[palette]}) —
