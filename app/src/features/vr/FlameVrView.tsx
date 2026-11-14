@@ -127,6 +127,15 @@ export function FlameVrView() {
         const frames = framesMeta.frames as RealFrame[]
         setRealFrames(frames)
         engine.setRealLut(buf, lutMeta)
+        if (new URLSearchParams(window.location.search).get('model') === 'physics') {
+          const p = testsRef.current.find((x) => x.id === selectedTest)?.params
+          engine.setPhysicsFlame({
+            oxygen: p?.o2 ?? 0.39,
+            pressure: p?.p ?? 0.94,
+            burnSeconds: p?.burnSec ?? 50,
+            burstPeriod: 2.2,
+          })
+        }
         engine.setFramePreview(`/psi159/${selectedTest}/frames/`, frames.map((f) => f.file))
         if (sensors) engine.setSensors(sensors)
       } catch {
@@ -333,6 +342,20 @@ export function FlameVrView() {
                 >
                   <Flame className="size-3" /> Re-simulate
                 </button>
+                <button
+                  onClick={() => {
+                    const p = tests.find((x) => x.id === selectedTest)?.params
+                    engineRef.current?.setPhysicsFlame({
+                      oxygen: p?.o2 ?? 0.39,
+                      pressure: p?.p ?? 0.94,
+                      burnSeconds: p?.burnSec ?? 50,
+                      burstPeriod: 2.2,
+                    })
+                  }}
+                  className="mt-1 flex h-7 w-full items-center justify-center gap-1.5 rounded-md border border-edge bg-panel2 text-[11px] font-medium text-text transition-colors hover:bg-panel"
+                >
+                  <Flame className="size-3" /> Physics model
+                </button>
               </div>
               <Field label="False colour">
                 <select
@@ -363,8 +386,12 @@ export function FlameVrView() {
         <StatusChip>
           <span className="tnum font-mono">rendered {state?.framesRendered ?? 0}</span>
         </StatusChip>
-        <StatusChip tone={state?.source === 'real' ? 'ok' : 'muted'}>
-          {state?.source === 'real' ? 'field: real HOBJ (Abel)' : 'field: fallback simulation'}
+        <StatusChip tone={state?.source === 'real' || state?.source === 'physics' ? 'ok' : 'muted'}>
+          {state?.source === 'real'
+            ? 'field: real INTNS (Abel)'
+            : state?.source === 'physics'
+              ? 'field: physics (reaction–diffusion)'
+              : 'field: fallback simulation'}
         </StatusChip>
         {state?.presenting ? (
           <StatusChip tone="ok">

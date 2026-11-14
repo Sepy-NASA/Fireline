@@ -3,6 +3,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
 import { FLAME_FRAGMENT, FLAME_VERTEX } from './flameShader'
 import { LUT_R, LUT_Z } from './flameField'
 import { simulateFlameSequence, type FlameSimSequence } from './flameSim'
+import { simulatePhysicsFlame, type PhysicsFlameOptions } from './flamePhysics'
 
 /* ————————————————————————————————————————————————————————————
    three.js engine for the axisymmetric flame volume:
@@ -22,7 +23,7 @@ export interface FlameVrState {
   /** +1 = forward, −1 = rewinding */
   direction: 1 | -1
   gravity: number
-  source: 'real' | 'simulation'
+  source: 'real' | 'simulation' | 'physics'
   frameIndex: number
   frameCount: number
   fps: number
@@ -99,7 +100,7 @@ export class FlameEngine {
   private direction: 1 | -1 = 1
   private gravity = 0.8
   private simSeed = 1
-  private source: 'real' | 'simulation' = 'simulation'
+  private source: 'real' | 'simulation' | 'physics' = 'simulation'
   private uploadedA = -1
   private uploadedB = -1
   private lastTick = 0
@@ -413,6 +414,20 @@ export class FlameEngine {
     this.source = 'simulation'
     this.sequence = this.runSimulation()
     this.frameFloat = (this.sequence.frames.length - 1) * INITIAL_FRAME_FRACTION
+    this.uploadedA = -1
+    this.uploadedB = -1
+    this.emitState(true)
+  }
+
+  /** physics-based microgravity flame (diffusion shell + relaxation bursts) */
+  setPhysicsFlame(opts: PhysicsFlameOptions = {}) {
+    const seq = simulatePhysicsFlame({ frames: 180, fps: 12, ...opts })
+    this.sequence = { frames: seq.frames, fps: seq.fps, globalMax: seq.globalMax, kind: 'simulation' }
+    this.source = 'physics'
+    // a thin shell needs unsaturated accumulation to show limb brightening
+    this.setDensity(22)
+    this.setThreshold(0.02)
+    this.frameFloat = (seq.frames.length - 1) * INITIAL_FRAME_FRACTION
     this.uploadedA = -1
     this.uploadedB = -1
     this.emitState(true)
