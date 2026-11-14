@@ -108,7 +108,7 @@ export class FlameEngine {
   private controllerL: THREE.XRTargetRaySpace
 
   private threshold = 0.15
-  private density = 90
+  private density = 170
   private gamma = 1.0
   private palette = 0
   private quality = 2.0
@@ -440,12 +440,13 @@ export class FlameEngine {
     const frames = []
     for (let i = 0; i < meta.frames; i++) {
       const start = i * per
-      // per-frame stretch (display only) so each frame's rings use the full range
-      let fm = 1
-      for (let j = 0; j < per; j++) if (bytes[start + j] > fm) fm = bytes[start + j]
+      // per-frame stretch to p99 (display only) so the faint shell reads in 3D
+      const vals = Array.from(bytes.subarray(start, start + per))
+      vals.sort((a, b) => a - b)
+      const fm = Math.max(1, vals[Math.min(per - 1, Math.floor(per * 0.99))])
       const data = new Uint8Array(per)
       for (let j = 0; j < per; j++) {
-        data[j] = Math.round(255 * Math.pow(bytes[start + j] / fm, 0.8))
+        data[j] = Math.round(255 * Math.pow(Math.min(1, bytes[start + j] / fm), 0.8))
       }
       frames.push({ index: i, tMs: Math.round((i / meta.fps) * 1000), data })
     }
