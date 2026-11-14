@@ -58,9 +58,9 @@ export const FLAME_FRAGMENT = /* glsl */ `
   vec3 flameColor(float t) {
     t = clamp(t, 0.0, 1.0);
     vec3 c = vec3(0.0);
-    c = mix(c, vec3(0.30, 0.02, 0.02), smoothstep(0.00, 0.20, t));
-    c = mix(c, vec3(0.90, 0.10, 0.00), smoothstep(0.15, 0.45, t));
-    c = mix(c, vec3(1.00, 0.60, 0.05), smoothstep(0.40, 0.70, t));
+    c = mix(c, vec3(0.60, 0.05, 0.02), smoothstep(0.00, 0.15, t));
+    c = mix(c, vec3(1.00, 0.28, 0.02), smoothstep(0.10, 0.40, t));
+    c = mix(c, vec3(1.00, 0.68, 0.10), smoothstep(0.35, 0.70, t));
     c = mix(c, vec3(1.00, 0.95, 0.55), smoothstep(0.65, 0.90, t));
     c = mix(c, vec3(1.00, 1.00, 1.00), smoothstep(0.88, 1.00, t));
     return c;

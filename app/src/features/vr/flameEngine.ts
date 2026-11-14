@@ -107,11 +107,11 @@ export class FlameEngine {
   private controllerR: THREE.XRTargetRaySpace
   private controllerL: THREE.XRTargetRaySpace
 
-  private threshold = 0.0
-  private density = 26
+  private threshold = 0.15
+  private density = 90
   private gamma = 1.0
   private palette = 0
-  private quality = 1.4
+  private quality = 2.0
 
   private vrSupported: boolean | null = null
   private arSupported: boolean | null = null
@@ -186,8 +186,8 @@ export class FlameEngine {
     this.renderer.domElement.style.display = 'block'
 
     this.camera = new THREE.PerspectiveCamera(55, 1, 0.05, 20)
-    this.camera.position.set(0, 1.38, 0.06)
-    this.camera.lookAt(0, 1.1, -1.7)
+    this.camera.position.set(0, 1.62, 0.06)
+    this.camera.lookAt(0, 1.42, -1.7)
 
     this.uniforms = {
       uCamLocal: { value: new THREE.Vector3() },
@@ -261,7 +261,7 @@ export class FlameEngine {
   private buildScene() {
     // place the volume in front of the VR user's head at (0, 1.6, 0) facing −Z:
     // the shader raymarches the box in local space, so moving/scaling the group is safe
-    this.flameGroup.position.set(0, 1.15, -1.7)
+    this.flameGroup.position.set(0, 1.5, -1.7)
     this.flameGroup.scale.setScalar(0.62)
 
     // burner sphere (opaque, occludes flame behind it)
@@ -293,7 +293,7 @@ export class FlameEngine {
 
   private setupControls() {
     this.controls = new OrbitControls(this.camera, this.renderer.domElement)
-    this.controls.target.set(0, 1.1, -1.7)
+    this.controls.target.set(0, 1.42, -1.7)
     this.controls.enableDamping = true
     this.controls.dampingFactor = 0.08
     this.controls.minDistance = 0.8
@@ -440,10 +440,12 @@ export class FlameEngine {
     const frames = []
     for (let i = 0; i < meta.frames; i++) {
       const start = i * per
+      // per-frame stretch (display only) so each frame's rings use the full range
+      let fm = 1
+      for (let j = 0; j < per; j++) if (bytes[start + j] > fm) fm = bytes[start + j]
       const data = new Uint8Array(per)
       for (let j = 0; j < per; j++) {
-        // display-only gamma stretch so the faint HOBJ layers read in 3D
-        data[j] = Math.round(255 * Math.pow(bytes[start + j] / 255, 0.25))
+        data[j] = Math.round(255 * Math.pow(bytes[start + j] / fm, 0.8))
       }
       frames.push({ index: i, tMs: Math.round((i / meta.fps) * 1000), data })
     }
@@ -538,8 +540,8 @@ export class FlameEngine {
 
   /** center the flame and restore the default framing */
   resetView() {
-    this.camera.position.set(0, 1.38, 0.06)
-    this.controls?.target.set(0, 1.1, -1.7)
+    this.camera.position.set(0, 1.62, 0.06)
+    this.controls?.target.set(0, 1.42, -1.7)
     this.controls?.update()
     this.emitState(true)
   }
@@ -703,8 +705,8 @@ export class FlameEngine {
       ['TCBurner', 'TCA', 'TCB', 'MFCA3FuelFlow', 'IonCurrent'].includes(x.name),
     )
     const defs = [
-      { title: `${data.testpoint} · pressures (raw V)`, series: press, pos: [-0.85, 1.25, -1.55] },
-      { title: `${data.testpoint} · thermal / flow (raw)`, series: therm, pos: [0.85, 1.25, -1.55] },
+      { title: `${data.testpoint} · pressures (raw V)`, series: press, pos: [-0.85, 1.55, -1.55] },
+      { title: `${data.testpoint} · thermal / flow (raw)`, series: therm, pos: [0.85, 1.55, -1.55] },
     ]
     for (const d of defs) {
       if (!d.series.length) continue
@@ -846,7 +848,7 @@ export class FlameEngine {
     if (!files.length) return
     const mat = new THREE.MeshBasicMaterial({ color: 0x0e1218, side: THREE.DoubleSide })
     const mesh = new THREE.Mesh(new THREE.PlaneGeometry(0.6, 0.45), mat)
-    mesh.position.set(0, 0.72, -1.5)
+    mesh.position.set(0, 1.05, -1.5)
     mesh.lookAt(0, 1.6, 0)
     this.scene.add(mesh)
     this.previewMesh = mesh

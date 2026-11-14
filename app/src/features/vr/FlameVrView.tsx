@@ -61,10 +61,10 @@ export function FlameVrView() {
   const [state, setState] = useState<FlameVrState | null>(null)
   const [gravity, setGravity] = useState(0.8)
   const [palette, setPalette] = useState(0)
-  const [threshold, setThreshold] = useState(0)
-  const [density, setDensity] = useState(26)
+  const [threshold, setThreshold] = useState(0.15)
+  const [density, setDensity] = useState(90)
   const [gamma, setGamma] = useState(1)
-  const [quality, setQuality] = useState(1.4)
+  const [quality, setQuality] = useState(2)
   const [showTuning, setShowTuning] = useState(false)
   const [realFrames, setRealFrames] = useState<RealFrame[] | null>(null)
   const [tests, setTests] = useState<TestPoint[]>([{ id: '21088A1', label: '21088A1' }])
@@ -350,7 +350,7 @@ export function FlameVrView() {
                 </select>
               </Field>
               <Slider label="Threshold" value={threshold} min={0} max={0.9} step={0.01} onChange={(v) => { setThreshold(v); engineRef.current?.setThreshold(v) }} />
-              <Slider label="Density" value={density} min={0.2} max={6} step={0.1} onChange={(v) => { setDensity(v); engineRef.current?.setDensity(v) }} />
+              <Slider label="Density" value={density} min={10} max={2000} step={10} onChange={(v) => { setDensity(v); engineRef.current?.setDensity(v) }} />
               <Slider label="Gamma" value={gamma} min={0.4} max={3} step={0.05} onChange={(v) => { setGamma(v); engineRef.current?.setGamma(v) }} />
               <Slider label="Ray quality" value={quality} min={0.25} max={1.6} step={0.05} onChange={(v) => { setQuality(v); engineRef.current?.setQuality(v) }} />
             </div>
