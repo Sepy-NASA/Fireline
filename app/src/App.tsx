@@ -1,5 +1,5 @@
 import { Flame } from 'lucide-react'
-import { useEffect } from 'react'
+import { lazy, Suspense, useEffect } from 'react'
 import { TooltipProvider } from './components/ui/tooltip'
 import { AnalyzeView } from './features/analyze/AnalyzeView'
 import { ExploreView } from './features/explore/ExploreView'
@@ -9,10 +9,16 @@ import { useAppStore } from './store/appStore'
 import type { View } from './types'
 import { cn } from './lib/utils'
 
+// lazy-load the WebGL/three.js view so it does not bloat the initial bundle
+const FlameVrView = lazy(() =>
+  import('./features/vr/FlameVrView').then((m) => ({ default: m.FlameVrView })),
+)
+
 const BOOKMARKS: { view: View; label: string }[] = [
   { view: 'analyze', label: 'Analyze' },
   { view: 'explore', label: 'Explore' },
   { view: 'visualize', label: 'Visualize' },
+  { view: 'vr', label: 'Flame VR' },
 ]
 
 export default function App() {
@@ -22,7 +28,10 @@ export default function App() {
   const setTrayOpen = useAppStore((s) => s.setTrayOpen)
 
   // guard against stale persisted values from removed views
-  const view: View = rawView === 'analyze' || rawView === 'explore' || rawView === 'visualize' ? rawView : 'analyze'
+  const view: View =
+    rawView === 'analyze' || rawView === 'explore' || rawView === 'visualize' || rawView === 'vr'
+      ? rawView
+      : 'analyze'
 
   useEffect(() => {
     document.title = 'Fireline — microgravity combustion workspace'
@@ -83,6 +92,17 @@ export default function App() {
           {view === 'analyze' && <AnalyzeView />}
           {view === 'explore' && <ExploreView />}
           {view === 'visualize' && <VisualizeView />}
+          {view === 'vr' && (
+            <Suspense
+              fallback={
+                <div className="flex h-full items-center justify-center text-sm text-faint">
+                  Loading 3D renderer…
+                </div>
+              }
+            >
+              <FlameVrView />
+            </Suspense>
+          )}
         </main>
 
         <WorkingSetTray />

@@ -1,7 +1,7 @@
 import { Bot, CornerDownLeft, Sparkles } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
 import { useAppStore } from '../../store/appStore'
-import type { ChatMessage, Session } from '../../types'
+import type { ChatMessage, Session, View } from '../../types'
 import { catalogForKind, entityForNode, entryForStableId, newId } from './catalog'
 import { ScrollArea } from '../../components/ui/scroll-area'
 
@@ -317,7 +317,7 @@ function Message({
 }: {
   m: ChatMessage
   setSelected: (id: string | null) => void
-  setView: (v: 'explore' | 'analyze' | 'visualize') => void
+  setView: (v: View) => void
   session: Session
 }) {
   const isAgent = m.role === 'agent'
