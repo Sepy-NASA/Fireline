@@ -6,7 +6,7 @@ Requires numpy, Pillow and ffmpeg. Run export-flame-model.mjs first.
 import os
 os.environ.setdefault('OPENBLAS_NUM_THREADS','1')
 from pathlib import Path
-import argparse,gzip,json,shutil,subprocess
+import argparse,gzip,json,subprocess
 import numpy as np
 from PIL import Image,ImageDraw,ImageFont
 from build_flame_data import abel_matrix
@@ -49,10 +49,6 @@ def image_at(t,paired=True):
     draw.text((8,350),f'{args.test}  t={t:06.2f}s | fixed exposure | emission projections; hardware omitted',font=small,fill=(160,180,200))
     return result
 
-legacy=ROOT/'analysis/flame-audit'
-for name in ['flame-simulation.mp4','flame-simulation.gif','flame-simulation-sheet.png']:
-    p=ROOT/name;backup=legacy/('legacy-'+name)
-    if p.exists() and not backup.exists():shutil.copy2(p,backup)
 fps=20
 command=['ffmpeg','-v','error','-y','-f','rawvideo','-pix_fmt','rgb24','-s','640x370','-r',str(fps),'-i','-','-an','-c:v','libx264','-crf','22','-pix_fmt','yuv420p','-movflags','+faststart','-t',str(times[-1]),str(ROOT/'flame-simulation.mp4')]
 proc=subprocess.Popen(command,stdin=subprocess.PIPE)
