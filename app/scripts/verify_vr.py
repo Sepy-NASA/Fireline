@@ -17,5 +17,5 @@ if __name__ == '__main__':
         result = subprocess.run(command, cwd=APP)
         if result.returncode:
             sys.exit(result.returncode)
-    print('PASS: data, acquisition clock, reconstruction and reduced-model regressions.')
-    print('Physical headset and absolute optical/chemical validation are separate checks.')
+    print('PASS: data, acquisition clock and reconstruction regressions.')
+    print('Physical headset and absolute optical validation are separate checks.')

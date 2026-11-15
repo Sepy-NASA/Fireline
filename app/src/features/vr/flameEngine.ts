@@ -3,7 +3,6 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
 import { FLAME_FRAGMENT, FLAME_VERTEX } from './flameShader'
 import { decodeLut, emptySequence, LUT_R, LUT_Z, type FlameSequence, type LutMetadata } from './flameField'
 import { bracketTime, nearestTimeIndex, validateTimes } from './flameTime'
-import type { PhysicsFlameOptions, PhysicsFlameSequence } from './flamePhysics'
 import { eyeOriginInVolume } from './flameCamera'
 import { HandManipulation, PinchGesture, handSliderPoint, pickHandTarget, type HandTarget } from './flameHands'
 import { drawExperimentCard, drawPlaybackHeading, drawPlaybackSurface, drawPlaybackTimeline, drawPlayerButton, drawSensorPanel, timelineFraction, type ExperimentOption, type PlayerIcon } from './flamePanels'
@@ -26,16 +25,12 @@ export interface FlameVrState {
   /** +1 = forward, −1 = rewinding */
   direction: 1 | -1
   gravity: number
-  source: 'real' | 'physics'
   frameIndex: number
   frameCount: number
   fps: number
   tMs: number
   durationMs: number
   startMs: number
-  busy: boolean
-  modelProgress: number
-  modelError: string | null
   magnification: number
   exposure: number
   framesRendered: number
@@ -116,14 +111,8 @@ export class FlameEngine {
   private reference: FlameSequence | null = null
   private experimentLoading = false
   private experimentLoadError: string | null = null
-  private worker: Worker | null = null
-  private generation = 0
-  private busy = false
-  private modelProgress = 0
-  private modelError: string | null = null
   private playing = false
   private direction: 1 | -1 = 1
-  private source: 'real' | 'physics' = 'physics'
   private uploadedA = -1
   private uploadedB = -1
   private lastTick = 0
@@ -467,7 +456,6 @@ export class FlameEngine {
     this.sequence = sequence
     this.times = sequence.frames.map((frame) => frame.tMs)
     validateTimes(this.times, sequence.frames.length)
-    this.source = sequence.kind
     this.timeMs = keepTime
       ? Math.max(this.times[0], Math.min(this.times.at(-1)!, this.timeMs))
       : this.times[0] + (this.times.at(-1)! - this.times[0]) * INITIAL_FRAME_FRACTION
@@ -479,14 +467,9 @@ export class FlameEngine {
   clearExperiment() {
     this.experimentLoading = true
     this.experimentLoadError = null
-    this.worker?.terminate()
-    this.worker = null
-    this.generation++
     this.previewEpoch++
-    this.busy = false
     this.playing = false
     this.reference = null
-    this.modelError = null
     this.previewFiles = []
     this.previewTimes = []
     if (this.previewMesh) this.previewMesh.visible = false
@@ -494,52 +477,6 @@ export class FlameEngine {
     this.texCache.clear()
     this.setSensors({ testpoint: '', t: [], series: [] })
     this.install(emptySequence(), false)
-  }
-
-  showReference(): boolean {
-    this.worker?.terminate()
-    this.worker = null
-    this.generation++
-    this.busy = false
-    this.modelError = null
-    if (!this.reference) return false
-    this.install(this.reference)
-    return true
-  }
-
-  /** Compute off the UI thread, using the same experiment clock as INTNS. */
-  setPhysicsFlame(opts: PhysicsFlameOptions = {}) {
-    this.worker?.terminate()
-    const generation = ++this.generation
-    this.busy = true
-    this.modelProgress = 0
-    this.modelError = null
-    const worker = this.worker = new Worker(new URL('./flame.worker.ts', import.meta.url), { type: 'module' })
-    worker.onmessage = (event: MessageEvent<{ progress?: number; sequence?: PhysicsFlameSequence; error?: string }>) => {
-      if (this.disposed || generation !== this.generation) return
-      if (event.data.progress != null) this.modelProgress = event.data.progress
-      if (event.data.error) {
-        this.modelError = event.data.error
-        this.busy = false
-        worker.terminate()
-      }
-      if (event.data.sequence) {
-        this.busy = false
-        this.modelProgress = 1
-        this.install(event.data.sequence)
-        worker.terminate()
-      }
-      this.emitState(true)
-    }
-    worker.onerror = (event) => {
-      if (generation !== this.generation) return
-      this.busy = false
-      this.modelError = event.message || 'Flame worker failed'
-      worker.terminate()
-      this.emitState(true)
-    }
-    worker.postMessage(opts)
-    this.emitState(true)
   }
 
   /** Linear binary16 data; acquisition times and amplitudes are preserved. */
@@ -1242,7 +1179,7 @@ export class FlameEngine {
 
   private drawPlaybackTitle() {
     if (!this.playbackTitleCanvas || !this.playbackTitleTexture) return
-    const status = this.experimentLoadError ? 'UNAVAILABLE' : this.experimentLoading ? 'LOADING' : this.busy ? 'COMPUTING' : undefined
+    const status = this.experimentLoadError ? 'UNAVAILABLE' : this.experimentLoading ? 'LOADING' : undefined
     drawPlaybackHeading(this.playbackTitleCanvas, this.testId, this.testInfo, this.playing, this.direction, nearestTimeIndex(this.times, this.timeMs), this.experimentLoading || this.experimentLoadError ? 0 : this.sequence.frames.length, status)
     this.playbackTitleTexture.needsUpdate = true
   }
@@ -1287,16 +1224,12 @@ export class FlameEngine {
       playing: this.playing,
       direction: this.direction,
       gravity: 0,
-      source: this.source,
       frameIndex: idx,
       frameCount: seq.frames.length,
       fps: seq.fps,
       tMs: this.timeMs,
       durationMs: this.times.at(-1)! - this.times[0],
       startMs: this.times[0],
-      busy: this.busy,
-      modelProgress: this.modelProgress,
-      modelError: this.modelError,
       magnification: this.flameGroup.scale.x / seq.geometry.domainMeters,
       exposure: this.exposure,
       framesRendered: this.framesRendered,
@@ -1326,8 +1259,6 @@ export class FlameEngine {
     const session = this.renderer.xr.getSession()
     session?.removeEventListener('end', this.onSessionEnd)
     void session?.end().catch(() => undefined)
-    this.worker?.terminate()
-    this.generation++
     this.renderer.setAnimationLoop(null)
     this.resizeObserver?.disconnect()
     this.controls?.dispose()

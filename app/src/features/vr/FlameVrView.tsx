@@ -4,7 +4,6 @@ import { cn } from '../../lib/utils'
 import { PALETTE_NAMES, FlameEngine, type FlameVrState, type SensorData } from './flameEngine'
 import type { LutMetadata } from './flameField'
 import { nearestTimeIndex } from './flameTime'
-import modelCalibration from '../../../public/psi159/model-calibration.json'
 import { ExperimentPicker } from './ExperimentPicker'
 import type { ExperimentOption } from './flamePanels'
 
@@ -18,8 +17,6 @@ interface TestPoint {
   params?: { fuel: string; o2: number; p: number; burnSec: number; outcome: string
     massFlowMgS: number; fuelMoleFraction: number; configuration: 'normal' | 'inverse' }
 }
-type SourceMode = 'real' | 'physics'
-
 async function fetchJson<T>(url: string, signal: AbortSignal): Promise<T> {
   const response = await fetch(url, { signal })
   if (!response.ok) throw new Error(`Cannot load ${url}: HTTP ${response.status}`)
@@ -43,7 +40,6 @@ export function FlameVrView() {
   const [tests, setTests] = useState<TestPoint[]>([{ id: '21088A1', label: '21088A1' }])
   const testsRef = useRef(tests)
   const [selectedTest, setSelectedTest] = useState(() => new URLSearchParams(location.search).get('test') ?? '21088A1')
-  const [mode, setMode] = useState<SourceMode>(() => new URLSearchParams(location.search).get('model') === 'physics' ? 'physics' : 'real')
   const [metadata, setMetadata] = useState<LutMetadata | null>(null)
   const [preview, setPreview] = useState<PreviewIndex | null>(null)
   const [loading, setLoading] = useState(true)
@@ -61,10 +57,8 @@ export function FlameVrView() {
   useEffect(() => {
     const url = new URL(location.href)
     url.searchParams.set('test', selectedTest)
-    if (mode === 'physics') url.searchParams.set('model', 'physics')
-    else url.searchParams.delete('model')
     history.replaceState(null, '', url)
-  }, [selectedTest, mode])
+  }, [selectedTest])
 
   useEffect(() => {
     const abort = new AbortController()
@@ -137,21 +131,6 @@ export function FlameVrView() {
 
   const params = tests.find((test) => test.id === selectedTest)?.params
   useEffect(() => {
-    const engine = engineRef.current
-    if (!engine || metadata?.testpoint !== selectedTest) return
-    if (mode === 'real') { engine.showReference(); return }
-    if (!params) return
-    engine.setPhysicsFlame({
-      oxygen: params.o2, pressure: params.p, massFlowMgS: params.massFlowMgS,
-      fuelMoleFraction: params.fuelMoleFraction, configuration: params.configuration,
-      ignitionMs: metadata.ignitionMs, flowOnMs: metadata.flowOnMs, flowOffMs: metadata.flowOffMs,
-      burnSeconds: params.burnSec, frameTimesMs: metadata.timesMs,
-      durationMs: metadata.durationMs, geometry: metadata.geometry,
-      ...modelCalibration.parameters,
-    })
-  }, [mode, metadata, params, selectedTest])
-
-  useEffect(() => {
     engineRef.current?.setTestId(selectedTest, params
       ? `${params.fuel} · ${params.configuration} · O₂ ${(params.o2 * 100).toFixed(1)}% · ${params.p.toFixed(3)} bar · ${params.massFlowMgS} mg/s`
       : selectedTest)
@@ -171,8 +150,7 @@ export function FlameVrView() {
   const seconds = ((state?.tMs ?? 0) / 1000).toFixed(2)
   const progress = state?.durationMs ? (state.tMs - state.startMs) / state.durationMs : 0
   const realFrame = preview?.frames[nearestTimeIndex(preview.frames.map((frame) => frame.tMs), state?.tMs ?? 0)]
-  const quality = state?.source === 'real' ? metadata?.quality[state.frameIndex] : null
-  const modelValidation = (modelCalibration.validation as Record<string, { relativeRadiusRmse: number; radiusRmseMeters: number; emissionProxyNrmse: number }>)[selectedTest]
+  const quality = metadata?.quality[state?.frameIndex ?? 0]
   const isRewinding = state?.playing && state.direction === -1
 
   return (
@@ -185,11 +163,6 @@ export function FlameVrView() {
         </div>
         <div className="pointer-events-auto ml-auto flex items-center gap-2">
           <ExperimentPicker options={experimentOptions} selectedId={selectedTest} onSelect={setSelectedTest} />
-          <label className="flex items-center gap-2 text-[10px] text-faint">Source
-            <select aria-label="Flame source" value={mode} onChange={(event) => setMode(event.target.value as SourceMode)} className="h-8 rounded-md border border-edge bg-panel2 px-2 text-[11px] text-text">
-              <option value="real">INTNS reconstruction</option><option value="physics">1D transport model</option>
-            </select>
-          </label>
           <button type="button" aria-label="Enter VR" onClick={() => void engineRef.current?.enterVR()} disabled={!state?.vrSupported || state.presenting} className="flex h-8 items-center gap-1 rounded-md border border-edge px-2 text-xs text-bright disabled:opacity-30"><Glasses className="size-4" /><span className="hidden md:inline">Enter VR</span></button>
           <button type="button" aria-label="Enter AR" onClick={() => void engineRef.current?.enterAR()} disabled={!state?.arSupported || state.presenting} className="flex h-8 items-center gap-1 rounded-md border border-edge px-2 text-xs text-dim disabled:opacity-30"><Eye className="size-4" /><span className="hidden md:inline">Enter AR</span></button>
           <button type="button" aria-label="Experiment evidence" aria-controls="flame-evidence" aria-expanded={showEvidence} onClick={() => setShowEvidence((value) => !value)} className="flex h-8 items-center rounded-md border border-edge px-2 text-dim lg:hidden"><Info className="size-4" /></button>
@@ -200,7 +173,7 @@ export function FlameVrView() {
       <div className="pointer-events-none absolute bottom-3 inset-x-0 flex justify-center px-2">
         <div className="pointer-events-auto w-full max-w-3xl rounded-xl border border-edge2 bg-panel/95 shadow-pop">
           <div className="flex items-center justify-between gap-3 border-b border-edge px-4 py-3">
-            <div className="flex items-center gap-2 text-xs"><span className="text-dim">Experiment</span><span className="font-mono font-medium text-text">{selectedTest}</span><span className="hidden border-l border-edge2 pl-2 text-faint sm:inline">{state?.source === 'real' ? 'INTNS recording' : 'Transport model'}</span></div>
+            <div className="flex items-center gap-2 text-xs"><span className="text-dim">Experiment</span><span className="font-mono font-medium text-text">{selectedTest}</span><span className="hidden border-l border-edge2 pl-2 text-faint sm:inline">INTNS reconstruction</span></div>
             <span className={cn('rounded-full px-2 py-1 text-[10px] font-medium', state?.playing ? 'bg-bright/10 text-bright' : 'bg-panel2 text-dim')}>{loading ? 'Loading…' : isRewinding ? 'Rewinding' : state?.playing ? 'Playing' : 'Paused'}</span>
           </div>
           <div className="px-4 pt-3">
@@ -238,12 +211,12 @@ export function FlameVrView() {
 
       <div className="pointer-events-none absolute left-3 top-12 flex w-[200px] flex-col gap-2">
         <StatusChip><span className="font-mono">rendered {state?.framesRendered ?? 0} · {state?.frameCount ?? 0} fields</span></StatusChip>
-        <StatusChip tone={loading || state?.busy || loadError ? 'muted' : 'ok'}>{loading ? 'Loading experiment…' : loadError ? 'No experiment loaded' : state?.busy ? `Computing model ${Math.round(state.modelProgress * 100)}%` : state?.source === 'real' ? 'field: measured INTNS + inference' : 'field: reduced 1D hot-flame model'}</StatusChip>
+        <StatusChip tone={loading || loadError ? 'muted' : 'ok'}>{loading ? 'Loading experiment…' : loadError ? 'No experiment loaded' : 'field: measured INTNS + inference'}</StatusChip>
         <StatusChip>{state?.presenting ? `presenting ${state.arMode ? 'AR' : 'VR'}` : state?.vrSupported ? 'WebXR ready' : 'desktop · no WebXR'}</StatusChip>
         {state?.presenting && <StatusChip tone={state.trackedHands ? 'ok' : 'muted'}>Hands: {state.trackedHands}/2 · {state.handHint}</StatusChip>}
         {quality && quality.saturatedFraction > 0.01 && <StatusChip tone="bad">Saturated camera frame · limited radiometry</StatusChip>}
         {quality?.inferredFromPrior && <StatusChip tone="bad">Limited frame · spherical inference</StatusChip>}
-        {(state?.xrError || state?.modelError) && <StatusChip tone="bad">{state.xrError || state.modelError}</StatusChip>}
+        {state?.xrError && <StatusChip tone="bad">{state.xrError}</StatusChip>}
         {!!state?.renderErrors.length && <StatusChip tone="bad">render errors: {state.renderErrors.length}</StatusChip>}
         <div className="pointer-events-auto rounded-md border border-edge bg-panel/85 p-2 backdrop-blur-sm">
           <p className="mb-1 flex items-center gap-1 text-[10px] font-semibold text-text"><Eye className="size-3 text-bright" />Reference · {preview?.camera ?? 'INTNS'}</p>
@@ -257,9 +230,8 @@ export function FlameVrView() {
           <p className="flex items-center gap-1 text-[11px] font-semibold text-text"><Info className="size-3 text-bright" />Experiment & evidence</p>
           <p>{selectedTest} · {params?.fuel ?? 'ethane'} · {params?.configuration ?? 'normal'}<br />O₂ {((params?.o2 ?? 0) * 100).toFixed(2)}% · {params?.p.toFixed(4)} bar · {params?.massFlowMgS} mg/s · µg</p>
           {metadata && <p>{metadata.frames} source frames · {metadata.fps.toFixed(2)} samples/s<br />Acquisition clock shared with reference and sensors.</p>}
-          <p>{loading ? 'Loading INTNS reference and acquisition metadata.' : state?.source === 'real' ? 'Masked Abel reconstruction. Hidden regions use a spherical prior; they are inferred.' : 'Finite-volume radial transport, finite-rate hot reaction, radiation and burner heat exchange. Cool-flame chemistry is outside this reduced model.'}</p>
-          {metadata && state?.source === 'real' && <p>Projection error: {metadata.validation.medianProjectionNrmse == null ? 'unavailable' : `${(metadata.validation.medianProjectionNrmse * 100).toFixed(1)}% median NRMSE`} over {metadata.validation.framesCompared} usable frames.</p>}
-          {metadata && !loading && state?.source === 'physics' && modelValidation && <p>Radius RMSE vs INTNS: {(modelValidation.radiusRmseMeters * 1000).toFixed(2)} mm ({(modelValidation.relativeRadiusRmse * 100).toFixed(1)}%). Emission-proxy NRMSE: {(modelValidation.emissionProxyNrmse * 100).toFixed(0)}%. Coefficients fit on A1; B1/C1 are holdouts. Self-extinction is not calibrated.</p>}
+          <p>{loading ? 'Loading INTNS reference and acquisition metadata.' : 'Masked Abel reconstruction. Hidden regions use a spherical prior; they are inferred.'}</p>
+          {metadata && <p>Projection error: {metadata.validation.medianProjectionNrmse == null ? 'unavailable' : `${(metadata.validation.medianProjectionNrmse * 100).toFixed(1)}% median NRMSE`} over {metadata.validation.framesCompared} usable frames.</p>}
           <p>Scale: {metadata?.geometry.scaleStatus ?? 'estimated'} · display enlarged {state?.magnification.toFixed(1)}×. Absolute radiance and temperature are uncalibrated.</p>
           <p>Palette: {PALETTE_NAMES[state?.palette ?? 0]}. Colour is illustrative.</p>
           <div className="space-y-1 border-t border-edge pt-2">

@@ -5,7 +5,6 @@ Run from the app directory with Python 3.11+ containing NumPy and Pillow
 
 ```sh
 python3 scripts/build_flame_data.py --raw-dir /path/to/INTNS/archives
-node scripts/calibrate-flame.mjs
 node --test tests/flame.test.mjs
 python3 scripts/psi159/test_reconstruction.py
 ```
@@ -20,7 +19,7 @@ archives and sensor CSVs are not included in the repository.
 Every source exposure is reconstructed (2017 / 1944 / 1829 frames). Acquisition
 wall-clock timestamps drive field playback, reference selection and sensor
 alignment. The raw MFC signal supplies sustained on/off transition times;
-the reported extinction time does not turn off the numerical solver.
+the reported extinction time does not truncate the reconstructed sequence.
 
 `calibration.json` contains a fixed camera grid and a conservative hardware
 exclusion band. The band and portions outside the camera are inferred using a
@@ -62,30 +61,19 @@ NRMSE is a projection residual over usable, unmasked, unsaturated observations,
 not a validation of hidden volume, absolute radiance, temperature or chemistry.
 `metrics.json` preserves frame-level residuals, signal, radius and saturation.
 
-The numerical model uses spherical finite volumes in SI units, a far-field
-reservoir outside the camera crop, implicit advection/diffusion, conservative
-species/enthalpy transport and a first-order low-Mach density projection.
-It includes an ideal-gas EOS, one finite-rate global ethane reaction,
-participating-product radiation and a burner thermal balance. There is one
-finite-duration external ignition event and no prescribed pulse train.
-The global reaction does not represent cool-flame/NTC chemistry.
+The browser renders the reconstructed emission field in linear space with a
+fixed display exposure and the active eye camera. Metal sphere/support
+intersections stop ray integration while retaining gas in front. The scene is
+deliberately enlarged and reports its magnification; XR scene coordinates use
+a floor reference. No physical flame simulation is included. The visualization
+does not claim absolute radiometry, temperature, chemistry, or predictive
+behaviour.
 
-`model-calibration.json` fits radiation/transport coefficients and a single emission-proxy scale to A1 only.
-B1/C1 retain their actual conditions and serve as holdouts. Radius errors use
-the provisional camera scale. The reported peak burner temperature is a weak
-calibration target, not a synchronized end-of-run measurement. Neither a low
-projection error nor this reduced-model fit establishes predictive validity.
-
-The browser integrates emission and independently specified absorption in
-linear space, applies a fixed exposure, and uses the active eye camera. Metal
-sphere/support intersections stop ray integration while retaining gas in
-front. The scene size is deliberately enlarged; its magnification is shown.
-XR scene coordinates use a floor reference, and session setup errors are awaited and reported.
-No physical headset or absolute radiometric validation is claimed.
+For raw HALCON HOBJ camera-image files, see the short
+[HOBJ → Fireline VR guide](../README.md). The importer produces the scalar-field
+format rendered in VR and an optional inspection OBJ mesh.
 
 Scientific references:
 - NASA CFI-G overview and burner geometry: https://www1.grc.nasa.gov/wp-content/uploads/ACME-CSSCI-20220509.pdf
 - Hot/cool flame identification: https://www.nasa.gov/missions/station/cool-flames-created-during-a-first-for-international-space-station-research/
 - Spherical-flame experimental context: https://www.sciencedirect.com/science/article/pii/S0010218021000821
-
-The ethane lower heating value is 47.5 MJ/kg, consistent with [NPL MAT 114](https://eprintspublications.npl.co.uk/9635/1/MAT114.pdf). Effective heat capacity, diffusion and global reaction coefficients remain reduced-model approximations, rather than a detailed chemical mechanism.

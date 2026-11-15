@@ -9,7 +9,7 @@ export interface FlameGeometry {
   scaleStatus: 'estimated' | 'calibrated'; scaleRelativeUncertainty?: number
   centerPixels?: [number, number]; domainRadiusPixels?: number; pixelSizeMeters?: number; scaleSource?: string
 }
-export interface FlameSequence { frames: FlameFrame[]; fps: number; kind: 'real' | 'physics'; geometry: FlameGeometry }
+export interface FlameSequence { frames: FlameFrame[]; fps: number; kind: 'real'; geometry: FlameGeometry }
 export interface LutMetadata {
   schemaVersion: 2; dataset: string; testpoint: string; camera: string; method: string
   file: string; encoding: 'float16-le'; compression: 'gzip'; frames: number; z: number; r: number; fps: number
@@ -43,7 +43,7 @@ export const DEFAULT_GEOMETRY: FlameGeometry = {
   scaleStatus: 'estimated', scaleRelativeUncertainty: 0.25,
 }
 export function emptySequence(): FlameSequence {
-  return { frames: [{ index: 0, tMs: 0, data: new Uint16Array(LUT_Z * LUT_R) }], fps: 0, kind: 'physics', geometry: DEFAULT_GEOMETRY }
+  return { frames: [{ index: 0, tMs: 0, data: new Uint16Array(LUT_Z * LUT_R) }], fps: 0, kind: 'real', geometry: DEFAULT_GEOMETRY }
 }
 
 export function decodeLut(buffer: ArrayBuffer, meta: LutMetadata): FlameSequence {

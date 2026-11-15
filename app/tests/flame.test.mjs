@@ -4,7 +4,6 @@ import { readFile } from 'node:fs/promises'
 import { gunzipSync } from 'node:zlib'
 import { bracketTime, nearestTimeIndex, validateTimes } from '../src/features/vr/flameTime.ts'
 import { decodeLut, fromHalf, toHalf, LUT_Z, LUT_R } from '../src/features/vr/flameField.ts'
-import { ETHANE_LHV_J_KG, SphericalFlameSolver, simulatePhysicsFlame } from '../src/features/vr/flamePhysics.ts'
 import { Matrix4, Quaternion, Vector3 } from 'three'
 import { eyeOriginInVolume } from '../src/features/vr/flameCamera.ts'
 
@@ -48,52 +47,4 @@ for (const id of ['21088A1', '21088B1', '21088C1']) test(`${id}: complete full-r
   assert.ok(new Set(faint).size > 255, 'faint emission must retain more than byte precision')
   const incomplete = new ArrayBuffer(2)
   assert.throws(() => decodeLut(incomplete, meta))
-})
-test('zero source leaves cold microgravity equilibrium unchanged', () => {
-  const solver = new SphericalFlameSolver({ massFlowMgS: 0, ignitionMs: 1e9, flowOnMs: 0, flowOffMs: 10000 })
-  solver.advanceTo(2)
-  assert.ok(solver.temperature.every((t) => Math.abs(t - 300) < 1e-8))
-  assert.ok(solver.fuel.every((f) => f === 0))
-  assert.equal(solver.diagnostics.releasedEnergyJ, 0)
-})
-test('finite-volume reaction respects mass fractions and the injected fuel energy budget', () => {
-  const solver = new SphericalFlameSolver()
-  solver.advanceTo(10)
-  assert.ok(solver.diagnostics.releasedEnergyJ > 10)
-  assert.ok(solver.diagnostics.releasedEnergyJ <= solver.diagnostics.injectedFuelKg * ETHANE_LHV_J_KG * 1.01)
-  assert.ok(solver.diagnostics.minMassFraction > -1e-12)
-  assert.ok(solver.diagnostics.maxSpeciesSumError < 1e-9)
-  assert.ok(solver.temperature.every((t) => Number.isFinite(t) && t >= 300))
-})
-test('time-step refinement converges heat release and radius', () => {
-  const coarse = new SphericalFlameSolver()
-  const fine = new SphericalFlameSolver()
-  coarse.advanceTo(8, 0.005)
-  fine.advanceTo(8, 0.0025)
-  const a = coarse.sample(8000), b = fine.sample(8000)
-  assert.ok(Math.abs(a.heatReleaseW - b.heatReleaseW) / b.heatReleaseW < 0.05)
-  assert.ok(Math.abs(a.radiusMeters - b.radiusMeters) / b.radiusMeters < 0.08)
-})
-test('radial grid refinement preserves heat release and shell radius', () => {
-  const coarse = new SphericalFlameSolver({ cells: 96 })
-  const fine = new SphericalFlameSolver({ cells: 192 })
-  coarse.advanceTo(8); fine.advanceTo(8)
-  const a = coarse.sample(8000), b = fine.sample(8000)
-  assert.ok(Math.abs(a.heatReleaseW - b.heatReleaseW) / b.heatReleaseW < 0.02)
-  assert.ok(Math.abs(a.radiusMeters - b.radiusMeters) / b.radiusMeters < 0.03)
-  assert.ok(Math.abs(a.burnerTemperatureK - b.burnerTemperatureK) / b.burnerTemperatureK < 0.1)
-})
-test('a fuel stream without oxygen cannot create reaction emission', () => {
-  const solver = new SphericalFlameSolver({ oxygen: 0 })
-  solver.advanceTo(3)
-  assert.equal(solver.diagnostics.releasedEnergyJ, 0)
-  assert.equal(solver.sample(3000).heatReleaseW, 0)
-  assert.throws(() => new SphericalFlameSolver({ pressure: Number.NaN }))
-})
-test('model duration and nonuniform sample times are preserved without a burst clock', () => {
-  const sequence = simulatePhysicsFlame({ frameTimesMs: [0, 500, 1500, 3100, 5100], flowOffMs: 4000 })
-  assert.deepEqual(sequence.frames.map((frame) => frame.tMs), [0, 500, 1500, 3100, 5100])
-  assert.equal(sequence.frames[0].data.length, LUT_Z * LUT_R)
-  assert.equal(sequence.diagnostics.referenceExtinctionImposed, false)
-  assert.ok(sequence.frames[0].data.every((value) => value === 0))
 })

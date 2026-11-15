@@ -1,0 +1,20 @@
+node_modules/
+dist/
+coverage/
+.env
+.env.*
+!.env.example
+
+# Python artifacts used by the optional PSI-159 reconstruction tools
+__pycache__/
+*.py[cod]
+
+# Public PSI API responses and optional source downloads (generated locally)
+data/psi-download/
+
+# Local editor and operating-system files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json

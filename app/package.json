@@ -6,7 +6,6 @@
   "scripts": {
     "build:data": "node scripts/build-data.mjs",
     "build:flame": "python3 scripts/build_flame_data.py",
-    "calibrate:flame": "node scripts/calibrate-flame.mjs",
     "test:flame": "node --test tests/flame.test.mjs",
     "test:vr": "node --test tests/flame-hands*.test.mjs",
     "dev": "npm run build:data && vite",

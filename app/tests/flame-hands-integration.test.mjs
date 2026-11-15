@@ -1,12 +1,13 @@
 import { after, before, test } from 'node:test'
 import assert from 'node:assert/strict'
+import { fileURLToPath } from 'node:url'
 import { Box3, Box3Helper, BoxGeometry, Group, Mesh, PlaneGeometry, Scene, Vector3 } from 'three'
 import { createServer } from 'vite'
 import { HandManipulation } from '../src/features/vr/flameHands.ts'
 
 let server, FlameEngine, panelHelpers
 before(async () => {
-  server = await createServer({ configFile: false, root: new URL('..', import.meta.url).pathname,
+  server = await createServer({ configFile: false, root: fileURLToPath(new URL('../', import.meta.url)),
     server: { middlewareMode: true, watch: null, hmr: false, ws: false },
     optimizeDeps: { noDiscovery: true, include: [] }, appType: 'custom',
   })
