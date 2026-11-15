@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 2,
+  "description": "Fixed camera coordinates. Hardware masks and burner image diameter are provisional image estimates; edit after an independent camera calibration.",
+  "z": 128,
+  "r": 64,
+  "domainRadiusPixels": 560,
+  "displayCounts": 6000,
+  "burnerDiameterMeters": 0.00635,
+  "burnerDiameterPixels": 96,
+  "scaleStatus": "estimated",
+  "scaleRelativeUncertainty": 0.25,
+  "source": "NASA ACME CFI-G 6.35 mm burner; provisional 96 px image diameter, not a calibrated camera measurement",
+  "tests": {
+    "21088A1": { "centerPixels": [692, 380], "ignitionFrame": 468, "extinctionFrame": 1814 },
+    "21088B1": { "centerPixels": [680, 380], "ignitionFrame": 618, "extinctionFrame": 1638 },
+    "21088C1": { "centerPixels": [680, 380], "ignitionFrame": 528, "extinctionFrame": 1515 }
+  },
+  "hardwareMaskRelativePixels": [
+    { "kind": "rectangle", "bounds": [-700, -52, 700, 135] }
+  ]
+}

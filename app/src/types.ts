@@ -4,7 +4,7 @@
    the zustand store, and all feature views.
    ———————————————————————————————————————————— */
 
-export type View = 'analyze' | 'explore' | 'visualize'
+export type View = 'analyze' | 'explore' | 'visualize' | 'vr'
 
 export type SafetyArea = 'prevention' | 'detection' | 'suppression' | 'supporting'
 
