@@ -60,6 +60,15 @@ the reference frame, synchronized telemetry and experiment timeline.*
 
 ## Data at a glance
 
+> [!NOTE]
+> **Storage-friendly demo data.** To keep the repository small enough for Git
+> and GitHub Pages, it contains a **mostly mocked, compact demonstration
+> dataset**. It combines limited PSI-derived catalogue/index extracts with
+> representative static records for the interface. Full raw PSI archives —
+> such as camera imagery, videos, complete sensor CSVs, and ZIP files — are
+> not versioned here. Use the linked PSI records and the download scripts when
+> the original source data is required.
+
 - **24** bundled combustion investigations and **22** experimental tables.
 - **2,009** indexed test rows for exploration and charting.
 - **66,567** indexed PSI file records for discovery; large raw files are not

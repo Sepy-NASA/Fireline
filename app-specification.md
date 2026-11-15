@@ -43,6 +43,13 @@ Explore can form direct public PSI file links. During `npm run dev`, the Vite
 GitHub Pages has no proxy or backend, so such CORS-dependent previews are not
 available there; bundled data and ordinary PSI links remain available.
 
+To keep the Git repository and static deployment small, the bundled dataset is
+**mostly mocked, compact demonstration data**. It combines limited
+PSI-derived catalogue/index extracts with representative static UI records.
+Large raw PSI materials — including camera images, videos, complete sensor
+CSVs, and ZIP archives — are deliberately not versioned; the linked PSI
+records and `download_psi.py` are the route to the original source files.
+
 `app/scripts/download_psi.py` is a separate command-line utility, not a UI
 service. It queries the public PSI API to save a catalog, investigation metadata
 and file inventory locally; an explicit `--download` filter is required before
