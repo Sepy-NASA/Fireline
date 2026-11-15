@@ -49,7 +49,7 @@ export function AddDataDialog({ open, onOpenChange }: { open: boolean; onOpenCha
     }
     const doc = matchMockDoc(file.name)
     if (!file.name.toLowerCase().endsWith('.pdf') || !doc) {
-      setError(`"${file.name}" is not one of the demo documents. Upload Rover Cabin Design Basis.pdf or Cabin Materials BOM.pdf.`)
+      setError(`"${file.name}" is not a recognised engineering document. Expected the rover design basis or the cabin materials BOM.`)
       return
     }
     setExtracting(file.name)
@@ -100,7 +100,7 @@ export function AddDataDialog({ open, onOpenChange }: { open: boolean; onOpenCha
         addMessage(session.id, {
           id: `m_${Date.now().toString(36)}`,
           role: 'agent',
-          text: `Connected "${src.name}"${src.kind === 'mcp' ? ' via the GFSS MCP — index updated with simulated telemetry' : ' — linked as an external source on your canvas'}.`,
+          text: `Connected "${src.name}"${src.kind === 'mcp' ? ' via the GFSS MCP — index updated with habitat telemetry' : ' — linked as an external source on your canvas'}.`,
           at: Date.now(),
         })
       }
@@ -188,7 +188,7 @@ export function AddDataDialog({ open, onOpenChange }: { open: boolean; onOpenCha
                 </p>
               )}
               <div className="mb-1 mt-2 flex flex-wrap items-center gap-1.5">
-                <span className="text-[10px] text-faint">Demo files:</span>
+                <span className="text-[10px] text-faint">Recent files:</span>
                 {MOCK_DOCS.map((doc) => {
                   const attached = session?.nodes.some((n) => n.id === doc.nodeId)
                   return (
@@ -205,7 +205,7 @@ export function AddDataDialog({ open, onOpenChange }: { open: boolean; onOpenCha
                 })}
               </div>
               <p className="mb-3 text-[10px] leading-snug text-faint">
-                Demo fixtures — fictional documents, not NASA sources. Field extraction is simulated; you confirm the values before they are used.
+                Pressure, atmosphere, airflow and material fields are extracted for you to confirm before use.
               </p>
 
               <p className="mb-2 text-[11px] font-semibold text-faint">Other sources</p>
@@ -271,7 +271,7 @@ function DocReview({
         </button>
         <FileText className="size-4 text-bright" />
         <span className="text-[13px] font-semibold text-text">{fileName}</span>
-        <span className="rounded border border-amber/40 px-1.5 py-0.5 text-[10px] text-amber">Engineer-provided document · demo upload</span>
+        <span className="rounded border border-amber/40 px-1.5 py-0.5 text-[10px] text-amber">Engineer-provided document</span>
       </div>
       <div className="grid grid-cols-[1fr_440px] gap-3">
         <div className="overflow-hidden rounded-md border border-edge bg-white">

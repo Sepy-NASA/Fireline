@@ -43,6 +43,7 @@ const NODE_COLORS: Record<string, string> = {
   externalSource: '#9ad84a',
   missionParam: '#4da3ff',
   gap: '#ff6b6b',
+  conclusion: '#7a8bff',
 }
 
 export function toFlowNodes(
@@ -205,7 +206,10 @@ function GraphCanvasInner({ rightInset }: { rightInset: number }) {
   useEffect(() => {
     if (!pendingFit.current || !nodesInitialized || nodes.length === 0) return
     pendingFit.current = false
-    setTimeout(() => fitView({ padding: fitPadding(rightInset), duration: 450, maxZoom: 1.05 }), 30)
+    // fit twice: new nodes can report "initialized" a frame before their final size
+    const fit = () => fitView({ padding: fitPadding(rightInset), duration: 400, maxZoom: 1.05 })
+    setTimeout(fit, 120)
+    setTimeout(fit, 600)
   }, [nodesInitialized, nodes, fitView, rightInset])
 
   // Re-fit when the context card opens / closes

@@ -105,6 +105,20 @@ export function ExploreView() {
   const setTrayOpen = useAppStore((s) => s.setTrayOpen)
   const session = useAppStore(activeSession)
 
+  // deep-link from Analyze (e.g. the agent's "Open SAFFIRE-2 table in Explore")
+  const exploreFocus = useAppStore((s) => s.exploreFocus)
+  const setExploreFocus = useAppStore((s) => s.setExploreFocus)
+  useEffect(() => {
+    if (!exploreFocus) return
+    setTab('data')
+    setFilters({ ...EMPTY_FILTERS, q: exploreFocus.q })
+    if (exploreFocus.datasetId) {
+      setSelectedDataId(exploreFocus.datasetId)
+      setPreviewOn(true)
+    }
+    setExploreFocus(null)
+  }, [exploreFocus, setExploreFocus])
+
   // the file inventory is a lazy chunk; start loading right away so counts are ready
   useEffect(() => {
     let alive = true
