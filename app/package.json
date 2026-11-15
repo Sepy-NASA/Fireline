@@ -5,6 +5,10 @@
   "type": "module",
   "scripts": {
     "build:data": "node scripts/build-data.mjs",
+    "build:flame": "python3 scripts/build_flame_data.py",
+    "calibrate:flame": "node scripts/calibrate-flame.mjs",
+    "test:flame": "node --test tests/flame.test.mjs",
+    "test:vr": "node --test tests/flame-hands*.test.mjs",
     "dev": "npm run build:data && vite",
     "build": "npm run build:data && tsc -b && vite build",
     "lint": "oxlint -c .oxlintrc.json src/main.tsx src/App.tsx src/components src/features src/lib src/store",
@@ -22,6 +26,7 @@
     "@radix-ui/react-slot": "^1.5.0",
     "@radix-ui/react-tooltip": "^1.4.1",
     "@tailwindcss/vite": "^4.3.5",
+    "@types/three": "^0.187.0",
     "@xyflow/react": "^12.12.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -31,6 +36,7 @@
     "recharts": "^3.10.1",
     "tailwind-merge": "^3.7.0",
     "tailwindcss": "^4.3.5",
+    "three": "^0.187.0",
     "zustand": "^5.1.0"
   },
   "devDependencies": {
