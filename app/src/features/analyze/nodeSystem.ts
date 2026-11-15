@@ -140,6 +140,36 @@ export const KIND_META: Record<NodeKind, NodeKindMeta> = {
     desc: 'Standards, documents, or MCP-linked data.',
     addable: true,
   },
+  missionParam: {
+    kind: 'missionParam',
+    label: 'Mission input',
+    plural: 'Mission inputs',
+    color: '#4da3ff',
+    ring: 'border-bright text-bright',
+    text: 'text-bright',
+    desc: 'Engineer-provided mission assumption — an input, not an experimental result.',
+    addable: false,
+  },
+  gap: {
+    kind: 'gap',
+    label: 'Evidence gap',
+    plural: 'Evidence gaps',
+    color: '#ff6b6b',
+    ring: 'border-flame text-flame',
+    text: 'text-flame',
+    desc: 'Unresolved issue / uncovered condition — not a predicted failure.',
+    addable: false,
+  },
+}
+
+/** Provenance styling — measured vs engineer input vs agent vs unknown. */
+export const PROVENANCE_META: Record<string, { label: string; cls: string }> = {
+  measured: { label: 'Measured · PSI', cls: 'border-teal/50 bg-teal/10 text-teal' },
+  engineer: { label: 'Engineer input', cls: 'border-bright/50 bg-bright/10 text-bright' },
+  provisional: { label: 'Provisional', cls: 'border-amber/50 bg-amber/10 text-amber' },
+  unknown: { label: 'Unknown', cls: 'border-dashed border-faint bg-transparent text-dim' },
+  agent: { label: 'Agent interpretation', cls: 'border-violet/50 bg-violet/10 text-[#a5b1ff]' },
+  context: { label: 'Context · different fuel', cls: 'border-[#a78bfa]/50 bg-[#a78bfa]/10 text-[#c4b5fd]' },
 }
 
 export const SAFETY_AREA_LABELS: Record<SafetyArea, string> = {

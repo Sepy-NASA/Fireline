@@ -5,6 +5,7 @@ import { KIND_META, PALETTE_GROUPS } from './nodeSystem'
 import { catalogForKind, entityForNode, newId } from './catalog'
 import { NodeDetailsBody } from './nodeDetails'
 import { AddDataDialog } from './AddDataDialog'
+import { BranchSummary, ScenarioNodeDetails, hasScenarioDetails } from './scenarioDetails'
 import { Button } from '../../components/ui/button'
 import { ScrollArea } from '../../components/ui/scroll-area'
 import type { GraphEdge, GraphNode, NodeKind, Session } from '../../types'
@@ -29,6 +30,9 @@ export function RightPanel() {
   const [addDataOpen, setAddDataOpen] = useState(false)
 
   const selectedNode = session?.nodes.find((n) => n.id === selectedNodeId) ?? null
+  const focusedBranchId = useAppStore((s) => s.focusedBranchId)
+  const setFocusedBranch = useAppStore((s) => s.setFocusedBranchId)
+  const focusedBranch = session?.branches.find((b) => b.id === focusedBranchId) ?? null
 
   const addToWorkingSet = (node: { data: { kind: string; ref: string; label: string } }) => {
     const entity = entityForNode(node.data)
@@ -59,14 +63,14 @@ export function RightPanel() {
 
   if (!session) {
     return (
-      <aside className="flex w-[300px] shrink-0 flex-col border-l border-edge bg-panel">
+      <aside className="flex w-[340px] shrink-0 flex-col border-l border-edge bg-panel">
         <div className="p-4 text-sm text-faint">Create or open a session to start analyzing.</div>
       </aside>
     )
   }
 
   return (
-    <aside className="flex w-[300px] shrink-0 flex-col border-l border-edge bg-panel">
+    <aside className="flex w-[340px] shrink-0 flex-col border-l border-edge bg-panel">
       <div className="flex h-9 shrink-0 items-center gap-1.5 border-b border-edge px-3">
         {selectedNode ? (
           <>
@@ -78,6 +82,13 @@ export function RightPanel() {
             </button>
             <span className="text-xs font-semibold text-text">Node details</span>
           </>
+        ) : focusedBranch ? (
+          <>
+            <button onClick={() => setFocusedBranch(null)} className="text-xs text-bright hover:underline">
+              ← back
+            </button>
+            <span className="text-xs font-semibold text-text">Branch summary</span>
+          </>
         ) : (
           <span className="text-xs font-semibold text-text">Add to canvas</span>
         )}
@@ -86,7 +97,11 @@ export function RightPanel() {
       <ScrollArea className="min-h-0 flex-1">
         {selectedNode ? (
           <div className="flex flex-col gap-3 p-3">
-            <NodeDetailsBody node={selectedNode.data} />
+            {hasScenarioDetails(selectedNode) ? (
+              <ScenarioNodeDetails node={selectedNode} session={session} onOpenAddData={() => setAddDataOpen(true)} />
+            ) : (
+              <NodeDetailsBody node={selectedNode.data} />
+            )}
             <div className="mt-1 space-y-2 border-t border-edge pt-3">
               <Button
                 variant="outline"
@@ -106,6 +121,8 @@ export function RightPanel() {
               </Button>
             </div>
           </div>
+        ) : focusedBranch ? (
+          <BranchSummary session={session} branch={focusedBranch} />
         ) : (
           <Palette session={session} addNode={addNode} addEdge={addEdge} />
         )}
@@ -117,11 +134,11 @@ export function RightPanel() {
           className="h-9 w-full rounded-md bg-bright text-sm font-semibold text-ink transition-colors hover:bg-bright/85"
         >
           <span className="inline-flex items-center gap-1.5">
-            <Upload className="size-3.5" /> Add data
+            <Upload className="size-3.5" /> Add data / documents
           </span>
         </button>
         <p className="text-center text-[11px] text-faint">
-          Mock connection — picks from PSI, standards &amp; MCP sources
+          Upload engineer PDFs · PSI · standards · MCP
         </p>
       </div>
       <AddDataDialog open={addDataOpen} onOpenChange={setAddDataOpen} />

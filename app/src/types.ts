@@ -21,6 +21,11 @@ export type NodeKind =
   | 'publication'
   | 'note'
   | 'externalSource'
+  | 'missionParam'
+  | 'gap'
+
+/** Where a statement on the canvas comes from — kept visually distinct. */
+export type Provenance = 'measured' | 'engineer' | 'provisional' | 'unknown' | 'agent' | 'context'
 
 export type EdgeKind =
   | 'FILED_UNDER'
@@ -148,6 +153,18 @@ export interface GraphNodeData {
   hint: string
   /** route to the entity record */
   entity?: Investigation | Dataset
+  /** provenance badge shown under the node (scenario nodes) */
+  provenance?: Provenance
+  /** short tag under the node, e.g. "different fuel" */
+  badge?: string
+  /** override the kind color (e.g. violet for context evidence) */
+  color?: string
+  /** current value for mission-parameter / material nodes */
+  value?: string
+  /** extracted fields from an engineer document (mock upload) */
+  fields?: { label: string; value: string; source: string; status: 'confirmed' | 'provisional' | 'unknown' }[]
+  /** engineer judgement: how the rover material relates to tested rows */
+  match?: 'unassessed' | 'same-family' | 'analogue'
 }
 
 export interface GraphEdgeData {
@@ -200,6 +217,8 @@ export interface ChatMessage {
   chips?: { nodeId: string; label: string }[]
   /** view-links attached to an agent reply */
   links?: { view: View; label: string; ref?: string }[]
+  /** external source links (PSI records, tables) */
+  hrefs?: { label: string; href: string }[]
 }
 
 /* ——— working set (cross-view selection) ——— */
