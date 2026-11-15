@@ -191,19 +191,6 @@ limits, or engineering predictions. See the detailed
 files contained in a raw archive, use the
 [HOBJ-to-VR importer](app/scripts/README.md).
 
-## Repository map
-
-```text
-.github/workflows/  GitHub Pages deployment
-app/                React/Vite frontend and data-build scripts
-data/               local PSI source extracts
-metadata/           supporting metadata
-notebooks/          analysis notebooks
-about-data.md       investigation/source list
-data-links.md       external NASA resource links
-social-preview.jpg  GitHub repository social-preview image
-```
-
 ## Scope and attribution
 
 Fireline was created for a hackathon and is not affiliated with, endorsed by,
