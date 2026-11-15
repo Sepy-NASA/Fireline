@@ -1,5 +1,4 @@
-The canonical generator is `../build_flame_data.py`. Both notebooks call it;
-there is no second HOBJ/INTNS reconstruction implementation.
+The canonical generator is `../build_flame_data.py`.
 
 Run from the app directory with Python 3.11+ containing NumPy and Pillow
 (`requirements.txt` pins the tested versions) and Node 24:

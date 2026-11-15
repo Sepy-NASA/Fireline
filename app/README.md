@@ -104,12 +104,7 @@ python3 scripts/verify_vr.py
 # Rebuild only when the NASA INTNS source archives are available:
 python3 scripts/build_flame_data.py --raw-dir /path/to/archives
 npm run calibrate:flame
-# Export the same solver and fixed-clock comparison media:
-node scripts/export-flame-model.mjs
-python3 scripts/export_flame_preview.py
 ```
 
-See [the reconstruction and model notes](scripts/psi159/README.md). The
-notebook and media entry points use these canonical scripts. The comparison movie
-at `../flame-simulation.mp4` shows emission projections on the real experiment
-clock; it is not a headset recording. A physical Quest/AR check remains separate.
+See [the reconstruction and model notes](scripts/psi159/README.md). A physical
+Quest/AR check remains separate.
