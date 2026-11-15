@@ -16,6 +16,7 @@ import {
 } from 'recharts'
 import { DATASETS } from '../../generated/datasets'
 import { useAppStore } from '../../store/appStore'
+import { EvidenceFigures } from './EvidenceFigures'
 import { cn } from '../../lib/utils'
 
 /* ————————————————————————————————————————————
@@ -23,7 +24,7 @@ import { cn } from '../../lib/utils'
    from Explore (or added from the working set).
    ———————————————————————————————————————————— */
 
-type Template = 'scatter' | 'line' | 'bar' | 'coverage' | 'rover'
+type Template = 'scatter' | 'line' | 'bar' | 'coverage' | 'rover' | 'figures'
 
 const TEMPLATES: { id: Template; label: string; icon: React.ReactNode }[] = [
   { id: 'scatter', label: 'Scatter', icon: <ScatterIcon className="size-3.5" /> },
@@ -31,13 +32,22 @@ const TEMPLATES: { id: Template; label: string; icon: React.ReactNode }[] = [
   { id: 'bar', label: 'Bar', icon: <BarChart2 className="size-3.5" /> },
   { id: 'coverage', label: 'Coverage map', icon: <Grid3X3 className="size-3.5" /> },
   { id: 'rover', label: 'Rover O₂ coverage', icon: <Grid3X3 className="size-3.5" /> },
+  { id: 'figures', label: 'Evidence figures', icon: <BarChart2 className="size-3.5" /> },
 ]
 
 const PALETTE = ['#4da3ff', '#ffb454', '#3ad7a3', '#7a8bff', '#ff6b6b', '#9ad84a', '#e9eef5']
 
 export function VisualizeView() {
   const vizPreset = useAppStore((s) => s.vizPreset)
-  const [template, setTemplate] = useState<Template>(vizPreset === 'rover' ? 'rover' : 'scatter')
+  const [template, setTemplate] = useState<Template>(vizPreset === 'figures' ? 'figures' : vizPreset === 'rover' ? 'rover' : 'scatter')
+  // links from Analyze (agent reply, branch summary) open the evidence figures
+  const setVizPreset = useAppStore((s) => s.setVizPreset)
+  useEffect(() => {
+    if (vizPreset === 'figures' || vizPreset === 'rover') {
+      setTemplate(vizPreset)
+      setVizPreset(null) // one-shot: later visits keep the user's own choice
+    }
+  }, [vizPreset, setVizPreset])
   const [datasetId, setDatasetId] = useState<string | null>(null)
   const workingItems = useAppStore((s) => s.workingItems)
 
@@ -75,7 +85,7 @@ export function VisualizeView() {
           ))}
         </div>
 
-        <div className="ml-auto flex items-center gap-2">
+        <div className={cn('ml-auto flex items-center gap-2', (template === 'rover' || template === 'figures') && 'hidden')}>
           <label className="text-[11px] text-faint">Dataset</label>
           <select
             value={datasetId ?? ''}
@@ -93,7 +103,9 @@ export function VisualizeView() {
       </div>
 
       <div className="min-h-0 flex-1">
-        {template === 'rover' ? (
+        {template === 'figures' ? (
+          <EvidenceFigures />
+        ) : template === 'rover' ? (
           <RoverCoverage />
         ) : !dataset ? (
           <EmptyChart />

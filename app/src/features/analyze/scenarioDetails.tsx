@@ -570,11 +570,11 @@ export function BranchSummary({ session, branch }: { session: Session; branch: B
           className="w-full"
           onClick={() => {
             toWorkingSet()
-            setVizPreset('rover')
+            setVizPreset('figures')
             setView('visualize')
           }}
         >
-          <BarChart3 /> Condition-coverage plot
+          <BarChart3 /> Evidence figures
         </Button>
       </div>
     </div>

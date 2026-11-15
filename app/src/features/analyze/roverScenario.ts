@@ -867,7 +867,7 @@ export function nextActionsReply(sessionId: string): ScriptedReply {
       '\n\nI marked the uncovered condition on the canvas in red as an open issue.',
     chips: [{ nodeId: RV.gap, label: 'Evidence gap' }, { nodeId: RV.saffire2ds, label: 'SAFFIRE-2 table' }],
     hrefs: [{ label: 'Saffire-II report (PSI-99)', href: PSI_URL('PSI-99') }, { label: 'DOI 10.60555/2chp-m469', href: `https://doi.org/${DOI['PSI-99']}` }],
-    links: [{ view: 'visualize', label: 'Condition coverage in Visualize' }],
+    links: [{ view: 'visualize', label: 'Evidence figures in Visualize' }],
     highlight: [RV.gap],
   }
 }

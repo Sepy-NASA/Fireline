@@ -274,7 +274,7 @@ function Message({
             <button
               key={l.label}
               onClick={() => {
-                if (l.view === 'visualize') useAppStore.getState().setVizPreset('rover')
+                if (l.view === 'visualize') useAppStore.getState().setVizPreset('figures')
                 setView(l.view)
               }} className="text-xs text-teal hover:underline">
               {l.label} →
