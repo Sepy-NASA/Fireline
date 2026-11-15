@@ -1,0 +1,1414 @@
+# keywords for PSI-21 (score, weight, count, df, fields)
+smooke	114.815	44.000	19	3	hypothesis,people,publication
+long	107.312	56.000	24	7	hypothesis,objective,people,publication
+diffusion	98.267	61.500	23	10	approach,curated_keywords,hypothesis,objective,proposal_title,publication,research_impacts,title
+flames	89.494	69.500	25	14	approach,curated_keywords,hypothesis,objective,proposal_title,publication,research_impacts,sub_research_area
+coflow	83.751	38.000	14	5	hypothesis,objective,proposal_title,publication,title
+laminar	72.819	38.000	12	7	curated_keywords,hypothesis,proposal_title,publication,title
+marshall	67.845	26.000	11	3	people,publication
+flame	66.845	57.500	21	16	acronym,approach,curated_keywords,filenames,hypothesis,objective,publication,research_impacts,title
+bennett	57.942	20.000	8	2	publication
+connelly	57.795	17.500	7	1	publication
+soot	55.901	37.000	17	11	approach,hypothesis,objective,publication,research_impacts
+diffusion flames	53.328	33.375	17	10	approach,curated_keywords,hypothesis,objective,proposal_title,publication,research_impacts
+long marshall	48.927	18.750	10	3	publication
+computational	46.562	27.500	12	9	approach,hypothesis,objective,publication,research_impacts
+giassi	43.457	15.000	6	2	publication
+ma	43.457	15.000	6	2	publication
+mitchell	41.751	16.000	7	3	people,publication
+coflow laminar	41.099	15.750	7	3	hypothesis,proposal_title,publication,title
+experimental	39.683	29.250	14	13	approach,file_folders,filenames,hypothesis,objective,publication,research_impacts
+combustion	39.500	39.500	13	19	curated_keywords,experiment_hardware,hypothesis,publication,research_area,research_impacts,title
+laminar diffusion	39.203	19.125	7	6	curated_keywords,hypothesis,proposal_title,publication,title
+acme	38.947	19.000	4	6	acronym,approach,curated_keywords,experiment_hardware
+long smooke	36.938	12.750	7	2	hypothesis,publication
+cao	36.214	12.500	5	2	publication
+fuel dilution	35.852	12.375	7	2	objective,proposal_title,publication
+acme flame	34.765	12.000	3	2	acronym,approach,curated_keywords
+dilution	33.822	16.500	7	6	objective,proposal_title,publication
+computational experimental	31.506	10.875	6	2	publication,research_impacts
+sooting	29.829	12.500	6	4	approach,hypothesis,objective,publication
+microgravity	29.500	29.500	9	19	approach,curated_keywords,project_type,proposal_title,publication,research_impacts,title
+smooke mitchell	29.356	11.250	6	3	publication
+bin	28.971	10.000	4	2	publication
+coflow diffusion	28.378	10.875	6	3	objective,publication
+fuel	27.812	20.500	8	13	objective,proposal_title,publication,sub_research_area
+ch	27.399	10.500	5	3	approach,hypothesis,publication
+doi.org	26.421	8.000	4	1	hypothesis
+methane	25.346	11.500	5	5	approach,objective,publication
+colket	24.790	9.500	4	3	hypothesis,publication
+hall	24.790	9.500	4	3	hypothesis,publication
+dworkin	24.769	7.500	3	1	publication
+takahashi	23.863	10.000	4	4	publication
+interaction	23.118	7.000	3	1	publication,research_impacts
+ethylene	22.548	11.000	5	6	approach,hypothesis,objective,publication
+davide	21.728	7.500	3	2	publication
+ma bin	21.728	7.500	4	2	publication
+coflow laminar diffusion	21.511	7.425	4	2	hypothesis,proposal_title,publication,title
+computations	21.467	6.500	3	1	approach,publication
+diagnostics	20.280	7.000	3	2	approach,publication
+laser	20.280	7.000	3	2	approach,publication
+pyrometry	20.280	7.000	3	2	approach,publication
+diffusion flame	20.233	11.250	5	8	hypothesis,publication,title
+10.1016	19.816	6.000	3	1	hypothesis
+walsh	19.816	6.000	3	1	hypothesis
+miller	19.571	7.500	3	3	publication
+laminar diffusion flames	18.789	8.525	4	5	curated_keywords,hypothesis,proposal_title,publication
+rack	18.625	11.000	2	9	curated_keywords,experiment_hardware
+stocker	18.625	11.000	5	9	people,publication
+connelly long	18.577	5.625	3	1	publication
+effects	18.315	13.500	6	13	publication,research_impacts
+gravity	18.028	14.000	6	14	publication,research_impacts
+temperatures	17.985	10.000	5	8	approach,objective
+air	17.885	12.500	5	12	publication
+hall colket	17.339	5.250	3	1	hypothesis,publication
+smooke hall	17.339	5.250	3	1	hypothesis,publication
+integrated	16.619	11.000	2	11	curated_keywords,experiment_hardware
+blair	16.513	5.000	2	1	publication
+kempema	16.513	5.000	2	1	publication
+nathan	16.513	5.000	2	1	publication
+puccio	16.513	5.000	2	1	publication
+schaffer	16.513	5.000	2	1	publication
+time-dependent	16.513	5.000	2	1	publication
+giassi davide	16.296	5.625	3	2	publication
+mitchell long	16.296	5.625	3	2	publication
+stocker takahashi	16.296	5.625	3	2	publication
+experimental computational	16.107	6.750	4	4	hypothesis,publication
+coflow diffusion flames	15.137	5.225	4	2	objective,publication
+doi.org 10.1016	14.862	4.500	3	1	hypothesis
+microgravity coflow	14.862	4.500	1	1	title
+thin-filament	14.862	4.500	2	1	approach,publication
+marshall smooke	14.678	5.625	3	3	publication
+anne	14.486	5.000	2	2	publication
+beth	14.486	5.000	2	2	publication
+inlet	14.486	5.000	2	2	publication
+su	14.486	5.000	2	2	publication
+laminar diffusion flame	14.352	5.500	3	3	hypothesis,title
+oh	14.318	6.000	3	4	approach,hypothesis
+normal	14.066	11.500	5	15	publication,research_impacts
+combustion integrated	13.968	8.250	2	9	curated_keywords,experiment_hardware
+integrated rack	13.968	8.250	2	9	curated_keywords,experiment_hardware
+connelly long smooke	13.623	4.125	3	1	publication
+dilution coflow	13.623	4.125	2	1	proposal_title,publication
+velocity	13.597	9.000	4	11	objective,publication
+advanced	13.582	8.500	2	10	publication,title
+measurements	13.582	8.500	4	10	approach,publication
+a-x	13.210	4.000	2	1	hypothesis
+dilute	13.210	4.000	2	1	approach
+fielding	13.210	4.000	2	1	hypothesis
+lift-off	13.210	4.000	2	1	approach,objective
+proceedings	13.210	4.000	2	1	hypothesis
+s0082-0784	13.210	4.000	2	1	hypothesis
+tendencies	13.210	4.000	2	1	approach,objective
+dobbins	13.047	5.000	2	3	publication
+forced	13.047	5.000	2	3	publication
+methane-air	13.047	5.000	2	3	publication
+extinction	12.783	8.000	4	10	approach,objective,research_impacts
+smooke hall colket	12.715	3.850	3	1	hypothesis,publication
+blair smooke	12.385	3.750	2	1	publication
+connelly blair	12.385	3.750	2	1	publication
+ethylene air	12.385	3.750	2	1	publication
+forced time-dependent	12.385	3.750	2	1	publication
+kempema nathan	12.385	3.750	2	1	publication
+smooke puccio	12.385	3.750	2	1	publication
+shape	12.299	6.000	3	6	approach,objective
+mitchell long marshall	11.951	4.125	3	2	publication
+smooke mitchell long	11.951	4.125	3	2	publication
+non-premixed	11.931	5.000	2	4	publication
+release	11.931	5.000	2	4	publication
+formation	11.852	7.000	3	9	publication,research_impacts
+computation	11.742	4.500	2	3	hypothesis,publication
+flame shape	11.742	4.500	3	3	approach,objective
+axisymmetric	11.588	4.000	2	2	hypothesis
+luminosity	11.588	4.000	2	2	approach,objective
+flames microgravity	11.530	5.625	3	6	proposal_title,publication,research_impacts
+smooke long	11.146	3.375	2	1	hypothesis,publication
+thin-filament pyrometry	11.146	3.375	2	1	approach,publication
+imaging	11.020	5.000	2	5	publication
+richard	11.020	5.000	2	5	publication
+combustion microgravity coflow	10.899	3.300	1	1	title
+microgravity coflow laminar	10.899	3.300	1	1	title
+air diffusion	10.864	3.750	2	2	publication
+bennett beth	10.864	3.750	2	2	publication
+bennett giassi	10.864	3.750	2	2	publication
+beth anne	10.864	3.750	2	2	publication
+cao ma	10.864	3.750	2	2	publication
+cao su	10.864	3.750	2	2	publication
+dilution inlet	10.864	3.750	2	2	publication
+effects fuel	10.864	3.750	2	2	publication
+experimental coflow	10.864	3.750	2	2	publication
+giassi stocker	10.864	3.750	2	2	publication
+inlet velocity	10.864	3.750	2	2	publication
+laminar methane	10.864	3.750	2	2	publication
+ma bennett	10.864	3.750	2	2	publication
+release rate	10.864	3.750	2	2	publication
+takahashi long	10.864	3.750	2	2	publication
+velocity gravity	10.864	3.750	2	2	publication
+fuels	10.853	8.000	1	13	curated_keywords
+processes	10.791	6.000	3	8	approach,research_impacts
+long marshall smooke	10.764	4.125	3	3	publication
+marshall smooke mitchell	10.764	4.125	3	3	publication
+characterize	10.438	4.000	2	3	objective
+forces	10.438	4.000	2	3	research_impacts
+fractions	10.438	4.000	2	3	approach,objective
+goals	10.438	4.000	2	3	approach
+measured	10.438	4.000	2	3	approach
+species	10.438	4.000	2	3	approach,hypothesis
+combustion integrated rack	10.244	6.050	2	9	curated_keywords,experiment_hardware
+models	10.159	6.000	3	9	approach,hypothesis,objective
+understanding	10.159	6.000	3	9	research_impacts
+microgravity environment	10.061	5.250	3	7	approach,proposal_title,research_impacts
+soot formation	10.061	5.250	3	7	publication,research_impacts
+environment	10.015	7.000	3	12	approach,proposal_title,research_impacts
+dilution coflow laminar	9.990	3.025	2	1	proposal_title,publication
+fuel dilution coflow	9.990	3.025	2	1	proposal_title,publication
+10.1016 s0082-0784	9.908	3.000	2	1	hypothesis
+axisymmetric laminar	9.908	3.000	2	1	hypothesis
+combustion institute	9.908	3.000	2	1	hypothesis
+dilute flames	9.908	3.000	2	1	approach
+dilution measurement	9.908	3.000	2	1	objective
+ethylene diffusion	9.908	3.000	2	1	approach,hypothesis
+function velocity	9.908	3.000	2	1	objective
+measurement flame	9.908	3.000	2	1	objective
+practical combustion	9.908	3.000	2	1	research_impacts
+proceedings combustion	9.908	3.000	2	1	hypothesis
+soot luminosity	9.908	3.000	2	1	approach,objective
+soot temperatures	9.908	3.000	2	1	approach,objective
+sooting tendencies	9.908	3.000	2	1	approach,objective
+temperatures soot	9.908	3.000	2	1	approach,objective
+volume fractions	9.908	3.000	2	1	approach,objective
+walsh long	9.908	3.000	2	1	hypothesis
+diffusion flames microgravity	9.843	4.125	3	4	proposal_title,publication,research_impacts
+computational soot	9.785	3.750	2	3	publication
+dobbins richard	9.785	3.750	2	3	publication
+flames effects	9.785	3.750	2	3	publication
+heat release	9.785	3.750	2	3	publication
+laminar coflow	9.785	3.750	2	3	publication
+methane air	9.785	3.750	2	3	publication
+devices	9.545	4.000	2	4	research_impacts
+institute	9.545	4.000	2	4	hypothesis
+made	9.545	4.000	2	4	approach
+range	9.224	4.500	2	6	approach,publication
+normal gravity	9.158	6.750	4	13	publication,research_impacts
+blair smooke mitchell	9.082	2.750	2	1	publication
+coflow diffusion flame	9.082	2.750	2	1	publication
+connelly blair smooke	9.082	2.750	2	1	publication
+long smooke hall	9.082	2.750	2	1	publication
+long smooke puccio	9.082	2.750	2	1	publication
+conditions	8.818	6.500	3	13	approach,publication,research_impacts
+following	8.816	4.000	2	5	hypothesis,objective
+important	8.816	4.000	2	5	approach,research_impacts
+volume	8.816	4.000	2	5	approach,objective
+combustion devices	8.691	3.000	2	2	research_impacts
+gaseous fuel	8.691	3.000	1	2	sub_research_area
+velocity fuel	8.691	3.000	2	2	objective
+advanced combustion	8.623	4.500	1	7	title
+microgravity normal	8.265	3.750	2	5	publication
+absolute	8.256	2.500	1	1	publication
+averaging	8.256	2.500	1	1	publication
+ba	8.256	2.500	1	1	publication
+calculations	8.256	2.500	1	1	publication
+color-ratio	8.256	2.500	1	1	publication
+constrained-temperature	8.256	2.500	1	1	publication
+cooke	8.256	2.500	1	1	publication
+distributed-memory	8.256	2.500	1	1	publication
+herdman	8.256	2.500	1	1	publication
+houston	8.256	2.500	1	1	publication
+improvements	8.256	2.500	1	1	publication
+incandescence	8.256	2.500	1	1	publication
+jennifer	8.256	2.500	1	1	publication
+kuhn	8.256	2.500	1	1	publication
+light	8.256	2.500	1	1	publication
+mcandrew	8.256	2.500	1	1	publication
+mcandrews	8.256	2.500	1	1	publication
+paradigm	8.256	2.500	1	1	publication
+parallel	8.256	2.500	1	1	publication
+raman	8.256	2.500	1	1	publication
+s-type	8.256	2.500	1	1	publication
+self-absorption	8.256	2.500	1	1	publication
+signal-to-noise	8.256	2.500	1	1	publication
+signatures	8.256	2.500	1	1	publication
+snapshots	8.256	2.500	1	1	publication
+solutions	8.256	2.500	1	1	publication
+time-resolved	8.256	2.500	1	1	publication
+chemical	8.199	4.000	2	6	approach,research_impacts
+critical	8.199	4.000	2	6	research_impacts
+improved	8.199	4.000	2	6	approach
+kinetics	8.199	4.000	2	6	approach,research_impacts
+practical	8.199	4.000	2	6	research_impacts
+numerical	8.093	4.500	2	8	publication,research_impacts
+air diffusion flames	7.967	2.750	2	2	publication
+bennett beth anne	7.967	2.750	2	2	publication
+bennett giassi stocker	7.967	2.750	2	2	publication
+cao ma bennett	7.967	2.750	2	2	publication
+coflow laminar methane	7.967	2.750	2	2	publication
+computational experimental coflow	7.967	2.750	2	2	publication
+diffusion flames effects	7.967	2.750	2	2	publication
+dilution inlet velocity	7.967	2.750	2	2	publication
+effects fuel dilution	7.967	2.750	2	2	publication
+experimental coflow laminar	7.967	2.750	2	2	publication
+flames effects fuel	7.967	2.750	2	2	publication
+flames microgravity environment	7.967	2.750	2	2	proposal_title,research_impacts
+fuel dilution inlet	7.967	2.750	2	2	publication
+giassi stocker takahashi	7.967	2.750	2	2	publication
+heat release rate	7.967	2.750	2	2	publication
+inlet velocity gravity	7.967	2.750	2	2	publication
+laminar coflow diffusion	7.967	2.750	2	2	publication
+laminar methane air	7.967	2.750	2	2	publication
+ma bennett giassi	7.967	2.750	2	2	publication
+methane air diffusion	7.967	2.750	2	2	publication
+stocker takahashi long	7.967	2.750	2	2	publication
+takahashi long smooke	7.967	2.750	2	2	publication
+detailed	7.665	4.000	2	7	research_impacts
+combustion microgravity	7.619	4.500	1	9	title
+axisymmetric laminar diffusion	7.266	2.200	2	1	hypothesis
+dilution measurement flame	7.266	2.200	2	1	objective
+doi.org 10.1016 s0082-0784	7.266	2.200	2	1	hypothesis
+ethylene diffusion flames	7.266	2.200	2	1	approach,hypothesis
+flames gaseous fuel	7.266	2.200	1	1	sub_research_area
+fuel dilution measurement	7.266	2.200	2	1	objective
+function velocity fuel	7.266	2.200	2	1	objective
+measurement flame shape	7.266	2.200	2	1	objective
+practical combustion devices	7.266	2.200	2	1	research_impacts
+proceedings combustion institute	7.266	2.200	2	1	hypothesis
+soot temperatures soot	7.266	2.200	2	1	approach,objective
+soot volume fractions	7.266	2.200	2	1	approach,objective
+temperatures soot volume	7.266	2.200	2	1	approach,objective
+velocity fuel dilution	7.266	2.200	2	1	objective
+digital	7.243	2.500	1	2	publication
+formaldehyde	7.243	2.500	1	2	publication
+fumiaki	7.243	2.500	1	2	publication
+implications	7.243	2.500	1	2	publication
+mb	7.243	2.500	1	2	publication
+ratio	7.243	2.500	1	2	publication
+shift	7.243	2.500	1	2	publication
+available	7.194	4.000	2	8	approach,hypothesis
+function	7.194	4.000	2	8	objective
+gaseous	7.194	4.000	1	8	sub_research_area
+measurement	7.194	4.000	2	8	objective
+computational soot formation	7.176	2.750	2	3	publication
+experimental computational soot	7.176	2.750	2	3	publication
+computational models	7.159	3.000	2	4	approach,objective
+soot volume	7.159	3.000	2	4	approach,objective
+heat	7.154	5.000	2	12	publication
+rate	6.783	5.000	2	13	publication
+advanced combustion microgravity	6.764	3.300	1	6	title
+dennis	6.707	3.500	2	7	people,publication
+extinction limits	6.612	3.000	2	5	approach,objective
+flames gaseous	6.612	3.000	1	5	sub_research_area
+methane ethylene	6.612	3.000	2	5	approach,objective
+00112-7	6.605	2.000	1	1	hypothesis
+10.1088	6.605	2.000	1	1	hypothesis
+1364-7830	6.605	2.000	1	1	hypothesis
+172-175	6.605	2.000	1	1	hypothesis
+1973-1979	6.605	2.000	1	1	hypothesis
+593-606	6.605	2.000	1	1	hypothesis
+615-623	6.605	2.000	1	1	hypothesis
+80453-0	6.605	2.000	1	1	hypothesis
+80603-7	6.605	2.000	1	1	hypothesis
+ability	6.605	2.000	1	1	research_impacts
+achieving	6.605	2.000	1	1	approach
+apply	6.605	2.000	1	1	research_impacts
+approached	6.605	2.000	1	1	approach
+bench	6.605	2.000	1	1	hypothesis
+chemiluminesence	6.605	2.000	1	1	approach
+complicate	6.605	2.000	1	1	research_impacts
+coupled	6.605	2.000	1	1	research_impacts
+crosley	6.605	2.000	1	1	hypothesis
+dominate	6.605	2.000	1	1	research_impacts
+eliminate	6.605	2.000	1	1	research_impacts
+enhanced	6.605	2.000	1	1	approach
+experimentally	6.605	2.000	1	1	approach
+extremes	6.605	2.000	1	1	objective
+factors	6.605	2.000	1	1	research_impacts
+fuel-rich	6.605	2.000	1	1	approach
+gathering	6.605	2.000	1	1	hypothesis
+hard	6.605	2.000	1	1	research_impacts
+heavily	6.605	2.000	1	1	hypothesis
+heights	6.605	2.000	1	1	objective
+insight	6.605	2.000	1	1	approach
+jeffries	6.605	2.000	1	1	hypothesis
+lightly	6.605	2.000	1	1	hypothesis
+loading	6.605	2.000	1	1	approach
+luque	6.605	2.000	1	1	hypothesis
+mark	6.605	2.000	1	1	hypothesis
+match	6.605	2.000	1	1	approach
+mcenally	6.605	2.000	1	1	hypothesis
+mined	6.605	2.000	1	1	approach
+momentum	6.605	2.000	1	1	research_impacts
+momentum-dominated	6.605	2.000	1	1	research_impacts
+non-sooting	6.605	2.000	1	1	approach
+optical	6.605	2.000	1	1	hypothesis
+pfefferle	6.605	2.000	1	1	hypothesis
+place	6.605	2.000	1	1	research_impacts
+publications	6.605	2.000	1	1	hypothesis
+reacting	6.605	2.000	1	1	research_impacts
+s0010-2180	6.605	2.000	1	1	hypothesis
+scales	6.605	2.000	1	1	approach
+smith	6.605	2.000	1	1	hypothesis
+spatial	6.605	2.000	1	1	approach
+spectrum	6.605	2.000	1	1	objective
+sub-models	6.605	2.000	1	1	approach
+tanoff	6.605	2.000	1	1	hypothesis
+tools	6.605	2.000	1	1	research_impacts
+vol	6.605	2.000	1	1	hypothesis
+calibration	6.524	2.500	1	3	publication
+combined	6.524	2.500	1	3	publication
+concentrations	6.524	2.500	1	3	publication
+direct	6.524	2.500	1	3	publication
+dynamic	6.524	2.500	1	3	publication
+joseph	6.524	2.500	1	3	publication
+meredith	6.524	2.500	1	3	publication
+n2	6.524	2.500	1	3	publication
+robert	6.524	2.500	1	3	publication
+squeo	6.524	2.500	1	3	publication
+tinjero	6.524	2.500	1	3	publication
+xinyu	6.524	2.500	1	3	publication
+absolute light	6.192	1.875	1	1	publication
+advanced laser	6.192	1.875	1	1	publication
+air non-premixed	6.192	1.875	1	1	publication
+anne long	6.192	1.875	1	1	publication
+averaging high	6.192	1.875	1	1	publication
+ba bennett	6.192	1.875	1	1	publication
+bennett connelly	6.192	1.875	1	1	publication
+bennett dp	6.192	1.875	1	1	publication
+bennett long	6.192	1.875	1	1	publication
+bennett smooke	6.192	1.875	1	1	publication
+bin connelly	6.192	1.875	1	1	publication
+bin giassi	6.192	1.875	1	1	publication
+bin long	6.192	1.875	1	1	publication
+calculations formaldehyde	6.192	1.875	1	1	publication
+calibration s-type	6.192	1.875	1	1	publication
+cao ba	6.192	1.875	1	1	publication
+color digital	6.192	1.875	1	1	publication
+color-ratio pyrometry	6.192	1.875	1	1	publication
+comparison raman	6.192	1.875	1	1	publication
+computation forced	6.192	1.875	1	1	publication
+computations combustion	6.192	1.875	1	1	publication
+concentrations methane	6.192	1.875	1	1	publication
+connelly bennett	6.192	1.875	1	1	publication
+connelly schaffer	6.192	1.875	1	1	publication
+constrained-temperature solutions	6.192	1.875	1	1	publication
+cooke bennett	6.192	1.875	1	1	publication
+davide bennett	6.192	1.875	1	1	publication
+davide long	6.192	1.875	1	1	publication
+diagnostics snapshots	6.192	1.875	1	1	publication
+diagnostics time-resolved	6.192	1.875	1	1	publication
+digital camera	6.192	1.875	1	1	publication
+distributed-memory parallel	6.192	1.875	1	1	publication
+dworkin connelly	6.192	1.875	1	1	publication
+dworkin cooke	6.192	1.875	1	1	publication
+dworkin schaffer	6.192	1.875	1	1	publication
+dynamic range	6.192	1.875	1	1	publication
+effect soot	6.192	1.875	1	1	publication
+effects pressure	6.192	1.875	1	1	publication
+experimental forced	6.192	1.875	1	1	publication
+experimental interaction	6.192	1.875	1	1	publication
+flame implications	6.192	1.875	1	1	publication
+flames advanced	6.192	1.875	1	1	publication
+flow diagnostics	6.192	1.875	1	1	publication
+formaldehyde concentrations	6.192	1.875	1	1	publication
+giassi cao	6.192	1.875	1	1	publication
+growth non-premixed	6.192	1.875	1	1	publication
+herdman jennifer	6.192	1.875	1	1	publication
+high dynamic	6.192	1.875	1	1	publication
+image averaging	6.192	1.875	1	1	publication
+imaging flames	6.192	1.875	1	1	publication
+implications heat	6.192	1.875	1	1	publication
+improvements laser	6.192	1.875	1	1	publication
+incandescence direct	6.192	1.875	1	1	publication
+interaction computations	6.192	1.875	1	1	publication
+interaction soot	6.192	1.875	1	1	publication
+jennifer connelly	6.192	1.875	1	1	publication
+kuhn peter	6.192	1.875	1	1	publication
+laminar methane-air	6.192	1.875	1	1	publication
+laser diagnostics	6.192	1.875	1	1	publication
+laser flow	6.192	1.875	1	1	publication
+laser-induced incandescence	6.192	1.875	1	1	publication
+light calibration	6.192	1.875	1	1	publication
+marshall miller	6.192	1.875	1	1	publication
+mcandrew miller	6.192	1.875	1	1	publication
+mcandrews miller	6.192	1.875	1	1	publication
+measurements calculations	6.192	1.875	1	1	publication
+methane n2	6.192	1.875	1	1	publication
+methane-air coflow	6.192	1.875	1	1	publication
+miller houston	6.192	1.875	1	1	publication
+n2 air	6.192	1.875	1	1	publication
+nathan dobbins	6.192	1.875	1	1	publication
+nathan long	6.192	1.875	1	1	publication
+non-premixed ethylene	6.192	1.875	1	1	publication
+paradigm shift	6.192	1.875	1	1	publication
+parallel computation	6.192	1.875	1	1	publication
+peter ma	6.192	1.875	1	1	publication
+puccio mcandrew	6.192	1.875	1	1	publication
+puccio mcandrews	6.192	1.875	1	1	publication
+pyrometry color	6.192	1.875	1	1	publication
+pyrometry laminar	6.192	1.875	1	1	publication
+raman signatures	6.192	1.875	1	1	publication
+range imaging	6.192	1.875	1	1	publication
+ratio improvements	6.192	1.875	1	1	publication
+richard long	6.192	1.875	1	1	publication
+s-type thermocouples	6.192	1.875	1	1	publication
+schaffer bennett	6.192	1.875	1	1	publication
+schaffer connelly	6.192	1.875	1	1	publication
+self-absorption color-ratio	6.192	1.875	1	1	publication
+shift interaction	6.192	1.875	1	1	publication
+signal-to-noise ratio	6.192	1.875	1	1	publication
+signatures laser-induced	6.192	1.875	1	1	publication
+simulation soot	6.192	1.875	1	1	publication
+smooke mb	6.192	1.875	1	1	publication
+solutions coflow	6.192	1.875	1	1	publication
+soot coflow	6.192	1.875	1	1	publication
+soot growth	6.192	1.875	1	1	publication
+soot self-absorption	6.192	1.875	1	1	publication
+soot thin-filament	6.192	1.875	1	1	publication
+sooting ethylene	6.192	1.875	1	1	publication
+su ma	6.192	1.875	1	1	publication
+takahashi smooke	6.192	1.875	1	1	publication
+time-dependent methane-air	6.192	1.875	1	1	publication
+time-dependent sooting	6.192	1.875	1	1	publication
+time-resolved image	6.192	1.875	1	1	publication
+high	6.105	4.500	2	13	approach,publication
+microgravity normal gravity	6.061	2.750	2	5	publication
+dp	5.966	2.500	1	4	publication
+jesse	5.966	2.500	1	4	publication
+laser-induced	5.966	2.500	1	4	publication
+agreement	5.794	2.000	1	2	approach
+co-flow	5.794	2.000	1	2	hypothesis
+contribution	5.794	2.000	1	2	research_impacts
+directly	5.794	2.000	1	2	approach
+effective	5.794	2.000	1	2	approach
+engine	5.794	2.000	1	2	research_impacts
+focused	5.794	2.000	1	2	hypothesis
+gravitational	5.794	2.000	1	2	research_impacts
+height	5.794	2.000	1	2	approach
+investigated	5.794	2.000	1	2	approach
+modelling	5.794	2.000	1	2	hypothesis
+modifications	5.794	2.000	1	2	approach
+non-buoyant	5.794	2.000	1	2	hypothesis
+portion	5.794	2.000	1	2	objective
+predict	5.794	2.000	1	2	research_impacts
+regions	5.794	2.000	1	2	approach
+rigorous	5.794	2.000	1	2	objective
+sophisticated	5.794	2.000	1	2	research_impacts
+take	5.794	2.000	1	2	research_impacts
+techniques	5.794	2.000	1	2	research_impacts
+towards	5.794	2.000	1	2	hypothesis
+type	5.794	2.000	1	2	research_impacts
+variations	5.794	2.000	1	2	approach
+vary	5.794	2.000	1	2	approach
+limits	5.723	4.000	2	12	approach,objective
+color	5.510	2.500	1	5	publication
+effect	5.510	2.500	1	5	publication
+peter	5.510	2.500	1	5	publication
+simulation	5.510	2.500	1	5	publication
+zhao	5.510	2.500	1	5	publication
+air coflow	5.432	1.875	1	2	publication
+air flames	5.432	1.875	1	2	publication
+analysis ch	5.432	1.875	1	2	publication
+anne smooke	5.432	1.875	1	2	publication
+bin cao	5.432	1.875	1	2	publication
+ch concentration	5.432	1.875	1	2	publication
+coflow jet	5.432	1.875	1	2	publication
+concentration flame	5.432	1.875	1	2	publication
+davide stocker	5.432	1.875	1	2	publication
+dennis takahashi	5.432	1.875	1	2	publication
+direct numerical	5.432	1.875	1	2	publication
+flames computational	5.432	1.875	1	2	publication
+formation coflow	5.432	1.875	1	2	publication
+fumiaki bennett	5.432	1.875	1	2	publication
+mb long	5.432	1.875	1	2	publication
+non-premixed flame	5.432	1.875	1	2	publication
+pressure fuel	5.432	1.875	1	2	publication
+rate laminar	5.432	1.875	1	2	publication
+su giassi	5.432	1.875	1	2	publication
+takahashi fumiaki	5.432	1.875	1	2	publication
+cir acme	5.369	2.250	1	4	experiment_hardware
+diagnostic	5.219	2.000	1	3	research_impacts
+emission	5.219	2.000	1	3	hypothesis
+good	5.219	2.000	1	3	approach
+observations	5.219	2.000	1	3	approach
+order	5.219	2.000	1	3	objective
+overall	5.219	2.000	1	3	approach
+soot-free	5.219	2.000	1	3	objective
+transfer	5.219	2.000	1	3	research_impacts
+transition	5.219	2.000	1	3	hypothesis
+turbulent	5.219	2.000	1	3	research_impacts
+weak	5.219	2.000	1	3	objective
+camera	5.125	2.500	1	6	publication
+thermocouples	5.125	2.500	1	6	publication
+cir	5.079	3.000	1	9	experiment_hardware
+00112-7 walsh	4.954	1.500	1	1	hypothesis
+10.1016 s0010-2180	4.954	1.500	1	1	hypothesis
+10.1088 1364-7830	4.954	1.500	1	1	hypothesis
+1364-7830 luque	4.954	1.500	1	1	hypothesis
+172-175 doi.org	4.954	1.500	1	1	hypothesis
+1973-1979 doi.org	4.954	1.500	1	1	hypothesis
+593-606 doi.org	4.954	1.500	1	1	hypothesis
+615-623 doi.org	4.954	1.500	1	1	hypothesis
+80603-7 walsh	4.954	1.500	1	1	hypothesis
+a-x oh	4.954	1.500	1	1	hypothesis
+a-x optical	4.954	1.500	1	1	hypothesis
+ability predict	4.954	1.500	1	1	research_impacts
+achieving goals	4.954	1.500	1	1	approach
+addition understanding	4.954	1.500	1	1	research_impacts
+agreement measurements	4.954	1.500	1	1	approach
+apply sophisticated	4.954	1.500	1	1	research_impacts
+approached sooting	4.954	1.500	1	1	approach
+available following	4.954	1.500	1	1	hypothesis
+available proposed	4.954	1.500	1	1	approach
+behavior weak	4.954	1.500	1	1	objective
+bench mark	4.954	1.500	1	1	hypothesis
+better experimental	4.954	1.500	1	1	approach
+buoyant non-buoyant	4.954	1.500	1	1	hypothesis
+ch a-x	4.954	1.500	1	1	hypothesis
+ch ch	4.954	1.500	1	1	hypothesis
+ch observe	4.954	1.500	1	1	approach
+ch oh	4.954	1.500	1	1	hypothesis
+characterize behavior	4.954	1.500	1	1	objective
+characterize sooting	4.954	1.500	1	1	objective
+chemical processes	4.954	1.500	1	1	approach
+chemiluminesence oh	4.954	1.500	1	1	approach
+chemistry momentum-dominated	4.954	1.500	1	1	research_impacts
+co-flow ethylene	4.954	1.500	1	1	hypothesis
+colket fielding	4.954	1.500	1	1	hypothesis
+combustion important	4.954	1.500	1	1	research_impacts
+combustion theory	4.954	1.500	1	1	hypothesis
+complex transport	4.954	1.500	1	1	research_impacts
+complicate interpretation	4.954	1.500	1	1	research_impacts
+computation models	4.954	1.500	1	1	hypothesis
+computational ch	4.954	1.500	1	1	hypothesis
+computational temperature	4.954	1.500	1	1	hypothesis
+computations good	4.954	1.500	1	1	approach
+computations mined	4.954	1.500	1	1	approach
+conditions dilute	4.954	1.500	1	1	approach
+contribution buoyancy	4.954	1.500	1	1	research_impacts
+convection diffusion	4.954	1.500	1	1	research_impacts
+coupled effects	4.954	1.500	1	1	research_impacts
+critical modeling	4.954	1.500	1	1	research_impacts
+critical suppression	4.954	1.500	1	1	research_impacts
+crosley walsh	4.954	1.500	1	1	hypothesis
+detailed understanding	4.954	1.500	1	1	research_impacts
+details available	4.954	1.500	1	1	hypothesis
+determine soot	4.954	1.500	1	1	approach
+devices ability	4.954	1.500	1	1	research_impacts
+devices contribution	4.954	1.500	1	1	research_impacts
+diagnostic techniques	4.954	1.500	1	1	research_impacts
+diagnostics available	4.954	1.500	1	1	approach
+diffusion chemistry	4.954	1.500	1	1	research_impacts
+dilution spectrum	4.954	1.500	1	1	objective
+directly diagnostics	4.954	1.500	1	1	approach
+doi.org 10.1088	4.954	1.500	1	1	hypothesis
+dominate practical	4.954	1.500	1	1	research_impacts
+effective dilute	4.954	1.500	1	1	approach
+effects complex	4.954	1.500	1	1	research_impacts
+effects dominate	4.954	1.500	1	1	research_impacts
+effects gravitational	4.954	1.500	1	1	research_impacts
+efficiency normal	4.954	1.500	1	1	research_impacts
+eliminate normal	4.954	1.500	1	1	research_impacts
+emission axisymmetric	4.954	1.500	1	1	hypothesis
+engine efficiency	4.954	1.500	1	1	research_impacts
+enhanced time	4.954	1.500	1	1	approach
+environment important	4.954	1.500	1	1	approach
+environment lead	4.954	1.500	1	1	research_impacts
+ethylene function	4.954	1.500	1	1	objective
+experimental momentum	4.954	1.500	1	1	research_impacts
+experimental needed	4.954	1.500	1	1	objective
+experimental overall	4.954	1.500	1	1	approach
+experimentally plan	4.954	1.500	1	1	approach
+extinction diffusion	4.954	1.500	1	1	research_impacts
+extinction measurements	4.954	1.500	1	1	approach
+extremes fuel	4.954	1.500	1	1	objective
+factors affect	4.954	1.500	1	1	research_impacts
+fielding long	4.954	1.500	1	1	hypothesis
+fielding smooke	4.954	1.500	1	1	hypothesis
+fires improving	4.954	1.500	1	1	research_impacts
+flame 172-175	4.954	1.500	1	1	hypothesis
+flame chemiluminesence	4.954	1.500	1	1	approach
+flame goals	4.954	1.500	1	1	approach
+flame proceedings	4.954	1.500	1	1	hypothesis
+flame soot	4.954	1.500	1	1	objective
+flame temperatures	4.954	1.500	1	1	approach
+flame type	4.954	1.500	1	1	research_impacts
+flames combustion	4.954	1.500	1	1	hypothesis
+flames critical	4.954	1.500	1	1	research_impacts
+flames investigated	4.954	1.500	1	1	approach
+flames long	4.954	1.500	1	1	objective
+flames measurements	4.954	1.500	1	1	approach
+flames methane	4.954	1.500	1	1	objective
+flames proceedings	4.954	1.500	1	1	hypothesis
+flames vary	4.954	1.500	1	1	approach
+flows understanding	4.954	1.500	1	1	research_impacts
+focused gathering	4.954	1.500	1	1	hypothesis
+following objectives	4.954	1.500	1	1	objective
+following publications	4.954	1.500	1	1	hypothesis
+forces complicate	4.954	1.500	1	1	research_impacts
+forces hard	4.954	1.500	1	1	research_impacts
+formation radiative	4.954	1.500	1	1	research_impacts
+fractions flame	4.954	1.500	1	1	approach
+fuel-rich flames	4.954	1.500	1	1	approach
+gas temperatures	4.954	1.500	1	1	objective
+gathering bench	4.954	1.500	1	1	hypothesis
+generation improved	4.954	1.500	1	1	approach
+goal apply	4.954	1.500	1	1	research_impacts
+goals experimentally	4.954	1.500	1	1	approach
+goals generation	4.954	1.500	1	1	approach
+good computations	4.954	1.500	1	1	approach
+gravitational forces	4.954	1.500	1	1	research_impacts
+gravity goal	4.954	1.500	1	1	research_impacts
+hard eliminate	4.954	1.500	1	1	research_impacts
+heavily sooting	4.954	1.500	1	1	hypothesis
+height flame	4.954	1.500	1	1	approach
+heights temperatures	4.954	1.500	1	1	objective
+high soot	4.954	1.500	1	1	approach
+hydrocarbon diffusion	4.954	1.500	1	1	research_impacts
+hypothesis computation	4.954	1.500	1	1	hypothesis
+important achieving	4.954	1.500	1	1	approach
+important combustion	4.954	1.500	1	1	research_impacts
+improved computational	4.954	1.500	1	1	approach
+improved soot	4.954	1.500	1	1	approach
+improving engine	4.954	1.500	1	1	research_impacts
+insight species	4.954	1.500	1	1	approach
+institute 1973-1979	4.954	1.500	1	1	hypothesis
+institute vol	4.954	1.500	1	1	hypothesis
+interaction convection	4.954	1.500	1	1	research_impacts
+interpretation computational	4.954	1.500	1	1	research_impacts
+investigated soot	4.954	1.500	1	1	approach
+jeffries smith	4.954	1.500	1	1	hypothesis
+kinetics soot	4.954	1.500	1	1	approach
+kinetics systems	4.954	1.500	1	1	research_impacts
+laser extinction	4.954	1.500	1	1	approach
+lead detailed	4.954	1.500	1	1	research_impacts
+levels enhanced	4.954	1.500	1	1	approach
+lift-off height	4.954	1.500	1	1	approach
+lift-off heights	4.954	1.500	1	1	objective
+lightly sooting	4.954	1.500	1	1	hypothesis
+limits approached	4.954	1.500	1	1	approach
+limits characterize	4.954	1.500	1	1	objective
+loading levels	4.954	1.500	1	1	approach
+long experimental	4.954	1.500	1	1	hypothesis
+long mcenally	4.954	1.500	1	1	hypothesis
+long residence	4.954	1.500	1	1	objective
+long tanoff	4.954	1.500	1	1	hypothesis
+luminosity laser	4.954	1.500	1	1	approach
+luque jeffries	4.954	1.500	1	1	hypothesis
+made flame	4.954	1.500	1	1	approach
+made kinetics	4.954	1.500	1	1	approach
+mark validate	4.954	1.500	1	1	hypothesis
+match better	4.954	1.500	1	1	approach
+mcenally pfefferle	4.954	1.500	1	1	hypothesis
+measured directly	4.954	1.500	1	1	approach
+measured thin-filament	4.954	1.500	1	1	approach
+measurements computations	4.954	1.500	1	1	approach
+measurements determine	4.954	1.500	1	1	approach
+mined insight	4.954	1.500	1	1	approach
+model match	4.954	1.500	1	1	approach
+modeling turbulent	4.954	1.500	1	1	research_impacts
+modelling 593-606	4.954	1.500	1	1	hypothesis
+models details	4.954	1.500	1	1	hypothesis
+models extremes	4.954	1.500	1	1	objective
+models improved	4.954	1.500	1	1	approach
+modifications made	4.954	1.500	1	1	approach
+momentum effects	4.954	1.500	1	1	research_impacts
+momentum-dominated conditions	4.954	1.500	1	1	research_impacts
+needed rigorous	4.954	1.500	1	1	objective
+nnx07ab33a	4.954	1.500	1	1	funding
+nnx11ap43a	4.954	1.500	1	1	funding
+nnx17ad49a	4.954	1.500	1	1	funding
+non-buoyant coflow	4.954	1.500	1	1	hypothesis
+non-sooting regions	4.954	1.500	1	1	approach
+numerical tools	4.954	1.500	1	1	research_impacts
+objectives characterize	4.954	1.500	1	1	objective
+observations modifications	4.954	1.500	1	1	approach
+observe variations	4.954	1.500	1	1	approach
+oh a-x	4.954	1.500	1	1	hypothesis
+oh axisymmetric	4.954	1.500	1	1	hypothesis
+optical emission	4.954	1.500	1	1	hypothesis
+order experimental	4.954	1.500	1	1	objective
+overall agreement	4.954	1.500	1	1	approach
+pfefferle transition	4.954	1.500	1	1	hypothesis
+phenomena detailed	4.954	1.500	1	1	research_impacts
+place addition	4.954	1.500	1	1	research_impacts
+plan methane	4.954	1.500	1	1	approach
+portion flame	4.954	1.500	1	1	objective
+predict coupled	4.954	1.500	1	1	research_impacts
+processes effects	4.954	1.500	1	1	research_impacts
+processes measured	4.954	1.500	1	1	approach
+processes soot	4.954	1.500	1	1	research_impacts
+publications smooke	4.954	1.500	1	1	hypothesis
+pyrometry observations	4.954	1.500	1	1	approach
+quantitative diagnostic	4.954	1.500	1	1	research_impacts
+radiative transfer	4.954	1.500	1	1	research_impacts
+range test	4.954	1.500	1	1	approach
+reacting flows	4.954	1.500	1	1	research_impacts
+regions measured	4.954	1.500	1	1	approach
+rigorous testing	4.954	1.500	1	1	objective
+s0010-2180 00112-7	4.954	1.500	1	1	hypothesis
+s0082-0784 80453-0	4.954	1.500	1	1	hypothesis
+s0082-0784 80603-7	4.954	1.500	1	1	hypothesis
+scales microgravity	4.954	1.500	1	1	approach
+shape extinction	4.954	1.500	1	1	approach
+shape gas	4.954	1.500	1	1	objective
+shape lift-off	4.954	1.500	1	1	objective
+smith crosley	4.954	1.500	1	1	hypothesis
+smooke ch	4.954	1.500	1	1	hypothesis
+smooke experimental	4.954	1.500	1	1	hypothesis
+soot buoyant	4.954	1.500	1	1	hypothesis
+soot loading	4.954	1.500	1	1	approach
+soot model	4.954	1.500	1	1	approach
+soot sub-models	4.954	1.500	1	1	approach
+soot-free portion	4.954	1.500	1	1	objective
+sooting co-flow	4.954	1.500	1	1	hypothesis
+sooting flames	4.954	1.500	1	1	approach
+sooting towards	4.954	1.500	1	1	hypothesis
+spatial scales	4.954	1.500	1	1	approach
+species chemical	4.954	1.500	1	1	approach
+species soot	4.954	1.500	1	1	hypothesis
+spectrum following	4.954	1.500	1	1	objective
+sub-models effective	4.954	1.500	1	1	approach
+suppression fires	4.954	1.500	1	1	research_impacts
+systems critical	4.954	1.500	1	1	research_impacts
+take place	4.954	1.500	1	1	research_impacts
+tanoff smooke	4.954	1.500	1	1	hypothesis
+techniques hydrocarbon	4.954	1.500	1	1	research_impacts
+temperatures extinction	4.954	1.500	1	1	objective
+temperatures non-sooting	4.954	1.500	1	1	approach
+temperatures soot-free	4.954	1.500	1	1	objective
+tendencies diffusion	4.954	1.500	1	1	objective
+tendencies fuel-rich	4.954	1.500	1	1	approach
+testing computational	4.954	1.500	1	1	objective
+theory modelling	4.954	1.500	1	1	hypothesis
+time spatial	4.954	1.500	1	1	approach
+times function	4.954	1.500	1	1	objective
+tools quantitative	4.954	1.500	1	1	research_impacts
+towards heavily	4.954	1.500	1	1	hypothesis
+transfer take	4.954	1.500	1	1	research_impacts
+transition lightly	4.954	1.500	1	1	hypothesis
+turbulent reacting	4.954	1.500	1	1	research_impacts
+type practical	4.954	1.500	1	1	research_impacts
+understanding factors	4.954	1.500	1	1	research_impacts
+understanding interaction	4.954	1.500	1	1	research_impacts
+understanding processes	4.954	1.500	1	1	research_impacts
+validate hypothesis	4.954	1.500	1	1	hypothesis
+variations lift-off	4.954	1.500	1	1	approach
+vary low	4.954	1.500	1	1	approach
+vol 615-623	4.954	1.500	1	1	hypothesis
+walsh fielding	4.954	1.500	1	1	hypothesis
+weak coflow	4.954	1.500	1	1	objective
+colket meredith	4.893	1.875	1	3	publication
+combined experimental	4.893	1.875	1	3	publication
+flame heat	4.893	1.875	1	3	publication
+flame microgravity	4.893	1.875	1	3	publication
+formation normal	4.893	1.875	1	3	publication
+hall robert	4.893	1.875	1	3	publication
+jesse squeo	4.893	1.875	1	3	publication
+jet flame	4.893	1.875	1	3	publication
+joseph zhao	4.893	1.875	1	3	publication
+meredith long	4.893	1.875	1	3	publication
+methane-air diffusion	4.893	1.875	1	3	publication
+normal microgravity	4.893	1.875	1	3	publication
+richard tinjero	4.893	1.875	1	3	publication
+robert colket	4.893	1.875	1	3	publication
+squeo joseph	4.893	1.875	1	3	publication
+tinjero jesse	4.893	1.875	1	3	publication
+xinyu hall	4.893	1.875	1	3	publication
+zhao xinyu	4.893	1.875	1	3	publication
+comparison	4.791	2.500	1	7	publication
+jet	4.791	2.500	1	7	publication
+complex	4.773	2.000	1	4	research_impacts
+details	4.773	2.000	1	4	hypothesis
+goal	4.773	2.000	1	4	research_impacts
+hydrocarbon	4.773	2.000	1	4	research_impacts
+improving	4.773	2.000	1	4	research_impacts
+interpretation	4.773	2.000	1	4	research_impacts
+observe	4.773	2.000	1	4	approach
+quantitative	4.773	2.000	1	4	research_impacts
+residence	4.773	2.000	1	4	objective
+theory	4.773	2.000	1	4	hypothesis
+absolute light calibration	4.541	1.375	1	1	publication
+advanced laser diagnostics	4.541	1.375	1	1	publication
+air coflow diffusion	4.541	1.375	1	1	publication
+air non-premixed flame	4.541	1.375	1	1	publication
+anne long marshall	4.541	1.375	1	1	publication
+averaging high dynamic	4.541	1.375	1	1	publication
+ba bennett dp	4.541	1.375	1	1	publication
+bennett connelly long	4.541	1.375	1	1	publication
+bennett dp stocker	4.541	1.375	1	1	publication
+bennett long smooke	4.541	1.375	1	1	publication
+bennett smooke long	4.541	1.375	1	1	publication
+beth anne long	4.541	1.375	1	1	publication
+bin connelly blair	4.541	1.375	1	1	publication
+bin giassi davide	4.541	1.375	1	1	publication
+bin long marshall	4.541	1.375	1	1	publication
+calculations formaldehyde concentrations	4.541	1.375	1	1	publication
+calibration s-type thermocouples	4.541	1.375	1	1	publication
+cao ba bennett	4.541	1.375	1	1	publication
+cao su ma	4.541	1.375	1	1	publication
+coflow laminar methane-air	4.541	1.375	1	1	publication
+color digital camera	4.541	1.375	1	1	publication
+color-ratio pyrometry laminar	4.541	1.375	1	1	publication
+comparison raman signatures	4.541	1.375	1	1	publication
+computation forced time-dependent	4.541	1.375	1	1	publication
+computational experimental forced	4.541	1.375	1	1	publication
+computational experimental interaction	4.541	1.375	1	1	publication
+concentrations methane n2	4.541	1.375	1	1	publication
+connelly bennett smooke	4.541	1.375	1	1	publication
+connelly schaffer bennett	4.541	1.375	1	1	publication
+constrained-temperature solutions coflow	4.541	1.375	1	1	publication
+cooke bennett connelly	4.541	1.375	1	1	publication
+davide bennett beth	4.541	1.375	1	1	publication
+davide long marshall	4.541	1.375	1	1	publication
+diagnostics time-resolved image	4.541	1.375	1	1	publication
+distributed-memory parallel computation	4.541	1.375	1	1	publication
+dobbins richard long	4.541	1.375	1	1	publication
+dworkin connelly schaffer	4.541	1.375	1	1	publication
+dworkin cooke bennett	4.541	1.375	1	1	publication
+dworkin schaffer connelly	4.541	1.375	1	1	publication
+dynamic range imaging	4.541	1.375	1	1	publication
+effect soot self-absorption	4.541	1.375	1	1	publication
+effects pressure fuel	4.541	1.375	1	1	publication
+ethylene air coflow	4.541	1.375	1	1	publication
+ethylene air flames	4.541	1.375	1	1	publication
+experimental forced time-dependent	4.541	1.375	1	1	publication
+experimental interaction soot	4.541	1.375	1	1	publication
+flame implications heat	4.541	1.375	1	1	publication
+flames advanced laser	4.541	1.375	1	1	publication
+flow diagnostics time-resolved	4.541	1.375	1	1	publication
+forced time-dependent methane-air	4.541	1.375	1	1	publication
+forced time-dependent sooting	4.541	1.375	1	1	publication
+formaldehyde concentrations methane	4.541	1.375	1	1	publication
+giassi cao ba	4.541	1.375	1	1	publication
+giassi davide bennett	4.541	1.375	1	1	publication
+giassi davide long	4.541	1.375	1	1	publication
+growth non-premixed ethylene	4.541	1.375	1	1	publication
+herdman jennifer connelly	4.541	1.375	1	1	publication
+high dynamic range	4.541	1.375	1	1	publication
+image averaging high	4.541	1.375	1	1	publication
+imaging flames advanced	4.541	1.375	1	1	publication
+implications heat release	4.541	1.375	1	1	publication
+improvements laser flow	4.541	1.375	1	1	publication
+incandescence direct numerical	4.541	1.375	1	1	publication
+interaction computations combustion	4.541	1.375	1	1	publication
+interaction soot coflow	4.541	1.375	1	1	publication
+jennifer connelly blair	4.541	1.375	1	1	publication
+kempema nathan dobbins	4.541	1.375	1	1	publication
+kempema nathan long	4.541	1.375	1	1	publication
+kuhn peter ma	4.541	1.375	1	1	publication
+laminar methane-air diffusion	4.541	1.375	1	1	publication
+laser diagnostics snapshots	4.541	1.375	1	1	publication
+laser flow diagnostics	4.541	1.375	1	1	publication
+laser-induced incandescence direct	4.541	1.375	1	1	publication
+light calibration s-type	4.541	1.375	1	1	publication
+long marshall miller	4.541	1.375	1	1	publication
+ma bin connelly	4.541	1.375	1	1	publication
+ma bin giassi	4.541	1.375	1	1	publication
+ma bin long	4.541	1.375	1	1	publication
+marshall miller houston	4.541	1.375	1	1	publication
+measurements calculations formaldehyde	4.541	1.375	1	1	publication
+methane n2 air	4.541	1.375	1	1	publication
+methane-air coflow diffusion	4.541	1.375	1	1	publication
+n2 air non-premixed	4.541	1.375	1	1	publication
+nathan dobbins richard	4.541	1.375	1	1	publication
+nathan long marshall	4.541	1.375	1	1	publication
+non-premixed ethylene air	4.541	1.375	1	1	publication
+non-premixed flame implications	4.541	1.375	1	1	publication
+numerical simulation soot	4.541	1.375	1	1	publication
+paradigm shift interaction	4.541	1.375	1	1	publication
+parallel computation forced	4.541	1.375	1	1	publication
+peter ma bin	4.541	1.375	1	1	publication
+pressure fuel dilution	4.541	1.375	1	1	publication
+puccio mcandrew miller	4.541	1.375	1	1	publication
+puccio mcandrews miller	4.541	1.375	1	1	publication
+pyrometry color digital	4.541	1.375	1	1	publication
+pyrometry laminar coflow	4.541	1.375	1	1	publication
+raman signatures laser-induced	4.541	1.375	1	1	publication
+ratio improvements laser	4.541	1.375	1	1	publication
+richard long marshall	4.541	1.375	1	1	publication
+schaffer bennett long	4.541	1.375	1	1	publication
+schaffer connelly long	4.541	1.375	1	1	publication
+self-absorption color-ratio pyrometry	4.541	1.375	1	1	publication
+shift interaction computations	4.541	1.375	1	1	publication
+signal-to-noise ratio improvements	4.541	1.375	1	1	publication
+signatures laser-induced incandescence	4.541	1.375	1	1	publication
+simulation soot growth	4.541	1.375	1	1	publication
+smooke mb long	4.541	1.375	1	1	publication
+smooke puccio mcandrew	4.541	1.375	1	1	publication
+smooke puccio mcandrews	4.541	1.375	1	1	publication
+solutions coflow laminar	4.541	1.375	1	1	publication
+soot coflow diffusion	4.541	1.375	1	1	publication
+soot growth non-premixed	4.541	1.375	1	1	publication
+soot self-absorption color-ratio	4.541	1.375	1	1	publication
+soot thin-filament pyrometry	4.541	1.375	1	1	publication
+sooting ethylene air	4.541	1.375	1	1	publication
+stocker takahashi smooke	4.541	1.375	1	1	publication
+su ma bin	4.541	1.375	1	1	publication
+takahashi smooke mb	4.541	1.375	1	1	publication
+thin-filament pyrometry color	4.541	1.375	1	1	publication
+time-dependent methane-air coflow	4.541	1.375	1	1	publication
+time-dependent sooting ethylene	4.541	1.375	1	1	publication
+time-resolved image averaging	4.541	1.375	1	1	publication
+concentration	4.496	2.500	1	8	publication
+dp stocker	4.474	1.875	1	4	publication
+buoyancy	4.408	2.000	1	5	research_impacts
+efficiency	4.408	2.000	1	5	research_impacts
+generation	4.408	2.000	1	5	approach
+levels	4.408	2.000	1	5	approach
+needed	4.408	2.000	1	5	objective
+phenomena	4.408	2.000	1	5	research_impacts
+plan	4.408	2.000	1	5	approach
+wide	4.408	2.000	1	5	approach
+buoyancy forces	4.346	1.500	1	2	research_impacts
+flame combustion	4.346	1.500	1	2	hypothesis
+flames sooting	4.346	1.500	1	2	approach
+flames wide	4.346	1.500	1	2	approach
+low high	4.346	1.500	1	2	approach
+luminosity soot	4.346	1.500	1	2	objective
+oh ch	4.346	1.500	1	2	approach
+sophisticated numerical	4.346	1.500	1	2	research_impacts
+temperature species	4.346	1.500	1	2	hypothesis
+transport phenomena	4.346	1.500	1	2	research_impacts
+yale	4.346	1.500	2	2	affiliation
+growth	4.233	2.500	1	9	publication
+numerical simulation	4.132	1.875	1	5	publication
+affect	4.100	2.000	1	6	research_impacts
+lead	4.100	2.000	1	6	research_impacts
+proposed	4.100	2.000	1	6	approach
+image	3.995	2.500	1	10	publication
+analysis ch concentration	3.984	1.375	1	2	publication
+anne smooke mitchell	3.984	1.375	1	2	publication
+beth anne smooke	3.984	1.375	1	2	publication
+bin cao su	3.984	1.375	1	2	publication
+cao su giassi	3.984	1.375	1	2	publication
+ch concentration flame	3.984	1.375	1	2	publication
+coflow jet flame	3.984	1.375	1	2	publication
+concentration flame heat	3.984	1.375	1	2	publication
+davide stocker dennis	3.984	1.375	1	2	publication
+dennis takahashi fumiaki	3.984	1.375	1	2	publication
+diffusion flames computational	3.984	1.375	1	2	publication
+direct numerical simulation	3.984	1.375	1	2	publication
+dp stocker takahashi	3.984	1.375	1	2	publication
+flame heat release	3.984	1.375	1	2	publication
+flame microgravity normal	3.984	1.375	1	2	publication
+flames computational experimental	3.984	1.375	1	2	publication
+flames microgravity normal	3.984	1.375	1	2	publication
+formation coflow jet	3.984	1.375	1	2	publication
+fumiaki bennett beth	3.984	1.375	1	2	publication
+giassi davide stocker	3.984	1.375	1	2	publication
+jet flame microgravity	3.984	1.375	1	2	publication
+ma bin cao	3.984	1.375	1	2	publication
+methane-air diffusion flames	3.984	1.375	1	2	publication
+rate laminar coflow	3.984	1.375	1	2	publication
+release rate laminar	3.984	1.375	1	2	publication
+soot formation coflow	3.984	1.375	1	2	publication
+stocker dennis takahashi	3.984	1.375	1	2	publication
+su giassi davide	3.984	1.375	1	2	publication
+takahashi fumiaki bennett	3.984	1.375	1	2	publication
+rack cir acme	3.937	1.650	1	4	experiment_hardware
+combustion flame	3.914	1.500	1	3	hypothesis
+detailed chemical	3.914	1.500	1	3	research_impacts
+flames flame	3.914	1.500	1	3	research_impacts
+gravity combustion	3.914	1.500	1	3	research_impacts
+measurements made	3.914	1.500	1	3	approach
+residence times	3.914	1.500	1	3	objective
+wide range	3.914	1.500	1	3	approach
+table	3.857	1.750	2	5	file_folders,filenames
+stocker dennis	3.843	1.875	1	6	publication
+addition	3.833	2.000	1	7	research_impacts
+buoyant	3.833	2.000	1	7	hypothesis
+chemistry	3.833	2.000	1	7	research_impacts
+convection	3.833	2.000	1	7	research_impacts
+gas	3.833	2.000	1	7	objective
+hypothesis	3.833	2.000	1	7	hypothesis
+model	3.833	2.000	1	7	approach
+times	3.833	2.000	1	7	objective
+transport	3.833	2.000	1	7	research_impacts
+rack cir	3.810	2.250	1	9	experiment_hardware
+nnx07ab33a nnx11ap43a	3.715	1.125	1	1	funding
+nnx11ap43a nnx17ad49a	3.715	1.125	1	1	funding
+00112-7 walsh fielding	3.633	1.100	1	1	hypothesis
+10.1016 s0010-2180 00112-7	3.633	1.100	1	1	hypothesis
+10.1016 s0082-0784 80453-0	3.633	1.100	1	1	hypothesis
+10.1016 s0082-0784 80603-7	3.633	1.100	1	1	hypothesis
+10.1088 1364-7830 luque	3.633	1.100	1	1	hypothesis
+1364-7830 luque jeffries	3.633	1.100	1	1	hypothesis
+172-175 doi.org 10.1016	3.633	1.100	1	1	hypothesis
+1973-1979 doi.org 10.1016	3.633	1.100	1	1	hypothesis
+593-606 doi.org 10.1088	3.633	1.100	1	1	hypothesis
+615-623 doi.org 10.1016	3.633	1.100	1	1	hypothesis
+80603-7 walsh long	3.633	1.100	1	1	hypothesis
+a-x oh a-x	3.633	1.100	1	1	hypothesis
+a-x optical emission	3.633	1.100	1	1	hypothesis
+ability predict coupled	3.633	1.100	1	1	research_impacts
+achieving goals experimentally	3.633	1.100	1	1	approach
+acme flame goals	3.633	1.100	1	1	approach
+addition understanding factors	3.633	1.100	1	1	research_impacts
+affect flame extinction	3.633	1.100	1	1	research_impacts
+agreement measurements computations	3.633	1.100	1	1	approach
+apply sophisticated numerical	3.633	1.100	1	1	research_impacts
+approached sooting tendencies	3.633	1.100	1	1	approach
+available following publications	3.633	1.100	1	1	hypothesis
+behavior weak coflow	3.633	1.100	1	1	objective
+bench mark validate	3.633	1.100	1	1	hypothesis
+better experimental overall	3.633	1.100	1	1	approach
+buoyancy forces hard	3.633	1.100	1	1	research_impacts
+buoyant non-buoyant coflow	3.633	1.100	1	1	hypothesis
+ch a-x oh	3.633	1.100	1	1	hypothesis
+ch ch oh	3.633	1.100	1	1	hypothesis
+ch observe variations	3.633	1.100	1	1	approach
+ch oh axisymmetric	3.633	1.100	1	1	hypothesis
+characterize behavior weak	3.633	1.100	1	1	objective
+characterize sooting tendencies	3.633	1.100	1	1	objective
+chemical kinetics systems	3.633	1.100	1	1	research_impacts
+chemical processes measured	3.633	1.100	1	1	approach
+chemiluminesence oh ch	3.633	1.100	1	1	approach
+chemistry momentum-dominated conditions	3.633	1.100	1	1	research_impacts
+co-flow ethylene diffusion	3.633	1.100	1	1	hypothesis
+colket fielding long	3.633	1.100	1	1	hypothesis
+combustion devices ability	3.633	1.100	1	1	research_impacts
+combustion devices contribution	3.633	1.100	1	1	research_impacts
+combustion flame 172-175	3.633	1.100	1	1	hypothesis
+combustion important combustion	3.633	1.100	1	1	research_impacts
+combustion institute 1973-1979	3.633	1.100	1	1	hypothesis
+combustion institute vol	3.633	1.100	1	1	hypothesis
+combustion processes effects	3.633	1.100	1	1	research_impacts
+combustion theory modelling	3.633	1.100	1	1	hypothesis
+complex transport phenomena	3.633	1.100	1	1	research_impacts
+complicate interpretation computational	3.633	1.100	1	1	research_impacts
+computation models details	3.633	1.100	1	1	hypothesis
+computational ch ch	3.633	1.100	1	1	hypothesis
+computational experimental momentum	3.633	1.100	1	1	research_impacts
+computational models extremes	3.633	1.100	1	1	objective
+computational models improved	3.633	1.100	1	1	approach
+computational temperature species	3.633	1.100	1	1	hypothesis
+computations good computations	3.633	1.100	1	1	approach
+computations mined insight	3.633	1.100	1	1	approach
+conditions dilute flames	3.633	1.100	1	1	approach
+contribution buoyancy forces	3.633	1.100	1	1	research_impacts
+convection diffusion chemistry	3.633	1.100	1	1	research_impacts
+coupled effects complex	3.633	1.100	1	1	research_impacts
+critical modeling turbulent	3.633	1.100	1	1	research_impacts
+critical suppression fires	3.633	1.100	1	1	research_impacts
+crosley walsh long	3.633	1.100	1	1	hypothesis
+detailed understanding interaction	3.633	1.100	1	1	research_impacts
+details available following	3.633	1.100	1	1	hypothesis
+determine soot temperatures	3.633	1.100	1	1	approach
+devices ability predict	3.633	1.100	1	1	research_impacts
+devices contribution buoyancy	3.633	1.100	1	1	research_impacts
+diagnostic techniques hydrocarbon	3.633	1.100	1	1	research_impacts
+diagnostics available proposed	3.633	1.100	1	1	approach
+diffusion chemistry momentum-dominated	3.633	1.100	1	1	research_impacts
+diffusion flame combustion	3.633	1.100	1	1	hypothesis
+diffusion flame proceedings	3.633	1.100	1	1	hypothesis
+diffusion flames combustion	3.633	1.100	1	1	hypothesis
+diffusion flames critical	3.633	1.100	1	1	research_impacts
+diffusion flames long	3.633	1.100	1	1	objective
+diffusion flames methane	3.633	1.100	1	1	objective
+diffusion flames proceedings	3.633	1.100	1	1	hypothesis
+dilute flames measurements	3.633	1.100	1	1	approach
+dilute flames sooting	3.633	1.100	1	1	approach
+dilution spectrum following	3.633	1.100	1	1	objective
+directly diagnostics available	3.633	1.100	1	1	approach
+doi.org 10.1016 s0010-2180	3.633	1.100	1	1	hypothesis
+doi.org 10.1088 1364-7830	3.633	1.100	1	1	hypothesis
+dominate practical combustion	3.633	1.100	1	1	research_impacts
+effective dilute flames	3.633	1.100	1	1	approach
+effects complex transport	3.633	1.100	1	1	research_impacts
+effects dominate practical	3.633	1.100	1	1	research_impacts
+effects gravitational forces	3.633	1.100	1	1	research_impacts
+efficiency normal gravity	3.633	1.100	1	1	research_impacts
+eliminate normal gravity	3.633	1.100	1	1	research_impacts
+emission axisymmetric laminar	3.633	1.100	1	1	hypothesis
+engine efficiency normal	3.633	1.100	1	1	research_impacts
+enhanced time spatial	3.633	1.100	1	1	approach
+environment important achieving	3.633	1.100	1	1	approach
+environment lead detailed	3.633	1.100	1	1	research_impacts
+ethylene function velocity	3.633	1.100	1	1	objective
+experimental computational ch	3.633	1.100	1	1	hypothesis
+experimental computational temperature	3.633	1.100	1	1	hypothesis
+experimental momentum effects	3.633	1.100	1	1	research_impacts
+experimental needed rigorous	3.633	1.100	1	1	objective
+experimental overall agreement	3.633	1.100	1	1	approach
+experimentally plan methane	3.633	1.100	1	1	approach
+extinction diffusion flames	3.633	1.100	1	1	research_impacts
+extinction limits approached	3.633	1.100	1	1	approach
+extinction limits characterize	3.633	1.100	1	1	objective
+extinction measurements determine	3.633	1.100	1	1	approach
+extremes fuel dilution	3.633	1.100	1	1	objective
+factors affect flame	3.633	1.100	1	1	research_impacts
+fielding long mcenally	3.633	1.100	1	1	hypothesis
+fielding smooke long	3.633	1.100	1	1	hypothesis
+fires improving engine	3.633	1.100	1	1	research_impacts
+flame 172-175 doi.org	3.633	1.100	1	1	hypothesis
+flame chemiluminesence oh	3.633	1.100	1	1	approach
+flame combustion flame	3.633	1.100	1	1	hypothesis
+flame extinction diffusion	3.633	1.100	1	1	research_impacts
+flame goals generation	3.633	1.100	1	1	approach
+flame proceedings combustion	3.633	1.100	1	1	hypothesis
+flame shape extinction	3.633	1.100	1	1	approach
+flame shape gas	3.633	1.100	1	1	objective
+flame shape lift-off	3.633	1.100	1	1	objective
+flame soot luminosity	3.633	1.100	1	1	objective
+flame temperatures non-sooting	3.633	1.100	1	1	approach
+flame type practical	3.633	1.100	1	1	research_impacts
+flames combustion theory	3.633	1.100	1	1	hypothesis
+flames critical suppression	3.633	1.100	1	1	research_impacts
+flames flame type	3.633	1.100	1	1	research_impacts
+flames investigated soot	3.633	1.100	1	1	approach
+flames long residence	3.633	1.100	1	1	objective
+flames measurements made	3.633	1.100	1	1	approach
+flames methane ethylene	3.633	1.100	1	1	objective
+flames proceedings combustion	3.633	1.100	1	1	hypothesis
+flames sooting flames	3.633	1.100	1	1	approach
+flames vary low	3.633	1.100	1	1	approach
+flows understanding processes	3.633	1.100	1	1	research_impacts
+focused gathering bench	3.633	1.100	1	1	hypothesis
+following objectives characterize	3.633	1.100	1	1	objective
+following publications smooke	3.633	1.100	1	1	hypothesis
+forces complicate interpretation	3.633	1.100	1	1	research_impacts
+forces hard eliminate	3.633	1.100	1	1	research_impacts
+formation radiative transfer	3.633	1.100	1	1	research_impacts
+fractions flame temperatures	3.633	1.100	1	1	approach
+fuel dilution spectrum	3.633	1.100	1	1	objective
+fuel-rich flames investigated	3.633	1.100	1	1	approach
+gas temperatures soot-free	3.633	1.100	1	1	objective
+gathering bench mark	3.633	1.100	1	1	hypothesis
+generation improved computational	3.633	1.100	1	1	approach
+goal apply sophisticated	3.633	1.100	1	1	research_impacts
+goals experimentally plan	3.633	1.100	1	1	approach
+goals generation improved	3.633	1.100	1	1	approach
+good computations mined	3.633	1.100	1	1	approach
+gravitational forces complicate	3.633	1.100	1	1	research_impacts
+gravity combustion important	3.633	1.100	1	1	research_impacts
+gravity goal apply	3.633	1.100	1	1	research_impacts
+hall colket fielding	3.633	1.100	1	1	hypothesis
+hard eliminate normal	3.633	1.100	1	1	research_impacts
+heavily sooting co-flow	3.633	1.100	1	1	hypothesis
+height flame shape	3.633	1.100	1	1	approach
+heights temperatures extinction	3.633	1.100	1	1	objective
+high soot loading	3.633	1.100	1	1	approach
+hydrocarbon diffusion flames	3.633	1.100	1	1	research_impacts
+hypothesis computation models	3.633	1.100	1	1	hypothesis
+important achieving goals	3.633	1.100	1	1	approach
+important combustion processes	3.633	1.100	1	1	research_impacts
+improved computational models	3.633	1.100	1	1	approach
+improved soot sub-models	3.633	1.100	1	1	approach
+improving engine efficiency	3.633	1.100	1	1	research_impacts
+insight species chemical	3.633	1.100	1	1	approach
+institute 1973-1979 doi.org	3.633	1.100	1	1	hypothesis
+institute vol 615-623	3.633	1.100	1	1	hypothesis
+interaction convection diffusion	3.633	1.100	1	1	research_impacts
+interpretation computational experimental	3.633	1.100	1	1	research_impacts
+investigated soot luminosity	3.633	1.100	1	1	approach
+jeffries smith crosley	3.633	1.100	1	1	hypothesis
+kinetics soot model	3.633	1.100	1	1	approach
+kinetics systems critical	3.633	1.100	1	1	research_impacts
+laser extinction measurements	3.633	1.100	1	1	approach
+lead detailed understanding	3.633	1.100	1	1	research_impacts
+levels enhanced time	3.633	1.100	1	1	approach
+lift-off height flame	3.633	1.100	1	1	approach
+lift-off heights temperatures	3.633	1.100	1	1	objective
+lightly sooting towards	3.633	1.100	1	1	hypothesis
+limits approached sooting	3.633	1.100	1	1	approach
+limits characterize sooting	3.633	1.100	1	1	objective
+loading levels enhanced	3.633	1.100	1	1	approach
+long experimental computational	3.633	1.100	1	1	hypothesis
+long mcenally pfefferle	3.633	1.100	1	1	hypothesis
+long residence times	3.633	1.100	1	1	objective
+long smooke ch	3.633	1.100	1	1	hypothesis
+long tanoff smooke	3.633	1.100	1	1	hypothesis
+low high soot	3.633	1.100	1	1	approach
+luminosity laser extinction	3.633	1.100	1	1	approach
+luminosity soot temperatures	3.633	1.100	1	1	objective
+luque jeffries smith	3.633	1.100	1	1	hypothesis
+made flame chemiluminesence	3.633	1.100	1	1	approach
+made kinetics soot	3.633	1.100	1	1	approach
+mark validate hypothesis	3.633	1.100	1	1	hypothesis
+match better experimental	3.633	1.100	1	1	approach
+mcenally pfefferle transition	3.633	1.100	1	1	hypothesis
+measured directly diagnostics	3.633	1.100	1	1	approach
+measured thin-filament pyrometry	3.633	1.100	1	1	approach
+measurements computations good	3.633	1.100	1	1	approach
+measurements determine soot	3.633	1.100	1	1	approach
+measurements made flame	3.633	1.100	1	1	approach
+methane ethylene diffusion	3.633	1.100	1	1	approach
+methane ethylene function	3.633	1.100	1	1	objective
+microgravity environment important	3.633	1.100	1	1	approach
+microgravity environment lead	3.633	1.100	1	1	research_impacts
+mined insight species	3.633	1.100	1	1	approach
+model match better	3.633	1.100	1	1	approach
+modeling turbulent reacting	3.633	1.100	1	1	research_impacts
+modelling 593-606 doi.org	3.633	1.100	1	1	hypothesis
+models details available	3.633	1.100	1	1	hypothesis
+models extremes fuel	3.633	1.100	1	1	objective
+models improved soot	3.633	1.100	1	1	approach
+modifications made kinetics	3.633	1.100	1	1	approach
+momentum effects dominate	3.633	1.100	1	1	research_impacts
+needed rigorous testing	3.633	1.100	1	1	objective
+non-buoyant coflow laminar	3.633	1.100	1	1	hypothesis
+non-sooting regions measured	3.633	1.100	1	1	approach
+normal gravity combustion	3.633	1.100	1	1	research_impacts
+normal gravity goal	3.633	1.100	1	1	research_impacts
+numerical tools quantitative	3.633	1.100	1	1	research_impacts
+objectives characterize behavior	3.633	1.100	1	1	objective
+observations modifications made	3.633	1.100	1	1	approach
+observe variations lift-off	3.633	1.100	1	1	approach
+oh a-x optical	3.633	1.100	1	1	hypothesis
+oh axisymmetric laminar	3.633	1.100	1	1	hypothesis
+oh ch observe	3.633	1.100	1	1	approach
+optical emission axisymmetric	3.633	1.100	1	1	hypothesis
+order experimental needed	3.633	1.100	1	1	objective
+overall agreement measurements	3.633	1.100	1	1	approach
+pfefferle transition lightly	3.633	1.100	1	1	hypothesis
+phenomena detailed chemical	3.633	1.100	1	1	research_impacts
+place addition understanding	3.633	1.100	1	1	research_impacts
+plan methane ethylene	3.633	1.100	1	1	approach
+portion flame soot	3.633	1.100	1	1	objective
+predict coupled effects	3.633	1.100	1	1	research_impacts
+processes effects gravitational	3.633	1.100	1	1	research_impacts
+processes measured directly	3.633	1.100	1	1	approach
+processes soot formation	3.633	1.100	1	1	research_impacts
+publications smooke hall	3.633	1.100	1	1	hypothesis
+pyrometry observations modifications	3.633	1.100	1	1	approach
+quantitative diagnostic techniques	3.633	1.100	1	1	research_impacts
+radiative transfer take	3.633	1.100	1	1	research_impacts
+range test conditions	3.633	1.100	1	1	approach
+reacting flows understanding	3.633	1.100	1	1	research_impacts
+regions measured thin-filament	3.633	1.100	1	1	approach
+residence times function	3.633	1.100	1	1	objective
+rigorous testing computational	3.633	1.100	1	1	objective
+s0010-2180 00112-7 walsh	3.633	1.100	1	1	hypothesis
+s0082-0784 80603-7 walsh	3.633	1.100	1	1	hypothesis
+scales microgravity environment	3.633	1.100	1	1	approach
+shape extinction limits	3.633	1.100	1	1	approach
+shape gas temperatures	3.633	1.100	1	1	objective
+shape lift-off heights	3.633	1.100	1	1	objective
+smith crosley walsh	3.633	1.100	1	1	hypothesis
+smooke ch a-x	3.633	1.100	1	1	hypothesis
+smooke experimental computational	3.633	1.100	1	1	hypothesis
+smooke long experimental	3.633	1.100	1	1	hypothesis
+soot buoyant non-buoyant	3.633	1.100	1	1	hypothesis
+soot formation radiative	3.633	1.100	1	1	research_impacts
+soot loading levels	3.633	1.100	1	1	approach
+soot luminosity laser	3.633	1.100	1	1	approach
+soot luminosity soot	3.633	1.100	1	1	objective
+soot model match	3.633	1.100	1	1	approach
+soot sub-models effective	3.633	1.100	1	1	approach
+soot-free portion flame	3.633	1.100	1	1	objective
+sooting co-flow ethylene	3.633	1.100	1	1	hypothesis
+sooting flames vary	3.633	1.100	1	1	approach
+sooting tendencies diffusion	3.633	1.100	1	1	objective
+sooting tendencies fuel-rich	3.633	1.100	1	1	approach
+sooting towards heavily	3.633	1.100	1	1	hypothesis
+sophisticated numerical tools	3.633	1.100	1	1	research_impacts
+spatial scales microgravity	3.633	1.100	1	1	approach
+species chemical processes	3.633	1.100	1	1	approach
+species soot buoyant	3.633	1.100	1	1	hypothesis
+spectrum following objectives	3.633	1.100	1	1	objective
+sub-models effective dilute	3.633	1.100	1	1	approach
+suppression fires improving	3.633	1.100	1	1	research_impacts
+systems critical modeling	3.633	1.100	1	1	research_impacts
+take place addition	3.633	1.100	1	1	research_impacts
+tanoff smooke experimental	3.633	1.100	1	1	hypothesis
+techniques hydrocarbon diffusion	3.633	1.100	1	1	research_impacts
+temperature species soot	3.633	1.100	1	1	hypothesis
+temperatures extinction limits	3.633	1.100	1	1	objective
+temperatures non-sooting regions	3.633	1.100	1	1	approach
+temperatures soot-free portion	3.633	1.100	1	1	objective
+tendencies diffusion flames	3.633	1.100	1	1	objective
+tendencies fuel-rich flames	3.633	1.100	1	1	approach
+test conditions dilute	3.633	1.100	1	1	approach
+testing computational models	3.633	1.100	1	1	objective
+theory modelling 593-606	3.633	1.100	1	1	hypothesis
+thin-filament pyrometry observations	3.633	1.100	1	1	approach
+time spatial scales	3.633	1.100	1	1	approach
+times function velocity	3.633	1.100	1	1	objective
+tools quantitative diagnostic	3.633	1.100	1	1	research_impacts
+towards heavily sooting	3.633	1.100	1	1	hypothesis
+transfer take place	3.633	1.100	1	1	research_impacts
+transition lightly sooting	3.633	1.100	1	1	hypothesis
+transport phenomena detailed	3.633	1.100	1	1	research_impacts
+turbulent reacting flows	3.633	1.100	1	1	research_impacts
+type practical combustion	3.633	1.100	1	1	research_impacts
+understanding factors affect	3.633	1.100	1	1	research_impacts
+understanding interaction convection	3.633	1.100	1	1	research_impacts
+understanding processes soot	3.633	1.100	1	1	research_impacts
+validate hypothesis computation	3.633	1.100	1	1	hypothesis
+variations lift-off height	3.633	1.100	1	1	approach
+vary low high	3.633	1.100	1	1	approach
+vol 615-623 doi.org	3.633	1.100	1	1	hypothesis
+volume fractions flame	3.633	1.100	1	1	approach
+walsh fielding smooke	3.633	1.100	1	1	hypothesis
+walsh long smooke	3.633	1.100	1	1	hypothesis
+walsh long tanoff	3.633	1.100	1	1	hypothesis
+weak coflow diffusion	3.633	1.100	1	1	objective
+wide range test	3.633	1.100	1	1	approach
+better	3.597	2.000	1	8	approach
+low	3.597	2.000	1	8	approach
+modeling	3.597	2.000	1	8	research_impacts
+suppression	3.597	2.000	1	8	research_impacts
+microgravity conditions	3.593	1.875	1	7	publication
+colket meredith long	3.588	1.375	1	3	publication
+combined experimental computational	3.588	1.375	1	3	publication
+dobbins richard tinjero	3.588	1.375	1	3	publication
+formation normal microgravity	3.588	1.375	1	3	publication
+hall robert colket	3.588	1.375	1	3	publication
+jesse squeo joseph	3.588	1.375	1	3	publication
+joseph zhao xinyu	3.588	1.375	1	3	publication
+meredith long marshall	3.588	1.375	1	3	publication
+normal microgravity conditions	3.588	1.375	1	3	publication
+richard tinjero jesse	3.588	1.375	1	3	publication
+robert colket meredith	3.588	1.375	1	3	publication
+soot formation normal	3.588	1.375	1	3	publication
+squeo joseph zhao	3.588	1.375	1	3	publication
+tinjero jesse squeo	3.588	1.375	1	3	publication
+xinyu hall robert	3.588	1.375	1	3	publication
+zhao xinyu hall	3.588	1.375	1	3	publication
+affect flame	3.579	1.500	1	4	research_impacts
+combustion processes	3.579	1.500	1	4	research_impacts
+flame extinction	3.579	1.500	1	4	research_impacts
+test conditions	3.579	1.500	1	4	approach
+analysis	3.577	2.500	1	12	publication
+pressure	3.577	2.500	1	12	publication
+testing	3.386	2.000	1	9	objective
+validate	3.386	2.000	1	9	hypothesis
+yale university	3.259	1.125	2	2	affiliation
+fires	3.196	2.000	1	10	research_impacts
+flows	3.196	2.000	1	10	research_impacts
+radiative	3.196	2.000	1	10	research_impacts
+detailed chemical kinetics	3.187	1.100	1	2	research_impacts
+diffusion flames flame	3.187	1.100	1	2	research_impacts
+diffusion flames wide	3.187	1.100	1	2	approach
+flames wide range	3.187	1.100	1	2	approach
+chemical kinetics	3.075	1.500	1	6	research_impacts
+temperature	3.022	2.000	1	11	hypothesis
+flow	2.906	2.500	1	16	publication
+time	2.862	2.000	1	12	approach
+integrated rack cir	2.794	1.650	1	9	experiment_hardware
+nnx07ab33a nnx11ap43a nnx17ad49a	2.725	0.825	1	1	funding
+behavior	2.713	2.000	1	13	objective
+determine	2.713	2.000	1	13	approach
+systems	2.713	2.000	1	13	research_impacts
+objectives	2.575	2.000	1	14	objective
+test	2.325	2.000	1	16	approach
+marshall long	2.173	0.750	1	2	people
+mitchell smooke	2.173	0.750	1	2	people
+university	1.835	1.500	2	15	affiliation
+administration	1.744	1.500	1	16	space_program
+aeronautics	1.744	1.500	1	16	space_program
+national	1.577	1.500	1	18	space_program
+dennis stocker	1.437	0.750	1	7	people
+aeronautics administration	1.308	1.125	1	16	space_program
+national aeronautics	1.308	1.125	1	16	space_program
+co-i	1.288	1.000	1	14	role
+co-investigator	1.288	1.000	1	14	role
+scientist	1.288	1.000	1	14	role
+experimental table	1.240	0.562	1	5	file_folders
+investigator	1.051	1.000	1	18	role
+pi	1.051	1.000	1	18	role
+principal	1.051	1.000	1	18	role
+co-investigator co-i	0.966	0.750	1	14	role
+national aeronautics administration	0.959	0.825	1	16	space_program
+grc	0.788	0.750	1	18	affiliation
+investigator pi	0.788	0.750	1	18	role
+principal investigator	0.788	0.750	1	18	role
+principal investigator pi	0.578	0.550	1	18	role

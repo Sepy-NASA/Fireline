@@ -1,0 +1,2049 @@
+# keywords for PSI-23 (score, weight, count, df, fields)
+law	278.124	96.000	39	2	people,publication
+flames	164.179	127.500	46	14	approach,curated_keywords,hypothesis,objective,proposal_title,publication,research_impacts,sub_research_area,title
+diffusion	139.811	87.500	30	10	curated_keywords,objective,proposal_title,publication,research_impacts,title
+spherical	127.433	66.500	26	7	approach,hypothesis,objective,proposal_title,publication,title
+chung	111.539	38.500	16	2	people,publication
+zhu	94.156	32.500	13	2	publication
+law chung	81.481	28.125	15	2	publication
+sung	79.671	27.500	11	2	publication
+spherical diffusion	76.037	34.500	17	5	objective,proposal_title,publication,title
+diffusion flames	75.498	47.250	22	10	curated_keywords,objective,proposal_title,publication,research_impacts,title
+yoo	74.308	22.500	9	1	publication
+structure	60.470	29.500	10	6	approach,curated_keywords,hypothesis,objective,proposal_title,publication
+soret	59.447	18.000	5	1	curated_keywords,publication
+response	57.271	24.000	8	4	proposal_title,publication,title
+spherical diffusion flames	57.092	23.925	16	4	objective,proposal_title,publication,title
+acme	55.140	26.900	9	6	acronym,cameras,curated_keywords,experiment_hardware,filenames,media_filenames
+tse	53.597	18.500	8	2	people,publication
+response spherical	53.254	16.125	7	1	proposal_title,publication,title
+rotation	49.539	15.000	6	1	publication
+flame	46.501	40.000	16	16	approach,curated_keywords,hypothesis,objective,publication,research_impacts
+hydrogen-air	42.934	13.000	3	1	curated_keywords,publication
+premixed	41.282	12.500	5	1	publication
+delin	36.214	12.500	5	2	publication
+response spherical diffusion	34.512	10.450	6	1	proposal_title,publication,title
+liang	33.026	10.000	4	1	publication
+wenkai	33.026	10.000	4	1	publication
+hydrogen-air flames	32.200	9.750	3	1	curated_keywords,publication
+combustion	32.000	32.000	11	19	approach,experiment_hardware,publication,research_area,research_impacts,title
+stephen	31.868	11.000	5	2	people,publication
+dynamics	30.575	17.000	7	8	publication,research_impacts
+simulation	29.754	13.500	6	5	hypothesis,objective,publication
+numbers	29.723	9.000	4	1	objective,publication
+zhang	28.971	10.000	4	2	publication
+zhu delin	27.160	9.375	5	2	publication
+activation-energy	26.421	8.000	1	1	curated_keywords
+enthalpy	26.421	8.000	1	1	curated_keywords
+excess	26.421	8.000	1	1	curated_keywords
+fickian	26.421	8.000	1	1	curated_keywords
+ratios	26.421	8.000	4	1	objective
+sooty	26.421	8.000	4	1	approach,objective
+diluent	26.094	10.000	5	3	objective
+bechtold	24.769	7.500	3	1	publication
+chaudhuri	24.769	7.500	3	1	publication
+ck	24.769	7.500	3	1	publication
+eng	24.769	7.500	3	1	publication
+flames rotation	24.769	7.500	4	1	publication
+law sung	24.769	7.500	4	1	publication
+liang wenkai	24.769	7.500	4	1	publication
+mechanistic	24.769	7.500	3	1	publication
+micro-buoyancy	24.769	7.500	3	1	publication
+qian	24.769	7.500	3	1	publication
+sacksteder	24.769	7.500	3	1	publication
+sean	24.769	7.500	3	1	publication
+soret diffusion	24.769	7.500	4	1	publication
+different	24.598	12.000	6	6	objective
+microgravity	24.000	24.000	9	19	project_type,publication,research_impacts,title
+detailed	23.954	12.500	6	7	approach,hypothesis,objective,publication
+spherical flames	23.531	7.125	4	1	hypothesis,publication
+asymptotics	23.177	8.000	1	2	curated_keywords
+yang	22.040	10.000	4	5	publication
+cylindrical	21.728	7.500	3	2	publication
+morphology	21.728	7.500	3	2	publication
+tse stephen	21.728	7.500	4	2	publication
+flame structure	20.662	9.375	3	5	curated_keywords,hypothesis,publication
+droplet	20.498	10.000	4	6	publication
+mixtures	20.121	10.500	5	7	approach,objective,publication
+activation-energy asymptotics	19.816	6.000	1	1	curated_keywords
+diluent ratios	19.816	6.000	4	1	objective
+excess enthalpy	19.816	6.000	1	1	curated_keywords
+experiments-structure	19.816	6.000	1	1	title
+fickian diffusion	19.816	6.000	1	1	curated_keywords
+s-flame	19.816	6.000	1	1	acronym
+computation	19.571	7.500	3	3	publication
+mechanisms	19.473	9.500	4	6	hypothesis,publication
+hydrogen	18.831	6.500	3	2	approach,publication
+instabilities	18.831	6.500	3	2	hypothesis,objective,publication
+ck law	18.577	5.625	3	1	publication
+delin law	18.577	5.625	3	1	publication
+premixed flames	18.577	5.625	3	1	publication
+wenkai law	18.577	5.625	3	1	publication
+yoo sean	18.577	5.625	3	1	publication
+zhu law	18.577	5.625	3	1	publication
+extinction	18.375	11.500	5	10	objective,publication
+computational simulation	17.339	5.250	3	1	objective,publication
+burner	17.247	9.000	4	7	approach,publication
+wang	16.530	7.500	3	5	publication
+cj	16.513	5.000	2	1	publication
+colliding	16.513	5.000	2	1	publication
+experimentation	16.513	5.000	2	1	publication
+kurt	16.513	5.000	2	1	publication
+stabilization	16.513	5.000	2	1	publication
+weakly	16.513	5.000	2	1	publication
+xin	16.513	5.000	2	1	publication
+chemistry	16.288	8.500	4	7	approach,hypothesis,publication,research_impacts
+burning	16.085	9.500	4	9	publication,research_impacts
+limits	15.739	11.000	5	12	hypothesis,objective,publication
+aspects	15.657	6.000	3	3	hypothesis,research_impacts
+soot-free	15.657	6.000	3	3	objective
+cool	15.374	7.500	3	6	publication
+numerical	15.287	8.500	4	8	approach,hypothesis,publication
+acme s-flame	14.862	4.500	1	1	acronym
+aerodynamic	14.862	4.500	2	1	publication,research_impacts
+experiments-structure response	14.862	4.500	1	1	title
+microgravity experiments-structure	14.862	4.500	1	1	title
+pulsating	14.862	4.500	2	1	objective,publication
+reaction	14.862	4.500	2	1	approach,publication
+burner-generated	14.486	5.000	2	2	publication
+chih-jen	14.486	5.000	2	2	publication
+comprehensive	14.486	5.000	2	2	publication
+propagation	14.486	5.000	2	2	publication
+subjected	14.486	5.000	2	2	publication
+gaseous	14.388	8.000	3	8	approach,sub_research_area
+methane	14.326	6.500	3	5	approach,publication
+gaseous fuels	14.318	6.000	3	4	approach,sub_research_area
+transient	14.318	6.000	3	4	hypothesis,objective
+fuel	14.245	10.500	5	13	approach,objective,publication
+delin law chung	13.623	4.125	3	1	publication
+diffusion flames rotation	13.623	4.125	3	1	publication
+liang wenkai law	13.623	4.125	3	1	publication
+wenkai law chung	13.623	4.125	3	1	publication
+zhu delin law	13.623	4.125	3	1	publication
+chemical	13.324	6.500	3	6	hypothesis,objective,publication
+ethylene	13.324	6.500	3	6	approach,publication
+chemical-kinetic	13.210	4.000	2	1	objective
+damk	13.210	4.000	2	1	objective
+diluents	13.210	4.000	2	1	approach
+front	13.210	4.000	2	1	hypothesis
+h2	13.210	4.000	2	1	objective
+hler	13.210	4.000	2	1	objective
+series	13.210	4.000	2	1	approach,objective
+simplest	13.210	4.000	2	1	approach
+peng	13.047	5.000	2	3	publication
+cool flames	12.397	5.625	3	5	publication
+bechtold law	12.385	3.750	2	1	publication
+cj sung	12.385	3.750	2	1	publication
+colliding spherical	12.385	3.750	2	1	publication
+diffusion hydrogen-air	12.385	3.750	2	1	publication
+dynamics morphology	12.385	3.750	2	1	publication
+eng law	12.385	3.750	2	1	publication
+evaluation soret	12.385	3.750	2	1	publication
+flames micro-buoyancy	12.385	3.750	2	1	publication
+flames subjected	12.385	3.750	2	1	publication
+law zhu	12.385	3.750	2	1	publication
+mechanistic soret	12.385	3.750	2	1	publication
+qian bechtold	12.385	3.750	2	1	publication
+sacksteder kurt	12.385	3.750	2	1	publication
+subjected rotation	12.385	3.750	2	1	publication
+sung ck	12.385	3.750	2	1	publication
+sung zhang	12.385	3.750	2	1	publication
+sung zhu	12.385	3.750	2	1	publication
+weakly buoyant	12.385	3.750	2	1	publication
+yoo law	12.385	3.750	2	1	publication
+system	12.299	6.000	3	6	approach,objective
+extended	11.931	5.000	2	4	publication
+oh	11.931	5.000	2	4	publication
+theory	11.931	5.000	2	4	publication
+computational	11.852	7.000	3	9	objective,publication
+porous	11.742	4.500	2	3	approach,publication
+test	11.625	10.000	5	16	hypothesis
+established	11.588	4.000	2	2	approach,objective
+work	11.588	4.000	2	2	hypothesis,research_impacts
+conditions	11.532	8.500	4	13	approach,hypothesis,publication
+objective	11.498	6.000	3	7	objective
+transport	11.498	6.000	3	7	hypothesis,objective
+hydrogen methane	11.146	3.375	2	1	approach,publication
+pulsating instabilities	11.146	3.375	2	1	objective,publication
+simulation spherical	11.146	3.375	2	1	hypothesis,publication
+evaluation	11.020	5.000	2	5	publication
+models	11.005	6.500	3	9	hypothesis,publication
+rates	11.005	6.500	3	9	approach,objective,publication
+combustion microgravity experiments-structure	10.899	3.300	1	1	title
+experiments-structure response spherical	10.899	3.300	1	1	title
+microgravity experiments-structure response	10.899	3.300	1	1	title
+burner-generated spherical	10.864	3.750	2	2	publication
+flames computation	10.864	3.750	2	2	publication
+microgravity burner-generated	10.864	3.750	2	2	publication
+sung chih-jen	10.864	3.750	2	2	publication
+fuels	10.853	8.000	3	13	approach,sub_research_area
+combustion microgravity	10.794	6.375	2	9	publication,title
+numerical simulation	10.744	4.875	3	5	hypothesis,publication
+hydrocarbon	10.738	4.500	2	4	approach,publication
+lewis	10.738	4.500	2	4	objective,publication
+c2h4	10.438	4.000	2	3	objective
+ch4	10.438	4.000	2	3	objective
+ignition	10.249	5.000	2	6	publication
+properties	9.918	4.500	2	5	objective,publication
+c2h4 diluent	9.908	3.000	2	1	objective
+ch4 diluent	9.908	3.000	2	1	objective
+chemical-kinetic extinction	9.908	3.000	2	1	objective
+damk hler	9.908	3.000	2	1	objective
+different c2h4	9.908	3.000	2	1	objective
+different h2	9.908	3.000	2	1	objective
+flame front	9.908	3.000	2	1	hypothesis
+h2 ch4	9.908	3.000	2	1	objective
+hler numbers	9.908	3.000	2	1	objective
+mixtures different	9.908	3.000	2	1	objective
+ratios soot-free	9.908	3.000	2	1	objective
+ratios sooty	9.908	3.000	2	1	objective
+series proposed	9.908	3.000	2	1	approach,objective
+soot-free different	9.908	3.000	2	1	objective
+system damk	9.908	3.000	2	1	objective
+transport models	9.908	3.000	2	1	hypothesis
+flame dynamics	9.785	3.750	2	3	publication
+advanced	9.587	6.000	1	10	title
+measurements	9.587	6.000	3	10	approach,hypothesis
+buoyant	9.581	5.000	2	7	publication
+cj sung ck	9.082	2.750	2	1	publication
+colliding spherical flames	9.082	2.750	2	1	publication
+diffusion flames micro-buoyancy	9.082	2.750	2	1	publication
+diffusion flames subjected	9.082	2.750	2	1	publication
+diffusion hydrogen-air flames	9.082	2.750	2	1	publication
+eng law zhu	9.082	2.750	2	1	publication
+evaluation soret diffusion	9.082	2.750	2	1	publication
+flames subjected rotation	9.082	2.750	2	1	publication
+law sung zhang	9.082	2.750	2	1	publication
+mechanistic soret diffusion	9.082	2.750	2	1	publication
+qian bechtold law	9.082	2.750	2	1	publication
+soret diffusion hydrogen-air	9.082	2.750	2	1	publication
+sung ck law	9.082	2.750	2	1	publication
+important	8.816	4.000	2	5	approach,research_impacts
+specific	8.816	4.000	2	5	hypothesis,objective
+diffusion flame	8.768	4.875	3	8	publication,research_impacts
+objective determine	8.691	3.000	2	2	objective
+advanced combustion	8.623	4.500	1	7	title
+flammability	8.466	5.000	2	9	publication
+accelerative	8.256	2.500	1	1	publication
+aerodynamics	8.256	2.500	1	1	publication
+akkerman	8.256	2.500	1	1	publication
+alex	8.256	2.500	1	1	publication
+bychkov	8.256	2.500	1	1	publication
+cellular	8.256	2.500	1	1	publication
+challenges	8.256	2.500	1	1	publication
+christiansen	8.256	2.500	1	1	publication
+collision	8.256	2.500	1	1	publication
+corner	8.256	2.500	1	1	publication
+criterion	8.256	2.500	1	1	publication
+delay	8.256	2.500	1	1	publication
+deng	8.256	2.500	1	1	publication
+dler	8.256	2.500	1	1	publication
+dual	8.256	2.500	1	1	publication
+expanding	8.256	2.500	1	1	publication
+explosion	8.256	2.500	1	1	publication
+first-stage	8.256	2.500	1	1	publication
+flame-generated	8.256	2.500	1	1	publication
+flamefront	8.256	2.500	1	1	publication
+flamelet	8.256	2.500	1	1	publication
+flamelets	8.256	2.500	1	1	publication
+flat-burner	8.256	2.500	1	1	publication
+fujia	8.256	2.500	1	1	publication
+gandhi	8.256	2.500	1	1	publication
+gang	8.256	2.500	1	1	publication
+global	8.256	2.500	1	1	publication
+grashof	8.256	2.500	1	1	publication
+heptane-air	8.256	2.500	1	1	publication
+heyang	8.256	2.500	1	1	publication
+huiqiang	8.256	2.500	1	1	publication
+hydrogen-co	8.256	2.500	1	1	publication
+initiation	8.256	2.500	1	1	publication
+intrinsic	8.256	2.500	1	1	publication
+longtin	8.256	2.500	1	1	publication
+lu	8.256	2.500	1	1	publication
+lutz	8.256	2.500	1	1	publication
+mueller	8.256	2.500	1	1	publication
+nearly	8.256	2.500	1	1	publication
+next-generation	8.256	2.500	1	1	publication
+non-burning	8.256	2.500	1	1	publication
+nonequidiffusion	8.256	2.500	1	1	publication
+nonlinear	8.256	2.500	1	1	publication
+novoselov	8.256	2.500	1	1	publication
+opportunities	8.256	2.500	1	1	publication
+options	8.256	2.500	1	1	publication
+outcome	8.256	2.500	1	1	publication
+paxton	8.256	2.500	1	1	publication
+propulsion	8.256	2.500	1	1	publication
+quasi-steadiness	8.256	2.500	1	1	publication
+radiation-affected	8.256	2.500	1	1	publication
+radical-induced	8.256	2.500	1	1	publication
+rahul	8.256	2.500	1	1	publication
+sd	8.256	2.500	1	1	publication
+self-acceleration	8.256	2.500	1	1	publication
+self-similar	8.256	2.500	1	1	publication
+sheng	8.256	2.500	1	1	publication
+shr-jing	8.256	2.500	1	1	publication
+sili	8.256	2.500	1	1	publication
+stationary	8.256	2.500	1	1	publication
+sw	8.256	2.500	1	1	publication
+swetaprovo	8.256	2.500	1	1	publication
+thin-flame	8.256	2.500	1	1	publication
+triggering	8.256	2.500	1	1	publication
+vitaly	8.256	2.500	1	1	publication
+vorticity	8.256	2.500	1	1	publication
+wrinkled	8.256	2.500	1	1	publication
+x27	8.256	2.500	1	1	publication
+xiaosheng	8.256	2.500	1	1	publication
+xiong	8.256	2.500	1	1	publication
+xylene	8.256	2.500	1	1	publication
+yacheslav	8.256	2.500	1	1	publication
+yuxuan	8.256	2.500	1	1	publication
+yx	8.256	2.500	1	1	publication
+zhong	8.256	2.500	1	1	publication
+zone	8.256	2.500	1	1	publication
+proposed	8.199	4.000	2	6	approach,objective
+low	8.093	4.500	2	8	objective,publication
+modeling	8.093	4.500	2	8	hypothesis,publication
+burner-generated spherical diffusion	7.967	2.750	2	2	publication
+diffusion flames computation	7.967	2.750	2	2	publication
+microgravity burner-generated spherical	7.967	2.750	2	2	publication
+structure response	7.431	2.250	1	1	proposal_title
+c2h4 diluent ratios	7.266	2.200	2	1	objective
+ch4 diluent ratios	7.266	2.200	2	1	objective
+chemical-kinetic extinction limits	7.266	2.200	2	1	objective
+damk hler numbers	7.266	2.200	2	1	objective
+different c2h4 diluent	7.266	2.200	2	1	objective
+different h2 ch4	7.266	2.200	2	1	objective
+diluent ratios soot-free	7.266	2.200	2	1	objective
+diluent ratios sooty	7.266	2.200	2	1	objective
+h2 ch4 diluent	7.266	2.200	2	1	objective
+mixtures different h2	7.266	2.200	2	1	objective
+ratios soot-free different	7.266	2.200	2	1	objective
+soot-free different c2h4	7.266	2.200	2	1	objective
+system damk hler	7.266	2.200	2	1	objective
+aerospace	7.243	2.500	1	2	publication
+applicability	7.243	2.500	1	2	publication
+burner-stabilized	7.243	2.500	1	2	publication
+burner-supported	7.243	2.500	1	2	publication
+chemiluminescent	7.243	2.500	1	2	publication
+chen	7.243	2.500	1	2	publication
+cleveland	7.243	2.500	1	2	publication
+currently	7.243	2.500	1	2	publication
+department	7.243	2.500	1	2	publication
+double	7.243	2.500	1	2	publication
+faeth	7.243	2.500	1	2	publication
+fan	7.243	2.500	1	2	publication
+general	7.243	2.500	1	2	publication
+geometry	7.243	2.500	1	2	publication
+luminous	7.243	2.500	1	2	publication
+mechanical	7.243	2.500	1	2	publication
+near-limit	7.243	2.500	1	2	publication
+ntc	7.243	2.500	1	2	publication
+oscillation	7.243	2.500	1	2	publication
+oscillatory	7.243	2.500	1	2	publication
+regimes	7.243	2.500	1	2	publication
+rotating	7.243	2.500	1	2	publication
+spreading	7.243	2.500	1	2	publication
+variable	7.243	2.500	1	2	publication
+wu	7.243	2.500	1	2	publication
+xia	7.243	2.500	1	2	publication
+measure	7.194	4.000	2	8	hypothesis,objective
+number	7.194	4.000	2	8	objective
+temperatures	7.194	4.000	2	8	approach
+test conditions	7.159	3.000	2	4	hypothesis
+air	7.154	5.000	2	12	publication
+flow	6.975	6.000	3	16	approach,objective,research_impacts
+experimental	6.783	5.000	2	13	publication
+understanding	6.773	4.000	2	9	research_impacts
+advanced combustion microgravity	6.764	3.300	1	6	title
+extinction limits	6.612	3.000	2	5	objective
+flames gaseous	6.612	3.000	1	5	sub_research_area
+flow rates	6.612	3.000	2	5	approach,objective
+acquire	6.605	2.000	1	1	research_impacts
+adequately	6.605	2.000	1	1	hypothesis
+affords	6.605	2.000	1	1	research_impacts
+amplitude	6.605	2.000	1	1	objective
+best	6.605	2.000	1	1	hypothesis
+buoyancy-free	6.605	2.000	1	1	research_impacts
+comprehensiveness	6.605	2.000	1	1	hypothesis
+comprise	6.605	2.000	1	1	hypothesis
+conventional	6.605	2.000	1	1	approach
+da	6.605	2.000	1	1	objective
+definition	6.605	2.000	1	1	hypothesis
+diffusivities	6.605	2.000	1	1	approach
+effort	6.605	2.000	1	1	hypothesis
+facilities	6.605	2.000	1	1	hypothesis
+fidelity	6.605	2.000	1	1	research_impacts
+frequency	6.605	2.000	1	1	objective
+g-jitter	6.605	2.000	1	1	hypothesis
+hydrocarbons	6.605	2.000	1	1	approach
+issued	6.605	2.000	1	1	approach
+limitations	6.605	2.000	1	1	hypothesis
+little	6.605	2.000	1	1	hypothesis
+mode	6.605	2.000	1	1	objective
+nature	6.605	2.000	1	1	objective
+nominally	6.605	2.000	1	1	approach
+non-steady	6.605	2.000	1	1	objective
+offered	6.605	2.000	1	1	research_impacts
+one-dimensional	6.605	2.000	1	1	approach
+onset	6.605	2.000	1	1	objective
+oxidation	6.605	2.000	1	1	approach
+oxidizing	6.605	2.000	1	1	approach
+physico-chemical	6.605	2.000	1	1	research_impacts
+practically	6.605	2.000	1	1	research_impacts
+predicted	6.605	2.000	1	1	objective
+prospect	6.605	2.000	1	1	research_impacts
+quantifying	6.605	2.000	1	1	research_impacts
+reasonably	6.605	2.000	1	1	approach
+rely	6.605	2.000	1	1	hypothesis
+resolved	6.605	2.000	1	1	approach
+simple	6.605	2.000	1	1	research_impacts
+spectrally	6.605	2.000	1	1	approach
+synchronized	6.605	2.000	1	1	approach
+theoretically	6.605	2.000	1	1	objective
+thermochemical	6.605	2.000	1	1	research_impacts
+together	6.605	2.000	1	1	hypothesis
+tool	6.605	2.000	1	1	hypothesis
+underlying	6.605	2.000	1	1	research_impacts
+ze	6.605	2.000	1	1	objective
+zeldovich	6.605	2.000	1	1	objective
+binary	6.524	2.500	1	3	publication
+ch	6.524	2.500	1	3	publication
+density	6.524	2.500	1	3	publication
+direct	6.524	2.500	1	3	publication
+grunde	6.524	2.500	1	3	publication
+heptane	6.524	2.500	1	3	publication
+jomaas	6.524	2.500	1	3	publication
+motion	6.524	2.500	1	3	publication
+nonpremixed	6.524	2.500	1	3	publication
+scaling	6.524	2.500	1	3	publication
+sl	6.524	2.500	1	3	publication
+turbulent	6.524	2.500	1	3	publication
+yiguang	6.524	2.500	1	3	publication
+radiation	6.391	4.000	2	10	approach,hypothesis
+radiative	6.391	4.000	2	10	approach,objective
+19304a1	6.275	1.900	2	1	filenames,media_filenames
+19304a2	6.275	1.900	2	1	filenames,media_filenames
+19304a3	6.275	1.900	2	1	filenames,media_filenames
+19304a7	6.275	1.900	2	1	filenames,media_filenames
+19304b1	6.275	1.900	2	1	filenames,media_filenames
+19304b2	6.275	1.900	2	1	filenames,media_filenames
+19304b3	6.275	1.900	2	1	filenames,media_filenames
+19304b4	6.275	1.900	2	1	filenames,media_filenames
+19304k1	6.275	1.900	2	1	filenames,media_filenames
+19308a1	6.275	1.900	2	1	filenames,media_filenames
+19308a2	6.275	1.900	2	1	filenames,media_filenames
+19308a3	6.275	1.900	2	1	filenames,media_filenames
+19308b1	6.275	1.900	2	1	filenames,media_filenames
+19308c1	6.275	1.900	2	1	filenames,media_filenames
+19308c2	6.275	1.900	2	1	filenames,media_filenames
+19308d1	6.275	1.900	2	1	filenames,media_filenames
+19308f1	6.275	1.900	2	1	filenames,media_filenames
+19308g1	6.275	1.900	2	1	filenames,media_filenames
+19308h1	6.275	1.900	2	1	filenames,media_filenames
+19308h2	6.275	1.900	2	1	filenames,media_filenames
+19308h3	6.275	1.900	2	1	filenames,media_filenames
+19308h4	6.275	1.900	2	1	filenames,media_filenames
+19308h5	6.275	1.900	2	1	filenames,media_filenames
+19308j1	6.275	1.900	2	1	filenames,media_filenames
+19308k1	6.275	1.900	2	1	filenames,media_filenames
+19308k2	6.275	1.900	2	1	filenames,media_filenames
+19308k3	6.275	1.900	2	1	filenames,media_filenames
+19308l1	6.275	1.900	2	1	filenames,media_filenames
+19308l2	6.275	1.900	2	1	filenames,media_filenames
+19308m1	6.275	1.900	2	1	filenames,media_filenames
+19308n1	6.275	1.900	2	1	filenames,media_filenames
+20006a2	6.275	1.900	2	1	filenames,media_filenames
+20006a3	6.275	1.900	2	1	filenames,media_filenames
+20006a4	6.275	1.900	2	1	filenames,media_filenames
+20006a5	6.275	1.900	2	1	filenames,media_filenames
+20006a6	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2019-10-31-15h32m20s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2019-10-31-16h05m36s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2019-10-31-16h28m44s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2019-10-31-16h51m48s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2019-10-31-17h08m56s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2019-10-31-17h24m47s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2019-10-31-18h15m57s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2019-10-31-18h39m19s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2019-10-31-19h39m47s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2019-11-04-15h05m38s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2019-11-04-15h20m12s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2019-11-04-15h48m59s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2019-11-04-16h08m28s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2019-11-04-16h25m39s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2019-11-04-16h48m03s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2019-11-04-17h02m41s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2019-11-04-17h23m47s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2019-11-04-17h42m59s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2019-11-04-19h09m09s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2019-11-04-19h23m13s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2019-11-04-19h41m34s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2019-11-04-19h54m53s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2019-11-04-20h07m43s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2019-11-04-21h09m41s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2019-11-04-21h31m19s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2019-11-04-21h48m35s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2019-11-04-22h03m34s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2019-11-04-22h21m43s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2019-11-04-22h48m14s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2019-11-04-23h04m33s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2019-11-04-23h23m02s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2020-01-06-14h42m05s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2020-01-06-21h53m42s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2020-01-06-22h54m02s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2020-01-06-23h16m56s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2020-01-06-23h45m57s-udp	6.275	1.900	2	1	filenames,media_filenames
+accelerative propagation	6.192	1.875	1	1	publication
+aerodynamic scaling	6.192	1.875	1	1	publication
+aerodynamics geometry	6.192	1.875	1	1	publication
+air mixtures	6.192	1.875	1	1	publication
+akkerman yacheslav	6.192	1.875	1	1	publication
+alex law	6.192	1.875	1	1	publication
+analysis pulsating	6.192	1.875	1	1	publication
+applicability flamelet	6.192	1.875	1	1	publication
+bechtold john	6.192	1.875	1	1	publication
+binary collision	6.192	1.875	1	1	publication
+buoyant nearly	6.192	1.875	1	1	publication
+buoyant spherical	6.192	1.875	1	1	publication
+burner combustion	6.192	1.875	1	1	publication
+burner flames	6.192	1.875	1	1	publication
+burner-stabilized cylindrical	6.192	1.875	1	1	publication
+bychkov vitaly	6.192	1.875	1	1	publication
+cellular spherical	6.192	1.875	1	1	publication
+ch flame	6.192	1.875	1	1	publication
+challenges combustion	6.192	1.875	1	1	publication
+chaudhuri sacksteder	6.192	1.875	1	1	publication
+chaudhuri swetaprovo	6.192	1.875	1	1	publication
+chaudhuri zhu	6.192	1.875	1	1	publication
+chemical propulsion	6.192	1.875	1	1	publication
+chemiluminescent oh	6.192	1.875	1	1	publication
+chen shr-jing	6.192	1.875	1	1	publication
+chih-jen law	6.192	1.875	1	1	publication
+christiansen law	6.192	1.875	1	1	publication
+chung bychkov	6.192	1.875	1	1	publication
+chung mueller	6.192	1.875	1	1	publication
+collision burning	6.192	1.875	1	1	publication
+combustion experimentation	6.192	1.875	1	1	publication
+combustion low	6.192	1.875	1	1	publication
+combustion modeling	6.192	1.875	1	1	publication
+combustion x27	6.192	1.875	1	1	publication
+comprehensive detailed	6.192	1.875	1	1	publication
+comprehensive evaluation	6.192	1.875	1	1	publication
+corner dynamics	6.192	1.875	1	1	publication
+criterion global	6.192	1.875	1	1	publication
+cylindrical burner	6.192	1.875	1	1	publication
+cylindrical diffusion	6.192	1.875	1	1	publication
+cylindrical premixed	6.192	1.875	1	1	publication
+delay hydrocarbon	6.192	1.875	1	1	publication
+delin yoo	6.192	1.875	1	1	publication
+deng sili	6.192	1.875	1	1	publication
+density response	6.192	1.875	1	1	publication
+detailed reduced	6.192	1.875	1	1	publication
+development comprehensive	6.192	1.875	1	1	publication
+dietrich dp	6.192	1.875	1	1	publication
+diffusion heptane	6.192	1.875	1	1	publication
+diffusion heptane-air	6.192	1.875	1	1	publication
+dler lutz	6.192	1.875	1	1	publication
+double luminous	6.192	1.875	1	1	publication
+droplet non-burning	6.192	1.875	1	1	publication
+droplet xylene	6.192	1.875	1	1	publication
+dual response	6.192	1.875	1	1	publication
+dynamics extinction	6.192	1.875	1	1	publication
+dynamics flame-generated	6.192	1.875	1	1	publication
+dynamics stationary	6.192	1.875	1	1	publication
+effects variable	6.192	1.875	1	1	publication
+eng zhu	6.192	1.875	1	1	publication
+ethylene flames	6.192	1.875	1	1	publication
+expanding wrinkled	6.192	1.875	1	1	publication
+experimental response	6.192	1.875	1	1	publication
+experimental self-acceleration	6.192	1.875	1	1	publication
+experimentation computational	6.192	1.875	1	1	publication
+explosion triggering	6.192	1.875	1	1	publication
+extended flammability	6.192	1.875	1	1	publication
+extended limits	6.192	1.875	1	1	publication
+fan law	6.192	1.875	1	1	publication
+first-stage ignition	6.192	1.875	1	1	publication
+flame-generated vorticity	6.192	1.875	1	1	publication
+flamefront motion	6.192	1.875	1	1	publication
+flamelet models	6.192	1.875	1	1	publication
+flames applicability	6.192	1.875	1	1	publication
+flames double	6.192	1.875	1	1	publication
+flames explosion	6.192	1.875	1	1	publication
+flames extended	6.192	1.875	1	1	publication
+flames morphology	6.192	1.875	1	1	publication
+flames properties	6.192	1.875	1	1	publication
+flat-burner flames	6.192	1.875	1	1	publication
+fuel options	6.192	1.875	1	1	publication
+fujia jomaas	6.192	1.875	1	1	publication
+gandhi rahul	6.192	1.875	1	1	publication
+gang gandhi	6.192	1.875	1	1	publication
+general lewis	6.192	1.875	1	1	publication
+geometry premixed	6.192	1.875	1	1	publication
+global quasi-steadiness	6.192	1.875	1	1	publication
+gokoglu dietrich	6.192	1.875	1	1	publication
+grashof numbers	6.192	1.875	1	1	publication
+grunde law	6.192	1.875	1	1	publication
+heptane air	6.192	1.875	1	1	publication
+heptane-air flames	6.192	1.875	1	1	publication
+heyang bechtold	6.192	1.875	1	1	publication
+hydrocarbon ntc	6.192	1.875	1	1	publication
+hydrogen-co ethylene	6.192	1.875	1	1	publication
+ignition delay	6.192	1.875	1	1	publication
+initiation propagation	6.192	1.875	1	1	publication
+instabilities diffusion	6.192	1.875	1	1	publication
+intrinsic oscillation	6.192	1.875	1	1	publication
+john law	6.192	1.875	1	1	publication
+kurt zhang	6.192	1.875	1	1	publication
+laminar premixed	6.192	1.875	1	1	publication
+law faeth	6.192	1.875	1	1	publication
+law sacksteder	6.192	1.875	1	1	publication
+law tse	6.192	1.875	1	1	publication
+lewis numbers	6.192	1.875	1	1	publication
+limits flammability	6.192	1.875	1	1	publication
+limits n-heptane	6.192	1.875	1	1	publication
+longtin tse	6.192	1.875	1	1	publication
+low grashof	6.192	1.875	1	1	publication
+luminous zone	6.192	1.875	1	1	publication
+lutz tse	6.192	1.875	1	1	publication
+mechanisms burning	6.192	1.875	1	1	publication
+mechanisms combustion	6.192	1.875	1	1	publication
+mechanisms near-limit	6.192	1.875	1	1	publication
+mechanistic evaluation	6.192	1.875	1	1	publication
+methane flame	6.192	1.875	1	1	publication
+micro-buoyancy computation	6.192	1.875	1	1	publication
+micro-buoyancy conditions	6.192	1.875	1	1	publication
+micro-buoyancy spherical	6.192	1.875	1	1	publication
+microgravity experimentation	6.192	1.875	1	1	publication
+mixtures cool	6.192	1.875	1	1	publication
+morphology colliding	6.192	1.875	1	1	publication
+morphology corner	6.192	1.875	1	1	publication
+morphology spherical	6.192	1.875	1	1	publication
+motion criterion	6.192	1.875	1	1	publication
+mueller michael	6.192	1.875	1	1	publication
+n-heptane air	6.192	1.875	1	1	publication
+near-limit premixed	6.192	1.875	1	1	publication
+nearly spherical	6.192	1.875	1	1	publication
+next-generation chemical	6.192	1.875	1	1	publication
+non-burning droplet	6.192	1.875	1	1	publication
+nonlinear analysis	6.192	1.875	1	1	publication
+nonpremixed cool	6.192	1.875	1	1	publication
+novoselov alex	6.192	1.875	1	1	publication
+ntc chemistry	6.192	1.875	1	1	publication
+opportunities challenges	6.192	1.875	1	1	publication
+options next-generation	6.192	1.875	1	1	publication
+oscillation radiation-affected	6.192	1.875	1	1	publication
+oscillatory extinction	6.192	1.875	1	1	publication
+outcome regimes	6.192	1.875	1	1	publication
+peng liang	6.192	1.875	1	1	publication
+peng zhu	6.192	1.875	1	1	publication
+porous spherical	6.192	1.875	1	1	publication
+premixed cool	6.192	1.875	1	1	publication
+premixed flamelets	6.192	1.875	1	1	publication
+propagation expanding	6.192	1.875	1	1	publication
+propagation laminar	6.192	1.875	1	1	publication
+properties hydrogen-co	6.192	1.875	1	1	publication
+qian law	6.192	1.875	1	1	publication
+quasi-steadiness droplet	6.192	1.875	1	1	publication
+radiation-affected diffusion	6.192	1.875	1	1	publication
+radical-induced ignition	6.192	1.875	1	1	publication
+rahul zhong	6.192	1.875	1	1	publication
+rates cylindrical	6.192	1.875	1	1	publication
+reaction mechanisms	6.192	1.875	1	1	publication
+reduced reaction	6.192	1.875	1	1	publication
+regimes flame	6.192	1.875	1	1	publication
+response flat-burner	6.192	1.875	1	1	publication
+role flamefront	6.192	1.875	1	1	publication
+rotating spherical	6.192	1.875	1	1	publication
+rotation general	6.192	1.875	1	1	publication
+rotation microgravity	6.192	1.875	1	1	publication
+rotation nonequidiffusion	6.192	1.875	1	1	publication
+sacksteder zhang	6.192	1.875	1	1	publication
+scaling weakly	6.192	1.875	1	1	publication
+sd tse	6.192	1.875	1	1	publication
+sean chaudhuri	6.192	1.875	1	1	publication
+sean law	6.192	1.875	1	1	publication
+sean zhu	6.192	1.875	1	1	publication
+self-acceleration cellular	6.192	1.875	1	1	publication
+self-similar accelerative	6.192	1.875	1	1	publication
+sheng zhu	6.192	1.875	1	1	publication
+shr-jing tse	6.192	1.875	1	1	publication
+sili law	6.192	1.875	1	1	publication
+simulation turbulent	6.192	1.875	1	1	publication
+spherical burner	6.192	1.875	1	1	publication
+spherical premixed	6.192	1.875	1	1	publication
+spreading unsteady	6.192	1.875	1	1	publication
+stabilization dual	6.192	1.875	1	1	publication
+stabilization mechanisms	6.192	1.875	1	1	publication
+stationary rotating	6.192	1.875	1	1	publication
+stephen law	6.192	1.875	1	1	publication
+stocker pv	6.192	1.875	1	1	publication
+structure aerodynamic	6.192	1.875	1	1	publication
+structure aerodynamics	6.192	1.875	1	1	publication
+structure dynamics	6.192	1.875	1	1	publication
+structure hydrogen	6.192	1.875	1	1	publication
+structure stabilization	6.192	1.875	1	1	publication
+sung law	6.192	1.875	1	1	publication
+sung wang	6.192	1.875	1	1	publication
+sw yoo	6.192	1.875	1	1	publication
+swetaprovo sacksteder	6.192	1.875	1	1	publication
+theory droplet	6.192	1.875	1	1	publication
+theory first-stage	6.192	1.875	1	1	publication
+thin-flame theory	6.192	1.875	1	1	publication
+tse law	6.192	1.875	1	1	publication
+tse zhu	6.192	1.875	1	1	publication
+turbulent nonpremixed	6.192	1.875	1	1	publication
+unsteady cylindrical	6.192	1.875	1	1	publication
+variable density	6.192	1.875	1	1	publication
+wang heyang	6.192	1.875	1	1	publication
+wang law	6.192	1.875	1	1	publication
+wang lu	6.192	1.875	1	1	publication
+wenkai deng	6.192	1.875	1	1	publication
+wrinkled flames	6.192	1.875	1	1	publication
+wu fujia	6.192	1.875	1	1	publication
+x27 guide	6.192	1.875	1	1	publication
+xiaosheng dler	6.192	1.875	1	1	publication
+xin cj	6.192	1.875	1	1	publication
+xin yuxuan	6.192	1.875	1	1	publication
+xiong gang	6.192	1.875	1	1	publication
+xylene outcome	6.192	1.875	1	1	publication
+yacheslav law	6.192	1.875	1	1	publication
+yang chaudhuri	6.192	1.875	1	1	publication
+yang fan	6.192	1.875	1	1	publication
+yang law	6.192	1.875	1	1	publication
+yang sheng	6.192	1.875	1	1	publication
+yoo chaudhuri	6.192	1.875	1	1	publication
+yoo christiansen	6.192	1.875	1	1	publication
+yoo qian	6.192	1.875	1	1	publication
+yuxuan sung	6.192	1.875	1	1	publication
+yx xin	6.192	1.875	1	1	publication
+zhang huiqiang	6.192	1.875	1	1	publication
+zhang peng	6.192	1.875	1	1	publication
+zhang zhu	6.192	1.875	1	1	publication
+zhao peng	6.192	1.875	1	1	publication
+zhong xiaosheng	6.192	1.875	1	1	publication
+zhu cj	6.192	1.875	1	1	publication
+zhu ck	6.192	1.875	1	1	publication
+zhu tse	6.192	1.875	1	1	publication
+zone structure	6.192	1.875	1	1	publication
+systems	6.105	4.500	2	13	hypothesis,publication
+dp	5.966	2.500	1	4	publication
+gokoglu	5.966	2.500	1	4	publication
+guide	5.966	2.500	1	4	publication
+ju	5.966	2.500	1	4	publication
+n-heptane	5.966	2.500	1	4	publication
+sa	5.966	2.500	1	4	publication
+unsteady	5.966	2.500	1	4	publication
+stocker	5.926	3.500	2	9	people,publication
+reference	5.841	2.650	3	5	file_folders,filenames,media_filenames
+acceleration	5.794	2.000	1	2	approach
+adjust	5.794	2.000	1	2	approach
+associated	5.794	2.000	1	2	research_impacts
+basis	5.794	2.000	1	2	research_impacts
+chemiluminescence	5.794	2.000	1	2	objective
+collection	5.794	2.000	1	2	hypothesis
+compare	5.794	2.000	1	2	objective
+consists	5.794	2.000	1	2	research_impacts
+existence	5.794	2.000	1	2	objective
+explored	5.794	2.000	1	2	hypothesis
+extensive	5.794	2.000	1	2	approach
+extinctions	5.794	2.000	1	2	hypothesis
+initially	5.794	2.000	1	2	objective
+intermediate	5.794	2.000	1	2	approach
+mixed	5.794	2.000	1	2	approach
+obtain	5.794	2.000	1	2	approach
+occur	5.794	2.000	1	2	objective
+operating	5.794	2.000	1	2	approach
+part	5.794	2.000	1	2	hypothesis
+reliability	5.794	2.000	1	2	research_impacts
+rigorous	5.794	2.000	1	2	hypothesis
+structures	5.794	2.000	1	2	objective
+terms	5.794	2.000	1	2	research_impacts
+unique	5.794	2.000	1	2	research_impacts
+environment	5.723	4.000	2	12	approach,research_impacts
+dietrich	5.510	2.500	1	5	publication
+john	5.510	2.500	1	5	publication
+michael	5.510	2.500	1	5	publication
+olson	5.510	2.500	1	5	publication
+reserve	5.510	2.500	1	5	publication
+role	5.510	2.500	1	5	publication
+zhao	5.510	2.500	1	5	publication
+structure response spherical	5.449	1.650	1	1	proposal_title
+aerospace engineering	5.432	1.875	1	2	publication
+air flames	5.432	1.875	1	2	publication
+burner-supported spherical	5.432	1.875	1	2	publication
+burning droplet	5.432	1.875	1	2	publication
+chih-jen ju	5.432	1.875	1	2	publication
+cleveland oh	5.432	1.875	1	2	publication
+combustion systems	5.432	1.875	1	2	publication
+computation currently	5.432	1.875	1	2	publication
+currently department	5.432	1.875	1	2	publication
+delin sung	5.432	1.875	1	2	publication
+department mechanical	5.432	1.875	1	2	publication
+direct numerical	5.432	1.875	1	2	publication
+engineering case	5.432	1.875	1	2	publication
+extinction mechanisms	5.432	1.875	1	2	publication
+extinction microgravity	5.432	1.875	1	2	publication
+extinction spherical	5.432	1.875	1	2	publication
+ferkul sl	5.432	1.875	1	2	publication
+mechanical aerospace	5.432	1.875	1	2	publication
+oh ch	5.432	1.875	1	2	publication
+stephen zhu	5.432	1.875	1	2	publication
+university cleveland	5.432	1.875	1	2	publication
+yiguang law	5.432	1.875	1	2	publication
+determine	5.427	4.000	2	13	objective
+high	5.427	4.000	2	13	objective,research_impacts
+cir acme	5.369	2.250	1	4	experiment_hardware
+flames gaseous fuels	5.250	2.200	1	4	sub_research_area
+assess	5.219	2.000	1	3	objective
+characterize	5.219	2.000	1	3	objective
+comparisons	5.219	2.000	1	3	approach
+convective	5.219	2.000	1	3	objective
+description	5.219	2.000	1	3	hypothesis
+fields	5.219	2.000	1	3	research_impacts
+fundamentally	5.219	2.000	1	3	research_impacts
+ground	5.219	2.000	1	3	hypothesis
+pollutant	5.219	2.000	1	3	research_impacts
+predictive	5.219	2.000	1	3	hypothesis
+reactant	5.219	2.000	1	3	approach
+requirements	5.219	2.000	1	3	hypothesis
+simulations	5.219	2.000	1	3	approach
+species	5.219	2.000	1	3	objective
+stabilized	5.219	2.000	1	3	approach
+typical	5.219	2.000	1	3	approach
+cir	5.079	3.000	1	9	experiment_hardware
+rack	5.079	3.000	1	9	experiment_hardware
+acceleration levels	4.954	1.500	1	1	approach
+acquire diffusion	4.954	1.500	1	1	research_impacts
+adequately explored	4.954	1.500	1	1	hypothesis
+adjust mixture	4.954	1.500	1	1	approach
+aerodynamic flow	4.954	1.500	1	1	research_impacts
+affords simple	4.954	1.500	1	1	research_impacts
+ambient temperatures	4.954	1.500	1	1	approach
+amplitude pulsating	4.954	1.500	1	1	objective
+aspects measurement	4.954	1.500	1	1	hypothesis
+aspects practically	4.954	1.500	1	1	research_impacts
+assess transport	4.954	1.500	1	1	objective
+associated physico-chemical	4.954	1.500	1	1	research_impacts
+basis combustion	4.954	1.500	1	1	research_impacts
+behavior structure	4.954	1.500	1	1	approach
+best effort	4.954	1.500	1	1	hypothesis
+buoyancy-free environment	4.954	1.500	1	1	research_impacts
+burner ignited	4.954	1.500	1	1	approach
+burner temperatures	4.954	1.500	1	1	approach
+burning basis	4.954	1.500	1	1	research_impacts
+characterize transient	4.954	1.500	1	1	objective
+chemiluminescence objective	4.954	1.500	1	1	objective
+chemistry diffusion	4.954	1.500	1	1	research_impacts
+chemistry ethylene	4.954	1.500	1	1	approach
+chemistry transport	4.954	1.500	1	1	hypothesis
+collection test	4.954	1.500	1	1	hypothesis
+combustion chemistry	4.954	1.500	1	1	approach
+compare detailed	4.954	1.500	1	1	objective
+comparisons flame	4.954	1.500	1	1	approach
+comprehensiveness chemical	4.954	1.500	1	1	hypothesis
+comprise rigorous	4.954	1.500	1	1	hypothesis
+conditions aspects	4.954	1.500	1	1	hypothesis
+conditions reactant	4.954	1.500	1	1	approach
+conditions steady	4.954	1.500	1	1	hypothesis
+consists practical	4.954	1.500	1	1	research_impacts
+convective chemical-kinetic	4.954	1.500	1	1	objective
+conventional gaseous	4.954	1.500	1	1	approach
+critical lewis	4.954	1.500	1	1	objective
+da nature	4.954	1.500	1	1	objective
+definition rely	4.954	1.500	1	1	hypothesis
+description flames	4.954	1.500	1	1	hypothesis
+detailed chemistry	4.954	1.500	1	1	hypothesis
+detailed computational	4.954	1.500	1	1	objective
+detailed model	4.954	1.500	1	1	hypothesis
+determine existence	4.954	1.500	1	1	objective
+determine quasi-steady	4.954	1.500	1	1	objective
+develop requirements	4.954	1.500	1	1	hypothesis
+developed part	4.954	1.500	1	1	hypothesis
+devices understanding	4.954	1.500	1	1	research_impacts
+different flow	4.954	1.500	1	1	objective
+different zeldovich	4.954	1.500	1	1	objective
+diffusivities carbon	4.954	1.500	1	1	approach
+diluent mixtures	4.954	1.500	1	1	objective
+diluents issued	4.954	1.500	1	1	approach
+diluents mixed	4.954	1.500	1	1	approach
+dioxide influence	4.954	1.500	1	1	approach
+distribution diffusion	4.954	1.500	1	1	objective
+due time	4.954	1.500	1	1	hypothesis
+dynamics chemistry	4.954	1.500	1	1	research_impacts
+effort modeling	4.954	1.500	1	1	hypothesis
+emissions reliability	4.954	1.500	1	1	research_impacts
+engines devices	4.954	1.500	1	1	research_impacts
+environment offered	4.954	1.500	1	1	research_impacts
+environment spherical	4.954	1.500	1	1	approach
+established initially	4.954	1.500	1	1	objective
+established methane	4.954	1.500	1	1	approach
+ethylene hydrogen	4.954	1.500	1	1	approach
+ethylene typical	4.954	1.500	1	1	approach
+existence different	4.954	1.500	1	1	objective
+explored ground	4.954	1.500	1	1	hypothesis
+extensive conducted	4.954	1.500	1	1	approach
+extinctions flame	4.954	1.500	1	1	hypothesis
+facilities flight	4.954	1.500	1	1	hypothesis
+fidelity prospect	4.954	1.500	1	1	research_impacts
+fields acquire	4.954	1.500	1	1	research_impacts
+flame burner	4.954	1.500	1	1	approach
+flame burning	4.954	1.500	1	1	research_impacts
+flame extinctions	4.954	1.500	1	1	hypothesis
+flame high	4.954	1.500	1	1	research_impacts
+flame structures	4.954	1.500	1	1	objective
+flame synchronized	4.954	1.500	1	1	approach
+flames compare	4.954	1.500	1	1	objective
+flames conventional	4.954	1.500	1	1	approach
+flames developed	4.954	1.500	1	1	hypothesis
+flames established	4.954	1.500	1	1	objective
+flames fuel	4.954	1.500	1	1	objective
+flames obtained	4.954	1.500	1	1	hypothesis
+flight definition	4.954	1.500	1	1	hypothesis
+flow fields	4.954	1.500	1	1	research_impacts
+flux measurements	4.954	1.500	1	1	approach
+following specific	4.954	1.500	1	1	objective
+frequency amplitude	4.954	1.500	1	1	objective
+front instabilities	4.954	1.500	1	1	hypothesis
+front velocities	4.954	1.500	1	1	hypothesis
+fuel diluent	4.954	1.500	1	1	objective
+fuel important	4.954	1.500	1	1	approach
+fuel nitrogen	4.954	1.500	1	1	approach
+fuel reaction	4.954	1.500	1	1	approach
+fuels diluents	4.954	1.500	1	1	approach
+fuels hydrogen	4.954	1.500	1	1	approach
+function da	4.954	1.500	1	1	objective
+fundamental aspects	4.954	1.500	1	1	research_impacts
+fundamentally unique	4.954	1.500	1	1	research_impacts
+g-jitter limitations	4.954	1.500	1	1	hypothesis
+helium adjust	4.954	1.500	1	1	approach
+high fidelity	4.954	1.500	1	1	research_impacts
+high system	4.954	1.500	1	1	objective
+higher hydrocarbons	4.954	1.500	1	1	approach
+hydrocarbon extensive	4.954	1.500	1	1	approach
+hydrocarbons diluents	4.954	1.500	1	1	approach
+hydrogen simplest	4.954	1.500	1	1	approach
+ignited obtain	4.954	1.500	1	1	approach
+images flame	4.954	1.500	1	1	approach
+impact work	4.954	1.500	1	1	research_impacts
+important improving	4.954	1.500	1	1	research_impacts
+important intermediate	4.954	1.500	1	1	approach
+improving performance	4.954	1.500	1	1	research_impacts
+initially non-steady	4.954	1.500	1	1	objective
+instabilities soot	4.954	1.500	1	1	hypothesis
+instabilities theoretically	4.954	1.500	1	1	objective
+intermediate oxidation	4.954	1.500	1	1	approach
+issued oxidizing	4.954	1.500	1	1	approach
+kinetic transport	4.954	1.500	1	1	hypothesis
+kinetics chemiluminescence	4.954	1.500	1	1	objective
+levels comparisons	4.954	1.500	1	1	approach
+limitations little	4.954	1.500	1	1	hypothesis
+limits comprise	4.954	1.500	1	1	hypothesis
+limits high	4.954	1.500	1	1	objective
+limits low	4.954	1.500	1	1	objective
+little planned	4.954	1.500	1	1	hypothesis
+low system	4.954	1.500	1	1	objective
+made spectrally	4.954	1.500	1	1	approach
+matrix adequately	4.954	1.500	1	1	hypothesis
+measure characterize	4.954	1.500	1	1	objective
+measure comprehensiveness	4.954	1.500	1	1	hypothesis
+measurement systems	4.954	1.500	1	1	hypothesis
+measurements aspects	4.954	1.500	1	1	hypothesis
+measurements system	4.954	1.500	1	1	approach
+mechanism reasonably	4.954	1.500	1	1	approach
+mechanisms description	4.954	1.500	1	1	hypothesis
+methane simplest	4.954	1.500	1	1	approach
+microgravity affords	4.954	1.500	1	1	research_impacts
+mixed fuel	4.954	1.500	1	1	approach
+mixture diffusivities	4.954	1.500	1	1	approach
+mixtures critical	4.954	1.500	1	1	objective
+mixtures gaseous	4.954	1.500	1	1	approach
+mode frequency	4.954	1.500	1	1	objective
+model together	4.954	1.500	1	1	hypothesis
+modeling work	4.954	1.500	1	1	hypothesis
+models numerical	4.954	1.500	1	1	hypothesis
+models radiation	4.954	1.500	1	1	hypothesis
+nature mode	4.954	1.500	1	1	objective
+ncc3-1051	4.954	1.500	1	1	funding
+nnc06aa27a	4.954	1.500	1	1	funding
+nnx09ar03a	4.954	1.500	1	1	funding
+nnx15ac79a	4.954	1.500	1	1	funding
+nominally spherical	4.954	1.500	1	1	approach
+non-steady spherical	4.954	1.500	1	1	objective
+number ze	4.954	1.500	1	1	objective
+numbers mixtures	4.954	1.500	1	1	objective
+numbers radiative	4.954	1.500	1	1	objective
+objective measure	4.954	1.500	1	1	objective
+objectives soot-free	4.954	1.500	1	1	objective
+obtain nominally	4.954	1.500	1	1	approach
+obtained measurements	4.954	1.500	1	1	hypothesis
+occur transient	4.954	1.500	1	1	objective
+offered microgravity	4.954	1.500	1	1	research_impacts
+one-dimensional stabilized	4.954	1.500	1	1	approach
+onset function	4.954	1.500	1	1	objective
+oxidation higher	4.954	1.500	1	1	approach
+oxidizing environment	4.954	1.500	1	1	approach
+part detailed	4.954	1.500	1	1	hypothesis
+performance terms	4.954	1.500	1	1	research_impacts
+physico-chemical parameters	4.954	1.500	1	1	research_impacts
+planned test	4.954	1.500	1	1	hypothesis
+power efficiency	4.954	1.500	1	1	research_impacts
+practical fundamental	4.954	1.500	1	1	research_impacts
+practically diffusion	4.954	1.500	1	1	research_impacts
+predicted occur	4.954	1.500	1	1	objective
+predictive tool	4.954	1.500	1	1	hypothesis
+pressures acceleration	4.954	1.500	1	1	approach
+processes well	4.954	1.500	1	1	research_impacts
+properties detailed	4.954	1.500	1	1	objective
+proposed following	4.954	1.500	1	1	objective
+proposed mixtures	4.954	1.500	1	1	approach
+prospect understanding	4.954	1.500	1	1	research_impacts
+quantifying associated	4.954	1.500	1	1	research_impacts
+quasi-steady convective	4.954	1.500	1	1	objective
+radiation characteristics	4.954	1.500	1	1	approach
+radiation mechanisms	4.954	1.500	1	1	hypothesis
+radiative chemical-kinetic	4.954	1.500	1	1	objective
+radiative flux	4.954	1.500	1	1	approach
+rates ambient	4.954	1.500	1	1	approach
+rates objective	4.954	1.500	1	1	objective
+reactant flow	4.954	1.500	1	1	approach
+reaction mechanism	4.954	1.500	1	1	approach
+reasonably established	4.954	1.500	1	1	approach
+reliability fundamentally	4.954	1.500	1	1	research_impacts
+rely best	4.954	1.500	1	1	hypothesis
+requirements collection	4.954	1.500	1	1	hypothesis
+resolved images	4.954	1.500	1	1	approach
+rigorous test	4.954	1.500	1	1	hypothesis
+simple aerodynamic	4.954	1.500	1	1	research_impacts
+simplest fuel	4.954	1.500	1	1	approach
+simplest hydrocarbon	4.954	1.500	1	1	approach
+simulation assess	4.954	1.500	1	1	objective
+simulation predictive	4.954	1.500	1	1	hypothesis
+simulations flames	4.954	1.500	1	1	approach
+soot suppression	4.954	1.500	1	1	hypothesis
+soot-free sooty	4.954	1.500	1	1	objective
+sooty different	4.954	1.500	1	1	objective
+sooty flames	4.954	1.500	1	1	objective
+sooty fuel	4.954	1.500	1	1	approach
+sooty objective	4.954	1.500	1	1	objective
+species distribution	4.954	1.500	1	1	objective
+specific test	4.954	1.500	1	1	hypothesis
+spectrally resolved	4.954	1.500	1	1	approach
+spherical one-dimensional	4.954	1.500	1	1	approach
+stabilized flame	4.954	1.500	1	1	approach
+state flames	4.954	1.500	1	1	hypothesis
+steady state	4.954	1.500	1	1	hypothesis
+structure detailed	4.954	1.500	1	1	approach
+structure growth	4.954	1.500	1	1	hypothesis
+structure temperature	4.954	1.500	1	1	objective
+structures mixtures	4.954	1.500	1	1	objective
+suppression limits	4.954	1.500	1	1	hypothesis
+synchronized measurements	4.954	1.500	1	1	approach
+system operating	4.954	1.500	1	1	approach
+systems due	4.954	1.500	1	1	hypothesis
+temperatures pressures	4.954	1.500	1	1	approach
+temperatures radiative	4.954	1.500	1	1	approach
+terms power	4.954	1.500	1	1	research_impacts
+test detailed	4.954	1.500	1	1	hypothesis
+test facilities	4.954	1.500	1	1	hypothesis
+test matrix	4.954	1.500	1	1	hypothesis
+theoretically predicted	4.954	1.500	1	1	objective
+thermochemical processes	4.954	1.500	1	1	research_impacts
+time g-jitter	4.954	1.500	1	1	hypothesis
+together measure	4.954	1.500	1	1	hypothesis
+tool develop	4.954	1.500	1	1	hypothesis
+transient numerical	4.954	1.500	1	1	hypothesis
+transient spherical	4.954	1.500	1	1	objective
+transient structure	4.954	1.500	1	1	objective
+transport properties	4.954	1.500	1	1	objective
+typical sooty	4.954	1.500	1	1	approach
+underlying dynamics	4.954	1.500	1	1	research_impacts
+understanding underlying	4.954	1.500	1	1	research_impacts
+understanding unit	4.954	1.500	1	1	research_impacts
+unique buoyancy-free	4.954	1.500	1	1	research_impacts
+unit thermochemical	4.954	1.500	1	1	research_impacts
+velocities specific	4.954	1.500	1	1	hypothesis
+well quantifying	4.954	1.500	1	1	research_impacts
+work consists	4.954	1.500	1	1	research_impacts
+ze onset	4.954	1.500	1	1	objective
+zeldovich number	4.954	1.500	1	1	objective
+burning rates	4.893	1.875	1	3	publication
+ignition combustion	4.893	1.875	1	3	publication
+jomaas grunde	4.893	1.875	1	3	publication
+ju yiguang	4.893	1.875	1	3	publication
+sl olson	4.893	1.875	1	3	publication
+university	4.893	4.000	3	15	affiliation,publication
+laminar	4.791	2.500	1	7	publication
+developed	4.773	2.000	1	4	hypothesis
+devices	4.773	2.000	1	4	research_impacts
+flux	4.773	2.000	1	4	approach
+fundamental	4.773	2.000	1	4	research_impacts
+helium	4.773	2.000	1	4	approach
+higher	4.773	2.000	1	4	approach
+impact	4.773	2.000	1	4	research_impacts
+improving	4.773	2.000	1	4	research_impacts
+made	4.773	2.000	1	4	approach
+unit	4.773	2.000	1	4	research_impacts
+velocities	4.773	2.000	1	4	hypothesis
+well	4.773	2.000	1	4	research_impacts
+accelerative propagation expanding	4.541	1.375	1	1	publication
+aerodynamic scaling weakly	4.541	1.375	1	1	publication
+aerodynamics geometry premixed	4.541	1.375	1	1	publication
+air mixtures cool	4.541	1.375	1	1	publication
+akkerman yacheslav law	4.541	1.375	1	1	publication
+alex law chung	4.541	1.375	1	1	publication
+analysis pulsating instabilities	4.541	1.375	1	1	publication
+applicability flamelet models	4.541	1.375	1	1	publication
+bechtold john law	4.541	1.375	1	1	publication
+binary collision burning	4.541	1.375	1	1	publication
+buoyant nearly spherical	4.541	1.375	1	1	publication
+buoyant spherical diffusion	4.541	1.375	1	1	publication
+burner combustion experimentation	4.541	1.375	1	1	publication
+burner-stabilized cylindrical premixed	4.541	1.375	1	1	publication
+burning droplet non-burning	4.541	1.375	1	1	publication
+burning rates cylindrical	4.541	1.375	1	1	publication
+cellular spherical flames	4.541	1.375	1	1	publication
+ch flame structure	4.541	1.375	1	1	publication
+challenges combustion microgravity	4.541	1.375	1	1	publication
+chaudhuri sacksteder zhang	4.541	1.375	1	1	publication
+chaudhuri swetaprovo sacksteder	4.541	1.375	1	1	publication
+chaudhuri zhu ck	4.541	1.375	1	1	publication
+chemiluminescent oh ch	4.541	1.375	1	1	publication
+chen shr-jing tse	4.541	1.375	1	1	publication
+chih-jen law chung	4.541	1.375	1	1	publication
+chung bychkov vitaly	4.541	1.375	1	1	publication
+chung mueller michael	4.541	1.375	1	1	publication
+collision burning droplet	4.541	1.375	1	1	publication
+combustion low grashof	4.541	1.375	1	1	publication
+combustion x27 guide	4.541	1.375	1	1	publication
+comprehensive detailed reduced	4.541	1.375	1	1	publication
+comprehensive evaluation soret	4.541	1.375	1	1	publication
+computational simulation spherical	4.541	1.375	1	1	publication
+cool flames applicability	4.541	1.375	1	1	publication
+corner dynamics flame-generated	4.541	1.375	1	1	publication
+criterion global quasi-steadiness	4.541	1.375	1	1	publication
+cylindrical burner flames	4.541	1.375	1	1	publication
+cylindrical diffusion flames	4.541	1.375	1	1	publication
+cylindrical premixed flames	4.541	1.375	1	1	publication
+delay hydrocarbon ntc	4.541	1.375	1	1	publication
+delin yoo sean	4.541	1.375	1	1	publication
+deng sili law	4.541	1.375	1	1	publication
+density response spherical	4.541	1.375	1	1	publication
+detailed reduced reaction	4.541	1.375	1	1	publication
+development comprehensive detailed	4.541	1.375	1	1	publication
+dietrich dp stocker	4.541	1.375	1	1	publication
+diffusion flame dynamics	4.541	1.375	1	1	publication
+diffusion flames double	4.541	1.375	1	1	publication
+diffusion flames properties	4.541	1.375	1	1	publication
+diffusion heptane air	4.541	1.375	1	1	publication
+diffusion heptane-air flames	4.541	1.375	1	1	publication
+dler lutz tse	4.541	1.375	1	1	publication
+double luminous zone	4.541	1.375	1	1	publication
+dp stocker pv	4.541	1.375	1	1	publication
+droplet combustion low	4.541	1.375	1	1	publication
+droplet non-burning droplet	4.541	1.375	1	1	publication
+droplet xylene outcome	4.541	1.375	1	1	publication
+dual response flat-burner	4.541	1.375	1	1	publication
+dynamics extinction microgravity	4.541	1.375	1	1	publication
+dynamics flame-generated vorticity	4.541	1.375	1	1	publication
+dynamics morphology colliding	4.541	1.375	1	1	publication
+dynamics morphology spherical	4.541	1.375	1	1	publication
+dynamics stationary rotating	4.541	1.375	1	1	publication
+effects variable density	4.541	1.375	1	1	publication
+eng zhu law	4.541	1.375	1	1	publication
+expanding wrinkled flames	4.541	1.375	1	1	publication
+experimental response spherical	4.541	1.375	1	1	publication
+experimental self-acceleration cellular	4.541	1.375	1	1	publication
+experimentation computational simulation	4.541	1.375	1	1	publication
+extended flammability limits	4.541	1.375	1	1	publication
+extended limits flammability	4.541	1.375	1	1	publication
+extinction mechanisms near-limit	4.541	1.375	1	1	publication
+fan law sung	4.541	1.375	1	1	publication
+first-stage ignition delay	4.541	1.375	1	1	publication
+flame dynamics extinction	4.541	1.375	1	1	publication
+flame structure aerodynamic	4.541	1.375	1	1	publication
+flamefront motion criterion	4.541	1.375	1	1	publication
+flames applicability flamelet	4.541	1.375	1	1	publication
+flames double luminous	4.541	1.375	1	1	publication
+flames explosion triggering	4.541	1.375	1	1	publication
+flames extended limits	4.541	1.375	1	1	publication
+flames micro-buoyancy computation	4.541	1.375	1	1	publication
+flames micro-buoyancy conditions	4.541	1.375	1	1	publication
+flames morphology corner	4.541	1.375	1	1	publication
+flames properties hydrogen-co	4.541	1.375	1	1	publication
+flames rotation general	4.541	1.375	1	1	publication
+flammability limits n-heptane	4.541	1.375	1	1	publication
+fuel options next-generation	4.541	1.375	1	1	publication
+fujia jomaas grunde	4.541	1.375	1	1	publication
+gandhi rahul zhong	4.541	1.375	1	1	publication
+gang gandhi rahul	4.541	1.375	1	1	publication
+general lewis numbers	4.541	1.375	1	1	publication
+geometry premixed flamelets	4.541	1.375	1	1	publication
+global quasi-steadiness droplet	4.541	1.375	1	1	publication
+gokoglu dietrich dp	4.541	1.375	1	1	publication
+grunde law chung	4.541	1.375	1	1	publication
+heptane air flames	4.541	1.375	1	1	publication
+heyang bechtold john	4.541	1.375	1	1	publication
+hydrocarbon ntc chemistry	4.541	1.375	1	1	publication
+hydrogen methane flame	4.541	1.375	1	1	publication
+hydrogen-co ethylene flames	4.541	1.375	1	1	publication
+ignition combustion systems	4.541	1.375	1	1	publication
+ignition delay hydrocarbon	4.541	1.375	1	1	publication
+initiation propagation laminar	4.541	1.375	1	1	publication
+instabilities diffusion flames	4.541	1.375	1	1	publication
+intrinsic oscillation radiation-affected	4.541	1.375	1	1	publication
+john law chung	4.541	1.375	1	1	publication
+jomaas grunde law	4.541	1.375	1	1	publication
+kurt zhang peng	4.541	1.375	1	1	publication
+laminar premixed cool	4.541	1.375	1	1	publication
+law chung bychkov	4.541	1.375	1	1	publication
+law chung mueller	4.541	1.375	1	1	publication
+law sacksteder kurt	4.541	1.375	1	1	publication
+law sung wang	4.541	1.375	1	1	publication
+liang wenkai deng	4.541	1.375	1	1	publication
+limits n-heptane air	4.541	1.375	1	1	publication
+longtin tse stephen	4.541	1.375	1	1	publication
+low grashof numbers	4.541	1.375	1	1	publication
+luminous zone structure	4.541	1.375	1	1	publication
+lutz tse stephen	4.541	1.375	1	1	publication
+mechanisms burning rates	4.541	1.375	1	1	publication
+mechanisms combustion modeling	4.541	1.375	1	1	publication
+mechanisms near-limit premixed	4.541	1.375	1	1	publication
+mechanistic evaluation soret	4.541	1.375	1	1	publication
+micro-buoyancy spherical diffusion	4.541	1.375	1	1	publication
+microgravity experimentation computational	4.541	1.375	1	1	publication
+mixtures cool flames	4.541	1.375	1	1	publication
+morphology colliding spherical	4.541	1.375	1	1	publication
+morphology corner dynamics	4.541	1.375	1	1	publication
+morphology spherical diffusion	4.541	1.375	1	1	publication
+motion criterion global	4.541	1.375	1	1	publication
+n-heptane air mixtures	4.541	1.375	1	1	publication
+near-limit premixed flames	4.541	1.375	1	1	publication
+nearly spherical diffusion	4.541	1.375	1	1	publication
+next-generation chemical propulsion	4.541	1.375	1	1	publication
+non-burning droplet xylene	4.541	1.375	1	1	publication
+nonlinear analysis pulsating	4.541	1.375	1	1	publication
+nonpremixed cool flames	4.541	1.375	1	1	publication
+novoselov alex law	4.541	1.375	1	1	publication
+numerical simulation turbulent	4.541	1.375	1	1	publication
+oh ch flame	4.541	1.375	1	1	publication
+opportunities challenges combustion	4.541	1.375	1	1	publication
+options next-generation chemical	4.541	1.375	1	1	publication
+oscillation radiation-affected diffusion	4.541	1.375	1	1	publication
+oscillatory extinction spherical	4.541	1.375	1	1	publication
+outcome regimes flame	4.541	1.375	1	1	publication
+peng liang wenkai	4.541	1.375	1	1	publication
+peng zhu delin	4.541	1.375	1	1	publication
+porous spherical burner	4.541	1.375	1	1	publication
+premixed cool flames	4.541	1.375	1	1	publication
+premixed flames extended	4.541	1.375	1	1	publication
+premixed flames microgravity	4.541	1.375	1	1	publication
+premixed flames rotation	4.541	1.375	1	1	publication
+propagation expanding wrinkled	4.541	1.375	1	1	publication
+propagation laminar premixed	4.541	1.375	1	1	publication
+properties hydrogen-co ethylene	4.541	1.375	1	1	publication
+pulsating instabilities diffusion	4.541	1.375	1	1	publication
+pv ferkul sl	4.541	1.375	1	1	publication
+quasi-steadiness droplet burning	4.541	1.375	1	1	publication
+radiation-affected diffusion flames	4.541	1.375	1	1	publication
+radical-induced ignition combustion	4.541	1.375	1	1	publication
+rahul zhong xiaosheng	4.541	1.375	1	1	publication
+rates cylindrical burner	4.541	1.375	1	1	publication
+reaction mechanisms combustion	4.541	1.375	1	1	publication
+reduced reaction mechanisms	4.541	1.375	1	1	publication
+regimes flame dynamics	4.541	1.375	1	1	publication
+response flat-burner flames	4.541	1.375	1	1	publication
+response spherical premixed	4.541	1.375	1	1	publication
+role flamefront motion	4.541	1.375	1	1	publication
+rotating spherical diffusion	4.541	1.375	1	1	publication
+rotation general lewis	4.541	1.375	1	1	publication
+rotation microgravity experimentation	4.541	1.375	1	1	publication
+sa gokoglu dietrich	4.541	1.375	1	1	publication
+sacksteder kurt zhang	4.541	1.375	1	1	publication
+sacksteder zhang zhu	4.541	1.375	1	1	publication
+scaling weakly buoyant	4.541	1.375	1	1	publication
+sd tse zhu	4.541	1.375	1	1	publication
+sean chaudhuri swetaprovo	4.541	1.375	1	1	publication
+sean law sacksteder	4.541	1.375	1	1	publication
+sean zhu delin	4.541	1.375	1	1	publication
+self-acceleration cellular spherical	4.541	1.375	1	1	publication
+self-similar accelerative propagation	4.541	1.375	1	1	publication
+sheng zhu delin	4.541	1.375	1	1	publication
+shr-jing tse stephen	4.541	1.375	1	1	publication
+sili law chung	4.541	1.375	1	1	publication
+simulation spherical diffusion	4.541	1.375	1	1	publication
+simulation turbulent nonpremixed	4.541	1.375	1	1	publication
+soret diffusion heptane	4.541	1.375	1	1	publication
+soret diffusion heptane-air	4.541	1.375	1	1	publication
+spherical burner combustion	4.541	1.375	1	1	publication
+spherical flames morphology	4.541	1.375	1	1	publication
+spherical premixed flames	4.541	1.375	1	1	publication
+spreading unsteady cylindrical	4.541	1.375	1	1	publication
+stabilization dual response	4.541	1.375	1	1	publication
+stabilization mechanisms burning	4.541	1.375	1	1	publication
+stationary rotating spherical	4.541	1.375	1	1	publication
+stephen law chung	4.541	1.375	1	1	publication
+stocker pv ferkul	4.541	1.375	1	1	publication
+structure aerodynamic scaling	4.541	1.375	1	1	publication
+structure aerodynamics geometry	4.541	1.375	1	1	publication
+structure dynamics stationary	4.541	1.375	1	1	publication
+structure hydrogen methane	4.541	1.375	1	1	publication
+structure stabilization dual	4.541	1.375	1	1	publication
+subjected rotation microgravity	4.541	1.375	1	1	publication
+subjected rotation nonequidiffusion	4.541	1.375	1	1	publication
+sung chih-jen law	4.541	1.375	1	1	publication
+sung wang lu	4.541	1.375	1	1	publication
+sung zhang huiqiang	4.541	1.375	1	1	publication
+sung zhu law	4.541	1.375	1	1	publication
+sung zhu tse	4.541	1.375	1	1	publication
+swetaprovo sacksteder kurt	4.541	1.375	1	1	publication
+theory droplet combustion	4.541	1.375	1	1	publication
+theory first-stage ignition	4.541	1.375	1	1	publication
+thin-flame theory droplet	4.541	1.375	1	1	publication
+tse stephen law	4.541	1.375	1	1	publication
+tse zhu cj	4.541	1.375	1	1	publication
+turbulent nonpremixed cool	4.541	1.375	1	1	publication
+unsteady cylindrical diffusion	4.541	1.375	1	1	publication
+variable density response	4.541	1.375	1	1	publication
+wang heyang bechtold	4.541	1.375	1	1	publication
+weakly buoyant nearly	4.541	1.375	1	1	publication
+weakly buoyant spherical	4.541	1.375	1	1	publication
+wenkai deng sili	4.541	1.375	1	1	publication
+wrinkled flames explosion	4.541	1.375	1	1	publication
+wu fujia jomaas	4.541	1.375	1	1	publication
+xiaosheng dler lutz	4.541	1.375	1	1	publication
+xin cj sung	4.541	1.375	1	1	publication
+xin yuxuan sung	4.541	1.375	1	1	publication
+xiong gang gandhi	4.541	1.375	1	1	publication
+xylene outcome regimes	4.541	1.375	1	1	publication
+yacheslav law chung	4.541	1.375	1	1	publication
+yang chaudhuri zhu	4.541	1.375	1	1	publication
+yang fan law	4.541	1.375	1	1	publication
+yang law sung	4.541	1.375	1	1	publication
+yang sheng zhu	4.541	1.375	1	1	publication
+yoo chaudhuri sacksteder	4.541	1.375	1	1	publication
+yoo christiansen law	4.541	1.375	1	1	publication
+yoo law tse	4.541	1.375	1	1	publication
+yoo qian bechtold	4.541	1.375	1	1	publication
+yoo sean chaudhuri	4.541	1.375	1	1	publication
+yoo sean law	4.541	1.375	1	1	publication
+yoo sean zhu	4.541	1.375	1	1	publication
+yuxuan sung chih-jen	4.541	1.375	1	1	publication
+yx xin cj	4.541	1.375	1	1	publication
+zhang peng zhu	4.541	1.375	1	1	publication
+zhang zhu law	4.541	1.375	1	1	publication
+zhao peng liang	4.541	1.375	1	1	publication
+zhong xiaosheng dler	4.541	1.375	1	1	publication
+zhu cj sung	4.541	1.375	1	1	publication
+zhu ck law	4.541	1.375	1	1	publication
+zhu delin yoo	4.541	1.375	1	1	publication
+zhu tse law	4.541	1.375	1	1	publication
+zone structure hydrogen	4.541	1.375	1	1	publication
+integrated	4.532	3.000	1	11	experiment_hardware
+case	4.496	2.500	1	8	publication
+pv	4.496	2.500	1	8	publication
+western	4.496	2.500	1	8	publication
+dp stocker	4.474	1.875	1	4	publication
+droplet burning	4.474	1.875	1	4	publication
+droplet combustion	4.474	1.875	1	4	publication
+sa gokoglu	4.474	1.875	1	4	publication
+engineering	4.409	3.250	2	13	file_folders,publication
+ambient	4.408	2.000	1	5	approach
+develop	4.408	2.000	1	5	hypothesis
+efficiency	4.408	2.000	1	5	research_impacts
+engines	4.408	2.000	1	5	research_impacts
+following	4.408	2.000	1	5	objective
+influence	4.408	2.000	1	5	approach
+kinetic	4.408	2.000	1	5	hypothesis
+levels	4.408	2.000	1	5	approach
+matrix	4.408	2.000	1	5	hypothesis
+mechanism	4.408	2.000	1	5	approach
+obtained	4.408	2.000	1	5	hypothesis
+planned	4.408	2.000	1	5	hypothesis
+power	4.408	2.000	1	5	research_impacts
+steady	4.408	2.000	1	5	hypothesis
+aspects flame	4.346	1.500	1	2	hypothesis
+chemical kinetic	4.346	1.500	1	2	hypothesis
+conducted combustion	4.346	1.500	1	2	approach
+efficiency pollutant	4.346	1.500	1	2	research_impacts
+flames important	4.346	1.500	1	2	research_impacts
+ground test	4.346	1.500	1	2	hypothesis
+growth flame	4.346	1.500	1	2	hypothesis
+influence flame	4.346	1.500	1	2	approach
+nitrogen helium	4.346	1.500	1	2	approach
+numerical simulations	4.346	1.500	1	2	approach
+operating conditions	4.346	1.500	1	2	approach
+spherical porous	4.346	1.500	1	2	approach
+temperature species	4.346	1.500	1	2	objective
+ferkul	4.233	2.500	1	9	publication
+reduced	4.233	2.500	1	9	publication
+reserve university	4.132	1.875	1	5	publication
+western reserve	4.132	1.875	1	5	publication
+characteristics	4.100	2.000	1	6	approach
+critical	4.100	2.000	1	6	objective
+dioxide	4.100	2.000	1	6	approach
+distribution	4.100	2.000	1	6	objective
+ignited	4.100	2.000	1	6	approach
+kinetics	4.100	2.000	1	6	objective
+mixture	4.100	2.000	1	6	approach
+parameters	4.100	2.000	1	6	research_impacts
+performance	4.100	2.000	1	6	research_impacts
+practical	4.100	2.000	1	6	research_impacts
+quasi-steady	4.100	2.000	1	6	objective
+state	4.100	2.000	1	6	hypothesis
+raw	4.004	2.650	3	11	file_folders,filenames,media_filenames
+aerospace engineering case	3.984	1.375	1	2	publication
+burner-supported spherical diffusion	3.984	1.375	1	2	publication
+chih-jen ju yiguang	3.984	1.375	1	2	publication
+computation currently department	3.984	1.375	1	2	publication
+currently department mechanical	3.984	1.375	1	2	publication
+delin sung chih-jen	3.984	1.375	1	2	publication
+department mechanical aerospace	3.984	1.375	1	2	publication
+direct numerical simulation	3.984	1.375	1	2	publication
+engineering case western	3.984	1.375	1	2	publication
+extinction spherical diffusion	3.984	1.375	1	2	publication
+ferkul sl olson	3.984	1.375	1	2	publication
+flames computation currently	3.984	1.375	1	2	publication
+ju yiguang law	3.984	1.375	1	2	publication
+mechanical aerospace engineering	3.984	1.375	1	2	publication
+reserve university cleveland	3.984	1.375	1	2	publication
+stephen zhu delin	3.984	1.375	1	2	publication
+sung chih-jen ju	3.984	1.375	1	2	publication
+tse stephen zhu	3.984	1.375	1	2	publication
+university cleveland oh	3.984	1.375	1	2	publication
+yiguang law chung	3.984	1.375	1	2	publication
+zhu delin sung	3.984	1.375	1	2	publication
+rack cir acme	3.937	1.650	1	4	experiment_hardware
+combustion engines	3.914	1.500	1	3	research_impacts
+detailed chemical	3.914	1.500	1	3	objective
+detailed numerical	3.914	1.500	1	3	approach
+flames flame	3.914	1.500	1	3	hypothesis
+measurements made	3.914	1.500	1	3	approach
+pollutant emissions	3.914	1.500	1	3	research_impacts
+porous burner	3.914	1.500	1	3	approach
+specific objectives	3.914	1.500	1	3	objective
+spherical flame	3.914	1.500	1	3	objective
+flames microgravity	3.843	1.875	1	6	publication
+carbon	3.833	2.000	1	7	approach
+model	3.833	2.000	1	7	hypothesis
+nitrogen	3.833	2.000	1	7	approach
+combustion integrated	3.810	2.250	1	9	experiment_hardware
+integrated rack	3.810	2.250	1	9	experiment_hardware
+rack cir	3.810	2.250	1	9	experiment_hardware
+ncc3-1051 nnc06aa27a	3.715	1.125	1	1	funding
+nnc06aa27a nnx09ar03a	3.715	1.125	1	1	funding
+nnx09ar03a nnx15ac79a	3.715	1.125	1	1	funding
+acceleration levels comparisons	3.633	1.100	1	1	approach
+acquire diffusion flame	3.633	1.100	1	1	research_impacts
+adequately explored ground	3.633	1.100	1	1	hypothesis
+adjust mixture diffusivities	3.633	1.100	1	1	approach
+aerodynamic flow fields	3.633	1.100	1	1	research_impacts
+affords simple aerodynamic	3.633	1.100	1	1	research_impacts
+ambient temperatures pressures	3.633	1.100	1	1	approach
+amplitude pulsating instabilities	3.633	1.100	1	1	objective
+aspects flame structure	3.633	1.100	1	1	hypothesis
+aspects measurement systems	3.633	1.100	1	1	hypothesis
+aspects practically diffusion	3.633	1.100	1	1	research_impacts
+assess transport properties	3.633	1.100	1	1	objective
+associated physico-chemical parameters	3.633	1.100	1	1	research_impacts
+basis combustion engines	3.633	1.100	1	1	research_impacts
+behavior structure detailed	3.633	1.100	1	1	approach
+best effort modeling	3.633	1.100	1	1	hypothesis
+buoyancy-free environment offered	3.633	1.100	1	1	research_impacts
+burner ignited obtain	3.633	1.100	1	1	approach
+burner temperatures radiative	3.633	1.100	1	1	approach
+burning basis combustion	3.633	1.100	1	1	research_impacts
+carbon dioxide influence	3.633	1.100	1	1	approach
+characterize transient structure	3.633	1.100	1	1	objective
+chemical kinetic transport	3.633	1.100	1	1	hypothesis
+chemical kinetics chemiluminescence	3.633	1.100	1	1	objective
+chemiluminescence objective measure	3.633	1.100	1	1	objective
+chemistry diffusion flames	3.633	1.100	1	1	research_impacts
+chemistry ethylene typical	3.633	1.100	1	1	approach
+chemistry transport models	3.633	1.100	1	1	hypothesis
+collection test conditions	3.633	1.100	1	1	hypothesis
+combustion chemistry ethylene	3.633	1.100	1	1	approach
+combustion engines devices	3.633	1.100	1	1	research_impacts
+compare detailed computational	3.633	1.100	1	1	objective
+comparisons flame behavior	3.633	1.100	1	1	approach
+comprehensiveness chemical kinetic	3.633	1.100	1	1	hypothesis
+comprise rigorous test	3.633	1.100	1	1	hypothesis
+computational simulation assess	3.633	1.100	1	1	objective
+conditions aspects measurement	3.633	1.100	1	1	hypothesis
+conditions reactant flow	3.633	1.100	1	1	approach
+conditions steady state	3.633	1.100	1	1	hypothesis
+conducted combustion chemistry	3.633	1.100	1	1	approach
+consists practical fundamental	3.633	1.100	1	1	research_impacts
+convective chemical-kinetic extinction	3.633	1.100	1	1	objective
+conventional gaseous fuels	3.633	1.100	1	1	approach
+critical lewis number	3.633	1.100	1	1	objective
+da nature mode	3.633	1.100	1	1	objective
+definition rely best	3.633	1.100	1	1	hypothesis
+description flames obtained	3.633	1.100	1	1	hypothesis
+detailed chemistry transport	3.633	1.100	1	1	hypothesis
+detailed computational simulation	3.633	1.100	1	1	objective
+detailed model together	3.633	1.100	1	1	hypothesis
+detailed numerical simulations	3.633	1.100	1	1	approach
+determine existence different	3.633	1.100	1	1	objective
+determine quasi-steady convective	3.633	1.100	1	1	objective
+develop requirements collection	3.633	1.100	1	1	hypothesis
+developed part detailed	3.633	1.100	1	1	hypothesis
+devices understanding underlying	3.633	1.100	1	1	research_impacts
+different flow rates	3.633	1.100	1	1	objective
+different zeldovich number	3.633	1.100	1	1	objective
+diffusion flame burning	3.633	1.100	1	1	research_impacts
+diffusion flame high	3.633	1.100	1	1	research_impacts
+diffusion flames established	3.633	1.100	1	1	objective
+diffusion flames fuel	3.633	1.100	1	1	objective
+diffusion flames important	3.633	1.100	1	1	research_impacts
+diffusivities carbon dioxide	3.633	1.100	1	1	approach
+diluent mixtures critical	3.633	1.100	1	1	objective
+diluents issued oxidizing	3.633	1.100	1	1	approach
+diluents mixed fuel	3.633	1.100	1	1	approach
+dioxide influence flame	3.633	1.100	1	1	approach
+distribution diffusion flames	3.633	1.100	1	1	objective
+due time g-jitter	3.633	1.100	1	1	hypothesis
+dynamics chemistry diffusion	3.633	1.100	1	1	research_impacts
+effort modeling work	3.633	1.100	1	1	hypothesis
+emissions reliability fundamentally	3.633	1.100	1	1	research_impacts
+engines devices understanding	3.633	1.100	1	1	research_impacts
+environment offered microgravity	3.633	1.100	1	1	research_impacts
+environment spherical porous	3.633	1.100	1	1	approach
+established initially non-steady	3.633	1.100	1	1	objective
+established methane simplest	3.633	1.100	1	1	approach
+ethylene hydrogen simplest	3.633	1.100	1	1	approach
+ethylene typical sooty	3.633	1.100	1	1	approach
+existence different zeldovich	3.633	1.100	1	1	objective
+explored ground test	3.633	1.100	1	1	hypothesis
+extensive conducted combustion	3.633	1.100	1	1	approach
+extinction limits high	3.633	1.100	1	1	objective
+extinction limits low	3.633	1.100	1	1	objective
+extinctions flame front	3.633	1.100	1	1	hypothesis
+facilities flight definition	3.633	1.100	1	1	hypothesis
+fidelity prospect understanding	3.633	1.100	1	1	research_impacts
+fields acquire diffusion	3.633	1.100	1	1	research_impacts
+flame behavior structure	3.633	1.100	1	1	approach
+flame burner temperatures	3.633	1.100	1	1	approach
+flame burning basis	3.633	1.100	1	1	research_impacts
+flame extinctions flame	3.633	1.100	1	1	hypothesis
+flame front instabilities	3.633	1.100	1	1	hypothesis
+flame front velocities	3.633	1.100	1	1	hypothesis
+flame high fidelity	3.633	1.100	1	1	research_impacts
+flame radiation characteristics	3.633	1.100	1	1	approach
+flame structure growth	3.633	1.100	1	1	hypothesis
+flame structures mixtures	3.633	1.100	1	1	objective
+flame synchronized measurements	3.633	1.100	1	1	approach
+flames compare detailed	3.633	1.100	1	1	objective
+flames conventional gaseous	3.633	1.100	1	1	approach
+flames developed part	3.633	1.100	1	1	hypothesis
+flames established initially	3.633	1.100	1	1	objective
+flames flame extinctions	3.633	1.100	1	1	hypothesis
+flames fuel diluent	3.633	1.100	1	1	objective
+flames important improving	3.633	1.100	1	1	research_impacts
+flames obtained measurements	3.633	1.100	1	1	hypothesis
+flight definition rely	3.633	1.100	1	1	hypothesis
+flow fields acquire	3.633	1.100	1	1	research_impacts
+flow rates ambient	3.633	1.100	1	1	approach
+flow rates objective	3.633	1.100	1	1	objective
+flux measurements system	3.633	1.100	1	1	approach
+following specific objectives	3.633	1.100	1	1	objective
+frequency amplitude pulsating	3.633	1.100	1	1	objective
+front instabilities soot	3.633	1.100	1	1	hypothesis
+front velocities specific	3.633	1.100	1	1	hypothesis
+fuel diluent mixtures	3.633	1.100	1	1	objective
+fuel important intermediate	3.633	1.100	1	1	approach
+fuel nitrogen helium	3.633	1.100	1	1	approach
+fuel reaction mechanism	3.633	1.100	1	1	approach
+fuels diluents issued	3.633	1.100	1	1	approach
+fuels hydrogen methane	3.633	1.100	1	1	approach
+function da nature	3.633	1.100	1	1	objective
+fundamental aspects practically	3.633	1.100	1	1	research_impacts
+fundamentally unique buoyancy-free	3.633	1.100	1	1	research_impacts
+g-jitter limitations little	3.633	1.100	1	1	hypothesis
+gaseous fuels diluents	3.633	1.100	1	1	approach
+gaseous fuels hydrogen	3.633	1.100	1	1	approach
+ground test facilities	3.633	1.100	1	1	hypothesis
+growth flame front	3.633	1.100	1	1	hypothesis
+helium adjust mixture	3.633	1.100	1	1	approach
+high fidelity prospect	3.633	1.100	1	1	research_impacts
+high system damk	3.633	1.100	1	1	objective
+higher hydrocarbons diluents	3.633	1.100	1	1	approach
+hler numbers mixtures	3.633	1.100	1	1	objective
+hler numbers radiative	3.633	1.100	1	1	objective
+hydrocarbon extensive conducted	3.633	1.100	1	1	approach
+hydrocarbons diluents mixed	3.633	1.100	1	1	approach
+hydrogen methane ethylene	3.633	1.100	1	1	approach
+hydrogen simplest fuel	3.633	1.100	1	1	approach
+ignited obtain nominally	3.633	1.100	1	1	approach
+images flame burner	3.633	1.100	1	1	approach
+impact work consists	3.633	1.100	1	1	research_impacts
+important improving performance	3.633	1.100	1	1	research_impacts
+important intermediate oxidation	3.633	1.100	1	1	approach
+improving performance terms	3.633	1.100	1	1	research_impacts
+influence flame radiation	3.633	1.100	1	1	approach
+initially non-steady spherical	3.633	1.100	1	1	objective
+instabilities soot suppression	3.633	1.100	1	1	hypothesis
+instabilities theoretically predicted	3.633	1.100	1	1	objective
+intermediate oxidation higher	3.633	1.100	1	1	approach
+issued oxidizing environment	3.633	1.100	1	1	approach
+kinetic transport models	3.633	1.100	1	1	hypothesis
+kinetics chemiluminescence objective	3.633	1.100	1	1	objective
+levels comparisons flame	3.633	1.100	1	1	approach
+limitations little planned	3.633	1.100	1	1	hypothesis
+limits comprise rigorous	3.633	1.100	1	1	hypothesis
+limits high system	3.633	1.100	1	1	objective
+limits low system	3.633	1.100	1	1	objective
+little planned test	3.633	1.100	1	1	hypothesis
+low system damk	3.633	1.100	1	1	objective
+made spectrally resolved	3.633	1.100	1	1	approach
+matrix adequately explored	3.633	1.100	1	1	hypothesis
+measure characterize transient	3.633	1.100	1	1	objective
+measure comprehensiveness chemical	3.633	1.100	1	1	hypothesis
+measurement systems due	3.633	1.100	1	1	hypothesis
+measurements aspects flame	3.633	1.100	1	1	hypothesis
+measurements made spectrally	3.633	1.100	1	1	approach
+measurements system operating	3.633	1.100	1	1	approach
+mechanism reasonably established	3.633	1.100	1	1	approach
+mechanisms description flames	3.633	1.100	1	1	hypothesis
+methane ethylene hydrogen	3.633	1.100	1	1	approach
+methane simplest hydrocarbon	3.633	1.100	1	1	approach
+microgravity affords simple	3.633	1.100	1	1	research_impacts
+mixed fuel nitrogen	3.633	1.100	1	1	approach
+mixture diffusivities carbon	3.633	1.100	1	1	approach
+mixtures critical lewis	3.633	1.100	1	1	objective
+mixtures gaseous fuels	3.633	1.100	1	1	approach
+mode frequency amplitude	3.633	1.100	1	1	objective
+model together measure	3.633	1.100	1	1	hypothesis
+models numerical simulation	3.633	1.100	1	1	hypothesis
+models radiation mechanisms	3.633	1.100	1	1	hypothesis
+nature mode frequency	3.633	1.100	1	1	objective
+nitrogen helium adjust	3.633	1.100	1	1	approach
+nominally spherical one-dimensional	3.633	1.100	1	1	approach
+non-steady spherical flame	3.633	1.100	1	1	objective
+number ze onset	3.633	1.100	1	1	objective
+numbers mixtures different	3.633	1.100	1	1	objective
+numbers radiative chemical-kinetic	3.633	1.100	1	1	objective
+numerical simulation predictive	3.633	1.100	1	1	hypothesis
+numerical simulation spherical	3.633	1.100	1	1	hypothesis
+numerical simulations flames	3.633	1.100	1	1	approach
+objective determine existence	3.633	1.100	1	1	objective
+objective determine quasi-steady	3.633	1.100	1	1	objective
+objective measure characterize	3.633	1.100	1	1	objective
+objectives soot-free sooty	3.633	1.100	1	1	objective
+obtain nominally spherical	3.633	1.100	1	1	approach
+obtained measurements aspects	3.633	1.100	1	1	hypothesis
+occur transient spherical	3.633	1.100	1	1	objective
+offered microgravity affords	3.633	1.100	1	1	research_impacts
+one-dimensional stabilized flame	3.633	1.100	1	1	approach
+onset function da	3.633	1.100	1	1	objective
+operating conditions reactant	3.633	1.100	1	1	approach
+oxidation higher hydrocarbons	3.633	1.100	1	1	approach
+oxidizing environment spherical	3.633	1.100	1	1	approach
+part detailed chemistry	3.633	1.100	1	1	hypothesis
+performance terms power	3.633	1.100	1	1	research_impacts
+planned test matrix	3.633	1.100	1	1	hypothesis
+pollutant emissions reliability	3.633	1.100	1	1	research_impacts
+porous burner ignited	3.633	1.100	1	1	approach
+power efficiency pollutant	3.633	1.100	1	1	research_impacts
+practical fundamental aspects	3.633	1.100	1	1	research_impacts
+practically diffusion flame	3.633	1.100	1	1	research_impacts
+predicted occur transient	3.633	1.100	1	1	objective
+predictive tool develop	3.633	1.100	1	1	hypothesis
+pressures acceleration levels	3.633	1.100	1	1	approach
+processes well quantifying	3.633	1.100	1	1	research_impacts
+properties detailed chemical	3.633	1.100	1	1	objective
+proposed following specific	3.633	1.100	1	1	objective
+proposed mixtures gaseous	3.633	1.100	1	1	approach
+prospect understanding unit	3.633	1.100	1	1	research_impacts
+pulsating instabilities theoretically	3.633	1.100	1	1	objective
+quantifying associated physico-chemical	3.633	1.100	1	1	research_impacts
+quasi-steady convective chemical-kinetic	3.633	1.100	1	1	objective
+radiation mechanisms description	3.633	1.100	1	1	hypothesis
+radiative chemical-kinetic extinction	3.633	1.100	1	1	objective
+radiative flux measurements	3.633	1.100	1	1	approach
+rates ambient temperatures	3.633	1.100	1	1	approach
+rates objective determine	3.633	1.100	1	1	objective
+ratios sooty different	3.633	1.100	1	1	objective
+ratios sooty objective	3.633	1.100	1	1	objective
+reactant flow rates	3.633	1.100	1	1	approach
+reaction mechanism reasonably	3.633	1.100	1	1	approach
+reasonably established methane	3.633	1.100	1	1	approach
+reliability fundamentally unique	3.633	1.100	1	1	research_impacts
+rely best effort	3.633	1.100	1	1	hypothesis
+requirements collection test	3.633	1.100	1	1	hypothesis
+resolved images flame	3.633	1.100	1	1	approach
+rigorous test detailed	3.633	1.100	1	1	hypothesis
+series proposed following	3.633	1.100	1	1	objective
+series proposed mixtures	3.633	1.100	1	1	approach
+simple aerodynamic flow	3.633	1.100	1	1	research_impacts
+simplest fuel reaction	3.633	1.100	1	1	approach
+simplest hydrocarbon extensive	3.633	1.100	1	1	approach
+simulation assess transport	3.633	1.100	1	1	objective
+simulation predictive tool	3.633	1.100	1	1	hypothesis
+simulation spherical flames	3.633	1.100	1	1	hypothesis
+simulations flames conventional	3.633	1.100	1	1	approach
+soot suppression limits	3.633	1.100	1	1	hypothesis
+soot-free sooty flames	3.633	1.100	1	1	objective
+sooty different flow	3.633	1.100	1	1	objective
+sooty flames compare	3.633	1.100	1	1	objective
+sooty fuel important	3.633	1.100	1	1	approach
+sooty objective determine	3.633	1.100	1	1	objective
+species distribution diffusion	3.633	1.100	1	1	objective
+specific objectives soot-free	3.633	1.100	1	1	objective
+specific test conditions	3.633	1.100	1	1	hypothesis
+spectrally resolved images	3.633	1.100	1	1	approach
+spherical flame structures	3.633	1.100	1	1	objective
+spherical flames developed	3.633	1.100	1	1	hypothesis
+spherical one-dimensional stabilized	3.633	1.100	1	1	approach
+spherical porous burner	3.633	1.100	1	1	approach
+stabilized flame synchronized	3.633	1.100	1	1	approach
+state flames flame	3.633	1.100	1	1	hypothesis
+steady state flames	3.633	1.100	1	1	hypothesis
+structure detailed numerical	3.633	1.100	1	1	approach
+structure growth flame	3.633	1.100	1	1	hypothesis
+structure temperature species	3.633	1.100	1	1	objective
+structures mixtures different	3.633	1.100	1	1	objective
+suppression limits comprise	3.633	1.100	1	1	hypothesis
+synchronized measurements made	3.633	1.100	1	1	approach
+system operating conditions	3.633	1.100	1	1	approach
+systems due time	3.633	1.100	1	1	hypothesis
+temperature species distribution	3.633	1.100	1	1	objective
+temperatures pressures acceleration	3.633	1.100	1	1	approach
+temperatures radiative flux	3.633	1.100	1	1	approach
+terms power efficiency	3.633	1.100	1	1	research_impacts
+test conditions aspects	3.633	1.100	1	1	hypothesis
+test conditions steady	3.633	1.100	1	1	hypothesis
+test detailed model	3.633	1.100	1	1	hypothesis
+test facilities flight	3.633	1.100	1	1	hypothesis
+test matrix adequately	3.633	1.100	1	1	hypothesis
+theoretically predicted occur	3.633	1.100	1	1	objective
+thermochemical processes well	3.633	1.100	1	1	research_impacts
+time g-jitter limitations	3.633	1.100	1	1	hypothesis
+together measure comprehensiveness	3.633	1.100	1	1	hypothesis
+tool develop requirements	3.633	1.100	1	1	hypothesis
+transient numerical simulation	3.633	1.100	1	1	hypothesis
+transient spherical diffusion	3.633	1.100	1	1	objective
+transient structure temperature	3.633	1.100	1	1	objective
+transport models numerical	3.633	1.100	1	1	hypothesis
+transport models radiation	3.633	1.100	1	1	hypothesis
+transport properties detailed	3.633	1.100	1	1	objective
+typical sooty fuel	3.633	1.100	1	1	approach
+underlying dynamics chemistry	3.633	1.100	1	1	research_impacts
+understanding underlying dynamics	3.633	1.100	1	1	research_impacts
+understanding unit thermochemical	3.633	1.100	1	1	research_impacts
+unique buoyancy-free environment	3.633	1.100	1	1	research_impacts
+unit thermochemical processes	3.633	1.100	1	1	research_impacts
+velocities specific test	3.633	1.100	1	1	hypothesis
+well quantifying associated	3.633	1.100	1	1	research_impacts
+work consists practical	3.633	1.100	1	1	research_impacts
+ze onset function	3.633	1.100	1	1	objective
+zeldovich number ze	3.633	1.100	1	1	objective
+conducted	3.597	2.000	1	8	approach
+emissions	3.597	2.000	1	8	research_impacts
+function	3.597	2.000	1	8	objective
+measurement	3.597	2.000	1	8	hypothesis
+pressures	3.597	2.000	1	8	approach
+processes	3.597	2.000	1	8	research_impacts
+suppression	3.597	2.000	1	8	hypothesis
+flammability limits	3.593	1.875	1	7	publication
+spherical diffusion flame	3.588	1.375	1	3	publication
+lewis number	3.579	1.500	1	4	objective
+analysis	3.577	2.500	1	12	publication
+development	3.577	2.500	1	12	publication
+effects	3.392	2.500	1	13	publication
+due	3.386	2.000	1	9	hypothesis
+growth	3.386	2.000	1	9	hypothesis
+case western	3.372	1.875	1	8	publication
+pv ferkul	3.372	1.875	1	8	publication
+flame behavior	3.306	1.500	1	5	approach
+flame radiation	3.306	1.500	1	5	approach
+methane ethylene	3.306	1.500	1	5	approach
+00-00	3.303	1.000	1	1	filenames
+00-45	3.303	1.000	1	1	filenames
+0024.asc	3.303	1.000	1	1	filenames
+0053.asc	3.303	1.000	1	1	filenames
+12-14	3.303	1.000	1	1	filenames
+13-16	3.303	1.000	1	1	filenames
+14.41.28	3.303	1.000	1	1	filenames
+19304a1.mp4	3.303	1.000	1	1	filenames
+19304a1a	3.303	1.000	1	1	filenames
+19304a1b	3.303	1.000	1	1	filenames
+19304a2.mp4	3.303	1.000	1	1	filenames
+19304a2a	3.303	1.000	1	1	filenames
+19304a2b	3.303	1.000	1	1	filenames
+19304a3.mp4	3.303	1.000	1	1	filenames
+19304a3a	3.303	1.000	1	1	filenames
+19304a3b	3.303	1.000	1	1	filenames
+19304a7.mdipsug	3.303	1.000	1	1	filenames
+19304a7.mp4	3.303	1.000	1	1	filenames
+19304a7a	3.303	1.000	1	1	filenames
+19304a7b	3.303	1.000	1	1	filenames
+19304b1.mp4	3.303	1.000	1	1	filenames
+19304b1a	3.303	1.000	1	1	filenames
+19304b1b	3.303	1.000	1	1	filenames
+19304b2.mp4	3.303	1.000	1	1	filenames
+19304b2a	3.303	1.000	1	1	filenames
+19304b2b	3.303	1.000	1	1	filenames
+19304b3.mp4	3.303	1.000	1	1	filenames
+19304b3a	3.303	1.000	1	1	filenames
+19304b3b	3.303	1.000	1	1	filenames
+19304b4.mp4	3.303	1.000	1	1	filenames
+19304b4a	3.303	1.000	1	1	filenames
+19304b4b	3.303	1.000	1	1	filenames
+19304fiber1	3.303	1.000	1	1	filenames
+19304fiber2	3.303	1.000	1	1	filenames
+19304k1.mp4	3.303	1.000	1	1	filenames
+19304k1a	3.303	1.000	1	1	filenames
+19304k1b	3.303	1.000	1	1	filenames
+19308a1.mp4	3.303	1.000	1	1	filenames
+19308a1a	3.303	1.000	1	1	filenames
+19308a1b	3.303	1.000	1	1	filenames
+19308a2.mp4	3.303	1.000	1	1	filenames
+19308a2a	3.303	1.000	1	1	filenames
+19308a2b	3.303	1.000	1	1	filenames
+19308a3.mp4	3.303	1.000	1	1	filenames
+19308a3a	3.303	1.000	1	1	filenames
+19308a3b	3.303	1.000	1	1	filenames
+19308b1.mp4	3.303	1.000	1	1	filenames
+19308b1a	3.303	1.000	1	1	filenames
+19308b1b	3.303	1.000	1	1	filenames
+19308c1.mp4	3.303	1.000	1	1	filenames
+19308c1a	3.303	1.000	1	1	filenames
+19308c1b	3.303	1.000	1	1	filenames
+19308c2.mp4	3.303	1.000	1	1	filenames
+19308c2a	3.303	1.000	1	1	filenames
+19308c2b	3.303	1.000	1	1	filenames
+19308d1.mp4	3.303	1.000	1	1	filenames
+19308d1a	3.303	1.000	1	1	filenames
+19308d1b	3.303	1.000	1	1	filenames
+19308f1.mp4	3.303	1.000	1	1	filenames
+19308f1a	3.303	1.000	1	1	filenames
+19308f1b	3.303	1.000	1	1	filenames
+19308fiber1	3.303	1.000	1	1	filenames
+19308fiber2	3.303	1.000	1	1	filenames
+19308g1.mp4	3.303	1.000	1	1	filenames
+19308g1a	3.303	1.000	1	1	filenames
+19308g1b	3.303	1.000	1	1	filenames
+19308h1.mp4	3.303	1.000	1	1	filenames
+19308h1a	3.303	1.000	1	1	filenames
+19308h1b	3.303	1.000	1	1	filenames
+19308h2.mp4	3.303	1.000	1	1	filenames
+19308h2a	3.303	1.000	1	1	filenames
+19308h2b	3.303	1.000	1	1	filenames
+19308h3.mp4	3.303	1.000	1	1	filenames
+19308h3a	3.303	1.000	1	1	filenames
+19308h3b	3.303	1.000	1	1	filenames
+19308h4.mp4	3.303	1.000	1	1	filenames
+19308h4b	3.303	1.000	1	1	filenames
+19308h5.mp4	3.303	1.000	1	1	filenames
+19308h5b	3.303	1.000	1	1	filenames
+19308j1.mp4	3.303	1.000	1	1	filenames
+19308j1b	3.303	1.000	1	1	filenames
+19308k1.mp4	3.303	1.000	1	1	filenames
+19308k1a	3.303	1.000	1	1	filenames
+19308k1b	3.303	1.000	1	1	filenames
+19308k2.mp4	3.303	1.000	1	1	filenames
+19308k2a	3.303	1.000	1	1	filenames
+19308k2b	3.303	1.000	1	1	filenames
+19308k3.mp4	3.303	1.000	1	1	filenames
+19308k3a	3.303	1.000	1	1	filenames
+19308k3b	3.303	1.000	1	1	filenames
+19308l1.mdipsug	3.303	1.000	1	1	filenames
+19308l1.mp4	3.303	1.000	1	1	filenames
+19308l1a	3.303	1.000	1	1	filenames
+2007-01-01	3.303	1.000	1	1	filenames
+2019-10-31	3.303	1.000	1	1	filenames
+2019-11-04	3.303	1.000	1	1	filenames
+2020-01-06	3.303	1.000	1	1	filenames
+2029.asc	3.303	1.000	1	1	filenames
+2118.asc	3.303	1.000	1	1	filenames
+ipsug.log	3.303	1.000	1	1	filenames
+lll-uv	3.303	1.000	1	1	filenames
+run19304a1	3.303	1.000	1	1	filenames
+run19304a2	3.303	1.000	1	1	filenames
+run19304a3	3.303	1.000	1	1	filenames
+run19304a7	3.303	1.000	1	1	filenames
+run19304b1	3.303	1.000	1	1	filenames
+run19304b2	3.303	1.000	1	1	filenames
+run19304b3	3.303	1.000	1	1	filenames
+run19304b4	3.303	1.000	1	1	filenames
+run19304k1	3.303	1.000	1	1	filenames
+run19308a2	3.303	1.000	1	1	filenames
+detailed chemical kinetics	3.187	1.100	1	2	objective
+efficiency pollutant emissions	3.187	1.100	1	2	research_impacts
+presentations	3.147	1.750	2	8	file_folders,filenames
+carbon dioxide	3.075	1.500	1	6	approach
+chemical kinetics	3.075	1.500	1	6	objective
+case western reserve	3.030	1.375	1	5	publication
+western reserve university	3.030	1.375	1	5	publication
+soot	3.022	2.000	1	11	hypothesis
+temperature	3.022	2.000	1	11	objective
+19254a1	2.972	0.900	1	1	media_filenames
+19254b1	2.972	0.900	1	1	media_filenames
+19254c1	2.972	0.900	1	1	media_filenames
+19254d1	2.972	0.900	1	1	media_filenames
+19254d2	2.972	0.900	1	1	media_filenames
+19254f1	2.972	0.900	1	1	media_filenames
+19254g1	2.972	0.900	1	1	media_filenames
+19254h1	2.972	0.900	1	1	media_filenames
+19254h2	2.972	0.900	1	1	media_filenames
+19254h3	2.972	0.900	1	1	media_filenames
+19254j1	2.972	0.900	1	1	media_filenames
+19254k1	2.972	0.900	1	1	media_filenames
+19254l1	2.972	0.900	1	1	media_filenames
+19254m1	2.972	0.900	1	1	media_filenames
+19254n1	2.972	0.900	1	1	media_filenames
+19256a1	2.972	0.900	1	1	media_filenames
+19256b1	2.972	0.900	1	1	media_filenames
+19256b2	2.972	0.900	1	1	media_filenames
+19256b3	2.972	0.900	1	1	media_filenames
+19256c1	2.972	0.900	1	1	media_filenames
+19256d1	2.972	0.900	1	1	media_filenames
+19256d2	2.972	0.900	1	1	media_filenames
+19256d3	2.972	0.900	1	1	media_filenames
+19256d4	2.972	0.900	1	1	media_filenames
+19256f1	2.972	0.900	1	1	media_filenames
+19256g1	2.972	0.900	1	1	media_filenames
+19256j1	2.972	0.900	1	1	media_filenames
+20006b1	2.972	0.900	1	1	media_filenames
+20006b2	2.972	0.900	1	1	media_filenames
+20006c1	2.972	0.900	1	1	media_filenames
+20006d1	2.972	0.900	1	1	media_filenames
+20006d2	2.972	0.900	1	1	media_filenames
+20006f1	2.972	0.900	1	1	media_filenames
+20006g1	2.972	0.900	1	1	media_filenames
+20006g2	2.972	0.900	1	1	media_filenames
+20006g3	2.972	0.900	1	1	media_filenames
+20006h1	2.972	0.900	1	1	media_filenames
+20006j1	2.972	0.900	1	1	media_filenames
+20006k1	2.972	0.900	1	1	media_filenames
+20013a1	2.972	0.900	1	1	media_filenames
+20013b1	2.972	0.900	1	1	media_filenames
+20013b2	2.972	0.900	1	1	media_filenames
+20013c1	2.972	0.900	1	1	media_filenames
+20013c3	2.972	0.900	1	1	media_filenames
+20013c4	2.972	0.900	1	1	media_filenames
+20013c5	2.972	0.900	1	1	media_filenames
+20013d1	2.972	0.900	1	1	media_filenames
+20013f1a	2.972	0.900	1	1	media_filenames
+20013g1	2.972	0.900	1	1	media_filenames
+20013g2mp4	2.972	0.900	1	1	media_filenames
+20013g3	2.972	0.900	1	1	media_filenames
+20013h1	2.972	0.900	1	1	media_filenames
+20013h2	2.972	0.900	1	1	media_filenames
+20013j1	2.972	0.900	1	1	media_filenames
+20013k1	2.972	0.900	1	1	media_filenames
+20013m1	2.972	0.900	1	1	media_filenames
+20013n1	2.972	0.900	1	1	media_filenames
+20013p1	2.972	0.900	1	1	media_filenames
+20013q1	2.972	0.900	1	1	media_filenames
+20013r1	2.972	0.900	1	1	media_filenames
+20013s1	2.972	0.900	1	1	media_filenames
+vlc-record-2019-09-11-16h42m04s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2019-09-11-18h37m18s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2019-09-11-18h56m43s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2019-09-11-19h31m54s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2019-09-11-20h03m42s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2019-09-11-20h49m48s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2019-09-11-22h09m21s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2019-09-11-22h30m29s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2019-09-11-22h46m53s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2019-09-11-23h13m00s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2019-09-11-23h27m37s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2019-09-11-23h59m24s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2019-09-12-00h13m34s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2019-09-12-00h38m47s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2019-09-12-00h54m43s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2019-09-13-18h34m41s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2019-09-13-18h53m54s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2019-09-13-19h40m24s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2019-09-13-20h34m24s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2019-09-13-20h49m00s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2019-09-13-21h02m47s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2019-09-13-21h23m07s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2019-09-13-22h16m56s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2019-09-13-22h57m44s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2019-09-13-23h13m35s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2019-09-13-23h26m08s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2019-09-14-00h33m32s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-06-15h25m03s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-06-16h32m21s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-06-17h05m46s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-06-17h37m05s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-06-18h08m25s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-06-18h23m17s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-06-19h24m16s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-06-19h44m26s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-06-21h31m57s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-06-22h08m56s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-06-22h29m13s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-06-23h33m39s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-13-16h26m39s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-13-17h14m12s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-13-17h38m23s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-13-17h52m06s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-13-18h19m59s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-13-18h41m45s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-13-18h56m34s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-13-19h12m40s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-13-19h45m24s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-13-20h00m13s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-13-20h14m19s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-13-20h29m40s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-13-20h44m54s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-13-21h00m06s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-13-23h34m01s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-13-23h49m43s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-14-00h02m12s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-14-00h20m59s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-14-00h34m20s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-14-01h09m26s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-14-01h21m02s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2020-01-14-01h34m19s-udp	2.972	0.900	1	1	media_filenames
+wo662486	2.972	0.900	1	1	media_filenames
+acmecameraconfigure	2.897	1.000	1	2	filenames
+fusedsilica	2.897	1.000	1	2	filenames
+moduledataacd	2.897	1.000	1	2	filenames
+images	2.862	2.000	1	12	approach
+time	2.862	2.000	1	12	hypothesis
+combustion integrated rack	2.794	1.650	1	9	experiment_hardware
+integrated rack cir	2.794	1.650	1	9	experiment_hardware
+ncc3-1051 nnc06aa27a nnx09ar03a	2.725	0.825	1	1	funding
+nnc06aa27a nnx09ar03a nnx15ac79a	2.725	0.825	1	1	funding
+behavior	2.713	2.000	1	13	approach
+flight	2.713	2.000	1	13	hypothesis
+acme.log	2.609	1.000	1	3	filenames
+converted	2.609	1.000	1	3	filenames
+hibms	2.609	1.000	1	3	filenames
+mfcsetpoints	2.609	1.000	1	3	filenames
+runacmecameraconfigure	2.609	1.000	1	3	filenames
+objectives	2.575	2.000	1	14	objective
+chung law	2.477	0.750	1	1	people
+rutgers	2.477	0.750	1	1	affiliation
+stephen tse	2.477	0.750	1	1	people
+comments	2.386	1.000	1	4	filenames
+intns	2.386	1.000	1	4	filenames
+documents	2.146	1.500	2	12	file_folders
+princeton	1.957	0.750	1	3	affiliation
+dennis	1.916	1.000	1	7	people
+rutgers university	1.858	0.562	1	1	affiliation
+administration	1.744	1.500	1	16	space_program
+aeronautics	1.744	1.500	1	16	space_program
+national	1.577	1.500	1	18	space_program
+urban	1.524	0.900	1	9	media_filenames
+princeton university	1.468	0.562	1	3	affiliation
+dennis stocker	1.437	0.750	1	7	people
+aeronautics administration	1.308	1.125	1	16	space_program
+national aeronautics	1.308	1.125	1	16	space_program
+co-i	1.288	1.000	1	14	role
+co-investigator	1.288	1.000	1	14	role
+scientist	1.288	1.000	1	14	role
+investigator	1.051	1.000	1	18	role
+pi	1.051	1.000	1	18	role
+principal	1.051	1.000	1	18	role
+co-investigator co-i	0.966	0.750	1	14	role
+national aeronautics administration	0.959	0.825	1	16	space_program
+engineering documents	0.805	0.562	1	12	file_folders
+grc	0.788	0.750	1	18	affiliation
+investigator pi	0.788	0.750	1	18	role
+principal investigator	0.788	0.750	1	18	role
+principal investigator pi	0.578	0.550	1	18	role

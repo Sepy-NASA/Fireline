@@ -1,0 +1,1037 @@
+# keywords for PSI-98 (score, weight, count, df, fields)
+fire	77.330	57.000	18	13	curated_keywords,hypothesis,objective,proposal_title,publication,research_impacts,sub_research_area,title
+saffire	50.884	19.500	6	3	curated_keywords,experiment_hardware,filenames,publication
+cygnus	39.142	15.000	4	3	approach,curated_keywords,experiment_hardware,research_impacts
+spacecraft	38.665	28.500	10	13	hypothesis,proposal_title,publication,research_impacts,sub_research_area,title
+safety	35.952	26.500	8	13	curated_keywords,hypothesis,publication,research_impacts,title
+saffire-i	33.923	13.000	5	3	acronym,approach,filenames,research_impacts
+ruff	30.747	15.000	6	6	publication
+flame	29.063	25.000	9	16	approach,curated_keywords,publication,research_impacts
+spread	28.652	13.000	3	5	curated_keywords,publication
+oxidizer	26.421	8.000	1	1	curated_keywords
+spacecraft fire	25.495	16.875	7	11	hypothesis,proposal_title,publication,sub_research_area,title
+fire safety	24.929	18.375	7	13	curated_keywords,hypothesis,publication,research_impacts,title
+solid	23.954	12.500	3	7	approach,curated_keywords,publication
+urban	22.857	13.500	6	9	people,publication
+gary	22.040	10.000	4	5	publication
+large	21.523	10.500	5	6	approach,hypothesis,objective,publication
+cotton	20.876	8.000	4	3	approach
+vehicle	20.876	8.000	4	3	approach,hypothesis,research_impacts
+experiment-i	19.816	6.000	1	1	title
+oxidizer flux	19.816	6.000	1	1	curated_keywords
+solid burning	19.816	6.000	1	1	curated_keywords
+flux	19.090	8.000	1	4	curated_keywords
+david	18.625	11.000	5	9	people,publication
+flammability	18.625	11.000	5	9	objective,publication,research_impacts
+ien	17.897	7.500	3	4	publication
+sandra	17.897	7.500	3	4	publication
+smoldering	17.632	8.000	1	5	curated_keywords
+flame spread	17.356	7.875	2	5	curated_keywords,publication
+sample	17.247	9.000	5	7	approach,filenames
+ferkul	16.931	10.000	4	9	publication
+james	16.530	7.500	3	5	publication
+olson	16.530	7.500	3	5	publication
+saffire-1	16.513	5.000	3	1	approach,filenames
+status	15.657	6.000	3	3	filenames,publication
+fabric	15.511	6.500	3	4	approach,publication
+microgravity	15.000	15.000	7	19	hypothesis,project_type,proposal_title,publication,research_impacts
+safety experiment-i	14.862	4.500	1	1	title
+fire saffire	14.678	5.625	3	3	publication
+ien james	14.678	5.625	3	3	publication
+solid burning rate	14.531	4.400	1	1	curated_keywords
+chengyao	14.486	5.000	2	2	publication
+christian	14.486	5.000	2	2	publication
+easton	14.486	5.000	2	2	publication
+eigenbrod	14.486	5.000	2	2	publication
+fujita	14.486	5.000	2	2	publication
+jose	14.486	5.000	2	2	publication
+legros	14.486	5.000	2	2	publication
+nickolay	14.486	5.000	2	2	publication
+osamu	14.486	5.000	2	2	publication
+rouvreau	14.486	5.000	2	2	publication
+smirnov	14.486	5.000	2	2	publication
+torero	14.486	5.000	2	2	publication
+surface	14.388	8.000	1	8	curated_keywords
+burning rate	14.318	6.000	1	4	curated_keywords
+surface combustion	14.318	6.000	1	4	curated_keywords
+flow	13.950	12.000	6	16	approach
+burning	13.545	8.000	1	9	curated_keywords
+paul	13.489	7.500	3	8	publication
+olson sandra	13.423	5.625	3	4	publication
+smoke	13.414	7.000	2	7	proposal_title,sub_research_area
+duct	13.224	6.000	3	5	approach
+risk	13.224	6.000	3	5	hypothesis
+meters	13.210	4.000	2	1	approach
+carlos	13.047	5.000	2	3	publication
+fernandez-pello	13.047	5.000	2	3	publication
+grunde	13.047	5.000	2	3	publication
+guillaume	13.047	5.000	2	3	publication
+jomaas	13.047	5.000	2	3	publication
+liao	13.047	5.000	2	3	publication
+niehaus	13.047	5.000	2	3	publication
+ya-ting	13.047	5.000	2	3	publication
+ruff gary	12.397	5.625	3	5	publication
+combustion	12.000	12.000	2	19	curated_keywords,research_area
+ga	11.931	5.000	2	4	publication
+fiberglass	11.588	4.000	2	2	approach
+ferkul paul	11.530	5.625	3	6	publication
+urban david	11.530	5.625	3	6	publication
+john	11.020	5.000	2	5	publication
+fire safety experiment-i	10.899	3.300	1	1	title
+david ferkul	10.864	3.750	2	2	publication
+easton john	10.864	3.750	2	2	publication
+eigenbrod christian	10.864	3.750	2	2	publication
+fernandez-pello carlos	10.864	3.750	2	2	publication
+fujita osamu	10.864	3.750	2	2	publication
+gary easton	10.864	3.750	2	2	publication
+legros guillaume	10.864	3.750	2	2	publication
+nickolay fujita	10.864	3.750	2	2	publication
+sandra ruff	10.864	3.750	2	2	publication
+smirnov nickolay	10.864	3.750	2	2	publication
+torero jose	10.864	3.750	2	2	publication
+rate	10.853	8.000	1	13	curated_keywords
+material	10.791	6.000	3	8	approach,objective,research_impacts
+spacecraft fire saffire	10.764	4.125	3	3	publication
+scale	10.738	4.500	2	4	objective,publication
+cargo	10.438	4.000	2	3	research_impacts
+uncertainty	10.438	4.000	2	3	hypothesis
+development status	9.785	3.750	2	3	publication
+jomaas grunde	9.785	3.750	2	3	publication
+liao ya-ting	9.785	3.750	2	3	publication
+significant	9.545	4.000	2	4	hypothesis
+samples	8.993	5.000	2	8	publication
+ga ruff	8.949	3.750	2	4	publication
+paul olson	8.949	3.750	2	4	publication
+cotton fiberglass	8.691	3.000	2	2	approach
+enclosure	8.691	3.000	1	2	experiment_hardware
+fire smoke	8.691	3.000	1	2	sub_research_area
+smoke distribution	8.691	3.000	1	2	sub_research_area
+development	8.585	6.000	3	12	filenames,publication
+adam	8.256	2.500	1	1	publication
+beyond	8.256	2.500	1	1	publication
+cowlard	8.256	2.500	1	1	publication
+sebastien	8.256	2.500	1	1	publication
+distribution	8.199	4.000	1	6	sub_research_area
+small	8.093	4.500	2	8	publication,research_impacts
+fires	7.989	5.000	2	10	hypothesis,proposal_title
+david ferkul paul	7.967	2.750	2	2	publication
+gary easton john	7.967	2.750	2	2	publication
+nickolay fujita osamu	7.967	2.750	2	2	publication
+olson sandra ruff	7.967	2.750	2	2	publication
+ruff gary easton	7.967	2.750	2	2	publication
+sandra ruff gary	7.967	2.750	2	2	publication
+smirnov nickolay fujita	7.967	2.750	2	2	publication
+urban david ferkul	7.967	2.750	2	2	publication
+characterization	7.828	3.000	1	3	proposal_title
+growth	7.619	4.500	2	9	publication,research_impacts
+flame growth	7.438	3.375	2	5	publication,research_impacts
+fires improved	7.431	2.250	1	1	proposal_title
+fire smoke distribution	7.266	2.200	1	1	sub_research_area
+spacecraft fire smoke	7.266	2.200	1	1	sub_research_area
+balazs	7.243	2.500	1	2	publication
+bastien	7.243	2.500	1	2	publication
+low-speed	7.243	2.500	1	2	publication
+toth	7.243	2.500	1	2	publication
+exploration	7.194	4.000	2	8	hypothesis,research_impacts
+measure	7.194	4.000	2	8	approach,research_impacts
+objectives	7.082	5.500	3	14	filenames,objective,publication
+effects	6.783	5.000	2	13	publication
+cameras	6.773	4.000	2	9	approach,research_impacts
+spacecraft fire safety	6.648	4.400	2	11	hypothesis,title
+detection	6.612	3.000	1	5	proposal_title
+flow duct	6.612	3.000	2	5	approach
+flow velocity	6.612	3.000	2	5	approach
+0.94	6.605	2.000	1	1	approach
+burns	6.605	2.000	1	1	approach
+called	6.605	2.000	1	1	approach
+consumed	6.605	2.000	1	1	approach
+flammable	6.605	2.000	1	1	approach
+integrity	6.605	2.000	1	1	approach
+maintains	6.605	2.000	1	1	approach
+piece	6.605	2.000	1	1	approach
+structural	6.605	2.000	1	1	approach
+substrate	6.605	2.000	1	1	approach
+weight	6.605	2.000	1	1	approach
+ferkul paul olson	6.562	2.750	2	4	publication
+paul olson sandra	6.562	2.750	2	4	publication
+je	6.524	2.500	1	3	publication
+justin	6.524	2.500	1	3	publication
+operation	6.524	2.500	1	3	publication
+schoren	6.524	2.500	1	3	publication
+characterization smoke	6.519	2.250	1	2	proposal_title
+enclosure cygnus	6.519	2.250	1	2	experiment_hardware
+improved spacecraft	6.519	2.250	1	2	proposal_title
+saffire enclosure	6.519	2.250	1	2	experiment_hardware
+earth	6.391	4.000	2	10	hypothesis,research_impacts
+missions	6.391	4.000	2	10	hypothesis,research_impacts
+oxygen	6.391	4.000	2	10	research_impacts
+adam rouvreau	6.192	1.875	1	1	publication
+beyond flammability	6.192	1.875	1	1	publication
+carlos cowlard	6.192	1.875	1	1	publication
+christian niehaus	6.192	1.875	1	1	publication
+cowlard adam	6.192	1.875	1	1	publication
+grunde torero	6.192	1.875	1	1	publication
+guillaume fernandez-pello	6.192	1.875	1	1	publication
+james ruff	6.192	1.875	1	1	publication
+jose eigenbrod	6.192	1.875	1	1	publication
+justin olson	6.192	1.875	1	1	publication
+niehaus justin	6.192	1.875	1	1	publication
+osamu ien	6.192	1.875	1	1	publication
+paul legros	6.192	1.875	1	1	publication
+rouvreau sebastien	6.192	1.875	1	1	publication
+ruff david	6.192	1.875	1	1	publication
+safety beyond	6.192	1.875	1	1	publication
+sebastien smirnov	6.192	1.875	1	1	publication
+small samples	6.192	1.875	1	1	publication
+testing small	6.192	1.875	1	1	publication
+improved	6.149	3.000	1	6	proposal_title
+velocity	6.043	4.000	2	11	approach
+gokoglu	5.966	2.500	1	4	publication
+sa	5.966	2.500	1	4	publication
+transient	5.966	2.500	1	4	publication
+testing	5.926	3.500	2	9	filenames,publication
+0.4	5.794	2.000	1	2	approach
+approximately	5.794	2.000	1	2	approach
+bottom	5.794	2.000	1	2	approach
+composite	5.794	2.000	1	2	approach
+consisting	5.794	2.000	1	2	approach
+drawn	5.794	2.000	1	2	approach
+located	5.794	2.000	1	2	approach
+middle	5.794	2.000	1	2	approach
+module	5.794	2.000	1	2	approach
+simulating	5.794	2.000	1	2	approach
+straighteners	5.794	2.000	1	2	approach
+flammability limits	5.749	3.000	2	7	objective,research_impacts
+air	5.723	4.000	2	12	approach
+limits	5.723	4.000	2	12	objective,research_impacts
+pressure	5.723	4.000	2	12	approach,research_impacts
+concurrent	5.510	2.500	1	5	publication
+planned	5.510	2.500	1	5	publication
+silicone	5.510	2.500	1	5	publication
+characterization smoke microgravity	5.449	1.650	1	1	proposal_title
+fires improved spacecraft	5.449	1.650	1	1	proposal_title
+microgravity fires improved	5.449	1.650	1	1	proposal_title
+balazs jomaas	5.432	1.875	1	2	publication
+bastien toth	5.432	1.875	1	2	publication
+carlos torero	5.432	1.875	1	2	publication
+chengyao fernandez-pello	5.432	1.875	1	2	publication
+chengyao liao	5.432	1.875	1	2	publication
+christian smirnov	5.432	1.875	1	2	publication
+concurrent low-speed	5.432	1.875	1	2	publication
+fabric concurrent	5.432	1.875	1	2	publication
+flammability testing	5.432	1.875	1	2	publication
+gary ruff	5.432	1.875	1	2	publication
+guillaume eigenbrod	5.432	1.875	1	2	publication
+james liao	5.432	1.875	1	2	publication
+james urban	5.432	1.875	1	2	publication
+john ien	5.432	1.875	1	2	publication
+jose legros	5.432	1.875	1	2	publication
+large solid	5.432	1.875	1	2	publication
+low-speed flows	5.432	1.875	1	2	publication
+microgravity model	5.432	1.875	1	2	publication
+microgravity scale	5.432	1.875	1	2	publication
+operation development	5.432	1.875	1	2	publication
+osamu rouvreau	5.432	1.875	1	2	publication
+processes large	5.432	1.875	1	2	publication
+rouvreau bastien	5.432	1.875	1	2	publication
+sandra ferkul	5.432	1.875	1	2	publication
+solid fabric	5.432	1.875	1	2	publication
+spread effects	5.432	1.875	1	2	publication
+spread processes	5.432	1.875	1	2	publication
+status spacecraft	5.432	1.875	1	2	publication
+toth balazs	5.432	1.875	1	2	publication
+transient flame	5.432	1.875	1	2	publication
+ya-ting chengyao	5.432	1.875	1	2	publication
+ya-ting ien	5.432	1.875	1	2	publication
+determine	5.427	4.000	2	13	objective,research_impacts
+microgravity fires	5.369	2.250	1	4	proposal_title
+smoke microgravity	5.369	2.250	1	4	proposal_title
+address	5.219	2.000	1	3	hypothesis
+airplanes	5.219	2.000	1	3	research_impacts
+anemometer	5.219	2.000	1	3	approach
+card	5.219	2.000	1	3	approach
+compressed	5.219	2.000	1	3	approach
+conduct	5.219	2.000	1	3	hypothesis
+considerably	5.219	2.000	1	3	hypothesis
+criteria	5.219	2.000	1	3	research_impacts
+deberthed	5.219	2.000	1	3	approach
+designers	5.219	2.000	1	3	hypothesis
+downlinked	5.219	2.000	1	3	approach
+expendable	5.219	2.000	1	3	hypothesis
+faction	5.219	2.000	1	3	approach
+fans	5.219	2.000	1	3	approach
+grows	5.219	2.000	1	3	objective
+large-scale	5.219	2.000	1	3	hypothesis
+like	5.219	2.000	1	3	approach
+low-g	5.219	2.000	1	3	objective
+mines	5.219	2.000	1	3	research_impacts
+orbital	5.219	2.000	1	3	approach
+past	5.219	2.000	1	3	research_impacts
+plume	5.219	2.000	1	3	approach
+presents	5.219	2.000	1	3	hypothesis
+rapidly	5.219	2.000	1	3	objective
+resupply	5.219	2.000	1	3	approach
+return	5.219	2.000	1	3	hypothesis
+risks	5.219	2.000	1	3	research_impacts
+safe	5.219	2.000	1	3	hypothesis
+screening	5.219	2.000	1	3	objective
+sealed	5.219	2.000	1	3	research_impacts
+sibal	5.219	2.000	1	3	approach
+supply	5.219	2.000	1	3	research_impacts
+top	5.219	2.000	1	3	approach
+tracked	5.219	2.000	1	3	approach
+transit	5.219	2.000	1	3	hypothesis
+unmanned	5.219	2.000	1	3	research_impacts
+venture	5.219	2.000	1	3	hypothesis
+vessel	5.219	2.000	1	3	research_impacts
+views	5.219	2.000	1	3	research_impacts
+way	5.219	2.000	1	3	research_impacts
+gravity	5.151	4.000	2	14	hypothesis,objective
+fire detection	4.959	2.250	1	5	proposal_title
+0.4 meters	4.954	1.500	1	1	approach
+0.94 meters	4.954	1.500	1	1	approach
+approximately 0.94	4.954	1.500	1	1	approach
+burns like	4.954	1.500	1	1	approach
+called sibal	4.954	1.500	1	1	approach
+consumed sample	4.954	1.500	1	1	approach
+cotton consumed	4.954	1.500	1	1	approach
+cotton maintains	4.954	1.500	1	1	approach
+deberthed sample	4.954	1.500	1	1	approach
+fabric called	4.954	1.500	1	1	approach
+fabric saffire-1	4.954	1.500	1	1	approach
+fiberglass substrate	4.954	1.500	1	1	approach
+fiberglass weight	4.954	1.500	1	1	approach
+flammable fabric	4.954	1.500	1	1	approach
+integrity cotton	4.954	1.500	1	1	approach
+large piece	4.954	1.500	1	1	approach
+like cotton	4.954	1.500	1	1	approach
+long 0.4	4.954	1.500	1	1	approach
+maintains structural	4.954	1.500	1	1	approach
+material saffire-i	4.954	1.500	1	1	approach
+meters long	4.954	1.500	1	1	approach
+meters wide	4.954	1.500	1	1	approach
+module saffire-i	4.954	1.500	1	1	approach
+piece flammable	4.954	1.500	1	1	approach
+saffire-1 flight	4.954	1.500	1	1	approach
+saffire-1 performed	4.954	1.500	1	1	approach
+saffire-i composite	4.954	1.500	1	1	approach
+saffire-i conducted	4.954	1.500	1	1	approach
+sample approximately	4.954	1.500	1	1	approach
+sibal consisting	4.954	1.500	1	1	approach
+simulating large	4.954	1.500	1	1	approach
+structural integrity	4.954	1.500	1	1	approach
+substrate cotton	4.954	1.500	1	1	approach
+velocity sample	4.954	1.500	1	1	approach
+weight burns	4.954	1.500	1	1	approach
+wide simulating	4.954	1.500	1	1	approach
+buoyant effects	4.893	1.875	1	3	publication
+effects flammability	4.893	1.875	1	3	publication
+effects microgravity	4.893	1.875	1	3	publication
+ferkul sa	4.893	1.875	1	3	publication
+flammability silicone	4.893	1.875	1	3	publication
+flows microgravity	4.893	1.875	1	3	publication
+gokoglu ga	4.893	1.875	1	3	publication
+growth spread	4.893	1.875	1	3	publication
+je niehaus	4.893	1.875	1	3	publication
+niehaus pv	4.893	1.875	1	3	publication
+objectives development	4.893	1.875	1	3	publication
+planned spacecraft	4.893	1.875	1	3	publication
+ruff urban	4.893	1.875	1	3	publication
+saffire objectives	4.893	1.875	1	3	publication
+samples planned	4.893	1.875	1	3	publication
+schoren ga	4.893	1.875	1	3	publication
+silicone samples	4.893	1.875	1	3	publication
+normal	4.893	4.000	2	15	hypothesis,objective
+buoyant	4.791	2.500	1	7	publication
+model	4.791	2.500	1	7	publication
+improved spacecraft fire	4.780	1.650	1	2	proposal_title
+saffire enclosure cygnus	4.780	1.650	1	2	experiment_hardware
+base	4.773	2.000	1	4	hypothesis
+benefits	4.773	2.000	1	4	research_impacts
+crucial	4.773	2.000	1	4	research_impacts
+differences	4.773	2.000	1	4	hypothesis
+efforts	4.773	2.000	1	4	research_impacts
+inherent	4.773	2.000	1	4	hypothesis
+installed	4.773	2.000	1	4	approach
+instruments	4.773	2.000	1	4	research_impacts
+lack	4.773	2.000	1	4	hypothesis
+level	4.773	2.000	1	4	hypothesis
+limited	4.773	2.000	1	4	research_impacts
+longer	4.773	2.000	1	4	hypothesis
+sensors	4.773	2.000	1	4	approach
+studying	4.773	2.000	1	4	research_impacts
+subsequently	4.773	2.000	1	4	approach
+unit	4.773	2.000	1	4	approach
+david urban	4.721	2.625	2	8	people,publication
+adam rouvreau sebastien	4.541	1.375	1	1	publication
+beyond flammability testing	4.541	1.375	1	1	publication
+carlos cowlard adam	4.541	1.375	1	1	publication
+christian niehaus justin	4.541	1.375	1	1	publication
+cowlard adam rouvreau	4.541	1.375	1	1	publication
+eigenbrod christian niehaus	4.541	1.375	1	1	publication
+ferkul paul legros	4.541	1.375	1	1	publication
+fernandez-pello carlos cowlard	4.541	1.375	1	1	publication
+fire safety beyond	4.541	1.375	1	1	publication
+flammability testing small	4.541	1.375	1	1	publication
+fujita osamu ien	4.541	1.375	1	1	publication
+gary ruff david	4.541	1.375	1	1	publication
+grunde torero jose	4.541	1.375	1	1	publication
+guillaume fernandez-pello carlos	4.541	1.375	1	1	publication
+ien james ruff	4.541	1.375	1	1	publication
+james ruff gary	4.541	1.375	1	1	publication
+jomaas grunde torero	4.541	1.375	1	1	publication
+jose eigenbrod christian	4.541	1.375	1	1	publication
+justin olson sandra	4.541	1.375	1	1	publication
+legros guillaume fernandez-pello	4.541	1.375	1	1	publication
+niehaus justin olson	4.541	1.375	1	1	publication
+osamu ien james	4.541	1.375	1	1	publication
+paul legros guillaume	4.541	1.375	1	1	publication
+rouvreau sebastien smirnov	4.541	1.375	1	1	publication
+ruff david urban	4.541	1.375	1	1	publication
+safety beyond flammability	4.541	1.375	1	1	publication
+sebastien smirnov nickolay	4.541	1.375	1	1	publication
+testing small samples	4.541	1.375	1	1	publication
+torero jose eigenbrod	4.541	1.375	1	1	publication
+processes	4.496	2.500	1	8	publication
+pv	4.496	2.500	1	8	publication
+gary urban	4.474	1.875	1	4	publication
+sa gokoglu	4.474	1.875	1	4	publication
+captured	4.408	2.000	1	5	approach
+designs	4.408	2.000	1	5	hypothesis
+far	4.408	2.000	1	5	hypothesis
+gap	4.408	2.000	1	5	hypothesis
+hypothesizes	4.408	2.000	1	5	hypothesis
+knowledge	4.408	2.000	1	5	hypothesis
+low-gravity	4.408	2.000	1	5	objective
+obtained	4.408	2.000	1	5	objective
+procedures	4.408	2.000	1	5	hypothesis
+realistic	4.408	2.000	1	5	research_impacts
+selection	4.408	2.000	1	5	research_impacts
+successful	4.408	2.000	1	5	hypothesis
+wide	4.408	2.000	1	5	approach
+air drawn	4.346	1.500	1	2	approach
+bottom module	4.346	1.500	1	2	approach
+card installed	4.346	1.500	1	2	approach
+composite fabric	4.346	1.500	1	2	approach
+conducted air	4.346	1.500	1	2	approach
+consisting cotton	4.346	1.500	1	2	approach
+drawn flow	4.346	1.500	1	2	approach
+duct air	4.346	1.500	1	2	approach
+duct fans	4.346	1.500	1	2	approach
+duct flow	4.346	1.500	1	2	approach
+fans located	4.346	1.500	1	2	approach
+flight unit	4.346	1.500	1	2	approach
+flow straighteners	4.346	1.500	1	2	approach
+installed middle	4.346	1.500	1	2	approach
+large flow	4.346	1.500	1	2	approach
+located top	4.346	1.500	1	2	approach
+middle large	4.346	1.500	1	2	approach
+objectives determine	4.346	1.500	1	2	objective
+saffire-i way	4.346	1.500	1	2	research_impacts
+sample card	4.346	1.500	1	2	approach
+straighteners bottom	4.346	1.500	1	2	approach
+top duct	4.346	1.500	1	2	approach
+unit sample	4.346	1.500	1	2	approach
+spacecraft fire detection	4.306	1.650	1	3	proposal_title
+affect	4.100	2.000	1	6	research_impacts
+dioxide	4.100	2.000	1	6	research_impacts
+ignited	4.100	2.000	1	6	approach
+increase	4.100	2.000	1	6	hypothesis
+mole	4.100	2.000	1	6	approach
+o2	4.100	2.000	1	6	approach
+prevention	4.100	2.000	1	6	research_impacts
+proposed	4.100	2.000	1	6	hypothesis
+radiometers	4.100	2.000	1	6	approach
+recorded	4.100	2.000	1	6	approach
+standards	4.100	2.000	1	6	hypothesis
+state	4.100	2.000	1	6	approach
+thermocouples	4.100	2.000	1	6	approach
+flows	3.995	2.500	1	10	publication
+balazs jomaas grunde	3.984	1.375	1	2	publication
+bastien toth balazs	3.984	1.375	1	2	publication
+carlos torero jose	3.984	1.375	1	2	publication
+chengyao fernandez-pello carlos	3.984	1.375	1	2	publication
+chengyao liao ya-ting	3.984	1.375	1	2	publication
+christian smirnov nickolay	3.984	1.375	1	2	publication
+concurrent low-speed flows	3.984	1.375	1	2	publication
+development status spacecraft	3.984	1.375	1	2	publication
+easton john ien	3.984	1.375	1	2	publication
+effects microgravity scale	3.984	1.375	1	2	publication
+eigenbrod christian smirnov	3.984	1.375	1	2	publication
+fabric concurrent low-speed	3.984	1.375	1	2	publication
+fernandez-pello carlos torero	3.984	1.375	1	2	publication
+flame spread effects	3.984	1.375	1	2	publication
+flows microgravity model	3.984	1.375	1	2	publication
+fujita osamu rouvreau	3.984	1.375	1	2	publication
+growth spread processes	3.984	1.375	1	2	publication
+guillaume eigenbrod christian	3.984	1.375	1	2	publication
+ien james liao	3.984	1.375	1	2	publication
+ien james urban	3.984	1.375	1	2	publication
+james liao ya-ting	3.984	1.375	1	2	publication
+james urban david	3.984	1.375	1	2	publication
+john ien james	3.984	1.375	1	2	publication
+jose legros guillaume	3.984	1.375	1	2	publication
+large solid fabric	3.984	1.375	1	2	publication
+legros guillaume eigenbrod	3.984	1.375	1	2	publication
+liao ya-ting chengyao	3.984	1.375	1	2	publication
+liao ya-ting ien	3.984	1.375	1	2	publication
+low-speed flows microgravity	3.984	1.375	1	2	publication
+olson sandra ferkul	3.984	1.375	1	2	publication
+operation development status	3.984	1.375	1	2	publication
+osamu rouvreau bastien	3.984	1.375	1	2	publication
+processes large solid	3.984	1.375	1	2	publication
+rouvreau bastien toth	3.984	1.375	1	2	publication
+sandra ferkul paul	3.984	1.375	1	2	publication
+solid fabric concurrent	3.984	1.375	1	2	publication
+spread effects microgravity	3.984	1.375	1	2	publication
+spread processes large	3.984	1.375	1	2	publication
+status spacecraft fire	3.984	1.375	1	2	publication
+torero jose legros	3.984	1.375	1	2	publication
+toth balazs jomaas	3.984	1.375	1	2	publication
+transient flame growth	3.984	1.375	1	2	publication
+ya-ting chengyao fernandez-pello	3.984	1.375	1	2	publication
+ya-ting ien james	3.984	1.375	1	2	publication
+smoke microgravity fires	3.937	1.650	1	4	proposal_title
+addition thermocouples	3.914	1.500	1	3	approach
+address knowledge	3.914	1.500	1	3	hypothesis
+airplanes submarines	3.914	1.500	1	3	research_impacts
+anemometer tracked	3.914	1.500	1	3	approach
+approach successful	3.914	1.500	1	3	hypothesis
+available spacecraft	3.914	1.500	1	3	hypothesis
+base fire	3.914	1.500	1	3	hypothesis
+behavior normal	3.914	1.500	1	3	hypothesis
+benefits fire	3.914	1.500	1	3	research_impacts
+cameras addition	3.914	1.500	1	3	approach
+cameras views	3.914	1.500	1	3	research_impacts
+captured cameras	3.914	1.500	1	3	approach
+cargo supply	3.914	1.500	1	3	research_impacts
+cargo vessel	3.914	1.500	1	3	research_impacts
+co2 o2	3.914	1.500	1	3	approach
+compared obtained	3.914	1.500	1	3	objective
+compressed subsequently	3.914	1.500	1	3	approach
+conduct large-scale	3.914	1.500	1	3	hypothesis
+considerably longer	3.914	1.500	1	3	hypothesis
+criteria microgravity	3.914	1.500	1	3	research_impacts
+crucial safety	3.914	1.500	1	3	research_impacts
+current future	3.914	1.500	1	3	research_impacts
+cygnus cargo	3.914	1.500	1	3	research_impacts
+cygnus resupply	3.914	1.500	1	3	approach
+design spacecraft	3.914	1.500	1	3	hypothesis
+designers base	3.914	1.500	1	3	hypothesis
+designs procedures	3.914	1.500	1	3	hypothesis
+determine microgravity	3.914	1.500	1	3	research_impacts
+determine rapidly	3.914	1.500	1	3	objective
+differences fire	3.914	1.500	1	3	hypothesis
+dioxide heat	3.914	1.500	1	3	research_impacts
+due large	3.914	1.500	1	3	hypothesis
+earth considerably	3.914	1.500	1	3	hypothesis
+earth inside	3.914	1.500	1	3	research_impacts
+efforts earth	3.914	1.500	1	3	research_impacts
+environments cygnus	3.914	1.500	1	3	research_impacts
+expendable spacecraft	3.914	1.500	1	3	hypothesis
+exploration missions	3.914	1.500	1	3	hypothesis
+exploration vehicle	3.914	1.500	1	3	research_impacts
+faction anemometer	3.914	1.500	1	3	approach
+far uncertainty	3.914	1.500	1	3	hypothesis
+fire behavior	3.914	1.500	1	3	hypothesis
+fire exploration	3.914	1.500	1	3	research_impacts
+fire grows	3.914	1.500	1	3	objective
+fire small	3.914	1.500	1	3	research_impacts
+fire standards	3.914	1.500	1	3	hypothesis
+fires fire	3.914	1.500	1	3	hypothesis
+flame determine	3.914	1.500	1	3	research_impacts
+flame images	3.914	1.500	1	3	approach
+flame plume	3.914	1.500	1	3	approach
+flammability screening	3.914	1.500	1	3	objective
+gap proposed	3.914	1.500	1	3	hypothesis
+gravity material	3.914	1.500	1	3	objective
+gravity terrestrial	3.914	1.500	1	3	hypothesis
+grows low-gravity	3.914	1.500	1	3	objective
+growth video	3.914	1.500	1	3	research_impacts
+heat pressure	3.914	1.500	1	3	research_impacts
+help validate	3.914	1.500	1	3	research_impacts
+high instruments	3.914	1.500	1	3	research_impacts
+hypothesizes due	3.914	1.500	1	3	hypothesis
+ignited flame	3.914	1.500	1	3	approach
+increase exploration	3.914	1.500	1	3	hypothesis
+inherent risk	3.914	1.500	1	3	hypothesis
+inside mines	3.914	1.500	1	3	research_impacts
+instruments unmanned	3.914	1.500	1	3	research_impacts
+knowledge gap	3.914	1.500	1	3	hypothesis
+lack microgravity	3.914	1.500	1	3	hypothesis
+large differences	3.914	1.500	1	3	hypothesis
+large scale	3.914	1.500	1	3	objective
+large-scale fire	3.914	1.500	1	3	hypothesis
+level uncertainty	3.914	1.500	1	3	hypothesis
+limited oxygen	3.914	1.500	1	3	research_impacts
+limits compared	3.914	1.500	1	3	objective
+limits spacecraft	3.914	1.500	1	3	research_impacts
+longer transit	3.914	1.500	1	3	hypothesis
+low-g flammability	3.914	1.500	1	3	objective
+low-gravity low-g	3.914	1.500	1	3	objective
+materials help	3.914	1.500	1	3	research_impacts
+measure oxygen	3.914	1.500	1	3	research_impacts
+measure pressure	3.914	1.500	1	3	approach
+microgravity available	3.914	1.500	1	3	hypothesis
+microgravity limited	3.914	1.500	1	3	research_impacts
+mines airplanes	3.914	1.500	1	3	research_impacts
+missions studying	3.914	1.500	1	3	research_impacts
+missions venture	3.914	1.500	1	3	hypothesis
+mole faction	3.914	1.500	1	3	approach
+obtained normal	3.914	1.500	1	3	objective
+orbital cygnus	3.914	1.500	1	3	approach
+oxygen affect	3.914	1.500	1	3	research_impacts
+oxygen carbon	3.914	1.500	1	3	research_impacts
+past risks	3.914	1.500	1	3	research_impacts
+performed orbital	3.914	1.500	1	3	approach
+plume temperatures	3.914	1.500	1	3	approach
+possible past	3.914	1.500	1	3	research_impacts
+presents inherent	3.914	1.500	1	3	hypothesis
+pressure co2	3.914	1.500	1	3	approach
+prevention efforts	3.914	1.500	1	3	research_impacts
+procedures address	3.914	1.500	1	3	hypothesis
+proposed conduct	3.914	1.500	1	3	hypothesis
+radiation solid	3.914	1.500	1	3	approach
+radiometers recorded	3.914	1.500	1	3	approach
+rapidly large	3.914	1.500	1	3	objective
+realistic fire	3.914	1.500	1	3	research_impacts
+recorded flame	3.914	1.500	1	3	approach
+resupply vehicle	3.914	1.500	1	3	approach
+return significant	3.914	1.500	1	3	hypothesis
+risk crew	3.914	1.500	1	3	hypothesis
+risk increase	3.914	1.500	1	3	hypothesis
+risk vehicle	3.914	1.500	1	3	hypothesis
+risks high	3.914	1.500	1	3	research_impacts
+safe return	3.914	1.500	1	3	hypothesis
+safety current	3.914	1.500	1	3	research_impacts
+safety designs	3.914	1.500	1	3	hypothesis
+safety expendable	3.914	1.500	1	3	hypothesis
+safety prevention	3.914	1.500	1	3	research_impacts
+safety systems	3.914	1.500	1	3	hypothesis
+sample ignited	3.914	1.500	1	3	approach
+sample material	3.914	1.500	1	3	approach
+scale fire	3.914	1.500	1	3	objective
+screening test	3.914	1.500	1	3	objective
+sealed environments	3.914	1.500	1	3	research_impacts
+selection criteria	3.914	1.500	1	3	research_impacts
+significant lack	3.914	1.500	1	3	hypothesis
+significant level	3.914	1.500	1	3	hypothesis
+size crucial	3.914	1.500	1	3	research_impacts
+small sealed	3.914	1.500	1	3	research_impacts
+solid state	3.914	1.500	1	3	approach
+spacecraft designers	3.914	1.500	1	3	hypothesis
+spacecraft risk	3.914	1.500	1	3	hypothesis
+standards design	3.914	1.500	1	3	hypothesis
+state sensors	3.914	1.500	1	3	approach
+studying fire	3.914	1.500	1	3	research_impacts
+subsequently downlinked	3.914	1.500	1	3	approach
+successful far	3.914	1.500	1	3	hypothesis
+supply vehicle	3.914	1.500	1	3	research_impacts
+systems presents	3.914	1.500	1	3	hypothesis
+temperatures radiometers	3.914	1.500	1	3	approach
+terrestrial fires	3.914	1.500	1	3	hypothesis
+thermocouples flow	3.914	1.500	1	3	approach
+times safe	3.914	1.500	1	3	hypothesis
+tracked flow	3.914	1.500	1	3	approach
+transit times	3.914	1.500	1	3	hypothesis
+uncertainty approach	3.914	1.500	1	3	hypothesis
+uncertainty risk	3.914	1.500	1	3	hypothesis
+unmanned cargo	3.914	1.500	1	3	research_impacts
+validate material	3.914	1.500	1	3	research_impacts
+vehicle benefits	3.914	1.500	1	3	research_impacts
+vehicle deberthed	3.914	1.500	1	3	approach
+vehicle possible	3.914	1.500	1	3	research_impacts
+vehicle significant	3.914	1.500	1	3	hypothesis
+velocity compressed	3.914	1.500	1	3	approach
+venture earth	3.914	1.500	1	3	hypothesis
+vessel measure	3.914	1.500	1	3	research_impacts
+views flame	3.914	1.500	1	3	research_impacts
+way realistic	3.914	1.500	1	3	research_impacts
+addition	3.833	2.000	1	7	approach
+approach	3.833	2.000	1	7	hypothesis
+carbon	3.833	2.000	1	7	research_impacts
+co2	3.833	2.000	1	7	approach
+current	3.833	2.000	1	7	research_impacts
+help	3.833	2.000	1	7	research_impacts
+long	3.833	2.000	1	7	approach
+possible	3.833	2.000	1	7	research_impacts
+submarines	3.833	2.000	1	7	research_impacts
+terrestrial	3.833	2.000	1	7	hypothesis
+times	3.833	2.000	1	7	hypothesis
+video	3.833	2.000	1	7	research_impacts
+0.4 meters wide	3.633	1.100	1	1	approach
+0.94 meters long	3.633	1.100	1	1	approach
+approximately 0.94 meters	3.633	1.100	1	1	approach
+bottom module saffire-i	3.633	1.100	1	1	approach
+burns like cotton	3.633	1.100	1	1	approach
+called sibal consisting	3.633	1.100	1	1	approach
+composite fabric called	3.633	1.100	1	1	approach
+consumed sample approximately	3.633	1.100	1	1	approach
+cotton consumed sample	3.633	1.100	1	1	approach
+cotton fiberglass substrate	3.633	1.100	1	1	approach
+cotton fiberglass weight	3.633	1.100	1	1	approach
+cotton maintains structural	3.633	1.100	1	1	approach
+deberthed sample material	3.633	1.100	1	1	approach
+fabric called sibal	3.633	1.100	1	1	approach
+fabric saffire-1 flight	3.633	1.100	1	1	approach
+fiberglass substrate cotton	3.633	1.100	1	1	approach
+fiberglass weight burns	3.633	1.100	1	1	approach
+flammable fabric saffire-1	3.633	1.100	1	1	approach
+flow velocity sample	3.633	1.100	1	1	approach
+integrity cotton consumed	3.633	1.100	1	1	approach
+large piece flammable	3.633	1.100	1	1	approach
+like cotton maintains	3.633	1.100	1	1	approach
+long 0.4 meters	3.633	1.100	1	1	approach
+maintains structural integrity	3.633	1.100	1	1	approach
+material saffire-i composite	3.633	1.100	1	1	approach
+meters long 0.4	3.633	1.100	1	1	approach
+meters wide simulating	3.633	1.100	1	1	approach
+module saffire-i conducted	3.633	1.100	1	1	approach
+piece flammable fabric	3.633	1.100	1	1	approach
+saffire-1 flight unit	3.633	1.100	1	1	approach
+saffire-1 performed orbital	3.633	1.100	1	1	approach
+saffire-i composite fabric	3.633	1.100	1	1	approach
+saffire-i conducted air	3.633	1.100	1	1	approach
+sample approximately 0.94	3.633	1.100	1	1	approach
+sample material saffire-i	3.633	1.100	1	1	approach
+sibal consisting cotton	3.633	1.100	1	1	approach
+simulating large piece	3.633	1.100	1	1	approach
+structural integrity cotton	3.633	1.100	1	1	approach
+substrate cotton fiberglass	3.633	1.100	1	1	approach
+vehicle deberthed sample	3.633	1.100	1	1	approach
+velocity sample ignited	3.633	1.100	1	1	approach
+weight burns like	3.633	1.100	1	1	approach
+wide simulating large	3.633	1.100	1	1	approach
+available	3.597	2.000	1	8	hypothesis
+compared	3.597	2.000	1	8	objective
+conducted	3.597	2.000	1	8	approach
+crew	3.597	2.000	1	8	hypothesis
+inside	3.597	2.000	1	8	research_impacts
+materials	3.597	2.000	1	8	research_impacts
+performed	3.597	2.000	1	8	approach
+temperatures	3.597	2.000	1	8	approach
+buoyant effects flammability	3.588	1.375	1	3	publication
+effects flammability silicone	3.588	1.375	1	3	publication
+ferkul sa gokoglu	3.588	1.375	1	3	publication
+fire saffire objectives	3.588	1.375	1	3	publication
+flame growth spread	3.588	1.375	1	3	publication
+flammability silicone samples	3.588	1.375	1	3	publication
+ga ruff urban	3.588	1.375	1	3	publication
+gokoglu ga ruff	3.588	1.375	1	3	publication
+je niehaus pv	3.588	1.375	1	3	publication
+niehaus pv ferkul	3.588	1.375	1	3	publication
+objectives development status	3.588	1.375	1	3	publication
+planned spacecraft fire	3.588	1.375	1	3	publication
+pv ferkul sa	3.588	1.375	1	3	publication
+sa gokoglu ga	3.588	1.375	1	3	publication
+saffire objectives development	3.588	1.375	1	3	publication
+samples planned spacecraft	3.588	1.375	1	3	publication
+schoren ga ruff	3.588	1.375	1	3	publication
+silicone samples planned	3.588	1.375	1	3	publication
+affect flame	3.579	1.500	1	4	research_impacts
+flow flame	3.579	1.500	1	4	approach
+images captured	3.579	1.500	1	4	approach
+material selection	3.579	1.500	1	4	research_impacts
+microgravity flammability	3.579	1.500	1	4	research_impacts
+o2 mole	3.579	1.500	1	4	approach
+sensors measure	3.579	1.500	1	4	approach
+documents	3.577	2.500	3	12	file_folders,filenames
+due	3.386	2.000	1	9	hypothesis
+reduced	3.386	2.000	1	9	hypothesis
+validate	3.386	2.000	1	9	research_impacts
+pv ferkul	3.372	1.875	1	8	publication
+air flow	3.306	1.500	1	5	approach
+flame radiation	3.306	1.500	1	5	approach
+flame size	3.306	1.500	1	5	research_impacts
+future missions	3.306	1.500	1	5	research_impacts
+material flammability	3.306	1.500	1	5	objective
+normal reduced	3.306	1.500	1	5	hypothesis
+pressure flame	3.306	1.500	1	5	research_impacts
+spacecraft materials	3.306	1.500	1	5	research_impacts
+video cameras	3.306	1.500	1	5	research_impacts
+complete	3.303	1.000	1	1	filenames
+distortiongrid	3.303	1.000	1	1	filenames
+distortiongrids	3.303	1.000	1	1	filenames
+distromaster	3.303	1.000	1	1	filenames
+f1c1-raw	3.303	1.000	1	1	filenames
+f1c2-raw	3.303	1.000	1	1	filenames
+graphs	3.303	1.000	1	1	filenames
+imageframesizes	3.303	1.000	1	1	filenames
+is1c2	3.303	1.000	1	1	filenames
+offsets	3.303	1.000	1	1	filenames
+originals	3.303	1.000	1	1	filenames
+roi	3.303	1.000	1	1	filenames
+s1c1raw2tiff	3.303	1.000	1	1	filenames
+s2c1-1465938171811	3.303	1.000	1	1	filenames
+sfsdp-vis-0295	3.303	1.000	1	1	filenames
+update	3.303	1.000	1	1	filenames
+v1.0	3.303	1.000	1	1	filenames
+version	3.303	1.000	1	1	filenames
+gary urban david	3.281	1.375	1	4	publication
+ruff gary urban	3.281	1.375	1	4	publication
+radiation	3.196	2.000	1	10	approach
+size	3.196	2.000	1	10	research_impacts
+air drawn flow	3.187	1.100	1	2	approach
+air flow velocity	3.187	1.100	1	2	approach
+card installed middle	3.187	1.100	1	2	approach
+conducted air flow	3.187	1.100	1	2	approach
+consisting cotton fiberglass	3.187	1.100	1	2	approach
+drawn flow duct	3.187	1.100	1	2	approach
+duct air drawn	3.187	1.100	1	2	approach
+duct fans located	3.187	1.100	1	2	approach
+duct flow straighteners	3.187	1.100	1	2	approach
+fans located top	3.187	1.100	1	2	approach
+flight unit sample	3.187	1.100	1	2	approach
+flow duct air	3.187	1.100	1	2	approach
+flow duct fans	3.187	1.100	1	2	approach
+flow straighteners bottom	3.187	1.100	1	2	approach
+installed middle large	3.187	1.100	1	2	approach
+large flow duct	3.187	1.100	1	2	approach
+located top duct	3.187	1.100	1	2	approach
+middle large flow	3.187	1.100	1	2	approach
+objectives determine rapidly	3.187	1.100	1	2	objective
+saffire-i way realistic	3.187	1.100	1	2	research_impacts
+sample card installed	3.187	1.100	1	2	approach
+straighteners bottom module	3.187	1.100	1	2	approach
+top duct flow	3.187	1.100	1	2	approach
+unit sample card	3.187	1.100	1	2	approach
+carbon dioxide	3.075	1.500	1	6	research_impacts
+design	3.022	2.000	1	11	hypothesis
+1280x920	2.897	1.000	1	2	filenames
+1360x1024	2.897	1.000	1	2	filenames
+directory	2.897	1.000	1	2	filenames
+f1c1	2.897	1.000	1	2	filenames
+f1c2	2.897	1.000	1	2	filenames
+f2c1	2.897	1.000	1	2	filenames
+f2c2	2.897	1.000	1	2	filenames
+grid	2.897	1.000	1	2	filenames
+icmad	2.897	1.000	1	2	filenames
+jpeg2png	2.897	1.000	1	2	filenames
+jpegs	2.897	1.000	1	2	filenames
+mapped	2.897	1.000	1	2	filenames
+mergeresult-jpeg	2.897	1.000	1	2	filenames
+nomenclature	2.897	1.000	1	2	filenames
+offgassing	2.897	1.000	1	2	filenames
+part1	2.897	1.000	1	2	filenames
+part2	2.897	1.000	1	2	filenames
+part3	2.897	1.000	1	2	filenames
+part4	2.897	1.000	1	2	filenames
+placement	2.897	1.000	1	2	filenames
+raw2tiff	2.897	1.000	1	2	filenames
+readme	2.897	1.000	1	2	filenames
+s1c1	2.897	1.000	1	2	filenames
+s1c2	2.897	1.000	1	2	filenames
+s2c1	2.897	1.000	1	2	filenames
+s2c2	2.897	1.000	1	2	filenames
+saffire-iii	2.897	1.000	1	2	filenames
+strategy	2.897	1.000	1	2	filenames
+telemetry	2.897	1.000	1	2	filenames
+thermocouple	2.897	1.000	1	2	filenames
+reduced gravity	2.874	1.500	1	7	hypothesis
+addition thermocouples flow	2.870	1.100	1	3	approach
+address knowledge gap	2.870	1.100	1	3	hypothesis
+affect flame size	2.870	1.100	1	3	research_impacts
+anemometer tracked flow	2.870	1.100	1	3	approach
+approach successful far	2.870	1.100	1	3	hypothesis
+available spacecraft designers	2.870	1.100	1	3	hypothesis
+base fire safety	2.870	1.100	1	3	hypothesis
+behavior normal reduced	2.870	1.100	1	3	hypothesis
+benefits fire safety	2.870	1.100	1	3	research_impacts
+cameras addition thermocouples	2.870	1.100	1	3	approach
+cameras views flame	2.870	1.100	1	3	research_impacts
+captured cameras addition	2.870	1.100	1	3	approach
+carbon dioxide heat	2.870	1.100	1	3	research_impacts
+cargo supply vehicle	2.870	1.100	1	3	research_impacts
+cargo vessel measure	2.870	1.100	1	3	research_impacts
+co2 o2 mole	2.870	1.100	1	3	approach
+compared obtained normal	2.870	1.100	1	3	objective
+compressed subsequently downlinked	2.870	1.100	1	3	approach
+conduct large-scale fire	2.870	1.100	1	3	hypothesis
+considerably longer transit	2.870	1.100	1	3	hypothesis
+criteria microgravity limited	2.870	1.100	1	3	research_impacts
+crucial safety current	2.870	1.100	1	3	research_impacts
+current future missions	2.870	1.100	1	3	research_impacts
+cygnus cargo supply	2.870	1.100	1	3	research_impacts
+cygnus resupply vehicle	2.870	1.100	1	3	approach
+design spacecraft fire	2.870	1.100	1	3	hypothesis
+designers base fire	2.870	1.100	1	3	hypothesis
+designs procedures address	2.870	1.100	1	3	hypothesis
+determine microgravity flammability	2.870	1.100	1	3	research_impacts
+determine rapidly large	2.870	1.100	1	3	objective
+differences fire behavior	2.870	1.100	1	3	hypothesis
+dioxide heat pressure	2.870	1.100	1	3	research_impacts
+due large differences	2.870	1.100	1	3	hypothesis
+earth considerably longer	2.870	1.100	1	3	hypothesis
+earth inside mines	2.870	1.100	1	3	research_impacts
+efforts earth inside	2.870	1.100	1	3	research_impacts
+environments cygnus cargo	2.870	1.100	1	3	research_impacts
+expendable spacecraft risk	2.870	1.100	1	3	hypothesis
+exploration missions venture	2.870	1.100	1	3	hypothesis
+exploration vehicle possible	2.870	1.100	1	3	research_impacts
+faction anemometer tracked	2.870	1.100	1	3	approach
+far uncertainty risk	2.870	1.100	1	3	hypothesis
+fire behavior normal	2.870	1.100	1	3	hypothesis
+fire exploration vehicle	2.870	1.100	1	3	research_impacts
+fire grows low-gravity	2.870	1.100	1	3	objective
+fire safety designs	2.870	1.100	1	3	hypothesis
+fire safety expendable	2.870	1.100	1	3	hypothesis
+fire safety prevention	2.870	1.100	1	3	research_impacts
+fire safety systems	2.870	1.100	1	3	hypothesis
+fire small sealed	2.870	1.100	1	3	research_impacts
+fire standards design	2.870	1.100	1	3	hypothesis
+fires fire standards	2.870	1.100	1	3	hypothesis
+flame determine microgravity	2.870	1.100	1	3	research_impacts
+flame growth video	2.870	1.100	1	3	research_impacts
+flame images captured	2.870	1.100	1	3	approach
+flame plume temperatures	2.870	1.100	1	3	approach
+flame radiation solid	2.870	1.100	1	3	approach
+flame size crucial	2.870	1.100	1	3	research_impacts
+flammability limits compared	2.870	1.100	1	3	objective
+flammability limits spacecraft	2.870	1.100	1	3	research_impacts
+flammability screening test	2.870	1.100	1	3	objective
+flow flame plume	2.870	1.100	1	3	approach
+flow velocity compressed	2.870	1.100	1	3	approach
+future missions studying	2.870	1.100	1	3	research_impacts
+gap proposed conduct	2.870	1.100	1	3	hypothesis
+gravity material flammability	2.870	1.100	1	3	objective
+gravity terrestrial fires	2.870	1.100	1	3	hypothesis
+grows low-gravity low-g	2.870	1.100	1	3	objective
+growth video cameras	2.870	1.100	1	3	research_impacts
+heat pressure flame	2.870	1.100	1	3	research_impacts
+help validate material	2.870	1.100	1	3	research_impacts
+high instruments unmanned	2.870	1.100	1	3	research_impacts
+hypothesizes due large	2.870	1.100	1	3	hypothesis
+ignited flame images	2.870	1.100	1	3	approach
+images captured cameras	2.870	1.100	1	3	approach
+increase exploration missions	2.870	1.100	1	3	hypothesis
+inherent risk vehicle	2.870	1.100	1	3	hypothesis
+inside mines airplanes	2.870	1.100	1	3	research_impacts
+instruments unmanned cargo	2.870	1.100	1	3	research_impacts
+knowledge gap proposed	2.870	1.100	1	3	hypothesis
+lack microgravity available	2.870	1.100	1	3	hypothesis
+large differences fire	2.870	1.100	1	3	hypothesis
+large scale fire	2.870	1.100	1	3	objective
+large-scale fire safety	2.870	1.100	1	3	hypothesis
+level uncertainty approach	2.870	1.100	1	3	hypothesis
+limited oxygen affect	2.870	1.100	1	3	research_impacts
+limits compared obtained	2.870	1.100	1	3	objective
+limits spacecraft materials	2.870	1.100	1	3	research_impacts
+longer transit times	2.870	1.100	1	3	hypothesis
+low-g flammability limits	2.870	1.100	1	3	objective
+low-gravity low-g flammability	2.870	1.100	1	3	objective
+material flammability screening	2.870	1.100	1	3	objective
+material selection criteria	2.870	1.100	1	3	research_impacts
+materials help validate	2.870	1.100	1	3	research_impacts
+measure oxygen carbon	2.870	1.100	1	3	research_impacts
+measure pressure co2	2.870	1.100	1	3	approach
+microgravity available spacecraft	2.870	1.100	1	3	hypothesis
+microgravity flammability limits	2.870	1.100	1	3	research_impacts
+microgravity limited oxygen	2.870	1.100	1	3	research_impacts
+mines airplanes submarines	2.870	1.100	1	3	research_impacts
+missions studying fire	2.870	1.100	1	3	research_impacts
+missions venture earth	2.870	1.100	1	3	hypothesis
+mole faction anemometer	2.870	1.100	1	3	approach
+normal gravity material	2.870	1.100	1	3	objective
+o2 mole faction	2.870	1.100	1	3	approach
+obtained normal gravity	2.870	1.100	1	3	objective
+orbital cygnus resupply	2.870	1.100	1	3	approach
+oxygen affect flame	2.870	1.100	1	3	research_impacts
+oxygen carbon dioxide	2.870	1.100	1	3	research_impacts
+past risks high	2.870	1.100	1	3	research_impacts
+performed orbital cygnus	2.870	1.100	1	3	approach
+plume temperatures radiometers	2.870	1.100	1	3	approach
+possible past risks	2.870	1.100	1	3	research_impacts
+presents inherent risk	2.870	1.100	1	3	hypothesis
+pressure co2 o2	2.870	1.100	1	3	approach
+pressure flame growth	2.870	1.100	1	3	research_impacts
+prevention efforts earth	2.870	1.100	1	3	research_impacts
+procedures address knowledge	2.870	1.100	1	3	hypothesis
+proposed conduct large-scale	2.870	1.100	1	3	hypothesis
+radiation solid state	2.870	1.100	1	3	approach
+radiometers recorded flame	2.870	1.100	1	3	approach
+rapidly large scale	2.870	1.100	1	3	objective
+realistic fire exploration	2.870	1.100	1	3	research_impacts
+recorded flame radiation	2.870	1.100	1	3	approach
+reduced gravity terrestrial	2.870	1.100	1	3	hypothesis
+resupply vehicle deberthed	2.870	1.100	1	3	approach
+return significant lack	2.870	1.100	1	3	hypothesis
+risk increase exploration	2.870	1.100	1	3	hypothesis
+risk vehicle significant	2.870	1.100	1	3	hypothesis
+risks high instruments	2.870	1.100	1	3	research_impacts
+safe return significant	2.870	1.100	1	3	hypothesis
+safety current future	2.870	1.100	1	3	research_impacts
+safety designs procedures	2.870	1.100	1	3	hypothesis
+safety expendable spacecraft	2.870	1.100	1	3	hypothesis
+safety prevention efforts	2.870	1.100	1	3	research_impacts
+safety systems presents	2.870	1.100	1	3	hypothesis
+sample ignited flame	2.870	1.100	1	3	approach
+scale fire grows	2.870	1.100	1	3	objective
+sealed environments cygnus	2.870	1.100	1	3	research_impacts
+selection criteria microgravity	2.870	1.100	1	3	research_impacts
+sensors measure pressure	2.870	1.100	1	3	approach
+significant lack microgravity	2.870	1.100	1	3	hypothesis
+significant level uncertainty	2.870	1.100	1	3	hypothesis
+size crucial safety	2.870	1.100	1	3	research_impacts
+small sealed environments	2.870	1.100	1	3	research_impacts
+solid state sensors	2.870	1.100	1	3	approach
+spacecraft designers base	2.870	1.100	1	3	hypothesis
+spacecraft materials help	2.870	1.100	1	3	research_impacts
+spacecraft risk crew	2.870	1.100	1	3	hypothesis
+standards design spacecraft	2.870	1.100	1	3	hypothesis
+state sensors measure	2.870	1.100	1	3	approach
+studying fire small	2.870	1.100	1	3	research_impacts
+successful far uncertainty	2.870	1.100	1	3	hypothesis
+supply vehicle benefits	2.870	1.100	1	3	research_impacts
+systems presents inherent	2.870	1.100	1	3	hypothesis
+temperatures radiometers recorded	2.870	1.100	1	3	approach
+terrestrial fires fire	2.870	1.100	1	3	hypothesis
+thermocouples flow flame	2.870	1.100	1	3	approach
+times safe return	2.870	1.100	1	3	hypothesis
+tracked flow velocity	2.870	1.100	1	3	approach
+transit times safe	2.870	1.100	1	3	hypothesis
+uncertainty approach successful	2.870	1.100	1	3	hypothesis
+uncertainty risk increase	2.870	1.100	1	3	hypothesis
+unmanned cargo vessel	2.870	1.100	1	3	research_impacts
+validate material selection	2.870	1.100	1	3	research_impacts
+vehicle benefits fire	2.870	1.100	1	3	research_impacts
+vehicle possible past	2.870	1.100	1	3	research_impacts
+vehicle significant level	2.870	1.100	1	3	hypothesis
+velocity compressed subsequently	2.870	1.100	1	3	approach
+venture earth considerably	2.870	1.100	1	3	hypothesis
+vessel measure oxygen	2.870	1.100	1	3	research_impacts
+video cameras views	2.870	1.100	1	3	research_impacts
+views flame determine	2.870	1.100	1	3	research_impacts
+way realistic fire	2.870	1.100	1	3	research_impacts
+heat	2.862	2.000	1	12	research_impacts
+images	2.862	2.000	1	12	approach
+behavior	2.713	2.000	1	13	hypothesis
+environments	2.713	2.000	1	13	research_impacts
+flight	2.713	2.000	1	13	approach
+high	2.713	2.000	1	13	research_impacts
+systems	2.713	2.000	1	13	hypothesis
+raw	2.644	1.750	2	11	file_folders,filenames
+good	2.609	1.000	1	3	filenames
+future	2.575	2.000	1	14	research_impacts
+normal reduced gravity	2.424	1.100	1	5	hypothesis
+engineering	2.374	1.750	2	13	file_folders,filenames
+test	2.325	2.000	1	16	objective
+operations	2.204	1.000	1	5	filenames
+final	2.050	1.000	1	6	filenames
+sensor	2.050	1.000	1	6	filenames
+normal gravity	2.035	1.500	1	13	objective
+administration	1.744	1.500	1	16	space_program
+aeronautics	1.744	1.500	1	16	space_program
+process	1.693	1.000	1	9	filenames
+image	1.598	1.000	1	10	filenames
+national	1.577	1.500	1	18	space_program
+aeronautics administration	1.308	1.125	1	16	space_program
+national aeronautics	1.308	1.125	1	16	space_program
+investigator	1.051	1.000	1	18	role
+pi	1.051	1.000	1	18	role
+principal	1.051	1.000	1	18	role
+national aeronautics administration	0.959	0.825	1	16	space_program
+engineering documents	0.805	0.562	1	12	file_folders
+grc	0.788	0.750	1	18	affiliation
+investigator pi	0.788	0.750	1	18	role
+principal investigator	0.788	0.750	1	18	role
+principal investigator pi	0.578	0.550	1	18	role
