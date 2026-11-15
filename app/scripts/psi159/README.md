@@ -11,8 +11,11 @@ python3 scripts/psi159/test_reconstruction.py
 ```
 
 The three archives must retain their NASA names, for example
-`PSI-159_Raw Data_21088A1_INTNS_ALL.zip`. Raw sensor CSVs are read from
-`../data/psi-159-drive/`. Source archives remain outside the repository.
+`PSI-159_Raw Data_21088A1_INTNS_ALL.zip`. Before rebuilding, download the raw
+sensor files `21088A1_data.csv`, `21088B1_data.csv`, and `21088C1_data.csv`
+from the [PSI-159 source folder](https://drive.google.com/drive/folders/1WIvup-SYEZczCj3ah7J99Y7SQdwymBHC)
+and place them in the repository's `data/psi-159-drive/` directory. Source
+archives and sensor CSVs are not included in the repository.
 
 Every source exposure is reconstructed (2017 / 1944 / 1829 frames). Acquisition
 wall-clock timestamps drive field playback, reference selection and sensor
