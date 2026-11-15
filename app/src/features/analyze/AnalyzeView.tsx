@@ -121,7 +121,7 @@ export function AnalyzeView() {
             }}
             className="flex w-full items-center justify-center gap-1 rounded-md border border-edge px-2 py-1.5 text-xs text-dim transition-colors hover:border-edge2 hover:text-text"
           >
-            <RefreshCcw className="size-3" /> Reset demo
+            <RefreshCcw className="size-3" /> New review
           </button>
         </div>
       </div>

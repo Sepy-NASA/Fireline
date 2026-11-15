@@ -1,4 +1,4 @@
-import { Bot, CornerDownLeft, ExternalLink, Sparkles } from 'lucide-react'
+import { BarChart3, Bot, CornerDownLeft, ExternalLink, Search, Sparkles } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
 import { useAppStore } from '../../store/appStore'
 import type { ChatMessage, Session, View } from '../../types'
@@ -6,6 +6,7 @@ import { ScrollArea } from '../../components/ui/scroll-area'
 import {
   OFFERS,
   branchReply,
+  conclusionsReply,
   detectionReply,
   evidenceReply,
   goalFirstReply,
@@ -25,6 +26,7 @@ import {
 
 const INTENTS: { match: RegExp; run: (sessionId: string) => ScriptedReply }[] = [
   { match: /\b(safe|unsafe)\b|probabilit|risk (score|match|percent)|certif|\bqualif/i, run: () => safetyVerdictReply() },
+  { match: /conclu|decision|what does (it|this) mean|so what/i, run: conclusionsReply },
   { match: /suppress|\bflex\b|extinguish/i, run: suppressionReply },
   { match: /smoke|detect|alarm|\bdust\b|\bdaft\b/i, run: detectionReply },
   { match: /\bbranch\b/i, run: branchReply },
@@ -38,12 +40,12 @@ export const THINKING_MS = 2000
 /** Demo prompts — clicking fills the input so the presenter just presses Enter. */
 const QUICK_PROMPTS: { label: string; text: string }[] = [
   {
-    label: 'Find closest PSI evidence',
+    label: '1 · Find closest PSI evidence',
     text: 'Find the closest PSI evidence for PMMA and cotton-fiberglass. Compare its oxygen, flow, geometry, and results with this rover design. Add the best evidence and show what is not covered.',
   },
-  { label: 'Create evidence-gap branch', text: 'Create the 30% O₂ rover material evidence branch.' },
-  { label: 'Propose next actions', text: 'Propose the next engineering actions to close the gap.' },
-  { label: 'Suppression follow-up', text: 'Add a suppression follow-up branch.' },
+  { label: '2 · Draw conclusions', text: 'What can we conclude from these rows? Give me the decisions.' },
+  { label: '3 · Create evidence-gap branch', text: 'Create the 30% O₂ rover material evidence branch.' },
+  { label: '4 · Propose next actions', text: 'Propose the next engineering actions to close the gap.' },
 ]
 
 export function ChatPanel({ session }: { session: Session }) {
@@ -110,7 +112,6 @@ export function ChatPanel({ session }: { session: Session }) {
       <div className="flex h-9 shrink-0 items-center gap-1.5 border-b border-edge px-3">
         <Sparkles className="size-3.5 text-bright" />
         <span className="text-xs font-semibold text-text">Tracer — research copilot</span>
-        <span className="ml-auto rounded bg-edge/50 px-1.5 py-0.5 text-[9px] text-faint">mock agent</span>
       </div>
 
       <ScrollArea className="min-h-0 flex-1">
@@ -252,6 +253,24 @@ function Message({
         </div>
       )}
 
+      {m.links && m.links.length > 0 && (
+        <div className="flex flex-wrap gap-1.5 pl-7">
+          {m.links.map((l) => (
+            <button
+              key={l.label}
+              onClick={() => {
+                if (l.view === 'visualize') useAppStore.getState().setVizPreset('rover')
+                if (l.view === 'explore' && l.ref) useAppStore.getState().setExploreFocus({ q: 'saffire', datasetId: l.ref })
+                setView(l.view)
+              }}
+              className="inline-flex items-center gap-1.5 rounded-md border border-bright/60 bg-bright/15 px-2.5 py-1.5 text-[12px] font-semibold text-bright transition-colors hover:bg-bright/25"
+            >
+              {l.view === 'explore' ? <Search className="size-3.5" /> : <BarChart3 className="size-3.5" />}
+              {l.label} →
+            </button>
+          ))}
+        </div>
+      )}
       {m.hrefs && m.hrefs.length > 0 && (
         <div className="flex flex-wrap gap-x-3 gap-y-1 pl-7">
           {m.hrefs.map((h) => (
@@ -268,20 +287,6 @@ function Message({
         </div>
       )}
 
-      {m.links && m.links.length > 0 && (
-        <div className="flex flex-wrap gap-1.5 pl-7">
-          {m.links.map((l) => (
-            <button
-              key={l.label}
-              onClick={() => {
-                if (l.view === 'visualize') useAppStore.getState().setVizPreset('rover')
-                setView(l.view)
-              }} className="text-xs text-teal hover:underline">
-              {l.label} →
-            </button>
-          ))}
-        </div>
-      )}
         </>
       )}
     </div>
