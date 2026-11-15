@@ -1,0 +1,741 @@
+# keywords for PSI-47 (score, weight, count, df, fields)
+p-trak	104.296	36.000	15	2	approach,curated_keywords,experiment_hardware,filenames,hypothesis,objective,research_impacts
+aerosol	99.159	38.000	12	3	approach,curated_keywords,hypothesis,objective,title
+counter	66.052	20.000	4	1	curated_keywords,objective
+daft	62.749	19.000	5	1	acronym,curated_keywords,filenames,objective
+tsi	56.144	17.000	8	1	approach,experiment_hardware,hypothesis,objective,research_impacts
+tsi p-trak	42.108	12.750	8	1	approach,experiment_hardware,hypothesis,objective,research_impacts
+dust	40.560	14.000	3	2	approach,title
+capillary	39.631	12.000	3	1	approach,curated_keywords,hypothesis
+daft-2	36.328	11.000	4	1	acronym,filenames,objective
+fire	35.952	26.500	6	13	curated_keywords,publication,research_impacts,sub_research_area
+smoke	35.451	18.500	6	7	curated_keywords,objective,publication,research_impacts
+feasibility	34.765	12.000	2	2	title
+modified	34.765	12.000	6	2	approach,hypothesis,objective
+condensate	33.026	10.000	2	1	curated_keywords,objective
+device	33.026	10.000	2	1	curated_keywords,hypothesis
+nuclei	33.026	10.000	2	1	curated_keywords,objective
+measurement	32.373	18.000	5	8	hypothesis,objective,title
+dust aerosol	29.723	9.000	2	1	title
+measurement feasibility	29.723	9.000	2	1	title
+laser	28.971	10.000	2	2	curated_keywords,hypothesis
+aerosol measurement	27.399	10.500	3	3	objective,title
+scattering	26.421	8.000	1	1	curated_keywords
+particulate	26.094	10.000	2	3	curated_keywords,objective
+microgravity	25.500	25.500	13	19	approach,hypothesis,objective,project_type,publication,research_impacts
+condensate nuclei	24.769	7.500	2	1	curated_keywords,objective
+daft daft-2	24.769	7.500	3	1	acronym,objective
+nuclei counter	24.769	7.500	2	1	curated_keywords,objective
+p-trak particulate	24.769	7.500	2	1	curated_keywords,objective
+particulate counter	24.769	7.500	2	1	curated_keywords,objective
+detection	24.244	11.000	5	5	publication,research_impacts
+aerosol measurement feasibility	21.797	6.600	2	1	title
+dust aerosol measurement	21.797	6.600	2	1	title
+prevention	21.523	10.500	2	6	curated_keywords,publication
+fluid	20.876	8.000	1	3	curated_keywords
+motion	20.876	8.000	1	3	curated_keywords
+fire prevention	20.549	7.875	2	3	curated_keywords,publication
+aerosol device	19.816	6.000	1	1	curated_keywords
+capillary fluid	19.816	6.000	1	1	curated_keywords
+hardware testing	19.816	6.000	1	1	curated_keywords
+isopropanol	19.816	6.000	3	1	hypothesis
+laser scattering	19.816	6.000	1	1	curated_keywords
+scattering aerosol	19.816	6.000	1	1	curated_keywords
+test-2	19.816	6.000	1	1	title
+hardware	19.090	8.000	1	4	curated_keywords
+condensate nuclei counter	18.164	5.500	2	1	curated_keywords,objective
+p-trak particulate counter	18.164	5.500	2	1	curated_keywords,objective
+fluid motion	17.383	6.000	1	2	curated_keywords
+testing	16.931	10.000	2	9	approach,curated_keywords
+safety	16.280	12.000	2	13	curated_keywords,sub_research_area
+feasibility test	14.862	4.500	1	1	title
+feasibility test-2	14.862	4.500	1	1	title
+p-trak modified	14.862	4.500	3	1	approach,hypothesis
+test dust	14.862	4.500	1	1	title
+capillary fluid motion	14.531	4.400	1	1	curated_keywords
+laser scattering aerosol	14.531	4.400	1	1	curated_keywords
+scattering aerosol device	14.531	4.400	1	1	curated_keywords
+ard	13.210	4.000	2	1	approach
+counting	13.210	4.000	2	1	approach,hypothesis
+isopropyl	13.210	4.000	2	1	approach,objective
+recycle	13.210	4.000	2	1	hypothesis,objective
+fire safety	12.210	9.000	2	13	curated_keywords,sub_research_area
+combustion	12.000	12.000	2	19	curated_keywords,research_area
+urban	11.852	7.000	4	9	filenames,people,publication
+create	11.588	4.000	2	2	approach,objective
+dusttrak	11.588	4.000	2	2	approach,objective
+particulates	11.588	4.000	2	2	hypothesis
+reliability	11.588	4.000	2	2	objective,research_impacts
+work	11.588	4.000	2	2	approach,hypothesis
+gary	11.020	5.000	2	5	publication
+feasibility test dust	10.899	3.300	1	1	title
+measurement feasibility test	10.899	3.300	1	1	title
+measurement feasibility test-2	10.899	3.300	1	1	title
+test dust aerosol	10.899	3.300	1	1	title
+accurate	10.438	4.000	2	3	objective,research_impacts
+alcohol	10.438	4.000	2	3	approach,objective
+ruff	10.249	5.000	2	6	publication
+david	10.159	6.000	3	9	people,publication
+detection systems	9.908	3.000	2	1	research_impacts
+isopropyl alcohol	9.908	3.000	2	1	approach,objective
+modified microgravity	9.908	3.000	2	1	approach,hypothesis
+modified p-trak	9.908	3.000	2	1	approach,objective
+p-trak microgravity	9.908	3.000	2	1	objective,research_impacts
+work microgravity	9.908	3.000	2	1	approach,hypothesis
+test	9.300	8.000	2	16	hypothesis,title
+systems	8.818	6.500	3	13	publication,research_impacts
+detection smoke	8.807	3.375	2	3	publication,research_impacts
+condenser	8.691	3.000	2	2	approach,filenames
+ruff gary	8.265	3.750	2	5	publication
+devon	8.256	2.500	1	1	publication
+modification	7.828	3.000	2	3	approach,filenames
+tube	7.828	3.000	2	3	approach,filenames
+urban david	7.687	3.750	2	6	publication
+p-trak modified microgravity	7.266	2.200	2	1	approach,hypothesis
+tsi p-trak microgravity	7.266	2.200	2	1	objective,research_impacts
+tsi p-trak modified	7.266	2.200	2	1	approach,hypothesis
+king	7.243	2.500	1	2	publication
+merrill	7.243	2.500	1	2	publication
+due	6.773	4.000	2	9	approach,hypothesis
+15-liter	6.605	2.000	1	1	approach
+action	6.605	2.000	1	1	hypothesis
+adaptation	6.605	2.000	1	1	research_impacts
+aerosolized	6.605	2.000	1	1	approach
+air-flow	6.605	2.000	1	1	hypothesis
+arizona	6.605	2.000	1	1	approach
+around	6.605	2.000	1	1	hypothesis
+bags	6.605	2.000	1	1	approach
+become	6.605	2.000	1	1	hypothesis
+capabilities	6.605	2.000	1	1	hypothesis
+challenging	6.605	2.000	1	1	research_impacts
+chosen	6.605	2.000	1	1	approach
+clog	6.605	2.000	1	1	hypothesis
+cnc	6.605	2.000	1	1	approach
+commercially	6.605	2.000	1	1	objective
+components	6.605	2.000	1	1	approach
+concerns	6.605	2.000	1	1	objective
+condensing	6.605	2.000	1	1	hypothesis
+contained	6.605	2.000	1	1	approach
+counted	6.605	2.000	1	1	hypothesis
+created	6.605	2.000	1	1	hypothesis
+designed	6.605	2.000	1	1	approach
+dispersion	6.605	2.000	1	1	approach
+ease	6.605	2.000	1	1	approach
+failure	6.605	2.000	1	1	hypothesis
+filtered	6.605	2.000	1	1	hypothesis
+functionality	6.605	2.000	1	1	objective
+gn2	6.605	2.000	1	1	approach
+increased	6.605	2.000	1	1	research_impacts
+mercury	6.605	2.000	1	1	approach
+mitigate	6.605	2.000	1	1	objective
+modes	6.605	2.000	1	1	hypothesis
+mylar	6.605	2.000	1	1	approach
+normally	6.605	2.000	1	1	hypothesis
+obscured	6.605	2.000	1	1	hypothesis
+operates	6.605	2.000	1	1	hypothesis
+optics	6.605	2.000	1	1	hypothesis
+orientation	6.605	2.000	1	1	approach
+per	6.605	2.000	1	1	hypothesis
+red	6.605	2.000	1	1	approach
+redesigning	6.605	2.000	1	1	approach
+relied	6.605	2.000	1	1	objective
+relies	6.605	2.000	1	1	objective
+removing	6.605	2.000	1	1	approach
+responsible	6.605	2.000	1	1	approach
+spacecrafts	6.605	2.000	1	1	research_impacts
+switch	6.605	2.000	1	1	approach
+th	6.605	2.000	1	1	objective
+vessels	6.605	2.000	1	1	research_impacts
+cleary	6.524	2.500	1	3	publication
+crewed	6.524	2.500	1	3	publication
+george	6.524	2.500	1	3	publication
+griffin	6.524	2.500	1	3	publication
+jiann	6.524	2.500	1	3	publication
+mulholland	6.524	2.500	1	3	publication
+david griffin	6.192	1.875	1	1	publication
+devon ruff	6.192	1.875	1	1	publication
+griffin devon	6.192	1.875	1	1	publication
+design	6.043	4.000	2	11	hypothesis,research_impacts
+yuan	5.966	2.500	1	4	publication
+zeng-guang	5.966	2.500	1	4	publication
+aerosols	5.794	2.000	1	2	objective
+cause	5.794	2.000	1	2	hypothesis
+compare	5.794	2.000	1	2	objective
+consists	5.794	2.000	1	2	approach
+demonstrate	5.794	2.000	1	2	objective
+detecting	5.794	2.000	1	2	approach
+exist	5.794	2.000	1	2	hypothesis
+focus	5.794	2.000	1	2	objective
+gathered	5.794	2.000	1	2	approach
+instrument	5.794	2.000	1	2	approach
+instrumentation	5.794	2.000	1	2	approach
+on-orbit	5.794	2.000	1	2	approach
+recycling	5.794	2.000	1	2	approach
+reliable	5.794	2.000	1	2	objective
+specifically	5.794	2.000	1	2	approach
+summarized	5.794	2.000	1	2	objective
+plan	5.510	2.500	1	5	publication
+thomas	5.510	2.500	1	5	publication
+yang	5.510	2.500	1	5	publication
+crewed exploration	5.432	1.875	1	2	publication
+david king	5.432	1.875	1	2	publication
+exploration systems	5.432	1.875	1	2	publication
+jiann mulholland	5.432	1.875	1	2	publication
+king merrill	5.432	1.875	1	2	publication
+plan fire	5.432	1.875	1	2	publication
+suppression crewed	5.432	1.875	1	2	publication
+spacecraft	5.427	4.000	1	13	sub_research_area
+basic	5.219	2.000	1	3	hypothesis
+forces	5.219	2.000	1	3	approach
+inform	5.219	2.000	1	3	research_impacts
+internal	5.219	2.000	1	3	hypothesis
+laboratories	5.219	2.000	1	3	research_impacts
+larger	5.219	2.000	1	3	research_impacts
+lives	5.219	2.000	1	3	research_impacts
+novel	5.219	2.000	1	3	research_impacts
+particles	5.219	2.000	1	3	approach
+save	5.219	2.000	1	3	research_impacts
+sensitivity	5.219	2.000	1	3	research_impacts
+underwater	5.219	2.000	1	3	research_impacts
+future	5.151	4.000	2	14	objective,research_impacts
+15-liter mylar	4.954	1.500	1	1	approach
+accurate microgravity	4.954	1.500	1	1	objective
+action recycle	4.954	1.500	1	1	hypothesis
+adaptation tsi	4.954	1.500	1	1	research_impacts
+aerosol contained	4.954	1.500	1	1	approach
+aerosol created	4.954	1.500	1	1	hypothesis
+aerosol generation	4.954	1.500	1	1	approach
+aerosol particles	4.954	1.500	1	1	approach
+aerosol particulates	4.954	1.500	1	1	hypothesis
+aerosol standard	4.954	1.500	1	1	approach
+aerosol standards	4.954	1.500	1	1	objective
+aerosolized gn2	4.954	1.500	1	1	approach
+aerosols microgravity	4.954	1.500	1	1	objective
+air-flow dynamics	4.954	1.500	1	1	hypothesis
+alcohol measurement	4.954	1.500	1	1	objective
+alcohol removing	4.954	1.500	1	1	approach
+analyze aerosol	4.954	1.500	1	1	objective
+approach consists	4.954	1.500	1	1	approach
+ard aerosolized	4.954	1.500	1	1	approach
+ard chosen	4.954	1.500	1	1	approach
+arizona red	4.954	1.500	1	1	approach
+around aerosol	4.954	1.500	1	1	hypothesis
+available condensate	4.954	1.500	1	1	objective
+bags on-orbit	4.954	1.500	1	1	approach
+basic hypotheses	4.954	1.500	1	1	hypothesis
+become obscured	4.954	1.500	1	1	hypothesis
+capabilities test	4.954	1.500	1	1	hypothesis
+capillary action	4.954	1.500	1	1	hypothesis
+capillary forces	4.954	1.500	1	1	approach
+cause counting	4.954	1.500	1	1	hypothesis
+challenging earth	4.954	1.500	1	1	research_impacts
+chamber device	4.954	1.500	1	1	hypothesis
+chosen aerosol	4.954	1.500	1	1	approach
+clog become	4.954	1.500	1	1	hypothesis
+cnc specifically	4.954	1.500	1	1	approach
+commercially available	4.954	1.500	1	1	objective
+compare tsi	4.954	1.500	1	1	objective
+compared dusttrak	4.954	1.500	1	1	approach
+components modification	4.954	1.500	1	1	approach
+concerns th	4.954	1.500	1	1	objective
+condenser tube	4.954	1.500	1	1	approach
+condensing isopropanol	4.954	1.500	1	1	hypothesis
+consists following	4.954	1.500	1	1	approach
+contained 15-liter	4.954	1.500	1	1	approach
+control create	4.954	1.500	1	1	objective
+counted hypothesized	4.954	1.500	1	1	hypothesis
+counter accurate	4.954	1.500	1	1	objective
+counter tsi	4.954	1.500	1	1	objective
+counting aerosol	4.954	1.500	1	1	approach
+counting particulates	4.954	1.500	1	1	hypothesis
+create analyze	4.954	1.500	1	1	objective
+create particle	4.954	1.500	1	1	approach
+created filtered	4.954	1.500	1	1	hypothesis
+daft-2 mitigate	4.954	1.500	1	1	objective
+daft-2 tests	4.954	1.500	1	1	objective
+demonstrate functionality	4.954	1.500	1	1	objective
+design instruments	4.954	1.500	1	1	research_impacts
+design measurement	4.954	1.500	1	1	hypothesis
+designed work	4.954	1.500	1	1	approach
+detecting instrument	4.954	1.500	1	1	approach
+development novel	4.954	1.500	1	1	research_impacts
+device cause	4.954	1.500	1	1	hypothesis
+dispersion ard	4.954	1.500	1	1	approach
+due ease	4.954	1.500	1	1	approach
+due potential	4.954	1.500	1	1	hypothesis
+duration flight	4.954	1.500	1	1	research_impacts
+dust ard	4.954	1.500	1	1	approach
+dusttrak cnc	4.954	1.500	1	1	approach
+dusttrak control	4.954	1.500	1	1	objective
+dynamics optics	4.954	1.500	1	1	hypothesis
+earth environments	4.954	1.500	1	1	research_impacts
+ease dispersion	4.954	1.500	1	1	approach
+ensure reliability	4.954	1.500	1	1	objective
+environment concerns	4.954	1.500	1	1	objective
+exist system	4.954	1.500	1	1	hypothesis
+experimental approach	4.954	1.500	1	1	approach
+extended duration	4.954	1.500	1	1	research_impacts
+failure modes	4.954	1.500	1	1	hypothesis
+filtered per	4.954	1.500	1	1	hypothesis
+flight missions	4.954	1.500	1	1	research_impacts
+focus daft	4.954	1.500	1	1	objective
+following components	4.954	1.500	1	1	approach
+forces recycling	4.954	1.500	1	1	approach
+function normally	4.954	1.500	1	1	hypothesis
+functionality modified	4.954	1.500	1	1	objective
+future aerosol	4.954	1.500	1	1	objective
+future spacecrafts	4.954	1.500	1	1	research_impacts
+gathered counting	4.954	1.500	1	1	approach
+generation arizona	4.954	1.500	1	1	approach
+gn2 create	4.954	1.500	1	1	approach
+gravity recycle	4.954	1.500	1	1	objective
+hypotheses p-trak	4.954	1.500	1	1	hypothesis
+hypothesized p-trak	4.954	1.500	1	1	hypothesis
+impact development	4.954	1.500	1	1	research_impacts
+increased reliability	4.954	1.500	1	1	research_impacts
+instrument orientation	4.954	1.500	1	1	approach
+instrumentation tsi	4.954	1.500	1	1	approach
+instruments challenging	4.954	1.500	1	1	research_impacts
+internal air-flow	4.954	1.500	1	1	hypothesis
+isopropanol around	4.954	1.500	1	1	hypothesis
+isopropanol basic	4.954	1.500	1	1	hypothesis
+isopropanol internal	4.954	1.500	1	1	hypothesis
+larger vessels	4.954	1.500	1	1	research_impacts
+laser counted	4.954	1.500	1	1	hypothesis
+measurement capabilities	4.954	1.500	1	1	hypothesis
+measurement process	4.954	1.500	1	1	objective
+measurement relied	4.954	1.500	1	1	objective
+mercury switch	4.954	1.500	1	1	approach
+microgravity aerosol	4.954	1.500	1	1	hypothesis
+microgravity capillary	4.954	1.500	1	1	hypothesis
+microgravity compare	4.954	1.500	1	1	objective
+microgravity due	4.954	1.500	1	1	hypothesis
+microgravity ensure	4.954	1.500	1	1	objective
+microgravity redesigning	4.954	1.500	1	1	approach
+microgravity relies	4.954	1.500	1	1	objective
+microgravity summarized	4.954	1.500	1	1	objective
+missions larger	4.954	1.500	1	1	research_impacts
+mitigate risk	4.954	1.500	1	1	objective
+modes exist	4.954	1.500	1	1	hypothesis
+modification instrumentation	4.954	1.500	1	1	approach
+modified function	4.954	1.500	1	1	hypothesis
+modified tsi	4.954	1.500	1	1	objective
+mylar bags	4.954	1.500	1	1	approach
+normally microgravity	4.954	1.500	1	1	hypothesis
+novel fire	4.954	1.500	1	1	research_impacts
+objectives demonstrate	4.954	1.500	1	1	objective
+obscured isopropanol	4.954	1.500	1	1	hypothesis
+on-orbit testing	4.954	1.500	1	1	approach
+operates condensing	4.954	1.500	1	1	hypothesis
+optics chamber	4.954	1.500	1	1	hypothesis
+orientation aerosol	4.954	1.500	1	1	approach
+p-trak gathered	4.954	1.500	1	1	approach
+p-trak operates	4.954	1.500	1	1	hypothesis
+p-trak performance	4.954	1.500	1	1	objective
+p-trak quantify	4.954	1.500	1	1	objective
+p-trak reliable	4.954	1.500	1	1	objective
+p-trak work	4.954	1.500	1	1	hypothesis
+particle samples	4.954	1.500	1	1	approach
+particulates subsequently	4.954	1.500	1	1	hypothesis
+particulates tsi	4.954	1.500	1	1	hypothesis
+per design	4.954	1.500	1	1	hypothesis
+performance dusttrak	4.954	1.500	1	1	objective
+potential failure	4.954	1.500	1	1	hypothesis
+process daft	4.954	1.500	1	1	objective
+quantify smoke	4.954	1.500	1	1	objective
+recycle isopropanol	4.954	1.500	1	1	hypothesis
+recycle isopropyl	4.954	1.500	1	1	objective
+recycling isopropyl	4.954	1.500	1	1	approach
+red dust	4.954	1.500	1	1	approach
+redesigning condenser	4.954	1.500	1	1	approach
+reliability future	4.954	1.500	1	1	objective
+reliability sensitivity	4.954	1.500	1	1	research_impacts
+reliable microgravity	4.954	1.500	1	1	objective
+relied commercially	4.954	1.500	1	1	objective
+relies gravity	4.954	1.500	1	1	objective
+removing mercury	4.954	1.500	1	1	approach
+responsible detecting	4.954	1.500	1	1	approach
+risk smoke	4.954	1.500	1	1	objective
+samples aerosol	4.954	1.500	1	1	approach
+sensitivity impact	4.954	1.500	1	1	research_impacts
+smoke save	4.954	1.500	1	1	research_impacts
+spacecrafts successful	4.954	1.500	1	1	research_impacts
+specifically designed	4.954	1.500	1	1	approach
+standard due	4.954	1.500	1	1	approach
+standards microgravity	4.954	1.500	1	1	objective
+subsequently laser	4.954	1.500	1	1	hypothesis
+successful adaptation	4.954	1.500	1	1	research_impacts
+summarized objectives	4.954	1.500	1	1	objective
+switch responsible	4.954	1.500	1	1	approach
+system clog	4.954	1.500	1	1	hypothesis
+systems future	4.954	1.500	1	1	research_impacts
+systems increased	4.954	1.500	1	1	research_impacts
+test devices	4.954	1.500	1	1	hypothesis
+testing modified	4.954	1.500	1	1	approach
+tests modified	4.954	1.500	1	1	objective
+th p-trak	4.954	1.500	1	1	objective
+tube capillary	4.954	1.500	1	1	approach
+vessels fire	4.954	1.500	1	1	research_impacts
+cleary thomas	4.893	1.875	1	3	publication
+gary cleary	4.893	1.875	1	3	publication
+george yuan	4.893	1.875	1	3	publication
+mulholland george	4.893	1.875	1	3	publication
+prevention detection	4.893	1.875	1	3	publication
+thomas yang	4.893	1.875	1	3	publication
+yang jiann	4.893	1.875	1	3	publication
+analyze	4.773	2.000	1	4	objective
+control	4.773	2.000	1	4	objective
+devices	4.773	2.000	1	4	hypothesis
+duration	4.773	2.000	1	4	research_impacts
+ensure	4.773	2.000	1	4	objective
+extended	4.773	2.000	1	4	research_impacts
+hypotheses	4.773	2.000	1	4	hypothesis
+hypothesized	4.773	2.000	1	4	hypothesis
+impact	4.773	2.000	1	4	research_impacts
+instruments	4.773	2.000	1	4	research_impacts
+particle	4.773	2.000	1	4	approach
+standard	4.773	2.000	1	4	approach
+subsequently	4.773	2.000	1	4	hypothesis
+david griffin devon	4.541	1.375	1	1	publication
+devon ruff gary	4.541	1.375	1	1	publication
+griffin devon ruff	4.541	1.375	1	1	publication
+urban david griffin	4.541	1.375	1	1	publication
+spacecraft fire	4.532	3.000	1	11	sub_research_area
+exploration	4.496	2.500	1	8	publication
+suppression	4.496	2.500	1	8	publication
+detection suppression	4.474	1.875	1	4	publication
+gary urban	4.474	1.875	1	4	publication
+microgravity fires	4.474	1.875	1	4	publication
+smoke microgravity	4.474	1.875	1	4	publication
+yuan zeng-guang	4.474	1.875	1	4	publication
+following	4.408	2.000	1	5	approach
+generation	4.408	2.000	1	5	approach
+potential	4.408	2.000	1	5	hypothesis
+risk	4.408	2.000	1	5	objective
+successful	4.408	2.000	1	5	research_impacts
+environments submarines	4.346	1.500	1	2	research_impacts
+fire smoke	4.346	1.500	1	2	research_impacts
+inform design	4.346	1.500	1	2	research_impacts
+microgravity inform	4.346	1.500	1	2	research_impacts
+smoke aerosols	4.346	1.500	1	2	objective
+smoke detection	4.346	1.500	1	2	research_impacts
+representative	4.176	1.750	2	4	file_folders,filenames
+performance	4.100	2.000	1	6	objective
+quantify	4.100	2.000	1	6	objective
+standards	4.100	2.000	1	6	objective
+system	4.100	2.000	1	6	hypothesis
+flight	4.070	3.000	2	13	filenames,research_impacts
+fires	3.995	2.500	1	10	publication
+crewed exploration systems	3.984	1.375	1	2	publication
+david king merrill	3.984	1.375	1	2	publication
+detection suppression crewed	3.984	1.375	1	2	publication
+jiann mulholland george	3.984	1.375	1	2	publication
+plan fire prevention	3.984	1.375	1	2	publication
+suppression crewed exploration	3.984	1.375	1	2	publication
+urban david king	3.984	1.375	1	2	publication
+yang jiann mulholland	3.984	1.375	1	2	publication
+accurate detection	3.914	1.500	1	3	research_impacts
+laboratories accurate	3.914	1.500	1	3	research_impacts
+particles compared	3.914	1.500	1	3	approach
+save lives	3.914	1.500	1	3	research_impacts
+smoke aerosol	3.914	1.500	1	3	objective
+submarines underwater	3.914	1.500	1	3	research_impacts
+underwater laboratories	3.914	1.500	1	3	research_impacts
+analyzed	3.857	1.750	2	5	file_folders,filenames
+approach	3.833	2.000	1	7	approach
+submarines	3.833	2.000	1	7	research_impacts
+15-liter mylar bags	3.633	1.100	1	1	approach
+accurate microgravity summarized	3.633	1.100	1	1	objective
+action recycle isopropanol	3.633	1.100	1	1	hypothesis
+adaptation tsi p-trak	3.633	1.100	1	1	research_impacts
+aerosol contained 15-liter	3.633	1.100	1	1	approach
+aerosol created filtered	3.633	1.100	1	1	hypothesis
+aerosol generation arizona	3.633	1.100	1	1	approach
+aerosol measurement relied	3.633	1.100	1	1	objective
+aerosol particles compared	3.633	1.100	1	1	approach
+aerosol particulates subsequently	3.633	1.100	1	1	hypothesis
+aerosol standard due	3.633	1.100	1	1	approach
+aerosol standards microgravity	3.633	1.100	1	1	objective
+aerosolized gn2 create	3.633	1.100	1	1	approach
+aerosols microgravity environment	3.633	1.100	1	1	objective
+air-flow dynamics optics	3.633	1.100	1	1	hypothesis
+alcohol measurement process	3.633	1.100	1	1	objective
+alcohol removing mercury	3.633	1.100	1	1	approach
+analyze aerosol standards	3.633	1.100	1	1	objective
+approach consists following	3.633	1.100	1	1	approach
+ard aerosolized gn2	3.633	1.100	1	1	approach
+ard chosen aerosol	3.633	1.100	1	1	approach
+arizona red dust	3.633	1.100	1	1	approach
+around aerosol particulates	3.633	1.100	1	1	hypothesis
+available condensate nuclei	3.633	1.100	1	1	objective
+bags on-orbit testing	3.633	1.100	1	1	approach
+basic hypotheses p-trak	3.633	1.100	1	1	hypothesis
+become obscured isopropanol	3.633	1.100	1	1	hypothesis
+capabilities test devices	3.633	1.100	1	1	hypothesis
+capillary action recycle	3.633	1.100	1	1	hypothesis
+capillary forces recycling	3.633	1.100	1	1	approach
+cause counting particulates	3.633	1.100	1	1	hypothesis
+challenging earth environments	3.633	1.100	1	1	research_impacts
+chamber device cause	3.633	1.100	1	1	hypothesis
+chosen aerosol standard	3.633	1.100	1	1	approach
+clog become obscured	3.633	1.100	1	1	hypothesis
+cnc specifically designed	3.633	1.100	1	1	approach
+commercially available condensate	3.633	1.100	1	1	objective
+compare tsi p-trak	3.633	1.100	1	1	objective
+compared dusttrak cnc	3.633	1.100	1	1	approach
+components modification instrumentation	3.633	1.100	1	1	approach
+concerns th p-trak	3.633	1.100	1	1	objective
+condenser tube capillary	3.633	1.100	1	1	approach
+condensing isopropanol around	3.633	1.100	1	1	hypothesis
+consists following components	3.633	1.100	1	1	approach
+contained 15-liter mylar	3.633	1.100	1	1	approach
+control create analyze	3.633	1.100	1	1	objective
+counted hypothesized p-trak	3.633	1.100	1	1	hypothesis
+counter accurate microgravity	3.633	1.100	1	1	objective
+counter tsi p-trak	3.633	1.100	1	1	objective
+counting aerosol particles	3.633	1.100	1	1	approach
+counting particulates tsi	3.633	1.100	1	1	hypothesis
+create analyze aerosol	3.633	1.100	1	1	objective
+create particle samples	3.633	1.100	1	1	approach
+created filtered per	3.633	1.100	1	1	hypothesis
+daft daft-2 mitigate	3.633	1.100	1	1	objective
+daft daft-2 tests	3.633	1.100	1	1	objective
+daft-2 mitigate risk	3.633	1.100	1	1	objective
+daft-2 tests modified	3.633	1.100	1	1	objective
+demonstrate functionality modified	3.633	1.100	1	1	objective
+design instruments challenging	3.633	1.100	1	1	research_impacts
+design measurement capabilities	3.633	1.100	1	1	hypothesis
+designed work microgravity	3.633	1.100	1	1	approach
+detecting instrument orientation	3.633	1.100	1	1	approach
+detection smoke save	3.633	1.100	1	1	research_impacts
+detection systems future	3.633	1.100	1	1	research_impacts
+detection systems increased	3.633	1.100	1	1	research_impacts
+development novel fire	3.633	1.100	1	1	research_impacts
+device cause counting	3.633	1.100	1	1	hypothesis
+dispersion ard aerosolized	3.633	1.100	1	1	approach
+due ease dispersion	3.633	1.100	1	1	approach
+due potential failure	3.633	1.100	1	1	hypothesis
+duration flight missions	3.633	1.100	1	1	research_impacts
+dust ard chosen	3.633	1.100	1	1	approach
+dusttrak cnc specifically	3.633	1.100	1	1	approach
+dusttrak control create	3.633	1.100	1	1	objective
+dynamics optics chamber	3.633	1.100	1	1	hypothesis
+earth environments submarines	3.633	1.100	1	1	research_impacts
+ease dispersion ard	3.633	1.100	1	1	approach
+ensure reliability future	3.633	1.100	1	1	objective
+environment concerns th	3.633	1.100	1	1	objective
+environments submarines underwater	3.633	1.100	1	1	research_impacts
+exist system clog	3.633	1.100	1	1	hypothesis
+experimental approach consists	3.633	1.100	1	1	approach
+extended duration flight	3.633	1.100	1	1	research_impacts
+failure modes exist	3.633	1.100	1	1	hypothesis
+filtered per design	3.633	1.100	1	1	hypothesis
+fire detection systems	3.633	1.100	1	1	research_impacts
+fire smoke detection	3.633	1.100	1	1	research_impacts
+flight missions larger	3.633	1.100	1	1	research_impacts
+focus daft daft-2	3.633	1.100	1	1	objective
+following components modification	3.633	1.100	1	1	approach
+forces recycling isopropyl	3.633	1.100	1	1	approach
+function normally microgravity	3.633	1.100	1	1	hypothesis
+functionality modified tsi	3.633	1.100	1	1	objective
+future spacecrafts successful	3.633	1.100	1	1	research_impacts
+gathered counting aerosol	3.633	1.100	1	1	approach
+generation arizona red	3.633	1.100	1	1	approach
+gn2 create particle	3.633	1.100	1	1	approach
+gravity recycle isopropyl	3.633	1.100	1	1	objective
+hypotheses p-trak modified	3.633	1.100	1	1	hypothesis
+hypothesized p-trak work	3.633	1.100	1	1	hypothesis
+impact development novel	3.633	1.100	1	1	research_impacts
+increased reliability sensitivity	3.633	1.100	1	1	research_impacts
+inform design instruments	3.633	1.100	1	1	research_impacts
+instrument orientation aerosol	3.633	1.100	1	1	approach
+instrumentation tsi p-trak	3.633	1.100	1	1	approach
+instruments challenging earth	3.633	1.100	1	1	research_impacts
+internal air-flow dynamics	3.633	1.100	1	1	hypothesis
+isopropanol around aerosol	3.633	1.100	1	1	hypothesis
+isopropanol basic hypotheses	3.633	1.100	1	1	hypothesis
+isopropanol internal air-flow	3.633	1.100	1	1	hypothesis
+isopropyl alcohol measurement	3.633	1.100	1	1	objective
+isopropyl alcohol removing	3.633	1.100	1	1	approach
+larger vessels fire	3.633	1.100	1	1	research_impacts
+laser counted hypothesized	3.633	1.100	1	1	hypothesis
+measurement capabilities test	3.633	1.100	1	1	hypothesis
+measurement process daft	3.633	1.100	1	1	objective
+measurement relied commercially	3.633	1.100	1	1	objective
+mercury switch responsible	3.633	1.100	1	1	approach
+microgravity aerosol created	3.633	1.100	1	1	hypothesis
+microgravity capillary action	3.633	1.100	1	1	hypothesis
+microgravity compare tsi	3.633	1.100	1	1	objective
+microgravity due potential	3.633	1.100	1	1	hypothesis
+microgravity ensure reliability	3.633	1.100	1	1	objective
+microgravity environment concerns	3.633	1.100	1	1	objective
+microgravity redesigning condenser	3.633	1.100	1	1	approach
+microgravity relies gravity	3.633	1.100	1	1	objective
+microgravity summarized objectives	3.633	1.100	1	1	objective
+missions larger vessels	3.633	1.100	1	1	research_impacts
+mitigate risk smoke	3.633	1.100	1	1	objective
+modes exist system	3.633	1.100	1	1	hypothesis
+modification instrumentation tsi	3.633	1.100	1	1	approach
+modified function normally	3.633	1.100	1	1	hypothesis
+modified microgravity capillary	3.633	1.100	1	1	hypothesis
+modified microgravity redesigning	3.633	1.100	1	1	approach
+modified p-trak gathered	3.633	1.100	1	1	approach
+modified p-trak particulate	3.633	1.100	1	1	objective
+modified tsi p-trak	3.633	1.100	1	1	objective
+mylar bags on-orbit	3.633	1.100	1	1	approach
+normally microgravity aerosol	3.633	1.100	1	1	hypothesis
+novel fire smoke	3.633	1.100	1	1	research_impacts
+nuclei counter tsi	3.633	1.100	1	1	objective
+objectives demonstrate functionality	3.633	1.100	1	1	objective
+obscured isopropanol internal	3.633	1.100	1	1	hypothesis
+on-orbit testing modified	3.633	1.100	1	1	approach
+operates condensing isopropanol	3.633	1.100	1	1	hypothesis
+optics chamber device	3.633	1.100	1	1	hypothesis
+orientation aerosol generation	3.633	1.100	1	1	approach
+p-trak gathered counting	3.633	1.100	1	1	approach
+p-trak microgravity compare	3.633	1.100	1	1	objective
+p-trak microgravity inform	3.633	1.100	1	1	research_impacts
+p-trak modified function	3.633	1.100	1	1	hypothesis
+p-trak operates condensing	3.633	1.100	1	1	hypothesis
+p-trak performance dusttrak	3.633	1.100	1	1	objective
+p-trak quantify smoke	3.633	1.100	1	1	objective
+p-trak reliable microgravity	3.633	1.100	1	1	objective
+p-trak work microgravity	3.633	1.100	1	1	hypothesis
+particle samples aerosol	3.633	1.100	1	1	approach
+particles compared dusttrak	3.633	1.100	1	1	approach
+particulate counter accurate	3.633	1.100	1	1	objective
+particulates subsequently laser	3.633	1.100	1	1	hypothesis
+particulates tsi p-trak	3.633	1.100	1	1	hypothesis
+per design measurement	3.633	1.100	1	1	hypothesis
+performance dusttrak control	3.633	1.100	1	1	objective
+potential failure modes	3.633	1.100	1	1	hypothesis
+process daft daft-2	3.633	1.100	1	1	objective
+quantify smoke aerosols	3.633	1.100	1	1	objective
+recycle isopropanol basic	3.633	1.100	1	1	hypothesis
+recycle isopropyl alcohol	3.633	1.100	1	1	objective
+recycling isopropyl alcohol	3.633	1.100	1	1	approach
+red dust ard	3.633	1.100	1	1	approach
+redesigning condenser tube	3.633	1.100	1	1	approach
+reliability future aerosol	3.633	1.100	1	1	objective
+reliability sensitivity impact	3.633	1.100	1	1	research_impacts
+reliable microgravity relies	3.633	1.100	1	1	objective
+relied commercially available	3.633	1.100	1	1	objective
+relies gravity recycle	3.633	1.100	1	1	objective
+removing mercury switch	3.633	1.100	1	1	approach
+responsible detecting instrument	3.633	1.100	1	1	approach
+risk smoke aerosol	3.633	1.100	1	1	objective
+samples aerosol contained	3.633	1.100	1	1	approach
+sensitivity impact development	3.633	1.100	1	1	research_impacts
+smoke aerosols microgravity	3.633	1.100	1	1	objective
+smoke detection systems	3.633	1.100	1	1	research_impacts
+smoke save lives	3.633	1.100	1	1	research_impacts
+spacecrafts successful adaptation	3.633	1.100	1	1	research_impacts
+specifically designed work	3.633	1.100	1	1	approach
+standard due ease	3.633	1.100	1	1	approach
+standards microgravity ensure	3.633	1.100	1	1	objective
+subsequently laser counted	3.633	1.100	1	1	hypothesis
+successful adaptation tsi	3.633	1.100	1	1	research_impacts
+summarized objectives demonstrate	3.633	1.100	1	1	objective
+switch responsible detecting	3.633	1.100	1	1	approach
+system clog become	3.633	1.100	1	1	hypothesis
+systems future spacecrafts	3.633	1.100	1	1	research_impacts
+systems increased reliability	3.633	1.100	1	1	research_impacts
+testing modified p-trak	3.633	1.100	1	1	approach
+tests modified p-trak	3.633	1.100	1	1	objective
+th p-trak reliable	3.633	1.100	1	1	objective
+tsi p-trak operates	3.633	1.100	1	1	hypothesis
+tsi p-trak performance	3.633	1.100	1	1	objective
+tsi p-trak quantify	3.633	1.100	1	1	objective
+tube capillary forces	3.633	1.100	1	1	approach
+vessels fire detection	3.633	1.100	1	1	research_impacts
+work microgravity due	3.633	1.100	1	1	hypothesis
+available	3.597	2.000	1	8	objective
+chamber	3.597	2.000	1	8	hypothesis
+compared	3.597	2.000	1	8	approach
+dynamics	3.597	2.000	1	8	hypothesis
+function	3.597	2.000	1	8	hypothesis
+samples	3.597	2.000	1	8	approach
+cleary thomas yang	3.588	1.375	1	3	publication
+detection smoke microgravity	3.588	1.375	1	3	publication
+fire prevention detection	3.588	1.375	1	3	publication
+gary cleary thomas	3.588	1.375	1	3	publication
+george yuan zeng-guang	3.588	1.375	1	3	publication
+mulholland george yuan	3.588	1.375	1	3	publication
+prevention detection suppression	3.588	1.375	1	3	publication
+ruff gary cleary	3.588	1.375	1	3	publication
+thomas yang jiann	3.588	1.375	1	3	publication
+process	3.386	2.000	1	9	objective
+metadata	3.354	1.750	2	7	file_folders,filenames
+spacecraft fire safety	3.324	2.200	1	11	sub_research_area
+fire detection	3.306	1.500	1	5	research_impacts
+0611zgy	3.303	1.000	1	1	filenames
+1yearreport	3.303	1.000	1	1	filenames
+30day.postflightreport	3.303	1.000	1	1	filenames
+aug21	3.303	1.000	1	1	filenames
+dtrk0002	3.303	1.000	1	1	filenames
+dtrk0003	3.303	1.000	1	1	filenames
+dtrk0004	3.303	1.000	1	1	filenames
+factsheet	3.303	1.000	1	1	filenames
+gmt053	3.303	1.000	1	1	filenames
+hist	3.303	1.000	1	1	filenames
+increment13scisymposium	3.303	1.000	1	1	filenames
+procedure.datatransfer	3.303	1.000	1	1	filenames
+procedure.restow	3.303	1.000	1	1	filenames
+procedure.sampling	3.303	1.000	1	1	filenames
+procedure.setup	3.303	1.000	1	1	filenames
+psi-126	3.303	1.000	1	1	filenames
+ptrk0002	3.303	1.000	1	1	filenames
+ptrk0003	3.303	1.000	1	1	filenames
+ptrk0004	3.303	1.000	1	1	filenames
+retrieved	3.303	1.000	1	1	filenames
+smokedetectionfrommicrogravityfires	3.303	1.000	1	1	filenames
+timing	3.303	1.000	1	1	filenames
+gary urban david	3.281	1.375	1	4	publication
+ruff gary urban	3.281	1.375	1	4	publication
+smoke microgravity fires	3.281	1.375	1	4	publication
+earth	3.196	2.000	1	10	research_impacts
+missions	3.196	2.000	1	10	research_impacts
+microgravity inform design	3.187	1.100	1	2	research_impacts
+presentations	3.147	1.750	2	8	file_folders,filenames
+tests	3.022	2.000	1	11	objective
+60089mfhd509	2.897	1.000	1	2	filenames
+summary	2.897	1.000	1	2	filenames
+microgravity environment	2.874	1.500	1	7	objective
+accurate detection smoke	2.870	1.100	1	3	research_impacts
+laboratories accurate detection	2.870	1.100	1	3	research_impacts
+smoke aerosol measurement	2.870	1.100	1	3	objective
+submarines underwater laboratories	2.870	1.100	1	3	research_impacts
+underwater laboratories accurate	2.870	1.100	1	3	research_impacts
+development	2.862	2.000	1	12	research_impacts
+environment	2.862	2.000	1	12	objective
+image	2.796	1.750	2	10	file_folders,filenames
+environments	2.713	2.000	1	13	research_impacts
+experimental	2.713	2.000	1	13	approach
+raw	2.644	1.750	2	11	file_folders,filenames
+claire	2.609	1.000	1	3	people
+finalreport	2.609	1.000	1	3	filenames
+fortenberry	2.609	1.000	1	3	people
+gravity	2.575	2.000	1	14	objective
+objectives	2.575	2.000	1	14	objective
+documents	2.504	1.750	2	12	file_folders,filenames
+engineering	2.374	1.750	2	13	file_folders,filenames
+claire fortenberry	1.957	0.750	1	3	people
+administration	1.744	1.500	1	16	space_program
+aeronautics	1.744	1.500	1	16	space_program
+grc	1.577	1.500	2	18	affiliation
+national	1.577	1.500	1	18	space_program
+images	1.431	1.000	1	12	filenames
+time	1.431	1.000	1	12	filenames
+david urban	1.349	0.750	1	8	people
+representative image	1.342	0.562	1	4	file_folders
+aeronautics administration	1.308	1.125	1	16	space_program
+national aeronautics	1.308	1.125	1	16	space_program
+scientist	1.288	1.000	1	14	role
+investigator	1.051	1.000	1	18	role
+pi	1.051	1.000	1	18	role
+principal	1.051	1.000	1	18	role
+national aeronautics administration	0.959	0.825	1	16	space_program
+engineering documents	0.805	0.562	1	12	file_folders
+investigator pi	0.788	0.750	1	18	role
+principal investigator	0.788	0.750	1	18	role
+principal investigator pi	0.578	0.550	1	18	role

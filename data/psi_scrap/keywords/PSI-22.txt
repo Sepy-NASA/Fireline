@@ -1,0 +1,1358 @@
+# keywords for PSI-22 (score, weight, count, df, fields)
+dunn-rankin	176.688	53.500	22	1	people,publication
+electric	165.129	50.000	20	1	approach,curated_keywords,hypothesis,objective,publication,research_impacts
+derek	127.150	38.500	16	1	people,publication
+flames	110.097	85.500	26	14	acronym,approach,curated_keywords,hypothesis,objective,publication,research_impacts,sub_research_area,title
+field	100.463	38.500	15	3	approach,curated_keywords,objective,publication
+dunn-rankin derek	92.885	28.125	15	1	publication
+electric field	85.454	25.875	13	1	approach,curated_keywords,objective,publication
+chien	77.611	23.500	10	1	people,publication
+ion-driven	71.006	21.500	7	1	approach,curated_keywords,hypothesis,publication
+impinging	67.703	20.500	6	1	curated_keywords,publication
+coflow	61.711	28.000	10	5	approach,curated_keywords,publication
+plif	61.098	18.500	3	1	curated_keywords,publication
+flame	61.032	52.500	21	16	approach,curated_keywords,hypothesis,publication
+diffusion	51.930	32.500	10	10	approach,curated_keywords,hypothesis,publication,title
+methane	49.589	22.500	7	5	approach,curated_keywords,publication
+weinberg	49.539	15.000	6	1	publication
+yu-chien	49.539	15.000	6	1	publication
+ion	46.236	14.000	6	1	approach,publication
+burner	43.117	22.500	8	7	approach,curated_keywords,publication
+carleton	41.282	12.500	5	1	publication
+e-field	41.282	12.500	4	1	acronym,approach,publication,research_impacts
+chemi-ionization	39.631	12.000	3	1	approach,curated_keywords,hypothesis
+chien yu-chien	37.154	11.250	6	1	publication
+convection	35.451	18.500	6	7	approach,curated_keywords,hypothesis,publication
+laminar	35.451	18.500	6	7	approach,hypothesis,publication,sub_research_area,title
+co	34.677	10.500	2	1	curated_keywords,publication
+ion-driven convection	34.677	10.500	4	1	approach,curated_keywords,hypothesis
+monoxide	34.677	10.500	2	1	curated_keywords,publication
+fields	33.923	13.000	6	3	approach,hypothesis,publication,research_impacts
+combustion	33.500	33.500	13	19	approach,experiment_hardware,hypothesis,publication,research_area,research_impacts,title
+felix	33.026	10.000	4	1	publication
+fred	33.026	10.000	4	1	publication
+karnani	33.026	10.000	4	1	publication
+methane flames	32.200	9.750	3	1	curated_keywords,publication
+e-field flames	30.962	9.375	4	1	acronym,approach,publication,research_impacts
+coflow burner	29.723	9.000	3	1	approach,curated_keywords
+electric-field	28.072	8.500	2	1	publication,title
+diffusion flames	27.563	17.250	6	10	approach,curated_keywords,hypothesis,publication,title
+electric fields	27.246	8.250	5	1	approach,hypothesis,publication,research_impacts
+strength	26.421	8.000	4	1	approach
+small	26.078	14.500	6	8	approach,publication
+carbon monoxide	26.008	7.875	2	1	curated_keywords,publication
+current	25.870	13.500	6	7	approach,objective,publication
+oh	25.056	10.500	2	4	curated_keywords,publication
+carleton fred	24.769	7.500	4	1	publication
+escofet-martin	24.769	7.500	3	1	publication
+felix carleton	24.769	7.500	4	1	publication
+rickard	24.769	7.500	3	1	publication
+tinajero	24.769	7.500	3	1	publication
+weinberg felix	24.769	7.500	4	1	publication
+non-premixed	23.863	10.000	4	4	publication
+acme	23.573	11.500	3	6	acronym,experiment_hardware,publication
+ion current	23.531	7.125	4	1	approach,publication
+electrical	23.118	7.000	3	1	publication,research_impacts
+effects	23.063	17.000	6	13	approach,publication,title
+wind	21.728	7.500	3	2	publication
+soot	21.152	14.000	7	11	approach,hypothesis,objective,research_impacts
+acme e-field	21.054	6.375	2	1	acronym,publication
+electric-field effects	21.054	6.375	2	1	publication,title
+behavior	20.350	15.000	7	13	approach,hypothesis,publication
+changes	20.280	7.000	3	2	objective,publication
+carbon	20.121	10.500	2	7	curated_keywords,publication
+co plif	19.816	6.000	1	1	curated_keywords
+field flames	19.816	6.000	1	1	curated_keywords
+impinging flame	19.816	6.000	1	1	curated_keywords
+oh plif	19.816	6.000	1	1	curated_keywords
+matthew	19.571	7.500	3	3	publication
+escofet-martin david	18.577	5.625	3	1	publication
+rickard matthew	18.577	5.625	3	1	publication
+microgravity	18.500	18.500	7	19	approach,hypothesis,project_type,publication,title
+laminar diffusion	18.448	9.000	4	6	approach,hypothesis,title
+felix carleton fred	18.164	5.500	4	1	publication
+weinberg felix carleton	18.164	5.500	4	1	publication
+fuel	16.958	12.500	6	13	approach,publication,research_impacts
+driven	16.513	5.000	2	1	publication
+hegde	16.513	5.000	2	1	publication
+papac	16.513	5.000	2	1	publication
+sunny	16.513	5.000	2	1	publication
+y-c	16.513	5.000	2	1	publication
+yamashita	16.513	5.000	2	1	publication
+generated	15.657	6.000	3	3	approach
+stability	15.657	6.000	3	3	approach,hypothesis
+control	15.511	6.500	3	4	approach,publication,research_impacts
+acme e-field flames	15.440	4.675	2	1	acronym,publication
+curves	14.862	4.500	2	1	approach,publication
+high-voltage	14.862	4.500	2	1	approach,publication
+microgravity electric-field	14.862	4.500	1	1	title
+soot behavior	14.862	4.500	3	1	approach,hypothesis
+stability soot	14.862	4.500	3	1	approach,hypothesis
+electric field flames	14.531	4.400	1	1	curated_keywords
+chemiluminescence	14.486	5.000	2	2	publication
+conducted	14.388	8.000	4	8	approach,research_impacts
+influence	14.326	6.500	3	5	approach,hypothesis,publication
+gas	13.414	7.000	3	7	publication,research_impacts
+chemi-ion	13.210	4.000	2	1	approach,objective
+mesh	13.210	4.000	2	1	approach
+polarity	13.210	4.000	2	1	approach
+aspects	13.047	5.000	2	3	publication
+methane-air	13.047	5.000	2	3	publication
+effects laminar	13.037	4.500	1	2	title
+flame stability	13.037	4.500	3	2	approach,hypothesis
+diffusion flame	12.814	7.125	4	8	approach,publication
+david	12.699	7.500	3	9	publication
+david dunn-rankin	12.385	3.750	2	1	publication
+electrical aspects	12.385	3.750	2	1	publication
+ion-driven wind	12.385	3.750	2	1	publication
+karnani sunny	12.385	3.750	2	1	publication
+matthew dunn-rankin	12.385	3.750	2	1	publication
+sunny dunn-rankin	12.385	3.750	2	1	publication
+tinajero jesse	12.385	3.750	2	1	publication
+y-c chien	12.385	3.750	2	1	publication
+yu-chien dunn-rankin	12.385	3.750	2	1	publication
+yu-chien escofet-martin	12.385	3.750	2	1	publication
+laminar diffusion flames	12.122	5.500	3	5	approach,hypothesis,title
+elevated	11.931	5.000	2	4	publication
+jesse	11.931	5.000	2	4	publication
+stabilized	11.742	4.500	2	3	objective,publication
+relationship	11.588	4.000	2	2	approach,objective
+voltage	11.588	4.000	2	2	approach,objective
+current flame	11.146	3.375	2	1	approach,publication
+field effects	11.146	3.375	2	1	approach,publication
+fields control	11.146	3.375	2	1	publication,research_impacts
+fields microgravity	11.146	3.375	2	1	hypothesis,publication
+flame electric	11.146	3.375	2	1	approach,publication
+combustion microgravity electric-field	10.899	3.300	1	1	title
+effects laminar diffusion	10.899	3.300	1	1	title
+electric-field effects laminar	10.899	3.300	1	1	title
+flame stability soot	10.899	3.300	3	1	approach,hypothesis
+microgravity electric-field effects	10.899	3.300	1	1	title
+stability soot behavior	10.899	3.300	3	1	approach,hypothesis
+coflow methane-air	10.864	3.750	2	2	publication
+emissions	10.791	6.000	3	8	approach,research_impacts
+production	10.438	4.000	2	3	approach,research_impacts
+varied	10.438	4.000	2	3	approach
+stocker	10.159	6.000	3	9	people,publication
+buoyancy	9.918	4.500	2	5	approach,publication
+chemi-ion current	9.908	3.000	2	1	approach,objective
+combustion dynamics	9.908	3.000	2	1	approach,hypothesis
+field strength	9.908	3.000	2	1	approach
+laminar flames	9.908	3.000	1	1	sub_research_area
+relationship electric	9.908	3.000	2	1	approach,objective
+advanced	9.587	6.000	1	10	title
+response	9.545	4.000	2	4	approach,objective
+air	9.300	6.500	3	12	approach,publication
+chien yu-chien dunn-rankin	9.082	2.750	2	1	publication
+chien yu-chien escofet-martin	9.082	2.750	2	1	publication
+david dunn-rankin derek	9.082	2.750	2	1	publication
+escofet-martin david dunn-rankin	9.082	2.750	2	1	publication
+karnani sunny dunn-rankin	9.082	2.750	2	1	publication
+matthew dunn-rankin derek	9.082	2.750	2	1	publication
+rickard matthew dunn-rankin	9.082	2.750	2	1	publication
+sunny dunn-rankin derek	9.082	2.750	2	1	publication
+yu-chien dunn-rankin derek	9.082	2.750	2	1	publication
+yu-chien escofet-martin david	9.082	2.750	2	1	publication
+numerical	8.993	5.000	2	8	publication
+addition	8.623	4.500	2	7	publication,research_impacts
+advanced combustion	8.623	4.500	1	7	title
+detailed	8.623	4.500	2	7	approach,publication
+jet	8.623	4.500	2	7	approach,publication
+cir	8.466	5.000	2	9	approach,experiment_hardware
+rack	8.466	5.000	2	9	approach,experiment_hardware
+aeration	8.256	2.500	1	1	publication
+agatha	8.256	2.500	1	1	publication
+autef	8.256	2.500	1	1	publication
+bernard	8.256	2.500	1	1	publication
+borgatelli	8.256	2.500	1	1	publication
+brandon	8.256	2.500	1	1	publication
+canceling	8.256	2.500	1	1	publication
+characterizing	8.256	2.500	1	1	publication
+circuit	8.256	2.500	1	1	publication
+corona	8.256	2.500	1	1	publication
+currents	8.256	2.500	1	1	publication
+dhiren	8.256	2.500	1	1	publication
+discharges	8.256	2.500	1	1	publication
+electrically	8.256	2.500	1	1	publication
+esquivias	8.256	2.500	1	1	publication
+field-controlled	8.256	2.500	1	1	publication
+francesco	8.256	2.500	1	1	publication
+generator	8.256	2.500	1	1	publication
+girodon	8.256	2.500	1	1	publication
+hugo	8.256	2.500	1	1	publication
+i-v	8.256	2.500	1	1	publication
+inducing	8.256	2.500	1	1	publication
+ionic	8.256	2.500	1	1	publication
+kara	8.256	2.500	1	1	publication
+kiyotaka	8.256	2.500	1	1	publication
+louise	8.256	2.500	1	1	publication
+markides	8.256	2.500	1	1	publication
+maximizing	8.256	2.500	1	1	publication
+mesoscale	8.256	2.500	1	1	publication
+prediction	8.256	2.500	1	1	publication
+progressive	8.256	2.500	1	1	publication
+rodriguez	8.256	2.500	1	1	publication
+sauer	8.256	2.500	1	1	publication
+surrounding	8.256	2.500	1	1	publication
+swirl	8.256	2.500	1	1	publication
+tubular	8.256	2.500	1	1	publication
+uday	8.256	2.500	1	1	publication
+unity	8.256	2.500	1	1	publication
+vinicius	8.256	2.500	1	1	publication
+xavier	8.256	2.500	1	1	publication
+zhai	8.256	2.500	1	1	publication
+electric field effects	8.174	2.475	2	1	approach,publication
+electric fields control	8.174	2.475	2	1	publication,research_impacts
+electric fields microgravity	8.174	2.475	2	1	hypothesis,publication
+flame electric field	8.174	2.475	2	1	approach,publication
+ion current flame	8.174	2.475	2	1	approach,publication
+case	8.093	4.500	2	8	approach,publication
+combustion microgravity	7.619	4.500	1	9	title
+flow	7.556	6.500	3	16	approach,publication
+integrated	7.554	5.000	2	11	approach,experiment_hardware
+flame behavior	7.438	3.375	2	5	approach,publication
+relationship electric field	7.266	2.200	2	1	approach,objective
+active	7.243	2.500	1	2	publication
+aerospace	7.243	2.500	1	2	publication
+axisymmetric	7.243	2.500	1	2	publication
+burner-generated	7.243	2.500	1	2	publication
+chih-jen	7.243	2.500	1	2	publication
+chung	7.243	2.500	1	2	publication
+cleveland	7.243	2.500	1	2	publication
+configurations	7.243	2.500	1	2	publication
+currently	7.243	2.500	1	2	publication
+delin	7.243	2.500	1	2	publication
+department	7.243	2.500	1	2	publication
+gravitational	7.243	2.500	1	2	publication
+ionization	7.243	2.500	1	2	publication
+law	7.243	2.500	1	2	publication
+mechanical	7.243	2.500	1	2	publication
+mj	7.243	2.500	1	2	publication
+modelling	7.243	2.500	1	2	publication
+plasmas	7.243	2.500	1	2	publication
+stephen	7.243	2.500	1	2	publication
+sung	7.243	2.500	1	2	publication
+tse	7.243	2.500	1	2	publication
+yc	7.243	2.500	1	2	publication
+zhu	7.243	2.500	1	2	publication
+dynamics	7.194	4.000	2	8	approach,hypothesis
+advanced combustion microgravity	6.764	3.300	1	6	title
+dennis	6.707	3.500	2	7	people,publication
+acid	6.605	2.000	1	1	research_impacts
+actions	6.605	2.000	1	1	approach
+administered	6.605	2.000	1	1	approach
+aid	6.605	2.000	1	1	research_impacts
+astronaut	6.605	2.000	1	1	approach
+beneficial	6.605	2.000	1	1	research_impacts
+consumption	6.605	2.000	1	1	research_impacts
+creates	6.605	2.000	1	1	research_impacts
+creating	6.605	2.000	1	1	approach
+directing	6.605	2.000	1	1	approach
+downstream	6.605	2.000	1	1	approach
+driving	6.605	2.000	1	1	approach
+electrode	6.605	2.000	1	1	approach
+enabling	6.605	2.000	1	1	hypothesis
+filters	6.605	2.000	1	1	approach
+forcing	6.605	2.000	1	1	approach
+former	6.605	2.000	1	1	approach
+fossil	6.605	2.000	1	1	research_impacts
+glenn	6.605	2.000	1	1	approach
+hazard	6.605	2.000	1	1	research_impacts
+health	6.605	2.000	1	1	research_impacts
+highly	6.605	2.000	1	1	approach
+ideal	6.605	2.000	1	1	approach
+influencing	6.605	2.000	1	1	approach
+interacts	6.605	2.000	1	1	approach
+investigates	6.605	2.000	1	1	approach
+ion-driving	6.605	2.000	1	1	approach
+ions	6.605	2.000	1	1	approach
+isolate	6.605	2.000	1	1	approach
+isolating	6.605	2.000	1	1	approach
+kv	6.605	2.000	1	1	approach
+lifted	6.605	2.000	1	1	objective
+manipulation	6.605	2.000	1	1	hypothesis
+measures	6.605	2.000	1	1	approach
+near-extinction	6.605	2.000	1	1	approach
+pollutants	6.605	2.000	1	1	research_impacts
+precise	6.605	2.000	1	1	hypothesis
+processing	6.605	2.000	1	1	research_impacts
+rain	6.605	2.000	1	1	research_impacts
+reduce	6.605	2.000	1	1	research_impacts
+serve	6.605	2.000	1	1	research_impacts
+spectral	6.605	2.000	1	1	approach
+stable	6.605	2.000	1	1	approach
+surrounds	6.605	2.000	1	1	approach
+synthetic	6.605	2.000	1	1	approach
+taken	6.605	2.000	1	1	approach
+thermopile	6.605	2.000	1	1	approach
+tip	6.605	2.000	1	1	approach
+unwanted	6.605	2.000	1	1	research_impacts
+voltage-current	6.605	2.000	1	1	approach
+characterization	6.524	2.500	1	3	publication
+component	6.524	2.500	1	3	publication
+computation	6.524	2.500	1	3	publication
+emission	6.524	2.500	1	3	publication
+fj	6.524	2.500	1	3	publication
+guillaume	6.524	2.500	1	3	publication
+induced	6.524	2.500	1	3	publication
+nonpremixed	6.524	2.500	1	3	publication
+transfer	6.524	2.500	1	3	publication
+water	6.524	2.500	1	3	publication
+yiguang	6.524	2.500	1	3	publication
+environment	6.439	4.500	2	12	approach,publication
+combustion integrated	6.349	3.750	2	9	approach,experiment_hardware
+integrated rack	6.349	3.750	2	9	approach,experiment_hardware
+rack cir	6.349	3.750	2	9	approach,experiment_hardware
+active component	6.192	1.875	1	1	publication
+aeration methane	6.192	1.875	1	1	publication
+agatha dunn-rankin	6.192	1.875	1	1	publication
+aspects impinging	6.192	1.875	1	1	publication
+autef louise	6.192	1.875	1	1	publication
+axisymmetric flames	6.192	1.875	1	1	publication
+behavior small	6.192	1.875	1	1	publication
+bernard guillaume	6.192	1.875	1	1	publication
+borgatelli francesco	6.192	1.875	1	1	publication
+buoyancy gaseous	6.192	1.875	1	1	publication
+burner configurations	6.192	1.875	1	1	publication
+canceling buoyancy	6.192	1.875	1	1	publication
+carleton karnani	6.192	1.875	1	1	publication
+changes diffusion	6.192	1.875	1	1	publication
+changes electric	6.192	1.875	1	1	publication
+characterization electric	6.192	1.875	1	1	publication
+characterizing i-v	6.192	1.875	1	1	publication
+chemiluminescence progressive	6.192	1.875	1	1	publication
+chemiluminescence small	6.192	1.875	1	1	publication
+chien karnani	6.192	1.875	1	1	publication
+chien tinajero	6.192	1.875	1	1	publication
+co emission	6.192	1.875	1	1	publication
+coflow flame	6.192	1.875	1	1	publication
+combustion plasmas	6.192	1.875	1	1	publication
+component high-voltage	6.192	1.875	1	1	publication
+control transport	6.192	1.875	1	1	publication
+convection small	6.192	1.875	1	1	publication
+corona discharges	6.192	1.875	1	1	publication
+current carbon	6.192	1.875	1	1	publication
+current small	6.192	1.875	1	1	publication
+curves non-premixed	6.192	1.875	1	1	publication
+david chien	6.192	1.875	1	1	publication
+dennis hegde	6.192	1.875	1	1	publication
+derek rickard	6.192	1.875	1	1	publication
+derek weinberg	6.192	1.875	1	1	publication
+detailed characterization	6.192	1.875	1	1	publication
+dhiren xavier	6.192	1.875	1	1	publication
+different burner	6.192	1.875	1	1	publication
+driven convection	6.192	1.875	1	1	publication
+driven ion	6.192	1.875	1	1	publication
+dunn-rankin carleton	6.192	1.875	1	1	publication
+dunn-rankin weinberg	6.192	1.875	1	1	publication
+effects methane	6.192	1.875	1	1	publication
+effects small	6.192	1.875	1	1	publication
+electric field-controlled	6.192	1.875	1	1	publication
+electrically active	6.192	1.875	1	1	publication
+elevated pressures	6.192	1.875	1	1	publication
+emission impinging	6.192	1.875	1	1	publication
+environment ion-driven	6.192	1.875	1	1	publication
+esquivias rodriguez	6.192	1.875	1	1	publication
+field driven	6.192	1.875	1	1	publication
+field induced	6.192	1.875	1	1	publication
+field power	6.192	1.875	1	1	publication
+field-controlled mesoscale	6.192	1.875	1	1	publication
+flame changes	6.192	1.875	1	1	publication
+flame electrically	6.192	1.875	1	1	publication
+flame elevated	6.192	1.875	1	1	publication
+flames acme	6.192	1.875	1	1	publication
+flames driven	6.192	1.875	1	1	publication
+flames gravitational	6.192	1.875	1	1	publication
+flames stabilized	6.192	1.875	1	1	publication
+flames unity	6.192	1.875	1	1	publication
+flames water	6.192	1.875	1	1	publication
+flow swirl	6.192	1.875	1	1	publication
+francesco dunn-rankin	6.192	1.875	1	1	publication
+fred dunn-rankin	6.192	1.875	1	1	publication
+fred kara	6.192	1.875	1	1	publication
+gas flow	6.192	1.875	1	1	publication
+gas flows	6.192	1.875	1	1	publication
+girodon hugo	6.192	1.875	1	1	publication
+gravitational environment	6.192	1.875	1	1	publication
+guillaume autef	6.192	1.875	1	1	publication
+hegde dunn-rankin	6.192	1.875	1	1	publication
+hegde uday	6.192	1.875	1	1	publication
+high-voltage circuit	6.192	1.875	1	1	publication
+hugo esquivias	6.192	1.875	1	1	publication
+i-v curves	6.192	1.875	1	1	publication
+impinging flames	6.192	1.875	1	1	publication
+impinging methane	6.192	1.875	1	1	publication
+impinging non-premixed	6.192	1.875	1	1	publication
+impinging nonpremixed	6.192	1.875	1	1	publication
+impinging surface	6.192	1.875	1	1	publication
+induced changes	6.192	1.875	1	1	publication
+inducing gas	6.192	1.875	1	1	publication
+influence electric	6.192	1.875	1	1	publication
+ion currents	6.192	1.875	1	1	publication
+ion-driven gas	6.192	1.875	1	1	publication
+ionic wind	6.192	1.875	1	1	publication
+ionization chemiluminescence	6.192	1.875	1	1	publication
+jesse bernard	6.192	1.875	1	1	publication
+jesse dunn-rankin	6.192	1.875	1	1	publication
+kara dhiren	6.192	1.875	1	1	publication
+karnani dunn-rankin	6.192	1.875	1	1	publication
+karnani markides	6.192	1.875	1	1	publication
+kiyotaka karnani	6.192	1.875	1	1	publication
+large electric	6.192	1.875	1	1	publication
+louise dunn-rankin	6.192	1.875	1	1	publication
+markides zhai	6.192	1.875	1	1	publication
+maximizing ion-driven	6.192	1.875	1	1	publication
+mesoscale burners	6.192	1.875	1	1	publication
+methane coflow	6.192	1.875	1	1	publication
+methane jet	6.192	1.875	1	1	publication
+methane-air flames	6.192	1.875	1	1	publication
+mj dunn-rankin	6.192	1.875	1	1	publication
+modeling elevated	6.192	1.875	1	1	publication
+modelling electric	6.192	1.875	1	1	publication
+monoxide release	6.192	1.875	1	1	publication
+near impinging	6.192	1.875	1	1	publication
+non-premixed axisymmetric	6.192	1.875	1	1	publication
+non-premixed methane	6.192	1.875	1	1	publication
+nonpremixed coflow	6.192	1.875	1	1	publication
+numerical prediction	6.192	1.875	1	1	publication
+papac dunn-rankin	6.192	1.875	1	1	publication
+papac mj	6.192	1.875	1	1	publication
+plasmas surrounding	6.192	1.875	1	1	publication
+plif chemiluminescence	6.192	1.875	1	1	publication
+power systems	6.192	1.875	1	1	publication
+prediction ion	6.192	1.875	1	1	publication
+pressure diffusion	6.192	1.875	1	1	publication
+progressive aeration	6.192	1.875	1	1	publication
+release impinging	6.192	1.875	1	1	publication
+rodriguez brandon	6.192	1.875	1	1	publication
+sauer vinicius	6.192	1.875	1	1	publication
+simulation tubular	6.192	1.875	1	1	publication
+small combustion	6.192	1.875	1	1	publication
+small diffusion	6.192	1.875	1	1	publication
+small laminar	6.192	1.875	1	1	publication
+small methane	6.192	1.875	1	1	publication
+small non-premixed	6.192	1.875	1	1	publication
+stabilized different	6.192	1.875	1	1	publication
+stocker hegde	6.192	1.875	1	1	publication
+surrounding gases	6.192	1.875	1	1	publication
+swirl tubes	6.192	1.875	1	1	publication
+systems flame	6.192	1.875	1	1	publication
+tinajero stocker	6.192	1.875	1	1	publication
+transfer near	6.192	1.875	1	1	publication
+transport microgravity	6.192	1.875	1	1	publication
+tubes ionic	6.192	1.875	1	1	publication
+tubular ion-driven	6.192	1.875	1	1	publication
+uday dunn-rankin	6.192	1.875	1	1	publication
+unity lewis	6.192	1.875	1	1	publication
+vinicius dunn-rankin	6.192	1.875	1	1	publication
+water addition	6.192	1.875	1	1	publication
+weinberg dunn-rankin	6.192	1.875	1	1	publication
+weinberg fj	6.192	1.875	1	1	publication
+wind corona	6.192	1.875	1	1	publication
+wind generator	6.192	1.875	1	1	publication
+xavier agatha	6.192	1.875	1	1	publication
+yamashita kiyotaka	6.192	1.875	1	1	publication
+yamashita y-c	6.192	1.875	1	1	publication
+yc chien	6.192	1.875	1	1	publication
+yu-chien girodon	6.192	1.875	1	1	publication
+yu-chien stocker	6.192	1.875	1	1	publication
+tests	6.043	4.000	2	11	approach
+burners	5.966	2.500	1	4	publication
+gases	5.966	2.500	1	4	publication
+ju	5.966	2.500	1	4	publication
+lewis	5.966	2.500	1	4	publication
+quenching	5.966	2.500	1	4	publication
+release	5.966	2.500	1	4	publication
+tubes	5.966	2.500	1	4	publication
+chemiluminescent	5.794	2.000	1	2	approach
+circular	5.794	2.000	1	2	approach
+copper	5.794	2.000	1	2	approach
+create	5.794	2.000	1	2	approach
+differential	5.794	2.000	1	2	approach
+enable	5.794	2.000	1	2	approach
+explore	5.794	2.000	1	2	approach
+focused	5.794	2.000	1	2	approach
+gas-fueled	5.794	2.000	1	2	approach
+gas-jet	5.794	2.000	1	2	approach
+greenhouse	5.794	2.000	1	2	research_impacts
+harmful	5.794	2.000	1	2	research_impacts
+human	5.794	2.000	1	2	research_impacts
+luminosity	5.794	2.000	1	2	approach
+near-limit	5.794	2.000	1	2	objective
+radiant	5.794	2.000	1	2	approach
+revealing	5.794	2.000	1	2	approach
+space-based	5.794	2.000	1	2	research_impacts
+suspended	5.794	2.000	1	2	approach
+unique	5.794	2.000	1	2	approach
+waste	5.794	2.000	1	2	research_impacts
+power	5.510	2.500	1	5	publication
+reserve	5.510	2.500	1	5	publication
+simulation	5.510	2.500	1	5	publication
+aerospace engineering	5.432	1.875	1	2	publication
+air coflow	5.432	1.875	1	2	publication
+aspects flame	5.432	1.875	1	2	publication
+burner-generated spherical	5.432	1.875	1	2	publication
+chih-jen ju	5.432	1.875	1	2	publication
+cleveland oh	5.432	1.875	1	2	publication
+coflow flames	5.432	1.875	1	2	publication
+computation currently	5.432	1.875	1	2	publication
+currently department	5.432	1.875	1	2	publication
+delin sung	5.432	1.875	1	2	publication
+department mechanical	5.432	1.875	1	2	publication
+engineering case	5.432	1.875	1	2	publication
+flame quenching	5.432	1.875	1	2	publication
+flames computation	5.432	1.875	1	2	publication
+fuel flames	5.432	1.875	1	2	publication
+gaseous fuel	5.432	1.875	1	2	publication
+heat transfer	5.432	1.875	1	2	publication
+law chung	5.432	1.875	1	2	publication
+mechanical aerospace	5.432	1.875	1	2	publication
+microgravity burner-generated	5.432	1.875	1	2	publication
+non-premixed flame	5.432	1.875	1	2	publication
+non-premixed flames	5.432	1.875	1	2	publication
+stephen zhu	5.432	1.875	1	2	publication
+sung chih-jen	5.432	1.875	1	2	publication
+tse stephen	5.432	1.875	1	2	publication
+university cleveland	5.432	1.875	1	2	publication
+yiguang law	5.432	1.875	1	2	publication
+zhu delin	5.432	1.875	1	2	publication
+cir acme	5.369	2.250	1	4	experiment_hardware
+application	5.219	2.000	1	3	hypothesis
+assess	5.219	2.000	1	3	approach
+center	5.219	2.000	1	3	approach
+characterize	5.219	2.000	1	3	objective
+detectors	5.219	2.000	1	3	approach
+diluted	5.219	2.000	1	3	approach
+dynamic	5.219	2.000	1	3	objective
+findings	5.219	2.000	1	3	research_impacts
+flat	5.219	2.000	1	3	approach
+forces	5.219	2.000	1	3	approach
+high-resolution	5.219	2.000	1	3	approach
+positioned	5.219	2.000	1	3	approach
+significantly	5.219	2.000	1	3	hypothesis
+weak	5.219	2.000	1	3	approach
+different	5.125	2.500	1	6	publication
+large	5.125	2.500	1	6	publication
+near	5.125	2.500	1	6	publication
+acid rain	4.954	1.500	1	1	research_impacts
+actions parameters	4.954	1.500	1	1	approach
+addition unwanted	4.954	1.500	1	1	research_impacts
+administered glenn	4.954	1.500	1	1	approach
+aid development	4.954	1.500	1	1	research_impacts
+air former	4.954	1.500	1	1	approach
+analysis high-voltage	4.954	1.500	1	1	approach
+analyze dynamic	4.954	1.500	1	1	objective
+application electric	4.954	1.500	1	1	hypothesis
+applications possible	4.954	1.500	1	1	research_impacts
+assess relationship	4.954	1.500	1	1	approach
+astronaut actions	4.954	1.500	1	1	approach
+behavior analysis	4.954	1.500	1	1	approach
+behavior laminar	4.954	1.500	1	1	approach
+behavior methane	4.954	1.500	1	1	approach
+beneficial health	4.954	1.500	1	1	research_impacts
+burner coflow	4.954	1.500	1	1	approach
+burner create	4.954	1.500	1	1	approach
+burner flat	4.954	1.500	1	1	approach
+burner measurements	4.954	1.500	1	1	approach
+burner surrounds	4.954	1.500	1	1	approach
+burner tip	4.954	1.500	1	1	approach
+california-irvine	4.954	1.500	2	1	affiliation
+cameras captured	4.954	1.500	1	1	approach
+captured flame	4.954	1.500	1	1	approach
+case tests	4.954	1.500	1	1	approach
+center grc	4.954	1.500	1	1	approach
+changes evaluate	4.954	1.500	1	1	objective
+characterize stabilized	4.954	1.500	1	1	objective
+chemi-ionization combustion	4.954	1.500	1	1	approach
+chemi-ionization processes	4.954	1.500	1	1	hypothesis
+chemiluminescent emissions	4.954	1.500	1	1	approach
+cir tests	4.954	1.500	1	1	approach
+circular mesh	4.954	1.500	1	1	approach
+combustion combustion	4.954	1.500	1	1	research_impacts
+combustion driving	4.954	1.500	1	1	approach
+combustion electrical	4.954	1.500	1	1	research_impacts
+combustion fossil	4.954	1.500	1	1	research_impacts
+combustion reducing	4.954	1.500	1	1	research_impacts
+conducted coflow	4.954	1.500	1	1	approach
+conducted gas-fueled	4.954	1.500	1	1	approach
+conducted serve	4.954	1.500	1	1	research_impacts
+consumption addition	4.954	1.500	1	1	research_impacts
+control flame	4.954	1.500	1	1	approach
+control flames	4.954	1.500	1	1	research_impacts
+controlled polarity	4.954	1.500	1	1	approach
+convection chemi-ionization	4.954	1.500	1	1	hypothesis
+convection coflow	4.954	1.500	1	1	approach
+convection effects	4.954	1.500	1	1	approach
+convection influencing	4.954	1.500	1	1	approach
+copper mesh	4.954	1.500	1	1	approach
+create small	4.954	1.500	1	1	approach
+creates soot	4.954	1.500	1	1	research_impacts
+creating high	4.954	1.500	1	1	approach
+current analyze	4.954	1.500	1	1	objective
+current revealing	4.954	1.500	1	1	approach
+curves recorded	4.954	1.500	1	1	approach
+detailed ion-driven	4.954	1.500	1	1	approach
+detectors measure	4.954	1.500	1	1	approach
+development future	4.954	1.500	1	1	research_impacts
+devices solid	4.954	1.500	1	1	research_impacts
+differential burner	4.954	1.500	1	1	approach
+diluted nitrogen	4.954	1.500	1	1	approach
+dilution levels	4.954	1.500	1	1	approach
+directing astronaut	4.954	1.500	1	1	approach
+distribution spectral	4.954	1.500	1	1	approach
+downstream burner	4.954	1.500	1	1	approach
+driving ion-driving	4.954	1.500	1	1	approach
+dynamic response	4.954	1.500	1	1	objective
+dynamics highly	4.954	1.500	1	1	approach
+dynamics ion-driven	4.954	1.500	1	1	hypothesis
+effects high-resolution	4.954	1.500	1	1	approach
+effects ion	4.954	1.500	1	1	approach
+electric forcing	4.954	1.500	1	1	approach
+electrical fields	4.954	1.500	1	1	research_impacts
+electrode positioned	4.954	1.500	1	1	approach
+emissions conducted	4.954	1.500	1	1	approach
+emissions soot	4.954	1.500	1	1	approach
+enable flame	4.954	1.500	1	1	approach
+enabling precise	4.954	1.500	1	1	hypothesis
+environment ideal	4.954	1.500	1	1	approach
+environments significantly	4.954	1.500	1	1	hypothesis
+ethylene fuels	4.954	1.500	1	1	approach
+evaluate soot	4.954	1.500	1	1	objective
+explore range	4.954	1.500	1	1	approach
+field changes	4.954	1.500	1	1	objective
+field controlled	4.954	1.500	1	1	approach
+field interacts	4.954	1.500	1	1	approach
+field polarity	4.954	1.500	1	1	approach
+field voltage	4.954	1.500	1	1	objective
+fields efficient	4.954	1.500	1	1	research_impacts
+fields influence	4.954	1.500	1	1	approach
+filters measures	4.954	1.500	1	1	approach
+findings aid	4.954	1.500	1	1	research_impacts
+flame detailed	4.954	1.500	1	1	approach
+flame flame	4.954	1.500	1	1	approach
+flame radiant	4.954	1.500	1	1	approach
+flame response	4.954	1.500	1	1	approach
+flame strength	4.954	1.500	1	1	approach
+flames coflow	4.954	1.500	1	1	approach
+flames conducted	4.954	1.500	1	1	research_impacts
+flames electric	4.954	1.500	1	1	objective
+flames enabling	4.954	1.500	1	1	hypothesis
+flames investigates	4.954	1.500	1	1	approach
+flames reduce	4.954	1.500	1	1	research_impacts
+flames voltage-current	4.954	1.500	1	1	approach
+flat circular	4.954	1.500	1	1	approach
+flow enable	4.954	1.500	1	1	approach
+focused flame	4.954	1.500	1	1	approach
+forces conducted	4.954	1.500	1	1	approach
+forcing gas-jet	4.954	1.500	1	1	approach
+formation characterize	4.954	1.500	1	1	objective
+former case	4.954	1.500	1	1	approach
+fossil fuel	4.954	1.500	1	1	research_impacts
+fraction thermopile	4.954	1.500	1	1	approach
+fuel consumption	4.954	1.500	1	1	research_impacts
+fuel jet	4.954	1.500	1	1	approach
+fuel primary	4.954	1.500	1	1	research_impacts
+fuel taken	4.954	1.500	1	1	approach
+function field	4.954	1.500	1	1	approach
+future space-based	4.954	1.500	1	1	research_impacts
+gas acid	4.954	1.500	1	1	research_impacts
+gas-fueled flames	4.954	1.500	1	1	approach
+gas-jet burner	4.954	1.500	1	1	approach
+generated chemi-ionization	4.954	1.500	1	1	approach
+generated creating	4.954	1.500	1	1	approach
+generated electric	4.954	1.500	1	1	approach
+glenn center	4.954	1.500	1	1	approach
+grc directing	4.954	1.500	1	1	approach
+harmful pollutants	4.954	1.500	1	1	research_impacts
+hazard combustion	4.954	1.500	1	1	research_impacts
+health hazard	4.954	1.500	1	1	research_impacts
+high voltage	4.954	1.500	1	1	approach
+high-resolution cameras	4.954	1.500	1	1	approach
+high-voltage copper	4.954	1.500	1	1	approach
+highly stable	4.954	1.500	1	1	approach
+human greenhouse	4.954	1.500	1	1	research_impacts
+ideal isolating	4.954	1.500	1	1	approach
+imaging filters	4.954	1.500	1	1	approach
+influence behavior	4.954	1.500	1	1	approach
+influence laminar	4.954	1.500	1	1	hypothesis
+influencing flame	4.954	1.500	1	1	approach
+interacts ions	4.954	1.500	1	1	approach
+investigates electric	4.954	1.500	1	1	approach
+ion production	4.954	1.500	1	1	approach
+ion-driving convection	4.954	1.500	1	1	approach
+ions generated	4.954	1.500	1	1	approach
+isolate specific	4.954	1.500	1	1	approach
+isolating electric	4.954	1.500	1	1	approach
+jet weak	4.954	1.500	1	1	approach
+kv differential	4.954	1.500	1	1	approach
+levels varied	4.954	1.500	1	1	approach
+lifted flames	4.954	1.500	1	1	objective
+manipulation flame	4.954	1.500	1	1	hypothesis
+measure flame	4.954	1.500	1	1	approach
+measurements function	4.954	1.500	1	1	approach
+measures chemiluminescent	4.954	1.500	1	1	approach
+mesh electrode	4.954	1.500	1	1	approach
+mesh suspended	4.954	1.500	1	1	approach
+microgravity unique	4.954	1.500	1	1	approach
+near-extinction flames	4.954	1.500	1	1	approach
+near-limit lifted	4.954	1.500	1	1	objective
+nitrogen control	4.954	1.500	1	1	approach
+nnx17ac51a	4.954	1.500	1	1	funding
+parameters fuel	4.954	1.500	1	1	approach
+polarity strength	4.954	1.500	1	1	approach
+polarity varied	4.954	1.500	1	1	approach
+pollutants practical	4.954	1.500	1	1	research_impacts
+positioned burner	4.954	1.500	1	1	approach
+possible findings	4.954	1.500	1	1	research_impacts
+practical terrestrial	4.954	1.500	1	1	research_impacts
+precise manipulation	4.954	1.500	1	1	hypothesis
+primary human	4.954	1.500	1	1	research_impacts
+processing electric	4.954	1.500	1	1	research_impacts
+production flame	4.954	1.500	1	1	approach
+production harmful	4.954	1.500	1	1	research_impacts
+radiant emissions	4.954	1.500	1	1	approach
+rain creates	4.954	1.500	1	1	research_impacts
+range combustion	4.954	1.500	1	1	approach
+rate coflow	4.954	1.500	1	1	approach
+recorded assess	4.954	1.500	1	1	approach
+reduce production	4.954	1.500	1	1	research_impacts
+reducing fuel	4.954	1.500	1	1	research_impacts
+response flames	4.954	1.500	1	1	objective
+response time	4.954	1.500	1	1	approach
+revealing ion-driven	4.954	1.500	1	1	approach
+serve applications	4.954	1.500	1	1	research_impacts
+shape luminosity	4.954	1.500	1	1	approach
+significantly influence	4.954	1.500	1	1	hypothesis
+small focused	4.954	1.500	1	1	approach
+solid waste	4.954	1.500	1	1	research_impacts
+soot beneficial	4.954	1.500	1	1	research_impacts
+soot distribution	4.954	1.500	1	1	approach
+space-based combustion	4.954	1.500	1	1	research_impacts
+specific effects	4.954	1.500	1	1	approach
+spectral imaging	4.954	1.500	1	1	approach
+stabilized near-limit	4.954	1.500	1	1	objective
+stable near-extinction	4.954	1.500	1	1	approach
+strength chemi-ion	4.954	1.500	1	1	approach
+strength dilution	4.954	1.500	1	1	approach
+strength electric	4.954	1.500	1	1	approach
+strength fuel	4.954	1.500	1	1	approach
+surrounds fuel	4.954	1.500	1	1	approach
+suspended downstream	4.954	1.500	1	1	approach
+synthetic air	4.954	1.500	1	1	approach
+taken ion	4.954	1.500	1	1	approach
+tests administered	4.954	1.500	1	1	approach
+thermopile detectors	4.954	1.500	1	1	approach
+time electric	4.954	1.500	1	1	approach
+tip generated	4.954	1.500	1	1	approach
+understand relationship	4.954	1.500	1	1	objective
+unique environment	4.954	1.500	1	1	approach
+unwanted emissions	4.954	1.500	1	1	research_impacts
+varied explore	4.954	1.500	1	1	approach
+varied isolate	4.954	1.500	1	1	approach
+velocity field	4.954	1.500	1	1	approach
+voltage chemi-ion	4.954	1.500	1	1	objective
+voltage kv	4.954	1.500	1	1	approach
+voltage-current curves	4.954	1.500	1	1	approach
+waste processing	4.954	1.500	1	1	research_impacts
+weak synthetic	4.954	1.500	1	1	approach
+elevated pressure	4.893	1.875	1	3	publication
+flame heat	4.893	1.875	1	3	publication
+jet flame	4.893	1.875	1	3	publication
+ju yiguang	4.893	1.875	1	3	publication
+laminar coflow	4.893	1.875	1	3	publication
+methane air	4.893	1.875	1	3	publication
+methane-air diffusion	4.893	1.875	1	3	publication
+university	4.893	4.000	3	15	affiliation,publication
+spherical	4.791	2.500	1	7	publication
+transport	4.791	2.500	1	7	publication
+analyze	4.773	2.000	1	4	objective
+applications	4.773	2.000	1	4	research_impacts
+devices	4.773	2.000	1	4	research_impacts
+evaluate	4.773	2.000	1	4	objective
+reducing	4.773	2.000	1	4	research_impacts
+understand	4.773	2.000	1	4	objective
+combustion integrated rack	4.656	2.750	2	9	approach,experiment_hardware
+integrated rack cir	4.656	2.750	2	9	approach,experiment_hardware
+active component high-voltage	4.541	1.375	1	1	publication
+aeration methane flames	4.541	1.375	1	1	publication
+agatha dunn-rankin derek	4.541	1.375	1	1	publication
+air coflow flame	4.541	1.375	1	1	publication
+aspects flame quenching	4.541	1.375	1	1	publication
+aspects impinging flames	4.541	1.375	1	1	publication
+autef louise dunn-rankin	4.541	1.375	1	1	publication
+axisymmetric flames driven	4.541	1.375	1	1	publication
+behavior small diffusion	4.541	1.375	1	1	publication
+bernard guillaume autef	4.541	1.375	1	1	publication
+borgatelli francesco dunn-rankin	4.541	1.375	1	1	publication
+buoyancy gaseous fuel	4.541	1.375	1	1	publication
+canceling buoyancy gaseous	4.541	1.375	1	1	publication
+carbon monoxide release	4.541	1.375	1	1	publication
+carleton fred dunn-rankin	4.541	1.375	1	1	publication
+carleton fred kara	4.541	1.375	1	1	publication
+carleton karnani markides	4.541	1.375	1	1	publication
+changes diffusion flame	4.541	1.375	1	1	publication
+changes electric fields	4.541	1.375	1	1	publication
+characterization electric field	4.541	1.375	1	1	publication
+characterizing i-v curves	4.541	1.375	1	1	publication
+chemiluminescence progressive aeration	4.541	1.375	1	1	publication
+chemiluminescence small laminar	4.541	1.375	1	1	publication
+chien karnani dunn-rankin	4.541	1.375	1	1	publication
+chien tinajero stocker	4.541	1.375	1	1	publication
+chien yu-chien girodon	4.541	1.375	1	1	publication
+chien yu-chien stocker	4.541	1.375	1	1	publication
+co emission impinging	4.541	1.375	1	1	publication
+coflow flame electric	4.541	1.375	1	1	publication
+coflow flames acme	4.541	1.375	1	1	publication
+coflow methane-air flames	4.541	1.375	1	1	publication
+combustion plasmas surrounding	4.541	1.375	1	1	publication
+component high-voltage circuit	4.541	1.375	1	1	publication
+control transport microgravity	4.541	1.375	1	1	publication
+convection small combustion	4.541	1.375	1	1	publication
+current carbon monoxide	4.541	1.375	1	1	publication
+current flame changes	4.541	1.375	1	1	publication
+current small methane	4.541	1.375	1	1	publication
+curves non-premixed methane	4.541	1.375	1	1	publication
+david chien yu-chien	4.541	1.375	1	1	publication
+dennis hegde uday	4.541	1.375	1	1	publication
+derek rickard matthew	4.541	1.375	1	1	publication
+derek weinberg felix	4.541	1.375	1	1	publication
+detailed characterization electric	4.541	1.375	1	1	publication
+dhiren xavier agatha	4.541	1.375	1	1	publication
+different burner configurations	4.541	1.375	1	1	publication
+diffusion flame electrically	4.541	1.375	1	1	publication
+diffusion flame elevated	4.541	1.375	1	1	publication
+diffusion flame heat	4.541	1.375	1	1	publication
+diffusion flames water	4.541	1.375	1	1	publication
+driven convection small	4.541	1.375	1	1	publication
+driven ion currents	4.541	1.375	1	1	publication
+dunn-rankin carleton karnani	4.541	1.375	1	1	publication
+dunn-rankin derek rickard	4.541	1.375	1	1	publication
+dunn-rankin derek weinberg	4.541	1.375	1	1	publication
+dunn-rankin weinberg fj	4.541	1.375	1	1	publication
+effects methane coflow	4.541	1.375	1	1	publication
+effects small non-premixed	4.541	1.375	1	1	publication
+electric field driven	4.541	1.375	1	1	publication
+electric field induced	4.541	1.375	1	1	publication
+electric field power	4.541	1.375	1	1	publication
+electric field-controlled mesoscale	4.541	1.375	1	1	publication
+electric-field effects methane	4.541	1.375	1	1	publication
+electrical aspects flame	4.541	1.375	1	1	publication
+electrical aspects impinging	4.541	1.375	1	1	publication
+electrically active component	4.541	1.375	1	1	publication
+elevated pressure diffusion	4.541	1.375	1	1	publication
+emission impinging non-premixed	4.541	1.375	1	1	publication
+environment ion-driven wind	4.541	1.375	1	1	publication
+escofet-martin david chien	4.541	1.375	1	1	publication
+esquivias rodriguez brandon	4.541	1.375	1	1	publication
+field driven convection	4.541	1.375	1	1	publication
+field effects small	4.541	1.375	1	1	publication
+field induced changes	4.541	1.375	1	1	publication
+field power systems	4.541	1.375	1	1	publication
+field-controlled mesoscale burners	4.541	1.375	1	1	publication
+fields control transport	4.541	1.375	1	1	publication
+flame changes electric	4.541	1.375	1	1	publication
+flame electrically active	4.541	1.375	1	1	publication
+flame elevated pressures	4.541	1.375	1	1	publication
+flame heat transfer	4.541	1.375	1	1	publication
+flames acme e-field	4.541	1.375	1	1	publication
+flames driven ion	4.541	1.375	1	1	publication
+flames gravitational environment	4.541	1.375	1	1	publication
+flames stabilized different	4.541	1.375	1	1	publication
+flames unity lewis	4.541	1.375	1	1	publication
+flames water addition	4.541	1.375	1	1	publication
+flow swirl tubes	4.541	1.375	1	1	publication
+francesco dunn-rankin derek	4.541	1.375	1	1	publication
+fred dunn-rankin derek	4.541	1.375	1	1	publication
+fred kara dhiren	4.541	1.375	1	1	publication
+fuel flames gravitational	4.541	1.375	1	1	publication
+gas flow swirl	4.541	1.375	1	1	publication
+gaseous fuel flames	4.541	1.375	1	1	publication
+girodon hugo esquivias	4.541	1.375	1	1	publication
+gravitational environment ion-driven	4.541	1.375	1	1	publication
+guillaume autef louise	4.541	1.375	1	1	publication
+heat transfer near	4.541	1.375	1	1	publication
+hegde uday dunn-rankin	4.541	1.375	1	1	publication
+hugo esquivias rodriguez	4.541	1.375	1	1	publication
+i-v curves non-premixed	4.541	1.375	1	1	publication
+impinging methane air	4.541	1.375	1	1	publication
+impinging non-premixed flame	4.541	1.375	1	1	publication
+impinging nonpremixed coflow	4.541	1.375	1	1	publication
+induced changes diffusion	4.541	1.375	1	1	publication
+inducing gas flow	4.541	1.375	1	1	publication
+influence electric field	4.541	1.375	1	1	publication
+ion current carbon	4.541	1.375	1	1	publication
+ion current small	4.541	1.375	1	1	publication
+ion-driven gas flows	4.541	1.375	1	1	publication
+ion-driven wind generator	4.541	1.375	1	1	publication
+ionic wind corona	4.541	1.375	1	1	publication
+ionization chemiluminescence progressive	4.541	1.375	1	1	publication
+jesse bernard guillaume	4.541	1.375	1	1	publication
+jesse dunn-rankin derek	4.541	1.375	1	1	publication
+kara dhiren xavier	4.541	1.375	1	1	publication
+karnani markides zhai	4.541	1.375	1	1	publication
+kiyotaka karnani sunny	4.541	1.375	1	1	publication
+large electric fields	4.541	1.375	1	1	publication
+louise dunn-rankin derek	4.541	1.375	1	1	publication
+maximizing ion-driven gas	4.541	1.375	1	1	publication
+methane air coflow	4.541	1.375	1	1	publication
+methane coflow flames	4.541	1.375	1	1	publication
+methane flames stabilized	4.541	1.375	1	1	publication
+methane jet flame	4.541	1.375	1	1	publication
+methane-air diffusion flame	4.541	1.375	1	1	publication
+methane-air flames unity	4.541	1.375	1	1	publication
+modeling elevated pressure	4.541	1.375	1	1	publication
+modelling electric field	4.541	1.375	1	1	publication
+monoxide release impinging	4.541	1.375	1	1	publication
+near impinging surface	4.541	1.375	1	1	publication
+non-premixed axisymmetric flames	4.541	1.375	1	1	publication
+non-premixed methane flames	4.541	1.375	1	1	publication
+nonpremixed coflow methane-air	4.541	1.375	1	1	publication
+numerical prediction ion	4.541	1.375	1	1	publication
+numerical simulation tubular	4.541	1.375	1	1	publication
+papac mj dunn-rankin	4.541	1.375	1	1	publication
+plasmas surrounding gases	4.541	1.375	1	1	publication
+plif chemiluminescence small	4.541	1.375	1	1	publication
+power systems flame	4.541	1.375	1	1	publication
+prediction ion current	4.541	1.375	1	1	publication
+pressure diffusion flames	4.541	1.375	1	1	publication
+progressive aeration methane	4.541	1.375	1	1	publication
+release impinging methane	4.541	1.375	1	1	publication
+sauer vinicius dunn-rankin	4.541	1.375	1	1	publication
+simulation tubular ion-driven	4.541	1.375	1	1	publication
+small combustion plasmas	4.541	1.375	1	1	publication
+small diffusion flame	4.541	1.375	1	1	publication
+small laminar coflow	4.541	1.375	1	1	publication
+small methane jet	4.541	1.375	1	1	publication
+small non-premixed flames	4.541	1.375	1	1	publication
+stabilized different burner	4.541	1.375	1	1	publication
+stocker dennis hegde	4.541	1.375	1	1	publication
+stocker hegde dunn-rankin	4.541	1.375	1	1	publication
+swirl tubes ionic	4.541	1.375	1	1	publication
+systems flame behavior	4.541	1.375	1	1	publication
+tinajero jesse bernard	4.541	1.375	1	1	publication
+tinajero jesse dunn-rankin	4.541	1.375	1	1	publication
+tinajero stocker hegde	4.541	1.375	1	1	publication
+transfer near impinging	4.541	1.375	1	1	publication
+tubes ionic wind	4.541	1.375	1	1	publication
+tubular ion-driven wind	4.541	1.375	1	1	publication
+uday dunn-rankin derek	4.541	1.375	1	1	publication
+unity lewis number	4.541	1.375	1	1	publication
+vinicius dunn-rankin derek	4.541	1.375	1	1	publication
+weinberg dunn-rankin carleton	4.541	1.375	1	1	publication
+wind corona discharges	4.541	1.375	1	1	publication
+xavier agatha dunn-rankin	4.541	1.375	1	1	publication
+y-c chien karnani	4.541	1.375	1	1	publication
+yamashita kiyotaka karnani	4.541	1.375	1	1	publication
+yamashita y-c chien	4.541	1.375	1	1	publication
+yc chien tinajero	4.541	1.375	1	1	publication
+yu-chien girodon hugo	4.541	1.375	1	1	publication
+yu-chien stocker dennis	4.541	1.375	1	1	publication
+gaseous	4.496	2.500	1	8	publication
+modeling	4.496	2.500	1	8	publication
+number	4.496	2.500	1	8	publication
+pressures	4.496	2.500	1	8	publication
+surface	4.496	2.500	1	8	publication
+western	4.496	2.500	1	8	publication
+lewis number	4.474	1.875	1	4	publication
+captured	4.408	2.000	1	5	approach
+fraction	4.408	2.000	1	5	approach
+imaging	4.408	2.000	1	5	approach
+levels	4.408	2.000	1	5	approach
+specific	4.408	2.000	1	5	approach
+volume	4.408	2.000	1	5	approach
+behavior combustion	4.346	1.500	1	2	hypothesis
+buoyancy forces	4.346	1.500	1	2	approach
+coflow air	4.346	1.500	1	2	approach
+coflow velocity	4.346	1.500	1	2	approach
+combustion devices	4.346	1.500	1	2	research_impacts
+conducted combustion	4.346	1.500	1	2	approach
+effects buoyancy	4.346	1.500	1	2	approach
+efficient combustion	4.346	1.500	1	2	research_impacts
+field generated	4.346	1.500	1	2	approach
+fuels diluted	4.346	1.500	1	2	approach
+greenhouse gas	4.346	1.500	1	2	research_impacts
+luminosity soot	4.346	1.500	1	2	approach
+objective better	4.346	1.500	1	2	objective
+terrestrial combustion	4.346	1.500	1	2	research_impacts
+tests conducted	4.346	1.500	1	2	approach
+numerical simulation	4.132	1.875	1	5	publication
+reserve university	4.132	1.875	1	5	publication
+spherical diffusion	4.132	1.875	1	5	publication
+western reserve	4.132	1.875	1	5	publication
+dilution	4.100	2.000	1	6	approach
+distribution	4.100	2.000	1	6	approach
+efficient	4.100	2.000	1	6	research_impacts
+ethylene	4.100	2.000	1	6	approach
+parameters	4.100	2.000	1	6	approach
+practical	4.100	2.000	1	6	research_impacts
+range	4.100	2.000	1	6	approach
+recorded	4.100	2.000	1	6	approach
+shape	4.100	2.000	1	6	approach
+flows	3.995	2.500	1	10	publication
+aerospace engineering case	3.984	1.375	1	2	publication
+burner-generated spherical diffusion	3.984	1.375	1	2	publication
+chih-jen ju yiguang	3.984	1.375	1	2	publication
+coflow methane-air diffusion	3.984	1.375	1	2	publication
+computation currently department	3.984	1.375	1	2	publication
+currently department mechanical	3.984	1.375	1	2	publication
+delin sung chih-jen	3.984	1.375	1	2	publication
+department mechanical aerospace	3.984	1.375	1	2	publication
+diffusion flames computation	3.984	1.375	1	2	publication
+engineering case western	3.984	1.375	1	2	publication
+flames computation currently	3.984	1.375	1	2	publication
+ju yiguang law	3.984	1.375	1	2	publication
+laminar coflow methane-air	3.984	1.375	1	2	publication
+mechanical aerospace engineering	3.984	1.375	1	2	publication
+microgravity burner-generated spherical	3.984	1.375	1	2	publication
+reserve university cleveland	3.984	1.375	1	2	publication
+stephen zhu delin	3.984	1.375	1	2	publication
+sung chih-jen ju	3.984	1.375	1	2	publication
+tse stephen zhu	3.984	1.375	1	2	publication
+university cleveland oh	3.984	1.375	1	2	publication
+yiguang law chung	3.984	1.375	1	2	publication
+zhu delin sung	3.984	1.375	1	2	publication
+rack cir acme	3.937	1.650	1	4	experiment_hardware
+better understand	3.914	1.500	1	3	objective
+coflow laminar	3.914	1.500	1	3	approach
+flame shape	3.914	1.500	1	3	approach
+fuel flow	3.914	1.500	1	3	approach
+volume fraction	3.914	1.500	1	3	approach
+stocker dennis	3.843	1.875	1	6	publication
+controlled	3.833	2.000	1	7	approach
+nitrogen	3.833	2.000	1	7	approach
+objective	3.833	2.000	1	7	objective
+possible	3.833	2.000	1	7	research_impacts
+solid	3.833	2.000	1	7	research_impacts
+terrestrial	3.833	2.000	1	7	research_impacts
+university california-irvine	3.715	1.125	2	1	affiliation
+acid rain creates	3.633	1.100	1	1	research_impacts
+actions parameters fuel	3.633	1.100	1	1	approach
+addition unwanted emissions	3.633	1.100	1	1	research_impacts
+administered glenn center	3.633	1.100	1	1	approach
+aid development future	3.633	1.100	1	1	research_impacts
+air flow enable	3.633	1.100	1	1	approach
+air former case	3.633	1.100	1	1	approach
+analysis high-voltage copper	3.633	1.100	1	1	approach
+analyze dynamic response	3.633	1.100	1	1	objective
+application electric fields	3.633	1.100	1	1	hypothesis
+applications possible findings	3.633	1.100	1	1	research_impacts
+assess relationship electric	3.633	1.100	1	1	approach
+astronaut actions parameters	3.633	1.100	1	1	approach
+behavior analysis high-voltage	3.633	1.100	1	1	approach
+behavior combustion dynamics	3.633	1.100	1	1	hypothesis
+behavior laminar diffusion	3.633	1.100	1	1	approach
+behavior methane ethylene	3.633	1.100	1	1	approach
+beneficial health hazard	3.633	1.100	1	1	research_impacts
+better understand relationship	3.633	1.100	1	1	objective
+buoyancy forces conducted	3.633	1.100	1	1	approach
+burner coflow laminar	3.633	1.100	1	1	approach
+burner create small	3.633	1.100	1	1	approach
+burner flat circular	3.633	1.100	1	1	approach
+burner measurements function	3.633	1.100	1	1	approach
+burner surrounds fuel	3.633	1.100	1	1	approach
+burner tip generated	3.633	1.100	1	1	approach
+cameras captured flame	3.633	1.100	1	1	approach
+captured flame shape	3.633	1.100	1	1	approach
+case tests conducted	3.633	1.100	1	1	approach
+center grc directing	3.633	1.100	1	1	approach
+changes evaluate soot	3.633	1.100	1	1	objective
+characterize stabilized near-limit	3.633	1.100	1	1	objective
+chemi-ion current analyze	3.633	1.100	1	1	objective
+chemi-ion current revealing	3.633	1.100	1	1	approach
+chemi-ionization combustion driving	3.633	1.100	1	1	approach
+chemiluminescent emissions soot	3.633	1.100	1	1	approach
+cir tests administered	3.633	1.100	1	1	approach
+circular mesh suspended	3.633	1.100	1	1	approach
+coflow air former	3.633	1.100	1	1	approach
+coflow burner coflow	3.633	1.100	1	1	approach
+coflow burner surrounds	3.633	1.100	1	1	approach
+coflow velocity field	3.633	1.100	1	1	approach
+combustion combustion fossil	3.633	1.100	1	1	research_impacts
+combustion devices solid	3.633	1.100	1	1	research_impacts
+combustion driving ion-driving	3.633	1.100	1	1	approach
+combustion dynamics highly	3.633	1.100	1	1	approach
+combustion dynamics ion-driven	3.633	1.100	1	1	hypothesis
+combustion electrical fields	3.633	1.100	1	1	research_impacts
+combustion fossil fuel	3.633	1.100	1	1	research_impacts
+combustion reducing fuel	3.633	1.100	1	1	research_impacts
+conducted coflow burner	3.633	1.100	1	1	approach
+conducted combustion integrated	3.633	1.100	1	1	approach
+conducted gas-fueled flames	3.633	1.100	1	1	approach
+conducted serve applications	3.633	1.100	1	1	research_impacts
+consumption addition unwanted	3.633	1.100	1	1	research_impacts
+control flame strength	3.633	1.100	1	1	approach
+control flames reduce	3.633	1.100	1	1	research_impacts
+controlled polarity strength	3.633	1.100	1	1	approach
+convection chemi-ionization processes	3.633	1.100	1	1	hypothesis
+convection coflow burner	3.633	1.100	1	1	approach
+convection effects high-resolution	3.633	1.100	1	1	approach
+convection influencing flame	3.633	1.100	1	1	approach
+copper mesh electrode	3.633	1.100	1	1	approach
+create small focused	3.633	1.100	1	1	approach
+creates soot beneficial	3.633	1.100	1	1	research_impacts
+creating high voltage	3.633	1.100	1	1	approach
+current analyze dynamic	3.633	1.100	1	1	objective
+current flame flame	3.633	1.100	1	1	approach
+current revealing ion-driven	3.633	1.100	1	1	approach
+curves recorded assess	3.633	1.100	1	1	approach
+detailed ion-driven convection	3.633	1.100	1	1	approach
+detectors measure flame	3.633	1.100	1	1	approach
+development future space-based	3.633	1.100	1	1	research_impacts
+devices solid waste	3.633	1.100	1	1	research_impacts
+differential burner flat	3.633	1.100	1	1	approach
+diffusion flame electric	3.633	1.100	1	1	approach
+diffusion flames enabling	3.633	1.100	1	1	hypothesis
+diluted nitrogen control	3.633	1.100	1	1	approach
+dilution levels varied	3.633	1.100	1	1	approach
+directing astronaut actions	3.633	1.100	1	1	approach
+distribution spectral imaging	3.633	1.100	1	1	approach
+downstream burner measurements	3.633	1.100	1	1	approach
+driving ion-driving convection	3.633	1.100	1	1	approach
+dynamic response flames	3.633	1.100	1	1	objective
+dynamics highly stable	3.633	1.100	1	1	approach
+dynamics ion-driven convection	3.633	1.100	1	1	hypothesis
+e-field flames conducted	3.633	1.100	1	1	research_impacts
+e-field flames investigates	3.633	1.100	1	1	approach
+effects buoyancy forces	3.633	1.100	1	1	approach
+effects high-resolution cameras	3.633	1.100	1	1	approach
+effects ion production	3.633	1.100	1	1	approach
+efficient combustion reducing	3.633	1.100	1	1	research_impacts
+electric field changes	3.633	1.100	1	1	objective
+electric field controlled	3.633	1.100	1	1	approach
+electric field generated	3.633	1.100	1	1	approach
+electric field interacts	3.633	1.100	1	1	approach
+electric field strength	3.633	1.100	1	1	approach
+electric field voltage	3.633	1.100	1	1	objective
+electric fields influence	3.633	1.100	1	1	approach
+electric forcing gas-jet	3.633	1.100	1	1	approach
+electrical fields efficient	3.633	1.100	1	1	research_impacts
+electrode positioned burner	3.633	1.100	1	1	approach
+emissions conducted combustion	3.633	1.100	1	1	approach
+emissions soot volume	3.633	1.100	1	1	approach
+enable flame stability	3.633	1.100	1	1	approach
+enabling precise manipulation	3.633	1.100	1	1	hypothesis
+environment ideal isolating	3.633	1.100	1	1	approach
+environments significantly influence	3.633	1.100	1	1	hypothesis
+ethylene fuels diluted	3.633	1.100	1	1	approach
+evaluate soot formation	3.633	1.100	1	1	objective
+explore range combustion	3.633	1.100	1	1	approach
+field changes evaluate	3.633	1.100	1	1	objective
+field controlled polarity	3.633	1.100	1	1	approach
+field effects buoyancy	3.633	1.100	1	1	approach
+field generated creating	3.633	1.100	1	1	approach
+field interacts ions	3.633	1.100	1	1	approach
+field polarity varied	3.633	1.100	1	1	approach
+field strength chemi-ion	3.633	1.100	1	1	approach
+field strength fuel	3.633	1.100	1	1	approach
+field voltage chemi-ion	3.633	1.100	1	1	objective
+fields control flames	3.633	1.100	1	1	research_impacts
+fields efficient combustion	3.633	1.100	1	1	research_impacts
+fields influence behavior	3.633	1.100	1	1	approach
+fields microgravity environments	3.633	1.100	1	1	hypothesis
+filters measures chemiluminescent	3.633	1.100	1	1	approach
+findings aid development	3.633	1.100	1	1	research_impacts
+flame behavior methane	3.633	1.100	1	1	approach
+flame detailed ion-driven	3.633	1.100	1	1	approach
+flame flame response	3.633	1.100	1	1	approach
+flame radiant emissions	3.633	1.100	1	1	approach
+flame response time	3.633	1.100	1	1	approach
+flame shape luminosity	3.633	1.100	1	1	approach
+flame strength dilution	3.633	1.100	1	1	approach
+flames coflow air	3.633	1.100	1	1	approach
+flames conducted serve	3.633	1.100	1	1	research_impacts
+flames electric field	3.633	1.100	1	1	objective
+flames enabling precise	3.633	1.100	1	1	hypothesis
+flames investigates electric	3.633	1.100	1	1	approach
+flames microgravity unique	3.633	1.100	1	1	approach
+flames reduce production	3.633	1.100	1	1	research_impacts
+flames voltage-current curves	3.633	1.100	1	1	approach
+flat circular mesh	3.633	1.100	1	1	approach
+flow enable flame	3.633	1.100	1	1	approach
+flow rate coflow	3.633	1.100	1	1	approach
+focused flame detailed	3.633	1.100	1	1	approach
+forces conducted gas-fueled	3.633	1.100	1	1	approach
+forcing gas-jet burner	3.633	1.100	1	1	approach
+formation characterize stabilized	3.633	1.100	1	1	objective
+former case tests	3.633	1.100	1	1	approach
+fossil fuel primary	3.633	1.100	1	1	research_impacts
+fraction thermopile detectors	3.633	1.100	1	1	approach
+fuel consumption addition	3.633	1.100	1	1	research_impacts
+fuel jet weak	3.633	1.100	1	1	approach
+fuel primary human	3.633	1.100	1	1	research_impacts
+fuel taken ion	3.633	1.100	1	1	approach
+fuels diluted nitrogen	3.633	1.100	1	1	approach
+function field strength	3.633	1.100	1	1	approach
+future space-based combustion	3.633	1.100	1	1	research_impacts
+gas acid rain	3.633	1.100	1	1	research_impacts
+gas-fueled flames coflow	3.633	1.100	1	1	approach
+gas-jet burner create	3.633	1.100	1	1	approach
+generated chemi-ionization combustion	3.633	1.100	1	1	approach
+generated creating high	3.633	1.100	1	1	approach
+generated electric field	3.633	1.100	1	1	approach
+glenn center grc	3.633	1.100	1	1	approach
+grc directing astronaut	3.633	1.100	1	1	approach
+greenhouse gas acid	3.633	1.100	1	1	research_impacts
+harmful pollutants practical	3.633	1.100	1	1	research_impacts
+hazard combustion electrical	3.633	1.100	1	1	research_impacts
+health hazard combustion	3.633	1.100	1	1	research_impacts
+high voltage kv	3.633	1.100	1	1	approach
+high-resolution cameras captured	3.633	1.100	1	1	approach
+high-voltage copper mesh	3.633	1.100	1	1	approach
+highly stable near-extinction	3.633	1.100	1	1	approach
+human greenhouse gas	3.633	1.100	1	1	research_impacts
+ideal isolating electric	3.633	1.100	1	1	approach
+imaging filters measures	3.633	1.100	1	1	approach
+influence behavior laminar	3.633	1.100	1	1	approach
+influence laminar diffusion	3.633	1.100	1	1	hypothesis
+influencing flame behavior	3.633	1.100	1	1	approach
+interacts ions generated	3.633	1.100	1	1	approach
+investigates electric fields	3.633	1.100	1	1	approach
+ion production flame	3.633	1.100	1	1	approach
+ion-driven convection chemi-ionization	3.633	1.100	1	1	hypothesis
+ion-driven convection coflow	3.633	1.100	1	1	approach
+ion-driven convection effects	3.633	1.100	1	1	approach
+ion-driving convection influencing	3.633	1.100	1	1	approach
+ions generated chemi-ionization	3.633	1.100	1	1	approach
+isolate specific effects	3.633	1.100	1	1	approach
+isolating electric field	3.633	1.100	1	1	approach
+jet weak synthetic	3.633	1.100	1	1	approach
+kv differential burner	3.633	1.100	1	1	approach
+levels varied explore	3.633	1.100	1	1	approach
+luminosity soot distribution	3.633	1.100	1	1	approach
+manipulation flame stability	3.633	1.100	1	1	hypothesis
+measure flame radiant	3.633	1.100	1	1	approach
+measurements function field	3.633	1.100	1	1	approach
+measures chemiluminescent emissions	3.633	1.100	1	1	approach
+mesh electrode positioned	3.633	1.100	1	1	approach
+mesh suspended downstream	3.633	1.100	1	1	approach
+methane ethylene fuels	3.633	1.100	1	1	approach
+microgravity environments significantly	3.633	1.100	1	1	hypothesis
+microgravity unique environment	3.633	1.100	1	1	approach
+near-extinction flames voltage-current	3.633	1.100	1	1	approach
+near-limit lifted flames	3.633	1.100	1	1	objective
+nitrogen control flame	3.633	1.100	1	1	approach
+parameters fuel flow	3.633	1.100	1	1	approach
+polarity strength electric	3.633	1.100	1	1	approach
+polarity varied isolate	3.633	1.100	1	1	approach
+pollutants practical terrestrial	3.633	1.100	1	1	research_impacts
+positioned burner tip	3.633	1.100	1	1	approach
+possible findings aid	3.633	1.100	1	1	research_impacts
+practical terrestrial combustion	3.633	1.100	1	1	research_impacts
+precise manipulation flame	3.633	1.100	1	1	hypothesis
+primary human greenhouse	3.633	1.100	1	1	research_impacts
+processing electric fields	3.633	1.100	1	1	research_impacts
+production flame stability	3.633	1.100	1	1	approach
+production harmful pollutants	3.633	1.100	1	1	research_impacts
+rack cir tests	3.633	1.100	1	1	approach
+radiant emissions conducted	3.633	1.100	1	1	approach
+rain creates soot	3.633	1.100	1	1	research_impacts
+range combustion dynamics	3.633	1.100	1	1	approach
+rate coflow velocity	3.633	1.100	1	1	approach
+recorded assess relationship	3.633	1.100	1	1	approach
+reduce production harmful	3.633	1.100	1	1	research_impacts
+reducing fuel consumption	3.633	1.100	1	1	research_impacts
+response flames electric	3.633	1.100	1	1	objective
+response time electric	3.633	1.100	1	1	approach
+revealing ion-driven convection	3.633	1.100	1	1	approach
+serve applications possible	3.633	1.100	1	1	research_impacts
+shape luminosity soot	3.633	1.100	1	1	approach
+significantly influence laminar	3.633	1.100	1	1	hypothesis
+small focused flame	3.633	1.100	1	1	approach
+solid waste processing	3.633	1.100	1	1	research_impacts
+soot behavior analysis	3.633	1.100	1	1	approach
+soot behavior combustion	3.633	1.100	1	1	hypothesis
+soot beneficial health	3.633	1.100	1	1	research_impacts
+soot distribution spectral	3.633	1.100	1	1	approach
+soot formation characterize	3.633	1.100	1	1	objective
+space-based combustion devices	3.633	1.100	1	1	research_impacts
+specific effects ion	3.633	1.100	1	1	approach
+spectral imaging filters	3.633	1.100	1	1	approach
+stabilized near-limit lifted	3.633	1.100	1	1	objective
+stable near-extinction flames	3.633	1.100	1	1	approach
+strength chemi-ion current	3.633	1.100	1	1	approach
+strength dilution levels	3.633	1.100	1	1	approach
+strength electric field	3.633	1.100	1	1	approach
+strength fuel taken	3.633	1.100	1	1	approach
+surrounds fuel jet	3.633	1.100	1	1	approach
+suspended downstream burner	3.633	1.100	1	1	approach
+synthetic air flow	3.633	1.100	1	1	approach
+taken ion current	3.633	1.100	1	1	approach
+terrestrial combustion combustion	3.633	1.100	1	1	research_impacts
+tests administered glenn	3.633	1.100	1	1	approach
+tests conducted coflow	3.633	1.100	1	1	approach
+thermopile detectors measure	3.633	1.100	1	1	approach
+time electric forcing	3.633	1.100	1	1	approach
+tip generated electric	3.633	1.100	1	1	approach
+understand relationship electric	3.633	1.100	1	1	objective
+unique environment ideal	3.633	1.100	1	1	approach
+varied explore range	3.633	1.100	1	1	approach
+varied isolate specific	3.633	1.100	1	1	approach
+velocity field polarity	3.633	1.100	1	1	approach
+voltage chemi-ion current	3.633	1.100	1	1	objective
+voltage kv differential	3.633	1.100	1	1	approach
+voltage-current curves recorded	3.633	1.100	1	1	approach
+volume fraction thermopile	3.633	1.100	1	1	approach
+waste processing electric	3.633	1.100	1	1	research_impacts
+weak synthetic air	3.633	1.100	1	1	approach
+better	3.597	2.000	1	8	objective
+function	3.597	2.000	1	8	approach
+measure	3.597	2.000	1	8	approach
+primary	3.597	2.000	1	8	research_impacts
+processes	3.597	2.000	1	8	hypothesis
+soot volume	3.579	1.500	1	4	approach
+heat	3.577	2.500	1	12	publication
+pressure	3.577	2.500	1	12	publication
+engineering	3.392	2.500	1	13	publication
+systems	3.392	2.500	1	13	publication
+cameras	3.386	2.000	1	9	approach
+formation	3.386	2.000	1	9	objective
+case western	3.372	1.875	1	8	publication
+air flow	3.306	1.500	1	5	approach
+flow rate	3.306	1.500	1	5	approach
+methane ethylene	3.306	1.500	1	5	approach
+microgravity environments	3.306	1.500	1	5	hypothesis
+alice	3.303	1.000	1	1	people
+technical	3.303	1.000	1	1	role
+spherical diffusion flames	3.281	1.375	1	4	publication
+measurements	3.196	2.000	1	10	approach
+coflow laminar diffusion	3.187	1.100	1	2	approach
+objective better understand	3.187	1.100	1	2	objective
+flames microgravity	3.075	1.500	1	6	approach
+case western reserve	3.030	1.375	1	5	publication
+western reserve university	3.030	1.375	1	5	publication
+velocity	3.022	2.000	1	11	approach
+contact	2.897	1.000	1	2	role
+grc	2.891	2.750	2	18	affiliation,approach
+soot formation	2.874	1.500	1	7	objective
+fuel flow rate	2.870	1.100	1	3	approach
+laminar diffusion flame	2.870	1.100	1	3	approach
+soot volume fraction	2.870	1.100	1	3	approach
+analysis	2.862	2.000	1	12	approach
+development	2.862	2.000	1	12	research_impacts
+time	2.862	2.000	1	12	approach
+environments	2.713	2.000	1	13	hypothesis
+fuels	2.713	2.000	1	13	approach
+high	2.713	2.000	1	13	approach
+rate	2.713	2.000	1	13	approach
+diffusion flames microgravity	2.625	1.100	1	4	approach
+future	2.575	2.000	1	14	research_impacts
+alice chien	2.477	0.750	1	1	people
+derek dunn-rankin	2.477	0.750	1	1	people
+point contact	2.477	0.750	1	1	role
+technical point	2.477	0.750	1	1	role
+point	2.204	1.000	1	5	role
+technical point contact	1.816	0.550	1	1	role
+administration	1.744	1.500	1	16	space_program
+aeronautics	1.744	1.500	1	16	space_program
+national	1.577	1.500	1	18	space_program
+dennis stocker	1.437	0.750	1	7	people
+aeronautics administration	1.308	1.125	1	16	space_program
+national aeronautics	1.308	1.125	1	16	space_program
+scientist	1.288	1.000	1	14	role
+investigator	1.051	1.000	1	18	role
+pi	1.051	1.000	1	18	role
+principal	1.051	1.000	1	18	role
+national aeronautics administration	0.959	0.825	1	16	space_program
+investigator pi	0.788	0.750	1	18	role
+principal investigator	0.788	0.750	1	18	role
+principal investigator pi	0.578	0.550	1	18	role

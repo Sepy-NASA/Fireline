@@ -1,0 +1,1443 @@
+# keywords for PSI-20 (score, weight, count, df, fields)
+quintiere	110.637	33.500	14	1	people,publication
+burning	94.816	56.000	23	9	approach,hypothesis,objective,proposal_title,publication,research_impacts,title
+bre	85.867	26.000	11	1	acronym,approach,filenames,hypothesis,objective,publication,research_impacts
+quintiere james	68.116	20.625	11	1	publication
+james	62.813	28.500	12	5	people,publication
+sunderland	62.044	26.000	11	4	people,publication
+extinction	57.522	36.000	11	10	approach,curated_keywords,objective,publication
+microgravity	56.500	56.500	24	19	approach,hypothesis,objective,project_type,publication,research_impacts,title
+flux	53.692	22.500	8	4	approach,curated_keywords,hypothesis,publication
+limit	52.148	18.000	6	2	approach,curated_keywords
+heat flux	48.889	16.875	8	2	approach,curated_keywords,hypothesis,publication
+burner	46.949	24.500	11	7	approach,publication,research_impacts
+peter	46.283	21.000	9	5	people,publication
+de	44.585	13.500	6	1	people,publication
+emulator	44.585	13.500	4	1	publication,title
+ris	44.585	13.500	6	1	people,publication
+heat	43.639	30.500	12	12	approach,curated_keywords,hypothesis,publication
+dehghani	41.282	12.500	5	1	publication
+flames	38.630	30.000	10	14	approach,curated_keywords,hypothesis,publication,research_impacts,sub_research_area
+condensed	37.980	11.500	5	1	hypothesis,objective,publication
+peter quintiere	37.154	11.250	6	1	publication
+acme	36.897	18.000	4	6	acronym,curated_keywords,experiment_hardware,filenames
+sunderland peter	35.794	15.000	8	4	publication
+john	35.264	16.000	7	5	people,publication
+de ris	33.439	10.125	6	1	people,publication
+parham	33.026	10.000	4	1	publication
+microgravity burning	32.200	9.750	4	1	approach,publication,title
+flammability	31.323	18.500	6	9	approach,curated_keywords,hypothesis,publication,research_impacts
+porous	31.313	12.000	5	3	objective,publication
+ris john	30.962	9.375	5	1	publication
+rate	29.847	22.000	8	13	approach,proposal_title,publication,title
+quiescent	29.723	9.000	4	1	approach,objective,publication
+fuel	29.169	21.500	10	13	approach,hypothesis,objective,publication
+peter quintiere james	27.246	8.250	6	1	publication
+rate emulator	27.246	8.250	3	1	publication,title
+sunderland peter quintiere	27.246	8.250	6	1	publication
+conditions	27.133	20.000	10	13	approach,hypothesis,objective
+ignition	26.648	13.000	6	6	approach,publication
+triple	26.421	8.000	1	1	curated_keywords
+flat	26.094	10.000	4	3	publication
+burning rate	25.056	10.500	4	4	proposal_title,publication,title
+burning microgravity	24.988	8.625	5	2	hypothesis,publication
+akshit	24.769	7.500	3	1	publication
+baum	24.769	7.500	3	1	publication
+bustamante	24.769	7.500	3	1	publication
+dehghani parham	24.769	7.500	4	1	publication
+extinction limit	24.769	7.500	2	1	approach,curated_keywords
+howard	24.769	7.500	3	1	publication
+markan	24.769	7.500	3	1	publication
+polymer	23.177	8.000	1	2	curated_keywords
+steady	23.142	10.500	5	5	approach,hypothesis,publication
+de ris john	22.705	6.875	5	1	publication
+zhang	21.728	7.500	3	2	publication
+combustion	21.500	21.500	7	19	experiment_hardware,hypothesis,publication,research_area,research_impacts,title
+radiative extinction	21.489	9.750	3	5	curated_keywords,publication
+temperature	21.152	14.000	7	11	approach
+steady burning	21.054	6.375	4	1	hypothesis,publication
+flow	20.925	18.000	9	16	approach,research_impacts
+establish	20.876	8.000	4	3	approach,objective
+diffusion	20.772	13.000	3	10	curated_keywords,publication
+radiative	20.772	13.000	3	10	curated_keywords,publication
+observed	20.498	10.000	5	6	approach,research_impacts
+burning rate emulator	19.981	6.050	3	1	publication,title
+ambient	19.836	9.000	4	5	objective,publication
+psia	19.816	6.000	3	1	objective
+surface temperature	19.816	6.000	4	1	approach
+triple flame	19.816	6.000	1	1	curated_keywords
+fuels	19.672	14.500	6	13	approach,hypothesis,objective,publication,sub_research_area
+flame	19.182	16.500	5	16	approach,curated_keywords,hypothesis,publication
+calorimeter	18.831	6.500	3	2	hypothesis,publication,research_impacts
+test	18.600	16.000	8	16	approach,hypothesis,research_impacts
+baum howard	18.577	5.625	3	1	publication
+burner microgravity	18.577	5.625	3	1	publication
+condensed fuel	18.577	5.625	3	1	publication
+james de	18.577	5.625	3	1	publication
+markan akshit	18.577	5.625	3	1	publication
+buoyancy	17.632	8.000	1	5	curated_keywords
+real	17.383	6.000	3	2	hypothesis
+deris	16.513	5.000	2	1	publication
+emulation	16.513	5.000	2	1	publication
+frida	16.513	5.000	2	1	publication
+hees	16.513	5.000	2	1	publication
+kuznetsov	16.513	5.000	2	1	publication
+markus	16.513	5.000	2	1	publication
+snegirev	16.513	5.000	2	1	publication
+van	16.513	5.000	2	1	publication
+vermina	16.513	5.000	2	1	publication
+range	16.399	8.000	4	6	approach,hypothesis,objective
+flight	16.280	12.000	6	13	approach,objective
+consider	15.657	6.000	3	3	objective
+gaseous	15.287	8.500	3	8	approach,publication,sub_research_area
+materials	15.287	8.500	4	8	hypothesis,publication,research_impacts
+tests	15.108	10.000	5	11	approach,hypothesis
+acme bre	14.862	4.500	1	1	acronym
+burning conditions	14.862	4.500	3	1	hypothesis,objective
+condensed-phase	14.862	4.500	2	1	publication,research_impacts
+flux sensor	14.862	4.500	3	1	approach
+maps	14.862	4.500	2	1	hypothesis,publication
+quasi-steady burning	14.862	4.500	3	1	hypothesis,research_impacts
+porous burner	14.678	5.625	3	3	publication
+patrick	14.486	5.000	2	2	publication
+yi	14.486	5.000	2	2	publication
+modeling	14.388	8.000	1	8	curated_keywords
+surface	14.388	8.000	4	8	approach
+gas	14.372	7.500	3	7	publication
+james de ris	13.623	4.125	3	1	publication
+porous burner microgravity	13.623	4.125	3	1	publication
+quintiere james de	13.623	4.125	3	1	publication
+fire	13.567	10.000	2	13	curated_keywords,research_impacts
+safety	13.567	10.000	2	13	curated_keywords,research_impacts
+liquid	13.324	6.500	3	6	approach,hypothesis,publication
+experimental	13.228	9.750	5	13	file_folders,filenames,proposal_title,publication
+flow rate	13.224	6.000	4	5	approach
+properties	13.224	6.000	3	5	hypothesis,objective,research_impacts
+achieved	13.210	4.000	2	1	hypothesis
+ambients	13.210	4.000	2	1	objective
+establishing	13.210	4.000	2	1	hypothesis
+gasification	13.210	4.000	2	1	hypothesis
+represent	13.210	4.000	2	1	hypothesis
+steadied	13.210	4.000	2	1	approach
+oxygen	12.783	8.000	4	10	approach,objective,research_impacts
+small	12.590	7.000	3	8	approach,publication
+diffusion flames	12.583	7.875	2	10	curated_keywords,publication
+akshit sunderland	12.385	3.750	2	1	publication
+burning small	12.385	3.750	2	1	publication
+emulation condensed	12.385	3.750	2	1	publication
+emulator bre	12.385	3.750	2	1	publication
+gas burner	12.385	3.750	2	1	publication
+hees patrick	12.385	3.750	2	1	publication
+james van	12.385	3.750	2	1	publication
+john stocker	12.385	3.750	2	1	publication
+parham quintiere	12.385	3.750	2	1	publication
+quiescent ambient	12.385	3.750	2	1	publication
+small flat	12.385	3.750	2	1	publication
+van hees	12.385	3.750	2	1	publication
+zhang yi	12.385	3.750	2	1	publication
+o2	12.299	6.000	3	6	objective
+proposed	12.299	6.000	3	6	approach,hypothesis
+quasi-steady	12.299	6.000	3	6	hypothesis,research_impacts
+sensor	12.299	6.000	3	6	approach
+transient	11.931	5.000	2	4	publication
+fuel flow	11.742	4.500	3	3	approach
+material	11.690	6.500	3	8	objective,publication,research_impacts
+gaseous fuels	11.633	4.875	2	4	publication,sub_research_area
+considered	11.588	4.000	2	2	objective,research_impacts
+established	11.588	4.000	2	2	approach,research_impacts
+dennis	11.498	6.000	3	7	people,publication
+solid	11.498	6.000	3	7	approach,hypothesis
+flammability maps	11.146	3.375	2	1	hypothesis,publication
+ignition extinction	11.146	3.375	2	1	approach,publication
+michael	11.020	5.000	2	5	publication
+combustion microgravity burning	10.899	3.300	1	1	title
+heat flux sensor	10.899	3.300	3	1	approach
+microgravity burning rate	10.899	3.300	1	1	title
+fuel flames	10.864	3.750	2	2	publication
+flames gaseous	10.744	4.875	2	5	publication,sub_research_area
+applications	10.738	4.500	2	4	approach,publication
+analysis	10.731	7.500	3	12	publication
+1-g	10.438	4.000	2	3	approach
+atmosphere	10.438	4.000	2	3	objective,research_impacts
+cone	10.438	4.000	2	3	hypothesis,research_impacts
+n2	10.438	4.000	2	3	objective
+preliminary	10.438	4.000	2	3	approach,research_impacts
+produced	10.438	4.000	2	3	approach
+fire safety	10.175	7.500	2	13	curated_keywords,research_impacts
+stocker	10.159	6.000	3	9	people,publication
+testing	10.159	6.000	3	9	approach
+combustion smoke	9.908	3.000	2	1	hypothesis
+condensed fuels	9.908	3.000	2	1	hypothesis,objective
+consider conditions	9.908	3.000	2	1	objective
+emulated	9.908	3.000	1	1	proposal_title
+flammability map	9.908	3.000	2	1	approach
+heat combustion	9.908	3.000	2	1	hypothesis
+heat gasification	9.908	3.000	2	1	hypothesis
+limit heat	9.908	3.000	2	1	approach
+material properties	9.908	3.000	2	1	objective,research_impacts
+microgravity function	9.908	3.000	2	1	hypothesis
+produced flammability	9.908	3.000	2	1	approach
+psia oxygen	9.908	3.000	2	1	objective
+quiescent microgravity	9.908	3.000	2	1	approach,objective
+real solid	9.908	3.000	2	1	hypothesis
+temperature burner	9.908	3.000	2	1	approach
+temperature limit	9.908	3.000	2	1	approach
+temperature steadied	9.908	3.000	2	1	approach
+advanced	9.587	6.000	1	10	title
+corresponding	9.545	4.000	2	4	research_impacts
+map	9.545	4.000	2	4	approach
+akshit sunderland peter	9.082	2.750	2	1	publication
+burning small flat	9.082	2.750	2	1	publication
+condensed fuel flames	9.082	2.750	2	1	publication
+dehghani parham quintiere	9.082	2.750	2	1	publication
+emulation condensed fuel	9.082	2.750	2	1	publication
+james van hees	9.082	2.750	2	1	publication
+john stocker dennis	9.082	2.750	2	1	publication
+markan akshit sunderland	9.082	2.750	2	1	publication
+parham quintiere james	9.082	2.750	2	1	publication
+quintiere james van	9.082	2.750	2	1	publication
+rate emulator bre	9.082	2.750	2	1	publication
+van hees patrick	9.082	2.750	2	1	publication
+gravity	9.014	7.000	3	14	approach,proposal_title
+point	8.816	4.000	2	5	hypothesis
+burner surface	8.691	3.000	2	2	approach
+calorimeter test	8.691	3.000	2	2	hypothesis,research_impacts
+cone calorimeter	8.691	3.000	2	2	hypothesis,research_impacts
+smoke point	8.691	3.000	2	2	hypothesis
+solid fuels	8.691	3.000	2	2	approach,hypothesis
+advanced combustion	8.623	4.500	1	7	title
+model	8.623	4.500	2	7	approach,publication
+flames gaseous fuels	8.531	3.575	2	4	publication,sub_research_area
+alexander	8.256	2.500	1	1	publication
+auth	8.256	2.500	1	1	publication
+demonstrating	8.256	2.500	1	1	publication
+egor	8.256	2.500	1	1	publication
+ekaterina	8.256	2.500	1	1	publication
+ellipsoidal	8.256	2.500	1	1	publication
+emulate	8.256	2.500	1	1	publication
+emulating	8.256	2.500	1	1	publication
+eric	8.256	2.500	1	1	publication
+fueled	8.256	2.500	1	1	publication
+gollner	8.256	2.500	1	1	publication
+guo	8.256	2.500	1	1	publication
+haiqing	8.256	2.500	1	1	publication
+jg	8.256	2.500	1	1	publication
+jl	8.256	2.500	1	1	publication
+low-momentum	8.256	2.500	1	1	publication
+lundstr	8.256	2.500	1	1	publication
+matt	8.256	2.500	1	1	publication
+orientations	8.256	2.500	1	1	publication
+pb	8.256	2.500	1	1	publication
+plathner	8.256	2.500	1	1	publication
+small-scale	8.256	2.500	1	1	publication
+sustained	8.256	2.500	1	1	publication
+wicks	8.256	2.500	1	1	publication
+spacecraft	8.140	6.000	3	13	research_impacts
+objectives	7.726	6.000	3	14	approach,objective
+stocker dennis	7.687	3.750	2	6	publication
+hypothesis	7.665	4.000	2	7	hypothesis
+smoke	7.665	4.000	2	7	hypothesis
+combustion microgravity	7.619	4.500	1	9	title
+emulated burning	7.431	2.250	1	1	proposal_title
+experimental emulated	7.431	2.250	1	1	proposal_title
+gravity levels	7.431	2.250	1	1	proposal_title
+rate gravity	7.431	2.250	1	1	proposal_title
+normal	7.339	6.000	3	15	approach,research_impacts
+burner surface temperature	7.266	2.200	2	1	approach
+combustion smoke point	7.266	2.200	2	1	hypothesis
+heat combustion smoke	7.266	2.200	2	1	hypothesis
+limit heat flux	7.266	2.200	2	1	approach
+produced flammability map	7.266	2.200	2	1	approach
+surface temperature burner	7.266	2.200	2	1	approach
+temperature limit heat	7.266	2.200	2	1	approach
+copper	7.243	2.500	1	2	publication
+dotson	7.243	2.500	1	2	publication
+measuring	7.243	2.500	1	2	publication
+mj	7.243	2.500	1	2	publication
+supplied	7.243	2.500	1	2	publication
+towards	7.243	2.500	1	2	publication
+function	7.194	4.000	2	8	hypothesis
+pressures	7.194	4.000	2	8	objective
+fires	7.190	4.500	2	10	publication,research_impacts
+advanced combustion microgravity	6.764	3.300	1	6	title
+air flow	6.612	3.000	2	5	research_impacts
+extinction limits	6.612	3.000	2	5	approach,objective
+levels	6.612	3.000	1	5	proposal_title
+10.2	6.605	2.000	1	1	objective
+14.7	6.605	2.000	1	1	objective
+26.5	6.605	2.000	1	1	objective
+8.2	6.605	2.000	1	1	objective
+absorbed	6.605	2.000	1	1	hypothesis
+accomplish	6.605	2.000	1	1	approach
+achieve	6.605	2.000	1	1	hypothesis
+alternative	6.605	2.000	1	1	research_impacts
+applied	6.605	2.000	1	1	hypothesis
+atmospheres	6.605	2.000	1	1	research_impacts
+believe	6.605	2.000	1	1	approach
+candle	6.605	2.000	1	1	hypothesis
+carry	6.605	2.000	1	1	approach
+cessation	6.605	2.000	1	1	research_impacts
+changing	6.605	2.000	1	1	hypothesis
+choice	6.605	2.000	1	1	approach
+contents	6.605	2.000	1	1	approach
+continued	6.605	2.000	1	1	approach
+continuous	6.605	2.000	1	1	approach
+despite	6.605	2.000	1	1	research_impacts
+diverse	6.605	2.000	1	1	objective
+earth-based	6.605	2.000	1	1	approach
+elevated-oxygen	6.605	2.000	1	1	research_impacts
+emphasize	6.605	2.000	1	1	objective
+equilibrate	6.605	2.000	1	1	approach
+eventually	6.605	2.000	1	1	approach
+exceeded	6.605	2.000	1	1	approach
+increases	6.605	2.000	1	1	approach
+long-duration	6.605	2.000	1	1	objective
+methodology	6.605	2.000	1	1	approach
+n2mixtures	6.605	2.000	1	1	objective
+namely	6.605	2.000	1	1	approach
+neared	6.605	2.000	1	1	approach
+notably	6.605	2.000	1	1	research_impacts
+nylon	6.605	2.000	1	1	research_impacts
+ongoing	6.605	2.000	1	1	research_impacts
+potentially	6.605	2.000	1	1	approach
+pursue	6.605	2.000	1	1	approach
+query	6.605	2.000	1	1	hypothesis
+reached	6.605	2.000	1	1	approach
+reradiation	6.605	2.000	1	1	hypothesis
+seen	6.605	2.000	1	1	research_impacts
+self-extinguished	6.605	2.000	1	1	research_impacts
+set	6.605	2.000	1	1	approach
+show	6.605	2.000	1	1	approach
+shown	6.605	2.000	1	1	hypothesis
+shut	6.605	2.000	1	1	approach
+single	6.605	2.000	1	1	approach
+slowly	6.605	2.000	1	1	hypothesis
+suggest	6.605	2.000	1	1	research_impacts
+terminate	6.605	2.000	1	1	approach
+terminated	6.605	2.000	1	1	approach
+us	6.605	2.000	1	1	approach
+usefulness	6.605	2.000	1	1	approach
+viable	6.605	2.000	1	1	approach
+want	6.605	2.000	1	1	research_impacts
+yielded	6.605	2.000	1	1	research_impacts
+kim	6.524	2.500	1	3	publication
+predictions	6.524	2.500	1	3	publication
+yu	6.524	2.500	1	3	publication
+cone calorimeter test	6.374	2.200	2	2	hypothesis,research_impacts
+akshit baum	6.192	1.875	1	1	publication
+alexander kuznetsov	6.192	1.875	1	1	publication
+analysis extinction	6.192	1.875	1	1	publication
+analysis predictions	6.192	1.875	1	1	publication
+auth eric	6.192	1.875	1	1	publication
+bre condensed	6.192	1.875	1	1	publication
+bre microgravity	6.192	1.875	1	1	publication
+burner emulate	6.192	1.875	1	1	publication
+burning emulator	6.192	1.875	1	1	publication
+burning flat	6.192	1.875	1	1	publication
+bustamante dotson	6.192	1.875	1	1	publication
+bustamante michael	6.192	1.875	1	1	publication
+combustion model	6.192	1.875	1	1	publication
+condensed-phase burning	6.192	1.875	1	1	publication
+copper calorimeter	6.192	1.875	1	1	publication
+dehghani pb	6.192	1.875	1	1	publication
+demonstrating steady	6.192	1.875	1	1	publication
+dennis baum	6.192	1.875	1	1	publication
+deris john	6.192	1.875	1	1	publication
+development burning	6.192	1.875	1	1	publication
+egor markus	6.192	1.875	1	1	publication
+ekaterina dehghani	6.192	1.875	1	1	publication
+ellipsoidal combustion	6.192	1.875	1	1	publication
+emulate condensed-phase	6.192	1.875	1	1	publication
+emulating gas	6.192	1.875	1	1	publication
+eric quintiere	6.192	1.875	1	1	publication
+experimental analysis	6.192	1.875	1	1	publication
+experimental liquid	6.192	1.875	1	1	publication
+extinction laminar	6.192	1.875	1	1	publication
+extinction low-momentum	6.192	1.875	1	1	publication
+extinction small-scale	6.192	1.875	1	1	publication
+extinction sustained	6.192	1.875	1	1	publication
+fires emulating	6.192	1.875	1	1	publication
+flame flat	6.192	1.875	1	1	publication
+flames towards	6.192	1.875	1	1	publication
+flat material	6.192	1.875	1	1	publication
+flat materials	6.192	1.875	1	1	publication
+flat porous	6.192	1.875	1	1	publication
+flat wicks	6.192	1.875	1	1	publication
+flux porous	6.192	1.875	1	1	publication
+frida quintiere	6.192	1.875	1	1	publication
+frida vermina	6.192	1.875	1	1	publication
+fueled flames	6.192	1.875	1	1	publication
+fuels supplied	6.192	1.875	1	1	publication
+gas fueled	6.192	1.875	1	1	publication
+gases microgravity	6.192	1.875	1	1	publication
+gollner michael	6.192	1.875	1	1	publication
+guo haiqing	6.192	1.875	1	1	publication
+haiqing sunderland	6.192	1.875	1	1	publication
+howard sunderland	6.192	1.875	1	1	publication
+james deris	6.192	1.875	1	1	publication
+james sunderland	6.192	1.875	1	1	publication
+jg quintiere	6.192	1.875	1	1	publication
+jl deris	6.192	1.875	1	1	publication
+john baum	6.192	1.875	1	1	publication
+john quintiere	6.192	1.875	1	1	publication
+kim matt	6.192	1.875	1	1	publication
+kuznetsov egor	6.192	1.875	1	1	publication
+kuznetsov snegirev	6.192	1.875	1	1	publication
+liquid gas	6.192	1.875	1	1	publication
+low-momentum microgravity	6.192	1.875	1	1	publication
+lundstr frida	6.192	1.875	1	1	publication
+maps microgravity	6.192	1.875	1	1	publication
+markus ekaterina	6.192	1.875	1	1	publication
+material quiescent	6.192	1.875	1	1	publication
+matt guo	6.192	1.875	1	1	publication
+measuring heat	6.192	1.875	1	1	publication
+michael gollner	6.192	1.875	1	1	publication
+michael sunderland	6.192	1.875	1	1	publication
+microgravity applications	6.192	1.875	1	1	publication
+microgravity computational	6.192	1.875	1	1	publication
+microgravity experimental	6.192	1.875	1	1	publication
+microgravity quiescent	6.192	1.875	1	1	publication
+mj bustamante	6.192	1.875	1	1	publication
+model porous	6.192	1.875	1	1	publication
+parham de	6.192	1.875	1	1	publication
+parham sunderland	6.192	1.875	1	1	publication
+patrick de	6.192	1.875	1	1	publication
+pb sunderland	6.192	1.875	1	1	publication
+plathner frida	6.192	1.875	1	1	publication
+porous copper	6.192	1.875	1	1	publication
+predictions burning	6.192	1.875	1	1	publication
+quintiere jl	6.192	1.875	1	1	publication
+small-scale fires	6.192	1.875	1	1	publication
+snegirev alexander	6.192	1.875	1	1	publication
+snegirev yu	6.192	1.875	1	1	publication
+sunderland jg	6.192	1.875	1	1	publication
+sunderland quintiere	6.192	1.875	1	1	publication
+supplied porous	6.192	1.875	1	1	publication
+sustained ignition	6.192	1.875	1	1	publication
+theoretical analysis	6.192	1.875	1	1	publication
+towards development	6.192	1.875	1	1	publication
+transient dynamics	6.192	1.875	1	1	publication
+transient ellipsoidal	6.192	1.875	1	1	publication
+vermina plathner	6.192	1.875	1	1	publication
+vermina sunderland	6.192	1.875	1	1	publication
+wicks orientations	6.192	1.875	1	1	publication
+yi bustamante	6.192	1.875	1	1	publication
+yi kim	6.192	1.875	1	1	publication
+yu markus	6.192	1.875	1	1	publication
+zhang bustamante	6.192	1.875	1	1	publication
+gases	5.966	2.500	1	4	publication
+theoretical	5.966	2.500	1	4	publication
+aims	5.794	2.000	1	2	hypothesis
+basis	5.794	2.000	1	2	hypothesis
+cfd	5.794	2.000	1	2	approach
+circular	5.794	2.000	1	2	objective
+commence	5.794	2.000	1	2	approach
+continue	5.794	2.000	1	2	approach
+desired	5.794	2.000	1	2	objective
+enable	5.794	2.000	1	2	hypothesis
+exist	5.794	2.000	1	2	hypothesis
+explore	5.794	2.000	1	2	approach
+extinguish	5.794	2.000	1	2	approach
+follows	5.794	2.000	1	2	objective
+found	5.794	2.000	1	2	approach
+given	5.794	2.000	1	2	approach
+human	5.794	2.000	1	2	objective
+increments	5.794	2.000	1	2	approach
+initially	5.794	2.000	1	2	approach
+instrumentation	5.794	2.000	1	2	approach
+involve	5.794	2.000	1	2	approach
+putting	5.794	2.000	1	2	research_impacts
+radiant	5.794	2.000	1	2	hypothesis
+refine	5.794	2.000	1	2	approach
+remains	5.794	2.000	1	2	approach
+seeks	5.794	2.000	1	2	objective
+step	5.794	2.000	1	2	research_impacts
+terms	5.794	2.000	1	2	objective
+vary	5.794	2.000	1	2	approach
+varying	5.794	2.000	1	2	approach
+verify	5.794	2.000	1	2	approach
+whereas	5.794	2.000	1	2	research_impacts
+air	5.723	4.000	2	12	research_impacts
+limits	5.723	4.000	2	12	approach,objective
+time	5.723	4.000	2	12	approach,research_impacts
+burning rate gravity	5.449	1.650	1	1	proposal_title
+emulated burning rate	5.449	1.650	1	1	proposal_title
+experimental emulated burning	5.449	1.650	1	1	proposal_title
+rate gravity levels	5.449	1.650	1	1	proposal_title
+dotson sunderland	5.432	1.875	1	2	publication
+dynamics radiative	5.432	1.875	1	2	publication
+flames gases	5.432	1.875	1	2	publication
+fuel burning	5.432	1.875	1	2	publication
+microgravity diffusion	5.432	1.875	1	2	publication
+cir acme	5.369	2.250	1	4	experiment_hardware
+absence	5.219	2.000	1	3	research_impacts
+broad	5.219	2.000	1	3	approach
+c2h4	5.219	2.000	1	3	objective
+ch4	5.219	2.000	1	3	objective
+concentrations	5.219	2.000	1	3	objective
+diluent	5.219	2.000	1	3	approach
+drop	5.219	2.000	1	3	approach
+examined	5.219	2.000	1	3	objective
+facility	5.219	2.000	1	3	approach
+followed	5.219	2.000	1	3	approach
+inert	5.219	2.000	1	3	hypothesis
+predictive	5.219	2.000	1	3	approach
+related	5.219	2.000	1	3	objective
+relevant	5.219	2.000	1	3	research_impacts
+ventilation	5.219	2.000	1	3	research_impacts
+cir	5.079	3.000	1	9	experiment_hardware
+rack	5.079	3.000	1	9	experiment_hardware
+1-g applications	4.954	1.500	1	1	approach
+1-g ignition	4.954	1.500	1	1	approach
+10.2 psia	4.954	1.500	1	1	objective
+14.7 psia	4.954	1.500	1	1	objective
+26.5 8.2	4.954	1.500	1	1	objective
+8.2 psia	4.954	1.500	1	1	objective
+80nssc20m0119	4.954	1.500	1	1	funding
+absence air	4.954	1.500	1	1	research_impacts
+absorbed inert	4.954	1.500	1	1	hypothesis
+accomplish objectives	4.954	1.500	1	1	approach
+achieve steady	4.954	1.500	1	1	hypothesis
+achieved slowly	4.954	1.500	1	1	hypothesis
+achieved steady	4.954	1.500	1	1	hypothesis
+addition flight	4.954	1.500	1	1	approach
+aims query	4.954	1.500	1	1	hypothesis
+alternative flammability	4.954	1.500	1	1	research_impacts
+ambient o2	4.954	1.500	1	1	objective
+ambient terms	4.954	1.500	1	1	objective
+ambients o2	4.954	1.500	1	1	objective
+ambients pressures	4.954	1.500	1	1	objective
+applications show	4.954	1.500	1	1	approach
+applied radiant	4.954	1.500	1	1	hypothesis
+atmosphere human	4.954	1.500	1	1	objective
+atmosphere oxygen	4.954	1.500	1	1	research_impacts
+atmospheres considered	4.954	1.500	1	1	research_impacts
+basis establishing	4.954	1.500	1	1	hypothesis
+behavior long-duration	4.954	1.500	1	1	objective
+believe better	4.954	1.500	1	1	approach
+better control	4.954	1.500	1	1	approach
+bre 1-g	4.954	1.500	1	1	approach
+bre burner	4.954	1.500	1	1	research_impacts
+bre determine	4.954	1.500	1	1	hypothesis
+bre flight	4.954	1.500	1	1	objective
+bre hypothesizes	4.954	1.500	1	1	hypothesis
+bre still	4.954	1.500	1	1	research_impacts
+bre yielded	4.954	1.500	1	1	research_impacts
+burner equilibrate	4.954	1.500	1	1	approach
+burner increases	4.954	1.500	1	1	approach
+burner temperature	4.954	1.500	1	1	approach
+burners diameter	4.954	1.500	1	1	objective
+burning achieved	4.954	1.500	1	1	hypothesis
+burning burner	4.954	1.500	1	1	approach
+burning corresponding	4.954	1.500	1	1	research_impacts
+burning guide	4.954	1.500	1	1	approach
+burning represent	4.954	1.500	1	1	hypothesis
+c2h4 n2mixtures	4.954	1.500	1	1	objective
+candle flame	4.954	1.500	1	1	hypothesis
+carry microgravity	4.954	1.500	1	1	approach
+cessation ventilation	4.954	1.500	1	1	research_impacts
+cfd model	4.954	1.500	1	1	approach
+ch4 n2	4.954	1.500	1	1	objective
+chamber contents	4.954	1.500	1	1	approach
+changing unsteady	4.954	1.500	1	1	hypothesis
+choice diluent	4.954	1.500	1	1	approach
+circular burners	4.954	1.500	1	1	objective
+co2 desired	4.954	1.500	1	1	objective
+combustion air	4.954	1.500	1	1	research_impacts
+commence followed	4.954	1.500	1	1	approach
+comparison ground-based	4.954	1.500	1	1	approach
+concentration pressure	4.954	1.500	1	1	approach
+concentrations pressures	4.954	1.500	1	1	objective
+condensed-phase materials	4.954	1.500	1	1	research_impacts
+conditions addition	4.954	1.500	1	1	approach
+conditions condensed	4.954	1.500	1	1	hypothesis
+conditions established	4.954	1.500	1	1	approach
+conditions objective	4.954	1.500	1	1	objective
+conditions objectives	4.954	1.500	1	1	objective
+conditions observed	4.954	1.500	1	1	approach
+conditions pursue	4.954	1.500	1	1	approach
+conditions quiescent	4.954	1.500	1	1	objective
+conditions related	4.954	1.500	1	1	objective
+consider o2	4.954	1.500	1	1	objective
+considered atmosphere	4.954	1.500	1	1	objective
+considered future	4.954	1.500	1	1	research_impacts
+contents namely	4.954	1.500	1	1	approach
+continue tests	4.954	1.500	1	1	approach
+continued burning	4.954	1.500	1	1	approach
+continuous set	4.954	1.500	1	1	approach
+control earth-based	4.954	1.500	1	1	approach
+corresponding condensed-phase	4.954	1.500	1	1	research_impacts
+corresponding microgravity	4.954	1.500	1	1	research_impacts
+desired consider	4.954	1.500	1	1	objective
+despite absence	4.954	1.500	1	1	research_impacts
+determine range	4.954	1.500	1	1	hypothesis
+diameter consider	4.954	1.500	1	1	objective
+diluent oxygen	4.954	1.500	1	1	approach
+diverse range	4.954	1.500	1	1	objective
+drop facility	4.954	1.500	1	1	approach
+earth-based ignition	4.954	1.500	1	1	approach
+elevated-oxygen atmospheres	4.954	1.500	1	1	research_impacts
+emphasize fuel	4.954	1.500	1	1	objective
+enable cone	4.954	1.500	1	1	hypothesis
+environment hypothesized	4.954	1.500	1	1	hypothesis
+equilibrate temperature	4.954	1.500	1	1	approach
+establish 1-g	4.954	1.500	1	1	approach
+establish burning	4.954	1.500	1	1	objective
+establish validation	4.954	1.500	1	1	approach
+establish viable	4.954	1.500	1	1	approach
+established chamber	4.954	1.500	1	1	approach
+established step	4.954	1.500	1	1	research_impacts
+establishing flammability	4.954	1.500	1	1	hypothesis
+establishing range	4.954	1.500	1	1	hypothesis
+eventually flame	4.954	1.500	1	1	approach
+examined 14.7	4.954	1.500	1	1	objective
+exceeded limit	4.954	1.500	1	1	approach
+exist regime	4.954	1.500	1	1	hypothesis
+explore normal	4.954	1.500	1	1	approach
+extinction continued	4.954	1.500	1	1	approach
+extinguish surface	4.954	1.500	1	1	approach
+facility testing	4.954	1.500	1	1	approach
+fires ongoing	4.954	1.500	1	1	research_impacts
+flame extinguish	4.954	1.500	1	1	approach
+flame remains	4.954	1.500	1	1	approach
+flame shown	4.954	1.500	1	1	hypothesis
+flames initially	4.954	1.500	1	1	approach
+flames normal	4.954	1.500	1	1	research_impacts
+flammability test	4.954	1.500	1	1	research_impacts
+flight normal	4.954	1.500	1	1	approach
+flight objectives	4.954	1.500	1	1	objective
+flight potentially	4.954	1.500	1	1	approach
+flight proposed	4.954	1.500	1	1	approach
+flight seeks	4.954	1.500	1	1	objective
+flow cessation	4.954	1.500	1	1	research_impacts
+flow commence	4.954	1.500	1	1	approach
+flow conditions	4.954	1.500	1	1	approach
+flow notably	4.954	1.500	1	1	research_impacts
+flow terminated	4.954	1.500	1	1	approach
+flux applied	4.954	1.500	1	1	hypothesis
+flux heat	4.954	1.500	1	1	hypothesis
+flux vary	4.954	1.500	1	1	approach
+follows observe	4.954	1.500	1	1	objective
+found burner	4.954	1.500	1	1	approach
+fuel absorbed	4.954	1.500	1	1	hypothesis
+fuel conditions	4.954	1.500	1	1	objective
+fuel liquid	4.954	1.500	1	1	hypothesis
+fuels achieve	4.954	1.500	1	1	hypothesis
+fuels consider	4.954	1.500	1	1	objective
+fuels establish	4.954	1.500	1	1	approach
+function heat	4.954	1.500	1	1	hypothesis
+function materials	4.954	1.500	1	1	hypothesis
+gaseous liquid	4.954	1.500	1	1	approach
+gasification fuel	4.954	1.500	1	1	hypothesis
+gasification reradiation	4.954	1.500	1	1	hypothesis
+given flow	4.954	1.500	1	1	approach
+gravity believe	4.954	1.500	1	1	approach
+gravity testing	4.954	1.500	1	1	approach
+guide us	4.954	1.500	1	1	approach
+help establish	4.954	1.500	1	1	approach
+human missions	4.954	1.500	1	1	objective
+hypothesis establishing	4.954	1.500	1	1	hypothesis
+hypothesis heat	4.954	1.500	1	1	hypothesis
+hypothesized bre	4.954	1.500	1	1	hypothesis
+hypothesizes exist	4.954	1.500	1	1	hypothesis
+ignition flames	4.954	1.500	1	1	approach
+ignition limit	4.954	1.500	1	1	approach
+ignition testing	4.954	1.500	1	1	approach
+important relevant	4.954	1.500	1	1	research_impacts
+increase alternative	4.954	1.500	1	1	research_impacts
+increases flame	4.954	1.500	1	1	approach
+increments extinction	4.954	1.500	1	1	approach
+inert matrix	4.954	1.500	1	1	hypothesis
+initially observed	4.954	1.500	1	1	approach
+instrumentation help	4.954	1.500	1	1	approach
+involve gaseous	4.954	1.500	1	1	approach
+key hypothesis	4.954	1.500	1	1	hypothesis
+limit found	4.954	1.500	1	1	approach
+limit state	4.954	1.500	1	1	approach
+limit tests	4.954	1.500	1	1	approach
+limits available	4.954	1.500	1	1	approach
+liquid solid	4.954	1.500	1	1	approach
+long-duration microgravity	4.954	1.500	1	1	objective
+map eventually	4.954	1.500	1	1	approach
+map ignition	4.954	1.500	1	1	approach
+maps real	4.954	1.500	1	1	hypothesis
+materials key	4.954	1.500	1	1	hypothesis
+materials pmma	4.954	1.500	1	1	research_impacts
+materials properties	4.954	1.500	1	1	hypothesis
+matrix achieved	4.954	1.500	1	1	hypothesis
+measure material	4.954	1.500	1	1	research_impacts
+microgravity ambient	4.954	1.500	1	1	objective
+microgravity candle	4.954	1.500	1	1	hypothesis
+microgravity ch4	4.954	1.500	1	1	objective
+microgravity despite	4.954	1.500	1	1	research_impacts
+microgravity explore	4.954	1.500	1	1	approach
+microgravity flames	4.954	1.500	1	1	research_impacts
+missions examined	4.954	1.500	1	1	objective
+mixture represent	4.954	1.500	1	1	hypothesis
+model quiescent	4.954	1.500	1	1	approach
+n2 ambients	4.954	1.500	1	1	objective
+n2 c2h4	4.954	1.500	1	1	objective
+n2mixtures porous	4.954	1.500	1	1	objective
+namely choice	4.954	1.500	1	1	approach
+neared extinction	4.954	1.500	1	1	approach
+nnx10ad98g	4.954	1.500	1	1	funding
+nnx15ad06a	4.954	1.500	1	1	funding
+normal atmosphere	4.954	1.500	1	1	research_impacts
+notably seen	4.954	1.500	1	1	research_impacts
+nylon observed	4.954	1.500	1	1	research_impacts
+o2 co2	4.954	1.500	1	1	objective
+o2 concentrations	4.954	1.500	1	1	objective
+o2 n2	4.954	1.500	1	1	objective
+objective ambients	4.954	1.500	1	1	objective
+objectives extinction	4.954	1.500	1	1	objective
+objectives follows	4.954	1.500	1	1	objective
+observe burning	4.954	1.500	1	1	objective
+observed bre	4.954	1.500	1	1	research_impacts
+observed flow	4.954	1.500	1	1	approach
+observed single	4.954	1.500	1	1	approach
+observed varying	4.954	1.500	1	1	approach
+ongoing combustion	4.954	1.500	1	1	research_impacts
+operations comparison	4.954	1.500	1	1	approach
+oxygen 10.2	4.954	1.500	1	1	objective
+oxygen emphasize	4.954	1.500	1	1	objective
+oxygen self-extinguished	4.954	1.500	1	1	research_impacts
+performed verify	4.954	1.500	1	1	approach
+pmma nylon	4.954	1.500	1	1	research_impacts
+point enable	4.954	1.500	1	1	hypothesis
+point heat	4.954	1.500	1	1	hypothesis
+porous circular	4.954	1.500	1	1	objective
+possible proposed	4.954	1.500	1	1	hypothesis
+potential real	4.954	1.500	1	1	hypothesis
+potentially predictive	4.954	1.500	1	1	approach
+predictive methodology	4.954	1.500	1	1	approach
+preliminary flight	4.954	1.500	1	1	approach
+preliminary suggest	4.954	1.500	1	1	research_impacts
+pressures ambient	4.954	1.500	1	1	objective
+pressures considered	4.954	1.500	1	1	objective
+procedures test	4.954	1.500	1	1	approach
+process produced	4.954	1.500	1	1	approach
+properties corresponding	4.954	1.500	1	1	research_impacts
+properties specific	4.954	1.500	1	1	objective
+properties steady	4.954	1.500	1	1	hypothesis
+proposed microgravity	4.954	1.500	1	1	approach
+proposed preliminary	4.954	1.500	1	1	approach
+proposed tests	4.954	1.500	1	1	hypothesis
+psia 26.5	4.954	1.500	1	1	objective
+pursue cfd	4.954	1.500	1	1	approach
+putting spacecraft	4.954	1.500	1	1	research_impacts
+query hypothesis	4.954	1.500	1	1	hypothesis
+radiant heat	4.954	1.500	1	1	hypothesis
+range burning	4.954	1.500	1	1	hypothesis
+range condensed	4.954	1.500	1	1	objective
+range conditions	4.954	1.500	1	1	approach
+range quasi-steady	4.954	1.500	1	1	hypothesis
+rate burner	4.954	1.500	1	1	approach
+rate reduced	4.954	1.500	1	1	approach
+rate shut	4.954	1.500	1	1	approach
+reached time	4.954	1.500	1	1	approach
+real materials	4.954	1.500	1	1	hypothesis
+reduced small	4.954	1.500	1	1	approach
+refine procedures	4.954	1.500	1	1	approach
+related diverse	4.954	1.500	1	1	objective
+relevant spacecraft	4.954	1.500	1	1	research_impacts
+remains steady	4.954	1.500	1	1	approach
+represent potential	4.954	1.500	1	1	hypothesis
+represent real	4.954	1.500	1	1	hypothesis
+reradiation heat	4.954	1.500	1	1	hypothesis
+safety quasi-steady	4.954	1.500	1	1	research_impacts
+seeks establish	4.954	1.500	1	1	objective
+seen elevated-oxygen	4.954	1.500	1	1	research_impacts
+self-extinguished short	4.954	1.500	1	1	research_impacts
+sensor exceeded	4.954	1.500	1	1	approach
+sensor neared	4.954	1.500	1	1	approach
+sensor reached	4.954	1.500	1	1	approach
+set produced	4.954	1.500	1	1	approach
+show usefulness	4.954	1.500	1	1	approach
+shut process	4.954	1.500	1	1	approach
+single test	4.954	1.500	1	1	approach
+slowly changing	4.954	1.500	1	1	hypothesis
+small increments	4.954	1.500	1	1	approach
+solid fuel	4.954	1.500	1	1	hypothesis
+spacecraft whereas	4.954	1.500	1	1	research_impacts
+specific flight	4.954	1.500	1	1	objective
+state flow	4.954	1.500	1	1	approach
+steadied heat	4.954	1.500	1	1	approach
+steadied temperature	4.954	1.500	1	1	approach
+steady continuous	4.954	1.500	1	1	approach
+step putting	4.954	1.500	1	1	research_impacts
+still preliminary	4.954	1.500	1	1	research_impacts
+suggest want	4.954	1.500	1	1	research_impacts
+temperature heat	4.954	1.500	1	1	approach
+terminate given	4.954	1.500	1	1	approach
+terminated test	4.954	1.500	1	1	approach
+terms material	4.954	1.500	1	1	objective
+test basis	4.954	1.500	1	1	hypothesis
+test cone	4.954	1.500	1	1	research_impacts
+test instrumentation	4.954	1.500	1	1	approach
+test measure	4.954	1.500	1	1	research_impacts
+test surface	4.954	1.500	1	1	approach
+test terminate	4.954	1.500	1	1	approach
+test test	4.954	1.500	1	1	hypothesis
+testing carry	4.954	1.500	1	1	approach
+testing continue	4.954	1.500	1	1	approach
+testing refine	4.954	1.500	1	1	approach
+tests aims	4.954	1.500	1	1	hypothesis
+tests proposed	4.954	1.500	1	1	approach
+tests test	4.954	1.500	1	1	approach
+time bre	4.954	1.500	1	1	research_impacts
+time fuel	4.954	1.500	1	1	approach
+unsteady flames	4.954	1.500	1	1	hypothesis
+us flight	4.954	1.500	1	1	approach
+usefulness establish	4.954	1.500	1	1	approach
+validation bre	4.954	1.500	1	1	approach
+vary broad	4.954	1.500	1	1	approach
+varying fuel	4.954	1.500	1	1	approach
+ventilation established	4.954	1.500	1	1	research_impacts
+verify operations	4.954	1.500	1	1	approach
+viable flow	4.954	1.500	1	1	approach
+want increase	4.954	1.500	1	1	research_impacts
+whereas flames	4.954	1.500	1	1	research_impacts
+yielded important	4.954	1.500	1	1	research_impacts
+materials microgravity	4.893	1.875	1	3	publication
+laminar	4.791	2.500	1	7	publication
+burners	4.773	2.000	1	4	objective
+control	4.773	2.000	1	4	approach
+guide	4.773	2.000	1	4	approach
+hypothesized	4.773	2.000	1	4	hypothesis
+observe	4.773	2.000	1	4	objective
+pmma	4.773	2.000	1	4	research_impacts
+short	4.773	2.000	1	4	research_impacts
+still	4.773	2.000	1	4	research_impacts
+unsteady	4.773	2.000	1	4	hypothesis
+validation	4.773	2.000	1	4	approach
+akshit baum howard	4.541	1.375	1	1	publication
+alexander kuznetsov egor	4.541	1.375	1	1	publication
+analysis extinction sustained	4.541	1.375	1	1	publication
+analysis predictions burning	4.541	1.375	1	1	publication
+auth eric quintiere	4.541	1.375	1	1	publication
+baum howard sunderland	4.541	1.375	1	1	publication
+bre condensed fuel	4.541	1.375	1	1	publication
+bre microgravity applications	4.541	1.375	1	1	publication
+burner emulate condensed-phase	4.541	1.375	1	1	publication
+burner microgravity computational	4.541	1.375	1	1	publication
+burning flat wicks	4.541	1.375	1	1	publication
+burning microgravity burning	4.541	1.375	1	1	publication
+burning microgravity experimental	4.541	1.375	1	1	publication
+bustamante dotson sunderland	4.541	1.375	1	1	publication
+bustamante michael gollner	4.541	1.375	1	1	publication
+combustion model porous	4.541	1.375	1	1	publication
+condensed fuel burning	4.541	1.375	1	1	publication
+dehghani parham de	4.541	1.375	1	1	publication
+dehghani parham sunderland	4.541	1.375	1	1	publication
+dehghani pb sunderland	4.541	1.375	1	1	publication
+demonstrating steady burning	4.541	1.375	1	1	publication
+dennis baum howard	4.541	1.375	1	1	publication
+deris john stocker	4.541	1.375	1	1	publication
+development burning rate	4.541	1.375	1	1	publication
+diffusion flame flat	4.541	1.375	1	1	publication
+dotson sunderland quintiere	4.541	1.375	1	1	publication
+dynamics radiative extinction	4.541	1.375	1	1	publication
+egor markus ekaterina	4.541	1.375	1	1	publication
+ekaterina dehghani parham	4.541	1.375	1	1	publication
+ellipsoidal combustion model	4.541	1.375	1	1	publication
+emulate condensed-phase burning	4.541	1.375	1	1	publication
+emulating gas burner	4.541	1.375	1	1	publication
+emulator bre condensed	4.541	1.375	1	1	publication
+emulator bre microgravity	4.541	1.375	1	1	publication
+eric quintiere james	4.541	1.375	1	1	publication
+experimental liquid gas	4.541	1.375	1	1	publication
+extinction laminar diffusion	4.541	1.375	1	1	publication
+extinction low-momentum microgravity	4.541	1.375	1	1	publication
+extinction small-scale fires	4.541	1.375	1	1	publication
+extinction sustained ignition	4.541	1.375	1	1	publication
+fires emulating gas	4.541	1.375	1	1	publication
+flame flat porous	4.541	1.375	1	1	publication
+flames gases microgravity	4.541	1.375	1	1	publication
+flames towards development	4.541	1.375	1	1	publication
+flammability maps microgravity	4.541	1.375	1	1	publication
+flat material quiescent	4.541	1.375	1	1	publication
+flat materials microgravity	4.541	1.375	1	1	publication
+flat porous burner	4.541	1.375	1	1	publication
+flat wicks orientations	4.541	1.375	1	1	publication
+flux porous burner	4.541	1.375	1	1	publication
+frida quintiere james	4.541	1.375	1	1	publication
+frida vermina sunderland	4.541	1.375	1	1	publication
+fuel burning microgravity	4.541	1.375	1	1	publication
+fuel flames gaseous	4.541	1.375	1	1	publication
+fuel flames gases	4.541	1.375	1	1	publication
+fueled flames towards	4.541	1.375	1	1	publication
+fuels supplied porous	4.541	1.375	1	1	publication
+gas burner emulate	4.541	1.375	1	1	publication
+gas fueled flames	4.541	1.375	1	1	publication
+gaseous fuels supplied	4.541	1.375	1	1	publication
+gollner michael sunderland	4.541	1.375	1	1	publication
+guo haiqing sunderland	4.541	1.375	1	1	publication
+haiqing sunderland peter	4.541	1.375	1	1	publication
+heat flux porous	4.541	1.375	1	1	publication
+hees patrick de	4.541	1.375	1	1	publication
+howard sunderland peter	4.541	1.375	1	1	publication
+ignition extinction small-scale	4.541	1.375	1	1	publication
+james deris john	4.541	1.375	1	1	publication
+james sunderland peter	4.541	1.375	1	1	publication
+jg quintiere jl	4.541	1.375	1	1	publication
+john baum howard	4.541	1.375	1	1	publication
+john quintiere james	4.541	1.375	1	1	publication
+kim matt guo	4.541	1.375	1	1	publication
+kuznetsov egor markus	4.541	1.375	1	1	publication
+kuznetsov snegirev yu	4.541	1.375	1	1	publication
+liquid gas fueled	4.541	1.375	1	1	publication
+low-momentum microgravity diffusion	4.541	1.375	1	1	publication
+lundstr frida vermina	4.541	1.375	1	1	publication
+maps microgravity burning	4.541	1.375	1	1	publication
+markan akshit baum	4.541	1.375	1	1	publication
+markus ekaterina dehghani	4.541	1.375	1	1	publication
+material quiescent ambient	4.541	1.375	1	1	publication
+materials microgravity quiescent	4.541	1.375	1	1	publication
+matt guo haiqing	4.541	1.375	1	1	publication
+measuring heat flux	4.541	1.375	1	1	publication
+michael gollner michael	4.541	1.375	1	1	publication
+michael sunderland peter	4.541	1.375	1	1	publication
+microgravity burning emulator	4.541	1.375	1	1	publication
+microgravity burning small	4.541	1.375	1	1	publication
+microgravity experimental analysis	4.541	1.375	1	1	publication
+microgravity quiescent ambient	4.541	1.375	1	1	publication
+model porous burner	4.541	1.375	1	1	publication
+parham de ris	4.541	1.375	1	1	publication
+parham sunderland peter	4.541	1.375	1	1	publication
+patrick de ris	4.541	1.375	1	1	publication
+pb sunderland jg	4.541	1.375	1	1	publication
+plathner frida quintiere	4.541	1.375	1	1	publication
+porous copper calorimeter	4.541	1.375	1	1	publication
+predictions burning microgravity	4.541	1.375	1	1	publication
+quintiere james deris	4.541	1.375	1	1	publication
+quintiere james sunderland	4.541	1.375	1	1	publication
+quintiere jl deris	4.541	1.375	1	1	publication
+radiative extinction laminar	4.541	1.375	1	1	publication
+radiative extinction low-momentum	4.541	1.375	1	1	publication
+ris john baum	4.541	1.375	1	1	publication
+ris john quintiere	4.541	1.375	1	1	publication
+ris john stocker	4.541	1.375	1	1	publication
+small flat material	4.541	1.375	1	1	publication
+small flat materials	4.541	1.375	1	1	publication
+small-scale fires emulating	4.541	1.375	1	1	publication
+snegirev alexander kuznetsov	4.541	1.375	1	1	publication
+snegirev yu markus	4.541	1.375	1	1	publication
+steady burning small	4.541	1.375	1	1	publication
+stocker dennis baum	4.541	1.375	1	1	publication
+sunderland jg quintiere	4.541	1.375	1	1	publication
+supplied porous copper	4.541	1.375	1	1	publication
+theoretical analysis predictions	4.541	1.375	1	1	publication
+towards development burning	4.541	1.375	1	1	publication
+transient dynamics radiative	4.541	1.375	1	1	publication
+transient ellipsoidal combustion	4.541	1.375	1	1	publication
+vermina plathner frida	4.541	1.375	1	1	publication
+vermina sunderland peter	4.541	1.375	1	1	publication
+yi bustamante michael	4.541	1.375	1	1	publication
+yi kim matt	4.541	1.375	1	1	publication
+zhang bustamante dotson	4.541	1.375	1	1	publication
+zhang yi bustamante	4.541	1.375	1	1	publication
+zhang yi kim	4.541	1.375	1	1	publication
+integrated	4.532	3.000	1	11	experiment_hardware
+dynamics	4.496	2.500	1	8	publication
+diameter	4.408	2.000	1	5	objective
+ground-based	4.408	2.000	1	5	approach
+hypothesizes	4.408	2.000	1	5	hypothesis
+important	4.408	2.000	1	5	research_impacts
+key	4.408	2.000	1	5	hypothesis
+matrix	4.408	2.000	1	5	hypothesis
+operations	4.408	2.000	1	5	approach
+potential	4.408	2.000	1	5	hypothesis
+procedures	4.408	2.000	1	5	approach
+regime	4.408	2.000	1	5	hypothesis
+specific	4.408	2.000	1	5	objective
+available drop	4.346	1.500	1	2	approach
+burning behavior	4.346	1.500	1	2	objective
+conditions microgravity	4.346	1.500	1	2	hypothesis
+extinction observed	4.346	1.500	1	2	approach
+flames possible	4.346	1.500	1	2	hypothesis
+followed ignition	4.346	1.500	1	2	approach
+fuel mixture	4.346	1.500	1	2	hypothesis
+fuels microgravity	4.346	1.500	1	2	hypothesis
+ground-based tests	4.346	1.500	1	2	approach
+liquid fuel	4.346	1.500	1	2	hypothesis
+objectives flight	4.346	1.500	1	2	approach
+observed microgravity	4.346	1.500	1	2	research_impacts
+pressure fuel	4.346	1.500	1	2	approach
+short time	4.346	1.500	1	2	research_impacts
+spacecraft fires	4.346	1.500	1	2	research_impacts
+tests involve	4.346	1.500	1	2	approach
+computational	4.233	2.500	1	9	publication
+increase	4.100	2.000	1	6	research_impacts
+mixture	4.100	2.000	1	6	hypothesis
+state	4.100	2.000	1	6	approach
+normal gravity	4.070	3.000	2	13	approach
+microgravity diffusion flames	3.984	1.375	1	2	publication
+rack cir acme	3.937	1.650	1	4	experiment_hardware
+broad range	3.914	1.500	1	3	approach
+flight tests	3.914	1.500	1	3	approach
+future spacecraft	3.914	1.500	1	3	research_impacts
+oxygen concentration	3.914	1.500	1	3	approach
+regime quasi-steady	3.914	1.500	1	3	hypothesis
+tests performed	3.914	1.500	1	3	approach
+table	3.857	1.750	2	5	file_folders,filenames
+laminar diffusion	3.843	1.875	1	6	publication
+addition	3.833	2.000	1	7	approach
+co2	3.833	2.000	1	7	objective
+comparison	3.833	2.000	1	7	approach
+help	3.833	2.000	1	7	approach
+objective	3.833	2.000	1	7	objective
+possible	3.833	2.000	1	7	hypothesis
+combustion integrated	3.810	2.250	1	9	experiment_hardware
+integrated rack	3.810	2.250	1	9	experiment_hardware
+rack cir	3.810	2.250	1	9	experiment_hardware
+nnx10ad98g nnx15ad06a	3.715	1.125	1	1	funding
+nnx15ad06a 80nssc20m0119	3.715	1.125	1	1	funding
+1-g applications show	3.633	1.100	1	1	approach
+1-g ignition extinction	3.633	1.100	1	1	approach
+10.2 psia 26.5	3.633	1.100	1	1	objective
+14.7 psia oxygen	3.633	1.100	1	1	objective
+26.5 8.2 psia	3.633	1.100	1	1	objective
+8.2 psia oxygen	3.633	1.100	1	1	objective
+absence air flow	3.633	1.100	1	1	research_impacts
+absorbed inert matrix	3.633	1.100	1	1	hypothesis
+accomplish objectives flight	3.633	1.100	1	1	approach
+achieve steady burning	3.633	1.100	1	1	hypothesis
+achieved slowly changing	3.633	1.100	1	1	hypothesis
+achieved steady burning	3.633	1.100	1	1	hypothesis
+addition flight normal	3.633	1.100	1	1	approach
+aims query hypothesis	3.633	1.100	1	1	hypothesis
+air flow cessation	3.633	1.100	1	1	research_impacts
+air flow notably	3.633	1.100	1	1	research_impacts
+alternative flammability test	3.633	1.100	1	1	research_impacts
+ambient o2 concentrations	3.633	1.100	1	1	objective
+ambient terms material	3.633	1.100	1	1	objective
+ambients o2 co2	3.633	1.100	1	1	objective
+ambients pressures ambient	3.633	1.100	1	1	objective
+applications show usefulness	3.633	1.100	1	1	approach
+applied radiant heat	3.633	1.100	1	1	hypothesis
+atmosphere human missions	3.633	1.100	1	1	objective
+atmosphere oxygen self-extinguished	3.633	1.100	1	1	research_impacts
+atmospheres considered future	3.633	1.100	1	1	research_impacts
+available drop facility	3.633	1.100	1	1	approach
+basis establishing flammability	3.633	1.100	1	1	hypothesis
+behavior long-duration microgravity	3.633	1.100	1	1	objective
+believe better control	3.633	1.100	1	1	approach
+better control earth-based	3.633	1.100	1	1	approach
+bre 1-g applications	3.633	1.100	1	1	approach
+bre determine range	3.633	1.100	1	1	hypothesis
+bre flight seeks	3.633	1.100	1	1	objective
+bre hypothesizes exist	3.633	1.100	1	1	hypothesis
+bre still preliminary	3.633	1.100	1	1	research_impacts
+bre yielded important	3.633	1.100	1	1	research_impacts
+broad range conditions	3.633	1.100	1	1	approach
+burner equilibrate temperature	3.633	1.100	1	1	approach
+burner increases flame	3.633	1.100	1	1	approach
+burner temperature steadied	3.633	1.100	1	1	approach
+burners diameter consider	3.633	1.100	1	1	objective
+burning achieved slowly	3.633	1.100	1	1	hypothesis
+burning behavior long-duration	3.633	1.100	1	1	objective
+burning burner surface	3.633	1.100	1	1	approach
+burning conditions condensed	3.633	1.100	1	1	hypothesis
+burning conditions microgravity	3.633	1.100	1	1	hypothesis
+burning conditions quiescent	3.633	1.100	1	1	objective
+burning corresponding condensed-phase	3.633	1.100	1	1	research_impacts
+burning guide us	3.633	1.100	1	1	approach
+burning microgravity candle	3.633	1.100	1	1	hypothesis
+burning microgravity function	3.633	1.100	1	1	hypothesis
+burning represent potential	3.633	1.100	1	1	hypothesis
+c2h4 n2mixtures porous	3.633	1.100	1	1	objective
+calorimeter test measure	3.633	1.100	1	1	research_impacts
+calorimeter test test	3.633	1.100	1	1	hypothesis
+candle flame shown	3.633	1.100	1	1	hypothesis
+carry microgravity conditions	3.633	1.100	1	1	approach
+cessation ventilation established	3.633	1.100	1	1	research_impacts
+cfd model quiescent	3.633	1.100	1	1	approach
+ch4 n2 c2h4	3.633	1.100	1	1	objective
+chamber contents namely	3.633	1.100	1	1	approach
+changing unsteady flames	3.633	1.100	1	1	hypothesis
+choice diluent oxygen	3.633	1.100	1	1	approach
+circular burners diameter	3.633	1.100	1	1	objective
+co2 desired consider	3.633	1.100	1	1	objective
+combustion air flow	3.633	1.100	1	1	research_impacts
+commence followed ignition	3.633	1.100	1	1	approach
+comparison ground-based tests	3.633	1.100	1	1	approach
+concentration pressure fuel	3.633	1.100	1	1	approach
+concentrations pressures considered	3.633	1.100	1	1	objective
+condensed fuels consider	3.633	1.100	1	1	objective
+condensed fuels microgravity	3.633	1.100	1	1	hypothesis
+condensed-phase materials pmma	3.633	1.100	1	1	research_impacts
+conditions addition flight	3.633	1.100	1	1	approach
+conditions condensed fuels	3.633	1.100	1	1	hypothesis
+conditions established chamber	3.633	1.100	1	1	approach
+conditions microgravity function	3.633	1.100	1	1	hypothesis
+conditions objective ambients	3.633	1.100	1	1	objective
+conditions objectives extinction	3.633	1.100	1	1	objective
+conditions observed single	3.633	1.100	1	1	approach
+conditions pursue cfd	3.633	1.100	1	1	approach
+conditions quiescent microgravity	3.633	1.100	1	1	objective
+conditions related diverse	3.633	1.100	1	1	objective
+consider conditions objective	3.633	1.100	1	1	objective
+consider conditions objectives	3.633	1.100	1	1	objective
+consider o2 n2	3.633	1.100	1	1	objective
+considered atmosphere human	3.633	1.100	1	1	objective
+considered future spacecraft	3.633	1.100	1	1	research_impacts
+contents namely choice	3.633	1.100	1	1	approach
+continue tests involve	3.633	1.100	1	1	approach
+continued burning burner	3.633	1.100	1	1	approach
+continuous set produced	3.633	1.100	1	1	approach
+control earth-based ignition	3.633	1.100	1	1	approach
+corresponding condensed-phase materials	3.633	1.100	1	1	research_impacts
+corresponding microgravity flames	3.633	1.100	1	1	research_impacts
+desired consider conditions	3.633	1.100	1	1	objective
+despite absence air	3.633	1.100	1	1	research_impacts
+determine range burning	3.633	1.100	1	1	hypothesis
+diameter consider o2	3.633	1.100	1	1	objective
+diluent oxygen concentration	3.633	1.100	1	1	approach
+diverse range condensed	3.633	1.100	1	1	objective
+drop facility testing	3.633	1.100	1	1	approach
+earth-based ignition testing	3.633	1.100	1	1	approach
+elevated-oxygen atmospheres considered	3.633	1.100	1	1	research_impacts
+emphasize fuel conditions	3.633	1.100	1	1	objective
+enable cone calorimeter	3.633	1.100	1	1	hypothesis
+environment hypothesized bre	3.633	1.100	1	1	hypothesis
+equilibrate temperature limit	3.633	1.100	1	1	approach
+establish 1-g ignition	3.633	1.100	1	1	approach
+establish burning conditions	3.633	1.100	1	1	objective
+establish validation bre	3.633	1.100	1	1	approach
+establish viable flow	3.633	1.100	1	1	approach
+established chamber contents	3.633	1.100	1	1	approach
+established step putting	3.633	1.100	1	1	research_impacts
+establishing flammability maps	3.633	1.100	1	1	hypothesis
+establishing range quasi-steady	3.633	1.100	1	1	hypothesis
+eventually flame extinguish	3.633	1.100	1	1	approach
+examined 14.7 psia	3.633	1.100	1	1	objective
+exceeded limit state	3.633	1.100	1	1	approach
+exist regime quasi-steady	3.633	1.100	1	1	hypothesis
+explore normal gravity	3.633	1.100	1	1	approach
+extinction continued burning	3.633	1.100	1	1	approach
+extinction limit found	3.633	1.100	1	1	approach
+extinction limits available	3.633	1.100	1	1	approach
+extinction observed flow	3.633	1.100	1	1	approach
+extinguish surface temperature	3.633	1.100	1	1	approach
+facility testing refine	3.633	1.100	1	1	approach
+fire safety quasi-steady	3.633	1.100	1	1	research_impacts
+fires ongoing combustion	3.633	1.100	1	1	research_impacts
+flame extinguish surface	3.633	1.100	1	1	approach
+flame remains steady	3.633	1.100	1	1	approach
+flames initially observed	3.633	1.100	1	1	approach
+flames normal atmosphere	3.633	1.100	1	1	research_impacts
+flames observed bre	3.633	1.100	1	1	research_impacts
+flames possible proposed	3.633	1.100	1	1	hypothesis
+flammability map eventually	3.633	1.100	1	1	approach
+flammability map ignition	3.633	1.100	1	1	approach
+flammability maps real	3.633	1.100	1	1	hypothesis
+flammability test cone	3.633	1.100	1	1	research_impacts
+flight normal gravity	3.633	1.100	1	1	approach
+flight objectives follows	3.633	1.100	1	1	objective
+flight potentially predictive	3.633	1.100	1	1	approach
+flight proposed preliminary	3.633	1.100	1	1	approach
+flight seeks establish	3.633	1.100	1	1	objective
+flight tests performed	3.633	1.100	1	1	approach
+flow cessation ventilation	3.633	1.100	1	1	research_impacts
+flow commence followed	3.633	1.100	1	1	approach
+flow conditions pursue	3.633	1.100	1	1	approach
+flow notably seen	3.633	1.100	1	1	research_impacts
+flow rate burner	3.633	1.100	1	1	approach
+flow rate extinction	3.633	1.100	1	1	approach
+flow rate reduced	3.633	1.100	1	1	approach
+flow rate shut	3.633	1.100	1	1	approach
+flow terminated test	3.633	1.100	1	1	approach
+flux applied radiant	3.633	1.100	1	1	hypothesis
+flux heat combustion	3.633	1.100	1	1	hypothesis
+flux sensor exceeded	3.633	1.100	1	1	approach
+flux sensor neared	3.633	1.100	1	1	approach
+flux sensor reached	3.633	1.100	1	1	approach
+flux vary broad	3.633	1.100	1	1	approach
+followed ignition flames	3.633	1.100	1	1	approach
+follows observe burning	3.633	1.100	1	1	objective
+found burner temperature	3.633	1.100	1	1	approach
+fuel absorbed inert	3.633	1.100	1	1	hypothesis
+fuel conditions related	3.633	1.100	1	1	objective
+fuel flow commence	3.633	1.100	1	1	approach
+fuel flow terminated	3.633	1.100	1	1	approach
+fuel liquid fuel	3.633	1.100	1	1	hypothesis
+fuel mixture represent	3.633	1.100	1	1	hypothesis
+fuels achieve steady	3.633	1.100	1	1	hypothesis
+fuels consider conditions	3.633	1.100	1	1	objective
+fuels establish validation	3.633	1.100	1	1	approach
+fuels microgravity environment	3.633	1.100	1	1	hypothesis
+function heat gasification	3.633	1.100	1	1	hypothesis
+function materials properties	3.633	1.100	1	1	hypothesis
+future spacecraft whereas	3.633	1.100	1	1	research_impacts
+gaseous liquid solid	3.633	1.100	1	1	approach
+gasification fuel mixture	3.633	1.100	1	1	hypothesis
+gasification reradiation heat	3.633	1.100	1	1	hypothesis
+given flow rate	3.633	1.100	1	1	approach
+gravity believe better	3.633	1.100	1	1	approach
+gravity testing continue	3.633	1.100	1	1	approach
+ground-based tests test	3.633	1.100	1	1	approach
+guide us flight	3.633	1.100	1	1	approach
+heat flux applied	3.633	1.100	1	1	hypothesis
+heat flux heat	3.633	1.100	1	1	hypothesis
+heat flux vary	3.633	1.100	1	1	approach
+heat gasification fuel	3.633	1.100	1	1	hypothesis
+heat gasification reradiation	3.633	1.100	1	1	hypothesis
+help establish viable	3.633	1.100	1	1	approach
+human missions examined	3.633	1.100	1	1	objective
+hypothesis establishing range	3.633	1.100	1	1	hypothesis
+hypothesis heat combustion	3.633	1.100	1	1	hypothesis
+hypothesized bre determine	3.633	1.100	1	1	hypothesis
+hypothesizes exist regime	3.633	1.100	1	1	hypothesis
+ignition extinction limits	3.633	1.100	1	1	approach
+ignition flames initially	3.633	1.100	1	1	approach
+ignition limit tests	3.633	1.100	1	1	approach
+ignition testing carry	3.633	1.100	1	1	approach
+important relevant spacecraft	3.633	1.100	1	1	research_impacts
+increase alternative flammability	3.633	1.100	1	1	research_impacts
+increases flame remains	3.633	1.100	1	1	approach
+increments extinction observed	3.633	1.100	1	1	approach
+inert matrix achieved	3.633	1.100	1	1	hypothesis
+initially observed varying	3.633	1.100	1	1	approach
+instrumentation help establish	3.633	1.100	1	1	approach
+involve gaseous liquid	3.633	1.100	1	1	approach
+key hypothesis heat	3.633	1.100	1	1	hypothesis
+limit found burner	3.633	1.100	1	1	approach
+limit state flow	3.633	1.100	1	1	approach
+limit tests proposed	3.633	1.100	1	1	approach
+limits available drop	3.633	1.100	1	1	approach
+liquid fuel absorbed	3.633	1.100	1	1	hypothesis
+liquid solid fuels	3.633	1.100	1	1	approach
+long-duration microgravity ch4	3.633	1.100	1	1	objective
+map eventually flame	3.633	1.100	1	1	approach
+map ignition limit	3.633	1.100	1	1	approach
+maps real materials	3.633	1.100	1	1	hypothesis
+material properties corresponding	3.633	1.100	1	1	research_impacts
+material properties specific	3.633	1.100	1	1	objective
+materials key hypothesis	3.633	1.100	1	1	hypothesis
+materials pmma nylon	3.633	1.100	1	1	research_impacts
+materials properties steady	3.633	1.100	1	1	hypothesis
+matrix achieved steady	3.633	1.100	1	1	hypothesis
+measure material properties	3.633	1.100	1	1	research_impacts
+microgravity ambient terms	3.633	1.100	1	1	objective
+microgravity burning guide	3.633	1.100	1	1	approach
+microgravity candle flame	3.633	1.100	1	1	hypothesis
+microgravity ch4 n2	3.633	1.100	1	1	objective
+microgravity conditions addition	3.633	1.100	1	1	approach
+microgravity despite absence	3.633	1.100	1	1	research_impacts
+microgravity environment hypothesized	3.633	1.100	1	1	hypothesis
+microgravity explore normal	3.633	1.100	1	1	approach
+microgravity flames observed	3.633	1.100	1	1	research_impacts
+microgravity function heat	3.633	1.100	1	1	hypothesis
+microgravity function materials	3.633	1.100	1	1	hypothesis
+missions examined 14.7	3.633	1.100	1	1	objective
+mixture represent real	3.633	1.100	1	1	hypothesis
+model quiescent microgravity	3.633	1.100	1	1	approach
+n2 ambients pressures	3.633	1.100	1	1	objective
+n2 c2h4 n2mixtures	3.633	1.100	1	1	objective
+n2mixtures porous circular	3.633	1.100	1	1	objective
+namely choice diluent	3.633	1.100	1	1	approach
+neared extinction limit	3.633	1.100	1	1	approach
+normal atmosphere oxygen	3.633	1.100	1	1	research_impacts
+normal gravity believe	3.633	1.100	1	1	approach
+normal gravity testing	3.633	1.100	1	1	approach
+notably seen elevated-oxygen	3.633	1.100	1	1	research_impacts
+nylon observed microgravity	3.633	1.100	1	1	research_impacts
+o2 co2 desired	3.633	1.100	1	1	objective
+o2 concentrations pressures	3.633	1.100	1	1	objective
+o2 n2 ambients	3.633	1.100	1	1	objective
+objective ambients o2	3.633	1.100	1	1	objective
+objectives extinction limits	3.633	1.100	1	1	objective
+objectives flight proposed	3.633	1.100	1	1	approach
+objectives follows observe	3.633	1.100	1	1	objective
+observe burning behavior	3.633	1.100	1	1	objective
+observed bre burner	3.633	1.100	1	1	research_impacts
+observed flow rate	3.633	1.100	1	1	approach
+observed microgravity despite	3.633	1.100	1	1	research_impacts
+observed single test	3.633	1.100	1	1	approach
+observed varying fuel	3.633	1.100	1	1	approach
+ongoing combustion air	3.633	1.100	1	1	research_impacts
+operations comparison ground-based	3.633	1.100	1	1	approach
+oxygen 10.2 psia	3.633	1.100	1	1	objective
+oxygen concentration pressure	3.633	1.100	1	1	approach
+oxygen emphasize fuel	3.633	1.100	1	1	objective
+oxygen self-extinguished short	3.633	1.100	1	1	research_impacts
+performed verify operations	3.633	1.100	1	1	approach
+pmma nylon observed	3.633	1.100	1	1	research_impacts
+point enable cone	3.633	1.100	1	1	hypothesis
+point heat gasification	3.633	1.100	1	1	hypothesis
+porous circular burners	3.633	1.100	1	1	objective
+possible proposed tests	3.633	1.100	1	1	hypothesis
+potential real solid	3.633	1.100	1	1	hypothesis
+potentially predictive methodology	3.633	1.100	1	1	approach
+preliminary flight tests	3.633	1.100	1	1	approach
+preliminary suggest want	3.633	1.100	1	1	research_impacts
+pressure fuel flow	3.633	1.100	1	1	approach
+pressures ambient o2	3.633	1.100	1	1	objective
+pressures considered atmosphere	3.633	1.100	1	1	objective
+procedures test instrumentation	3.633	1.100	1	1	approach
+process produced flammability	3.633	1.100	1	1	approach
+properties corresponding microgravity	3.633	1.100	1	1	research_impacts
+properties specific flight	3.633	1.100	1	1	objective
+properties steady burning	3.633	1.100	1	1	hypothesis
+proposed microgravity explore	3.633	1.100	1	1	approach
+proposed preliminary flight	3.633	1.100	1	1	approach
+proposed tests aims	3.633	1.100	1	1	hypothesis
+psia 26.5 8.2	3.633	1.100	1	1	objective
+psia oxygen 10.2	3.633	1.100	1	1	objective
+psia oxygen emphasize	3.633	1.100	1	1	objective
+pursue cfd model	3.633	1.100	1	1	approach
+putting spacecraft fires	3.633	1.100	1	1	research_impacts
+quasi-steady burning conditions	3.633	1.100	1	1	hypothesis
+quasi-steady burning corresponding	3.633	1.100	1	1	research_impacts
+quasi-steady burning microgravity	3.633	1.100	1	1	hypothesis
+query hypothesis establishing	3.633	1.100	1	1	hypothesis
+quiescent microgravity ambient	3.633	1.100	1	1	objective
+quiescent microgravity burning	3.633	1.100	1	1	approach
+radiant heat flux	3.633	1.100	1	1	hypothesis
+range burning conditions	3.633	1.100	1	1	hypothesis
+range condensed fuels	3.633	1.100	1	1	objective
+range conditions observed	3.633	1.100	1	1	approach
+range quasi-steady burning	3.633	1.100	1	1	hypothesis
+rate burner surface	3.633	1.100	1	1	approach
+rate extinction continued	3.633	1.100	1	1	approach
+rate reduced small	3.633	1.100	1	1	approach
+rate shut process	3.633	1.100	1	1	approach
+reached time fuel	3.633	1.100	1	1	approach
+real materials key	3.633	1.100	1	1	hypothesis
+real solid fuel	3.633	1.100	1	1	hypothesis
+real solid fuels	3.633	1.100	1	1	hypothesis
+reduced small increments	3.633	1.100	1	1	approach
+refine procedures test	3.633	1.100	1	1	approach
+regime quasi-steady burning	3.633	1.100	1	1	hypothesis
+related diverse range	3.633	1.100	1	1	objective
+relevant spacecraft fire	3.633	1.100	1	1	research_impacts
+remains steady continuous	3.633	1.100	1	1	approach
+represent potential real	3.633	1.100	1	1	hypothesis
+represent real solid	3.633	1.100	1	1	hypothesis
+reradiation heat flux	3.633	1.100	1	1	hypothesis
+safety quasi-steady burning	3.633	1.100	1	1	research_impacts
+seeks establish burning	3.633	1.100	1	1	objective
+seen elevated-oxygen atmospheres	3.633	1.100	1	1	research_impacts
+self-extinguished short time	3.633	1.100	1	1	research_impacts
+sensor exceeded limit	3.633	1.100	1	1	approach
+sensor neared extinction	3.633	1.100	1	1	approach
+sensor reached time	3.633	1.100	1	1	approach
+set produced flammability	3.633	1.100	1	1	approach
+short time bre	3.633	1.100	1	1	research_impacts
+show usefulness establish	3.633	1.100	1	1	approach
+shut process produced	3.633	1.100	1	1	approach
+single test surface	3.633	1.100	1	1	approach
+slowly changing unsteady	3.633	1.100	1	1	hypothesis
+small increments extinction	3.633	1.100	1	1	approach
+smoke point enable	3.633	1.100	1	1	hypothesis
+smoke point heat	3.633	1.100	1	1	hypothesis
+solid fuel liquid	3.633	1.100	1	1	hypothesis
+solid fuels achieve	3.633	1.100	1	1	hypothesis
+solid fuels establish	3.633	1.100	1	1	approach
+spacecraft fires ongoing	3.633	1.100	1	1	research_impacts
+spacecraft whereas flames	3.633	1.100	1	1	research_impacts
+specific flight objectives	3.633	1.100	1	1	objective
+state flow rate	3.633	1.100	1	1	approach
+steadied heat flux	3.633	1.100	1	1	approach
+steadied temperature limit	3.633	1.100	1	1	approach
+steady burning achieved	3.633	1.100	1	1	hypothesis
+steady burning microgravity	3.633	1.100	1	1	hypothesis
+steady burning represent	3.633	1.100	1	1	hypothesis
+steady continuous set	3.633	1.100	1	1	approach
+step putting spacecraft	3.633	1.100	1	1	research_impacts
+still preliminary suggest	3.633	1.100	1	1	research_impacts
+suggest want increase	3.633	1.100	1	1	research_impacts
+surface temperature heat	3.633	1.100	1	1	approach
+surface temperature steadied	3.633	1.100	1	1	approach
+temperature burner equilibrate	3.633	1.100	1	1	approach
+temperature burner increases	3.633	1.100	1	1	approach
+temperature heat flux	3.633	1.100	1	1	approach
+temperature steadied heat	3.633	1.100	1	1	approach
+temperature steadied temperature	3.633	1.100	1	1	approach
+terminate given flow	3.633	1.100	1	1	approach
+terminated test terminate	3.633	1.100	1	1	approach
+terms material properties	3.633	1.100	1	1	objective
+test basis establishing	3.633	1.100	1	1	hypothesis
+test conditions established	3.633	1.100	1	1	approach
+test cone calorimeter	3.633	1.100	1	1	research_impacts
+test instrumentation help	3.633	1.100	1	1	approach
+test measure material	3.633	1.100	1	1	research_impacts
+test surface temperature	3.633	1.100	1	1	approach
+test terminate given	3.633	1.100	1	1	approach
+test test basis	3.633	1.100	1	1	hypothesis
+testing carry microgravity	3.633	1.100	1	1	approach
+testing continue tests	3.633	1.100	1	1	approach
+testing refine procedures	3.633	1.100	1	1	approach
+tests aims query	3.633	1.100	1	1	hypothesis
+tests involve gaseous	3.633	1.100	1	1	approach
+tests performed verify	3.633	1.100	1	1	approach
+tests proposed microgravity	3.633	1.100	1	1	approach
+tests test conditions	3.633	1.100	1	1	approach
+time bre still	3.633	1.100	1	1	research_impacts
+time fuel flow	3.633	1.100	1	1	approach
+unsteady flames possible	3.633	1.100	1	1	hypothesis
+us flight potentially	3.633	1.100	1	1	approach
+usefulness establish 1-g	3.633	1.100	1	1	approach
+validation bre 1-g	3.633	1.100	1	1	approach
+vary broad range	3.633	1.100	1	1	approach
+varying fuel flow	3.633	1.100	1	1	approach
+ventilation established step	3.633	1.100	1	1	research_impacts
+verify operations comparison	3.633	1.100	1	1	approach
+viable flow conditions	3.633	1.100	1	1	approach
+want increase alternative	3.633	1.100	1	1	research_impacts
+whereas flames normal	3.633	1.100	1	1	research_impacts
+yielded important relevant	3.633	1.100	1	1	research_impacts
+available	3.597	2.000	1	8	approach
+better	3.597	2.000	1	8	approach
+chamber	3.597	2.000	1	8	approach
+concentration	3.597	2.000	1	8	approach
+measure	3.597	2.000	1	8	research_impacts
+performed	3.597	2.000	1	8	approach
+laminar diffusion flame	3.588	1.375	1	3	publication
+flames observed	3.579	1.500	1	4	research_impacts
+rate extinction	3.579	1.500	1	4	approach
+test conditions	3.579	1.500	1	4	approach
+development	3.577	2.500	1	12	publication
+process	3.386	2.000	1	9	approach
+reduced	3.386	2.000	1	9	approach
+diffusion flame	3.372	1.875	1	8	publication
+missions	3.196	2.000	1	10	objective
+maryland	3.075	1.500	2	6	affiliation
+microgravity conditions	2.874	1.500	1	7	approach
+microgravity environment	2.874	1.500	1	7	hypothesis
+fuel flow rate	2.870	1.100	1	3	approach
+environment	2.862	2.000	1	12	hypothesis
+pressure	2.862	2.000	1	12	approach
+combustion integrated rack	2.794	1.650	1	9	experiment_hardware
+integrated rack cir	2.794	1.650	1	9	experiment_hardware
+nnx10ad98g nnx15ad06a 80nssc20m0119	2.725	0.825	1	1	funding
+behavior	2.713	2.000	1	13	objective
+determine	2.713	2.000	1	13	hypothesis
+future	2.575	2.000	1	14	research_impacts
+scientist	2.575	2.000	2	14	role
+james quintiere	2.477	0.750	1	1	people
+john de	2.477	0.750	1	1	people
+university maryland	2.306	1.125	2	6	affiliation
+spacecraft fire	2.266	1.500	1	11	research_impacts
+university	1.835	1.500	2	15	affiliation
+john de ris	1.816	0.550	1	1	people
+peter sunderland	1.790	0.750	1	4	people
+administration	1.744	1.500	1	16	space_program
+aeronautics	1.744	1.500	1	16	space_program
+spacecraft fire safety	1.662	1.100	1	11	research_impacts
+national	1.577	1.500	1	18	space_program
+dennis stocker	1.437	0.750	1	7	people
+aeronautics administration	1.308	1.125	1	16	space_program
+national aeronautics	1.308	1.125	1	16	space_program
+co-i	1.288	1.000	1	14	role
+co-investigator	1.288	1.000	1	14	role
+experimental table	1.240	0.562	1	5	file_folders
+investigator	1.051	1.000	1	18	role
+pi	1.051	1.000	1	18	role
+principal	1.051	1.000	1	18	role
+co-investigator co-i	0.966	0.750	1	14	role
+national aeronautics administration	0.959	0.825	1	16	space_program
+grc	0.788	0.750	1	18	affiliation
+investigator pi	0.788	0.750	1	18	role
+principal investigator	0.788	0.750	1	18	role
+principal investigator pi	0.578	0.550	1	18	role

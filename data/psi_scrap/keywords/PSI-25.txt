@@ -1,0 +1,1440 @@
+# keywords for PSI-25 (score, weight, count, df, fields)
+olson	77.139	35.000	14	5	publication
+spread	74.935	34.000	12	5	approach,curated_keywords,hypothesis,objective,publication
+bass-ii	72.657	22.000	9	1	acronym,approach,filenames,hypothesis,objective,publication,research_impacts
+forced	50.884	19.500	6	3	curated_keywords,objective,publication
+bhattacharjee	50.700	17.500	7	2	publication
+miller	48.275	18.500	8	3	people,publication
+ferkul	48.255	28.500	12	9	people,publication
+microgravity	48.000	48.000	21	19	approach,experiment_hardware,hypothesis,objective,project_type,publication
+flame	46.501	40.000	15	16	approach,curated_keywords,hypothesis,objective,publication,research_impacts
+fire	42.057	31.000	8	13	curated_keywords,objective,publication,research_impacts,sub_research_area
+sandra	41.760	17.500	7	4	publication
+flame spread	40.498	18.375	8	5	curated_keywords,hypothesis,objective,publication
+subrata	39.111	13.500	6	2	people,publication
+forced flow	38.025	13.125	5	2	curated_keywords,objective,publication
+suppression	37.769	21.000	5	8	curated_keywords,objective,publication,title
+flow	36.619	31.500	11	16	approach,curated_keywords,hypothesis,objective,publication
+burning	33.016	19.500	7	9	hypothesis,objective,publication,research_impacts,title
+msg	32.215	13.500	3	4	curated_keywords,experiment_hardware,publication
+solids	31.868	11.000	3	2	publication,title
+olson sandra	31.320	13.125	7	4	publication
+opposed-flow	28.971	10.000	4	2	publication
+wichman	28.971	10.000	4	2	publication
+bass	28.681	9.900	3	2	curated_keywords,filenames,media_filenames
+extinction	27.163	17.000	5	10	curated_keywords,hypothesis,objective,publication
+bhattacharjee subrata	27.160	9.375	5	2	publication
+speed	26.249	11.000	5	4	approach,hypothesis,objective,publication
+sl	26.094	10.000	4	3	publication
+olson pv	24.769	7.500	4	1	publication
+fletcher	24.626	8.500	4	2	people,publication
+paul	24.280	13.500	6	8	people,publication
+burning suppression	23.901	8.250	3	2	publication,title
+suppression solids	23.901	8.250	3	2	publication,title
+glovebox	23.863	10.000	4	4	approach,experiment_hardware,publication
+rods	23.118	7.000	3	1	objective,publication
+pv	22.481	12.500	5	8	publication
+fuels	22.385	16.500	5	13	curated_keywords,objective,publication,research_impacts
+safety	22.385	16.500	4	13	curated_keywords,publication,research_impacts,sub_research_area
+flammability	22.011	13.000	6	9	hypothesis,objective,publication
+js	21.728	7.500	3	2	publication
+opposed-flow flame	21.728	7.500	4	2	publication
+solid fuels	21.728	7.500	2	2	curated_keywords,objective
+tien	21.728	7.500	3	2	publication
+limits	21.462	15.000	4	12	curated_keywords,objective,publication
+concurrent	20.938	9.500	4	5	approach,publication
+flow velocity	20.662	9.375	3	5	curated_keywords,objective,publication
+fj	19.571	7.500	3	3	publication
+sl olson	19.571	7.500	4	3	publication
+ferkul paul	19.217	9.375	5	6	publication
+comparison	19.163	10.000	4	7	publication
+solid	19.163	10.000	2	7	curated_keywords,objective
+velocity	18.885	12.500	3	11	curated_keywords,objective,publication
+fletcher olson	18.577	5.625	3	1	publication
+forced flow velocity	18.164	5.500	2	1	curated_keywords,objective
+olson pv ferkul	18.164	5.500	4	1	publication
+sl olson pv	18.164	5.500	4	1	publication
+microgravity glovebox	17.897	7.500	4	4	approach,experiment_hardware,publication
+pmma	17.897	7.500	3	4	publication
+burning suppression solids	17.528	6.050	3	2	publication,title
+pv ferkul	16.861	9.375	5	8	publication
+fire safety	16.789	12.375	4	13	curated_keywords,publication,research_impacts,sub_research_area
+fabric	16.704	7.000	3	4	objective,publication
+extinction limits	16.530	7.500	2	5	curated_keywords,objective
+aslihan	16.513	5.000	2	1	publication
+indrek	16.513	5.000	2	1	publication
+marcum	16.513	5.000	2	1	publication
+purely	16.513	5.000	2	1	publication
+shah	16.513	5.000	2	1	publication
+simsek	16.513	5.000	2	1	publication
+wynn	16.513	5.000	2	1	publication
+combustion	16.500	16.500	7	19	approach,objective,publication,research_area,research_impacts
+fj miller	16.296	5.625	3	2	publication
+js tien	16.296	5.625	3	2	publication
+miller fletcher	16.296	5.625	3	2	publication
+sandra ferkul	16.296	5.625	3	2	publication
+spread extinction	16.100	4.875	3	1	hypothesis,objective,publication
+earth	15.978	10.000	5	10	hypothesis,objective,research_impacts
+opposed-flow flame spread	15.934	5.500	4	2	publication
+fernandez-pello	15.657	6.000	3	3	people,publication
+fire suppression	15.657	6.000	1	3	curated_keywords
+growth	15.238	9.000	4	9	approach,objective,publication
+flame growth	14.877	6.750	4	5	approach,objective,publication
+blowoff	14.486	5.000	2	2	publication
+boundary	14.486	5.000	2	2	publication
+channel	14.486	5.000	2	2	publication
+composite	14.486	5.000	2	2	publication
+laue	14.486	5.000	2	2	publication
+narrow	14.486	5.000	2	2	publication
+paolini	14.486	5.000	2	2	publication
+tran	14.486	5.000	2	2	publication
+material	14.388	8.000	4	8	hypothesis,objective
+gravity	14.165	11.000	5	14	hypothesis,objective,publication
+growth spread	13.700	5.250	3	3	approach,publication
+fletcher olson sandra	13.623	4.125	3	1	publication
+miller fletcher olson	13.623	4.125	3	1	publication
+experimental	13.567	10.000	4	13	publication
+normal	13.455	11.000	5	15	hypothesis,objective,publication
+tunnel	13.210	4.000	2	1	approach
+upward	13.210	4.000	2	1	hypothesis,research_impacts
+correlation	13.047	5.000	2	3	publication
+matthew	13.047	5.000	2	3	publication
+thin	13.047	5.000	2	3	publication
+low	12.590	7.000	3	8	hypothesis,publication
+samples	12.590	7.000	3	8	approach,publication
+bhattacharjee fj	12.385	3.750	2	1	publication
+blowoff limits	12.385	3.750	2	1	publication
+comparison experimental	12.385	3.750	2	1	publication
+ferkul bhattacharjee	12.385	3.750	2	1	publication
+flow microgravity	12.385	3.750	2	1	publication
+low speed	12.385	3.750	2	1	publication
+pmma rods	12.385	3.750	2	1	publication
+purely forced	12.385	3.750	2	1	publication
+samples low	12.385	3.750	2	1	publication
+sandra wichman	12.385	3.750	2	1	publication
+simsek aslihan	12.385	3.750	2	1	publication
+speed purely	12.385	3.750	2	1	publication
+subrata simsek	12.385	3.750	2	1	publication
+tran wynn	12.385	3.750	2	1	publication
+wichman indrek	12.385	3.750	2	1	publication
+tests	12.087	8.000	4	11	approach,hypothesis,objective
+olson sandra ferkul	11.951	4.125	3	2	publication
+sandra ferkul paul	11.951	4.125	3	2	publication
+christopher	11.931	5.000	2	4	publication
+computational	11.852	7.000	3	9	objective,publication
+geometry	11.588	4.000	2	2	hypothesis,objective
+slabs	11.588	4.000	2	2	objective
+variables	11.588	4.000	2	2	approach,objective
+wind	11.588	4.000	2	2	approach
+normal gravity	11.193	8.250	5	13	hypothesis,objective,publication
+concurrent flow	11.146	3.375	2	1	approach,publication
+kinetic	11.020	5.000	2	5	publication
+regime	11.020	5.000	2	5	publication
+zhao	11.020	5.000	2	5	publication
+channel apparatus	10.864	3.750	2	2	publication
+composite fabric	10.864	3.750	2	2	publication
+concurrent flame	10.864	3.750	2	2	publication
+fabric samples	10.864	3.750	2	2	publication
+laue matthew	10.864	3.750	2	2	publication
+narrow channel	10.864	3.750	2	2	publication
+paolini christopher	10.864	3.750	2	2	publication
+spread comparison	10.864	3.750	2	2	publication
+concentration	10.791	6.000	3	8	approach,hypothesis,objective
+materials	10.791	6.000	3	8	hypothesis,research_impacts
+glovebox msg	10.764	4.125	2	3	experiment_hardware,publication
+energy	10.738	4.500	2	4	publication,research_impacts
+burn	10.438	4.000	2	3	hypothesis,research_impacts
+apparatus	10.249	5.000	2	6	publication
+models	10.159	6.000	3	9	objective,research_impacts
+flame growth spread	10.046	3.850	3	3	approach,publication
+opposed	9.918	4.500	2	5	approach,publication
+sheets	9.918	4.500	2	5	objective,publication
+wind tunnel	9.908	3.000	2	1	approach
+oxygen	9.587	6.000	3	10	approach,objective
+thermal	9.581	5.000	2	7	publication
+airflow	9.545	4.000	2	4	approach
+bhattacharjee fj miller	9.082	2.750	2	1	publication
+bhattacharjee subrata simsek	9.082	2.750	2	1	publication
+comparison experimental computational	9.082	2.750	2	1	publication
+composite fabric samples	9.082	2.750	2	1	publication
+concurrent flame growth	9.082	2.750	2	1	publication
+fabric samples low	9.082	2.750	2	1	publication
+ferkul bhattacharjee fj	9.082	2.750	2	1	publication
+forced flow microgravity	9.082	2.750	2	1	publication
+low speed purely	9.082	2.750	2	1	publication
+olson sandra wichman	9.082	2.750	2	1	publication
+purely forced flow	9.082	2.750	2	1	publication
+pv ferkul bhattacharjee	9.082	2.750	2	1	publication
+samples low speed	9.082	2.750	2	1	publication
+sandra wichman indrek	9.082	2.750	2	1	publication
+speed purely forced	9.082	2.750	2	1	publication
+subrata simsek aslihan	9.082	2.750	2	1	publication
+experimental computational	8.949	3.750	2	4	publication
+microgravity flammability	8.949	3.750	2	4	publication
+paul olson	8.949	3.750	2	4	publication
+fuel	8.818	6.500	3	13	approach,publication,research_impacts
+ien	8.352	3.500	2	4	people,publication
+0g	8.256	2.500	1	1	publication
+ac	8.256	2.500	1	1	publication
+analyses	8.256	2.500	1	1	publication
+ashwin	8.256	2.500	1	1	publication
+axial	8.256	2.500	1	1	publication
+cellulose	8.256	2.500	1	1	publication
+csa-cp	8.256	2.500	1	1	publication
+downward	8.256	2.500	1	1	publication
+hariharan	8.256	2.500	1	1	publication
+jacob	8.256	2.500	1	1	publication
+jeanie	8.256	2.500	1	1	publication
+jw	8.256	2.500	1	1	publication
+on-board	8.256	2.500	1	1	publication
+ray	8.256	2.500	1	1	publication
+simulated	8.256	2.500	1	1	publication
+sullivan	8.256	2.500	1	1	publication
+thermally-intermediate	8.256	2.500	1	1	publication
+tj	8.256	2.500	1	1	publication
+xiaoyang	8.256	2.500	1	1	publication
+yuji	8.256	2.500	1	1	publication
+improved	8.199	4.000	2	6	research_impacts
+o2	8.199	4.000	2	6	hypothesis
+spacecraft	8.140	6.000	2	13	research_impacts,sub_research_area
+ignition	7.994	3.900	3	6	filenames,media_filenames,objective
+radiative	7.989	5.000	2	10	publication
+flame spread comparison	7.967	2.750	2	2	publication
+narrow channel apparatus	7.967	2.750	2	2	publication
+microgravity glovebox msg	7.894	3.025	2	3	experiment_hardware,publication
+oxygen concentration	7.828	3.000	2	3	approach,objective
+requirements	7.828	3.000	2	3	filenames,objective
+james	7.714	3.500	2	5	people,publication
+nitrogen	7.665	4.000	2	7	approach,objective
+spherical	7.665	4.000	2	7	objective
+sample	7.474	3.900	3	7	filenames,media_filenames,objective
+flame spread extinction	7.266	2.200	2	1	hypothesis,objective
+balance	7.243	2.500	1	2	publication
+bornand	7.243	2.500	1	2	publication
+carmignani	7.243	2.500	1	2	publication
+intermediate	7.243	2.500	1	2	publication
+johnston	7.243	2.500	1	2	publication
+layer	7.243	2.500	1	2	publication
+luca	7.243	2.500	1	2	publication
+mixed	7.243	2.500	1	2	publication
+nakamura	7.243	2.500	1	2	publication
+pepper	7.243	2.500	1	2	publication
+readings	7.243	2.500	1	2	publication
+regimes	7.243	2.500	1	2	publication
+shuhei	7.243	2.500	1	2	publication
+simulating	7.243	2.500	1	2	publication
+spreading	7.243	2.500	1	2	publication
+stagnation	7.243	2.500	1	2	publication
+summary	7.243	2.500	1	2	publication
+thickness	7.243	2.500	1	2	publication
+villaraza	7.243	2.500	1	2	publication
+primary	7.194	4.000	2	8	objective,research_impacts
+environment	7.154	5.000	2	12	publication
+test	6.859	5.900	4	16	filenames,hypothesis,media_filenames,objective
+spacecraft fire	6.799	4.500	2	11	research_impacts,sub_research_area
+temperature	6.799	4.500	2	11	hypothesis,publication
+accurately	6.605	2.000	1	1	research_impacts
+adding	6.605	2.000	1	1	approach
+appearance	6.605	2.000	1	1	approach
+avoid	6.605	2.000	1	1	research_impacts
+balls	6.605	2.000	1	1	research_impacts
+building	6.605	2.000	1	1	research_impacts
+catastrophic	6.605	2.000	1	1	research_impacts
+computer	6.605	2.000	1	1	research_impacts
+conservative	6.605	2.000	1	1	hypothesis
+constant	6.605	2.000	1	1	hypothesis
+containment	6.605	2.000	1	1	approach
+controls	6.605	2.000	1	1	hypothesis
+enables	6.605	2.000	1	1	research_impacts
+engineers	6.605	2.000	1	1	research_impacts
+films	6.605	2.000	1	1	objective
+finding	6.605	2.000	1	1	hypothesis
+firefighting	6.605	2.000	1	1	research_impacts
+helps	6.605	2.000	1	1	research_impacts
+impose	6.605	2.000	1	1	approach
+interested	6.605	2.000	1	1	hypothesis
+lab	6.605	2.000	1	1	approach
+low-velocity	6.605	2.000	1	1	objective
+mounted	6.605	2.000	1	1	approach
+outer	6.605	2.000	1	1	research_impacts
+oval	6.605	2.000	1	1	research_impacts
+partner	6.605	2.000	1	1	approach
+permits	6.605	2.000	1	1	hypothesis
+perspective	6.605	2.000	1	1	hypothesis
+pis	6.605	2.000	1	1	objective
+pointed	6.605	2.000	1	1	research_impacts
+rather	6.605	2.000	1	1	research_impacts
+re	6.605	2.000	1	1	research_impacts
+recapture	6.605	2.000	1	1	research_impacts
+safest	6.605	2.000	1	1	research_impacts
+sections	6.605	2.000	1	1	objective
+sofie	6.605	2.000	1	1	objective
+summarize	6.605	2.000	1	1	approach
+vitiation	6.605	2.000	1	1	objective
+wildfires	6.605	2.000	1	1	research_impacts
+working	6.605	2.000	1	1	objective
+worst-case	6.605	2.000	1	1	hypothesis
+ferkul paul olson	6.562	2.750	2	4	publication
+paul olson sandra	6.562	2.750	2	4	publication
+capturing	6.524	2.500	1	3	publication
+effectiveness	6.524	2.500	1	3	publication
+establish	6.524	2.500	1	3	publication
+fields	6.524	2.500	1	3	publication
+liao	6.524	2.500	1	3	publication
+link	6.524	2.500	1	3	publication
+ya-ting	6.524	2.500	1	3	publication
+co-i	6.438	5.000	5	14	role
+co-investigator	6.438	5.000	5	14	role
+10h52m52s	6.275	1.900	2	1	filenames,media_filenames
+15h33m45s	6.275	1.900	2	1	filenames,media_filenames
+2nd	6.275	1.900	2	1	filenames,media_filenames
+attempt	6.275	1.900	2	1	filenames,media_filenames
+attempts	6.275	1.900	2	1	filenames,media_filenames
+b12	6.275	1.900	2	1	filenames,media_filenames
+b22	6.275	1.900	2	1	filenames,media_filenames
+gmt100	6.275	1.900	2	1	filenames,media_filenames
+gmt164	6.275	1.900	2	1	filenames,media_filenames
+gmt167	6.275	1.900	2	1	filenames,media_filenames
+gmt174	6.275	1.900	2	1	filenames,media_filenames
+gmt175	6.275	1.900	2	1	filenames,media_filenames
+gmt177	6.275	1.900	2	1	filenames,media_filenames
+gmt178	6.275	1.900	2	1	filenames,media_filenames
+gmt183	6.275	1.900	2	1	filenames,media_filenames
+gmt184	6.275	1.900	2	1	filenames,media_filenames
+gmt188	6.275	1.900	2	1	filenames,media_filenames
+gmt189	6.275	1.900	2	1	filenames,media_filenames
+gmt190	6.275	1.900	2	1	filenames,media_filenames
+gmt192	6.275	1.900	2	1	filenames,media_filenames
+gmt195	6.275	1.900	2	1	filenames,media_filenames
+gmt196	6.275	1.900	2	1	filenames,media_filenames
+gmt202	6.275	1.900	2	1	filenames,media_filenames
+gmt203	6.275	1.900	2	1	filenames,media_filenames
+gmt204	6.275	1.900	2	1	filenames,media_filenames
+gmt209	6.275	1.900	2	1	filenames,media_filenames
+gmt210	6.275	1.900	2	1	filenames,media_filenames
+gmt212	6.275	1.900	2	1	filenames,media_filenames
+gmt213	6.275	1.900	2	1	filenames,media_filenames
+gmt216	6.275	1.900	2	1	filenames,media_filenames
+gmt45	6.275	1.900	2	1	filenames,media_filenames
+gmt49	6.275	1.900	2	1	filenames,media_filenames
+gmt50	6.275	1.900	2	1	filenames,media_filenames
+gmt51	6.275	1.900	2	1	filenames,media_filenames
+los	6.275	1.900	2	1	filenames,media_filenames
+m10	6.275	1.900	2	1	filenames,media_filenames
+o10	6.275	1.900	2	1	filenames,media_filenames
+o13a	6.275	1.900	2	1	filenames,media_filenames
+o16	6.275	1.900	2	1	filenames,media_filenames
+o17	6.275	1.900	2	1	filenames,media_filenames
+o18	6.275	1.900	2	1	filenames,media_filenames
+o3b	6.275	1.900	2	1	filenames,media_filenames
+o5a	6.275	1.900	2	1	filenames,media_filenames
+p12	6.275	1.900	2	1	filenames,media_filenames
+p14	6.275	1.900	2	1	filenames,media_filenames
+p15	6.275	1.900	2	1	filenames,media_filenames
+p18	6.275	1.900	2	1	filenames,media_filenames
+p20	6.275	1.900	2	1	filenames,media_filenames
+p21a	6.275	1.900	2	1	filenames,media_filenames
+p21b	6.275	1.900	2	1	filenames,media_filenames
+p24	6.275	1.900	2	1	filenames,media_filenames
+p3a	6.275	1.900	2	1	filenames,media_filenames
+p3b	6.275	1.900	2	1	filenames,media_filenames
+part-2	6.275	1.900	2	1	filenames,media_filenames
+t11	6.275	1.900	2	1	filenames,media_filenames
+t14	6.275	1.900	2	1	filenames,media_filenames
+t20	6.275	1.900	2	1	filenames,media_filenames
+t21	6.275	1.900	2	1	filenames,media_filenames
+t22	6.275	1.900	2	1	filenames,media_filenames
+t23	6.275	1.900	2	1	filenames,media_filenames
+t24	6.275	1.900	2	1	filenames,media_filenames
+t25	6.275	1.900	2	1	filenames,media_filenames
+testb10	6.275	1.900	2	1	filenames,media_filenames
+testb13	6.275	1.900	2	1	filenames,media_filenames
+testb14	6.275	1.900	2	1	filenames,media_filenames
+testb15	6.275	1.900	2	1	filenames,media_filenames
+testb16	6.275	1.900	2	1	filenames,media_filenames
+testb18	6.275	1.900	2	1	filenames,media_filenames
+testb19	6.275	1.900	2	1	filenames,media_filenames
+testb20	6.275	1.900	2	1	filenames,media_filenames
+testb6	6.275	1.900	2	1	filenames,media_filenames
+testb8	6.275	1.900	2	1	filenames,media_filenames
+testb9	6.275	1.900	2	1	filenames,media_filenames
+0g environment	6.192	1.875	1	1	publication
+ac fernandez-pello	6.192	1.875	1	1	publication
+analysis intermediate	6.192	1.875	1	1	publication
+apparatus simulating	6.192	1.875	1	1	publication
+apparatus thermally-intermediate	6.192	1.875	1	1	publication
+ashwin miller	6.192	1.875	1	1	publication
+aslihan miller	6.192	1.875	1	1	publication
+aslihan olson	6.192	1.875	1	1	publication
+axial stagnation	6.192	1.875	1	1	publication
+balance analyses	6.192	1.875	1	1	publication
+bass-ii microgravity	6.192	1.875	1	1	publication
+bass-ii summary	6.192	1.875	1	1	publication
+bornand sullivan	6.192	1.875	1	1	publication
+boundary pmma	6.192	1.875	1	1	publication
+cellulose comparison	6.192	1.875	1	1	publication
+christopher nakamura	6.192	1.875	1	1	publication
+christopher tran	6.192	1.875	1	1	publication
+co2 fields	6.192	1.875	1	1	publication
+combustion simulated	6.192	1.875	1	1	publication
+comparison theory	6.192	1.875	1	1	publication
+computational theoretical	6.192	1.875	1	1	publication
+convection blowoff	6.192	1.875	1	1	publication
+correlation capturing	6.192	1.875	1	1	publication
+correlation normal	6.192	1.875	1	1	publication
+critical flow	6.192	1.875	1	1	publication
+csa-cp sensor	6.192	1.875	1	1	publication
+downward spreading	6.192	1.875	1	1	publication
+effect spread	6.192	1.875	1	1	publication
+effectiveness narrow	6.192	1.875	1	1	publication
+energy balance	6.192	1.875	1	1	publication
+environment comparison	6.192	1.875	1	1	publication
+experimental energy	6.192	1.875	1	1	publication
+experimental validation	6.192	1.875	1	1	publication
+extinction composite	6.192	1.875	1	1	publication
+ferkul olson	6.192	1.875	1	1	publication
+fernandez-pello js	6.192	1.875	1	1	publication
+fernandez-pello link	6.192	1.875	1	1	publication
+fields downward	6.192	1.875	1	1	publication
+fire microgravity	6.192	1.875	1	1	publication
+flame thin	6.192	1.875	1	1	publication
+flammability boundary	6.192	1.875	1	1	publication
+flammability pmma	6.192	1.875	1	1	publication
+flow blowoff	6.192	1.875	1	1	publication
+flow experimental	6.192	1.875	1	1	publication
+gravity mixed	6.192	1.875	1	1	publication
+hariharan ashwin	6.192	1.875	1	1	publication
+intermediate thickness	6.192	1.875	1	1	publication
+jacob miller	6.192	1.875	1	1	publication
+james ferkul	6.192	1.875	1	1	publication
+jeanie ray	6.192	1.875	1	1	publication
+johnston michael	6.192	1.875	1	1	publication
+jw marcum	6.192	1.875	1	1	publication
+kinetic regimes	6.192	1.875	1	1	publication
+link js	6.192	1.875	1	1	publication
+marcum olson	6.192	1.875	1	1	publication
+marcum sl	6.192	1.875	1	1	publication
+matthew paolini	6.192	1.875	1	1	publication
+michael ien	6.192	1.875	1	1	publication
+microgravity forced	6.192	1.875	1	1	publication
+microgravity opposed	6.192	1.875	1	1	publication
+miller ac	6.192	1.875	1	1	publication
+miller fernandez-pello	6.192	1.875	1	1	publication
+miller olson	6.192	1.875	1	1	publication
+mixed convection	6.192	1.875	1	1	publication
+modeling analysis	6.192	1.875	1	1	publication
+nakamura yuji	6.192	1.875	1	1	publication
+olson ferkul	6.192	1.875	1	1	publication
+on-board csa-cp	6.192	1.875	1	1	publication
+opposed flow	6.192	1.875	1	1	publication
+pepper jacob	6.192	1.875	1	1	publication
+quenching composite	6.192	1.875	1	1	publication
+radiative thermal	6.192	1.875	1	1	publication
+rate kinetic	6.192	1.875	1	1	publication
+ray takahashi	6.192	1.875	1	1	publication
+readings burning	6.192	1.875	1	1	publication
+regime opposed-flow	6.192	1.875	1	1	publication
+regimes opposed-flow	6.192	1.875	1	1	publication
+rods axial	6.192	1.875	1	1	publication
+rods concurrent	6.192	1.875	1	1	publication
+safety microgravity	6.192	1.875	1	1	publication
+sensor readings	6.192	1.875	1	1	publication
+shah fj	6.192	1.875	1	1	publication
+shah miller	6.192	1.875	1	1	publication
+sheets burning	6.192	1.875	1	1	publication
+simulated 0g	6.192	1.875	1	1	publication
+simulating microgravity	6.192	1.875	1	1	publication
+solids bass-ii	6.192	1.875	1	1	publication
+solids fire	6.192	1.875	1	1	publication
+spread quenching	6.192	1.875	1	1	publication
+spreading flame	6.192	1.875	1	1	publication
+subrata tran	6.192	1.875	1	1	publication
+sullivan shah	6.192	1.875	1	1	publication
+temperature co2	6.192	1.875	1	1	publication
+thermal kinetic	6.192	1.875	1	1	publication
+thermally-intermediate fuel	6.192	1.875	1	1	publication
+thickness pmma	6.192	1.875	1	1	publication
+thin cellulose	6.192	1.875	1	1	publication
+tien pv	6.192	1.875	1	1	publication
+tien wichman	6.192	1.875	1	1	publication
+tj shah	6.192	1.875	1	1	publication
+validation correlation	6.192	1.875	1	1	publication
+velocity radiative	6.192	1.875	1	1	publication
+villaraza jeanie	6.192	1.875	1	1	publication
+wynn laue	6.192	1.875	1	1	publication
+wynn villaraza	6.192	1.875	1	1	publication
+xiaoyang liao	6.192	1.875	1	1	publication
+ya-ting johnston	6.192	1.875	1	1	publication
+zhao js	6.192	1.875	1	1	publication
+zhao xiaoyang	6.192	1.875	1	1	publication
+quenching	5.966	2.500	1	4	publication
+takahashi	5.966	2.500	1	4	publication
+theoretical	5.966	2.500	1	4	publication
+theory	5.966	2.500	1	4	publication
+validation	5.966	2.500	1	4	publication
+active	5.794	2.000	1	2	approach
+begin	5.794	2.000	1	2	objective
+bridge	5.794	2.000	1	2	objective
+considered	5.794	2.000	1	2	hypothesis
+cylinders	5.794	2.000	1	2	objective
+direction	5.794	2.000	1	2	objective
+geometries	5.794	2.000	1	2	objective
+given	5.794	2.000	1	2	hypothesis
+identical	5.794	2.000	1	2	hypothesis
+limit	5.794	2.000	1	2	hypothesis
+main	5.794	2.000	1	2	approach
+methods	5.794	2.000	1	2	research_impacts
+nasa-std-6001	5.794	2.000	1	2	objective
+real-time	5.794	2.000	1	2	approach
+recycling	5.794	2.000	1	2	research_impacts
+refine	5.794	2.000	1	2	objective
+section	5.794	2.000	1	2	objective
+select	5.794	2.000	1	2	research_impacts
+simpler	5.794	2.000	1	2	research_impacts
+speeds	5.794	2.000	1	2	approach
+supplied	5.794	2.000	1	2	approach
+thicker	5.794	2.000	1	2	objective
+waste	5.794	2.000	1	2	research_impacts
+effect	5.510	2.500	1	5	publication
+michael	5.510	2.500	1	5	publication
+gmt211	5.505	1.900	2	2	filenames,media_filenames
+portion	5.505	1.900	2	2	filenames,media_filenames
+sequence	5.505	1.900	2	2	filenames,media_filenames
+boundary layer	5.432	1.875	1	2	publication
+burning microgravity	5.432	1.875	1	2	publication
+capturing boundary	5.432	1.875	1	2	publication
+carmignani luca	5.432	1.875	1	2	publication
+comparison microgravity	5.432	1.875	1	2	publication
+establish thermal	5.432	1.875	1	2	publication
+extinction opposed-flow	5.432	1.875	1	2	publication
+gravity establish	5.432	1.875	1	2	publication
+kinetic regime	5.432	1.875	1	2	publication
+layer effect	5.432	1.875	1	2	publication
+limits microgravity	5.432	1.875	1	2	publication
+luca ferkul	5.432	1.875	1	2	publication
+matthew carmignani	5.432	1.875	1	2	publication
+olson wichman	5.432	1.875	1	2	publication
+pmma sheets	5.432	1.875	1	2	publication
+spread microgravity	5.432	1.875	1	2	publication
+spread rate	5.432	1.875	1	2	publication
+spread thin	5.432	1.875	1	2	publication
+stagnation flow	5.432	1.875	1	2	publication
+subrata laue	5.432	1.875	1	2	publication
+subrata paolini	5.432	1.875	1	2	publication
+takahashi shuhei	5.432	1.875	1	2	publication
+thermal regime	5.432	1.875	1	2	publication
+thin fuels	5.432	1.875	1	2	publication
+actual	5.219	2.000	1	3	objective
+adequate	5.219	2.000	1	3	hypothesis
+cone	5.219	2.000	1	3	research_impacts
+contribute	5.219	2.000	1	3	objective
+determined	5.219	2.000	1	3	approach
+examined	5.219	2.000	1	3	objective
+fractions	5.219	2.000	1	3	hypothesis
+preliminary	5.219	2.000	1	3	objective
+problems	5.219	2.000	1	3	research_impacts
+typical	5.219	2.000	1	3	objective
+varied	5.219	2.000	1	3	approach
+ventilation	5.219	2.000	1	3	hypothesis
+critical	5.125	2.500	1	6	publication
+sensor	5.125	2.500	1	6	publication
+spacecraft fire safety	4.986	3.300	2	11	research_impacts,sub_research_area
+view	4.958	1.900	2	3	filenames,media_filenames
+accurately flames	4.954	1.500	1	1	research_impacts
+active crew	4.954	1.500	1	1	approach
+adding nitrogen	4.954	1.500	1	1	approach
+airflow speed	4.954	1.500	1	1	approach
+appearance flame	4.954	1.500	1	1	approach
+approach microgravity	4.954	1.500	1	1	approach
+avoid re	4.954	1.500	1	1	research_impacts
+balls rather	4.954	1.500	1	1	research_impacts
+bass-ii approach	4.954	1.500	1	1	approach
+bass-ii contribute	4.954	1.500	1	1	objective
+bass-ii helps	4.954	1.500	1	1	research_impacts
+bass-ii improved	4.954	1.500	1	1	research_impacts
+bass-ii tests	4.954	1.500	1	1	hypothesis
+building fires	4.954	1.500	1	1	research_impacts
+burn oval	4.954	1.500	1	1	research_impacts
+burning low-velocity	4.954	1.500	1	1	objective
+burning models	4.954	1.500	1	1	research_impacts
+burning test	4.954	1.500	1	1	hypothesis
+catastrophic bass-ii	4.954	1.500	1	1	research_impacts
+combustion avoid	4.954	1.500	1	1	research_impacts
+combustion computational	4.954	1.500	1	1	objective
+combustion process	4.954	1.500	1	1	research_impacts
+combustion tests	4.954	1.500	1	1	approach
+computer models	4.954	1.500	1	1	research_impacts
+concentration oxygen	4.954	1.500	1	1	approach
+concentration working	4.954	1.500	1	1	objective
+cone flame	4.954	1.500	1	1	research_impacts
+conservative flammability	4.954	1.500	1	1	hypothesis
+considered worst-case	4.954	1.500	1	1	hypothesis
+constant o2	4.954	1.500	1	1	hypothesis
+containment fuel	4.954	1.500	1	1	approach
+contribute combustion	4.954	1.500	1	1	objective
+controls materials	4.954	1.500	1	1	hypothesis
+crew real-time	4.954	1.500	1	1	approach
+cylinders spherical	4.954	1.500	1	1	objective
+design fire	4.954	1.500	1	1	objective
+determined opposed	4.954	1.500	1	1	approach
+direction ambient	4.954	1.500	1	1	objective
+earth conservative	4.954	1.500	1	1	hypothesis
+earth fire	4.954	1.500	1	1	research_impacts
+earth objectives	4.954	1.500	1	1	objective
+earth simpler	4.954	1.500	1	1	research_impacts
+earth wildfires	4.954	1.500	1	1	research_impacts
+enables evaluate	4.954	1.500	1	1	research_impacts
+energy recapture	4.954	1.500	1	1	research_impacts
+engineers select	4.954	1.500	1	1	research_impacts
+evaluate computer	4.954	1.500	1	1	research_impacts
+examined slabs	4.954	1.500	1	1	objective
+extinction low	4.954	1.500	1	1	hypothesis
+fabric sheets	4.954	1.500	1	1	objective
+far earth	4.954	1.500	1	1	research_impacts
+films fabric	4.954	1.500	1	1	objective
+finding fundamental	4.954	1.500	1	1	hypothesis
+fire catastrophic	4.954	1.500	1	1	research_impacts
+firefighting methods	4.954	1.500	1	1	research_impacts
+fires energy	4.954	1.500	1	1	research_impacts
+flame appearance	4.954	1.500	1	1	approach
+flame earth	4.954	1.500	1	1	research_impacts
+flames earth	4.954	1.500	1	1	research_impacts
+flammability material	4.954	1.500	1	1	hypothesis
+flammability perspective	4.954	1.500	1	1	hypothesis
+flow speed	4.954	1.500	1	1	hypothesis
+forced flows	4.954	1.500	1	1	objective
+fractions permits	4.954	1.500	1	1	hypothesis
+fuel samples	4.954	1.500	1	1	approach
+fuels burn	4.954	1.500	1	1	research_impacts
+fuels burning	4.954	1.500	1	1	objective
+fundamental limit	4.954	1.500	1	1	hypothesis
+geometry flammability	4.954	1.500	1	1	hypothesis
+geometry rods	4.954	1.500	1	1	objective
+given material	4.954	1.500	1	1	hypothesis
+glovebox supplied	4.954	1.500	1	1	approach
+goal bass-ii	4.954	1.500	1	1	research_impacts
+gravity considered	4.954	1.500	1	1	hypothesis
+helps engineers	4.954	1.500	1	1	research_impacts
+high flow	4.954	1.500	1	1	hypothesis
+ignition flame	4.954	1.500	1	1	objective
+imaging level	4.954	1.500	1	1	approach
+impose airflow	4.954	1.500	1	1	approach
+improve firefighting	4.954	1.500	1	1	research_impacts
+inside small	4.954	1.500	1	1	approach
+installed microgravity	4.954	1.500	1	1	approach
+interested finding	4.954	1.500	1	1	hypothesis
+lab partner	4.954	1.500	1	1	approach
+level containment	4.954	1.500	1	1	approach
+limit given	4.954	1.500	1	1	hypothesis
+limits solid	4.954	1.500	1	1	objective
+low-velocity forced	4.954	1.500	1	1	objective
+main variables	4.954	1.500	1	1	approach
+material earth	4.954	1.500	1	1	hypothesis
+materials flammability	4.954	1.500	1	1	hypothesis
+materials improve	4.954	1.500	1	1	research_impacts
+methods future	4.954	1.500	1	1	research_impacts
+microgravity begin	4.954	1.500	1	1	objective
+microgravity earth	4.954	1.500	1	1	objective
+microgravity sofie	4.954	1.500	1	1	objective
+missions outer	4.954	1.500	1	1	research_impacts
+models accurately	4.954	1.500	1	1	research_impacts
+models design	4.954	1.500	1	1	objective
+models fuel	4.954	1.500	1	1	research_impacts
+mounted inside	4.954	1.500	1	1	approach
+nitrogen vitiation	4.954	1.500	1	1	objective
+objectives ignition	4.954	1.500	1	1	objective
+operations wind	4.954	1.500	1	1	approach
+outer fuels	4.954	1.500	1	1	research_impacts
+oval balls	4.954	1.500	1	1	research_impacts
+oxygen varied	4.954	1.500	1	1	approach
+partner operations	4.954	1.500	1	1	approach
+performed active	4.954	1.500	1	1	approach
+permits studying	4.954	1.500	1	1	hypothesis
+perspective upward	4.954	1.500	1	1	hypothesis
+pis preliminary	4.954	1.500	1	1	objective
+pointed cone	4.954	1.500	1	1	research_impacts
+power imaging	4.954	1.500	1	1	approach
+preliminary refine	4.954	1.500	1	1	objective
+pressure o2	4.954	1.500	1	1	hypothesis
+primary variables	4.954	1.500	1	1	objective
+process enables	4.954	1.500	1	1	research_impacts
+rather upward	4.954	1.500	1	1	research_impacts
+re far	4.954	1.500	1	1	research_impacts
+real-time lab	4.954	1.500	1	1	approach
+recapture waste	4.954	1.500	1	1	research_impacts
+recycling combustion	4.954	1.500	1	1	research_impacts
+refine requirements	4.954	1.500	1	1	objective
+requirements practical	4.954	1.500	1	1	objective
+rods spherical	4.954	1.500	1	1	objective
+safest materials	4.954	1.500	1	1	research_impacts
+safety improved	4.954	1.500	1	1	research_impacts
+sample geometry	4.954	1.500	1	1	objective
+samples mounted	4.954	1.500	1	1	approach
+section slabs	4.954	1.500	1	1	objective
+sections primary	4.954	1.500	1	1	objective
+select safest	4.954	1.500	1	1	research_impacts
+simpler combustion	4.954	1.500	1	1	research_impacts
+slabs cylinders	4.954	1.500	1	1	objective
+slabs films	4.954	1.500	1	1	objective
+small wind	4.954	1.500	1	1	approach
+sofie pis	4.954	1.500	1	1	objective
+speed direction	4.954	1.500	1	1	objective
+speed interested	4.954	1.500	1	1	hypothesis
+speed oxygen	4.954	1.500	1	1	approach
+speeds main	4.954	1.500	1	1	approach
+spherical section	4.954	1.500	1	1	objective
+spherical sections	4.954	1.500	1	1	objective
+spread rates	4.954	1.500	1	1	approach
+studying flame	4.954	1.500	1	1	hypothesis
+summarize bass-ii	4.954	1.500	1	1	approach
+supplied power	4.954	1.500	1	1	approach
+systems microgravity	4.954	1.500	1	1	objective
+temperature tests	4.954	1.500	1	1	hypothesis
+test normal	4.954	1.500	1	1	hypothesis
+testing constant	4.954	1.500	1	1	hypothesis
+tests controls	4.954	1.500	1	1	hypothesis
+tests hypothesis	4.954	1.500	1	1	hypothesis
+tunnel impose	4.954	1.500	1	1	approach
+tunnel installed	4.954	1.500	1	1	approach
+upward burning	4.954	1.500	1	1	hypothesis
+upward pointed	4.954	1.500	1	1	research_impacts
+variables airflow	4.954	1.500	1	1	approach
+variables forced	4.954	1.500	1	1	objective
+varied adding	4.954	1.500	1	1	approach
+velocity speed	4.954	1.500	1	1	objective
+vitiation sample	4.954	1.500	1	1	objective
+volume nitrogen	4.954	1.500	1	1	objective
+waste recycling	4.954	1.500	1	1	research_impacts
+wildfires building	4.954	1.500	1	1	research_impacts
+working volume	4.954	1.500	1	1	objective
+worst-case geometry	4.954	1.500	1	1	hypothesis
+fuel combustion	4.893	1.875	1	3	publication
+ien james	4.893	1.875	1	3	publication
+liao ya-ting	4.893	1.875	1	3	publication
+microgravity flame	4.893	1.875	1	3	publication
+co-investigator co-i	4.829	3.750	5	14	role
+co2	4.791	2.500	1	7	publication
+convection	4.791	2.500	1	7	publication
+evaluate	4.773	2.000	1	4	research_impacts
+fundamental	4.773	2.000	1	4	hypothesis
+goal	4.773	2.000	1	4	research_impacts
+improve	4.773	2.000	1	4	research_impacts
+installed	4.773	2.000	1	4	approach
+level	4.773	2.000	1	4	approach
+studying	4.773	2.000	1	4	hypothesis
+well	4.773	2.000	1	4	hypothesis
+ac fernandez-pello js	4.541	1.375	1	1	publication
+analysis intermediate thickness	4.541	1.375	1	1	publication
+apparatus simulating microgravity	4.541	1.375	1	1	publication
+apparatus thermally-intermediate fuel	4.541	1.375	1	1	publication
+ashwin miller fletcher	4.541	1.375	1	1	publication
+aslihan miller fletcher	4.541	1.375	1	1	publication
+aslihan olson sandra	4.541	1.375	1	1	publication
+axial stagnation flow	4.541	1.375	1	1	publication
+bass-ii microgravity glovebox	4.541	1.375	1	1	publication
+bhattacharjee subrata tran	4.541	1.375	1	1	publication
+blowoff limits microgravity	4.541	1.375	1	1	publication
+bornand sullivan shah	4.541	1.375	1	1	publication
+boundary pmma rods	4.541	1.375	1	1	publication
+burning microgravity opposed	4.541	1.375	1	1	publication
+cellulose comparison experimental	4.541	1.375	1	1	publication
+channel apparatus simulating	4.541	1.375	1	1	publication
+channel apparatus thermally-intermediate	4.541	1.375	1	1	publication
+christopher nakamura yuji	4.541	1.375	1	1	publication
+christopher tran wynn	4.541	1.375	1	1	publication
+co2 fields downward	4.541	1.375	1	1	publication
+combustion simulated 0g	4.541	1.375	1	1	publication
+convection blowoff limits	4.541	1.375	1	1	publication
+correlation capturing boundary	4.541	1.375	1	1	publication
+correlation normal gravity	4.541	1.375	1	1	publication
+critical flow velocity	4.541	1.375	1	1	publication
+csa-cp sensor readings	4.541	1.375	1	1	publication
+downward spreading flame	4.541	1.375	1	1	publication
+effect spread rate	4.541	1.375	1	1	publication
+effectiveness narrow channel	4.541	1.375	1	1	publication
+energy balance analyses	4.541	1.375	1	1	publication
+environment comparison experimental	4.541	1.375	1	1	publication
+experimental computational theoretical	4.541	1.375	1	1	publication
+experimental energy balance	4.541	1.375	1	1	publication
+experimental validation correlation	4.541	1.375	1	1	publication
+extinction composite fabric	4.541	1.375	1	1	publication
+fernandez-pello js tien	4.541	1.375	1	1	publication
+fernandez-pello link js	4.541	1.375	1	1	publication
+fields downward spreading	4.541	1.375	1	1	publication
+fire safety microgravity	4.541	1.375	1	1	publication
+fj miller ac	4.541	1.375	1	1	publication
+fj miller fernandez-pello	4.541	1.375	1	1	publication
+fj miller olson	4.541	1.375	1	1	publication
+flame thin cellulose	4.541	1.375	1	1	publication
+flammability boundary pmma	4.541	1.375	1	1	publication
+flammability pmma rods	4.541	1.375	1	1	publication
+flow blowoff limits	4.541	1.375	1	1	publication
+flow experimental energy	4.541	1.375	1	1	publication
+flow velocity radiative	4.541	1.375	1	1	publication
+forced flow blowoff	4.541	1.375	1	1	publication
+fuel combustion simulated	4.541	1.375	1	1	publication
+gravity mixed convection	4.541	1.375	1	1	publication
+growth spread extinction	4.541	1.375	1	1	publication
+growth spread quenching	4.541	1.375	1	1	publication
+hariharan ashwin miller	4.541	1.375	1	1	publication
+ien james ferkul	4.541	1.375	1	1	publication
+intermediate thickness pmma	4.541	1.375	1	1	publication
+jacob miller fletcher	4.541	1.375	1	1	publication
+james ferkul paul	4.541	1.375	1	1	publication
+jeanie ray takahashi	4.541	1.375	1	1	publication
+johnston michael ien	4.541	1.375	1	1	publication
+js tien pv	4.541	1.375	1	1	publication
+js tien wichman	4.541	1.375	1	1	publication
+jw marcum sl	4.541	1.375	1	1	publication
+kinetic regime opposed-flow	4.541	1.375	1	1	publication
+kinetic regimes opposed-flow	4.541	1.375	1	1	publication
+laue matthew paolini	4.541	1.375	1	1	publication
+layer effect spread	4.541	1.375	1	1	publication
+liao ya-ting johnston	4.541	1.375	1	1	publication
+limits microgravity forced	4.541	1.375	1	1	publication
+link js tien	4.541	1.375	1	1	publication
+marcum olson ferkul	4.541	1.375	1	1	publication
+marcum sl olson	4.541	1.375	1	1	publication
+matthew paolini christopher	4.541	1.375	1	1	publication
+michael ien james	4.541	1.375	1	1	publication
+microgravity environment comparison	4.541	1.375	1	1	publication
+microgravity flame spread	4.541	1.375	1	1	publication
+microgravity flammability boundary	4.541	1.375	1	1	publication
+microgravity flammability pmma	4.541	1.375	1	1	publication
+microgravity forced flow	4.541	1.375	1	1	publication
+microgravity opposed flow	4.541	1.375	1	1	publication
+miller ac fernandez-pello	4.541	1.375	1	1	publication
+miller fernandez-pello link	4.541	1.375	1	1	publication
+miller olson wichman	4.541	1.375	1	1	publication
+mixed convection blowoff	4.541	1.375	1	1	publication
+modeling analysis intermediate	4.541	1.375	1	1	publication
+normal gravity mixed	4.541	1.375	1	1	publication
+on-board csa-cp sensor	4.541	1.375	1	1	publication
+paolini christopher nakamura	4.541	1.375	1	1	publication
+paolini christopher tran	4.541	1.375	1	1	publication
+pepper jacob miller	4.541	1.375	1	1	publication
+pmma rods axial	4.541	1.375	1	1	publication
+pmma rods concurrent	4.541	1.375	1	1	publication
+pmma sheets burning	4.541	1.375	1	1	publication
+pv ferkul olson	4.541	1.375	1	1	publication
+quenching composite fabric	4.541	1.375	1	1	publication
+radiative extinction opposed-flow	4.541	1.375	1	1	publication
+radiative thermal kinetic	4.541	1.375	1	1	publication
+rate kinetic regime	4.541	1.375	1	1	publication
+ray takahashi shuhei	4.541	1.375	1	1	publication
+readings burning suppression	4.541	1.375	1	1	publication
+regime opposed-flow flame	4.541	1.375	1	1	publication
+regimes opposed-flow flame	4.541	1.375	1	1	publication
+rods axial stagnation	4.541	1.375	1	1	publication
+rods concurrent flow	4.541	1.375	1	1	publication
+safety microgravity glovebox	4.541	1.375	1	1	publication
+sensor readings burning	4.541	1.375	1	1	publication
+shah fj miller	4.541	1.375	1	1	publication
+sheets burning microgravity	4.541	1.375	1	1	publication
+simsek aslihan miller	4.541	1.375	1	1	publication
+simsek aslihan olson	4.541	1.375	1	1	publication
+simulated 0g environment	4.541	1.375	1	1	publication
+simulating microgravity flame	4.541	1.375	1	1	publication
+solids bass-ii microgravity	4.541	1.375	1	1	publication
+solids fire safety	4.541	1.375	1	1	publication
+spread comparison theory	4.541	1.375	1	1	publication
+spread extinction composite	4.541	1.375	1	1	publication
+spread quenching composite	4.541	1.375	1	1	publication
+spread rate kinetic	4.541	1.375	1	1	publication
+spreading flame thin	4.541	1.375	1	1	publication
+stagnation flow experimental	4.541	1.375	1	1	publication
+subrata tran wynn	4.541	1.375	1	1	publication
+sullivan shah miller	4.541	1.375	1	1	publication
+suppression solids bass-ii	4.541	1.375	1	1	publication
+suppression solids fire	4.541	1.375	1	1	publication
+temperature co2 fields	4.541	1.375	1	1	publication
+thermal kinetic regimes	4.541	1.375	1	1	publication
+thermally-intermediate fuel combustion	4.541	1.375	1	1	publication
+thickness pmma sheets	4.541	1.375	1	1	publication
+thin cellulose comparison	4.541	1.375	1	1	publication
+tien pv ferkul	4.541	1.375	1	1	publication
+tj shah fj	4.541	1.375	1	1	publication
+tran wynn laue	4.541	1.375	1	1	publication
+tran wynn villaraza	4.541	1.375	1	1	publication
+validation correlation capturing	4.541	1.375	1	1	publication
+velocity radiative extinction	4.541	1.375	1	1	publication
+villaraza jeanie ray	4.541	1.375	1	1	publication
+wynn laue matthew	4.541	1.375	1	1	publication
+wynn villaraza jeanie	4.541	1.375	1	1	publication
+xiaoyang liao ya-ting	4.541	1.375	1	1	publication
+ya-ting johnston michael	4.541	1.375	1	1	publication
+zhao js tien	4.541	1.375	1	1	publication
+zhao xiaoyang liao	4.541	1.375	1	1	publication
+end	4.534	1.900	2	4	filenames,media_filenames
+still	4.534	1.900	2	4	filenames,media_filenames
+modeling	4.496	2.500	1	8	publication
+ambient	4.408	2.000	1	5	objective
+detection	4.408	2.000	1	5	objective
+far	4.408	2.000	1	5	research_impacts
+gap	4.408	2.000	1	5	objective
+ground-based	4.408	2.000	1	5	objective
+imaging	4.408	2.000	1	5	approach
+method	4.408	2.000	1	5	objective
+operations	4.408	2.000	1	5	approach
+power	4.408	2.000	1	5	approach
+realistic	4.408	2.000	1	5	objective
+volume	4.408	2.000	1	5	objective
+actual material	4.346	1.500	1	2	objective
+adequate ventilation	4.346	1.500	1	2	hypothesis
+airflow speeds	4.346	1.500	1	2	approach
+ambient oxygen	4.346	1.500	1	2	objective
+begin bridge	4.346	1.500	1	2	objective
+better material	4.346	1.500	1	2	hypothesis
+bridge gap	4.346	1.500	1	2	objective
+burn well	4.346	1.500	1	2	hypothesis
+combustion problems	4.346	1.500	1	2	research_impacts
+concentration temperature	4.346	1.500	1	2	hypothesis
+conditions identical	4.346	1.500	1	2	hypothesis
+flammability microgravity	4.346	1.500	1	2	objective
+flammability testing	4.346	1.500	1	2	hypothesis
+fuel burning	4.346	1.500	1	2	research_impacts
+fuels typical	4.346	1.500	1	2	objective
+gap normal	4.346	1.500	1	2	objective
+geometries examined	4.346	1.500	1	2	objective
+gravity nasa-std-6001	4.346	1.500	1	2	objective
+ground-based microgravity	4.346	1.500	1	2	objective
+growth flame	4.346	1.500	1	2	objective
+hypothesis materials	4.346	1.500	1	2	hypothesis
+identical pressure	4.346	1.500	1	2	hypothesis
+improved spacecraft	4.346	1.500	1	2	research_impacts
+improved understanding	4.346	1.500	1	2	research_impacts
+low high	4.346	1.500	1	2	hypothesis
+material normal	4.346	1.500	1	2	hypothesis
+method ground-based	4.346	1.500	1	2	objective
+microgravity adequate	4.346	1.500	1	2	hypothesis
+microgravity tests	4.346	1.500	1	2	objective
+mole fractions	4.346	1.500	1	2	hypothesis
+nasa-std-6001 test	4.346	1.500	1	2	objective
+nitrogen flame	4.346	1.500	1	2	approach
+o2 concentration	4.346	1.500	1	2	hypothesis
+opposed concurrent	4.346	1.500	1	2	approach
+practical realistic	4.346	1.500	1	2	objective
+primary goal	4.346	1.500	1	2	research_impacts
+rates determined	4.346	1.500	1	2	approach
+realistic thicker	4.346	1.500	1	2	objective
+suppression systems	4.346	1.500	1	2	objective
+test method	4.346	1.500	1	2	objective
+tests actual	4.346	1.500	1	2	objective
+thicker fuels	4.346	1.500	1	2	objective
+typical geometries	4.346	1.500	1	2	objective
+understanding combustion	4.346	1.500	1	2	research_impacts
+ventilation burn	4.346	1.500	1	2	hypothesis
+well better	4.346	1.500	1	2	hypothesis
+microgravity normal	4.132	1.875	1	5	publication
+radiative extinction	4.132	1.875	1	5	publication
+mole	4.100	2.000	1	6	hypothesis
+practical	4.100	2.000	1	6	objective
+raw	4.004	2.650	3	11	file_folders,filenames,media_filenames
+bhattacharjee subrata laue	3.984	1.375	1	2	publication
+bhattacharjee subrata paolini	3.984	1.375	1	2	publication
+boundary layer effect	3.984	1.375	1	2	publication
+capturing boundary layer	3.984	1.375	1	2	publication
+carmignani luca ferkul	3.984	1.375	1	2	publication
+comparison microgravity normal	3.984	1.375	1	2	publication
+establish thermal regime	3.984	1.375	1	2	publication
+extinction opposed-flow flame	3.984	1.375	1	2	publication
+flame spread microgravity	3.984	1.375	1	2	publication
+flame spread thin	3.984	1.375	1	2	publication
+gravity establish thermal	3.984	1.375	1	2	publication
+laue matthew carmignani	3.984	1.375	1	2	publication
+luca ferkul paul	3.984	1.375	1	2	publication
+matthew carmignani luca	3.984	1.375	1	2	publication
+normal gravity establish	3.984	1.375	1	2	publication
+spread comparison microgravity	3.984	1.375	1	2	publication
+spread microgravity environment	3.984	1.375	1	2	publication
+spread thin fuels	3.984	1.375	1	2	publication
+subrata laue matthew	3.984	1.375	1	2	publication
+subrata paolini christopher	3.984	1.375	1	2	publication
+flows microgravity	3.914	1.500	1	3	objective
+materials microgravity	3.914	1.500	1	3	hypothesis
+tests performed	3.914	1.500	1	3	approach
+approach	3.833	2.000	1	7	approach
+hypothesis	3.833	2.000	1	7	hypothesis
+accurately flames earth	3.633	1.100	1	1	research_impacts
+active crew real-time	3.633	1.100	1	1	approach
+adding nitrogen flame	3.633	1.100	1	1	approach
+airflow speed oxygen	3.633	1.100	1	1	approach
+airflow speeds main	3.633	1.100	1	1	approach
+ambient oxygen concentration	3.633	1.100	1	1	objective
+appearance flame growth	3.633	1.100	1	1	approach
+approach microgravity combustion	3.633	1.100	1	1	approach
+avoid re far	3.633	1.100	1	1	research_impacts
+balls rather upward	3.633	1.100	1	1	research_impacts
+bass-ii approach microgravity	3.633	1.100	1	1	approach
+bass-ii contribute combustion	3.633	1.100	1	1	objective
+bass-ii helps engineers	3.633	1.100	1	1	research_impacts
+bass-ii improved spacecraft	3.633	1.100	1	1	research_impacts
+bass-ii tests hypothesis	3.633	1.100	1	1	hypothesis
+building fires energy	3.633	1.100	1	1	research_impacts
+burn oval balls	3.633	1.100	1	1	research_impacts
+burning low-velocity forced	3.633	1.100	1	1	objective
+burning models accurately	3.633	1.100	1	1	research_impacts
+burning test normal	3.633	1.100	1	1	hypothesis
+catastrophic bass-ii helps	3.633	1.100	1	1	research_impacts
+combustion avoid re	3.633	1.100	1	1	research_impacts
+combustion computational models	3.633	1.100	1	1	objective
+combustion process enables	3.633	1.100	1	1	research_impacts
+combustion tests performed	3.633	1.100	1	1	approach
+computational models design	3.633	1.100	1	1	objective
+computer models fuel	3.633	1.100	1	1	research_impacts
+concentration oxygen varied	3.633	1.100	1	1	approach
+concentration temperature tests	3.633	1.100	1	1	hypothesis
+concentration working volume	3.633	1.100	1	1	objective
+cone flame earth	3.633	1.100	1	1	research_impacts
+conservative flammability testing	3.633	1.100	1	1	hypothesis
+considered worst-case geometry	3.633	1.100	1	1	hypothesis
+constant o2 mole	3.633	1.100	1	1	hypothesis
+containment fuel samples	3.633	1.100	1	1	approach
+contribute combustion computational	3.633	1.100	1	1	objective
+controls materials flammability	3.633	1.100	1	1	hypothesis
+crew real-time lab	3.633	1.100	1	1	approach
+cylinders spherical sections	3.633	1.100	1	1	objective
+design fire detection	3.633	1.100	1	1	objective
+detection suppression systems	3.633	1.100	1	1	objective
+determined opposed concurrent	3.633	1.100	1	1	approach
+direction ambient oxygen	3.633	1.100	1	1	objective
+earth conservative flammability	3.633	1.100	1	1	hypothesis
+earth fire catastrophic	3.633	1.100	1	1	research_impacts
+earth objectives ignition	3.633	1.100	1	1	objective
+earth simpler combustion	3.633	1.100	1	1	research_impacts
+earth wildfires building	3.633	1.100	1	1	research_impacts
+enables evaluate computer	3.633	1.100	1	1	research_impacts
+energy recapture waste	3.633	1.100	1	1	research_impacts
+engineers select safest	3.633	1.100	1	1	research_impacts
+evaluate computer models	3.633	1.100	1	1	research_impacts
+examined slabs cylinders	3.633	1.100	1	1	objective
+extinction limits solid	3.633	1.100	1	1	objective
+extinction low high	3.633	1.100	1	1	hypothesis
+far earth fire	3.633	1.100	1	1	research_impacts
+films fabric sheets	3.633	1.100	1	1	objective
+finding fundamental limit	3.633	1.100	1	1	hypothesis
+fire catastrophic bass-ii	3.633	1.100	1	1	research_impacts
+fire detection suppression	3.633	1.100	1	1	objective
+fire safety improved	3.633	1.100	1	1	research_impacts
+firefighting methods future	3.633	1.100	1	1	research_impacts
+fires energy recapture	3.633	1.100	1	1	research_impacts
+flame appearance flame	3.633	1.100	1	1	approach
+flame earth simpler	3.633	1.100	1	1	research_impacts
+flame growth flame	3.633	1.100	1	1	objective
+flames earth wildfires	3.633	1.100	1	1	research_impacts
+flammability material earth	3.633	1.100	1	1	hypothesis
+flammability microgravity sofie	3.633	1.100	1	1	objective
+flammability perspective upward	3.633	1.100	1	1	hypothesis
+flammability testing constant	3.633	1.100	1	1	hypothesis
+flow speed interested	3.633	1.100	1	1	hypothesis
+flow velocity speed	3.633	1.100	1	1	objective
+flows microgravity begin	3.633	1.100	1	1	objective
+forced flows microgravity	3.633	1.100	1	1	objective
+fractions permits studying	3.633	1.100	1	1	hypothesis
+fuel burning models	3.633	1.100	1	1	research_impacts
+fuel samples mounted	3.633	1.100	1	1	approach
+fuels burn oval	3.633	1.100	1	1	research_impacts
+fuels burning low-velocity	3.633	1.100	1	1	objective
+fundamental limit given	3.633	1.100	1	1	hypothesis
+future missions outer	3.633	1.100	1	1	research_impacts
+geometries examined slabs	3.633	1.100	1	1	objective
+geometry flammability material	3.633	1.100	1	1	hypothesis
+geometry rods spherical	3.633	1.100	1	1	objective
+glovebox supplied power	3.633	1.100	1	1	approach
+goal bass-ii improved	3.633	1.100	1	1	research_impacts
+gravity considered worst-case	3.633	1.100	1	1	hypothesis
+gravity nasa-std-6001 test	3.633	1.100	1	1	objective
+growth flame spread	3.633	1.100	1	1	objective
+growth spread rates	3.633	1.100	1	1	approach
+helps engineers select	3.633	1.100	1	1	research_impacts
+high flow speed	3.633	1.100	1	1	hypothesis
+identical pressure o2	3.633	1.100	1	1	hypothesis
+ignition flame growth	3.633	1.100	1	1	objective
+imaging level containment	3.633	1.100	1	1	approach
+impose airflow speeds	3.633	1.100	1	1	approach
+improve firefighting methods	3.633	1.100	1	1	research_impacts
+improved understanding combustion	3.633	1.100	1	1	research_impacts
+inside small wind	3.633	1.100	1	1	approach
+installed microgravity glovebox	3.633	1.100	1	1	approach
+interested finding fundamental	3.633	1.100	1	1	hypothesis
+lab partner operations	3.633	1.100	1	1	approach
+level containment fuel	3.633	1.100	1	1	approach
+limit given material	3.633	1.100	1	1	hypothesis
+limits solid fuels	3.633	1.100	1	1	objective
+low high flow	3.633	1.100	1	1	hypothesis
+low-velocity forced flows	3.633	1.100	1	1	objective
+main variables airflow	3.633	1.100	1	1	approach
+material earth conservative	3.633	1.100	1	1	hypothesis
+materials flammability perspective	3.633	1.100	1	1	hypothesis
+materials improve firefighting	3.633	1.100	1	1	research_impacts
+methods future missions	3.633	1.100	1	1	research_impacts
+microgravity begin bridge	3.633	1.100	1	1	objective
+microgravity combustion tests	3.633	1.100	1	1	approach
+microgravity earth objectives	3.633	1.100	1	1	objective
+microgravity glovebox supplied	3.633	1.100	1	1	approach
+microgravity sofie pis	3.633	1.100	1	1	objective
+missions outer fuels	3.633	1.100	1	1	research_impacts
+models accurately flames	3.633	1.100	1	1	research_impacts
+models design fire	3.633	1.100	1	1	objective
+models fuel burning	3.633	1.100	1	1	research_impacts
+mole fractions permits	3.633	1.100	1	1	hypothesis
+mounted inside small	3.633	1.100	1	1	approach
+nasa-std-6001 test method	3.633	1.100	1	1	objective
+nitrogen flame appearance	3.633	1.100	1	1	approach
+nitrogen vitiation sample	3.633	1.100	1	1	objective
+normal gravity considered	3.633	1.100	1	1	hypothesis
+o2 concentration temperature	3.633	1.100	1	1	hypothesis
+o2 mole fractions	3.633	1.100	1	1	hypothesis
+objectives ignition flame	3.633	1.100	1	1	objective
+operations wind tunnel	3.633	1.100	1	1	approach
+opposed concurrent flow	3.633	1.100	1	1	approach
+outer fuels burn	3.633	1.100	1	1	research_impacts
+oval balls rather	3.633	1.100	1	1	research_impacts
+oxygen concentration oxygen	3.633	1.100	1	1	approach
+oxygen concentration working	3.633	1.100	1	1	objective
+oxygen varied adding	3.633	1.100	1	1	approach
+partner operations wind	3.633	1.100	1	1	approach
+performed active crew	3.633	1.100	1	1	approach
+permits studying flame	3.633	1.100	1	1	hypothesis
+perspective upward burning	3.633	1.100	1	1	hypothesis
+pis preliminary refine	3.633	1.100	1	1	objective
+pointed cone flame	3.633	1.100	1	1	research_impacts
+power imaging level	3.633	1.100	1	1	approach
+preliminary refine requirements	3.633	1.100	1	1	objective
+pressure o2 concentration	3.633	1.100	1	1	hypothesis
+primary goal bass-ii	3.633	1.100	1	1	research_impacts
+primary variables forced	3.633	1.100	1	1	objective
+process enables evaluate	3.633	1.100	1	1	research_impacts
+rates determined opposed	3.633	1.100	1	1	approach
+rather upward pointed	3.633	1.100	1	1	research_impacts
+re far earth	3.633	1.100	1	1	research_impacts
+real-time lab partner	3.633	1.100	1	1	approach
+recapture waste recycling	3.633	1.100	1	1	research_impacts
+recycling combustion problems	3.633	1.100	1	1	research_impacts
+refine requirements practical	3.633	1.100	1	1	objective
+requirements practical realistic	3.633	1.100	1	1	objective
+rods spherical section	3.633	1.100	1	1	objective
+safest materials improve	3.633	1.100	1	1	research_impacts
+safety improved understanding	3.633	1.100	1	1	research_impacts
+sample geometry rods	3.633	1.100	1	1	objective
+samples mounted inside	3.633	1.100	1	1	approach
+section slabs films	3.633	1.100	1	1	objective
+sections primary variables	3.633	1.100	1	1	objective
+select safest materials	3.633	1.100	1	1	research_impacts
+simpler combustion process	3.633	1.100	1	1	research_impacts
+slabs cylinders spherical	3.633	1.100	1	1	objective
+slabs films fabric	3.633	1.100	1	1	objective
+small wind tunnel	3.633	1.100	1	1	approach
+sofie pis preliminary	3.633	1.100	1	1	objective
+solid fuels burning	3.633	1.100	1	1	objective
+speed direction ambient	3.633	1.100	1	1	objective
+speed interested finding	3.633	1.100	1	1	hypothesis
+speed oxygen concentration	3.633	1.100	1	1	approach
+speeds main variables	3.633	1.100	1	1	approach
+spherical section slabs	3.633	1.100	1	1	objective
+spherical sections primary	3.633	1.100	1	1	objective
+spread extinction limits	3.633	1.100	1	1	objective
+spread extinction low	3.633	1.100	1	1	hypothesis
+spread rates determined	3.633	1.100	1	1	approach
+studying flame spread	3.633	1.100	1	1	hypothesis
+summarize bass-ii approach	3.633	1.100	1	1	approach
+supplied power imaging	3.633	1.100	1	1	approach
+suppression systems microgravity	3.633	1.100	1	1	objective
+systems microgravity earth	3.633	1.100	1	1	objective
+temperature tests controls	3.633	1.100	1	1	hypothesis
+test method ground-based	3.633	1.100	1	1	objective
+test normal gravity	3.633	1.100	1	1	hypothesis
+testing constant o2	3.633	1.100	1	1	hypothesis
+tests controls materials	3.633	1.100	1	1	hypothesis
+tests hypothesis materials	3.633	1.100	1	1	hypothesis
+tests performed active	3.633	1.100	1	1	approach
+tunnel impose airflow	3.633	1.100	1	1	approach
+tunnel installed microgravity	3.633	1.100	1	1	approach
+understanding combustion avoid	3.633	1.100	1	1	research_impacts
+upward burning test	3.633	1.100	1	1	hypothesis
+upward pointed cone	3.633	1.100	1	1	research_impacts
+variables airflow speed	3.633	1.100	1	1	approach
+variables forced flow	3.633	1.100	1	1	objective
+varied adding nitrogen	3.633	1.100	1	1	approach
+velocity speed direction	3.633	1.100	1	1	objective
+vitiation sample geometry	3.633	1.100	1	1	objective
+volume nitrogen vitiation	3.633	1.100	1	1	objective
+waste recycling combustion	3.633	1.100	1	1	research_impacts
+wildfires building fires	3.633	1.100	1	1	research_impacts
+wind tunnel impose	3.633	1.100	1	1	approach
+wind tunnel installed	3.633	1.100	1	1	approach
+working volume nitrogen	3.633	1.100	1	1	objective
+worst-case geometry flammability	3.633	1.100	1	1	hypothesis
+better	3.597	2.000	1	8	hypothesis
+crew	3.597	2.000	1	8	approach
+inside	3.597	2.000	1	8	approach
+performed	3.597	2.000	1	8	approach
+small	3.597	2.000	1	8	approach
+microgravity environment	3.593	1.875	1	7	publication
+computational models	3.579	1.500	1	4	objective
+detection suppression	3.579	1.500	1	4	objective
+gravity conditions	3.579	1.500	1	4	hypothesis
+o2 mole	3.579	1.500	1	4	hypothesis
+analysis	3.577	2.500	1	12	publication
+documents	3.577	2.500	3	12	file_folders,filenames
+rate	3.392	2.500	1	13	publication
+process	3.386	2.000	1	9	research_impacts
+rates	3.386	2.000	1	9	approach
+testing	3.386	2.000	1	9	hypothesis
+understanding	3.386	2.000	1	9	research_impacts
+metadata	3.354	1.750	2	7	file_folders,filenames
+fire detection	3.306	1.500	1	5	objective
+future missions	3.306	1.500	1	5	research_impacts
+material flammability	3.306	1.500	1	5	objective
+microgravity combustion	3.306	1.500	1	5	approach
+1.mp4	3.303	1.000	1	1	filenames
+2.mp4	3.303	1.000	1	1	filenames
+attempt.mp4	3.303	1.000	1	1	filenames
+attempts.mp4	3.303	1.000	1	1	filenames
+b1.mp4	3.303	1.000	1	1	filenames
+b12.mp4	3.303	1.000	1	1	filenames
+b2.mp4	3.303	1.000	1	1	filenames
+b22.mp4	3.303	1.000	1	1	filenames
+b3.mp4	3.303	1.000	1	1	filenames
+b4.mp4	3.303	1.000	1	1	filenames
+b5.mp4	3.303	1.000	1	1	filenames
+bhattachjee	3.303	1.000	1	1	people
+d300sgmt2014	3.303	1.000	1	1	filenames
+f1.mp4	3.303	1.000	1	1	filenames
+f3.mp4	3.303	1.000	1	1	filenames
+f4.mp4	3.303	1.000	1	1	filenames
+gmt2014	3.303	1.000	1	1	filenames
+iss038e051108	3.303	1.000	1	1	filenames
+iss038e051182	3.303	1.000	1	1	filenames
+iss038e051200	3.303	1.000	1	1	filenames
+iss038e051258	3.303	1.000	1	1	filenames
+iss038e051295	3.303	1.000	1	1	filenames
+iss038e051384	3.303	1.000	1	1	filenames
+iss038e051408	3.303	1.000	1	1	filenames
+iss040e030711	3.303	1.000	1	1	filenames
+iss040e030906	3.303	1.000	1	1	filenames
+iss040e031063	3.303	1.000	1	1	filenames
+iss040e031181	3.303	1.000	1	1	filenames
+iss040e031282	3.303	1.000	1	1	filenames
+iss040e031379	3.303	1.000	1	1	filenames
+iss040e045728	3.303	1.000	1	1	filenames
+iss040e045775	3.303	1.000	1	1	filenames
+iss040e045850	3.303	1.000	1	1	filenames
+p14.mp4	3.303	1.000	1	1	filenames
+p15.mp4	3.303	1.000	1	1	filenames
+p2.mp4	3.303	1.000	1	1	filenames
+p21a.mp4	3.303	1.000	1	1	filenames
+p21b.mp4	3.303	1.000	1	1	filenames
+p3a.mp4	3.303	1.000	1	1	filenames
+p3b.mp4	3.303	1.000	1	1	filenames
+proofsheet	3.303	1.000	1	1	filenames
+psi-101	3.303	1.000	1	1	filenames
+s133m	3.303	1.000	1	1	filenames
+s144m	3.303	1.000	1	1	filenames
+s145m	3.303	1.000	1	1	filenames
+s146m	3.303	1.000	1	1	filenames
+s164m	3.303	1.000	1	1	filenames
+s165m	3.303	1.000	1	1	filenames
+s168m	3.303	1.000	1	1	filenames
+s169m	3.303	1.000	1	1	filenames
+s174m	3.303	1.000	1	1	filenames
+s176m	3.303	1.000	1	1	filenames
+s177m	3.303	1.000	1	1	filenames
+s178m	3.303	1.000	1	1	filenames
+s179m	3.303	1.000	1	1	filenames
+s181m	3.303	1.000	1	1	filenames
+s191m	3.303	1.000	1	1	filenames
+s192	3.303	1.000	1	1	filenames
+s193m	3.303	1.000	1	1	filenames
+s194m	3.303	1.000	1	1	filenames
+s195m	3.303	1.000	1	1	filenames
+s196m	3.303	1.000	1	1	filenames
+s199	3.303	1.000	1	1	filenames
+s200m	3.303	1.000	1	1	filenames
+s201m	3.303	1.000	1	1	filenames
+s202m	3.303	1.000	1	1	filenames
+s203m	3.303	1.000	1	1	filenames
+s215m	3.303	1.000	1	1	filenames
+s220m	3.303	1.000	1	1	filenames
+s221m	3.303	1.000	1	1	filenames
+s226m	3.303	1.000	1	1	filenames
+s229m	3.303	1.000	1	1	filenames
+s819l	3.303	1.000	1	1	filenames
+sequence.mp4	3.303	1.000	1	1	filenames
+t21.ts	3.303	1.000	1	1	filenames
+test.mp4	3.303	1.000	1	1	filenames
+testb10.mp4	3.303	1.000	1	1	filenames
+testb13.mp4	3.303	1.000	1	1	filenames
+testb15.mp4	3.303	1.000	1	1	filenames
+testb16.mp4	3.303	1.000	1	1	filenames
+testb18.mp4	3.303	1.000	1	1	filenames
+testb19.mp4	3.303	1.000	1	1	filenames
+testb20.mp4	3.303	1.000	1	1	filenames
+testb6.mp4	3.303	1.000	1	1	filenames
+testb8.mp4	3.303	1.000	1	1	filenames
+testb9.mp4	3.303	1.000	1	1	filenames
+tpb21	3.303	1.000	1	1	filenames
+tpb22	3.303	1.000	1	1	filenames
+tpf3	3.303	1.000	1	1	filenames
+tpm11	3.303	1.000	1	1	filenames
+tpm16	3.303	1.000	1	1	filenames
+tpm18	3.303	1.000	1	1	filenames
+tpm3	3.303	1.000	1	1	filenames
+tpm7	3.303	1.000	1	1	filenames
+tpm8	3.303	1.000	1	1	filenames
+tpm9	3.303	1.000	1	1	filenames
+tpp12	3.303	1.000	1	1	filenames
+tpp13a	3.303	1.000	1	1	filenames
+tpp13b	3.303	1.000	1	1	filenames
+tpp16	3.303	1.000	1	1	filenames
+tpp17	3.303	1.000	1	1	filenames
+tpp18	3.303	1.000	1	1	filenames
+tpp19	3.303	1.000	1	1	filenames
+tpp23	3.303	1.000	1	1	filenames
+tpp24	3.303	1.000	1	1	filenames
+tpp5	3.303	1.000	1	1	filenames
+tpp9	3.303	1.000	1	1	filenames
+view.mp4	3.303	1.000	1	1	filenames
+fires	3.196	2.000	1	10	research_impacts
+flows	3.196	2.000	1	10	objective
+missions	3.196	2.000	1	10	research_impacts
+actual material flammability	3.187	1.100	1	2	objective
+adequate ventilation burn	3.187	1.100	1	2	hypothesis
+begin bridge gap	3.187	1.100	1	2	objective
+better material normal	3.187	1.100	1	2	hypothesis
+bridge gap normal	3.187	1.100	1	2	objective
+burn well better	3.187	1.100	1	2	hypothesis
+conditions identical pressure	3.187	1.100	1	2	hypothesis
+fuels typical geometries	3.187	1.100	1	2	objective
+gap normal gravity	3.187	1.100	1	2	objective
+gravity conditions identical	3.187	1.100	1	2	hypothesis
+ground-based microgravity tests	3.187	1.100	1	2	objective
+hypothesis materials microgravity	3.187	1.100	1	2	hypothesis
+improved spacecraft fire	3.187	1.100	1	2	research_impacts
+material flammability microgravity	3.187	1.100	1	2	objective
+material normal gravity	3.187	1.100	1	2	hypothesis
+materials microgravity adequate	3.187	1.100	1	2	hypothesis
+method ground-based microgravity	3.187	1.100	1	2	objective
+microgravity adequate ventilation	3.187	1.100	1	2	hypothesis
+microgravity tests actual	3.187	1.100	1	2	objective
+normal gravity nasa-std-6001	3.187	1.100	1	2	objective
+practical realistic thicker	3.187	1.100	1	2	objective
+realistic thicker fuels	3.187	1.100	1	2	objective
+tests actual material	3.187	1.100	1	2	objective
+thicker fuels typical	3.187	1.100	1	2	objective
+typical geometries examined	3.187	1.100	1	2	objective
+ventilation burn well	3.187	1.100	1	2	hypothesis
+well better material	3.187	1.100	1	2	hypothesis
+microgravity normal gravity	3.030	1.375	1	5	publication
+design	3.022	2.000	1	11	objective
+1132-1133	2.972	0.900	1	1	media_filenames
+1741-1743	2.972	0.900	1	1	media_filenames
+1754-1756	2.972	0.900	1	1	media_filenames
+b21	2.972	0.900	1	1	media_filenames
+flame-blowoff-bass-gmt177-test-o7	2.972	0.900	1	1	media_filenames
+m10-lab-camera-los	2.972	0.900	1	1	media_filenames
+m10experimentvideo-los	2.972	0.900	1	1	media_filenames
+m11	2.972	0.900	1	1	media_filenames
+m12	2.972	0.900	1	1	media_filenames
+m13	2.972	0.900	1	1	media_filenames
+m14	2.972	0.900	1	1	media_filenames
+m16	2.972	0.900	1	1	media_filenames
+m17	2.972	0.900	1	1	media_filenames
+m18	2.972	0.900	1	1	media_filenames
+m19	2.972	0.900	1	1	media_filenames
+m20	2.972	0.900	1	1	media_filenames
+m3-over-the-shoulder-view-during-los	2.972	0.900	1	1	media_filenames
+m3-rack-video-during-los	2.972	0.900	1	1	media_filenames
+o11	2.972	0.900	1	1	media_filenames
+o12	2.972	0.900	1	1	media_filenames
+o13b	2.972	0.900	1	1	media_filenames
+o14	2.972	0.900	1	1	media_filenames
+o15a	2.972	0.900	1	1	media_filenames
+o15b	2.972	0.900	1	1	media_filenames
+o19	2.972	0.900	1	1	media_filenames
+o3a	2.972	0.900	1	1	media_filenames
+o5a-all	2.972	0.900	1	1	media_filenames
+o5b	2.972	0.900	1	1	media_filenames
+o8a	2.972	0.900	1	1	media_filenames
+o8b	2.972	0.900	1	1	media_filenames
+p13a	2.972	0.900	1	1	media_filenames
+p13b	2.972	0.900	1	1	media_filenames
+p16	2.972	0.900	1	1	media_filenames
+p17	2.972	0.900	1	1	media_filenames
+p19	2.972	0.900	1	1	media_filenames
+p22a	2.972	0.900	1	1	media_filenames
+p22b	2.972	0.900	1	1	media_filenames
+p23	2.972	0.900	1	1	media_filenames
+p25	2.972	0.900	1	1	media_filenames
+p5-los-portion	2.972	0.900	1	1	media_filenames
+part-1	2.972	0.900	1	1	media_filenames
+sample137	2.972	0.900	1	1	media_filenames
+sample139	2.972	0.900	1	1	media_filenames
+t10	2.972	0.900	1	1	media_filenames
+t12	2.972	0.900	1	1	media_filenames
+t13	2.972	0.900	1	1	media_filenames
+t13-post-burn-picture-camera-monitor	2.972	0.900	1	1	media_filenames
+t15	2.972	0.900	1	1	media_filenames
+t16	2.972	0.900	1	1	media_filenames
+t16-post-burn-picture	2.972	0.900	1	1	media_filenames
+t16-post-burn-picture-2	2.972	0.900	1	1	media_filenames
+t16-still-camera-monitor-image-playback	2.972	0.900	1	1	media_filenames
+t17	2.972	0.900	1	1	media_filenames
+t18	2.972	0.900	1	1	media_filenames
+t19	2.972	0.900	1	1	media_filenames
+t26	2.972	0.900	1	1	media_filenames
+t27	2.972	0.900	1	1	media_filenames
+t28a	2.972	0.900	1	1	media_filenames
+t28b	2.972	0.900	1	1	media_filenames
+t29	2.972	0.900	1	1	media_filenames
+test-t16-shifted-video	2.972	0.900	1	1	media_filenames
+testb11	2.972	0.900	1	1	media_filenames
+testm15	2.972	0.900	1	1	media_filenames
+testp4	2.972	0.900	1	1	media_filenames
+testp6	2.972	0.900	1	1	media_filenames
+vlc-record-2014-12-05-17h06m58s-bass	2.972	0.900	1	1	media_filenames
+vlc-record-2014-12-05-17h07m02s-bass	2.972	0.900	1	1	media_filenames
+vlc-record-2015-06-04-17h20m14s-bass	2.972	0.900	1	1	media_filenames
+mp4	2.897	1.000	1	2	filenames
+pressure	2.862	2.000	1	12	hypothesis
+conditions	2.713	2.000	1	13	hypothesis
+high	2.713	2.000	1	13	hypothesis
+systems	2.713	2.000	1	13	objective
+normal gravity conditions	2.625	1.100	1	4	hypothesis
+carlos	2.609	1.000	1	3	people
+flames	2.575	2.000	1	14	research_impacts
+future	2.575	2.000	1	14	research_impacts
+objectives	2.575	2.000	1	14	objective
+carlos fernandez-pello	2.477	0.750	1	1	people
+fletcher miller	2.477	0.750	1	1	people
+subrata bhattachjee	2.477	0.750	1	1	people
+t21.ts mp4	2.477	0.750	1	1	filenames
+engineering	2.374	1.750	2	13	file_folders,filenames
+gmt	2.348	0.900	1	3	media_filenames
+james ien	2.173	0.750	1	2	people
+paul ferkul	2.173	0.750	1	2	people
+diego state	1.858	0.562	1	1	affiliation
+state university	1.858	0.562	1	1	affiliation
+university	1.835	1.500	2	15	affiliation
+representative	1.790	0.750	1	4	file_folders
+administration	1.744	1.500	1	16	space_program
+aeronautics	1.744	1.500	1	16	space_program
+diego	1.653	0.750	1	5	affiliation
+reference	1.653	0.750	1	5	file_folders
+san	1.653	0.750	1	5	affiliation
+national	1.577	1.500	1	18	space_program
+state	1.537	0.750	1	6	affiliation
+western university	1.468	0.562	1	3	affiliation
+diego state university	1.362	0.412	1	1	affiliation
+san diego state	1.362	0.412	1	1	affiliation
+case	1.349	0.750	1	8	affiliation
+western	1.349	0.750	1	8	affiliation
+representative image	1.342	0.562	1	4	file_folders
+aeronautics administration	1.308	1.125	1	16	space_program
+national aeronautics	1.308	1.125	1	16	space_program
+san diego	1.240	0.562	1	5	affiliation
+image	1.198	0.750	1	10	file_folders
+case western university	1.076	0.412	1	3	affiliation
+case western	1.012	0.562	1	8	affiliation
+national aeronautics administration	0.959	0.825	1	16	space_program
+engineering documents	0.805	0.562	1	12	file_folders
