@@ -9,6 +9,10 @@
   A NASA Space Apps Challenge prototype for browsing, comparing, and explaining combustion research.
 </p>
 
+<p align="center">
+  <a href="https://sepy-nasa.github.io/Fireline/">Open the live demo</a>
+</p>
+
 > [!WARNING]
 > **Fireline is a hackathon mock/prototype.** It is not a NASA operational tool,
 > a certified analysis product, or a source of engineering or safety guidance.
@@ -16,6 +20,34 @@
 > backend, live data ingestion, scientific-validation workflow, or guaranteed
 > availability. Treat all generated summaries, rankings, connections, and UI
 > interactions as demonstrations.
+
+## NASA Space Apps Challenge
+
+Fireline was created for the **NASA International Space Apps Challenge**. The
+team was recognised as a **Local Winner**. This recognition reflects the
+hackathon project; it does not imply NASA endorsement, operational deployment,
+or scientific certification.
+
+## App screenshot
+
+![Explore workspace — filters, indexed experiments and working set](screenshots/explore-workspace.png)
+
+*The deployed Explore workspace, shown with the bundled PSI investigation and
+experimental-table index.*
+
+## Data at a glance
+
+- **24** bundled combustion investigations and **22** experimental tables.
+- **2,009** indexed test rows for exploration and charting.
+- **66,567** indexed PSI file records for discovery; large raw files are not
+  bundled into the static site.
+- PSI-159 Flame VR assets: timestamped camera reconstructions, source previews,
+  and matching sensor traces where locally available.
+
+```text
+NASA PSI source extracts ──> build-data.mjs ──> static typed index ──> Analyze / Explore / Visualize
+PSI-159 camera archives ──> build_flame_data.py ──> 128×64 emission fields ──> Flame VR
+```
 
 ## What it demonstrates
 
