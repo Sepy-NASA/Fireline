@@ -68,7 +68,7 @@ export function FlameVrView() {
 
   useEffect(() => {
     const abort = new AbortController()
-    fetchJson<{ tests: TestPoint[] }>('/psi159/tests.json', abort.signal)
+    fetchJson<{ tests: TestPoint[] }>(`${import.meta.env.BASE_URL}psi159/tests.json`, abort.signal)
       .then((catalog) => {
         if (catalog.tests?.length) {
           setTests(catalog.tests)
@@ -107,7 +107,7 @@ export function FlameVrView() {
     setLoadError(null)
     setMetadata(null)
     setPreview(null)
-    const base = `/psi159/${selectedTest}/`
+    const base = `${import.meta.env.BASE_URL}psi159/${selectedTest}/`
     void (async () => {
       try {
         const [meta, index, sensors] = await Promise.all([
@@ -247,7 +247,7 @@ export function FlameVrView() {
         {!!state?.renderErrors.length && <StatusChip tone="bad">render errors: {state.renderErrors.length}</StatusChip>}
         <div className="pointer-events-auto rounded-md border border-edge bg-panel/85 p-2 backdrop-blur-sm">
           <p className="mb-1 flex items-center gap-1 text-[10px] font-semibold text-text"><Eye className="size-3 text-bright" />Reference · {preview?.camera ?? 'INTNS'}</p>
-          {realFrame && preview ? <img src={`/psi159/${selectedTest}/${preview.path}${realFrame.file}`} alt={`INTNS frame ${realFrame.src} at ${(realFrame.tMs / 1000).toFixed(3)} seconds`} className="w-full rounded-sm border border-edge bg-black" draggable={false} /> : <div className="h-32 text-[10px] text-faint">{loading ? 'Loading reference…' : 'Reference unavailable'}</div>}
+          {realFrame && preview ? <img src={`${import.meta.env.BASE_URL}psi159/${selectedTest}/${preview.path}${realFrame.file}`} alt={`INTNS frame ${realFrame.src} at ${(realFrame.tMs / 1000).toFixed(3)} seconds`} className="w-full rounded-sm border border-edge bg-black" draggable={false} /> : <div className="h-32 text-[10px] text-faint">{loading ? 'Loading reference…' : 'Reference unavailable'}</div>}
           <p className="mt-1 text-[9px] leading-relaxed text-faint">src #{realFrame?.src ?? '—'} · {realFrame ? (realFrame.tMs / 1000).toFixed(3) : '—'}s<br />{preview ? `${preview.w}×${preview.h} · fixed 0–${preview.displayCounts} counts` : 'Mono16 intensified camera'}</p>
         </div>
       </div>
