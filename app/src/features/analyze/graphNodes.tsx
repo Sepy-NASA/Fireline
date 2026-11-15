@@ -156,6 +156,30 @@ function starPoints(n: number, outer: number, inner: number): string {
   return `M ${pts.join(' L ')} Z`
 }
 
+/** Background lane grouping nodes of one evidence type. */
+function LaneNode(props: NodeProps) {
+  const { data } = props
+  const color = data.color as string
+  return (
+    <div
+      className={['rounded-xl border border-dashed transition-opacity', data.dimmed ? 'opacity-30' : ''].join(' ')}
+      style={{
+        width: data.width as number,
+        height: data.height as number,
+        borderColor: `color-mix(in oklch, ${color} 45%, transparent)`,
+        background: `color-mix(in oklch, ${color} 6%, transparent)`,
+      }}
+    >
+      <div className="flex flex-col px-3 pt-2 leading-tight">
+        <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color }}>
+          {String(data.title)}
+        </span>
+        <span className="mt-0.5 text-[10px] text-faint">{String(data.subtitle)}</span>
+      </div>
+    </div>
+  )
+}
+
 /* Node type → renderer registry (React Flow type name = node kind). */
 export const nodeTypes = {
   researchQuestion: memo(StarNode),
@@ -170,6 +194,7 @@ export const nodeTypes = {
   publication: memo(CircleNode),
   note: memo(NoteNode),
   externalSource: memo(CircleNode),
+  lane: memo(LaneNode),
   missionParam: memo(CircleNode),
   gap: memo(CircleNode),
 }

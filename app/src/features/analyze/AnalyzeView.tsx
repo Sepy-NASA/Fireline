@@ -29,19 +29,22 @@ export function AnalyzeView() {
   const [editingName, setEditingName] = useState<string | null>(null)
   const [nameDraft, setNameDraft] = useState('')
 
-  // Seed a demo session on first load (idempotent — guards against double-run)
+  // Seed the demo session whenever there is none (first load, storage reset, HMR)
+  const seedDemo = () => {
+    const demo = buildDemoSession()
+    useAppStore.setState((s) => ({
+      sessions: [demo, ...s.sessions],
+      activeSessionId: demo.id,
+      selectedNodeId: null,
+      selectedNodeIds: [],
+      focusedBranchId: null,
+    }))
+  }
   useEffect(() => {
-    if (useAppStore.getState().sessions.length === 0) {
-      const demo = buildDemoSession()
-      useAppStore.setState((s) => ({
-        sessions: [demo, ...s.sessions],
-        activeSessionId: demo.id,
-                selectedNodeId: null,
-                selectedNodeIds: [],
-                focusedBranchId: null,
-      }))
-    }
-  }, [])
+    const st = useAppStore.getState()
+    if (st.sessions.length === 0) seedDemo()
+    else if (!st.sessions.some((x) => x.id === st.activeSessionId)) st.setActiveSession(st.sessions[0].id)
+  }, [sessions.length, activeId])
 
   const sessionRail = useMemo(
     () => (
@@ -129,7 +132,7 @@ export function AnalyzeView() {
   if (!session) {
     return (
       <div className="flex h-full items-center justify-center">
-        <Button onClick={() => createSession('Untitled session', '')}>Start a session</Button>
+        <Button onClick={seedDemo}>Start the rover review session</Button>
       </div>
     )
   }
@@ -169,8 +172,7 @@ function CenterPane({ session }: { session: Session }) {
           </div>
           <div className="space-y-2.5 text-[12px] leading-relaxed text-dim">
             <div>
-              <p className="mb-0.5 font-semibold text-text">Goal</p>
-              <p className="line-clamp-4" title={session.researchStatement}>{session.researchStatement}</p>
+              <GoalEditor session={session} />
             </div>
             {isRover ? (
               <>
@@ -200,7 +202,7 @@ function CenterPane({ session }: { session: Session }) {
                   </dl>
                   {missing.length > 0 && (
                     <p className="mt-1.5 rounded border border-dashed border-edge2 px-2 py-1 text-[10.5px] text-amber">
-                      Missing {missing.join(' & ')} — attach the rover design basis (Add data).
+                      Missing {missing.join(' & ')} — upload the rover design basis PDF (Add data).
                     </p>
                   )}
                 </div>
@@ -228,6 +230,88 @@ function CenterPane({ session }: { session: Session }) {
           className="absolute right-3 top-3 z-10 rounded-md border border-edge bg-panel/95 px-2 py-1 text-[11px] text-dim hover:text-text"
         >
           Session context
+        </button>
+      )}
+    </div>
+  )
+}
+
+/** Goal (research question) — editable; keeps the root node in sync. */
+function GoalEditor({ session }: { session: Session }) {
+  const updateStatement = useAppStore((s) => s.updateResearchStatement)
+  const updateNode = useAppStore((s) => s.updateNode)
+  const [editing, setEditing] = useState(false)
+  const [draft, setDraft] = useState(session.researchStatement)
+  const root = session.nodes.find((n) => n.type === 'researchQuestion')
+
+  const save = () => {
+    const text = draft.trim()
+    setEditing(false)
+    if (!text || text === session.researchStatement) return
+    updateStatement(session.id, text)
+    if (root) {
+      const isRover = root.id === RV.root
+      updateNode(session.id, root.id, {
+        // rover root keeps its short title; generic sessions show the goal on the node
+        data: { ...root.data, hint: text, label: isRover ? root.data.label : text },
+      })
+    } else {
+      // session without an anchor: create the research-question node
+      useAppStore.getState().addNode(session.id, {
+        id: `n_researchQuestion_goal_${Date.now().toString(36)}`,
+        type: 'researchQuestion',
+        position: { x: 400, y: 250 },
+        data: { kind: 'researchQuestion', ref: 'goal', label: text, hint: text },
+      })
+    }
+  }
+
+  return (
+    <div>
+      <div className="mb-0.5 flex items-center justify-between">
+        <p className="font-semibold text-text">Goal</p>
+        {!editing && (
+          <button
+            onClick={() => {
+              setDraft(session.researchStatement)
+              setEditing(true)
+            }}
+            className="text-[10.5px] text-bright hover:underline"
+          >
+            {session.researchStatement ? 'Edit' : 'Define'}
+          </button>
+        )}
+      </div>
+      {editing ? (
+        <div className="space-y-1">
+          <textarea
+            autoFocus
+            value={draft}
+            onChange={(e) => setDraft(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) save()
+              if (e.key === 'Escape') setEditing(false)
+            }}
+            rows={5}
+            placeholder="What should this review answer?"
+            className="w-full resize-none rounded border border-edge2 bg-panel2 px-2 py-1 text-[11.5px] text-text focus:border-bright focus:outline-none"
+          />
+          <div className="flex justify-end gap-1.5">
+            <button onClick={() => setEditing(false)} className="text-[10.5px] text-faint hover:text-text">
+              Cancel
+            </button>
+            <button onClick={save} className="rounded bg-bright px-2 py-0.5 text-[10.5px] font-semibold text-ink">
+              Save
+            </button>
+          </div>
+        </div>
+      ) : session.researchStatement ? (
+        <p className="line-clamp-4" title={session.researchStatement}>
+          {session.researchStatement}
+        </p>
+      ) : (
+        <button onClick={() => setEditing(true)} className="text-left italic text-faint hover:text-text">
+          No goal yet — click to define the research question.
         </button>
       )}
     </div>

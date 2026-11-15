@@ -30,6 +30,9 @@ const INTENTS: { match: RegExp; run: (sessionId: string) => ScriptedReply }[] = 
   { match: /closest|evidence|pmma|acrylic|cotton|sibal|saffire|material|\bfind\b/i, run: evidenceReply },
 ]
 
+/** Fixed "agent is thinking" time added to every reply (ms). */
+export const THINKING_MS = 2000
+
 /** Demo prompts — clicking fills the input so the presenter just presses Enter. */
 const QUICK_PROMPTS: { label: string; text: string }[] = [
   {
@@ -48,23 +51,35 @@ export function ChatPanel({ session }: { session: Session }) {
   const setHighlight = useAppStore((s) => s.setHighlight)
 
   const [draft, setDraft] = useState('')
-  const [typing, setTyping] = useState(false)
+  const typing = useAppStore((s) => s.agentThinking)
+  const setTyping = useAppStore((s) => s.setAgentThinking)
+  const streamingMsgId = useAppStore((s) => s.streamingMsgId)
+  const setStreamingMsgId = useAppStore((s) => s.setStreamingMsgId)
   const scrollRef = useRef<HTMLDivElement>(null)
 
-  useEffect(() => {
+  const scrollToBottom = () => {
     const el = scrollRef.current
     const viewport = el?.closest('[data-radix-scroll-area-viewport]') as HTMLElement | null
     if (viewport) viewport.scrollTop = viewport.scrollHeight
     else if (el) el.scrollTop = el.scrollHeight
-  }, [session.messages.length, typing])
+  }
+  useEffect(scrollToBottom, [session.messages.length, typing])
+
+  // A stream that was interrupted (e.g. view switch) must not keep the input locked
+  useEffect(() => {
+    if (streamingMsgId && !session.messages.some((m) => m.id === streamingMsgId)) setStreamingMsgId(null)
+  }, [streamingMsgId, session.messages, setStreamingMsgId])
+  const busy = typing || Boolean(streamingMsgId)
 
   const runAction = (action: ScriptedReply) => {
     setTyping(true)
-    const duration = Math.min(900 + action.text.length * 2, 2000)
+    // visible "thinking" before the reply starts streaming
     setTimeout(() => {
       action.apply?.()
+      const id = `m_${Date.now().toString(36)}`
+      setStreamingMsgId(id)
       addMessage(session.id, {
-        id: `m_${Date.now().toString(36)}`,
+        id,
         role: 'agent',
         text: action.text,
         at: Date.now(),
@@ -75,12 +90,12 @@ export function ChatPanel({ session }: { session: Session }) {
       if (action.highlight?.length) setHighlight(action.highlight, 2200)
       if (action.select) setSelected(action.select)
       setTyping(false)
-    }, duration)
+    }, THINKING_MS)
   }
 
   const submit = () => {
     const q = draft.trim()
-    if (!q || typing) return
+    if (!q || busy) return
     setDraft('')
     addMessage(session.id, { id: `m_${Date.now().toString(36)}`, role: 'user', text: q, at: Date.now() })
     const intent = INTENTS.find((i) => i.match.test(q))
@@ -98,9 +113,18 @@ export function ChatPanel({ session }: { session: Session }) {
       <ScrollArea className="min-h-0 flex-1">
         <div ref={scrollRef} className="flex flex-col gap-3 p-3">
           {session.messages.map((m) => (
-            <Message key={m.id} m={m} setSelected={setSelected} setView={setView} session={session} />
+            <Message
+              key={m.id}
+              m={m}
+              setSelected={setSelected}
+              setView={setView}
+              session={session}
+              streaming={m.id === streamingMsgId}
+              onProgress={scrollToBottom}
+              onDone={() => setStreamingMsgId(null)}
+            />
           ))}
-          {typing && (
+          {typing && !streamingMsgId && (
             <div className="flex items-center gap-2 text-xs text-faint">
               <span className="flex gap-0.5">
                 <TypingDot delay={0} />
@@ -141,7 +165,7 @@ export function ChatPanel({ session }: { session: Session }) {
           />
           <button
             onClick={submit}
-            disabled={!draft.trim() || typing}
+            disabled={!draft.trim() || busy}
             className="mb-0.5 text-bright transition-opacity disabled:opacity-30"
             aria-label="Send message"
           >
@@ -162,11 +186,17 @@ function Message({
   setSelected,
   setView,
   session,
+  streaming = false,
+  onProgress,
+  onDone,
 }: {
   m: ChatMessage
   setSelected: (id: string | null) => void
   setView: (v: View) => void
   session: Session
+  streaming?: boolean
+  onProgress?: () => void
+  onDone?: () => void
 }) {
   const isAgent = m.role === 'agent'
   return (
@@ -183,9 +213,11 @@ function Message({
             isAgent ? 'text-text' : 'rounded-md border border-edge bg-panel2 px-2.5 py-1.5 text-text',
           ].join(' ')}
         >
-          {m.text}
+          {streaming ? <StreamingText text={m.text} onProgress={onProgress} onDone={onDone} /> : m.text}
         </div>
       </div>
+      {streaming ? null : (
+        <>
 
       {m.chips && m.chips.length > 0 && (
         <div className="flex flex-wrap gap-1.5 pl-7">
@@ -247,6 +279,39 @@ function Message({
           ))}
         </div>
       )}
+        </>
+      )}
     </div>
+  )
+}
+
+/** Types the agent reply out progressively, like a streaming LLM response. */
+function StreamingText({ text, onProgress, onDone }: { text: string; onProgress?: () => void; onDone?: () => void }) {
+  const [n, setN] = useState(0)
+  const done = useRef(false)
+  useEffect(() => {
+    // ~3.5 s for the longest replies, never slower than ~180 chars/s
+    const step = Math.max(3, Math.ceil(text.length / 220))
+    const t = setInterval(() => {
+      setN((c) => {
+        const next = Math.min(text.length, c + step)
+        if (next >= text.length) clearInterval(t)
+        return next
+      })
+    }, 16)
+    return () => clearInterval(t)
+  }, [text])
+  useEffect(() => {
+    onProgress?.()
+    if (n >= text.length && !done.current) {
+      done.current = true
+      onDone?.()
+    }
+  }, [n, text.length, onProgress, onDone])
+  return (
+    <>
+      {text.slice(0, n)}
+      <span className="ml-0.5 inline-block h-3.5 w-1.5 translate-y-0.5 animate-pulse bg-bright/80" />
+    </>
   )
 }

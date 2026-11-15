@@ -60,6 +60,13 @@ interface AppState {
   renameWorkingGroup: (id: string, name: string) => void
   removeWorkingGroup: (id: string) => void
 
+  /* mock agent "thinking" indicator (shared by chat + panel actions) */
+  agentThinking: boolean
+  setAgentThinking: (v: boolean) => void
+  /** id of the agent message currently being "typed out" */
+  streamingMsgId: string | null
+  setStreamingMsgId: (id: string | null) => void
+
   /* visualize preset (demo: rover condition coverage) */
   vizPreset: string | null
   setVizPreset: (p: string | null) => void
@@ -249,6 +256,11 @@ export const useAppStore = create<AppState>()(
       removeWorkingGroup: (id) =>
         set((s) => ({ workingGroups: s.workingGroups.filter((g) => g.id !== id) })),
 
+      agentThinking: false,
+      setAgentThinking: (v) => set({ agentThinking: v }),
+      streamingMsgId: null,
+      setStreamingMsgId: (id) => set({ streamingMsgId: id }),
+
       vizPreset: null,
       setVizPreset: (p) => set({ vizPreset: p }),
 
@@ -256,7 +268,7 @@ export const useAppStore = create<AppState>()(
       setTrayOpen: (open) => set({ trayOpen: open }),
     }),
     {
-      name: 'fireline-rover-demo',
+      name: 'fireline-rover-demo-v2',
       partialize: (s) => ({
         sessions: s.sessions,
         activeSessionId: s.activeSessionId,

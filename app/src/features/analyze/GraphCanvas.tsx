@@ -20,6 +20,7 @@ import { useAppStore } from '../../store/appStore'
 import { EDGE_LABELS } from './nodeSystem'
 import { nodeTypes } from './graphNodes'
 import { BranchBar } from './BranchBar'
+import { LANES, RV } from './roverScenario'
 import type { GraphEdge, GraphNode } from '../../types'
 
 /* ————————————————————————————————————————————
@@ -63,9 +64,13 @@ export function toFlowNodes(
   }))
 }
 
-export function toFlowEdges(sessionEdges: GraphEdge[]): Edge[] {
+/** In the rover demo only the meaningful relations keep a visible label; structure is shown by lanes. */
+const KEY_LABEL = /material tested|different fuel|uncovered|only|follow-up/
+
+export function toFlowEdges(sessionEdges: GraphEdge[], compact = false): Edge[] {
   return sessionEdges.map((e) => {
-    const label = e.label || EDGE_LABELS[e.type] || ''
+    const full = e.label || EDGE_LABELS[e.type] || ''
+    const label = compact && !KEY_LABEL.test(full) ? '' : full
     const context = /different fuel|follow-up/.test(label)
     const material = /material tested/.test(label)
     const gap = /uncovered|only/.test(label)
@@ -81,6 +86,38 @@ export function toFlowEdges(sessionEdges: GraphEdge[]): Edge[] {
       labelBgStyle: { fill: '#0e1218', fillOpacity: 0.9 },
     }
   })
+}
+
+const isRover = (session: { nodes: GraphNode[] }) => session.nodes.some((n) => n.id === RV.mission)
+
+/** Background lane nodes, sized to the members currently on the canvas. */
+function laneNodes(session: { nodes: GraphNode[] }, dimmed: boolean): Node[] {
+  if (!isRover(session)) return []
+  const W = 112
+  const H = 128
+  const PAD = 20
+  const HEAD = 44
+  const out: Node[] = []
+  for (const lane of LANES) {
+    const members = session.nodes.filter((n) => lane.members.includes(n.id))
+    if (members.length === 0) continue
+    const minX = Math.min(...members.map((n) => n.position.x)) - PAD
+    const minY = Math.min(...members.map((n) => n.position.y)) - PAD - HEAD
+    const maxX = Math.max(...members.map((n) => n.position.x + W)) + PAD
+    const maxY = Math.max(...members.map((n) => n.position.y + H)) + PAD
+    out.push({
+      id: lane.id,
+      type: 'lane',
+      position: { x: minX, y: minY },
+      draggable: false,
+      selectable: false,
+      focusable: false,
+      zIndex: -1,
+      style: { pointerEvents: 'none' },
+      data: { title: lane.title, subtitle: lane.subtitle, color: lane.color, width: maxX - minX, height: maxY - minY, dimmed },
+    })
+  }
+  return out
 }
 
 const px = (n: number) => `${n}px` as `${number}px`
@@ -117,7 +154,7 @@ function GraphCanvasInner({ rightInset }: { rightInset: number }) {
   const sig = session
     ? [
         session.id,
-        session.nodes.map((n) => `${n.id}|${n.data.label}|${n.data.provenance ?? ''}|${n.data.badge ?? ''}|${n.data.value ?? ''}|${n.data.match ?? ''}`).join(';'),
+        session.nodes.map((n) => `${n.id}|${Math.round(n.position.x)},${Math.round(n.position.y)}|${n.data.label}|${n.data.provenance ?? ''}|${n.data.badge ?? ''}|${n.data.value ?? ''}|${n.data.match ?? ''}`).join(';'),
         session.edges.map((e) => `${e.id}|${e.label}`).join(';'),
         session.branches.map((b) => `${b.id}:${b.nodeIds.join(',')}`).join(';'),
         highlightIds.join(','),
@@ -141,17 +178,17 @@ function GraphCanvasInner({ rightInset }: { rightInset: number }) {
     const branchMembers = focused ? new Set(focused.nodeIds) : branchIds
     setNodesUi((prev) => {
       const prevSelected = new Set(prevSession === session.id ? prev.filter((p) => p.selected).map((p) => p.id) : [])
-      return toFlowNodes(session.nodes, branchMembers, highlightIds).map((n) => ({
+      return [...laneNodes(session, dimOthers), ...toFlowNodes(session.nodes, branchMembers, highlightIds).map((n) => ({
         ...n,
         selected: prevSelected.has(n.id),
         data: {
           ...n.data,
           dimmed: dimOthers && !branchMembers.has(n.id),
         },
-      }))
+      }))]
     })
     setEdgesUi(
-      toFlowEdges(session.edges).map((e) =>
+      toFlowEdges(session.edges, isRover(session)).map((e) =>
         dimOthers && !(branchMembers.has(e.source) && branchMembers.has(e.target))
           ? { ...e, style: { ...e.style, opacity: 0.12 }, labelStyle: { ...e.labelStyle, opacity: 0.15 }, labelBgStyle: { fillOpacity: 0 } }
           : e,
@@ -252,7 +289,7 @@ function GraphCanvasInner({ rightInset }: { rightInset: number }) {
         />
         <MiniMap
           className="!rounded-md !border !border-edge !bg-panel2"
-          nodeColor={(n) => (n.data?.color as string) ?? '#4da3ff'}
+          nodeColor={(n) => (n.type === 'lane' ? 'transparent' : ((n.data?.color as string) ?? '#4da3ff'))}
           maskColor="rgba(5,7,11,0.75)"
           bgColor="#0a0d12"
           pannable

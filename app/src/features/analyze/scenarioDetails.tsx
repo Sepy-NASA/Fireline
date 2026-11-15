@@ -265,7 +265,7 @@ function MaterialDetails({ node, session }: { node: GraphNode; session: Session 
         <p className="mt-1.5 text-[12px] leading-relaxed text-dim">{node.data.hint}</p>
       </div>
       {node.data.fields && (
-        <Section title="From Cabin Materials / BOM.pdf (mock upload)" tone="engineer">
+        <Section title="From Cabin Materials BOM.pdf (PLR-BOM-001)" tone="engineer">
           <FieldsTable fields={node.data.fields} />
         </Section>
       )}
@@ -379,10 +379,10 @@ function DocDetails({ node }: { node: GraphNode }) {
         <p className="text-[13px] font-semibold text-text">{node.data.label}</p>
         <div className="mt-1 flex flex-wrap gap-1">
           <ProvChip p="engineer" />
-          <span className="rounded border border-amber/40 px-1.5 py-0.5 text-[10px] text-amber">Engineer-provided document (mock upload)</span>
+          <span className="rounded border border-amber/40 px-1.5 py-0.5 text-[10px] text-amber">Engineer-provided document (demo upload)</span>
         </div>
         <p className="mt-1.5 text-[11px] leading-relaxed text-faint">
-          Extraction simulated from a seeded fixture. Not a NASA source document. Values below were confirmed by the engineer before use.
+          Uploaded demo PDF (fictional). Field extraction simulated; values confirmed by the engineer before use. Not a NASA source document.
         </p>
       </div>
       {node.data.fields && (
@@ -442,6 +442,8 @@ export function BranchSummary({ session, branch }: { session: Session; branch: B
   const setView = useAppStore((s) => s.setView)
   const setVizPreset = useAppStore((s) => s.setVizPreset)
   const setHighlight = useAppStore((s) => s.setHighlight)
+  const thinking = useAppStore((s) => s.agentThinking)
+  const setThinking = useAppStore((s) => s.setAgentThinking)
   const members = branch.nodeIds.map((id) => session.nodes.find((n) => n.id === id)).filter((n): n is GraphNode => Boolean(n))
   const seen = new Set<string>()
   const measured = members
@@ -526,20 +528,28 @@ export function BranchSummary({ session, branch }: { session: Session; branch: B
           <Button
             size="sm"
             className="w-full"
+            disabled={thinking}
             onClick={() => {
-              const reply = nextActionsReply(session.id)
+              if (thinking) return
               addMessage(session.id, { id: `m_${Date.now().toString(36)}_u`, role: 'user', text: 'Propose the next engineering actions to close the gap.', at: Date.now() })
-              reply.apply?.()
-              addMessage(session.id, {
-                id: `m_${Date.now().toString(36)}_a`,
-                role: 'agent',
-                text: reply.text,
-                at: Date.now(),
-                chips: reply.chips,
-                hrefs: reply.hrefs,
-                links: reply.links,
-              })
-              setHighlight([RV.gap], 2200)
+              setThinking(true)
+              setTimeout(() => {
+                const reply = nextActionsReply(session.id)
+                reply.apply?.()
+                const id = `m_${Date.now().toString(36)}_a`
+                useAppStore.getState().setStreamingMsgId(id)
+                addMessage(session.id, {
+                  id,
+                  role: 'agent',
+                  text: reply.text,
+                  at: Date.now(),
+                  chips: reply.chips,
+                  hrefs: reply.hrefs,
+                  links: reply.links,
+                })
+                setHighlight([RV.gap], 2200)
+                setThinking(false)
+              }, 2000)
             }}
           >
             <ListChecks /> Propose next actions

@@ -138,7 +138,7 @@ export function RightPanel() {
           </span>
         </button>
         <p className="text-center text-[11px] text-faint">
-          Engineer documents (mock upload) · PSI · standards · MCP
+          Upload engineer PDFs · PSI · standards · MCP
         </p>
       </div>
       <AddDataDialog open={addDataOpen} onOpenChange={setAddDataOpen} />
