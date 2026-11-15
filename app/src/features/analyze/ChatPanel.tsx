@@ -8,6 +8,8 @@ import {
   branchReply,
   detectionReply,
   evidenceReply,
+  goalFirstReply,
+  hasGoal,
   helpReply,
   nextActionsReply,
   safetyVerdictReply,
@@ -98,6 +100,7 @@ export function ChatPanel({ session }: { session: Session }) {
     if (!q || busy) return
     setDraft('')
     addMessage(session.id, { id: `m_${Date.now().toString(36)}`, role: 'user', text: q, at: Date.now() })
+    if (!hasGoal(session)) return runAction(goalFirstReply())
     const intent = INTENTS.find((i) => i.match.test(q))
     runAction(intent ? intent.run(session.id) : helpReply())
   }

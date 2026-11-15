@@ -20,7 +20,7 @@ import { useAppStore } from '../../store/appStore'
 import { EDGE_LABELS } from './nodeSystem'
 import { nodeTypes } from './graphNodes'
 import { BranchBar } from './BranchBar'
-import { LANES, RV } from './roverScenario'
+import { LANES, isRoverSession } from './roverScenario'
 import type { GraphEdge, GraphNode } from '../../types'
 
 /* ————————————————————————————————————————————
@@ -88,10 +88,10 @@ export function toFlowEdges(sessionEdges: GraphEdge[], compact = false): Edge[] 
   })
 }
 
-const isRover = (session: { nodes: GraphNode[] }) => session.nodes.some((n) => n.id === RV.mission)
+const isRover = (session: { id: string }) => isRoverSession(session)
 
 /** Background lane nodes, sized to the members currently on the canvas. */
-function laneNodes(session: { nodes: GraphNode[] }, dimmed: boolean): Node[] {
+function laneNodes(session: { id: string; nodes: GraphNode[] }, dimmed: boolean): Node[] {
   if (!isRover(session)) return []
   const W = 112
   const H = 128

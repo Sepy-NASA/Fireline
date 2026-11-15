@@ -8,7 +8,7 @@ import { buildDemoSession, buildFreshSession } from './sessionSeed'
 import { Button } from '../../components/ui/button'
 import { cn } from '../../lib/utils'
 import type { Session } from '../../types'
-import { RV, roverInputs } from './roverScenario'
+import { ROOT_TEXT, defineGoal, hasGoal, isRoverSession, roverInputs } from './roverScenario'
 import { PROVENANCE_META } from './nodeSystem'
 
 /* ————————————————————————————————————————————
@@ -154,15 +154,27 @@ function CenterPane({ session }: { session: Session }) {
   useEffect(() => {
     if (hasEvidence) setShowContext(false)
   }, [hasEvidence])
-  const isRover = session.nodes.some((n) => n.id === RV.mission)
+  const isRover = isRoverSession(session)
+  const goalDefined = hasGoal(session)
   const r = roverInputs(session)
   const missing = isRover
-    ? [r.pressure.prov === 'unknown' ? 'pressure' : null, r.flow.prov === 'unknown' ? 'airflow' : null].filter(Boolean)
+    ? (
+        [
+          ['gravity', r.gravity],
+          ['oxygen', r.o2],
+          ['pressure', r.pressure],
+          ['airflow', r.flow],
+        ] as const
+      )
+        .filter(([, v]) => v.prov === 'unknown')
+        .map(([k]) => k)
     : []
   return (
     <div className="relative min-w-0 flex-1">
       <GraphCanvas rightInset={showContext ? 262 : 0} />
-      {showContext ? (
+      {!goalDefined ? (
+        <GoalStartCard session={session} />
+      ) : showContext ? (
         <div className="absolute right-3 top-3 z-10 w-64 rounded-md border border-edge bg-panel/95 p-3 shadow-pop backdrop-blur">
           <div className="mb-1 flex items-center justify-between">
             <span className="text-[11px] font-semibold text-faint">Session context</span>
@@ -202,7 +214,7 @@ function CenterPane({ session }: { session: Session }) {
                   </dl>
                   {missing.length > 0 && (
                     <p className="mt-1.5 rounded border border-dashed border-edge2 px-2 py-1 text-[10.5px] text-amber">
-                      Missing {missing.join(' & ')} — upload the rover design basis PDF (Add data).
+                      Missing {missing.join(', ')} — upload the rover design basis PDF (Add data).
                     </p>
                   )}
                 </div>
@@ -238,32 +250,13 @@ function CenterPane({ session }: { session: Session }) {
 
 /** Goal (research question) — editable; keeps the root node in sync. */
 function GoalEditor({ session }: { session: Session }) {
-  const updateStatement = useAppStore((s) => s.updateResearchStatement)
-  const updateNode = useAppStore((s) => s.updateNode)
   const [editing, setEditing] = useState(false)
   const [draft, setDraft] = useState(session.researchStatement)
-  const root = session.nodes.find((n) => n.type === 'researchQuestion')
-
   const save = () => {
     const text = draft.trim()
     setEditing(false)
     if (!text || text === session.researchStatement) return
-    updateStatement(session.id, text)
-    if (root) {
-      const isRover = root.id === RV.root
-      updateNode(session.id, root.id, {
-        // rover root keeps its short title; generic sessions show the goal on the node
-        data: { ...root.data, hint: text, label: isRover ? root.data.label : text },
-      })
-    } else {
-      // session without an anchor: create the research-question node
-      useAppStore.getState().addNode(session.id, {
-        id: `n_researchQuestion_goal_${Date.now().toString(36)}`,
-        type: 'researchQuestion',
-        position: { x: 400, y: 250 },
-        data: { kind: 'researchQuestion', ref: 'goal', label: text, hint: text },
-      })
-    }
+    defineGoal(session.id, text)
   }
 
   return (
@@ -314,6 +307,52 @@ function GoalEditor({ session }: { session: Session }) {
           No goal yet — click to define the research question.
         </button>
       )}
+    </div>
+  )
+}
+
+/** Step 1 of a review: the canvas starts empty and asks for the goal. */
+function GoalStartCard({ session }: { session: Session }) {
+  const [draft, setDraft] = useState('')
+  const isRover = isRoverSession(session)
+  const create = () => {
+    if (draft.trim()) defineGoal(session.id, draft)
+  }
+  return (
+    <div className="absolute inset-0 z-10 flex items-center justify-center p-6">
+      <div className="w-[520px] max-w-full rounded-lg border border-edge2 bg-panel/95 p-5 shadow-pop backdrop-blur">
+        <p className="text-[11px] font-semibold uppercase tracking-wider text-bright">Step 1 · Define the goal</p>
+        <p className="mt-1 text-[15px] font-semibold text-text">What should this review answer?</p>
+        <p className="mt-1 text-[12px] leading-relaxed text-dim">
+          The goal becomes the root of the canvas. Mission inputs and materials come next — from the documents you upload.
+        </p>
+        <textarea
+          autoFocus
+          value={draft}
+          onChange={(e) => setDraft(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) create()
+          }}
+          rows={5}
+          placeholder="e.g. Assess the PSI evidence relevant to the rover cabin materials…"
+          className="mt-3 w-full resize-none rounded-md border border-edge2 bg-panel2 px-2.5 py-2 text-[13px] leading-relaxed text-text placeholder:text-faint focus:border-bright focus:outline-none"
+        />
+        <div className="mt-2 flex items-center justify-between gap-2">
+          {isRover ? (
+            <button
+              onClick={() => setDraft(ROOT_TEXT)}
+              className="rounded border border-edge px-2 py-1 text-[11px] text-dim transition-colors hover:border-edge2 hover:text-text"
+            >
+              Use rover review question
+            </button>
+          ) : (
+            <span />
+          )}
+          <Button size="sm" disabled={!draft.trim()} onClick={create}>
+            Set goal
+          </Button>
+        </div>
+      </div>
     </div>
   )
 }

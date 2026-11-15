@@ -88,7 +88,7 @@ function Comparison({ ev, session }: { ev: Evidence; session: Session }) {
       tested: ev.tested.flow,
       rover: r.flow.text,
       prov: r.flow.prov,
-      verdict: r.flow.prov === 'unknown' ? 'Cannot compare — rover value unknown' : 'Compare per row — 1/6-g flow field ≠ PSI setup',
+      verdict: r.flow.prov === 'unknown' ? 'Cannot compare — rover value unknown' : 'Speeds overlap — but the 1/6-g buoyant + forced flow field ≠ PSI low-g setup',
       bad: r.flow.prov === 'unknown',
     },
     {
@@ -99,7 +99,13 @@ function Comparison({ ev, session }: { ev: Evidence; session: Session }) {
       verdict: 'Cannot compare — not tabulated in PSI row',
       bad: true,
     },
-    { k: 'Geometry', tested: ev.tested.geometry, rover: 'Installed geometry from BOM', prov: 'unknown', verdict: 'To verify against BOM / supplier data' },
+    {
+      k: 'Geometry',
+      tested: ev.tested.geometry,
+      rover: [r.pmma?.value && `PMMA ${r.pmma.value.split(' · ').pop()}`, r.textile?.value && `textile ${r.textile.value.split(' · ')[1] ?? r.textile.value}`].filter(Boolean).join(' · ') || 'Installed geometry from BOM',
+      prov: r.pmma?.value || r.textile?.value ? 'engineer' : 'unknown',
+      verdict: 'Different sample size and installation (coatings, backings) — compare per row',
+    },
   ]
   return (
     <div className="space-y-2">

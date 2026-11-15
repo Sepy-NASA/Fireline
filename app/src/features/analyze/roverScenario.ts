@@ -82,8 +82,8 @@ export const POS: Record<string, { x: number; y: number }> = {
 /** Background lanes that group the canvas by evidence type (drawn behind nodes). */
 export const LANES: { id: string; title: string; subtitle: string; color: string; members: string[] }[] = [
   { id: 'lane_context', title: 'Atmosphere context', subtitle: 'different fuel · not material evidence', color: '#a78bfa', members: [RV.bre, RV.cfig] },
-  { id: 'lane_mission', title: 'Mission inputs', subtitle: 'engineer-provided', color: '#4da3ff', members: [RV.o2, RV.g, RV.p, RV.flow, RV.mission, RV.docBasis] },
-  { id: 'lane_materials', title: 'Rover materials', subtitle: 'from BOM · to confirm', color: '#ffb454', members: [RV.pmma, RV.textile, RV.docBom] },
+  { id: 'lane_mission', title: 'Mission inputs', subtitle: 'from design basis PLR-DB-001', color: '#4da3ff', members: [RV.o2, RV.g, RV.p, RV.flow, RV.mission, RV.docBasis] },
+  { id: 'lane_materials', title: 'Rover materials', subtitle: 'from BOM PLR-BOM-001', color: '#ffb454', members: [RV.pmma, RV.textile, RV.docBom] },
   { id: 'lane_evidence', title: 'Direct solid-material evidence', subtitle: 'measured in PSI · ~22 % O₂ · low-g', color: '#3ad7a3', members: [RV.saffire2, RV.saffire2ds, RV.saffire1, RV.saffire1ds, RV.bass2, RV.bass] },
   { id: 'lane_followup', title: 'Follow-up branches', subtitle: 'suppression & detection · optional', color: '#8b95a5', members: [RV.flex, RV.same, RV.daft] },
 ]
@@ -374,20 +374,13 @@ export const MOCK_DOCS: MockDoc[] = [
     match: /design.?basis|PLR-DB/i,
     summary: 'PLR-DB-001 Rev A — cabin pressure, atmosphere control, ventilation, open items.',
     fields: [
-      { key: 'gravity', label: 'Gravity', value: '1/6 g', source: 'PLR-DB-001 §2 Mission environment · p. 2', status: 'confirmed', note: 'Matches the engineer scenario input.' },
-      {
-        key: 'pressure',
-        label: 'Cabin total pressure',
-        value: '10.2 psia',
-        source: 'PLR-DB-001 §3.1 Total pressure · p. 3',
-        status: 'provisional',
-        note: 'Marked PROVISIONAL — approval pending (TBC). Lunar-habitat comparison value only.',
-      },
-      { key: 'pmode', label: 'Pressure mode', value: 'Nominal', source: 'PLR-DB-001 §3.1 · p. 3', status: 'confirmed', note: 'Minimum / emergency modes: TBD in document.' },
-      { key: 'o2', label: 'O₂ target', value: '30 %', source: 'PLR-DB-001 §3.2 Atmosphere control · p. 3', status: 'confirmed', note: 'Matches the engineer scenario input.' },
-      { key: 'o2max', label: 'O₂ transient upper bound', value: '', source: 'PLR-DB-001 §3.2 · p. 3', status: 'unknown', note: 'TBD in document — control-band analysis open.' },
-      { key: 'flow', label: 'Airflow range near materials', value: '', source: 'PLR-DB-001 §4 Ventilation · p. 4', status: 'unknown', note: 'TBD in document — pending ventilation (CFD) analysis. Not assumed.' },
-      { key: 'flowdir', label: 'Airflow direction near materials', value: '', source: 'PLR-DB-001 §4 · p. 4', status: 'unknown', note: 'TBD in document. 1/6-g flow field ≠ PSI microgravity setup.' },
+      { key: 'gravity', label: 'Gravity', value: '1/6 g', source: 'PLR-DB-001 §2 Mission environment · p. 2', status: 'confirmed', note: 'Lunar surface operations (1.62 m/s²).' },
+      { key: 'pressure', label: 'Cabin total pressure', value: '10.2 psia', source: 'PLR-DB-001 §3.1 Total pressure · p. 3', status: 'confirmed', note: 'Approved nominal (Rev B). Minimum 9.5 psia.' },
+      { key: 'pmode', label: 'Pressure mode', value: 'Nominal', source: 'PLR-DB-001 §3.1 · p. 3', status: 'confirmed', note: 'Contingency mode 8.2 psia at 34 % O₂ — EVA-prep only, < 24 h.' },
+      { key: 'o2', label: 'O₂ target', value: '30 %', source: 'PLR-DB-001 §3.2 Atmosphere control · p. 3', status: 'confirmed', note: 'Control band 28.5–30.5 %.' },
+      { key: 'o2max', label: 'O₂ transient upper bound', value: '32 %', source: 'PLR-DB-001 §3.2 · p. 3', status: 'confirmed', note: 'Max. 30 min, e.g. after repress.' },
+      { key: 'flow', label: 'Airflow range near materials', value: '5–20 cm/s', source: 'PLR-DB-001 §4 Ventilation · p. 4', status: 'confirmed', note: 'Low / high fan setting; nominal cabin average 10 cm/s (CFD case V-07).' },
+      { key: 'flowdir', label: 'Airflow direction near materials', value: 'Forward → aft', source: 'PLR-DB-001 §4 · p. 4', status: 'confirmed', note: 'Parallel to panel and seat surfaces. 1/6-g buoyant + forced flow ≠ microgravity test.' },
     ],
   },
   {
@@ -398,12 +391,12 @@ export const MOCK_DOCS: MockDoc[] = [
     match: /bom|materials|PLR-BOM/i,
     summary: 'PLR-BOM-001 Rev A — interior non-metallic materials under fire-safety review.',
     fields: [
-      { key: 'pmma', label: 'Acrylic component', value: 'PMMA / acrylic', source: 'PLR-BOM-001 line 14 · p. 2', status: 'provisional', note: 'Material-family designation only (Note N2) — not an exact formulation.' },
-      { key: 'pmmaGrade', label: 'PMMA grade / formulation', value: '', source: 'PLR-BOM-001 line 14 · p. 2', status: 'unknown', note: 'TBD — supplier data pending.' },
-      { key: 'pmmaThk', label: 'PMMA thickness', value: '', source: 'PLR-BOM-001 line 14 · p. 2', status: 'unknown', note: 'TBD in document.' },
-      { key: 'textile', label: 'Textile', value: 'Cotton-fiberglass textile', source: 'PLR-BOM-001 line 22 · p. 2', status: 'provisional' },
-      { key: 'textileSpec', label: 'Textile specification / installation', value: '', source: 'PLR-BOM-001 line 22 · p. 2, Note N3 · p. 3', status: 'unknown', note: 'TBD — to be confirmed.' },
-      { key: 'layers', label: 'Layers / adhesives / coatings', value: '', source: 'PLR-BOM-001 Note N1 · p. 3', status: 'unknown', note: 'Not listed in this revision.' },
+      { key: 'pmma', label: 'Acrylic component', value: 'PMMA (cast acrylic)', source: 'PLR-BOM-001 line 14 · p. 2', status: 'confirmed', note: 'Forward viewport inner pane, 0.42 m² installed.' },
+      { key: 'pmmaGrade', label: 'PMMA grade / formulation', value: 'Cast, unfilled, clear — PLR-M-014', source: 'PLR-BOM-001 line 14 · p. 2, Note N2 · p. 3', status: 'confirmed' },
+      { key: 'pmmaThk', label: 'PMMA thickness', value: '6.0 mm', source: 'PLR-BOM-001 line 14 · p. 2', status: 'confirmed' },
+      { key: 'textile', label: 'Textile', value: 'Cotton-fiberglass textile', source: 'PLR-BOM-001 line 22 · p. 2', status: 'confirmed', note: 'Seat and stowage covers, 3.8 m² installed.' },
+      { key: 'textileSpec', label: 'Textile specification / installation', value: '25 % cotton / 75 % glass · 0.35 mm · seats & stowage', source: 'PLR-BOM-001 line 22 · p. 2, Note N3 · p. 3', status: 'confirmed', note: 'SIBAL-type blend, spec PLR-T-022, 250 g/m².' },
+      { key: 'layers', label: 'Layers / adhesives / coatings', value: 'PMMA: ≈5 µm acrylic hard coat, RTV edge seal · textile: Nomex felt backing, silicone adhesive', source: 'PLR-BOM-001 Note N1 · p. 3', status: 'confirmed', note: 'Part of the installed configuration — not represented in the PSI sample rows.' },
     ],
   },
 ]
@@ -466,77 +459,63 @@ const msgId = () => `m_${Date.now().toString(36)}_${Math.random().toString(36).s
 /* ——— seed ——— */
 
 export function buildRoverSession(): Session {
-  const nodes: GraphNode[] = [
-    node('researchQuestion', RV.root, {
-      label: 'Lunar rover cabin — material evidence review',
-      hint: ROOT_TEXT,
-    }),
-    node('missionParam', RV.mission, {
-      label: 'Mission environment',
-      hint: 'Engineer-provided rover assumptions. Inputs, not experimental results.',
-      provenance: 'engineer',
-    }),
-    node('missionParam', RV.g, {
-      label: 'Gravity: 1/6 g',
-      value: '1/6 g',
-      hint: 'Mission assumption supplied by the engineer. PSI combustion tables in this bundle contain no lunar-gravity tests.',
-      provenance: 'engineer',
-      badge: 'not in PSI tests',
-    }),
-    node('missionParam', RV.o2, {
-      label: 'Oxygen: 30 %',
-      value: '30 %',
-      hint: 'Rover scenario target supplied by the engineer. Preserved as an input, not an experimental result.',
-      provenance: 'engineer',
-      badge: 'target',
-    }),
-    node('missionParam', RV.p, {
-      label: 'Pressure: from design basis',
-      value: '',
-      hint: 'Read from the uploaded rover design basis. Not inferred.',
-      provenance: 'unknown',
-      badge: 'unknown until confirmed',
-    }),
-    node('missionParam', RV.flow, {
-      label: 'Airflow: from ventilation spec',
-      value: '',
-      hint: 'Read from the ventilation / fire-safety specification. No value assumed.',
-      provenance: 'unknown',
-      badge: 'unknown until confirmed',
-    }),
-  ]
-  const e = (source: string, target: string, label: string) => ({
-    id: `e_${source}_${target}`,
-    source,
-    target,
-    label,
-    type: 'RELATES_TO' as const,
-  })
   return {
     id: `ses_rover_${Date.now().toString(36)}`,
     name: SESSION_NAME,
     createdAt: Date.now(),
     updatedAt: Date.now(),
-    researchStatement: ROOT_TEXT,
-    nodes,
-    edges: [
-      e(RV.root, RV.mission, 'mission inputs'),
-      e(RV.mission, RV.g, 'gravity'),
-      e(RV.mission, RV.o2, 'oxygen'),
-      e(RV.mission, RV.p, 'pressure'),
-      e(RV.mission, RV.flow, 'airflow'),
-    ],
+    researchStatement: '',
+    nodes: [],
+    edges: [],
     branches: [],
     messages: [
       {
         id: 'm0',
         role: 'agent',
         text:
-          'Session started from your research question. I hold the local PSI index: 24-investigation catalog, investigation details and 22 experimental tables.\n\nGravity (1/6 g) and O₂ (30 %) are your inputs. Pressure and airflow are still unknown — upload the rover design basis and materials BOM PDFs with "Add data" so we can confirm them.\n\nThis is literature & data triage — not material certification and not a substitute for NASA-STD-6001 testing.',
+          'New review session. I hold the local PSI index: 24-investigation catalog, investigation details and 22 experimental tables.\n\nStart by defining the goal of this review — the question the evidence should answer. Then upload the rover design basis and the cabin materials BOM (PDF) with "Add data".\n\nThis is literature & data triage — not material certification and not a substitute for NASA-STD-6001 testing.',
         at: Date.now(),
       },
     ],
   }
+}
+
+/** Is this the rover-review demo session? */
+export const isRoverSession = (session: { id: string }) => session.id.startsWith('ses_rover')
+
+/** Does the session already have its goal (research-question node)? */
+export const hasGoal = (session: { nodes: GraphNode[] }) => session.nodes.some((n) => n.type === 'researchQuestion')
+
+/** Step 1 — define (or edit) the review goal. Creates / updates the root node. */
+export function defineGoal(sessionId: string, text: string) {
+  const s = sess(sessionId)
+  if (!s || !text.trim()) return
+  const goal = text.trim()
+  const label = goal === ROOT_TEXT ? 'Lunar rover cabin — material evidence review' : goal.length > 80 ? `${goal.slice(0, 78)}…` : goal
+  const isFirst = !hasGoal(s)
+  st().updateResearchStatement(sessionId, goal)
+  const existing = s.nodes.find((n) => n.type === 'researchQuestion')
+  if (existing) {
+    st().updateNode(sessionId, existing.id, { data: { ...existing.data, label, hint: goal } })
+  } else {
+    const id = isRoverSession(s) ? RV.root : `n_researchQuestion_goal_${Date.now().toString(36)}`
+    st().addNode(sessionId, {
+      id,
+      type: 'researchQuestion',
+      position: POS[RV.root] ?? { x: 400, y: 250 },
+      data: { kind: 'researchQuestion', ref: id, label, hint: goal },
+    })
+  }
+  if (!isFirst) return
+  const mid = msgId()
+  st().addMessage(sessionId, {
+    id: mid,
+    role: 'agent',
+    text:
+      'Goal set — it is the root of the canvas. I will keep measured PSI evidence, your inputs and my interpretation separate.\n\nNext: upload the rover design basis and the cabin materials BOM (PDF) with "Add data" on the right. Pressure, atmosphere, airflow and material data will come from those documents — I won\'t assume any value.',
+    at: Date.now(),
+  })
+  st().setStreamingMsgId(mid)
 }
 
 /* ——— step 2: confirm mock document ——— */
@@ -565,48 +544,64 @@ export function applyDocument(sessionId: string, doc: MockDoc, fields: Extracted
 
   if (doc.id === 'basis') {
     const g = f('gravity')
-    upsertEdge(sessionId, docId, RV.g, '§2 p. 2')
-    track('Gravity', g)
     const p = f('pressure')
     const mode = f('pmode')
-    const pKnown = p.value && p.status !== 'unknown'
-    upsertNode(sessionId, node('missionParam', RV.p, {
-      label: pKnown ? `Pressure: ${p.value}` : 'Pressure: from design basis',
-      value: pKnown ? p.value : '',
-      hint: `${p.source}. ${p.note ?? ''} Mode: ${mode.value || 'unknown'} (${mode.status}).`,
-      provenance: pKnown ? statusToProv(p.status) : 'unknown',
-      badge: pKnown ? (p.status === 'provisional' ? 'provisional · task brief' : `${mode.value || 'mode ?'} · confirmed`) : 'unknown until confirmed',
-    }))
-    upsertEdge(sessionId, docId, RV.p, '§3.1 p. 3')
-    track('Pressure', p)
-    track('Pressure mode', mode)
-
     const o2 = f('o2')
     const o2max = f('o2max')
-    upsertNode(sessionId, node('missionParam', RV.o2, {
-      label: `Oxygen: ${o2.value || '30 %'}`,
-      value: o2.value || '30 %',
-      hint: `Target from engineer scenario, confirmed in ${o2.source}. Transient upper bound: ${o2max.value || 'not stated'}.`,
-      provenance: 'engineer',
-      badge: o2max.value ? `target · max ${o2max.value}` : 'target · max unknown',
-    }))
-    upsertEdge(sessionId, docId, RV.o2, '§3.2 p. 3')
-    track('O₂ target', o2)
-    track('O₂ transient max', o2max)
-
     const flow = f('flow')
     const dir = f('flowdir')
-    const flowKnown = flow.value && flow.status !== 'unknown'
-    upsertNode(sessionId, node('missionParam', RV.flow, {
-      label: flowKnown ? `Airflow: ${flow.value}` : 'Airflow: from ventilation spec',
-      value: flowKnown ? flow.value : '',
-      hint: `${flow.source}. Direction: ${dir.value || 'unknown'}. The rover’s 1/6-g flow field is not equivalent to the PSI microgravity setup.`,
-      provenance: flowKnown ? statusToProv(flow.status) : 'unknown',
-      badge: flowKnown ? (dir.value ? dir.value : 'direction ?') : 'not stated in document',
+    const known = (x: ExtractedField) => Boolean(x.value) && x.status !== 'unknown'
+
+    upsertNode(sessionId, node('missionParam', RV.mission, {
+      label: 'Mission environment',
+      hint: `From ${doc.name}. Engineer-provided inputs — not experimental results.`,
+      provenance: 'engineer',
+      badge: 'from design basis',
     }))
-    upsertEdge(sessionId, docId, RV.flow, '§4 p. 4')
-    track('Airflow', flow)
-    track('Airflow direction', dir)
+    upsertNode(sessionId, node('missionParam', RV.g, {
+      label: `Gravity: ${g.value}`,
+      value: g.value,
+      hint: `${g.source}. PSI combustion tables in this bundle contain no lunar-gravity tests.`,
+      provenance: statusToProv(g.status),
+      badge: 'not in PSI tests',
+    }))
+    upsertNode(sessionId, node('missionParam', RV.o2, {
+      label: `Oxygen: ${o2.value}`,
+      value: o2.value,
+      hint: `${o2.source}. ${o2.note ?? ''} Transient upper bound: ${o2max.value || 'not stated'}.`,
+      provenance: statusToProv(o2.status),
+      badge: o2max.value ? `target · max ${o2max.value}` : 'target · max unknown',
+    }))
+    upsertNode(sessionId, node('missionParam', RV.p, {
+      label: known(p) ? `Pressure: ${p.value}` : 'Pressure: not stated',
+      value: known(p) ? p.value : '',
+      hint: `${p.source}. ${p.note ?? ''} Mode: ${mode.value || 'unknown'}.`,
+      provenance: known(p) ? statusToProv(p.status) : 'unknown',
+      badge: known(p) ? (p.status === 'provisional' ? 'provisional' : `${mode.value || 'mode ?'} · approved`) : 'unknown',
+    }))
+    upsertNode(sessionId, node('missionParam', RV.flow, {
+      label: known(flow) ? `Airflow: ${flow.value}` : 'Airflow: not stated',
+      value: known(flow) ? flow.value : '',
+      hint: `${flow.source}. ${flow.note ?? ''} Direction: ${dir.value || 'unknown'}. The rover’s 1/6-g flow field is not equivalent to the PSI microgravity setup.`,
+      provenance: known(flow) ? statusToProv(flow.status) : 'unknown',
+      badge: known(flow) ? dir.value || 'direction ?' : 'unknown',
+    }))
+    upsertEdge(sessionId, RV.root, RV.mission, 'mission inputs')
+    upsertEdge(sessionId, RV.mission, RV.g, 'gravity')
+    upsertEdge(sessionId, RV.mission, RV.o2, 'oxygen')
+    upsertEdge(sessionId, RV.mission, RV.p, 'pressure')
+    upsertEdge(sessionId, RV.mission, RV.flow, 'airflow')
+    upsertEdge(sessionId, docId, RV.mission, 'source document')
+    for (const [label, x] of [
+      ['Gravity', g],
+      ['Pressure', p],
+      ['Pressure mode', mode],
+      ['O₂ target', o2],
+      ['O₂ transient max', o2max],
+      ['Airflow', flow],
+      ['Airflow direction', dir],
+    ] as const)
+      track(label, x)
   } else {
     const pm = f('pmma')
     const grade = f('pmmaGrade')
@@ -655,7 +650,7 @@ export function applyDocument(sessionId: string, doc: MockDoc, fields: Extracted
         ? [{ nodeId: RV.p, label: 'Pressure' }, { nodeId: RV.flow, label: 'Airflow' }, { nodeId: docId, label: doc.name }]
         : [{ nodeId: RV.pmma, label: 'Rover PMMA' }, { nodeId: RV.textile, label: 'Rover textile' }, { nodeId: docId, label: doc.name }],
   })
-  st().setHighlight(doc.id === 'basis' ? [RV.p, RV.flow, RV.o2] : [RV.pmma, RV.textile], 1800)
+  st().setHighlight(doc.id === 'basis' ? [RV.mission, RV.g, RV.o2, RV.p, RV.flow] : [RV.pmma, RV.textile], 1800)
   st().setStreamingMsgId(docMsgId)
 }
 
@@ -716,8 +711,9 @@ export function evidenceReply(sessionId: string): ScriptedReply {
       upsertEdge(sessionId, RV.saffire1, RV.saffire1ds, 'table')
       upsertEdge(sessionId, RV.pmma, RV.bass2, 'screening context')
       upsertEdge(sessionId, RV.pmma, RV.bass, 'material index')
-      upsertEdge(sessionId, RV.o2, RV.bre, 'condition context · different fuel')
-      upsertEdge(sessionId, RV.o2, RV.cfig, 'condition context · different fuel')
+      const o2Anchor = sess(sessionId)?.nodes.some((n) => n.id === RV.o2) ? RV.o2 : RV.root
+      upsertEdge(sessionId, o2Anchor, RV.bre, 'condition context · different fuel')
+      upsertEdge(sessionId, o2Anchor, RV.cfig, 'condition context · different fuel')
     },
     text:
       'Searched the local index (catalog, investigation details, 22 experimental tables). Grouped by how each source relates to your rover inputs — ranked by match reasons, not by probability.\n\n' +
@@ -836,7 +832,7 @@ export function branchReply(sessionId: string): ScriptedReply {
 
 export const NEXT_ACTIONS = [
   'Verify rover pressure, atmosphere operating envelope and fan-flow values against the signed design basis.',
-  'Confirm exact material formulations, thicknesses, coatings and installed geometry from the BOM and supplier data.',
+  'Compare BOM line 14 (cast PMMA, 6.0 mm, with hard coat) and line 22 (0.35 mm cotton-fiberglass on Nomex felt) with the tested PSI samples — coatings and backings are not represented in PSI rows.',
   'Retrieve the Saffire-II final report (PSI-99) for the PMMA spread-length notes and the garbled "?-g" gravity headers.',
   'Compare rover conditions against individual test rows (2-5, 2-8, 2-9, S1, S2), not only investigation summaries.',
   'Log 30 % O₂ / rover pressure / rover flow / 1/6 g as an uncovered condition — not a predicted failure.',
@@ -881,6 +877,12 @@ export function safetyVerdictReply(): ScriptedReply {
     text:
       'I can’t label the rover materials safe or unsafe, and I won’t give a risk percentage. The PSI bundle has no lunar-gravity material test, no PMMA or SIBAL result at 30 % O₂, and no calibrated rover-risk model.\n\nWhat the data does show: Saffire-II (PSI-99) rows 2-5, 2-8, 2-9 at ~22 % O₂ and 20 cm/s — a material analogue, plus a clear coverage gap. Ask me for "next actions" to see what closes it.',
     chips: [{ nodeId: RV.saffire2ds, label: 'SAFFIRE-2 table' }],
+  }
+}
+
+export function goalFirstReply(): ScriptedReply {
+  return {
+    text: 'Let’s define the goal of this review first — what should the evidence answer? Use the goal card in the middle of the canvas; then I can search the PSI index against it.',
   }
 }
 

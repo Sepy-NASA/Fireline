@@ -6,7 +6,7 @@ import { EXTERNAL_SOURCES } from '../../generated/graph'
 import { newId } from '../analyze/catalog'
 import { Button } from '../../components/ui/button'
 import { cn } from '../../lib/utils'
-import { MOCK_DOCS, applyDocument, matchMockDoc, type FieldStatus, type MockDoc } from './roverScenario'
+import { MOCK_DOCS, applyDocument, hasGoal, matchMockDoc, type FieldStatus, type MockDoc } from './roverScenario'
 
 /* ————————————————————————————————————————————
    "Add data" — mock Connections dialog.
@@ -43,6 +43,10 @@ export function AddDataDialog({ open, onOpenChange }: { open: boolean; onOpenCha
   const handleFile = (file: File) => {
     if (extracting) return
     setError(null)
+    if (session && !hasGoal(session)) {
+      setError('Define the review goal first (Step 1 on the canvas), then upload the documents.')
+      return
+    }
     const doc = matchMockDoc(file.name)
     if (!file.name.toLowerCase().endsWith('.pdf') || !doc) {
       setError(`"${file.name}" is not one of the demo documents. Upload Rover Cabin Design Basis.pdf or Cabin Materials BOM.pdf.`)
@@ -277,8 +281,8 @@ function DocReview({
           <div className="flex items-start gap-2 rounded-md border border-amber/40 bg-amber/10 px-2.5 py-1.5 text-[11px] leading-snug text-amber">
             <AlertTriangle className="mt-0.5 size-3.5 shrink-0" />
             <span>
-              Extracted from the PDF (simulated for the demo). Check against the preview, then confirm. Values marked TBD stay unknown —
-              a PDF sentence is never treated as a measurement.
+              Extracted from the PDF. Check the values against the preview, then confirm. They become mission inputs on the canvas —
+              a value from a document is never treated as a measurement.
             </span>
           </div>
           <div className="min-h-0 flex-1 overflow-y-auto rounded-md border border-edge">
