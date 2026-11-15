@@ -3,16 +3,73 @@
   "investigation": "ACME CFI-G",
   "tests": [
     {
-      "id": "21088A1", "label": "21088A1", "camera": "INTNS", "intnsFrames": 2017, "ignitionFrame": 468, "extinctionFrame": 1814,
-      "params": { "fuel": "ethane", "o2": 0.3939, "p": 0.9444, "burnSec": 50, "outcome": "SE", "tBurnerC": 290.6, "tadK": 2719, "note": "" }
+      "id": "21088A1",
+      "label": "21088A1",
+      "camera": "INTNS",
+      "intnsFrames": 2017,
+      "ignitionFrame": 468,
+      "extinctionFrame": 1814,
+      "params": {
+        "fuel": "ethane",
+        "o2": 0.3939,
+        "p": 0.9444,
+        "burnSec": 50,
+        "outcome": "SE",
+        "tBurnerC": 290.6,
+        "tadK": 2719,
+        "note": "",
+        "configuration": "normal",
+        "massFlowMgS": 2.0,
+        "fuelMoleFraction": 1.0,
+        "zst": 0.102651783,
+        "coolFlameConfirmed": false
+      }
     },
     {
-      "id": "21088B1", "label": "21088B1", "camera": "INTNS", "intnsFrames": 1944, "ignitionFrame": 618, "extinctionFrame": 1638,
-      "params": { "fuel": "ethane", "o2": 0.3898, "p": 0.9444, "burnSec": 43, "outcome": "SE", "tBurnerC": 276.0, "tadK": 2714, "note": "" }
+      "id": "21088B1",
+      "label": "21088B1",
+      "camera": "INTNS",
+      "intnsFrames": 1944,
+      "ignitionFrame": 618,
+      "extinctionFrame": 1638,
+      "params": {
+        "fuel": "ethane",
+        "o2": 0.3898,
+        "p": 0.9444,
+        "burnSec": 43,
+        "outcome": "SE",
+        "tBurnerC": 276.0,
+        "tadK": 2714,
+        "note": "",
+        "configuration": "normal",
+        "massFlowMgS": 2.0,
+        "fuelMoleFraction": 1.0,
+        "zst": 0.101747543,
+        "coolFlameConfirmed": false
+      }
     },
     {
-      "id": "21088C1", "label": "21088C1", "camera": "INTNS", "intnsFrames": 1829, "ignitionFrame": 528, "extinctionFrame": 1515,
-      "params": { "fuel": "ethane", "o2": 0.3863, "p": 0.9444, "burnSec": 42, "outcome": "SE", "tBurnerC": 266.4, "tadK": 2709, "note": "hit burner T limit" }
+      "id": "21088C1",
+      "label": "21088C1",
+      "camera": "INTNS",
+      "intnsFrames": 1829,
+      "ignitionFrame": 528,
+      "extinctionFrame": 1515,
+      "params": {
+        "fuel": "ethane",
+        "o2": 0.3863,
+        "p": 0.9444,
+        "burnSec": 42,
+        "outcome": "SE",
+        "tBurnerC": 266.4,
+        "tadK": 2709,
+        "note": "hit burner T limit",
+        "configuration": "normal",
+        "massFlowMgS": 2.0,
+        "fuelMoleFraction": 1.0,
+        "zst": 0.100968644,
+        "coolFlameConfirmed": false
+      }
     }
   ]
 }

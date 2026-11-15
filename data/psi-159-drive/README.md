@@ -1,5 +1,8 @@
 # PSI-159 (ACME CFI-G) — pliki pobrane z Google Drive
 
+Aktualizacja 2026-11-15: moduł VR korzysta teraz z pełnych sekwencji INTNS. Rekonstrukcja, źródłowe SHA-256, czas i ograniczenia są opisane w `app/scripts/psi159/README.md` oraz metadanych `app/public/psi159/*/lut-index.json`. Poniższy opis pobrania ma charakter historyczny i dotyczy wcześniejszego etapu projektu.
+
+
 Źródło: <https://drive.google.com/drive/folders/1WIvup-SYEZczCj3ah7J99Y7SQdwymBHC>
 Badanie: **PSI-159 — Advanced Combustion via Microgravity Experiments / Cool Flames Investigation with Gases**
 DOI: `10.60555/cyt1-kh64` · Licencja: **CC0 1.0 Universal** · Wydanie: 20-Nov-2025

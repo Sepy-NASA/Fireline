@@ -1,492 +1,307 @@
-import {
-  Eye,
-  Flame,
-  Glasses,
-  Info,
-  Maximize,
-  Pause,
-  Play,
-  Rewind,
-  RotateCcw,
-  Settings2,
-  SkipBack,
-  SkipForward,
-  TriangleAlert,
-  ZoomIn,
-  ZoomOut,
-} from 'lucide-react'
-import { useEffect, useRef, useState } from 'react'
+import { Eye, Flame, Glasses, Info, Maximize, Pause, Play, Rewind, RotateCcw, Settings2, SkipBack, SkipForward, TriangleAlert, ZoomIn, ZoomOut } from 'lucide-react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { cn } from '../../lib/utils'
-import { PALETTE_NAMES, FlameEngine, type FlameVrState } from './flameEngine'
+import { PALETTE_NAMES, FlameEngine, type FlameVrState, type SensorData } from './flameEngine'
+import type { LutMetadata } from './flameField'
+import { nearestTimeIndex } from './flameTime'
+import modelCalibration from '../../../public/psi159/model-calibration.json'
+import { ExperimentPicker } from './ExperimentPicker'
+import type { ExperimentOption } from './flamePanels'
 
-/* ————————————————————————————————————————————————————————————
-   Flame VR — volumetric 3D flame visualisation (WebXR-ready).
-
-   The ε(r,z) field is SYNTHETIC (mock): the repo ships no PSI-159
-   The default 3D field is an axisymmetric Abel reconstruction from the
-   real PSI-159 HOBJ frames; a fluid+combustion solver is the fallback.
-   Colours are explicitly false-colour, not temperature.
-   VR/AR paths are implemented but have NOT been verified on a physical
-   Quest 3 — the UI records frame/error counters so this stays honest.
-   ———————————————————————————————————————————————————————————— */
-
-const PALETTE_LABELS = ['Flame', 'Inferno', 'Ice']
-
-interface RealFrame {
-  i: number
-  src: number
-  file: string
-  tMs: number
+interface RealFrame { i: number; src: number; file: string; tMs: number }
+interface PreviewIndex {
+  testpoint: string; camera: string; totalFrames: number; w: number; h: number
+  displayCounts: number; path: string; frames: RealFrame[]
 }
-
 interface TestPoint {
-  id: string
-  label: string
-  frames?: number
-  params?: {
-    fuel: string
-    o2: number
-    p: number
-    burnSec: number
-    outcome: string
-    tBurnerC: number
-    tadK: number
-    note?: string
-  }
+  id: string; label: string
+  params?: { fuel: string; o2: number; p: number; burnSec: number; outcome: string
+    massFlowMgS: number; fuelMoleFraction: number; configuration: 'normal' | 'inverse' }
+}
+type SourceMode = 'real' | 'physics'
+
+async function fetchJson<T>(url: string, signal: AbortSignal): Promise<T> {
+  const response = await fetch(url, { signal })
+  if (!response.ok) throw new Error(`Cannot load ${url}: HTTP ${response.status}`)
+  return response.json() as Promise<T>
+}
+async function fetchField(url: string, signal: AbortSignal): Promise<ArrayBuffer> {
+  const response = await fetch(url, { signal })
+  if (!response.ok) throw new Error(`Cannot load emission data: HTTP ${response.status}`)
+  const buffer = await response.arrayBuffer()
+  const bytes = new Uint8Array(buffer)
+  // Servers may already apply Content-Encoding. Avoid decompressing twice.
+  if (bytes[0] !== 0x1f || bytes[1] !== 0x8b) return buffer
+  const stream = new Blob([buffer]).stream().pipeThrough(new DecompressionStream('gzip'))
+  return new Response(stream).arrayBuffer()
 }
 
 export function FlameVrView() {
   const hostRef = useRef<HTMLDivElement>(null)
   const engineRef = useRef<FlameEngine | null>(null)
   const [state, setState] = useState<FlameVrState | null>(null)
-  const [gravity, setGravity] = useState(0.8)
-  const [palette, setPalette] = useState(0)
-  const [threshold, setThreshold] = useState(0.15)
-  const [density, setDensity] = useState(170)
-  const [gamma, setGamma] = useState(1)
-  const [quality, setQuality] = useState(2)
-  const [showTuning, setShowTuning] = useState(false)
-  const [realFrames, setRealFrames] = useState<RealFrame[] | null>(null)
   const [tests, setTests] = useState<TestPoint[]>([{ id: '21088A1', label: '21088A1' }])
-  const testsRef = useRef<TestPoint[]>(tests)
+  const testsRef = useRef(tests)
+  const [selectedTest, setSelectedTest] = useState(() => new URLSearchParams(location.search).get('test') ?? '21088A1')
+  const [mode, setMode] = useState<SourceMode>(() => new URLSearchParams(location.search).get('model') === 'physics' ? 'physics' : 'real')
+  const [metadata, setMetadata] = useState<LutMetadata | null>(null)
+  const [preview, setPreview] = useState<PreviewIndex | null>(null)
+  const [loading, setLoading] = useState(true)
+  const [loadError, setLoadError] = useState<string | null>(null)
+  const [showTuning, setShowTuning] = useState(false)
+  const [showEvidence, setShowEvidence] = useState(false)
+  const [retry, setRetry] = useState(0)
+  const experimentOptions = useMemo<ExperimentOption[]>(() => tests.map((test) => ({
+    id: test.id,
+    label: test.id,
+    summary: test.params ? `${test.params.fuel} · O₂ ${(test.params.o2 * 100).toFixed(1)}% · ${test.params.p.toFixed(3)} bar` : test.label,
+    detail: test.params ? `${test.params.configuration} configuration · ${test.params.massFlowMgS} mg/s · ${test.params.burnSec.toFixed(1)} s burn` : 'Recorded experiment',
+  })), [tests])
+  useEffect(() => { testsRef.current = tests }, [tests])
   useEffect(() => {
-    testsRef.current = tests
-  }, [tests])
-  const [selectedTest, setSelectedTest] = useState(
-    () => new URLSearchParams(location.search).get('test') ?? '21088A1',
-  )
+    const url = new URL(location.href)
+    url.searchParams.set('test', selectedTest)
+    if (mode === 'physics') url.searchParams.set('model', 'physics')
+    else url.searchParams.delete('model')
+    history.replaceState(null, '', url)
+  }, [selectedTest, mode])
 
-  // test-point catalog (PSI-159 CFI-G)
   useEffect(() => {
-    fetch('/psi159/tests.json')
-      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
-      .then((j: { tests: TestPoint[] }) => {
-        if (Array.isArray(j.tests) && j.tests.length) setTests(j.tests)
+    const abort = new AbortController()
+    fetchJson<{ tests: TestPoint[] }>('/psi159/tests.json', abort.signal)
+      .then((catalog) => {
+        if (catalog.tests?.length) {
+          setTests(catalog.tests)
+          setSelectedTest((id) => catalog.tests.some((test) => test.id === id) ? id : catalog.tests[0].id)
+        }
       })
-      .catch(() => undefined)
+      .catch((error: unknown) => { if (!abort.signal.aborted) setLoadError(String(error)) })
+    return () => abort.abort()
   }, [])
 
   useEffect(() => {
-    const host = hostRef.current
-    if (!host) return
-    const engine = new FlameEngine(host, 0.8)
+    if (!hostRef.current) return
+    const engine = new FlameEngine(hostRef.current)
     engineRef.current = engine
     engine.onState(setState)
-    engine.checkSupport()
-    engine.onTestSwitchChange((dir) => {
-      setSelectedTest((prev) => {
+    engine.onExperimentSelectChange(setSelectedTest)
+    void engine.checkSupport()
+    engine.onTestSwitchChange((direction) => {
+      setSelectedTest((id) => {
         const list = testsRef.current
-        const i = list.findIndex((t) => t.id === prev)
-        if (i < 0 || list.length < 2) return prev
-        return list[(i + dir + list.length) % list.length].id
+        const index = list.findIndex((test) => test.id === id)
+        return list[(Math.max(0, index) + direction + list.length) % list.length].id
       })
     })
-    return () => {
-      engine.dispose()
-      engineRef.current = null
-    }
+    return () => { engine.dispose(); engineRef.current = null }
   }, [])
 
-  // load the selected real-HOBJ test point: frame manifest + epsilon(r,z) LUT
+  useEffect(() => { engineRef.current?.setExperimentCatalog(experimentOptions) }, [experimentOptions])
+
   useEffect(() => {
     const engine = engineRef.current
     if (!engine) return
-    let cancelled = false
-    ;(async () => {
+    const abort = new AbortController()
+    engine.clearExperiment()
+    setLoading(true)
+    setLoadError(null)
+    setMetadata(null)
+    setPreview(null)
+    const base = `/psi159/${selectedTest}/`
+    void (async () => {
       try {
-        const framesMeta = await fetch(`/psi159/${selectedTest}/index.json`).then((r) => {
-          if (!r.ok) throw new Error(String(r.status))
-          return r.json()
-        })
-        const lutMeta = await fetch(`/psi159/${selectedTest}/lut-index.json`).then((r) => r.json())
-        const buf = await (await fetch(`/psi159/${selectedTest}/lut.bin`)).arrayBuffer()
-        const sensors = await fetch(`/psi159/${selectedTest}/sensors.json`)
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null)
-        if (cancelled) return
-        const frames = framesMeta.frames as RealFrame[]
-        setRealFrames(frames)
-        engine.setRealLut(buf, lutMeta)
-        if (new URLSearchParams(window.location.search).get('model') === 'physics') {
-          const p = testsRef.current.find((x) => x.id === selectedTest)?.params
-          engine.setPhysicsFlame({
-            oxygen: p?.o2 ?? 0.39,
-            pressure: p?.p ?? 0.94,
-            burnSeconds: p?.burnSec ?? 50,
-            burstPeriod: 2.2,
-          })
-        }
-        engine.setFramePreview(`/psi159/${selectedTest}/frames/`, frames.map((f) => f.file))
-        if (sensors) engine.setSensors(sensors)
-      } catch {
-        if (!cancelled) setRealFrames(null)
+        const [meta, index, sensors] = await Promise.all([
+          fetchJson<LutMetadata>(base + 'lut-index.json', abort.signal),
+          fetchJson<PreviewIndex>(base + 'index.json', abort.signal),
+          fetchJson<SensorData>(base + 'sensors.json', abort.signal),
+        ])
+        if (meta.testpoint !== selectedTest || index.testpoint !== selectedTest || sensors.testpoint !== selectedTest) throw new Error('Experiment manifests do not match the selected test')
+        const field = await fetchField(base + meta.file, abort.signal)
+        if (abort.signal.aborted) return
+        engine.setRealLut(field, meta)
+        engine.setFramePreview(base + index.path, index.frames.map((frame) => frame.file), index.frames.map((frame) => frame.tMs))
+        engine.setSensors(sensors)
+        setMetadata(meta)
+        setPreview(index)
+        setLoading(false)
+      } catch (error) {
+        if (abort.signal.aborted) return
+        setLoading(false)
+        const message = error instanceof Error ? error.message : String(error)
+        engine.setExperimentLoadError(message)
+        setLoadError(message)
       }
     })()
-    return () => {
-      cancelled = true
-    }
-  }, [selectedTest])
+    return () => abort.abort()
+  }, [selectedTest, retry])
 
-  // push the selected test + its experiment parameters to the in-VR HUD
+  const params = tests.find((test) => test.id === selectedTest)?.params
   useEffect(() => {
-    const tp = tests.find((x) => x.id === selectedTest)
-    const p = tp?.params
-    const info = p
-      ? `${p.fuel} · O₂ ${(p.o2 * 100).toFixed(1)}% · ${p.p.toFixed(2)} bar · ${p.burnSec}s · ${p.outcome}`
-      : ''
-    engineRef.current?.setTestId(selectedTest, info)
-  }, [selectedTest, tests])
+    const engine = engineRef.current
+    if (!engine || metadata?.testpoint !== selectedTest) return
+    if (mode === 'real') { engine.showReference(); return }
+    if (!params) return
+    engine.setPhysicsFlame({
+      oxygen: params.o2, pressure: params.p, massFlowMgS: params.massFlowMgS,
+      fuelMoleFraction: params.fuelMoleFraction, configuration: params.configuration,
+      ignitionMs: metadata.ignitionMs, flowOnMs: metadata.flowOnMs, flowOffMs: metadata.flowOffMs,
+      burnSeconds: params.burnSec, frameTimesMs: metadata.timesMs,
+      durationMs: metadata.durationMs, geometry: metadata.geometry,
+      ...modelCalibration.parameters,
+    })
+  }, [mode, metadata, params, selectedTest])
 
   useEffect(() => {
-    const onKey = (e: KeyboardEvent) => {
-      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLSelectElement) return
-      if (e.code === 'Space') {
-        e.preventDefault()
-        engineRef.current?.togglePlay()
-      } else if (e.code === 'ArrowRight') {
-        engineRef.current?.step(1)
-      } else if (e.code === 'ArrowLeft') {
-        engineRef.current?.step(-1)
-      }
+    engineRef.current?.setTestId(selectedTest, params
+      ? `${params.fuel} · ${params.configuration} · O₂ ${(params.o2 * 100).toFixed(1)}% · ${params.p.toFixed(3)} bar · ${params.massFlowMgS} mg/s`
+      : selectedTest)
+  }, [selectedTest, params])
+
+  useEffect(() => {
+    const onKey = (event: KeyboardEvent) => {
+      if (event.target instanceof HTMLElement && event.target.closest('input,select,button,textarea,a,[contenteditable="true"]')) return
+      if (event.code === 'Space') { event.preventDefault(); engineRef.current?.togglePlay() }
+      else if (event.code === 'ArrowRight') engineRef.current?.step(1)
+      else if (event.code === 'ArrowLeft') engineRef.current?.step(-1)
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
   }, [])
 
-  const frames = state?.frameCount ?? 0
-  const progress = frames > 1 ? (state?.frameIndex ?? 0) / (frames - 1) : 0
-  const realFrame = realFrames?.[state?.frameIndex ?? 0] ?? null
-  const seconds = realFrame
-    ? (realFrame.tMs / 1000).toFixed(2)
-    : state
-      ? (state.tMs / 1000).toFixed(2)
-      : '0.00'
-  const isRewinding = Boolean(state?.playing && state.direction === -1)
-
-  // move the chart playhead to the current real-frame timestamp
-  useEffect(() => {
-    if (realFrame) engineRef.current?.setPlayhead(realFrame.tMs / 1000)
-  }, [realFrame])
+  const seconds = ((state?.tMs ?? 0) / 1000).toFixed(2)
+  const progress = state?.durationMs ? (state.tMs - state.startMs) / state.durationMs : 0
+  const realFrame = preview?.frames[nearestTimeIndex(preview.frames.map((frame) => frame.tMs), state?.tMs ?? 0)]
+  const quality = state?.source === 'real' ? metadata?.quality[state.frameIndex] : null
+  const modelValidation = (modelCalibration.validation as Record<string, { relativeRadiusRmse: number; radiusRmseMeters: number; emissionProxyNrmse: number }>)[selectedTest]
+  const isRewinding = state?.playing && state.direction === -1
 
   return (
     <div className="relative h-full w-full overflow-hidden bg-ink">
-      {/* three.js canvas */}
       <div ref={hostRef} className="absolute inset-0" />
-
-      {/* top bar */}
       <div className="pointer-events-none absolute inset-x-0 top-0 flex items-center gap-3 border-b border-edge/60 bg-panel/80 px-3 py-2 backdrop-blur-sm">
         <div className="flex items-center gap-2">
-          <div className="flex size-6 items-center justify-center rounded-sm bg-flame/20">
-            <Flame className="size-3.5 text-flame" strokeWidth={2.4} />
-          </div>
-          <div>
-            <p className="text-[13px] font-semibold leading-tight text-text">Flame VR</p>
-            <p className="text-[10px] leading-tight text-faint">
-              axisymmetric ε(r,z) · ray-marched volume · WebXR
-            </p>
-          </div>
+          <Flame className="size-5 text-flame" />
+          <div><p className="text-[13px] font-semibold text-text">Flame VR</p><p className="text-[10px] text-faint">µg · spherical burner · experiment clock</p></div>
         </div>
-
         <div className="pointer-events-auto ml-auto flex items-center gap-2">
-          <span className="text-[10px] text-faint">Test</span>
-          <select
-            value={selectedTest}
-            onChange={(e) => setSelectedTest(e.target.value)}
-            className="h-7 rounded-md border border-edge bg-panel2 px-1.5 text-[11px] text-text focus:outline-2 focus:outline-bright"
-            aria-label="Test point"
-          >
-            {tests.map((t) => (
-              <option key={t.id} value={t.id}>{t.label}</option>
-            ))}
-          </select>
-          {(() => {
-            const p = tests.find((x) => x.id === selectedTest)?.params
-            return p ? (
-              <span className="hidden max-w-[320px] truncate text-[9px] text-faint xl:inline">
-                {p.fuel} · O₂ {(p.o2 * 100).toFixed(1)}% · {p.p.toFixed(2)} bar · burn {p.burnSec}s · {p.outcome}
-              </span>
-            ) : null
-          })()}
-          <div className="mx-1 h-5 w-px bg-edge" />
-          <button
-            onClick={() => engineRef.current?.enterVR()}
-            disabled={state?.vrSupported === false || state?.presenting}
-            className="flex h-8 items-center gap-1.5 rounded-md bg-bright/15 px-3 text-xs font-medium text-bright transition-colors hover:bg-bright/25 disabled:cursor-not-allowed disabled:opacity-40"
-          >
-            <Glasses className="size-3.5" />
-            {state?.presenting && !state.arMode ? 'In VR' : 'Enter VR'}
-          </button>
-          <button
-            onClick={() => engineRef.current?.enterAR()}
-            disabled={state?.arSupported === false || state?.presenting}
-            className="flex h-8 items-center gap-1.5 rounded-md border border-edge px-3 text-xs font-medium text-dim transition-colors hover:border-edge2 hover:text-text disabled:cursor-not-allowed disabled:opacity-40"
-          >
-            <Eye className="size-3.5" />
-            {state?.presenting && state.arMode ? 'In AR' : 'Enter AR'}
-          </button>
-          {state?.presenting && (
-            <button
-              onClick={() => engineRef.current?.exitXR()}
-              className="flex h-8 items-center gap-1.5 rounded-md border border-flame/40 px-3 text-xs font-medium text-flame transition-colors hover:bg-flame/10"
-            >
-              Exit
-            </button>
-          )}
+          <ExperimentPicker options={experimentOptions} selectedId={selectedTest} onSelect={setSelectedTest} />
+          <label className="flex items-center gap-2 text-[10px] text-faint">Source
+            <select aria-label="Flame source" value={mode} onChange={(event) => setMode(event.target.value as SourceMode)} className="h-8 rounded-md border border-edge bg-panel2 px-2 text-[11px] text-text">
+              <option value="real">INTNS reconstruction</option><option value="physics">1D transport model</option>
+            </select>
+          </label>
+          <button type="button" aria-label="Enter VR" onClick={() => void engineRef.current?.enterVR()} disabled={!state?.vrSupported || state.presenting} className="flex h-8 items-center gap-1 rounded-md border border-edge px-2 text-xs text-bright disabled:opacity-30"><Glasses className="size-4" /><span className="hidden md:inline">Enter VR</span></button>
+          <button type="button" aria-label="Enter AR" onClick={() => void engineRef.current?.enterAR()} disabled={!state?.arSupported || state.presenting} className="flex h-8 items-center gap-1 rounded-md border border-edge px-2 text-xs text-dim disabled:opacity-30"><Eye className="size-4" /><span className="hidden md:inline">Enter AR</span></button>
+          <button type="button" aria-label="Experiment evidence" aria-controls="flame-evidence" aria-expanded={showEvidence} onClick={() => setShowEvidence((value) => !value)} className="flex h-8 items-center rounded-md border border-edge px-2 text-dim lg:hidden"><Info className="size-4" /></button>
+          {state?.presenting && <button type="button" onClick={() => void engineRef.current?.exitXR()} className="h-8 px-2 text-xs text-flame">Exit XR</button>}
         </div>
       </div>
 
-      {/* control deck */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 flex justify-center pb-3">
-        <div className="pointer-events-auto w-[min(680px,calc(100%-16px))] rounded-lg border border-edge bg-panel/90 p-3 shadow-pop backdrop-blur-sm">
-          {/* transport */}
-          <div className="flex items-center gap-2">
-            <IconBtn onClick={() => engineRef.current?.step(-1)} label="Previous frame (←)">
-              <SkipBack className="size-4" />
-            </IconBtn>
-            <IconBtn
-              onClick={() => (isRewinding ? engineRef.current?.pause() : engineRef.current?.rewind())}
-              label="Rewind — play backwards"
-              active={isRewinding}
-            >
-              <Rewind className="size-4" />
-            </IconBtn>
-            <IconBtn
-              onClick={() => engineRef.current?.togglePlay()}
-              label="Play forward / pause (Space)"
-              accent
-            >
-              {state?.playing && !isRewinding ? <Pause className="size-4" /> : <Play className="size-4" />}
-            </IconBtn>
-            <IconBtn onClick={() => engineRef.current?.step(1)} label="Next frame (→)">
-              <SkipForward className="size-4" />
-            </IconBtn>
-            <IconBtn onClick={() => engineRef.current?.seekFraction(0)} label="Restart">
-              <RotateCcw className="size-4" />
-            </IconBtn>
-
-            <div className="mx-1 h-6 w-px bg-edge" />
-
-            <input
-              type="range"
-              min={0}
-              max={1}
-              step={frames > 1 ? 1 / (frames - 1) : 1}
-              value={progress}
-              onChange={(e) => engineRef.current?.seekFraction(Number(e.target.value))}
-              className="min-w-0 flex-1 accent-[#4da3ff]"
-              aria-label="Timeline"
-            />
-            <span className="tnum w-32 shrink-0 text-right font-mono text-[11px] text-dim">
-              {(state?.frameIndex ?? 0) + 1}/{frames} · {seconds}s
-            </span>
-
-            <IconBtn onClick={() => setShowTuning((v) => !v)} label="Tuning" active={showTuning}>
-              <Settings2 className="size-4" />
-            </IconBtn>
+      <div className="pointer-events-none absolute bottom-3 inset-x-0 flex justify-center px-2">
+        <div className="pointer-events-auto w-full max-w-3xl rounded-xl border border-edge2 bg-panel/95 shadow-pop">
+          <div className="flex items-center justify-between gap-3 border-b border-edge px-4 py-3">
+            <div className="flex items-center gap-2 text-xs"><span className="text-dim">Experiment</span><span className="font-mono font-medium text-text">{selectedTest}</span><span className="hidden border-l border-edge2 pl-2 text-faint sm:inline">{state?.source === 'real' ? 'INTNS recording' : 'Transport model'}</span></div>
+            <span className={cn('rounded-full px-2 py-1 text-[10px] font-medium', state?.playing ? 'bg-bright/10 text-bright' : 'bg-panel2 text-dim')}>{loading ? 'Loading…' : isRewinding ? 'Rewinding' : state?.playing ? 'Playing' : 'Paused'}</span>
           </div>
-
-          {/* camera + hints (always visible) */}
-          <div className="mt-2 flex items-center gap-2 border-t border-edge pt-2">
-            <IconBtn onClick={() => engineRef.current?.zoomBy(1.18)} label="Zoom out">
-              <ZoomOut className="size-4" />
-            </IconBtn>
-            <IconBtn onClick={() => engineRef.current?.zoomBy(0.85)} label="Zoom in">
-              <ZoomIn className="size-4" />
-            </IconBtn>
-            <IconBtn onClick={() => engineRef.current?.resetView()} label="Reset view">
-              <Maximize className="size-4" />
-            </IconBtn>
-            <p className="ml-1 text-[10px] leading-tight text-faint">
-              LPM obrót · PPM przesuń · rolka zoom · ←/→ klatka · Spacja play/pauza
-            </p>
+          <div className="px-4 pt-3">
+            <div className="flex items-baseline justify-between gap-2">
+              <span data-testid="experiment-time" className="tnum font-mono text-lg text-text">{seconds}<span className="text-xs text-dim">s / {((state?.durationMs ?? 0) / 1000).toFixed(2)}s</span></span>
+              <span className="tnum font-mono text-[10px] text-dim">Frame {(state?.frameIndex ?? 0) + 1} / {state?.frameCount ?? 0}</span>
+            </div>
+            <input type="range" aria-label="Timeline" aria-valuetext={`${seconds} seconds`} min={0} max={1} step={0.0001} value={progress} disabled={loading || !!loadError} onChange={(event) => engineRef.current?.seekFraction(Number(event.target.value))} className="h-7 w-full accent-[#4da3ff] disabled:opacity-40" />
           </div>
-
-          {/* tuning */}
-          {showTuning && (
-            <div className="mt-3 grid grid-cols-2 gap-x-4 gap-y-3 border-t border-edge pt-3">
-              <div>
-                <Slider
-                  label="Gravity (0 = µg)"
-                  value={gravity}
-                  min={0}
-                  max={1}
-                  step={0.05}
-                  onChange={(v) => {
-                    setGravity(v)
-                    engineRef.current?.setGravity(v)
-                  }}
-                />
-                <button
-                  onClick={() => engineRef.current?.resimulate()}
-                  className="mt-1 flex h-7 w-full items-center justify-center gap-1.5 rounded-md border border-bright/40 bg-bright/10 text-[11px] font-medium text-bright transition-colors hover:bg-bright/20"
-                >
-                  <Flame className="size-3" /> Re-simulate
-                </button>
-                <button
-                  onClick={() => {
-                    const p = tests.find((x) => x.id === selectedTest)?.params
-                    engineRef.current?.setPhysicsFlame({
-                      oxygen: p?.o2 ?? 0.39,
-                      pressure: p?.p ?? 0.94,
-                      burnSeconds: p?.burnSec ?? 50,
-                      burstPeriod: 2.2,
-                    })
-                  }}
-                  className="mt-1 flex h-7 w-full items-center justify-center gap-1.5 rounded-md border border-edge bg-panel2 text-[11px] font-medium text-text transition-colors hover:bg-panel"
-                >
-                  <Flame className="size-3" /> Physics model
-                </button>
-              </div>
-              <Field label="False colour">
-                <select
-                  value={palette}
-                  onChange={(e) => {
-                    const v = Number(e.target.value)
-                    setPalette(v)
-                    engineRef.current?.setPalette(v)
-                  }}
-                  className="h-7 w-full rounded-md border border-edge bg-panel2 px-1.5 text-[11px] text-text focus:outline-2 focus:outline-bright"
-                >
-                  {PALETTE_LABELS.map((p, i) => (
-                    <option key={p} value={i}>{p}</option>
-                  ))}
-                </select>
-              </Field>
-              <Slider label="Threshold" value={threshold} min={0} max={0.9} step={0.01} onChange={(v) => { setThreshold(v); engineRef.current?.setThreshold(v) }} />
-              <Slider label="Density" value={density} min={10} max={2000} step={10} onChange={(v) => { setDensity(v); engineRef.current?.setDensity(v) }} />
-              <Slider label="Gamma" value={gamma} min={0.4} max={3} step={0.05} onChange={(v) => { setGamma(v); engineRef.current?.setGamma(v) }} />
-              <Slider label="Ray quality" value={quality} min={0.25} max={1.6} step={0.05} onChange={(v) => { setQuality(v); engineRef.current?.setQuality(v) }} />
+          <div className="flex flex-wrap items-center justify-between gap-3 px-4 pb-3">
+            <div className="flex items-center gap-2">
+              <IconBtn onClick={() => engineRef.current?.seekFraction(0)} label="Restart" disabled={loading || !!loadError}><RotateCcw className="size-4" /></IconBtn>
+              <IconBtn onClick={() => engineRef.current?.step(-1)} label="Previous frame (←)" disabled={loading || !!loadError}><SkipBack className="size-4" /></IconBtn>
+              <IconBtn onClick={() => isRewinding ? engineRef.current?.pause() : engineRef.current?.rewind()} label="Rewind — play backwards" active={!!isRewinding} disabled={loading || !!loadError}><Rewind className="size-4" /></IconBtn>
+              <IconBtn onClick={() => engineRef.current?.togglePlay()} label={state?.playing && !isRewinding ? 'Pause playback (Space)' : 'Play forward (Space)'} accent disabled={loading || !!loadError}>{state?.playing && !isRewinding ? <Pause className="size-5" /> : <Play className="size-5" />}</IconBtn>
+              <IconBtn onClick={() => engineRef.current?.step(1)} label="Next frame (→)" disabled={loading || !!loadError}><SkipForward className="size-4" /></IconBtn>
             </div>
-          )}
-        </div>
-      </div>
-
-      {/* status rail (left) */}
-      <div className="pointer-events-none absolute left-3 top-12 flex flex-col gap-2">
-        <StatusChip>
-          <span className="tnum font-mono">rendered {state?.framesRendered ?? 0}</span>
-        </StatusChip>
-        <StatusChip tone={state?.source === 'real' || state?.source === 'physics' ? 'ok' : 'muted'}>
-          {state?.source === 'real'
-            ? 'field: real INTNS (Abel)'
-            : state?.source === 'physics'
-              ? 'field: physics (reaction–diffusion)'
-              : 'field: fallback simulation'}
-        </StatusChip>
-        {state?.presenting ? (
-          <StatusChip tone="ok">
-            presenting {state.arMode ? 'immersive-ar' : 'immersive-vr'}
-          </StatusChip>
-        ) : (
-          <StatusChip tone="muted">
-            {state?.vrSupported == null ? 'XR: checking…' : state.vrSupported ? 'XR ready' : 'no WebXR'}
-          </StatusChip>
-        )}
-        {state?.xrError && (
-          <StatusChip tone="bad" className="max-w-[240px]">
-            {state.xrError}
-          </StatusChip>
-        )}
-        {(state?.renderErrors.length ?? 0) > 0 && (
-          <StatusChip tone="bad">render errors: {state?.renderErrors.length}</StatusChip>
-        )}
-
-        {/* real DataCam frame — synced with the simulation timeline */}
-        <div className="pointer-events-auto w-[200px] rounded-md border border-edge bg-panel/85 p-2 backdrop-blur-sm">
-          <p className="mb-1 flex items-center gap-1 text-[10px] font-semibold text-text">
-            <Eye className="size-3 text-bright" /> Real frame · DataCam
-          </p>
-          {realFrame ? (
-            <img
-              src={`/psi159/${selectedTest}/frames/${realFrame.file}`}
-              alt={`Real DataCam frame ${realFrame.src}`}
-              className="w-full rounded-sm border border-edge bg-black"
-              draggable={false}
-            />
-          ) : (
-            <div className="flex h-[150px] items-center justify-center text-[10px] text-faint">
-              loading…
+            <div className="flex items-center gap-1.5">
+              <IconBtn onClick={() => engineRef.current?.zoomBy(1.18)} label="Zoom out"><ZoomOut className="size-4" /></IconBtn>
+              <IconBtn onClick={() => engineRef.current?.zoomBy(0.85)} label="Zoom in"><ZoomIn className="size-4" /></IconBtn>
+              <IconBtn onClick={() => engineRef.current?.resetView()} label="Reset view"><Maximize className="size-4" /></IconBtn>
+              <IconBtn onClick={() => setShowTuning((value) => !value)} label="Display settings" active={showTuning}><Settings2 className="size-4" /></IconBtn>
             </div>
-          )}
-          <p className="tnum mt-1 text-[9px] leading-tight text-faint">
-            src #{realFrame?.src ?? '—'} · {seconds}s
-            <br />
-            raw 1360×1024 · fixed 0–2000 scale
-          </p>
+          </div>
+          {showTuning && <div className="grid grid-cols-2 gap-3 border-t border-edge p-4">
+            <Field label="Emission palette"><select aria-label="Emission palette" value={state?.palette ?? 0} onChange={(event) => engineRef.current?.setPalette(Number(event.target.value))} className="h-7 w-full rounded border border-edge bg-panel2 text-[11px] text-text">{PALETTE_NAMES.map((name, index) => <option key={name} value={index}>{name}</option>)}</select></Field>
+            <Slider label="Exposure (fixed across time)" value={state?.exposure ?? 2} min={0.1} max={12} step={0.1} onChange={(value) => engineRef.current?.setExposure(value)} />
+            <Slider label="Absorption (independent of emission)" value={state?.density ?? 0} min={0} max={4} step={0.05} onChange={(value) => engineRef.current?.setDensity(value)} />
+            <Slider label="Display gamma" value={state?.gamma ?? 1} min={0.5} max={2} step={0.05} onChange={(value) => engineRef.current?.setGamma(value)} />
+            <Slider label="Display signal cutoff" value={state?.threshold ?? 0} min={0} max={0.05} step={0.001} onChange={(value) => engineRef.current?.setThreshold(value)} />
+            <Slider label="Ray quality" value={state?.quality ?? 1} min={0.3} max={1.6} step={0.05} onChange={(value) => engineRef.current?.setQuality(value)} />
+          </div>}
         </div>
       </div>
 
-      {/* provenance / disclaimer (right) */}
-      <div className="pointer-events-none absolute right-3 top-12 max-w-[300px]">
-        <div className="pointer-events-auto rounded-md border border-edge bg-panel/85 p-2.5 text-[10px] leading-relaxed text-dim backdrop-blur-sm">
-          <p className="mb-1 flex items-center gap-1 text-[11px] font-semibold text-text">
-            <Info className="size-3 text-bright" /> Provenance &amp; limits
-          </p>
-          <p>
-            <span className="text-faint">3D:</span> axisymmetric Abel reconstruction from the real
-            PSI-159 HOBJ frames (fallback: fluid + combustion simulation).
-          </p>
-          <p className="mt-1">
-            <span className="text-faint">2D:</span> real DataCam frames from PSI-159 test 21088A1
-            (120 sampled HOBJ frames, synced to the timeline).
-          </p>
-          <p className="mt-1">
-            <span className="text-faint">Colour:</span> explicit false-colour ({PALETTE_NAMES[palette]}) —
-            not temperature, not measured RGB.
-          </p>
-          <p className="mt-1">
-            <span className="text-faint">Source:</span> PSI-159 ACME CFI-G · DOI 10.60555/cyt1-kh64 ·
-            CC0 · test 21088A1 (Intensified 2017 fr · ACME 696 · IPSU1 1076).
-          </p>
-          <p className="mt-1 flex items-start gap-1 text-amber">
-            <TriangleAlert className="mt-0.5 size-3 shrink-0" />
-            VR/AR implemented but not yet verified on a physical Quest 3.
-          </p>
+      <div className="pointer-events-none absolute left-3 top-12 flex w-[200px] flex-col gap-2">
+        <StatusChip><span className="font-mono">rendered {state?.framesRendered ?? 0} · {state?.frameCount ?? 0} fields</span></StatusChip>
+        <StatusChip tone={loading || state?.busy || loadError ? 'muted' : 'ok'}>{loading ? 'Loading experiment…' : loadError ? 'No experiment loaded' : state?.busy ? `Computing model ${Math.round(state.modelProgress * 100)}%` : state?.source === 'real' ? 'field: measured INTNS + inference' : 'field: reduced 1D hot-flame model'}</StatusChip>
+        <StatusChip>{state?.presenting ? `presenting ${state.arMode ? 'AR' : 'VR'}` : state?.vrSupported ? 'WebXR ready' : 'desktop · no WebXR'}</StatusChip>
+        {state?.presenting && <StatusChip tone={state.trackedHands ? 'ok' : 'muted'}>Hands: {state.trackedHands}/2 · {state.handHint}</StatusChip>}
+        {quality && quality.saturatedFraction > 0.01 && <StatusChip tone="bad">Saturated camera frame · limited radiometry</StatusChip>}
+        {quality?.inferredFromPrior && <StatusChip tone="bad">Limited frame · spherical inference</StatusChip>}
+        {(state?.xrError || state?.modelError) && <StatusChip tone="bad">{state.xrError || state.modelError}</StatusChip>}
+        {!!state?.renderErrors.length && <StatusChip tone="bad">render errors: {state.renderErrors.length}</StatusChip>}
+        <div className="pointer-events-auto rounded-md border border-edge bg-panel/85 p-2 backdrop-blur-sm">
+          <p className="mb-1 flex items-center gap-1 text-[10px] font-semibold text-text"><Eye className="size-3 text-bright" />Reference · {preview?.camera ?? 'INTNS'}</p>
+          {realFrame && preview ? <img src={`/psi159/${selectedTest}/${preview.path}${realFrame.file}`} alt={`INTNS frame ${realFrame.src} at ${(realFrame.tMs / 1000).toFixed(3)} seconds`} className="w-full rounded-sm border border-edge bg-black" draggable={false} /> : <div className="h-32 text-[10px] text-faint">{loading ? 'Loading reference…' : 'Reference unavailable'}</div>}
+          <p className="mt-1 text-[9px] leading-relaxed text-faint">src #{realFrame?.src ?? '—'} · {realFrame ? (realFrame.tMs / 1000).toFixed(3) : '—'}s<br />{preview ? `${preview.w}×${preview.h} · fixed 0–${preview.displayCounts} counts` : 'Mono16 intensified camera'}</p>
         </div>
       </div>
+
+      <div id="flame-evidence" className={cn('pointer-events-none absolute right-3 top-12 max-w-[270px]', showEvidence ? 'block' : 'hidden lg:block')}>
+        <div className="pointer-events-auto space-y-2 rounded-md border border-edge bg-panel/85 p-3 text-[10px] leading-relaxed text-dim backdrop-blur-sm">
+          <p className="flex items-center gap-1 text-[11px] font-semibold text-text"><Info className="size-3 text-bright" />Experiment & evidence</p>
+          <p>{selectedTest} · {params?.fuel ?? 'ethane'} · {params?.configuration ?? 'normal'}<br />O₂ {((params?.o2 ?? 0) * 100).toFixed(2)}% · {params?.p.toFixed(4)} bar · {params?.massFlowMgS} mg/s · µg</p>
+          {metadata && <p>{metadata.frames} source frames · {metadata.fps.toFixed(2)} samples/s<br />Acquisition clock shared with reference and sensors.</p>}
+          <p>{loading ? 'Loading INTNS reference and acquisition metadata.' : state?.source === 'real' ? 'Masked Abel reconstruction. Hidden regions use a spherical prior; they are inferred.' : 'Finite-volume radial transport, finite-rate hot reaction, radiation and burner heat exchange. Cool-flame chemistry is outside this reduced model.'}</p>
+          {metadata && state?.source === 'real' && <p>Projection error: {metadata.validation.medianProjectionNrmse == null ? 'unavailable' : `${(metadata.validation.medianProjectionNrmse * 100).toFixed(1)}% median NRMSE`} over {metadata.validation.framesCompared} usable frames.</p>}
+          {metadata && !loading && state?.source === 'physics' && modelValidation && <p>Radius RMSE vs INTNS: {(modelValidation.radiusRmseMeters * 1000).toFixed(2)} mm ({(modelValidation.relativeRadiusRmse * 100).toFixed(1)}%). Emission-proxy NRMSE: {(modelValidation.emissionProxyNrmse * 100).toFixed(0)}%. Coefficients fit on A1; B1/C1 are holdouts. Self-extinction is not calibrated.</p>}
+          <p>Scale: {metadata?.geometry.scaleStatus ?? 'estimated'} · display enlarged {state?.magnification.toFixed(1)}×. Absolute radiance and temperature are uncalibrated.</p>
+          <p>Palette: {PALETTE_NAMES[state?.palette ?? 0]}. Colour is illustrative.</p>
+          <div className="space-y-1 border-t border-edge pt-2">
+            <p className="font-semibold text-text">Hand controls in VR / AR</p>
+            <p>Enable hand tracking in your headset. Point at an object or bring your hand to its surface. Pinch your thumb and index finger to grab the flame, a chart or the preview.</p>
+            <p>Move your hand to reposition the object and turn your wrist to rotate it. Grab the same object with both hands and move them apart or together to resize it. Turn the line between your hands to rotate the object.</p>
+            <p>Open your fingers to release. Pinch the buttons below the scene for play / pause, rewind, flame size, reset layout, frames and tests. The experiment name is shown on the playback panel.</p>
+            <p>To scrub the recording, pinch the timeline below the buttons and move your hand left or right. Open your fingers to leave the recording paused at the selected time.</p>
+          </div>
+          <p className="text-faint">NASA PSI-159 ACME CFI-G · DOI 10.60555/cyt1-kh64 · CC0.</p>
+          <p className="flex gap-1 text-amber"><TriangleAlert className="mt-0.5 size-3 shrink-0" />Physical headset validation pending.</p>
+        </div>
+      </div>
+      {loading && <div role="status" className="pointer-events-none absolute inset-x-0 bottom-40 text-center text-sm text-dim">Loading {selectedTest}…</div>}
+      {loadError && <div role="alert" className="absolute inset-x-0 bottom-40 mx-auto max-w-lg rounded border border-flame/40 bg-panel p-4 text-sm text-text">{loadError}<button type="button" onClick={() => setRetry((value) => value + 1)} className="ml-3 underline">Retry</button></div>}
     </div>
   )
 }
 
-function IconBtn({ children, onClick, label, accent, active }: {
+function IconBtn({ children, onClick, label, accent, active, disabled }: {
   children: React.ReactNode
   onClick: () => void
   label: string
   accent?: boolean
   active?: boolean
+  disabled?: boolean
 }) {
   return (
     <button
+      type="button"
       onClick={onClick}
       title={label}
       aria-label={label}
+      aria-pressed={active}
+      disabled={disabled}
       className={cn(
-        'flex size-8 items-center justify-center rounded-md border transition-colors',
+        'flex items-center justify-center rounded-lg border disabled:opacity-40',
         accent
-          ? 'border-bright/40 bg-bright/15 text-bright hover:bg-bright/25'
+          ? 'size-11 border-bright bg-bright text-ink hover:bg-bright/80'
           : active
-            ? 'border-edge2 bg-panel2 text-bright'
-            : 'border-edge text-dim hover:border-edge2 hover:text-text',
+            ? 'size-9 border-bright/40 bg-bright/10 text-bright'
+            : 'size-9 border-edge text-dim hover:border-edge2 hover:bg-panel2 hover:text-text',
       )}
     >
       {children}
@@ -515,7 +330,7 @@ function Slider({ label, value, min, max, step, onChange }: {
     <label className="block">
       <span className="mb-0.5 flex justify-between text-[10px] text-faint">
         {label}
-        <span className="tnum font-mono text-dim">{value.toFixed(2)}</span>
+        <span className="tnum font-mono text-dim">{value.toFixed(step < 0.01 ? 3 : 2)}</span>
       </span>
       <input
         type="range"

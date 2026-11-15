@@ -4,8 +4,8 @@ A mock, SI-powered web dashboard for **NASA Space Apps 2026**: summarize, rank, 
 microgravity combustion investigations to support fire-safety research for spacecraft, stations,
 lunar/Martian bases, and pressurized rovers.
 
-Built for the hackathon as an interactive mock — no backend, no tests, all state in the browser
-(persisted to `localStorage`).
+Built for the hackathon with a static frontend and browser state persisted to `localStorage`.
+Flame VR includes full-rate measured INTNS reconstruction, a reduced transport solver and scientific regression checks.
 
 ## Stack
 
@@ -51,3 +51,65 @@ The copilot is a deterministic intent router over the real generated data: it an
 questions with actual numbers, adds relevant investigation nodes to the canvas, highlights referenced
 nodes (pulsing glow), attaches clickable chips and cross-view links. Connections simulates linking
 external standards, documents, and a mock MCP datasource.
+
+## Flame VR
+
+### Hand controls (VR / AR)
+
+Enable hand tracking in the headset, open your fingers, then point at an object
+or bring your hand to its surface. Pinch your thumb and index finger to grab the
+flame, a sensor panel or the camera preview. Move your hand to reposition it and
+turn your wrist to rotate it. Pinch the same object with both hands to resize it
+by moving your hands apart/together, or rotate it by turning the line between
+your hands. Open your fingers to release. Tracking loss releases the object;
+open your fingers before grabbing again.
+
+The blue outline/cursor shows the target; green indicates a held object. Pinch
+the buttons below the scene for play/pause, backward playback, flame size,
+workspace reset and previous/next frame. Choose **Choose experiment** to see
+each recording's oxygen, pressure, flow and burn conditions, with the current
+experiment marked. The desktop experiment picker shows the same catalog.
+Pinch the player heading to move or resize the playback panel itself.
+Pinch and drag the timeline
+below the buttons to scrub through the recording; release to keep it paused at
+the selected time. The experiment name and parameters appear on the playback
+panel, with no head-locked overlay above the scene. All controls use English.
+Reset places the workspace in front of the
+current head position, including seated use. Panel layouts survive test changes.
+
+Sensor panels use one trace per channel with independent raw signal scales,
+sample readouts and a synchronized time cursor. The thermocouple traces retain
+their small signal values instead of sharing the fuel-flow scale. Readouts use
+the nearest acquired sensor sample; missing samples break the plotted line.
+
+Run gesture and manipulation regressions with `npm run test:vr`. Physical
+headset verification remains necessary for tracking quality and comfort.
+
+The viewer loads all 2017 / 1944 / 1829 INTNS exposures for A1/B1/C1, as linear
+float16 emission fields. Playback, source previews and raw sensors share the
+acquisition clock. `Source` switches between measured reconstruction and a
+reduced spherical hot-ethane model computed in a worker.
+
+Fixed geometry preserves flame growth. Masks, saturated exposures and
+transients that cannot support an Abel reconstruction are marked as inferred.
+The physical camera scale remains an estimate; the model does not claim
+cool-flame chemistry or absolute radiance/temperature validation.
+
+```sh
+# Node 24 is used for the native TypeScript scientific tools.
+npm run test:flame
+# Python 3.11+ with NumPy/Pillow:
+python3 -m pip install -r scripts/psi159/requirements.txt
+python3 scripts/verify_vr.py
+# Rebuild only when the NASA INTNS source archives are available:
+python3 scripts/build_flame_data.py --raw-dir /path/to/archives
+npm run calibrate:flame
+# Export the same solver and fixed-clock comparison media:
+node scripts/export-flame-model.mjs
+python3 scripts/export_flame_preview.py
+```
+
+See [the reconstruction and model notes](scripts/psi159/README.md). The
+notebook and media entry points use these canonical scripts. The comparison movie
+at `../flame-simulation.mp4` shows emission projections on the real experiment
+clock; it is not a headset recording. A physical Quest/AR check remains separate.

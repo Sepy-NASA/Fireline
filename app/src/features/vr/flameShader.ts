@@ -1,17 +1,5 @@
-/* ————————————————————————————————————————————————————————————
-   GLSL for the axisymmetric flame volume, rendered by ray-marching
-   the unit box [-0.5, 0.5]³.
-
-   Follows the reference mapping from the PSI-159 brief (§6):
-     r = 2·length(p.xz)   → radial texture coordinate (0..1)
-     v = 0.5 − p.y        → axial texture coordinate (0 top .. 1 bottom)
-
-   The field ε(r,v) is stored in two 2D LUTs (adjacent frames) and
-   interpolated in time. Weak signal is thresholded ONLY here (visual
-   choice), colours are explicitly false-colour — INTNS carries no
-   real colour or temperature.
-   ———————————————————————————————————————————————————————————— */
-
+/** Emission/absorption ray integration in linear space. The INTNS palette is
+ * illustrative; intensity is not converted into an asserted temperature/RGB. */
 export const FLAME_VERTEX = /* glsl */ `
   varying vec3 vLocalPos;
   void main() {
@@ -19,121 +7,93 @@ export const FLAME_VERTEX = /* glsl */ `
     gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
   }
 `
-
 export const FLAME_FRAGMENT = /* glsl */ `
   precision highp float;
-
   uniform vec3 uCamLocal;
   uniform sampler2D uFieldA;
   uniform sampler2D uFieldB;
   uniform float uMix;
   uniform float uThreshold;
   uniform float uDensity;
+  uniform float uExposure;
   uniform float uGamma;
   uniform float uQuality;
+  uniform float uBurnerRadius;
   uniform int uPalette;
-
   varying vec3 vLocalPos;
 
-  /* ray vs AABB [-0.5, 0.5] — returns (enter, exit) */
   vec2 intersectBox(vec3 ro, vec3 rd) {
-    vec3 inv = 1.0 / rd;
-    vec3 t0 = (-0.5 - ro) * inv;
-    vec3 t1 = (0.5 - ro) * inv;
-    vec3 mn = min(t0, t1);
-    vec3 mx = max(t0, t1);
-    float tEnter = max(max(mn.x, mn.y), mn.z);
-    float tExit = min(min(mx.x, mx.y), mx.z);
-    return vec2(tEnter, tExit);
+    vec3 inv = 1.0 / (sign(rd) * max(abs(rd), vec3(1e-8)) + vec3(equal(rd, vec3(0.0))) * 1e-8);
+    vec3 a = (-0.5 - ro) * inv;
+    vec3 b = (0.5 - ro) * inv;
+    vec3 mn = min(a, b);
+    vec3 mx = max(a, b);
+    return vec2(max(max(mn.x, mn.y), mn.z), min(min(mx.x, mx.y), mx.z));
   }
-
+  float solidHit(vec3 ro, vec3 rd) {
+    float hit = 1e6;
+    float b = dot(ro, rd);
+    float c = dot(ro, ro) - uBurnerRadius * uBurnerRadius;
+    float d = b*b - c;
+    if (c < 0.0) return 0.0;
+    if (d > 0.0 && -b-sqrt(d) > 0.0) hit = -b-sqrt(d);
+    // Support tube along negative X; matches the separate scene mesh.
+    float tubeR = uBurnerRadius * 0.18;
+    float qa = dot(rd.yz, rd.yz);
+    float qb = dot(ro.yz, rd.yz);
+    float qc = dot(ro.yz, ro.yz) - tubeR*tubeR;
+    if (qc < 0.0 && ro.x >= -0.5 && ro.x <= 0.0) return 0.0;
+    if (abs(rd.x) > 1e-8) {
+      for (int cap=0; cap<2; cap++) {
+        float capX = cap == 0 ? -0.5 : 0.0;
+        float tCap = (capX-ro.x)/rd.x;
+        vec2 yz = (ro+rd*tCap).yz;
+        if (tCap > 0.0 && dot(yz,yz) <= tubeR*tubeR) hit = min(hit,tCap);
+      }
+    }
+    float qd = qb*qb - qa*qc;
+    if (qa > 1e-8 && qd > 0.0) {
+      float t = (-qb-sqrt(qd))/qa;
+      float x = ro.x + t*rd.x;
+      if (t > 0.0 && x >= -0.5 && x <= 0.0) hit = min(hit, t);
+    }
+    return hit;
+  }
   float sampleField(vec2 uv) {
-    if (uv.x < 0.0 || uv.x > 1.0 || uv.y < 0.0 || uv.y > 1.0) return 0.0;
-    float a = texture(uFieldA, uv).r;
-    float b = texture(uFieldB, uv).r;
-    return mix(a, b, uMix);
+    if (uv.x > 1.0 || uv.y < 0.0 || uv.y > 1.0) return 0.0;
+    return mix(texture2D(uFieldA, uv).r, texture2D(uFieldB, uv).r, uMix);
   }
-
-  /* false-colour ramps — NOT temperature / NOT measured RGB */
-  vec3 flameColor(float t) {
-    t = clamp(t, 0.0, 1.0);
-    vec3 c = vec3(0.0);
-    c = mix(c, vec3(0.60, 0.05, 0.02), smoothstep(0.00, 0.15, t));
-    c = mix(c, vec3(1.00, 0.28, 0.02), smoothstep(0.10, 0.40, t));
-    c = mix(c, vec3(1.00, 0.68, 0.10), smoothstep(0.35, 0.70, t));
-    c = mix(c, vec3(1.00, 0.95, 0.55), smoothstep(0.65, 0.90, t));
-    c = mix(c, vec3(1.00, 1.00, 1.00), smoothstep(0.88, 1.00, t));
-    return c;
+  vec3 tint(float emission) {
+    if (uPalette == 1) return vec3(1.0);
+    if (uPalette == 2) {
+      float t = clamp(log(1.0+emission)/2.0, 0.0, 1.0);
+      return mix(vec3(0.12,0.015,0.35), vec3(1.0,0.32,0.025), t);
+    }
+    return vec3(0.08, 0.25, 1.0);
   }
-
-  vec3 infernoColor(float t) {
-    t = clamp(t, 0.0, 1.0);
-    vec3 c = vec3(0.0);
-    c = mix(c, vec3(0.01, 0.01, 0.10), smoothstep(0.00, 0.15, t));
-    c = mix(c, vec3(0.25, 0.05, 0.45), smoothstep(0.10, 0.35, t));
-    c = mix(c, vec3(0.70, 0.15, 0.40), smoothstep(0.30, 0.55, t));
-    c = mix(c, vec3(0.98, 0.35, 0.10), smoothstep(0.50, 0.72, t));
-    c = mix(c, vec3(0.99, 0.80, 0.15), smoothstep(0.68, 0.88, t));
-    c = mix(c, vec3(1.00, 1.00, 0.98), smoothstep(0.85, 1.00, t));
-    return c;
-  }
-
-  vec3 iceColor(float t) {
-    t = clamp(t, 0.0, 1.0);
-    vec3 c = vec3(0.0);
-    c = mix(c, vec3(0.00, 0.05, 0.25), smoothstep(0.00, 0.30, t));
-    c = mix(c, vec3(0.10, 0.45, 0.95), smoothstep(0.25, 0.60, t));
-    c = mix(c, vec3(0.40, 0.85, 1.00), smoothstep(0.55, 0.85, t));
-    c = mix(c, vec3(1.00, 1.00, 1.00), smoothstep(0.82, 1.00, t));
-    return c;
-  }
-
-  vec3 falseColor(float x) {
-    if (uPalette == 1) return infernoColor(x);
-    if (uPalette == 2) return iceColor(x);
-    return flameColor(x);
-  }
-
   void main() {
     vec3 ro = uCamLocal;
-    vec3 rd = normalize(vLocalPos - uCamLocal);
-    vec2 tt = intersectBox(ro, rd);
-    float tEnter = max(tt.x, 0.0);
-    float tExit = tt.y;
-    if (tExit <= tEnter) discard;
-
-    int steps = int(160.0 * uQuality);
-    steps = clamp(steps, 32, 256);
-    float stepLength = (tExit - tEnter) / float(steps);
-
-    /* dither jitter to suppress banding */
-    float jitter = fract(sin(dot(gl_FragCoord.xy, vec2(12.9898, 78.233))) * 43758.5453);
-    float t = tEnter + stepLength * (0.5 + jitter * 0.5);
-
-    vec3 acc = vec3(0.0);
+    vec3 rd = normalize(vLocalPos - ro);
+    vec2 limits = intersectBox(ro, rd);
+    float enter = max(limits.x, 0.0);
+    // Gas in front of hardware remains visible; integration stops at metal.
+    float leave = min(limits.y, solidHit(ro, rd));
+    if (leave <= enter) discard;
+    int steps = int(clamp(160.0*uQuality, 48.0, 256.0));
+    float ds = (leave-enter)/float(steps);
+    float attenuation = exp(-max(0.0,uDensity)*ds);
+    float segment = uDensity > 1e-5 ? (1.0-attenuation)/uDensity : ds;
     float transmittance = 1.0;
-
-    for (int i = 0; i < 256; i++) {
-      if (i >= steps) break;
-      if (t > tExit || transmittance < 0.02) break;
-
-      vec3 p = ro + rd * t;
-      float r = 2.0 * length(p.xz);
-      float v = 0.5 - p.y;
-      float val = sampleField(vec2(r, v));
-
-      /* weak-signal threshold — visualisation only */
-      val = clamp((val - uThreshold) / (1.0 - uThreshold), 0.0, 1.0);
-
-      if (val > 0.001) {
-        float alpha = 1.0 - exp(-uDensity * val * stepLength);
-        vec3 col = falseColor(pow(val, 1.0 / uGamma));
-        acc += transmittance * alpha * col;
-        transmittance *= (1.0 - alpha);
-      }
-      t += stepLength;
+    vec3 radiance = vec3(0.0);
+    for (int i=0; i<256; i++) {
+      if (i >= steps || transmittance < 0.001) break;
+      vec3 p = ro + rd*(enter+(float(i)+0.5)*ds);
+      float emission = max(0.0, sampleField(vec2(2.0*length(p.xz), 0.5-p.y))-uThreshold);
+      radiance += transmittance * emission * tint(emission) * segment;
+      transmittance *= attenuation;
     }
-
-    gl_FragColor = vec4(acc, 1.0);
+    vec3 mapped = vec3(1.0)-exp(-uExposure*radiance);
+    gl_FragColor = vec4(pow(max(mapped,vec3(0.0)), vec3(1.0/uGamma)), 1.0-transmittance);
+    #include <colorspace_fragment>
   }
 `

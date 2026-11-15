@@ -1,0 +1,99 @@
+{
+  "date": "2026-11-15",
+  "timezone": "Europe/Warsaw",
+  "tests": [
+    {
+      "test": "21088A1",
+      "frames": 2017,
+      "durationSeconds": 86.822,
+      "reconstruction": {
+        "medianProjectionNrmse": 0.02101,
+        "framesCompared": 961,
+        "maskedValuesAreInferred": true,
+        "inferredFrameCount": 192,
+        "saturatedFrameCount": 76
+      },
+      "flowOnMs": 18865,
+      "flowOffMs": 82057,
+      "noiseFloorCounts": 2.2151873137056177,
+      "modelRadiusRmseMeters": 0.001217084872179029,
+      "modelRelativeRadiusRmse": 0.052862206972627945,
+      "emissionProxyNrmse": 0.4126241527197657,
+      "reactionEnergyFractionOfInjectedFuel": 0.9992973160442686
+    },
+    {
+      "test": "21088B1",
+      "frames": 1944,
+      "durationSeconds": 83.677,
+      "reconstruction": {
+        "medianProjectionNrmse": 0.01793,
+        "framesCompared": 922,
+        "maskedValuesAreInferred": true,
+        "inferredFrameCount": 103,
+        "saturatedFrameCount": 81
+      },
+      "flowOnMs": 24679,
+      "flowOffMs": 78903,
+      "noiseFloorCounts": 1.0141123667979888,
+      "modelRadiusRmseMeters": 0.0009693891123905761,
+      "modelRelativeRadiusRmse": 0.04248848288935051,
+      "emissionProxyNrmse": 0.40556535297069135,
+      "reactionEnergyFractionOfInjectedFuel": 0.9985030064818426
+    },
+    {
+      "test": "21088C1",
+      "frames": 1829,
+      "durationSeconds": 78.726,
+      "reconstruction": {
+        "medianProjectionNrmse": 0.0174,
+        "framesCompared": 825,
+        "maskedValuesAreInferred": true,
+        "inferredFrameCount": 139,
+        "saturatedFrameCount": 108
+      },
+      "flowOnMs": 21281,
+      "flowOffMs": 73977,
+      "noiseFloorCounts": 2.2617581803015754,
+      "modelRadiusRmseMeters": 0.0009221108824315251,
+      "modelRelativeRadiusRmse": 0.040457276004246194,
+      "emissionProxyNrmse": 0.7586529407692453,
+      "reactionEnergyFractionOfInjectedFuel": 0.9989614397511729
+    }
+  ],
+  "modelParameters": {
+    "radiationCoefficient": 0.6,
+    "transportMultiplier": 1,
+    "emissionScale": 16.090991651333084
+  },
+  "checks": {
+    "nodeScientificRegressionsPassed": 12,
+    "pythonReconstructionRegressionsPassed": 4,
+    "buildPassed": true,
+    "lintErrors": 0,
+    "browserExperimentsChecked": [
+      "21088A1",
+      "21088B1",
+      "21088C1"
+    ],
+    "browserConsoleErrorsObserved": 0,
+    "clockCheck": {
+      "wallSeconds": 25.852,
+      "experimentSeconds": 25.88
+    },
+    "physicalHeadsetChecked": false
+  },
+  "sourceSha256": {
+    "app/src/features/vr/flameField.ts": "4aa22c012450f93dd03bc4c3571d0d9e05974445a6ed77c839bc232bab771c78",
+    "app/src/features/vr/flameTime.ts": "f9965948d0680a4882c36292e26c199a55a93171907fef84022843100873841b",
+    "app/src/features/vr/flameSim.ts": "8c9f91183ce2686937c2cc6e523e5b2fea0aee248104eb34661b512cf062a33b",
+    "app/src/features/vr/flameHands.ts": "8ce266ddf6fb73cee95853e3a195830e208d5cc6181ee48fd381f52ec02493d4",
+    "app/src/features/vr/flameShader.ts": "e69e5d376300caac54e515d04f386887f790f1206dbdef94b458c482b5ac74b9",
+    "app/src/features/vr/flamePhysics.ts": "3a12daaa8d94ec5ff27d9ea66272d325e5791c88e3fdbd68a2ef96c772c59d49",
+    "app/src/features/vr/flame.worker.ts": "7a40e8067f79c22404fe92a8b3f1985ed1e9e97573f05788410665a65b81a9e6",
+    "app/src/features/vr/flameCamera.ts": "9ae46f107d3f85a02b60d30f7ba28e9ef90c936b0ba8ebe31575e5f379a0ff43",
+    "app/src/features/vr/flameEngine.ts": "bac449c3d217d126e979dfd6d9db09dbd81b62074b8c3298b41203ff3637d4fb",
+    "app/src/features/vr/FlameVrView.tsx": "5aefb8e8b018ceb0f80aac02fea5a40f69d46d4d725039c7d07897d4a576d89f",
+    "app/scripts/build_flame_data.py": "f85c74f8ac74ea581ebf03425b8735661fc33d78a8babc9fe4fcee7e29df28bf",
+    "app/scripts/calibrate-flame.mjs": "c4b6e577a33b77abe6a95f855ad20ebc913c8f71303505be8a737ec2c9de1b71"
+  }
+}

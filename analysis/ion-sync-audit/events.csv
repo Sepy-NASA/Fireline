@@ -1,0 +1,4 @@
+test,first_optical_dark_s,metadata_extinction_s,fuel_half_fall_s,ion_half_fall_s,ion_after_optical_dark_s,ion_fuel_pearson_r
+21088A1,73.258,78.123,81.912,82.248,8.99,0.9959378331163613
+21088B1,70.628,70.542,78.767,79.095,8.467,0.9959354838562616
+21088C1,65.29,65.246,73.842,74.161,8.871,0.9958497247870828

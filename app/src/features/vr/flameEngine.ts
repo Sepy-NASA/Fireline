@@ -1,9 +1,12 @@
 import * as THREE from 'three'
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
 import { FLAME_FRAGMENT, FLAME_VERTEX } from './flameShader'
-import { LUT_R, LUT_Z } from './flameField'
-import { simulateFlameSequence, type FlameSimSequence } from './flameSim'
-import { simulatePhysicsFlame, type PhysicsFlameOptions } from './flamePhysics'
+import { decodeLut, emptySequence, LUT_R, LUT_Z, type FlameSequence, type LutMetadata } from './flameField'
+import { bracketTime, nearestTimeIndex, validateTimes } from './flameTime'
+import type { PhysicsFlameOptions, PhysicsFlameSequence } from './flamePhysics'
+import { eyeOriginInVolume } from './flameCamera'
+import { HandManipulation, PinchGesture, handSliderPoint, pickHandTarget, type HandTarget } from './flameHands'
+import { drawExperimentCard, drawPlaybackHeading, drawPlaybackSurface, drawPlaybackTimeline, drawPlayerButton, drawSensorPanel, timelineFraction, type ExperimentOption, type PlayerIcon } from './flamePanels'
 
 /* ————————————————————————————————————————————————————————————
    three.js engine for the axisymmetric flame volume:
@@ -23,11 +26,18 @@ export interface FlameVrState {
   /** +1 = forward, −1 = rewinding */
   direction: 1 | -1
   gravity: number
-  source: 'real' | 'simulation' | 'physics'
+  source: 'real' | 'physics'
   frameIndex: number
   frameCount: number
   fps: number
   tMs: number
+  durationMs: number
+  startMs: number
+  busy: boolean
+  modelProgress: number
+  modelError: string | null
+  magnification: number
+  exposure: number
   framesRendered: number
   renderErrors: string[]
   xrError: string | null
@@ -36,6 +46,8 @@ export interface FlameVrState {
   gamma: number
   palette: number
   quality: number
+  trackedHands: number
+  handHint: string
 }
 
 export interface SensorSeries {
@@ -50,7 +62,7 @@ export interface SensorData {
   series: SensorSeries[]
 }
 
-const PALETTE_NAMES = ['flame', 'inferno', 'ice'] as const
+const PALETTE_NAMES = ['blue emission (illustrative)', 'INTNS grayscale', 'inferno (false colour)'] as const
 
 const HAND_JOINTS = [
   'wrist',
@@ -61,7 +73,7 @@ const HAND_JOINTS = [
   'pinky-finger-metacarpal', 'pinky-finger-phalanx-proximal', 'pinky-finger-phalanx-intermediate', 'pinky-finger-phalanx-distal', 'pinky-finger-tip',
 ] as const
 
-const HAND_BONES: [string, string][] = [
+const HAND_BONES: [XRHandJoint, XRHandJoint][] = [
   ['wrist', 'thumb-metacarpal'], ['thumb-metacarpal', 'thumb-phalanx-proximal'],
   ['thumb-phalanx-proximal', 'thumb-phalanx-distal'], ['thumb-phalanx-distal', 'thumb-tip'],
   ['wrist', 'index-finger-metacarpal'], ['index-finger-metacarpal', 'index-finger-phalanx-proximal'],
@@ -88,19 +100,30 @@ export class FlameEngine {
   private camera: THREE.PerspectiveCamera
   private controls: OrbitControls | null = null
   private box!: THREE.Mesh
+  private burner!: THREE.Mesh
+  private support!: THREE.Mesh
   private flameGroup = new THREE.Group()
   private material!: THREE.ShaderMaterial
   private uniforms: Record<string, THREE.IUniform>
   private tmp = new THREE.Vector3()
+  private inverseVolume = new THREE.Matrix4()
+  private shaderFailed = false
   private resizeObserver: ResizeObserver | null = null
 
-  private sequence: FlameSimSequence
-  private frameFloat = 0
+  private sequence: FlameSequence = emptySequence()
+  private times: number[] = [0]
+  private timeMs = 0
+  private reference: FlameSequence | null = null
+  private experimentLoading = false
+  private experimentLoadError: string | null = null
+  private worker: Worker | null = null
+  private generation = 0
+  private busy = false
+  private modelProgress = 0
+  private modelError: string | null = null
   private playing = false
   private direction: 1 | -1 = 1
-  private gravity = 0.8
-  private simSeed = 1
-  private source: 'real' | 'simulation' | 'physics' = 'simulation'
+  private source: 'real' | 'physics' = 'physics'
   private uploadedA = -1
   private uploadedB = -1
   private lastTick = 0
@@ -108,11 +131,12 @@ export class FlameEngine {
   private controllerR: THREE.XRTargetRaySpace
   private controllerL: THREE.XRTargetRaySpace
 
-  private threshold = 0.15
-  private density = 170
+  private threshold = 0
+  private density = 0
+  private exposure = 2
   private gamma = 1.0
   private palette = 0
-  private quality = 2.0
+  private quality = 1.0
 
   private vrSupported: boolean | null = null
   private arSupported: boolean | null = null
@@ -129,9 +153,19 @@ export class FlameEngine {
   private onTestSwitch: ((dir: 1 | -1) => void) | null = null
   private testId = ''
   private testInfo = ''
-  private hud: THREE.Sprite | null = null
-  private hudCanvas: HTMLCanvasElement | null = null
-  private hudTex: THREE.CanvasTexture | null = null
+  private playbackTitleCanvas: HTMLCanvasElement | null = null
+  private playbackTitleTexture: THREE.CanvasTexture | null = null
+  private playbackTitleTarget: HandTarget | null = null
+  private playerTextures = new Set<THREE.Texture>()
+  private playerMain = new THREE.Group()
+  private playerPicker = new THREE.Group()
+  private hoveredPlayerMeshes = new Set<THREE.Mesh>()
+  private playerControls: { key: string; icon: PlayerIcon; label: string; primary: boolean; canvas: HTMLCanvasElement; texture: THREE.CanvasTexture; mesh: THREE.Mesh; signature: string }[] = []
+  private experimentOptions: ExperimentOption[] = []
+  private experimentTargets: HandTarget[] = []
+  private experimentCards: { option: ExperimentOption; canvas: HTMLCanvasElement; texture: THREE.CanvasTexture; mesh: THREE.Mesh; signature: string }[] = []
+  private experimentPickerOpen = false
+  private onExperimentSelect: ((id: string) => void) | null = null
   private lastStick = 0
   private sensorData: SensorData | null = null
   private panels: {
@@ -141,45 +175,55 @@ export class FlameEngine {
     series: SensorSeries[]
     title: string
   }[] = []
-  private grabs: {
-    controller: THREE.XRTargetRaySpace
-    target: THREE.Object3D
-    kind: 'panel' | 'flame' | 'preview'
-    offset: THREE.Vector3
-    startControllerQuat: THREE.Quaternion
-    startTargetQuat: THREE.Quaternion
-  }[] = []
-  private twoHand: {
-    target: THREE.Object3D
-    d0: number
-    s0: THREE.Vector3
-    offset: THREE.Vector3
-  } | null = null
+  private manipulation = new HandManipulation()
+  private trackedHands = 0
+  private handHint = 'Show your hands in front of the headset'
+  private toolbar = new THREE.Group()
+  private handButtons: HandTarget[] = []
+  private handScrubs = new Map<THREE.Object3D, { target: HandTarget; distant: boolean }>()
+  private timelineCanvas: HTMLCanvasElement | null = null
+  private timelineTexture: THREE.CanvasTexture | null = null
+  private lastTimelineDraw = 0
+  private hoverOutline = new THREE.Box3Helper(new THREE.Box3(), 0x4da3ff)
+  private pendingXRLayout = 0
+  private desktopView: { position: THREE.Vector3; quaternion: THREE.Quaternion; target: THREE.Vector3 } | null = null
+  private savedLayouts = new Map<string, { position: THREE.Vector3; quaternion: THREE.Quaternion; scale: THREE.Vector3 }>()
   private previewMesh: THREE.Mesh | null = null
   private previewBase = ''
   private previewFiles: string[] = []
+  private previewTimes: number[] = []
   private previewIndex = -1
+  private previewEpoch = 0
   private texCache = new Map<string, THREE.Texture>()
   private playhead = 0
   private lastPanelDraw = 0
   private handVisuals: {
-    hand: THREE.Group
-    handedness: 'left' | 'right'
+    hand: THREE.XRHandSpace
+    ray: THREE.XRTargetRaySpace
+    source: XRInputSource | null
+    pose: THREE.Group
+    gesture: PinchGesture
+    tracked: boolean
+    pointer: THREE.Line
+    cursor: THREE.Mesh<THREE.SphereGeometry, THREE.MeshBasicMaterial>
     spheres: THREE.Mesh[]
     lines: THREE.LineSegments
   }[] = []
 
-  constructor(container: HTMLElement, gravity = 0.8) {
+  constructor(container: HTMLElement) {
     this.container = container
-    this.gravity = gravity
-    this.sequence = this.runSimulation()
-    this.frameFloat = (this.sequence.frames.length - 1) * INITIAL_FRAME_FRACTION
 
     this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true })
-    this.renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2))
+    this.renderer.debug.onShaderError = (gl, program, vertex, fragment) => {
+      this.shaderFailed = true
+      this.pushError(new Error([gl.getProgramInfoLog(program), gl.getShaderInfoLog(vertex), gl.getShaderInfoLog(fragment)].filter(Boolean).join('\n') || 'Flame shader compilation failed'))
+    }
+    this.renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5))
     this.renderer.setClearColor(0x05070b, 1)
     this.renderer.xr.enabled = true
-    this.renderer.xr.setReferenceSpaceType('local')
+    this.renderer.xr.setFoveation(0.5)
+    // Scene heights are measured from the floor, not from the initial eye pose.
+    this.renderer.xr.setReferenceSpaceType('local-floor')
 
     container.appendChild(this.renderer.domElement)
     this.renderer.domElement.style.width = '100%'
@@ -197,6 +241,8 @@ export class FlameEngine {
       uMix: { value: 0 },
       uThreshold: { value: this.threshold },
       uDensity: { value: this.density },
+      uExposure: { value: this.exposure },
+      uBurnerRadius: { value: this.sequence.geometry.burnerRadiusMeters / this.sequence.geometry.domainMeters },
       uGamma: { value: this.gamma },
       uQuality: { value: this.quality },
       uPalette: { value: this.palette },
@@ -208,9 +254,12 @@ export class FlameEngine {
       uniforms: this.uniforms,
       side: THREE.BackSide,
       transparent: true,
-      blending: THREE.AdditiveBlending,
+      blending: THREE.CustomBlending,
+      blendSrc: THREE.OneFactor,
+      blendDst: THREE.OneMinusSrcAlphaFactor,
+      premultipliedAlpha: true,
       depthWrite: false,
-      depthTest: true,
+      depthTest: false,
     })
 
     this.box = new THREE.Mesh(new THREE.BoxGeometry(1, 1, 1), this.material)
@@ -221,14 +270,17 @@ export class FlameEngine {
     this.scene.add(this.flameGroup)
 
     this.buildScene()
-    this.buildHud()
     this.buildHandVisuals()
+    this.buildHandToolbar()
+    this.hoverOutline.visible = false
+    ;(this.hoverOutline.material as THREE.Material).depthTest = false
+    this.hoverOutline.renderOrder = 90
+    this.scene.add(this.hoverOutline)
 
-    this.material.onBeforeRender = () => {
-      const cam = this.renderer.xr.isPresenting ? this.renderer.xr.getCamera() : this.camera
-      this.tmp.copy(cam.position)
-      this.box.worldToLocal(this.tmp)
+    this.material.onBeforeRender = (_renderer, _scene, eyeCamera) => {
+      eyeOriginInVolume(eyeCamera.matrixWorld, this.box.matrixWorld, this.tmp, this.inverseVolume)
       this.uniforms.uCamLocal.value.copy(this.tmp)
+      this.material.uniformsNeedUpdate = true
     }
 
     this.setupControls()
@@ -240,14 +292,11 @@ export class FlameEngine {
     this.scene.add(this.controllerR, this.controllerL)
 
     // controller fallback controls (also used for hand-less headsets)
-    this.controllerR.addEventListener('selectstart', () => this.togglePlay())
-    this.controllerL.addEventListener('selectstart', () => this.togglePlay())
-    this.controllerR.addEventListener('squeezestart', () => {
-      if (!this.presenting || !this.tryGrab(this.controllerR)) this.step(1)
-    })
-    this.controllerL.addEventListener('squeezestart', () => {
-      if (!this.presenting || !this.tryGrab(this.controllerL)) this.step(-1)
-    })
+    // Hand pinches are processed from joints, never as playback/controller events.
+    this.controllerR.addEventListener('selectstart', (event) => { if (!event.data.hand) this.togglePlay() })
+    this.controllerL.addEventListener('selectstart', (event) => { if (!event.data.hand) this.togglePlay() })
+    this.controllerR.addEventListener('squeezestart', (event) => { if (!event.data.hand && this.presenting) this.tryGrab(this.controllerR) })
+    this.controllerL.addEventListener('squeezestart', (event) => { if (!event.data.hand && this.presenting) this.tryGrab(this.controllerL) })
     this.controllerR.addEventListener('squeezeend', () => this.releaseGrab(this.controllerR))
     this.controllerL.addEventListener('squeezeend', () => this.releaseGrab(this.controllerL))
 
@@ -266,12 +315,19 @@ export class FlameEngine {
     this.flameGroup.scale.setScalar(0.62)
 
     // burner sphere (opaque, occludes flame behind it)
-    const burner = new THREE.Mesh(
-      new THREE.SphereGeometry(0.05, 40, 40),
+    this.burner = new THREE.Mesh(
+      new THREE.SphereGeometry(1, 32, 24),
       new THREE.MeshStandardMaterial({ color: 0x6a7480, roughness: 0.35, metalness: 0.75 }),
     )
-    burner.position.set(0, -0.42, 0)
-    this.flameGroup.add(burner)
+    this.flameGroup.add(this.burner)
+    this.support = new THREE.Mesh(
+      new THREE.CylinderGeometry(1, 1, 1, 16),
+      new THREE.MeshStandardMaterial({ color: 0x414b59, metalness: 0.7, roughness: 0.45 }),
+    )
+    this.support.rotation.z = Math.PI / 2
+    this.support.position.set(-0.25, 0, 0)
+    this.flameGroup.add(this.support)
+    this.updateGeometry()
 
     // domain box wireframe: the [-0.5, 0.5]³ field bounds
     const edges = new THREE.EdgesGeometry(new THREE.BoxGeometry(1, 1, 1))
@@ -304,11 +360,11 @@ export class FlameEngine {
 
   private makeFieldTexture(): THREE.DataTexture {
     const tex = new THREE.DataTexture(
-      new Uint8Array(LUT_Z * LUT_R),
+      new Uint16Array(LUT_Z * LUT_R),
       LUT_R,
       LUT_Z,
       THREE.RedFormat,
-      THREE.UnsignedByteType,
+      THREE.HalfFloatType,
     )
     tex.minFilter = THREE.LinearFilter
     tex.magFilter = THREE.LinearFilter
@@ -318,6 +374,13 @@ export class FlameEngine {
     tex.flipY = false // row 0 = texture v 0 = top of field
     tex.needsUpdate = true
     return tex
+  }
+
+  private updateGeometry() {
+    const radius = this.sequence.geometry.burnerRadiusMeters / this.sequence.geometry.domainMeters
+    this.burner.scale.setScalar(radius)
+    this.support.scale.set(radius * 0.18, 0.5, radius * 0.18)
+    this.uniforms.uBurnerRadius.value = radius
   }
 
   private makeRay(): THREE.Line {
@@ -344,27 +407,28 @@ export class FlameEngine {
     this.lastTick = now
 
     if (this.playing) {
-      this.frameFloat += this.direction * (dt / 1000) * this.sequence.fps
-      const n = this.sequence.frames.length
-      if (this.frameFloat > n - 1) this.frameFloat = this.direction > 0 ? 0 : n - 1
-      if (this.frameFloat < 0) this.frameFloat = this.direction < 0 ? n - 1 : 0
+      const next = this.timeMs + this.direction * dt
+      this.timeMs = Math.max(this.times[0], Math.min(this.times.at(-1)!, next))
+      if (next !== this.timeMs) this.playing = false
     }
     this.updateFieldUniforms()
-    this.updatePreview(Math.round(this.frameFloat))
+    this.updatePreview(nearestTimeIndex(this.previewTimes, this.timeMs))
+    this.setPlayhead(this.timeMs / 1000)
 
     if (this.presenting) {
+      if (this.pendingXRLayout > 0 && --this.pendingXRLayout === 0) this.resetLayout()
       this.pollGamepads()
-      this.updateHud()
-      this.updateHands()
+      this.updateHands(Math.min(dt / 1000, 0.05))
+      this.drawHandTimeline(now)
     }
 
-    this.updateGrabs()
+    this.manipulation.update()
 
-    this.controls?.update()
+    if (!this.presenting) this.controls?.update()
 
     try {
       this.renderer.render(this.scene, this.camera)
-      this.framesRendered++
+      if (!this.shaderFailed) this.framesRendered++
     } catch (err) {
       this.pushError(err)
     }
@@ -374,11 +438,8 @@ export class FlameEngine {
 
   private updateFieldUniforms() {
     const seq = this.sequence
-    const n = seq.frames.length
-    const ff = Math.min(Math.max(this.frameFloat, 0), n - 1)
-    const i0 = Math.min(Math.floor(ff), n - 1)
-    const i1 = Math.min(i0 + 1, n - 1)
-    this.uniforms.uMix.value = ff - i0
+    const { a: i0, b: i1, mix } = bracketTime(this.times, this.timeMs)
+    this.uniforms.uMix.value = mix
 
     if (i0 !== this.uploadedA) {
       this.uploadFrame(this.uniforms.uFieldA.value as THREE.DataTexture, seq.frames[i0].data)
@@ -390,8 +451,8 @@ export class FlameEngine {
     }
   }
 
-  private uploadFrame(tex: THREE.DataTexture, data: Uint8Array) {
-    ;(tex.image.data as Uint8Array).set(data)
+  private uploadFrame(tex: THREE.DataTexture, data: Uint16Array) {
+    ;(tex.image.data as Uint16Array).set(data)
     tex.needsUpdate = true
   }
 
@@ -402,76 +463,103 @@ export class FlameEngine {
 
   /* ——— public playback API ——— */
 
-  /** buoyancy strength for the next run: 0 = microgravity, 1 = terrestrial */
-  setGravity(g: number) {
-    this.gravity = g
+  private install(sequence: FlameSequence, keepTime = true) {
+    this.sequence = sequence
+    this.times = sequence.frames.map((frame) => frame.tMs)
+    validateTimes(this.times, sequence.frames.length)
+    this.source = sequence.kind
+    this.timeMs = keepTime
+      ? Math.max(this.times[0], Math.min(this.times.at(-1)!, this.timeMs))
+      : this.times[0] + (this.times.at(-1)! - this.times[0]) * INITIAL_FRAME_FRACTION
+    this.uploadedA = this.uploadedB = -1
+    this.updateGeometry()
     this.emitState(true)
   }
 
-  /** re-run the fluid + combustion solver with a fresh seed */
-  resimulate() {
-    this.simSeed = (this.simSeed + 1) >>> 0
-    this.source = 'simulation'
-    this.sequence = this.runSimulation()
-    this.frameFloat = (this.sequence.frames.length - 1) * INITIAL_FRAME_FRACTION
-    this.uploadedA = -1
-    this.uploadedB = -1
-    this.emitState(true)
+  clearExperiment() {
+    this.experimentLoading = true
+    this.experimentLoadError = null
+    this.worker?.terminate()
+    this.worker = null
+    this.generation++
+    this.previewEpoch++
+    this.busy = false
+    this.playing = false
+    this.reference = null
+    this.modelError = null
+    this.previewFiles = []
+    this.previewTimes = []
+    if (this.previewMesh) this.previewMesh.visible = false
+    for (const texture of this.texCache.values()) texture.dispose()
+    this.texCache.clear()
+    this.setSensors({ testpoint: '', t: [], series: [] })
+    this.install(emptySequence(), false)
   }
 
-  /** physics-based microgravity flame (diffusion shell + relaxation bursts) */
-  setPhysicsFlame(opts: PhysicsFlameOptions = {}) {
-    const seq = simulatePhysicsFlame({ frames: 180, fps: 12, ...opts })
-    this.sequence = { frames: seq.frames, fps: seq.fps, globalMax: seq.globalMax, kind: 'simulation' }
-    this.source = 'physics'
-    // a thin shell needs unsaturated accumulation to show limb brightening
-    this.setDensity(22)
-    this.setThreshold(0.02)
-    this.frameFloat = (seq.frames.length - 1) * INITIAL_FRAME_FRACTION
-    this.uploadedA = -1
-    this.uploadedB = -1
-    this.emitState(true)
-  }
-
-  private runSimulation(): FlameSimSequence {
-    return simulateFlameSequence({
-      frames: 180,
-      fps: 12,
-      gravity: this.gravity,
-      vorticity: 1.2,
-      seed: this.simSeed,
-    })
-  }
-
-  /** replace the field with the real HOBJ-derived LUT (uint8 [frame][z][r]) */
-  setRealLut(
-    buffer: ArrayBuffer,
-    meta: { frames: number; z: number; r: number; fps: number },
-  ): boolean {
-    if (meta.z !== LUT_Z || meta.r !== LUT_R) return false
-    const bytes = new Uint8Array(buffer)
-    if (bytes.length !== meta.frames * LUT_Z * LUT_R) return false
-    const per = LUT_Z * LUT_R
-    const frames = []
-    for (let i = 0; i < meta.frames; i++) {
-      const start = i * per
-      // per-frame stretch to p99 (display only) so the faint shell reads in 3D
-      const vals = Array.from(bytes.subarray(start, start + per))
-      vals.sort((a, b) => a - b)
-      const fm = Math.max(1, vals[Math.min(per - 1, Math.floor(per * 0.99))])
-      const data = new Uint8Array(per)
-      for (let j = 0; j < per; j++) {
-        data[j] = Math.round(255 * Math.pow(Math.min(1, bytes[start + j] / fm), 0.8))
-      }
-      frames.push({ index: i, tMs: Math.round((i / meta.fps) * 1000), data })
-    }
-    this.sequence = { frames, fps: meta.fps, globalMax: 255, kind: 'simulation' }
-    this.source = 'real'
-    this.frameFloat = (frames.length - 1) * INITIAL_FRAME_FRACTION
-    this.uploadedA = -1
-    this.uploadedB = -1
-    this.emitState(true)
+  showReference(): boolean {
+    this.worker?.terminate()
+    this.worker = null
+    this.generation++
+    this.busy = false
+    this.modelError = null
+    if (!this.reference) return false
+    this.install(this.reference)
     return true
+  }
+
+  /** Compute off the UI thread, using the same experiment clock as INTNS. */
+  setPhysicsFlame(opts: PhysicsFlameOptions = {}) {
+    this.worker?.terminate()
+    const generation = ++this.generation
+    this.busy = true
+    this.modelProgress = 0
+    this.modelError = null
+    const worker = this.worker = new Worker(new URL('./flame.worker.ts', import.meta.url), { type: 'module' })
+    worker.onmessage = (event: MessageEvent<{ progress?: number; sequence?: PhysicsFlameSequence; error?: string }>) => {
+      if (this.disposed || generation !== this.generation) return
+      if (event.data.progress != null) this.modelProgress = event.data.progress
+      if (event.data.error) {
+        this.modelError = event.data.error
+        this.busy = false
+        worker.terminate()
+      }
+      if (event.data.sequence) {
+        this.busy = false
+        this.modelProgress = 1
+        this.install(event.data.sequence)
+        worker.terminate()
+      }
+      this.emitState(true)
+    }
+    worker.onerror = (event) => {
+      if (generation !== this.generation) return
+      this.busy = false
+      this.modelError = event.message || 'Flame worker failed'
+      worker.terminate()
+      this.emitState(true)
+    }
+    worker.postMessage(opts)
+    this.emitState(true)
+  }
+
+  /** Linear binary16 data; acquisition times and amplitudes are preserved. */
+  setRealLut(buffer: ArrayBuffer, meta: LutMetadata): void {
+    this.reference = decodeLut(buffer, meta)
+    this.experimentLoading = false
+    this.experimentLoadError = null
+    this.install(this.reference, false)
+  }
+
+  setExperimentLoadError(message: string) {
+    this.experimentLoading = false
+    this.experimentLoadError = message
+    this.drawHandTimeline(performance.now(), true)
+  }
+
+  setExposure(value: number) {
+    this.exposure = Math.max(0.05, Math.min(30, value))
+    this.uniforms.uExposure.value = this.exposure
+    this.emitState(true)
   }
 
   setThreshold(v: number) {
@@ -505,6 +593,7 @@ export class FlameEngine {
   }
 
   play() {
+    if (this.timeMs >= this.times.at(-1)!) this.timeMs = this.times[0]
     this.playing = true
     this.direction = 1
     this.emitState(true)
@@ -512,6 +601,7 @@ export class FlameEngine {
 
   /** rewind: play backwards through the sequence */
   rewind() {
+    if (this.timeMs <= this.times[0]) this.timeMs = this.times.at(-1)!
     this.playing = true
     this.direction = -1
     this.emitState(true)
@@ -523,27 +613,30 @@ export class FlameEngine {
   }
 
   togglePlay() {
-    this.playing = !this.playing
-    if (this.playing) this.direction = 1
+    this.playing = !this.playing || this.direction === -1
+    if (this.playing) {
+      this.direction = 1
+      if (this.timeMs >= this.times.at(-1)!) this.timeMs = this.times[0]
+    }
     this.emitState(true)
   }
 
   step(dir: 1 | -1) {
     this.playing = false
-    this.frameFloat = Math.min(
-      Math.max(this.frameFloat + dir, 0),
-      this.sequence.frames.length - 1,
-    )
+    const current = nearestTimeIndex(this.times, this.timeMs)
+    const index = Math.max(0, Math.min(this.times.length - 1, current + dir))
+    this.timeMs = this.times[index]
     this.emitState(true)
   }
 
-  seekFraction(f: number) {
-    this.frameFloat = Math.min(Math.max(f, 0), 1) * (this.sequence.frames.length - 1)
-    this.emitState(true)
+  seekFraction(f: number, immediate = true) {
+    this.timeMs = this.times[0] + Math.min(Math.max(f, 0), 1) * (this.times.at(-1)! - this.times[0])
+    this.emitState(immediate)
   }
 
   /** dolly in/out (mouse-wheel equivalent, also available to touch/controller UI) */
   zoomBy(scale: number) {
+    if (this.presenting) { this.scaleFlameBy(1 / scale); return }
     if (!this.controls) return
     const target = this.controls.target
     const offset = this.camera.position.clone().sub(target)
@@ -556,9 +649,40 @@ export class FlameEngine {
 
   /** center the flame and restore the default framing */
   resetView() {
+    if (this.presenting) { this.resetLayout(); return }
     this.camera.position.set(0, 1.62, 0.06)
     this.controls?.target.set(0, 1.42, -1.7)
     this.controls?.update()
+    this.emitState(true)
+  }
+
+  scaleFlameBy(factor: number) {
+    this.releaseGrab()
+    this.flameGroup.scale.setScalar(THREE.MathUtils.clamp(this.flameGroup.scale.x * factor, 0.12, 2))
+    this.emitState(true)
+  }
+
+  /** Restore the workspace in front of the current viewer, including seated use. */
+  resetLayout() {
+    this.releaseGrab()
+    const camera = this.presenting ? this.renderer.xr.getCamera() : this.camera
+    const eye = camera.getWorldPosition(new THREE.Vector3())
+    const forward = new THREE.Vector3(0, 0, -1).applyQuaternion(camera.getWorldQuaternion(new THREE.Quaternion()))
+    forward.y = 0
+    if (forward.lengthSq() < 0.01) forward.set(0, 0, -1)
+    forward.normalize()
+    const yaw = new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 0, -1), forward)
+    const place = (object: THREE.Object3D, x: number, y: number, z: number, scale: number, face = true) => {
+      object.position.set(x, y, z).applyQuaternion(yaw).add(eye)
+      object.scale.setScalar(scale)
+      object.quaternion.copy(yaw)
+      if (face) object.lookAt(eye)
+    }
+    place(this.flameGroup, 0, -0.12, -1.7, 0.62, false)
+    this.panels.forEach((panel, i) => place(panel.mesh, i === 0 ? -0.94 : 0.94, -0.10, -1.65, 1))
+    if (this.previewMesh) place(this.previewMesh, 0.94, -0.80, -1.65, 1)
+    place(this.toolbar, 0, -0.68, -1.35, 1)
+    this.savedLayouts.clear()
     this.emitState(true)
   }
 
@@ -605,13 +729,22 @@ export class FlameEngine {
     this.xrError = null
     try {
       const session = await nav.xr.requestSession(mode, {
-        optionalFeatures: ['local-floor', 'bounded-floor', 'hand-tracking'],
+        requiredFeatures: ['local-floor'],
+        optionalFeatures: ['bounded-floor', 'hand-tracking'],
       })
       session.addEventListener('end', this.onSessionEnd)
       if (ar) this.renderer.setClearColor(0x000000, 0) // AR passthrough
-      this.renderer.xr.setSession(session)
+      try {
+        await this.renderer.xr.setSession(session)
+      } catch (error) {
+        await session.end().catch(() => undefined)
+        throw error
+      }
       this.arMode = ar
       this.presenting = true
+      this.desktopView = { position: this.camera.position.clone(), quaternion: this.camera.quaternion.clone(), target: this.controls!.target.clone() }
+      if (this.controls) this.controls.enabled = false
+      this.pendingXRLayout = 2
       this.emitState(true)
     } catch (err) {
       this.xrError = err instanceof Error ? err.message : String(err)
@@ -620,10 +753,23 @@ export class FlameEngine {
   }
 
   private onSessionEnd = () => {
-    if (this.hud) this.hud.visible = false
+    this.releaseGrab()
+    this.pendingXRLayout = 0
+    this.trackedHands = 0
+    this.handHint = 'Show your hands in front of the headset'
+    this.hoverOutline.visible = false
+    this.toolbar.visible = false
+    for (const hv of this.handVisuals) this.hideHand(hv)
     this.renderer.setClearColor(0x05070b, 1)
     this.presenting = false
     this.arMode = false
+    if (this.desktopView) {
+      this.camera.position.copy(this.desktopView.position)
+      this.camera.quaternion.copy(this.desktopView.quaternion)
+      this.controls?.target.copy(this.desktopView.target)
+      this.desktopView = null
+    }
+    if (this.controls) this.controls.enabled = true
     this.emitState(true)
   }
 
@@ -636,80 +782,320 @@ export class FlameEngine {
 
   private buildHandVisuals() {
     const sphereGeo = new THREE.SphereGeometry(0.0075, 8, 8)
-    const sphereMat = new THREE.MeshBasicMaterial({ color: 0x3ad7a3 })
-    const lineMat = new THREE.LineBasicMaterial({ color: 0x4da3ff, transparent: true, opacity: 0.9 })
-    const sides: ('left' | 'right')[] = ['left', 'right']
-    sides.forEach((side, i) => {
-      const hand = this.renderer.xr.getHand(i) as unknown as THREE.Group
+    for (let i = 0; i < 2; i++) {
+      const hand = this.renderer.xr.getHand(i)
+      const ray = this.renderer.xr.getController(i)
       this.scene.add(hand)
+      const sphereMat = new THREE.MeshBasicMaterial({ color: 0x3ad7a3 })
       const spheres = HAND_JOINTS.map(() => {
-        const m = new THREE.Mesh(sphereGeo, sphereMat)
-        m.visible = false
-        m.frustumCulled = false
-        this.scene.add(m)
-        return m
+        const mesh = new THREE.Mesh(sphereGeo, sphereMat)
+        mesh.visible = false
+        mesh.frustumCulled = false
+        this.scene.add(mesh)
+        return mesh
       })
       const geo = new THREE.BufferGeometry()
       geo.setAttribute('position', new THREE.BufferAttribute(new Float32Array(HAND_BONES.length * 6), 3))
-      const lines = new THREE.LineSegments(geo, lineMat)
-      lines.visible = false
+      const lines = new THREE.LineSegments(geo, new THREE.LineBasicMaterial({ color: 0x4da3ff }))
+      const pointer = this.makeRay()
+      const cursor = new THREE.Mesh(new THREE.SphereGeometry(0.009, 12, 8), new THREE.MeshBasicMaterial({ color: 0x4da3ff, depthTest: false }))
+      cursor.renderOrder = 100
+      lines.visible = pointer.visible = cursor.visible = false
       lines.frustumCulled = false
-      this.scene.add(lines)
-      this.handVisuals.push({ hand, handedness: side, spheres, lines })
-    })
+      this.scene.add(lines, pointer, cursor)
+      const hv = { hand, ray, source: null as XRInputSource | null, pose: new THREE.Group(), gesture: new PinchGesture(), tracked: false, spheres, lines, pointer, cursor }
+      // XR input indices are assigned by connection order, not handedness.
+      hand.addEventListener('connected', (event) => { hv.source = event.data })
+      ray.addEventListener('connected', (event) => {
+        for (const child of ray.children) child.visible = !event.data.hand
+      })
+      hand.addEventListener('disconnected', () => { hv.source = null; this.hideHand(hv) })
+      this.handVisuals.push(hv)
+    }
   }
 
-  private updateHands() {
+  private hideHand(hv: (typeof this.handVisuals)[number]) {
+    hv.gesture.update(null)
+    hv.tracked = false
+    this.manipulation.release(hv.pose)
+    this.handScrubs.delete(hv.pose)
+    hv.lines.visible = hv.pointer.visible = hv.cursor.visible = false
+    for (const sphere of hv.spheres) sphere.visible = false
+  }
+
+  private handTargets(): HandTarget[] {
+    return [
+      { mesh: this.box, object: this.flameGroup, label: 'Flame', minScale: 0.12, maxScale: 2 },
+      ...this.panels.map((panel) => ({ mesh: panel.mesh, object: panel.mesh, label: 'Data panel', minScale: 0.35, maxScale: 2.5 })),
+      ...(this.previewMesh ? [{ mesh: this.previewMesh, object: this.previewMesh, label: 'Camera preview', minScale: 0.35, maxScale: 2.5 }] : []),
+      ...(this.playbackTitleTarget ? [this.playbackTitleTarget] : []),
+      ...(this.experimentPickerOpen ? this.experimentTargets : this.handButtons),
+    ]
+  }
+
+  private updateHands(dt: number) {
     const session = this.renderer.xr.getSession()
     if (!session) return
-    const present = new Set(
-      Array.from(session.inputSources)
-        .filter((src) => Boolean(src.hand))
-        .map((src) => src.handedness as string),
-    )
-    const tmp = new THREE.Vector3()
+    this.toolbar.visible = true
+    this.hoveredPlayerMeshes.clear()
+    const targets = this.handTargets()
+    let count = 0
+    let hint = 'Show your hands in front of the headset'
+    let heldHint: string | null = null
+    let highlighted: HandTarget | null = null
     for (const hv of this.handVisuals) {
-      const joints = (hv.hand as unknown as { joints?: Record<string, THREE.Object3D> }).joints
-      const active = present.has(hv.handedness) && !!joints
-      if (!active) {
-        hv.lines.visible = false
-        for (const sp of hv.spheres) sp.visible = false
+      const joints = hv.hand.joints
+      const thumb = joints['thumb-tip'], index = joints['index-finger-tip'], wrist = joints.wrist
+      if (!hv.source?.hand || !hv.hand.visible || session.visibilityState !== 'visible' ||
+          !thumb?.visible || !index?.visible || !wrist?.visible) {
+        this.hideHand(hv)
         continue
       }
+      count++
+      const thumbPosition = thumb.getWorldPosition(new THREE.Vector3())
+      const indexPosition = index.getWorldPosition(new THREE.Vector3())
+      const midpoint = thumbPosition.clone().add(indexPosition).multiplyScalar(0.5)
+      const orientation = wrist.getWorldQuaternion(new THREE.Quaternion())
+      // Low-pass the tracked pose, keeping the gesture thresholds on raw joints.
+      const alpha = hv.tracked ? 1 - Math.exp(-30 * dt) : 1
+      hv.pose.position.lerp(midpoint, alpha)
+      hv.pose.quaternion.slerp(orientation, alpha)
+      hv.pose.updateMatrixWorld(true)
+      hv.tracked = true
       HAND_JOINTS.forEach((name, j) => {
-        const g = joints![name]
-        if (!g) {
-          hv.spheres[j].visible = false
-          return
-        }
-        g.getWorldPosition(tmp)
-        hv.spheres[j].position.copy(tmp)
-        hv.spheres[j].visible = true
+        const joint = joints[name]
+        hv.spheres[j].visible = !!joint?.visible
+        if (joint?.visible) joint.getWorldPosition(hv.spheres[j].position)
       })
-      const posAttr = hv.lines.geometry.getAttribute('position') as THREE.BufferAttribute
+      const positions = hv.lines.geometry.getAttribute('position') as THREE.BufferAttribute
       HAND_BONES.forEach(([a, b], k) => {
-        const ga = joints![a]
-        const gb = joints![b]
-        if (ga && gb) {
-          ga.getWorldPosition(tmp)
-          posAttr.setXYZ(k * 2, tmp.x, tmp.y, tmp.z)
-          gb.getWorldPosition(tmp)
-          posAttr.setXYZ(k * 2 + 1, tmp.x, tmp.y, tmp.z)
-        } else {
-          posAttr.setXYZ(k * 2, 0, 0, 0)
-          posAttr.setXYZ(k * 2 + 1, 0, 0, 0)
-        }
+        const valid = joints[a]?.visible && joints[b]?.visible
+        const start = valid ? joints[a]!.getWorldPosition(new THREE.Vector3()) : midpoint
+        const end = valid ? joints[b]!.getWorldPosition(new THREE.Vector3()) : midpoint
+        positions.setXYZ(k * 2, start.x, start.y, start.z)
+        positions.setXYZ(k * 2 + 1, end.x, end.y, end.z)
       })
-      posAttr.needsUpdate = true
+      positions.needsUpdate = true
       hv.lines.visible = true
+      const ray = hv.ray.visible ? new THREE.Ray(
+        hv.ray.getWorldPosition(new THREE.Vector3()),
+        new THREE.Vector3(0, 0, -1).applyQuaternion(hv.ray.getWorldQuaternion(new THREE.Quaternion())),
+      ) : null
+      const hit = pickHandTarget(targets, midpoint, ray)
+      if (hit) this.hoveredPlayerMeshes.add(hit.target.mesh)
+      const gesture = hv.gesture.update(thumbPosition.distanceTo(indexPosition))
+      if (gesture === 'end') {
+        this.manipulation.release(hv.pose)
+        this.handScrubs.delete(hv.pose)
+      }
+      if (gesture === 'start' && hit) {
+        if (hit.target.onSlide && !this.handScrubs.size) {
+          this.pause()
+          this.handScrubs.set(hv.pose, { target: hit.target, distant: hit.distance > 0.065 })
+          hit.target.onSlide(hit.point)
+        } else if (hit.target.action) hit.target.action()
+        else this.manipulation.begin(hv.pose, hit.target)
+      }
+      const scrub = this.handScrubs.get(hv.pose)
+      const sliderPoint = scrub && (!scrub.distant || ray) ? handSliderPoint(scrub.target.mesh, midpoint, scrub.distant ? ray : null) : null
+      if (scrub && sliderPoint) scrub.target.onSlide?.(sliderPoint)
+      const held = this.manipulation.held(hv.pose)
+      if (scrub) {
+        highlighted = scrub.target
+        heldHint = 'Scrubbing · move along the timeline · open your fingers to finish'
+      } else if (held) {
+        highlighted = held
+        heldHint = `Holding: ${held.label} · turn your wrist · second hand: scale and rotate`
+      } else if (hit && !hv.gesture.pinching) {
+        highlighted ??= hit.target
+        hint = `${hit.target.label} · pinch your thumb and index finger`
+      } else if (count === 1) hint = 'Point at or touch an object, then pinch to grab'
+      hv.cursor.visible = !!hit || !!held || !!scrub
+      hv.cursor.position.copy(sliderPoint ?? hit?.point ?? midpoint)
+      hv.cursor.material.color.set(held || scrub ? 0x3ad7a3 : 0x4da3ff)
+      hv.cursor.scale.setScalar(hv.gesture.pinching ? 0.8 : 1)
+      hv.pointer.visible = !!ray && !held && !scrub && !!hit && hit.distance > 0.065
+      if (hv.pointer.visible && ray && hit) {
+        const attr = hv.pointer.geometry.getAttribute('position') as THREE.BufferAttribute
+        attr.setXYZ(0, ray.origin.x, ray.origin.y, ray.origin.z)
+        attr.setXYZ(1, hit.point.x, hit.point.y, hit.point.z)
+        attr.needsUpdate = true
+        hv.pointer.geometry.computeBoundingSphere()
+      }
     }
+    this.hoverOutline.visible = !!highlighted && !highlighted.action && !highlighted.onSlide
+    if (this.hoverOutline.visible) this.hoverOutline.box.setFromObject(highlighted!.mesh)
+    hint = heldHint ?? hint
+    if (count !== this.trackedHands || hint !== this.handHint) {
+      this.trackedHands = count
+      this.handHint = hint
+    }
+  }
+
+  private playerPlane(canvas: HTMLCanvasElement, width: number, height: number) {
+    const texture = new THREE.CanvasTexture(canvas)
+    texture.colorSpace = THREE.SRGBColorSpace
+    texture.minFilter = THREE.LinearFilter
+    texture.generateMipmaps = false
+    this.playerTextures.add(texture)
+    const mesh = new THREE.Mesh(new THREE.PlaneGeometry(width, height), new THREE.MeshBasicMaterial({ map: texture, transparent: true, side: THREE.DoubleSide }))
+    mesh.renderOrder = 21
+    return { mesh, texture }
+  }
+
+  private buildHandToolbar() {
+    const background = document.createElement('canvas')
+    background.width = 1100; background.height = 700
+    drawPlaybackSurface(background)
+    const backdrop = this.playerPlane(background, 1.1, 0.7).mesh
+    backdrop.renderOrder = 20
+    backdrop.position.set(0, -0.015, -0.006)
+    this.toolbar.add(backdrop, this.playerMain, this.playerPicker)
+    this.playerPicker.visible = false
+
+    const titleCanvas = this.playbackTitleCanvas = document.createElement('canvas')
+    titleCanvas.width = 1200; titleCanvas.height = 165
+    const title = this.playerPlane(titleCanvas, 1.02, 0.14)
+    this.playbackTitleTexture = title.texture
+    title.mesh.position.y = 0.235
+    this.toolbar.add(title.mesh)
+    this.playbackTitleTarget = { mesh: title.mesh, object: this.toolbar, label: 'Move player', minScale: 0.65, maxScale: 1.6 }
+
+    const buttons: { key: string; label: string; icon: PlayerIcon; x: number; y: number; width: number; primary?: boolean; action: () => void }[] = [
+      { key: 'previous', label: 'Previous frame', icon: 'previous', x: -0.4, y: -0.065, width: 0.176, action: () => this.step(-1) },
+      { key: 'rewind', label: 'Rewind', icon: 'rewind', x: -0.2, y: -0.065, width: 0.176, action: () => this.playing && this.direction === -1 ? this.pause() : this.rewind() },
+      { key: 'play', label: 'Play', icon: 'play', x: 0, y: -0.065, width: 0.19, primary: true, action: () => this.togglePlay() },
+      { key: 'next', label: 'Next frame', icon: 'next', x: 0.2, y: -0.065, width: 0.176, action: () => this.step(1) },
+      { key: 'restart', label: 'Restart', icon: 'restart', x: 0.4, y: -0.065, width: 0.176, action: () => this.seekFraction(0) },
+      { key: 'smaller', label: 'Smaller', icon: 'smaller', x: -0.42, y: -0.235, width: 0.14, action: () => this.scaleFlameBy(1 / 1.2) },
+      { key: 'larger', label: 'Larger', icon: 'larger', x: -0.26, y: -0.235, width: 0.14, action: () => this.scaleFlameBy(1.2) },
+      { key: 'reset', label: 'Reset layout', icon: 'reset', x: -0.055, y: -0.235, width: 0.23, action: () => this.resetLayout() },
+      { key: 'experiments', label: 'Choose experiment', icon: 'right', x: 0.32, y: -0.235, width: 0.37, action: () => this.showExperimentPicker(true) },
+    ]
+    for (const button of buttons) {
+      const canvas = document.createElement('canvas')
+      const height = button.primary ? 0.124 : 0.112
+      canvas.width = Math.round(button.width / height * 172); canvas.height = 172
+      const { mesh, texture } = this.playerPlane(canvas, button.width, height)
+      mesh.position.set(button.x, button.y, 0)
+      this.playerMain.add(mesh)
+      this.handButtons.push({ mesh, object: this.toolbar, label: button.label, minScale: 1, maxScale: 1, action: () => {
+        if (['play', 'rewind', 'previous', 'next', 'restart'].includes(button.key) && (this.experimentLoading || this.experimentLoadError)) return
+        button.action()
+      } })
+      this.playerControls.push({ ...button, primary: !!button.primary, canvas, texture, mesh, signature: '' })
+    }
+    const timeline = this.timelineCanvas = document.createElement('canvas')
+    timeline.width = 1200; timeline.height = 140
+    const slider = this.playerPlane(timeline, 1.02, 0.119)
+    this.timelineTexture = slider.texture
+    slider.mesh.position.y = 0.083
+    this.playerMain.add(slider.mesh)
+    this.handButtons.push({ mesh: slider.mesh, object: this.toolbar, label: 'Timeline · pinch and drag', minScale: 1, maxScale: 1,
+      onSlide: (point) => this.seekFraction(timelineFraction(slider.mesh.worldToLocal(point.clone()).x / 1.02 + 0.5), false),
+    })
+    this.rebuildExperimentPicker()
+    this.drawHandTimeline(performance.now(), true)
+    this.toolbar.position.set(0, 0.92, -1.25)
+    this.toolbar.lookAt(0, 1.62, 0)
+    this.toolbar.visible = false
+    this.scene.add(this.toolbar)
+  }
+
+  setExperimentCatalog(options: ExperimentOption[]) {
+    this.experimentOptions = options
+    this.rebuildExperimentPicker()
+  }
+
+  onExperimentSelectChange(callback: (id: string) => void) { this.onExperimentSelect = callback }
+
+  private showExperimentPicker(open: boolean) {
+    this.releaseGrab()
+    this.experimentPickerOpen = open
+    this.playerPicker.visible = open
+    this.playerMain.visible = !open
+    this.drawHandTimeline(performance.now(), true)
+  }
+
+  private rebuildExperimentPicker() {
+    this.playerControls = this.playerControls.filter((control) => control.key !== 'picker-back')
+    for (const child of [...this.playerPicker.children]) {
+      const mesh = child as THREE.Mesh<THREE.PlaneGeometry, THREE.MeshBasicMaterial>
+      this.playerTextures.delete(mesh.material.map!)
+      mesh.material.map?.dispose(); mesh.material.dispose(); mesh.geometry.dispose()
+      this.playerPicker.remove(mesh)
+    }
+    this.experimentCards = []
+    this.experimentTargets = []
+    const options = this.experimentOptions
+    const rowHeight = Math.min(0.14, 0.44 / Math.max(1, options.length))
+    options.forEach((option, index) => {
+      const canvas = document.createElement('canvas')
+      canvas.width = 1200; canvas.height = 160
+      const { mesh, texture } = this.playerPlane(canvas, 1.02, rowHeight - 0.012)
+      mesh.position.set(0, 0.10 - index * rowHeight, 0.004)
+      this.playerPicker.add(mesh)
+      const target: HandTarget = { mesh, object: this.toolbar, label: `Select ${option.label}`, minScale: 1, maxScale: 1, action: () => {
+        this.showExperimentPicker(false)
+        if (option.id !== this.testId) this.onExperimentSelect?.(option.id)
+      } }
+      this.experimentTargets.push(target)
+      this.experimentCards.push({ option, canvas, texture, mesh, signature: '' })
+    })
+    const canvas = document.createElement('canvas')
+    canvas.width = 541; canvas.height = 100
+    const { mesh, texture } = this.playerPlane(canvas, 0.4, 0.074)
+    mesh.position.set(0, -0.292, 0.004)
+    this.playerPicker.add(mesh)
+    this.experimentTargets.push({ mesh, object: this.toolbar, label: 'Back to player', minScale: 1, maxScale: 1, action: () => this.showExperimentPicker(false) })
+    this.playerControls.push({ key: 'picker-back', icon: 'left', label: 'Back to player', primary: false, canvas, texture, mesh, signature: '' })
+    this.drawHandTimeline(performance.now(), true)
+  }
+
+  private drawHandTimeline(now: number, force = false) {
+    if (!this.timelineCanvas || !this.timelineTexture || (!force && now - this.lastTimelineDraw < 100)) return
+    this.lastTimelineDraw = now
+    this.drawPlaybackTitle()
+    for (const control of this.playerControls) {
+      const active = this.playing && (control.key === 'play' ? this.direction === 1 : control.key === 'rewind' && this.direction === -1)
+      const hovered = this.hoveredPlayerMeshes.has(control.mesh)
+      const disabled = ['play', 'rewind', 'previous', 'next', 'restart'].includes(control.key) && (this.experimentLoading || !!this.experimentLoadError)
+      const signature = `${active}:${hovered}:${disabled}`
+      if (signature === control.signature) continue
+      control.signature = signature
+      drawPlayerButton(control.canvas, control.key === 'play' && active ? 'Pause' : control.label, control.key === 'play' && active ? 'pause' : control.icon, control.primary, active, hovered, disabled)
+      control.texture.needsUpdate = true
+    }
+    const slider = this.handButtons.find((target) => target.onSlide)!
+    drawPlaybackTimeline(this.timelineCanvas, this.timeMs, this.times[0], this.times.at(-1)!, this.hoveredPlayerMeshes.has(slider.mesh), this.handScrubs.size > 0)
+    this.timelineTexture.needsUpdate = true
+    for (const card of this.experimentCards) {
+      const selected = card.option.id === this.testId, hovered = this.hoveredPlayerMeshes.has(card.mesh)
+      const signature = `${selected}:${hovered}`
+      if (signature === card.signature) continue
+      card.signature = signature
+      drawExperimentCard(card.canvas, card.option, selected, hovered)
+      card.texture.needsUpdate = true
+    }
+  }
+
+  private preserveLayout(key: string, object: THREE.Object3D | undefined | null) {
+    if (object) this.savedLayouts.set(key, { position: object.position.clone(), quaternion: object.quaternion.clone(), scale: object.scale.clone() })
+  }
+
+  private restoreLayout(key: string, object: THREE.Object3D) {
+    const layout = this.savedLayouts.get(key)
+    if (!layout) return
+    object.position.copy(layout.position); object.quaternion.copy(layout.quaternion); object.scale.copy(layout.scale)
   }
 
   /* ——— continuous-sensor chart panels ——— */
 
   setSensors(data: SensorData) {
+    this.releaseGrab()
     this.sensorData = data
-    for (const p of this.panels) {
+    for (const [i, p] of this.panels.entries()) {
+      this.preserveLayout(`panel-${i}`, p.mesh)
       this.scene.remove(p.mesh)
       p.mesh.geometry.dispose()
       ;(p.mesh.material as THREE.Material).dispose()
@@ -721,20 +1107,25 @@ export class FlameEngine {
       ['TCBurner', 'TCA', 'TCB', 'MFCA3FuelFlow', 'IonCurrent'].includes(x.name),
     )
     const defs = [
-      { title: `${data.testpoint} · pressures (raw V)`, series: press, pos: [-0.85, 1.55, -1.55] },
-      { title: `${data.testpoint} · thermal / flow (raw)`, series: therm, pos: [0.85, 1.55, -1.55] },
+      { title: 'Pressure channels', series: press, pos: [-0.94, 1.52, -1.65] },
+      { title: 'Thermal & flow', series: therm, pos: [0.94, 1.52, -1.65] },
     ]
     for (const d of defs) {
       if (!d.series.length) continue
       const canvas = document.createElement('canvas')
-      canvas.width = 640
-      canvas.height = 400
+      canvas.width = 1024
+      canvas.height = 896
       this.drawChart(canvas, d.title, d.series, data.t, this.playhead)
       const tex = new THREE.CanvasTexture(canvas)
+      tex.colorSpace = THREE.SRGBColorSpace
+      tex.minFilter = THREE.LinearFilter
+      tex.generateMipmaps = false
       const mat = new THREE.MeshBasicMaterial({ map: tex, transparent: true, side: THREE.DoubleSide })
-      const mesh = new THREE.Mesh(new THREE.PlaneGeometry(0.78, 0.4875), mat)
+      const mesh = new THREE.Mesh(new THREE.PlaneGeometry(0.9, 0.7875), mat)
+      mesh.renderOrder = 20
       mesh.position.set(d.pos[0], d.pos[1], d.pos[2])
       mesh.lookAt(0, 1.6, 0)
+      this.restoreLayout(`panel-${this.panels.length}`, mesh)
       this.scene.add(mesh)
       this.panels.push({ mesh, canvas, tex, series: d.series, title: d.title })
     }
@@ -744,7 +1135,7 @@ export class FlameEngine {
     this.playhead = t
     if (!this.panels.length || !this.sensorData) return
     const now = performance.now()
-    if (now - this.lastPanelDraw < 220) return
+    if (now - this.lastPanelDraw < 125) return
     this.lastPanelDraw = now
     for (const p of this.panels) {
       this.drawChart(p.canvas, p.title, p.series, this.sensorData.t, t)
@@ -753,109 +1144,31 @@ export class FlameEngine {
   }
 
   private tryGrab(controller: THREE.XRTargetRaySpace): boolean {
-    if (this.grabs.some((g) => g.controller === controller)) return true
-    // controller poses are only fresh once the XR runtime has updated this frame
-    controller.updateMatrixWorld(true)
-    const p = new THREE.Vector3().setFromMatrixPosition(controller.matrixWorld)
-    const q = new THREE.Quaternion()
-    controller.getWorldQuaternion(q)
-    const dir = new THREE.Vector3(0, 0, -1).applyQuaternion(q)
-    const ray = new THREE.Raycaster(p, dir, 0, 6)
-    const targets: THREE.Object3D[] = [...this.panels.map((x) => x.mesh), this.box]
-    if (this.previewMesh) targets.push(this.previewMesh)
-    const hits = ray.intersectObjects(targets, false)
-    let obj: THREE.Object3D | null = hits.length ? hits[0].object : null
-    if (!obj) {
-      // proximity fallback: squeeze near an object grabs it even when the ray misses
-      const wp = new THREE.Vector3()
-      let best = 0.45
-      for (const cand of targets) {
-        const t = cand === this.box ? this.flameGroup : cand
-        t.getWorldPosition(wp)
-        const d = wp.distanceTo(p)
-        if (d <= best) {
-          best = d
-          obj = cand
-        }
-      }
-    }
-    if (!obj) return false
-    const isFlame = obj === this.box
-    const target: THREE.Object3D = isFlame ? this.flameGroup : obj
-    const kind: 'flame' | 'panel' | 'preview' = isFlame
-      ? 'flame'
-      : obj === this.previewMesh
-        ? 'preview'
-        : 'panel'
-    const wp = new THREE.Vector3()
-    target.getWorldPosition(wp)
-    this.grabs.push({
-      controller,
-      target,
-      kind,
-      offset: wp.clone().sub(p),
-      startControllerQuat: q.clone(),
-      startTargetQuat: target.quaternion.clone(),
-    })
-    const same = this.grabs.filter((g) => g.target === target)
-    if (same.length === 2) {
-      const p1 = new THREE.Vector3().setFromMatrixPosition(same[0].controller.matrixWorld)
-      const p2 = new THREE.Vector3().setFromMatrixPosition(same[1].controller.matrixWorld)
-      const mid = p1.clone().add(p2).multiplyScalar(0.5)
-      const wp2 = new THREE.Vector3()
-      target.getWorldPosition(wp2)
-      this.twoHand = {
-        target,
-        d0: p1.distanceTo(p2),
-        s0: target.scale.clone(),
-        offset: wp2.sub(mid),
-      }
-    }
-    return true
+    const origin = controller.getWorldPosition(new THREE.Vector3())
+    const ray = new THREE.Ray(origin, new THREE.Vector3(0, 0, -1).applyQuaternion(controller.getWorldQuaternion(new THREE.Quaternion())))
+    const hit = pickHandTarget(this.handTargets(), origin, ray)
+    if (!hit) return false
+    if (hit.target.action) { hit.target.action(); return true }
+    return this.manipulation.begin(controller, hit.target)
   }
 
-  private releaseGrab(controller?: THREE.XRTargetRaySpace) {
-    this.grabs = controller
-      ? this.grabs.filter((g) => g.controller !== controller)
-      : []
-    this.twoHand = null
-  }
-
-  private updateGrabs() {
-    if (!this.grabs.length) return
-    if (this.twoHand) {
-      const gs = this.grabs.filter((g) => g.target === this.twoHand!.target)
-      if (gs.length < 2) {
-        this.twoHand = null
-      } else {
-        const p1 = new THREE.Vector3().setFromMatrixPosition(gs[0].controller.matrixWorld)
-        const p2 = new THREE.Vector3().setFromMatrixPosition(gs[1].controller.matrixWorld)
-        const mid = p1.clone().add(p2).multiplyScalar(0.5)
-        this.twoHand.target.position.copy(mid).add(this.twoHand.offset)
-        const ratio = p1.distanceTo(p2) / Math.max(1e-4, this.twoHand.d0)
-        const s = Math.max(0.25, Math.min(4, ratio))
-        this.twoHand.target.scale.copy(this.twoHand.s0).multiplyScalar(s)
-      }
-    }
-    for (const g of this.grabs) {
-      if (this.twoHand && this.twoHand.target === g.target) continue
-      const gp = new THREE.Vector3().setFromMatrixPosition(g.controller.matrixWorld)
-      g.target.position.copy(gp).add(g.offset)
-      if (g.kind === 'flame') {
-        const cq = new THREE.Quaternion()
-        g.controller.getWorldQuaternion(cq)
-        const delta = cq.multiply(g.startControllerQuat.clone().invert())
-        g.target.quaternion.copy(delta.multiply(g.startTargetQuat))
-      }
-    }
+  private releaseGrab(controller?: THREE.Object3D) {
+    this.manipulation.release(controller)
+    if (controller) this.handScrubs.delete(controller)
+    else this.handScrubs.clear()
   }
 
   /** plane showing the current real DataCam frame (grabbable/resizable) */
-  setFramePreview(base: string, files: string[]) {
+  setFramePreview(base: string, files: string[], times: number[]) {
+    this.releaseGrab()
+    validateTimes(times, files.length)
+    this.previewEpoch++
     this.previewBase = base
     this.previewFiles = files
+    this.previewTimes = times
     this.previewIndex = -1
     if (this.previewMesh) {
+      this.preserveLayout('preview', this.previewMesh)
       this.scene.remove(this.previewMesh)
       this.previewMesh.geometry.dispose()
       ;(this.previewMesh.material as THREE.Material).dispose()
@@ -864,11 +1177,12 @@ export class FlameEngine {
     if (!files.length) return
     const mat = new THREE.MeshBasicMaterial({ color: 0x0e1218, side: THREE.DoubleSide })
     const mesh = new THREE.Mesh(new THREE.PlaneGeometry(0.6, 0.45), mat)
-    mesh.position.set(0, 1.05, -1.5)
+    mesh.position.set(0.94, 0.82, -1.65)
     mesh.lookAt(0, 1.6, 0)
+    this.restoreLayout('preview', mesh)
     this.scene.add(mesh)
     this.previewMesh = mesh
-    this.updatePreview(Math.max(0, Math.round(this.frameFloat)))
+    this.updatePreview(nearestTimeIndex(this.previewTimes, this.timeMs))
   }
 
   private updatePreview(index: number) {
@@ -885,8 +1199,22 @@ export class FlameEngine {
       m.needsUpdate = true
       return
     }
+    const epoch = this.previewEpoch
     new THREE.TextureLoader().load(url, (tex) => {
+      if (this.disposed || epoch !== this.previewEpoch) {
+        tex.dispose()
+        return
+      }
       this.texCache.set(url, tex)
+      if (this.texCache.size > 48) {
+        const active = (this.previewMesh?.material as THREE.MeshBasicMaterial | undefined)?.map
+        for (const [key, old] of this.texCache) {
+          if (old === active || old === tex) continue
+          old.dispose()
+          this.texCache.delete(key)
+          break
+        }
+      }
       if (!this.previewMesh || this.previewIndex !== i) return
       const mm = this.previewMesh.material as THREE.MeshBasicMaterial
       mm.map = tex
@@ -895,109 +1223,8 @@ export class FlameEngine {
     })
   }
 
-  private drawChart(
-    canvas: HTMLCanvasElement,
-    title: string,
-    series: SensorSeries[],
-    t: number[],
-    playhead: number,
-  ) {
-    const ctx = canvas.getContext('2d')
-    if (!ctx) return
-    const W = canvas.width
-    const H = canvas.height
-    ctx.clearRect(0, 0, W, H)
-    ctx.fillStyle = '#0a0d12'
-    ctx.fillRect(0, 0, W, H)
-    ctx.strokeStyle = '#2a3442'
-    ctx.lineWidth = 2
-    ctx.strokeRect(1, 1, W - 2, H - 2)
-    ctx.fillStyle = '#e9eef5'
-    ctx.font = 'bold 22px monospace'
-    ctx.textAlign = 'left'
-    ctx.fillText(title, 18, 32)
-    const padL = 74
-    const padR = 18
-    const padT = 52
-    const padB = 44
-    const pw = W - padL - padR
-    const ph = H - padT - padB
-    const tmin = t[0]
-    const tmax = t[t.length - 1] || 1
-    let vmin = Infinity
-    let vmax = -Infinity
-    for (const s of series) {
-      vmin = Math.min(vmin, s.min)
-      vmax = Math.max(vmax, s.max)
-    }
-    if (!isFinite(vmin)) {
-      vmin = 0
-      vmax = 1
-    }
-    if (vmax - vmin < 1e-9) vmax = vmin + 1
-    const sx = (tt: number) => padL + ((tt - tmin) / Math.max(1e-9, tmax - tmin)) * pw
-    const sy = (vv: number) => padT + ph - ((vv - vmin) / (vmax - vmin)) * ph
-    ctx.strokeStyle = '#1c2430'
-    ctx.lineWidth = 1
-    for (let g = 0; g <= 4; g++) {
-      const y = padT + (ph * g) / 4
-      ctx.beginPath()
-      ctx.moveTo(padL, y)
-      ctx.lineTo(padL + pw, y)
-      ctx.stroke()
-    }
-    for (let g = 0; g <= 5; g++) {
-      const x = padL + (pw * g) / 5
-      ctx.beginPath()
-      ctx.moveTo(x, padT)
-      ctx.lineTo(x, padT + ph)
-      ctx.stroke()
-    }
-    ctx.fillStyle = '#5b6472'
-    ctx.font = '15px monospace'
-    ctx.textAlign = 'right'
-    ctx.fillText(vmax.toFixed(3), padL - 8, padT + 10)
-    ctx.fillText(vmin.toFixed(3), padL - 8, padT + ph)
-    ctx.textAlign = 'center'
-    ctx.fillText(`${tmin.toFixed(0)}s`, padL, H - 18)
-    ctx.fillText(`${tmax.toFixed(0)}s`, padL + pw, H - 18)
-    const colors = ['#4da3ff', '#ffb454', '#3ad7a3', '#ff6b6b', '#9ad84a']
-    series.forEach((s, si) => {
-      ctx.strokeStyle = colors[si % colors.length]
-      ctx.lineWidth = 2
-      ctx.beginPath()
-      let started = false
-      for (let i = 0; i < t.length; i++) {
-        const v = s.v[i]
-        if (v == null) continue
-        const x = sx(t[i])
-        const y = sy(v)
-        if (!started) {
-          ctx.moveTo(x, y)
-          started = true
-        } else ctx.lineTo(x, y)
-      }
-      ctx.stroke()
-    })
-    if (playhead >= tmin && playhead <= tmax) {
-      const x = sx(playhead)
-      ctx.strokeStyle = 'rgba(255,255,255,0.65)'
-      ctx.lineWidth = 1.5
-      ctx.beginPath()
-      ctx.moveTo(x, padT)
-      ctx.lineTo(x, padT + ph)
-      ctx.stroke()
-    }
-    ctx.font = '16px monospace'
-    ctx.textAlign = 'left'
-    let lx = padL
-    series.forEach((s, si) => {
-      ctx.fillStyle = colors[si % colors.length]
-      ctx.fillRect(lx, H - 36, 14, 10)
-      ctx.fillStyle = '#8b95a5'
-      ctx.fillText(s.name, lx + 20, H - 26)
-      lx += 28 + ctx.measureText(s.name).width + 16
-    })
+  private drawChart(canvas: HTMLCanvasElement, title: string, series: SensorSeries[], t: number[], playhead: number) {
+    drawSensorPanel(canvas, title, this.sensorData?.testpoint || this.testId, series, t, playhead)
   }
 
   /* ——— in-VR test switching ——— */
@@ -1010,51 +1237,14 @@ export class FlameEngine {
     if (this.testId === id && this.testInfo === info) return
     this.testId = id
     this.testInfo = info
-    this.drawHud()
+    this.drawPlaybackTitle()
   }
 
-  private buildHud() {
-    const canvas = document.createElement('canvas')
-    canvas.width = 512
-    canvas.height = 128
-    this.hudCanvas = canvas
-    this.hudTex = new THREE.CanvasTexture(canvas)
-    const mat = new THREE.SpriteMaterial({
-      map: this.hudTex,
-      transparent: true,
-      depthTest: false,
-      depthWrite: false,
-    })
-    this.hud = new THREE.Sprite(mat)
-    this.hud.scale.set(0.56, 0.14, 1)
-    this.hud.visible = false
-    this.hud.renderOrder = 100
-    this.scene.add(this.hud)
-    this.drawHud()
-  }
-
-  private drawHud() {
-    const c = this.hudCanvas
-    if (!c || !this.hudTex) return
-    const ctx = c.getContext('2d')
-    if (!ctx) return
-    ctx.clearRect(0, 0, c.width, c.height)
-    ctx.fillStyle = 'rgba(5,7,11,0.78)'
-    ctx.fillRect(0, 0, c.width, c.height)
-    ctx.strokeStyle = 'rgba(77,163,255,0.6)'
-    ctx.lineWidth = 3
-    ctx.strokeRect(2, 2, c.width - 4, c.height - 4)
-    ctx.textAlign = 'center'
-    ctx.fillStyle = '#4da3ff'
-    ctx.font = 'bold 34px monospace'
-    ctx.fillText(this.testId || '—', c.width / 2, 42)
-    ctx.fillStyle = '#e9eef5'
-    ctx.font = '18px monospace'
-    ctx.fillText(this.testInfo || 'HOBJ reconstruction', c.width / 2, 74)
-    ctx.fillStyle = '#8b95a5'
-    ctx.font = '16px monospace'
-    ctx.fillText('grip: grab flame/panel · thumbstick: test', c.width / 2, 104)
-    this.hudTex.needsUpdate = true
+  private drawPlaybackTitle() {
+    if (!this.playbackTitleCanvas || !this.playbackTitleTexture) return
+    const status = this.experimentLoadError ? 'UNAVAILABLE' : this.experimentLoading ? 'LOADING' : this.busy ? 'COMPUTING' : undefined
+    drawPlaybackHeading(this.playbackTitleCanvas, this.testId, this.testInfo, this.playing, this.direction, nearestTimeIndex(this.times, this.timeMs), this.experimentLoading || this.experimentLoadError ? 0 : this.sequence.frames.length, status)
+    this.playbackTitleTexture.needsUpdate = true
   }
 
   private pollGamepads() {
@@ -1062,6 +1252,7 @@ export class FlameEngine {
     if (!session) return
     let x = 0
     for (const src of session.inputSources) {
+      if (src.hand) continue
       const gp = src.gamepad
       if (!gp) continue
       const ax = gp.axes
@@ -1078,15 +1269,6 @@ export class FlameEngine {
     }
   }
 
-  private updateHud() {
-    if (!this.hud) return
-    this.hud.visible = this.presenting
-    if (!this.presenting) return
-    const cam = this.renderer.xr.getCamera()
-    const fwd = new THREE.Vector3(0, 0, -1).applyQuaternion(cam.quaternion)
-    this.hud.position.copy(cam.position).addScaledVector(fwd, 0.85)
-  }
-
   /* ——— state / lifecycle ——— */
 
   onState(cb: (s: FlameVrState) => void) {
@@ -1096,7 +1278,7 @@ export class FlameEngine {
 
   private snapshot(): FlameVrState {
     const seq = this.sequence
-    const idx = Math.min(Math.max(Math.round(this.frameFloat), 0), seq.frames.length - 1)
+    const idx = nearestTimeIndex(this.times, this.timeMs)
     return {
       vrSupported: this.vrSupported,
       arSupported: this.arSupported,
@@ -1104,12 +1286,19 @@ export class FlameEngine {
       arMode: this.arMode,
       playing: this.playing,
       direction: this.direction,
-      gravity: this.gravity,
+      gravity: 0,
       source: this.source,
       frameIndex: idx,
       frameCount: seq.frames.length,
       fps: seq.fps,
-      tMs: seq.frames[idx].tMs,
+      tMs: this.timeMs,
+      durationMs: this.times.at(-1)! - this.times[0],
+      startMs: this.times[0],
+      busy: this.busy,
+      modelProgress: this.modelProgress,
+      modelError: this.modelError,
+      magnification: this.flameGroup.scale.x / seq.geometry.domainMeters,
+      exposure: this.exposure,
       framesRendered: this.framesRendered,
       renderErrors: [...this.renderErrors],
       xrError: this.xrError,
@@ -1118,6 +1307,8 @@ export class FlameEngine {
       gamma: this.gamma,
       palette: this.palette,
       quality: this.quality,
+      trackedHands: this.trackedHands,
+      handHint: this.handHint,
     }
   }
 
@@ -1131,6 +1322,12 @@ export class FlameEngine {
 
   dispose() {
     this.disposed = true
+    this.releaseGrab()
+    const session = this.renderer.xr.getSession()
+    session?.removeEventListener('end', this.onSessionEnd)
+    void session?.end().catch(() => undefined)
+    this.worker?.terminate()
+    this.generation++
     this.renderer.setAnimationLoop(null)
     this.resizeObserver?.disconnect()
     this.controls?.dispose()
@@ -1145,8 +1342,8 @@ export class FlameEngine {
     }
     for (const tex of this.texCache.values()) tex.dispose()
     this.texCache.clear()
-    this.hudTex?.dispose()
-    this.hud?.material?.dispose()
+    for (const texture of this.playerTextures) texture.dispose()
+    this.playerTextures.clear()
     this.material.dispose()
     ;(this.uniforms.uFieldA.value as THREE.Texture).dispose()
     ;(this.uniforms.uFieldB.value as THREE.Texture).dispose()
