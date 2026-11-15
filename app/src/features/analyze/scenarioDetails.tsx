@@ -494,10 +494,10 @@ export function BranchSummary({ session, branch }: { session: Session; branch: B
         </ul>
       </Section>
 
-      <Section title="Mission inputs (engineer-provided)" tone="engineer">
+      <Section title="Mission inputs (from engineer documents)" tone="engineer">
         <ul className="space-y-1 text-[11.5px] text-text">
-          <li>Rover gravity: {r.gravity.text} — as supplied in the design scenario.</li>
-          <li>Oxygen target: {r.o2.text} — as supplied by the engineer.</li>
+          <li>Rover gravity: {r.gravity.text} — design basis PLR-DB-001 §2.</li>
+          <li>Oxygen target: {r.o2.text} — design basis §3.2.</li>
           <li className={r.pressure.prov === 'unknown' ? 'italic text-faint' : ''}>
             Pressure: {r.pressure.text} {r.pressure.prov === 'provisional' && <span className="text-amber">(provisional — task-brief comparison point)</span>}
           </li>
