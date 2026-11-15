@@ -28,12 +28,28 @@ team was recognised as a **Local Winner**. This recognition reflects the
 hackathon project; it does not imply NASA endorsement, operational deployment,
 or scientific certification.
 
-## App screenshot
+## App screenshots
+
+### Analyze
+
+![Analyze workspace — guided evidence review canvas and PSI investigation palette](screenshots/analyze-workspace.png)
+
+*The guided evidence-review workspace, with the local PSI investigation index
+available for the analysis canvas.*
+
+### Explore
 
 ![Explore workspace — filters, indexed experiments and working set](screenshots/explore-workspace.png)
 
 *The deployed Explore workspace, shown with the bundled PSI investigation and
 experimental-table index.*
+
+### Flame VR
+
+![Flame VR — reconstructed INTNS emission field, reference image and telemetry](screenshots/flame-vr.png)
+
+*The Flame VR desktop view reconstructs a PSI-159 INTNS emission field, with
+the reference frame, synchronized telemetry and experiment timeline.*
 
 ## Data at a glance
 
