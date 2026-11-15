@@ -1,0 +1,862 @@
+# keywords for PSI-107 (score, weight, count, df, fields)
+co-flow	46.354	16.000	6	2	approach,objective,title
+laminar	39.284	20.500	7	7	curated_keywords,filenames,hypothesis,objective,publication
+smoke	39.284	20.500	8	7	approach,filenames,objective,publication,title
+diffusion	32.756	20.500	7	10	curated_keywords,filenames,hypothesis,objective,publication
+sunderland	32.215	13.500	6	4	people,publication
+flames	31.548	24.500	9	14	approach,curated_keywords,filenames,hypothesis,objective,publication
+flame	30.807	26.500	10	16	approach,curated_keywords,hypothesis,objective,publication,research_impacts
+points	30.420	10.500	5	2	filenames,objective,publication
+spice	28.681	9.900	4	2	acronym,filenames,media_filenames,objective
+butane-lighter	26.421	8.000	1	1	curated_keywords
+emisssions	26.421	8.000	1	1	curated_keywords
+microgravity	25.500	25.500	12	19	approach,experiment_hardware,filenames,objective,project_type,publication
+soot	24.929	16.500	5	11	approach,curated_keywords,publication,research_impacts
+point	24.244	11.000	4	5	approach,filenames,objective,title
+glovebox	23.863	10.000	4	4	approach,experiment_hardware,publication
+yuan	23.863	10.000	4	4	publication
+smoke points	23.531	7.125	4	1	objective,publication
+urban	22.857	13.500	6	9	people,publication
+dotson	21.728	7.500	3	2	publication
+smoke point	21.728	7.500	3	2	approach,objective,title
+diffusion flames	20.372	12.750	5	10	curated_keywords,hypothesis,objective,publication
+butane-lighter flame	19.816	6.000	1	1	curated_keywords
+propylene	19.816	6.000	3	1	approach,objective
+lengths	18.831	6.500	3	2	approach,objective,publication
+luminous	18.831	6.500	3	2	objective,publication
+microgravity glovebox	17.897	7.500	4	4	approach,experiment_hardware,publication
+non-buoyant	17.383	6.000	3	2	hypothesis,objective,research_impacts
+nonbuoyant	16.513	5.000	2	1	publication
+round	16.513	5.000	2	1	publication
+air	15.739	11.000	5	12	approach,objective,publication
+point co-flow	14.862	4.500	1	1	title
+faeth	14.486	5.000	2	2	publication
+propane	14.486	5.000	3	2	approach,filenames,objective
+phenomena	14.326	6.500	3	5	hypothesis,objective,publication
+flame lengths	14.123	4.875	3	2	approach,objective,publication
+jet diffusion	14.123	4.875	3	2	hypothesis,objective,publication
+coflow	13.224	6.000	3	5	filenames,publication
+peter	13.224	6.000	3	5	people,publication
+properties	13.224	6.000	3	5	hypothesis,objective
+smoke-point	13.210	4.000	2	1	hypothesis,objective
+msg	13.125	5.500	2	4	experiment_hardware,publication
+still	13.125	5.500	3	4	approach,filenames,publication
+shapes	13.047	5.000	2	3	publication
+spivey	13.047	5.000	2	3	publication
+jet	12.456	6.500	3	7	hypothesis,objective,publication
+faeth sunderland	12.385	3.750	2	1	publication
+laminar smoke	12.385	3.750	2	1	publication
+nonbuoyant round	12.385	3.750	2	1	publication
+shapes nonbuoyant	12.385	3.750	2	1	publication
+urban yuan	12.385	3.750	2	1	publication
+laminar diffusion	12.299	6.000	1	6	curated_keywords
+conditions	11.532	8.500	4	13	objective,publication,research_impacts
+smoke point co-flow	10.899	3.300	1	1	title
+sunderland urban	10.864	3.750	2	2	publication
+fuel	10.853	8.000	4	13	approach,objective,research_impacts
+glovebox msg	10.764	4.125	2	3	experiment_hardware,publication
+identify	10.438	4.000	2	3	approach,objective
+jet diffusion flames	10.357	3.575	3	2	hypothesis,objective,publication
+gravity	10.301	8.000	4	14	filenames,hypothesis,publication
+ethylene	10.249	5.000	3	6	approach,filenames,objective
+david	10.159	6.000	3	9	people,publication
+co-flow air	9.908	3.000	2	1	approach
+ethylene propane	9.908	3.000	2	1	approach,objective
+laminar smoke-point	9.908	3.000	2	1	hypothesis,objective
+luminous flame	9.908	3.000	2	1	objective
+non-buoyant jet	9.908	3.000	2	1	hypothesis,objective
+propane propylene	9.908	3.000	2	1	approach,objective
+properties non-buoyant	9.908	3.000	2	1	hypothesis,objective
+propylene mixtures	9.908	3.000	2	1	approach,objective
+smoke-point properties	9.908	3.000	2	1	hypothesis,objective
+normal	9.785	8.000	4	15	filenames,hypothesis,publication
+laminar diffusion flames	9.697	4.400	1	5	curated_keywords
+measured	9.133	3.500	2	3	filenames,publication
+faeth sunderland urban	9.082	2.750	2	1	publication
+laminar smoke points	9.082	2.750	2	1	publication
+shapes nonbuoyant round	9.082	2.750	2	1	publication
+sunderland urban yuan	9.082	2.750	2	1	publication
+sunderland peter	8.949	3.750	2	4	publication
+height	8.691	3.000	2	2	approach,filenames
+aalburg	8.256	2.500	1	1	publication
+coflowing	8.256	2.500	1	1	publication
+diez	8.256	2.500	1	1	publication
+hydrocarbon-fueled	8.256	2.500	1	1	publication
+keenan	8.256	2.500	1	1	publication
+kt	8.256	2.500	1	1	publication
+laminar-jet	8.256	2.500	1	1	publication
+lb	8.256	2.500	1	1	publication
+lin	8.256	2.500	1	1	publication
+ra	8.256	2.500	1	1	publication
+flow	8.138	7.000	4	16	approach,filenames,objective
+combustion	8.000	8.000	3	19	objective,research_area,research_impacts
+microgravity glovebox msg	7.894	3.025	2	3	experiment_hardware,publication
+fuel flow	7.828	3.000	2	3	approach,objective
+urban david	7.687	3.750	2	6	publication
+burner	7.665	4.000	2	7	approach,objective
+mixtures	7.665	4.000	2	7	approach,objective
+computational	7.619	4.500	2	9	publication,research_impacts
+formation	7.619	4.500	2	9	publication,research_impacts
+velocity	7.554	5.000	3	11	approach,filenames,objective
+video	7.474	3.900	3	7	approach,filenames,media_filenames
+ethylene propane propylene	7.266	2.200	2	1	approach,objective
+laminar smoke-point properties	7.266	2.200	2	1	hypothesis,objective
+non-buoyant jet diffusion	7.266	2.200	2	1	hypothesis,objective
+properties non-buoyant jet	7.266	2.200	2	1	hypothesis,objective
+smoke-point properties non-buoyant	7.266	2.200	2	1	hypothesis,objective
+gas-jet	7.243	2.500	1	2	publication
+gravity-dependent	7.243	2.500	1	2	publication
+jeter	7.243	2.500	1	2	publication
+luz	7.243	2.500	1	2	publication
+platform	7.243	2.500	1	2	publication
+resource	7.243	2.500	1	2	publication
+vonk	7.243	2.500	1	2	publication
+better	7.194	4.000	2	8	objective,research_impacts
+flames microgravity	6.918	3.375	2	6	objective,publication
+safety	6.783	5.000	2	13	filenames,sub_research_area
+cameras	6.773	4.000	2	9	approach
+duct	6.612	3.000	2	5	approach,filenames
+0.41	6.605	2.000	1	1	approach
+0.76	6.605	2.000	1	1	approach
+1.6	6.605	2.000	1	1	approach
+5.4	6.605	2.000	1	1	approach
+adjusted	6.605	2.000	1	1	approach
+analogous	6.605	2.000	1	1	objective
+behaviors	6.605	2.000	1	1	research_impacts
+delivery	6.605	2.000	1	1	approach
+differ	6.605	2.000	1	1	hypothesis
+distributions	6.605	2.000	1	1	approach
+emitting	6.605	2.000	1	1	approach
+formulations	6.605	2.000	1	1	research_impacts
+gravity-driven	6.605	2.000	1	1	hypothesis
+marked	6.605	2.000	1	1	approach
+minimizing	6.605	2.000	1	1	hypothesis
+nozzles	6.605	2.000	1	1	approach
+propensity	6.605	2.000	1	1	objective
+scientists	6.605	2.000	1	1	hypothesis
+studied	6.605	2.000	1	1	approach
+tested	6.605	2.000	1	1	approach
+total	6.605	2.000	1	1	approach
+colket	6.524	2.500	1	3	publication
+combined	6.524	2.500	1	3	publication
+dobbins	6.524	2.500	1	3	publication
+hall	6.524	2.500	1	3	publication
+joseph	6.524	2.500	1	3	publication
+marshall	6.524	2.500	1	3	publication
+meredith	6.524	2.500	1	3	publication
+mitchell	6.524	2.500	1	3	publication
+reggie	6.524	2.500	1	3	publication
+robert	6.524	2.500	1	3	publication
+scaling	6.524	2.500	1	3	publication
+smooke	6.524	2.500	1	3	publication
+squeo	6.524	2.500	1	3	publication
+tinjero	6.524	2.500	1	3	publication
+xinyu	6.524	2.500	1	3	publication
+microgravity conditions	6.467	3.375	2	7	objective,publication
+soot formation	6.467	3.375	2	7	publication,research_impacts
+gmt136	6.275	1.900	2	1	filenames,media_filenames
+gmt2009	6.275	1.900	2	1	filenames,media_filenames
+gmt62	6.275	1.900	2	1	filenames,media_filenames
+aalburg diez	6.192	1.875	1	1	publication
+air laminar	6.192	1.875	1	1	publication
+coflow measured	6.192	1.875	1	1	publication
+coflowing flames	6.192	1.875	1	1	publication
+david nayagam	6.192	1.875	1	1	publication
+diez faeth	6.192	1.875	1	1	publication
+dotson keenan	6.192	1.875	1	1	publication
+elevated gravity	6.192	1.875	1	1	publication
+flames still	6.192	1.875	1	1	publication
+gas-jet flame	6.192	1.875	1	1	publication
+gravity coflow	6.192	1.875	1	1	publication
+hydrocarbon air	6.192	1.875	1	1	publication
+hydrocarbon-fueled laminar-jet	6.192	1.875	1	1	publication
+jeter vonk	6.192	1.875	1	1	publication
+keenan sunderland	6.192	1.875	1	1	publication
+kt dotson	6.192	1.875	1	1	publication
+laminar-jet diffusion	6.192	1.875	1	1	publication
+lb jeter	6.192	1.875	1	1	publication
+lengths elevated	6.192	1.875	1	1	publication
+lin faeth	6.192	1.875	1	1	publication
+luminous hydrocarbon	6.192	1.875	1	1	publication
+peter urban	6.192	1.875	1	1	publication
+peter yuan	6.192	1.875	1	1	publication
+points coflow	6.192	1.875	1	1	publication
+points coflowing	6.192	1.875	1	1	publication
+points microgravity	6.192	1.875	1	1	publication
+ra spivey	6.192	1.875	1	1	publication
+round hydrocarbon-fueled	6.192	1.875	1	1	publication
+round luminous	6.192	1.875	1	1	publication
+scaling gas-jet	6.192	1.875	1	1	publication
+spivey lb	6.192	1.875	1	1	publication
+still air	6.192	1.875	1	1	publication
+sunderland yuan	6.192	1.875	1	1	publication
+yuan urban	6.192	1.875	1	1	publication
+zeng-guang urban	6.192	1.875	1	1	publication
+experimental	6.105	4.500	2	13	approach,publication
+elevated	5.966	2.500	1	4	publication
+hydrocarbon	5.966	2.500	1	4	publication
+jesse	5.966	2.500	1	4	publication
+zeng-guang	5.966	2.500	1	4	publication
+consisted	5.794	2.000	1	2	approach
+losses	5.794	2.000	1	2	approach
+predicting	5.794	2.000	1	2	research_impacts
+refining	5.794	2.000	1	2	research_impacts
+safer	5.794	2.000	1	2	research_impacts
+setup	5.794	2.000	1	2	approach
+variations	5.794	2.000	1	2	objective
+environment	5.723	4.000	2	12	approach,objective
+nayagam	5.510	2.500	1	5	publication
+richard	5.510	2.500	1	5	publication
+vedha	5.510	2.500	1	5	publication
+zhao	5.510	2.500	1	5	publication
+dotson sunderland	5.432	1.875	1	2	publication
+glovebox platform	5.432	1.875	1	2	publication
+gravity-dependent phenomena	5.432	1.875	1	2	publication
+laminar jet	5.432	1.875	1	2	publication
+luz paul	5.432	1.875	1	2	publication
+msg resource	5.432	1.875	1	2	publication
+platform exploration	5.432	1.875	1	2	publication
+reggie luz	5.432	1.875	1	2	publication
+resource gravity-dependent	5.432	1.875	1	2	publication
+fire	5.427	4.000	1	13	sub_research_area
+fuels	5.427	4.000	2	13	approach,objective
+contribute	5.219	2.000	1	3	research_impacts
+correlation	5.219	2.000	1	3	objective
+enhance	5.219	2.000	1	3	research_impacts
+expected	5.219	2.000	1	3	hypothesis
+ground	5.219	2.000	1	3	objective
+observing	5.219	2.000	1	3	objective
+possibly	5.219	2.000	1	3	research_impacts
+ranging	5.219	2.000	1	3	approach
+significantly	5.219	2.000	1	3	hypothesis
+transition	5.219	2.000	1	3	approach
+0.41 0.76	4.954	1.500	1	1	approach
+0.76 1.6	4.954	1.500	1	1	approach
+1.6 co-flow	4.954	1.500	1	1	approach
+5.4 fuel	4.954	1.500	1	1	approach
+adjusted identify	4.954	1.500	1	1	approach
+air environment	4.954	1.500	1	1	approach
+air fuel	4.954	1.500	1	1	objective
+air velocity	4.954	1.500	1	1	approach
+analogous ground	4.954	1.500	1	1	objective
+apparatus flow	4.954	1.500	1	1	approach
+behaviors non-buoyant	4.954	1.500	1	1	research_impacts
+better fuel	4.954	1.500	1	1	research_impacts
+cameras fuel	4.954	1.500	1	1	approach
+cameras measurements	4.954	1.500	1	1	approach
+co-flow conditions	4.954	1.500	1	1	objective
+co-flow velocities	4.954	1.500	1	1	approach
+co-flow velocity	4.954	1.500	1	1	objective
+combustion observing	4.954	1.500	1	1	objective
+complex process	4.954	1.500	1	1	objective
+conditions enhance	4.954	1.500	1	1	research_impacts
+conditions impact	4.954	1.500	1	1	objective
+consisted apparatus	4.954	1.500	1	1	approach
+contribute refining	4.954	1.500	1	1	research_impacts
+controlled co-flow	4.954	1.500	1	1	approach
+correlation luminous	4.954	1.500	1	1	objective
+delivery systems	4.954	1.500	1	1	approach
+diameter co-flow	4.954	1.500	1	1	objective
+diameters 0.41	4.954	1.500	1	1	approach
+differ significantly	4.954	1.500	1	1	hypothesis
+distributions total	4.954	1.500	1	1	approach
+duct integrated	4.954	1.500	1	1	approach
+effects burner	4.954	1.500	1	1	objective
+emitting soot	4.954	1.500	1	1	approach
+enhance knowledge	4.954	1.500	1	1	research_impacts
+environment analogous	4.954	1.500	1	1	objective
+environment burner	4.954	1.500	1	1	approach
+environments contribute	4.954	1.500	1	1	research_impacts
+expected differ	4.954	1.500	1	1	hypothesis
+experimental setup	4.954	1.500	1	1	approach
+flame behaviors	4.954	1.500	1	1	research_impacts
+flame height	4.954	1.500	1	1	approach
+flame ignited	4.954	1.500	1	1	approach
+flame properties	4.954	1.500	1	1	hypothesis
+flame transition	4.954	1.500	1	1	approach
+flames co-flow	4.954	1.500	1	1	objective
+flames studied	4.954	1.500	1	1	approach
+formation mechanisms	4.954	1.500	1	1	research_impacts
+formulations combustion	4.954	1.500	1	1	research_impacts
+fuel delivery	4.954	1.500	1	1	approach
+fuel formulations	4.954	1.500	1	1	research_impacts
+fuels ethylene	4.954	1.500	1	1	objective
+fuels tested	4.954	1.500	1	1	approach
+generation possibly	4.954	1.500	1	1	research_impacts
+glovebox consisted	4.954	1.500	1	1	approach
+gravity-driven transport	4.954	1.500	1	1	hypothesis
+ground specific	4.954	1.500	1	1	objective
+heat losses	4.954	1.500	1	1	approach
+height radiative	4.954	1.500	1	1	approach
+help design	4.954	1.500	1	1	research_impacts
+hypothesizes minimizing	4.954	1.500	1	1	hypothesis
+identify laminar	4.954	1.500	1	1	objective
+identify smoke	4.954	1.500	1	1	approach
+ignited controlled	4.954	1.500	1	1	approach
+impact air	4.954	1.500	1	1	objective
+improve understanding	4.954	1.500	1	1	research_impacts
+insights better	4.954	1.500	1	1	research_impacts
+integrated nozzles	4.954	1.500	1	1	approach
+knowledge soot	4.954	1.500	1	1	research_impacts
+lengths recorded	4.954	1.500	1	1	approach
+lengths smoke	4.954	1.500	1	1	objective
+losses co-flow	4.954	1.500	1	1	approach
+marked flame	4.954	1.500	1	1	approach
+measurements flame	4.954	1.500	1	1	approach
+mechanisms help	4.954	1.500	1	1	research_impacts
+microgravity determine	4.954	1.500	1	1	objective
+minimizing gravity-driven	4.954	1.500	1	1	hypothesis
+mixtures flame	4.954	1.500	1	1	approach
+mixtures validate	4.954	1.500	1	1	objective
+models predicting	4.954	1.500	1	1	research_impacts
+non-buoyant conditions	4.954	1.500	1	1	research_impacts
+nozzles cameras	4.954	1.500	1	1	approach
+objective spice	4.954	1.500	1	1	objective
+objectives identify	4.954	1.500	1	1	objective
+observed normal	4.954	1.500	1	1	hypothesis
+phenomena scientists	4.954	1.500	1	1	hypothesis
+point marked	4.954	1.500	1	1	approach
+point phenomena	4.954	1.500	1	1	objective
+points quantify	4.954	1.500	1	1	objective
+possibly insights	4.954	1.500	1	1	research_impacts
+predicting flame	4.954	1.500	1	1	research_impacts
+process combustion	4.954	1.500	1	1	objective
+propensity different	4.954	1.500	1	1	objective
+properties expected	4.954	1.500	1	1	hypothesis
+propylene propylene	4.954	1.500	1	1	approach
+quantify sooting	4.954	1.500	1	1	objective
+ranging 5.4	4.954	1.500	1	1	approach
+rate variations	4.954	1.500	1	1	objective
+rates adjusted	4.954	1.500	1	1	approach
+recorded still	4.954	1.500	1	1	approach
+refining computational	4.954	1.500	1	1	research_impacts
+residence time	4.954	1.500	1	1	objective
+scientists laminar	4.954	1.500	1	1	hypothesis
+setup microgravity	4.954	1.500	1	1	approach
+shape residence	4.954	1.500	1	1	objective
+significantly observed	4.954	1.500	1	1	hypothesis
+soot flame	4.954	1.500	1	1	approach
+soot generation	4.954	1.500	1	1	research_impacts
+sooting propensity	4.954	1.500	1	1	objective
+spacecraft environments	4.954	1.500	1	1	research_impacts
+spice better	4.954	1.500	1	1	objective
+still video	4.954	1.500	1	1	approach
+systems fuels	4.954	1.500	1	1	approach
+tested methane	4.954	1.500	1	1	approach
+time microgravity	4.954	1.500	1	1	objective
+total flames	4.954	1.500	1	1	approach
+transition emitting	4.954	1.500	1	1	approach
+understand complex	4.954	1.500	1	1	objective
+validate correlation	4.954	1.500	1	1	objective
+variations smoke	4.954	1.500	1	1	objective
+velocities ranging	4.954	1.500	1	1	approach
+velocity distributions	4.954	1.500	1	1	approach
+velocity luminous	4.954	1.500	1	1	objective
+coflow diffusion	4.893	1.875	1	3	publication
+colket meredith	4.893	1.875	1	3	publication
+combined experimental	4.893	1.875	1	3	publication
+computational soot	4.893	1.875	1	3	publication
+dobbins richard	4.893	1.875	1	3	publication
+formation normal	4.893	1.875	1	3	publication
+hall robert	4.893	1.875	1	3	publication
+jesse squeo	4.893	1.875	1	3	publication
+joseph zhao	4.893	1.875	1	3	publication
+long marshall	4.893	1.875	1	3	publication
+marshall smooke	4.893	1.875	1	3	publication
+meredith long	4.893	1.875	1	3	publication
+normal microgravity	4.893	1.875	1	3	publication
+richard tinjero	4.893	1.875	1	3	publication
+robert colket	4.893	1.875	1	3	publication
+smooke mitchell	4.893	1.875	1	3	publication
+spivey reggie	4.893	1.875	1	3	publication
+squeo joseph	4.893	1.875	1	3	publication
+tinjero jesse	4.893	1.875	1	3	publication
+xinyu hall	4.893	1.875	1	3	publication
+zhao xinyu	4.893	1.875	1	3	publication
+long	4.791	2.500	1	7	publication
+complex	4.773	2.000	1	4	objective
+impact	4.773	2.000	1	4	objective
+improve	4.773	2.000	1	4	research_impacts
+residence	4.773	2.000	1	4	objective
+sooting	4.773	2.000	1	4	objective
+understand	4.773	2.000	1	4	objective
+velocities	4.773	2.000	1	4	approach
+normal gravity	4.579	3.375	2	13	hypothesis,publication
+aalburg diez faeth	4.541	1.375	1	1	publication
+air laminar jet	4.541	1.375	1	1	publication
+coflowing flames microgravity	4.541	1.375	1	1	publication
+david nayagam vedha	4.541	1.375	1	1	publication
+diez faeth sunderland	4.541	1.375	1	1	publication
+diffusion flames still	4.541	1.375	1	1	publication
+dotson keenan sunderland	4.541	1.375	1	1	publication
+dotson sunderland yuan	4.541	1.375	1	1	publication
+flame lengths elevated	4.541	1.375	1	1	publication
+flames still air	4.541	1.375	1	1	publication
+gas-jet flame lengths	4.541	1.375	1	1	publication
+gravity coflow diffusion	4.541	1.375	1	1	publication
+hydrocarbon air laminar	4.541	1.375	1	1	publication
+hydrocarbon-fueled laminar-jet diffusion	4.541	1.375	1	1	publication
+keenan sunderland peter	4.541	1.375	1	1	publication
+laminar-jet diffusion flames	4.541	1.375	1	1	publication
+lb jeter vonk	4.541	1.375	1	1	publication
+lengths elevated gravity	4.541	1.375	1	1	publication
+lin faeth sunderland	4.541	1.375	1	1	publication
+luminous hydrocarbon air	4.541	1.375	1	1	publication
+nonbuoyant round hydrocarbon-fueled	4.541	1.375	1	1	publication
+nonbuoyant round luminous	4.541	1.375	1	1	publication
+normal gravity coflow	4.541	1.375	1	1	publication
+peter urban david	4.541	1.375	1	1	publication
+peter yuan zeng-guang	4.541	1.375	1	1	publication
+points coflow measured	4.541	1.375	1	1	publication
+points coflowing flames	4.541	1.375	1	1	publication
+points microgravity normal	4.541	1.375	1	1	publication
+ra spivey lb	4.541	1.375	1	1	publication
+round hydrocarbon-fueled laminar-jet	4.541	1.375	1	1	publication
+round luminous hydrocarbon	4.541	1.375	1	1	publication
+scaling gas-jet flame	4.541	1.375	1	1	publication
+smoke points coflow	4.541	1.375	1	1	publication
+smoke points coflowing	4.541	1.375	1	1	publication
+smoke points microgravity	4.541	1.375	1	1	publication
+spivey lb jeter	4.541	1.375	1	1	publication
+sunderland peter urban	4.541	1.375	1	1	publication
+sunderland peter yuan	4.541	1.375	1	1	publication
+sunderland yuan urban	4.541	1.375	1	1	publication
+urban david nayagam	4.541	1.375	1	1	publication
+yuan zeng-guang urban	4.541	1.375	1	1	publication
+zeng-guang urban david	4.541	1.375	1	1	publication
+exploration	4.496	2.500	1	8	publication
+paul	4.496	2.500	1	8	publication
+experimental computational	4.474	1.875	1	4	publication
+yuan zeng-guang	4.474	1.875	1	4	publication
+diameter	4.408	2.000	1	5	objective
+diameters	4.408	2.000	1	5	approach
+generation	4.408	2.000	1	5	research_impacts
+hypothesizes	4.408	2.000	1	5	hypothesis
+insights	4.408	2.000	1	5	research_impacts
+knowledge	4.408	2.000	1	5	research_impacts
+methane	4.408	2.000	1	5	approach
+specific	4.408	2.000	1	5	objective
+burner diameter	4.346	1.500	1	2	objective
+burner diameters	4.346	1.500	1	2	approach
+conditions microgravity	4.346	1.500	1	2	objective
+design safer	4.346	1.500	1	2	research_impacts
+determine effects	4.346	1.500	1	2	objective
+different fuels	4.346	1.500	1	2	objective
+observing flames	4.346	1.500	1	2	objective
+safer spacecraft	4.346	1.500	1	2	research_impacts
+transport phenomena	4.346	1.500	1	2	hypothesis
+understanding soot	4.346	1.500	1	2	research_impacts
+microgravity normal	4.132	1.875	1	5	publication
+nayagam vedha	4.132	1.875	1	5	publication
+apparatus	4.100	2.000	1	6	approach
+different	4.100	2.000	1	6	objective
+ignited	4.100	2.000	1	6	approach
+mechanisms	4.100	2.000	1	6	research_impacts
+observed	4.100	2.000	1	6	hypothesis
+quantify	4.100	2.000	1	6	objective
+recorded	4.100	2.000	1	6	approach
+shape	4.100	2.000	1	6	objective
+fire safety	4.070	3.000	1	13	sub_research_area
+raw	4.004	2.650	3	11	file_folders,filenames,media_filenames
+glovebox msg resource	3.984	1.375	1	2	publication
+glovebox platform exploration	3.984	1.375	1	2	publication
+laminar jet diffusion	3.984	1.375	1	2	publication
+microgravity glovebox platform	3.984	1.375	1	2	publication
+msg resource gravity-dependent	3.984	1.375	1	2	publication
+reggie luz paul	3.984	1.375	1	2	publication
+resource gravity-dependent phenomena	3.984	1.375	1	2	publication
+spivey reggie luz	3.984	1.375	1	2	publication
+better understand	3.914	1.500	1	3	objective
+flame shape	3.914	1.500	1	3	objective
+flames flame	3.914	1.500	1	3	hypothesis
+specific objectives	3.914	1.500	1	3	objective
+reference	3.857	1.750	2	5	file_folders,filenames
+controlled	3.833	2.000	1	7	approach
+help	3.833	2.000	1	7	research_impacts
+objective	3.833	2.000	1	7	objective
+transport	3.833	2.000	1	7	hypothesis
+0.41 0.76 1.6	3.633	1.100	1	1	approach
+0.76 1.6 co-flow	3.633	1.100	1	1	approach
+1.6 co-flow velocities	3.633	1.100	1	1	approach
+5.4 fuel flow	3.633	1.100	1	1	approach
+adjusted identify smoke	3.633	1.100	1	1	approach
+air environment burner	3.633	1.100	1	1	approach
+air fuel flow	3.633	1.100	1	1	objective
+air velocity distributions	3.633	1.100	1	1	approach
+analogous ground specific	3.633	1.100	1	1	objective
+apparatus flow duct	3.633	1.100	1	1	approach
+behaviors non-buoyant conditions	3.633	1.100	1	1	research_impacts
+better fuel formulations	3.633	1.100	1	1	research_impacts
+better understand complex	3.633	1.100	1	1	objective
+burner diameter co-flow	3.633	1.100	1	1	objective
+burner diameters 0.41	3.633	1.100	1	1	approach
+cameras fuel delivery	3.633	1.100	1	1	approach
+cameras measurements flame	3.633	1.100	1	1	approach
+co-flow air environment	3.633	1.100	1	1	approach
+co-flow air velocity	3.633	1.100	1	1	approach
+co-flow conditions microgravity	3.633	1.100	1	1	objective
+co-flow velocities ranging	3.633	1.100	1	1	approach
+co-flow velocity luminous	3.633	1.100	1	1	objective
+combustion observing flames	3.633	1.100	1	1	objective
+complex process combustion	3.633	1.100	1	1	objective
+computational models predicting	3.633	1.100	1	1	research_impacts
+conditions enhance knowledge	3.633	1.100	1	1	research_impacts
+conditions impact air	3.633	1.100	1	1	objective
+conditions microgravity determine	3.633	1.100	1	1	objective
+consisted apparatus flow	3.633	1.100	1	1	approach
+contribute refining computational	3.633	1.100	1	1	research_impacts
+controlled co-flow air	3.633	1.100	1	1	approach
+correlation luminous flame	3.633	1.100	1	1	objective
+delivery systems fuels	3.633	1.100	1	1	approach
+determine effects burner	3.633	1.100	1	1	objective
+diameter co-flow velocity	3.633	1.100	1	1	objective
+diameters 0.41 0.76	3.633	1.100	1	1	approach
+differ significantly observed	3.633	1.100	1	1	hypothesis
+different fuels ethylene	3.633	1.100	1	1	objective
+diffusion flames co-flow	3.633	1.100	1	1	objective
+distributions total flames	3.633	1.100	1	1	approach
+duct integrated nozzles	3.633	1.100	1	1	approach
+effects burner diameter	3.633	1.100	1	1	objective
+emitting soot flame	3.633	1.100	1	1	approach
+enhance knowledge soot	3.633	1.100	1	1	research_impacts
+environment analogous ground	3.633	1.100	1	1	objective
+environment burner diameters	3.633	1.100	1	1	approach
+environments contribute refining	3.633	1.100	1	1	research_impacts
+expected differ significantly	3.633	1.100	1	1	hypothesis
+experimental setup microgravity	3.633	1.100	1	1	approach
+flame behaviors non-buoyant	3.633	1.100	1	1	research_impacts
+flame height radiative	3.633	1.100	1	1	approach
+flame ignited controlled	3.633	1.100	1	1	approach
+flame lengths recorded	3.633	1.100	1	1	approach
+flame lengths smoke	3.633	1.100	1	1	objective
+flame properties expected	3.633	1.100	1	1	hypothesis
+flame shape residence	3.633	1.100	1	1	objective
+flame transition emitting	3.633	1.100	1	1	approach
+flames co-flow conditions	3.633	1.100	1	1	objective
+flames flame properties	3.633	1.100	1	1	hypothesis
+flow duct integrated	3.633	1.100	1	1	approach
+flow rate variations	3.633	1.100	1	1	objective
+flow rates adjusted	3.633	1.100	1	1	approach
+formation mechanisms help	3.633	1.100	1	1	research_impacts
+formulations combustion processes	3.633	1.100	1	1	research_impacts
+fuel delivery systems	3.633	1.100	1	1	approach
+fuel flow rates	3.633	1.100	1	1	approach
+fuel formulations combustion	3.633	1.100	1	1	research_impacts
+fuels ethylene propane	3.633	1.100	1	1	objective
+fuels tested methane	3.633	1.100	1	1	approach
+generation possibly insights	3.633	1.100	1	1	research_impacts
+glovebox consisted apparatus	3.633	1.100	1	1	approach
+gravity-driven transport phenomena	3.633	1.100	1	1	hypothesis
+ground specific objectives	3.633	1.100	1	1	objective
+heat losses co-flow	3.633	1.100	1	1	approach
+height radiative heat	3.633	1.100	1	1	approach
+help design safer	3.633	1.100	1	1	research_impacts
+hypothesizes minimizing gravity-driven	3.633	1.100	1	1	hypothesis
+identify laminar smoke-point	3.633	1.100	1	1	objective
+identify smoke point	3.633	1.100	1	1	approach
+ignited controlled co-flow	3.633	1.100	1	1	approach
+impact air fuel	3.633	1.100	1	1	objective
+improve understanding soot	3.633	1.100	1	1	research_impacts
+insights better fuel	3.633	1.100	1	1	research_impacts
+integrated nozzles cameras	3.633	1.100	1	1	approach
+knowledge soot generation	3.633	1.100	1	1	research_impacts
+lengths recorded still	3.633	1.100	1	1	approach
+lengths smoke points	3.633	1.100	1	1	objective
+losses co-flow air	3.633	1.100	1	1	approach
+luminous flame lengths	3.633	1.100	1	1	objective
+luminous flame shape	3.633	1.100	1	1	objective
+marked flame transition	3.633	1.100	1	1	approach
+measurements flame height	3.633	1.100	1	1	approach
+mechanisms help design	3.633	1.100	1	1	research_impacts
+methane ethylene propane	3.633	1.100	1	1	approach
+microgravity conditions impact	3.633	1.100	1	1	objective
+microgravity determine effects	3.633	1.100	1	1	objective
+microgravity environment analogous	3.633	1.100	1	1	objective
+microgravity glovebox consisted	3.633	1.100	1	1	approach
+minimizing gravity-driven transport	3.633	1.100	1	1	hypothesis
+mixtures flame ignited	3.633	1.100	1	1	approach
+mixtures validate correlation	3.633	1.100	1	1	objective
+models predicting flame	3.633	1.100	1	1	research_impacts
+non-buoyant conditions enhance	3.633	1.100	1	1	research_impacts
+nozzles cameras fuel	3.633	1.100	1	1	approach
+objective spice better	3.633	1.100	1	1	objective
+objectives identify laminar	3.633	1.100	1	1	objective
+observed normal gravity	3.633	1.100	1	1	hypothesis
+observing flames microgravity	3.633	1.100	1	1	objective
+phenomena scientists laminar	3.633	1.100	1	1	hypothesis
+point marked flame	3.633	1.100	1	1	approach
+points quantify sooting	3.633	1.100	1	1	objective
+possibly insights better	3.633	1.100	1	1	research_impacts
+predicting flame behaviors	3.633	1.100	1	1	research_impacts
+process combustion observing	3.633	1.100	1	1	objective
+propane propylene mixtures	3.633	1.100	1	1	objective
+propane propylene propylene	3.633	1.100	1	1	approach
+propensity different fuels	3.633	1.100	1	1	objective
+properties expected differ	3.633	1.100	1	1	hypothesis
+propylene mixtures flame	3.633	1.100	1	1	approach
+propylene mixtures validate	3.633	1.100	1	1	objective
+propylene propylene mixtures	3.633	1.100	1	1	approach
+quantify sooting propensity	3.633	1.100	1	1	objective
+radiative heat losses	3.633	1.100	1	1	approach
+ranging 5.4 fuel	3.633	1.100	1	1	approach
+rate variations smoke	3.633	1.100	1	1	objective
+rates adjusted identify	3.633	1.100	1	1	approach
+recorded still video	3.633	1.100	1	1	approach
+refining computational models	3.633	1.100	1	1	research_impacts
+residence time microgravity	3.633	1.100	1	1	objective
+safer spacecraft environments	3.633	1.100	1	1	research_impacts
+scientists laminar smoke-point	3.633	1.100	1	1	hypothesis
+setup microgravity glovebox	3.633	1.100	1	1	approach
+shape residence time	3.633	1.100	1	1	objective
+significantly observed normal	3.633	1.100	1	1	hypothesis
+smoke point marked	3.633	1.100	1	1	approach
+smoke point phenomena	3.633	1.100	1	1	objective
+smoke points quantify	3.633	1.100	1	1	objective
+soot flame lengths	3.633	1.100	1	1	approach
+soot formation mechanisms	3.633	1.100	1	1	research_impacts
+soot generation possibly	3.633	1.100	1	1	research_impacts
+sooting propensity different	3.633	1.100	1	1	objective
+spacecraft environments contribute	3.633	1.100	1	1	research_impacts
+specific objectives identify	3.633	1.100	1	1	objective
+spice better understand	3.633	1.100	1	1	objective
+still video cameras	3.633	1.100	1	1	approach
+systems fuels tested	3.633	1.100	1	1	approach
+tested methane ethylene	3.633	1.100	1	1	approach
+time microgravity conditions	3.633	1.100	1	1	objective
+total flames studied	3.633	1.100	1	1	approach
+transition emitting soot	3.633	1.100	1	1	approach
+transport phenomena scientists	3.633	1.100	1	1	hypothesis
+understand complex process	3.633	1.100	1	1	objective
+validate correlation luminous	3.633	1.100	1	1	objective
+variations smoke point	3.633	1.100	1	1	objective
+velocities ranging 5.4	3.633	1.100	1	1	approach
+velocity distributions total	3.633	1.100	1	1	approach
+velocity luminous flame	3.633	1.100	1	1	objective
+video cameras measurements	3.633	1.100	1	1	approach
+processes	3.597	2.000	1	8	research_impacts
+colket meredith long	3.588	1.375	1	3	publication
+combined experimental computational	3.588	1.375	1	3	publication
+computational soot formation	3.588	1.375	1	3	publication
+dobbins richard tinjero	3.588	1.375	1	3	publication
+experimental computational soot	3.588	1.375	1	3	publication
+formation normal microgravity	3.588	1.375	1	3	publication
+hall robert colket	3.588	1.375	1	3	publication
+jesse squeo joseph	3.588	1.375	1	3	publication
+joseph zhao xinyu	3.588	1.375	1	3	publication
+long marshall smooke	3.588	1.375	1	3	publication
+marshall smooke mitchell	3.588	1.375	1	3	publication
+meredith long marshall	3.588	1.375	1	3	publication
+normal microgravity conditions	3.588	1.375	1	3	publication
+richard tinjero jesse	3.588	1.375	1	3	publication
+robert colket meredith	3.588	1.375	1	3	publication
+soot formation normal	3.588	1.375	1	3	publication
+squeo joseph zhao	3.588	1.375	1	3	publication
+tinjero jesse squeo	3.588	1.375	1	3	publication
+xinyu hall robert	3.588	1.375	1	3	publication
+zhao xinyu hall	3.588	1.375	1	3	publication
+combustion processes	3.579	1.500	1	4	research_impacts
+computational models	3.579	1.500	1	4	research_impacts
+documents	3.577	2.500	3	12	file_folders,filenames
+models	3.386	2.000	1	9	research_impacts
+process	3.386	2.000	1	9	objective
+rates	3.386	2.000	1	9	approach
+understanding	3.386	2.000	1	9	research_impacts
+validate	3.386	2.000	1	9	objective
+flow duct	3.306	1.500	1	5	approach
+flow rate	3.306	1.500	1	5	objective
+flow rates	3.306	1.500	1	5	approach
+methane ethylene	3.306	1.500	1	5	approach
+radiative heat	3.306	1.500	1	5	approach
+video cameras	3.306	1.500	1	5	approach
+0.4mm	3.303	1.000	1	1	filenames
+0.4nzl	3.303	1.000	1	1	filenames
+0.8mm	3.303	1.000	1	1	filenames
+0.8nzl	3.303	1.000	1	1	filenames
+0096b	3.303	1.000	1	1	filenames
+0096d	3.303	1.000	1	1	filenames
+0103a	3.303	1.000	1	1	filenames
+0103f	3.303	1.000	1	1	filenames
+0104b	3.303	1.000	1	1	filenames
+1.6nzl	3.303	1.000	1	1	filenames
+11.16.mp4	3.303	1.000	1	1	filenames
+11.20.mp4	3.303	1.000	1	1	filenames
+11.25.mp4	3.303	1.000	1	1	filenames
+11.27.mp4	3.303	1.000	1	1	filenames
+11.32.mp4	3.303	1.000	1	1	filenames
+11.39.mp4	3.303	1.000	1	1	filenames
+11.41.mp4	3.303	1.000	1	1	filenames
+11.45.mp4	3.303	1.000	1	1	filenames
+11.55.mp4	3.303	1.000	1	1	filenames
+12.03.mp4	3.303	1.000	1	1	filenames
+12.06.mp4	3.303	1.000	1	1	filenames
+12.12.mp4	3.303	1.000	1	1	filenames
+1st	3.303	1.000	1	1	filenames
+30-daypostflightreport	3.303	1.000	1	1	filenames
+32a	3.303	1.000	1	1	filenames
+32b	3.303	1.000	1	1	filenames
+33a	3.303	1.000	1	1	filenames
+33b	3.303	1.000	1	1	filenames
+33c	3.303	1.000	1	1	filenames
+36b	3.303	1.000	1	1	filenames
+36c	3.303	1.000	1	1	filenames
+36e	3.303	1.000	1	1	filenames
+36f	3.303	1.000	1	1	filenames
+36g	3.303	1.000	1	1	filenames
+36j	3.303	1.000	1	1	filenames
+411259meter	3.303	1.000	1	1	filenames
+43a	3.303	1.000	1	1	filenames
+44a	3.303	1.000	1	1	filenames
+60054mafh000-c	3.303	1.000	1	1	filenames
+67a	3.303	1.000	1	1	filenames
+90b	3.303	1.000	1	1	filenames
+90c	3.303	1.000	1	1	filenames
+90d	3.303	1.000	1	1	filenames
+90e	3.303	1.000	1	1	filenames
+assembled	3.303	1.000	1	1	filenames
+bottle	3.303	1.000	1	1	filenames
+cal	3.303	1.000	1	1	filenames
+chart	3.303	1.000	1	1	filenames
+check	3.303	1.000	1	1	filenames
+contactsheet	3.303	1.000	1	1	filenames
+cue	3.303	1.000	1	1	filenames
+day	3.303	1.000	1	1	filenames
+dotsonthesis	3.303	1.000	1	1	filenames
+dsc	3.303	1.000	1	1	filenames
+engineeringunitcontrol	3.303	1.000	1	1	filenames
+files	3.303	1.000	1	1	filenames
+flamelength	3.303	1.000	1	1	filenames
+frame	3.303	1.000	1	1	filenames
+fuelflow	3.303	1.000	1	1	filenames
+fumi	3.303	1.000	1	1	filenames
+gmt045	3.303	1.000	1	1	filenames
+gmt048	3.303	1.000	1	1	filenames
+gmt052	3.303	1.000	1	1	filenames
+gmt052nikon	3.303	1.000	1	1	filenames
+gmt055nikon	3.303	1.000	1	1	filenames
+gmt058nikon	3.303	1.000	1	1	filenames
+grab	3.303	1.000	1	1	filenames
+grabs	3.303	1.000	1	1	filenames
+grabstp	3.303	1.000	1	1	filenames
+hdwr.nef	3.303	1.000	1	1	filenames
+hieght	3.303	1.000	1	1	filenames
+ign6.mp4	3.303	1.000	1	1	filenames
+ign7.mp4	3.303	1.000	1	1	filenames
+ign8.mp4	3.303	1.000	1	1	filenames
+ign8a.mp4	3.303	1.000	1	1	filenames
+ign8b.mp4	3.303	1.000	1	1	filenames
+ip-c	3.303	1.000	1	1	filenames
+ip-d	3.303	1.000	1	1	filenames
+mfc	3.303	1.000	1	1	filenames
+nef	3.303	1.000	1	1	filenames
+newbottle	3.303	1.000	1	1	filenames
+nikond100	3.303	1.000	1	1	filenames
+num	3.303	1.000	1	1	filenames
+organization	3.303	1.000	1	1	filenames
+outside	3.303	1.000	1	1	filenames
+overlay	3.303	1.000	1	1	filenames
+package	3.303	1.000	1	1	filenames
+picturebook	3.303	1.000	1	1	filenames
+playback	3.303	1.000	1	1	filenames
+propy	3.303	1.000	1	1	filenames
+reset	3.303	1.000	1	1	filenames
+ruler	3.303	1.000	1	1	filenames
+scienceverificationreport	3.303	1.000	1	1	filenames
+sheet	3.303	1.000	1	1	filenames
+slide	3.303	1.000	1	1	filenames
+smokepointreview-0g-3	3.303	1.000	1	1	filenames
+sootclean	3.303	1.000	1	1	filenames
+spice-1	3.303	1.000	1	1	filenames
+spice-mem-010	3.303	1.000	1	1	filenames
+tp34	3.303	1.000	1	1	filenames
+tp36d	3.303	1.000	1	1	filenames
+velocitycomparison	3.303	1.000	1	1	filenames
+velocitydata	3.303	1.000	1	1	filenames
+video.avi	3.303	1.000	1	1	filenames
+video.mp4	3.303	1.000	1	1	filenames
+vlcsnap	3.303	1.000	1	1	filenames
+vlcsnap-4272441	3.303	1.000	1	1	filenames
+measurements	3.196	2.000	1	10	approach
+radiative	3.196	2.000	1	10	approach
+design safer spacecraft	3.187	1.100	1	2	research_impacts
+diffusion flames flame	3.187	1.100	1	2	hypothesis
+flames microgravity environment	3.187	1.100	1	2	objective
+understanding soot formation	3.187	1.100	1	2	research_impacts
+presentations	3.147	1.750	2	8	file_folders,filenames
+microgravity normal gravity	3.030	1.375	1	5	publication
+design	3.022	2.000	1	11	research_impacts
+integrated	3.022	2.000	1	11	approach
+ign6	2.972	0.900	1	1	media_filenames
+ign7	2.972	0.900	1	1	media_filenames
+ign8	2.972	0.900	1	1	media_filenames
+ign8a	2.972	0.900	1	1	media_filenames
+ign8b	2.972	0.900	1	1	media_filenames
+blowoff	2.897	1.000	1	2	filenames
+contact	2.897	1.000	1	2	filenames
+downlink	2.897	1.000	1	2	filenames
+focus	2.897	1.000	1	2	filenames
+jpegs	2.897	1.000	1	2	filenames
+last	2.897	1.000	1	2	filenames
+liftoff	2.897	1.000	1	2	filenames
+manual	2.897	1.000	1	2	filenames
+modified	2.897	1.000	1	2	filenames
+movie	2.897	1.000	1	2	filenames
+ops	2.897	1.000	1	2	filenames
+phase	2.897	1.000	1	2	filenames
+settings	2.897	1.000	1	2	filenames
+srd	2.897	1.000	1	2	filenames
+training	2.897	1.000	1	2	filenames
+voltage	2.897	1.000	1	2	filenames
+microgravity environment	2.874	1.500	1	7	objective
+fuel flow rate	2.870	1.100	1	3	objective
+heat	2.862	2.000	1	12	approach
+time	2.862	2.000	1	12	objective
+determine	2.713	2.000	1	13	objective
+effects	2.713	2.000	1	13	objective
+environments	2.713	2.000	1	13	research_impacts
+rate	2.713	2.000	1	13	objective
+spacecraft	2.713	2.000	1	13	research_impacts
+systems	2.713	2.000	1	13	approach
+assembly	2.609	1.000	1	3	filenames
+calibration	2.609	1.000	1	3	filenames
+card	2.609	1.000	1	3	filenames
+center	2.609	1.000	1	3	filenames
+finalreport	2.609	1.000	1	3	filenames
+gmt	2.609	1.000	1	3	filenames
+overview	2.609	1.000	1	3	filenames
+profiles	2.609	1.000	1	3	filenames
+objectives	2.575	2.000	1	14	objective
+airflow	2.386	1.000	1	4	filenames
+end	2.386	1.000	1	4	filenames
+guide	2.386	1.000	1	4	filenames
+engineering	2.374	1.750	2	13	file_folders,filenames
+mass	2.204	1.000	1	5	filenames
+sheets	2.204	1.000	1	5	filenames
+camera	2.050	1.000	1	6	filenames
+crew	1.799	1.000	1	8	filenames
+inside	1.799	1.000	1	8	filenames
+peter sunderland	1.790	0.750	1	4	people
+administration	1.744	1.500	1	16	space_program
+aeronautics	1.744	1.500	1	16	space_program
+image	1.598	1.000	1	10	filenames
+national	1.577	1.500	1	18	space_program
+maryland	1.537	0.750	1	6	affiliation
+images	1.431	1.000	1	12	filenames
+flight	1.357	1.000	1	13	filenames
+david urban	1.349	0.750	1	8	people
+aeronautics administration	1.308	1.125	1	16	space_program
+national aeronautics	1.308	1.125	1	16	space_program
+co-i	1.288	1.000	1	14	role
+co-investigator	1.288	1.000	1	14	role
+test	1.163	1.000	1	16	filenames
+university maryland	1.153	0.562	1	6	affiliation
+investigator	1.051	1.000	1	18	role
+pi	1.051	1.000	1	18	role
+principal	1.051	1.000	1	18	role
+co-investigator co-i	0.966	0.750	1	14	role
+national aeronautics administration	0.959	0.825	1	16	space_program
+university	0.917	0.750	1	15	affiliation
+engineering documents	0.805	0.562	1	12	file_folders
+grc	0.788	0.750	1	18	affiliation
+investigator pi	0.788	0.750	1	18	role
+principal investigator	0.788	0.750	1	18	role
+principal investigator pi	0.578	0.550	1	18	role

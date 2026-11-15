@@ -1,0 +1,2851 @@
+accession,term,ngram,score,weight,count,df,idf,fields
+PSI-47,p-trak,1,104.2963,36.0000,15,2,2.8971,approach|curated_keywords|experiment_hardware|filenames|hypothesis|objective|research_impacts
+PSI-47,aerosol,1,99.1586,38.0000,12,3,2.6094,approach|curated_keywords|hypothesis|objective|title
+PSI-47,counter,1,66.0517,20.0000,4,1,3.3026,curated_keywords|objective
+PSI-47,daft,1,62.7491,19.0000,5,1,3.3026,acronym|curated_keywords|filenames|objective
+PSI-47,tsi,1,56.1439,17.0000,8,1,3.3026,approach|experiment_hardware|hypothesis|objective|research_impacts
+PSI-47,tsi p-trak,2,42.1080,12.7500,8,1,3.3026,approach|experiment_hardware|hypothesis|objective|research_impacts
+PSI-47,dust,1,40.5597,14.0000,3,2,2.8971,approach|title
+PSI-47,capillary,1,39.6310,12.0000,3,1,3.3026,approach|curated_keywords|hypothesis
+PSI-47,daft-2,1,36.3284,11.0000,4,1,3.3026,acronym|filenames|objective
+PSI-47,fire,1,35.9519,26.5000,6,13,1.3567,curated_keywords|publication|research_impacts|sub_research_area
+PSI-47,smoke,1,35.4514,18.5000,6,7,1.9163,curated_keywords|objective|publication|research_impacts
+PSI-47,feasibility,1,34.7654,12.0000,2,2,2.8971,title
+PSI-47,modified,1,34.7654,12.0000,6,2,2.8971,approach|hypothesis|objective
+PSI-47,condensate,1,33.0259,10.0000,2,1,3.3026,curated_keywords|objective
+PSI-47,device,1,33.0259,10.0000,2,1,3.3026,curated_keywords|hypothesis
+PSI-47,nuclei,1,33.0259,10.0000,2,1,3.3026,curated_keywords|objective
+PSI-47,measurement,1,32.3731,18.0000,5,8,1.7985,hypothesis|objective|title
+PSI-47,dust aerosol,2,29.7233,9.0000,2,1,3.3026,title
+PSI-47,measurement feasibility,2,29.7233,9.0000,2,1,3.3026,title
+PSI-47,laser,1,28.9712,10.0000,2,2,2.8971,curated_keywords|hypothesis
+PSI-47,aerosol measurement,2,27.3991,10.5000,3,3,2.6094,objective|title
+PSI-47,scattering,1,26.4207,8.0000,1,1,3.3026,curated_keywords
+PSI-47,particulate,1,26.0944,10.0000,2,3,2.6094,curated_keywords|objective
+PSI-47,microgravity,1,25.5000,25.5000,13,19,1.0000,approach|hypothesis|objective|project_type|publication|research_impacts
+PSI-47,condensate nuclei,2,24.7694,7.5000,2,1,3.3026,curated_keywords|objective
+PSI-47,daft daft-2,2,24.7694,7.5000,3,1,3.3026,acronym|objective
+PSI-47,nuclei counter,2,24.7694,7.5000,2,1,3.3026,curated_keywords|objective
+PSI-47,p-trak particulate,2,24.7694,7.5000,2,1,3.3026,curated_keywords|objective
+PSI-47,particulate counter,2,24.7694,7.5000,2,1,3.3026,curated_keywords|objective
+PSI-47,detection,1,24.2437,11.0000,5,5,2.2040,publication|research_impacts
+PSI-47,aerosol measurement feasibility,3,21.7971,6.6000,2,1,3.3026,title
+PSI-47,dust aerosol measurement,3,21.7971,6.6000,2,1,3.3026,title
+PSI-47,prevention,1,21.5231,10.5000,2,6,2.0498,curated_keywords|publication
+PSI-47,fluid,1,20.8755,8.0000,1,3,2.6094,curated_keywords
+PSI-47,motion,1,20.8755,8.0000,1,3,2.6094,curated_keywords
+PSI-47,fire prevention,2,20.5493,7.8750,2,3,2.6094,curated_keywords|publication
+PSI-47,aerosol device,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-47,capillary fluid,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-47,hardware testing,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-47,isopropanol,1,19.8155,6.0000,3,1,3.3026,hypothesis
+PSI-47,laser scattering,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-47,scattering aerosol,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-47,test-2,1,19.8155,6.0000,1,1,3.3026,title
+PSI-47,hardware,1,19.0904,8.0000,1,4,2.3863,curated_keywords
+PSI-47,condensate nuclei counter,3,18.1642,5.5000,2,1,3.3026,curated_keywords|objective
+PSI-47,p-trak particulate counter,3,18.1642,5.5000,2,1,3.3026,curated_keywords|objective
+PSI-47,fluid motion,2,17.3827,6.0000,1,2,2.8971,curated_keywords
+PSI-47,testing,1,16.9315,10.0000,2,9,1.6931,approach|curated_keywords
+PSI-47,safety,1,16.2801,12.0000,2,13,1.3567,curated_keywords|sub_research_area
+PSI-47,feasibility test,2,14.8616,4.5000,1,1,3.3026,title
+PSI-47,feasibility test-2,2,14.8616,4.5000,1,1,3.3026,title
+PSI-47,p-trak modified,2,14.8616,4.5000,3,1,3.3026,approach|hypothesis
+PSI-47,test dust,2,14.8616,4.5000,1,1,3.3026,title
+PSI-47,capillary fluid motion,3,14.5314,4.4000,1,1,3.3026,curated_keywords
+PSI-47,laser scattering aerosol,3,14.5314,4.4000,1,1,3.3026,curated_keywords
+PSI-47,scattering aerosol device,3,14.5314,4.4000,1,1,3.3026,curated_keywords
+PSI-47,ard,1,13.2103,4.0000,2,1,3.3026,approach
+PSI-47,counting,1,13.2103,4.0000,2,1,3.3026,approach|hypothesis
+PSI-47,isopropyl,1,13.2103,4.0000,2,1,3.3026,approach|objective
+PSI-47,recycle,1,13.2103,4.0000,2,1,3.3026,hypothesis|objective
+PSI-47,fire safety,2,12.2101,9.0000,2,13,1.3567,curated_keywords|sub_research_area
+PSI-47,combustion,1,12.0000,12.0000,2,19,1.0000,curated_keywords|research_area
+PSI-47,urban,1,11.8520,7.0000,4,9,1.6931,filenames|people|publication
+PSI-47,create,1,11.5885,4.0000,2,2,2.8971,approach|objective
+PSI-47,dusttrak,1,11.5885,4.0000,2,2,2.8971,approach|objective
+PSI-47,particulates,1,11.5885,4.0000,2,2,2.8971,hypothesis
+PSI-47,reliability,1,11.5885,4.0000,2,2,2.8971,objective|research_impacts
+PSI-47,work,1,11.5885,4.0000,2,2,2.8971,approach|hypothesis
+PSI-47,gary,1,11.0199,5.0000,2,5,2.2040,publication
+PSI-47,feasibility test dust,3,10.8985,3.3000,1,1,3.3026,title
+PSI-47,measurement feasibility test,3,10.8985,3.3000,1,1,3.3026,title
+PSI-47,measurement feasibility test-2,3,10.8985,3.3000,1,1,3.3026,title
+PSI-47,test dust aerosol,3,10.8985,3.3000,1,1,3.3026,title
+PSI-47,accurate,1,10.4378,4.0000,2,3,2.6094,objective|research_impacts
+PSI-47,alcohol,1,10.4378,4.0000,2,3,2.6094,approach|objective
+PSI-47,ruff,1,10.2491,5.0000,2,6,2.0498,publication
+PSI-47,david,1,10.1589,6.0000,3,9,1.6931,people|publication
+PSI-47,detection systems,2,9.9078,3.0000,2,1,3.3026,research_impacts
+PSI-47,isopropyl alcohol,2,9.9078,3.0000,2,1,3.3026,approach|objective
+PSI-47,modified microgravity,2,9.9078,3.0000,2,1,3.3026,approach|hypothesis
+PSI-47,modified p-trak,2,9.9078,3.0000,2,1,3.3026,approach|objective
+PSI-47,p-trak microgravity,2,9.9078,3.0000,2,1,3.3026,objective|research_impacts
+PSI-47,work microgravity,2,9.9078,3.0000,2,1,3.3026,approach|hypothesis
+PSI-47,test,1,9.3002,8.0000,2,16,1.1625,hypothesis|title
+PSI-47,systems,1,8.8184,6.5000,3,13,1.3567,publication|research_impacts
+PSI-47,detection smoke,2,8.8069,3.3750,2,3,2.6094,publication|research_impacts
+PSI-47,condenser,1,8.6914,3.0000,2,2,2.8971,approach|filenames
+PSI-47,ruff gary,2,8.2649,3.7500,2,5,2.2040,publication
+PSI-47,devon,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-47,modification,1,7.8283,3.0000,2,3,2.6094,approach|filenames
+PSI-47,tube,1,7.8283,3.0000,2,3,2.6094,approach|filenames
+PSI-47,urban david,2,7.6868,3.7500,2,6,2.0498,publication
+PSI-47,p-trak modified microgravity,3,7.2657,2.2000,2,1,3.3026,approach|hypothesis
+PSI-47,tsi p-trak microgravity,3,7.2657,2.2000,2,1,3.3026,objective|research_impacts
+PSI-47,tsi p-trak modified,3,7.2657,2.2000,2,1,3.3026,approach|hypothesis
+PSI-47,king,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-47,merrill,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-47,due,1,6.7726,4.0000,2,9,1.6931,approach|hypothesis
+PSI-47,15-liter,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-47,action,1,6.6052,2.0000,1,1,3.3026,hypothesis
+PSI-47,adaptation,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-47,aerosolized,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-47,air-flow,1,6.6052,2.0000,1,1,3.3026,hypothesis
+PSI-47,arizona,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-47,around,1,6.6052,2.0000,1,1,3.3026,hypothesis
+PSI-47,bags,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-47,become,1,6.6052,2.0000,1,1,3.3026,hypothesis
+PSI-47,capabilities,1,6.6052,2.0000,1,1,3.3026,hypothesis
+PSI-47,challenging,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-47,chosen,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-47,clog,1,6.6052,2.0000,1,1,3.3026,hypothesis
+PSI-47,cnc,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-47,commercially,1,6.6052,2.0000,1,1,3.3026,objective
+PSI-47,components,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-47,concerns,1,6.6052,2.0000,1,1,3.3026,objective
+PSI-47,condensing,1,6.6052,2.0000,1,1,3.3026,hypothesis
+PSI-47,contained,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-47,counted,1,6.6052,2.0000,1,1,3.3026,hypothesis
+PSI-47,created,1,6.6052,2.0000,1,1,3.3026,hypothesis
+PSI-47,designed,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-47,dispersion,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-47,ease,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-47,failure,1,6.6052,2.0000,1,1,3.3026,hypothesis
+PSI-47,filtered,1,6.6052,2.0000,1,1,3.3026,hypothesis
+PSI-47,functionality,1,6.6052,2.0000,1,1,3.3026,objective
+PSI-47,gn2,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-47,increased,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-47,mercury,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-47,mitigate,1,6.6052,2.0000,1,1,3.3026,objective
+PSI-47,modes,1,6.6052,2.0000,1,1,3.3026,hypothesis
+PSI-47,mylar,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-47,normally,1,6.6052,2.0000,1,1,3.3026,hypothesis
+PSI-47,obscured,1,6.6052,2.0000,1,1,3.3026,hypothesis
+PSI-47,operates,1,6.6052,2.0000,1,1,3.3026,hypothesis
+PSI-47,optics,1,6.6052,2.0000,1,1,3.3026,hypothesis
+PSI-47,orientation,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-47,per,1,6.6052,2.0000,1,1,3.3026,hypothesis
+PSI-47,red,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-47,redesigning,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-47,relied,1,6.6052,2.0000,1,1,3.3026,objective
+PSI-47,relies,1,6.6052,2.0000,1,1,3.3026,objective
+PSI-47,removing,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-47,responsible,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-47,spacecrafts,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-47,switch,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-47,th,1,6.6052,2.0000,1,1,3.3026,objective
+PSI-47,vessels,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-47,cleary,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-47,crewed,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-47,george,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-26,spread,1,69.4251,31.5000,11,5,2.2040,approach|curated_keywords|publication
+PSI-26,opposed-flow,1,55.0453,19.0000,8,2,2.8971,approach|publication
+PSI-26,flame,1,52.8946,45.5000,15,16,1.1625,approach|curated_keywords|publication|research_impacts
+PSI-26,bhattacharjee,1,50.6996,17.5000,7,2,2.8971,publication
+PSI-26,flame spread,2,48.7629,22.1250,10,5,2.2040,approach|curated_keywords|publication
+PSI-26,bass,1,44.9054,15.5000,6,2,2.8971,acronym|filenames|hypothesis|objective|publication|research_impacts
+PSI-26,boundary,1,37.6626,13.0000,3,2,2.8971,curated_keywords|publication
+PSI-26,layer,1,37.6626,13.0000,3,2,2.8971,curated_keywords|publication
+PSI-26,opposed-flow flame,2,32.5926,11.2500,6,2,2.8971,publication
+PSI-26,fire,1,32.5602,24.0000,5,13,1.3567,curated_keywords|objective|sub_research_area
+PSI-26,microgravity,1,32.5000,32.5000,15,19,1.0000,approach|experiment_hardware|hypothesis|objective|project_type|publication|research_impacts
+PSI-26,subrata,1,28.9712,10.0000,4,2,2.8971,publication
+PSI-26,boundary layer,2,28.2469,9.7500,3,2,2.8971,curated_keywords|publication
+PSI-26,damkohler,1,26.4207,8.0000,1,1,3.3026,curated_keywords
+PSI-26,suppression,1,25.1791,14.0000,2,8,1.7985,curated_keywords|title
+PSI-26,opposed-flow flame spread,3,23.9012,8.2500,6,2,2.8971,publication
+PSI-26,burning,1,23.7041,14.0000,5,9,1.6931,objective|research_impacts|title
+PSI-26,material,1,23.3806,13.0000,6,8,1.7985,hypothesis|objective|publication|research_impacts
+PSI-26,regime,1,23.1417,10.5000,2,5,2.2040,curated_keywords|publication
+PSI-26,bhattacharjee subrata,2,21.7284,7.5000,4,2,2.8971,publication
+PSI-26,flow,1,21.5066,18.5000,6,16,1.1625,approach|curated_keywords|objective|publication|research_impacts
+PSI-26,fabric,1,21.4766,9.0000,5,4,2.3863,approach|filenames
+PSI-26,forced,1,20.8755,8.0000,1,3,2.6094,curated_keywords
+PSI-26,damkohler number,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-26,suppression system,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-26,thin,1,19.5708,7.5000,3,3,2.6094,publication
+PSI-26,airflow,1,19.0904,8.0000,4,4,2.3863,approach
+PSI-26,safety,1,18.9934,14.0000,3,13,1.3567,curated_keywords|research_impacts|sub_research_area
+PSI-26,olson,1,18.7338,8.5000,4,5,2.2040,people|publication
+PSI-26,kinetic,1,17.6318,8.0000,1,5,2.2040,curated_keywords
+PSI-26,direction,1,17.3827,6.0000,3,2,2.8971,approach
+PSI-26,forced flow,2,17.3827,6.0000,1,2,2.8971,curated_keywords
+PSI-26,kinetic regime,2,17.3827,6.0000,1,2,2.8971,curated_keywords
+PSI-26,nasa-std-6001,1,17.3827,6.0000,3,2,2.8971,objective|research_impacts
+PSI-26,solids,1,17.3827,6.0000,1,2,2.8971,title
+PSI-26,gravity,1,16.7399,13.0000,6,14,1.2877,hypothesis|objective|publication|research_impacts
+PSI-26,nagarkar,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-26,combustion,1,16.5000,16.5000,7,19,1.0000,approach|publication|research_area|research_impacts
+PSI-26,system,1,16.3986,8.0000,1,6,2.0498,curated_keywords
+PSI-26,fire suppression,2,15.6566,6.0000,1,3,2.6094,curated_keywords
+PSI-26,preheating,1,14.8616,4.5000,2,1,3.3026,objective|publication
+PSI-26,fire suppression system,3,14.5314,4.4000,1,1,3.3026,curated_keywords
+PSI-26,forced flow flame,3,14.5314,4.4000,1,1,3.3026,curated_keywords
+PSI-26,carmignani,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-26,luca,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-26,paolini,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-26,simplified,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-26,materials,1,14.3881,8.0000,4,8,1.7985,hypothesis|objective|research_impacts
+PSI-26,number,1,14.3881,8.0000,1,8,1.7985,curated_keywords
+PSI-26,flow flame,2,14.3178,6.0000,1,4,2.3863,curated_keywords
+PSI-26,takahashi,1,14.3178,6.0000,3,4,2.3863,people|publication
+PSI-26,well,1,14.3178,6.0000,3,4,2.3863,approach|hypothesis
+PSI-26,spacecraft,1,13.5667,10.0000,4,13,1.3567,research_impacts|sub_research_area
+PSI-26,flammability,1,13.5452,8.0000,4,9,1.6931,filenames|objective|publication
+PSI-26,models,1,13.5452,8.0000,4,9,1.6931,research_impacts
+PSI-26,normal,1,13.4546,11.0000,5,15,1.2231,hypothesis|objective|publication|research_impacts
+PSI-26,concurrent-flow,1,13.2103,4.0000,2,1,3.3026,approach
+PSI-26,validated,1,13.2103,4.0000,2,1,3.3026,research_impacts
+PSI-26,glovebox,1,13.1246,5.5000,2,4,2.3863,experiment_hardware|publication
+PSI-26,miller,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-26,sl,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-26,burning suppression,2,13.0370,4.5000,1,2,2.8971,title
+PSI-26,suppression solids,2,13.0370,4.5000,1,2,2.8971,title
+PSI-26,flames,1,12.8768,10.0000,5,14,1.2877,approach|objective|research_impacts
+PSI-26,test,1,12.7877,11.0000,6,16,1.1625,filenames|hypothesis|research_impacts
+PSI-26,scale modeling,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-26,fire safety,2,12.2101,9.0000,2,13,1.3567,curated_keywords|sub_research_area
+PSI-26,scale,1,11.9315,5.0000,2,4,2.3863,publication
+PSI-26,novel,1,11.7425,4.5000,2,3,2.6094,publication|research_impacts
+PSI-26,geometries,1,11.5885,4.0000,2,2,2.8971,objective
+PSI-26,normal gravity,2,11.1926,8.2500,5,13,1.3567,hypothesis|objective|publication|research_impacts
+PSI-26,effect,1,11.0199,5.0000,2,5,2.2040,publication
+PSI-26,paul,1,10.7910,6.0000,3,8,1.7985,people|publication
+PSI-26,apparatus,1,10.2491,5.0000,2,6,2.0498,publication
+PSI-26,ferkul,1,10.1589,6.0000,3,9,1.6931,people|publication
+PSI-26,air flows,2,9.9078,3.0000,2,1,3.3026,approach
+PSI-26,combustion models,2,9.9078,3.0000,2,1,3.3026,research_impacts
+PSI-26,direction flame,2,9.9078,3.0000,2,1,3.3026,approach
+PSI-26,fire burning,2,9.9078,3.0000,2,1,3.3026,objective
+PSI-26,microgravity glovebox,2,9.8435,4.1250,2,4,2.3863,experiment_hardware|publication
+PSI-26,sl olson,2,9.7854,3.7500,2,3,2.6094,publication
+PSI-26,flammability microgravity,2,9.7778,3.3750,2,2,2.8971,objective|publication
+PSI-26,material normal,2,9.7778,3.3750,2,2,2.8971,hypothesis|publication
+PSI-26,burning suppression solids,3,9.5605,3.3000,1,2,2.8971,title
+PSI-26,longer,1,9.5452,4.0000,2,4,2.3863,hypothesis|objective
+PSI-26,release,1,9.5452,4.0000,2,4,2.3863,research_impacts
+PSI-26,tests,1,9.0650,6.0000,3,11,1.5108,objective|research_impacts
+PSI-26,modeling,1,8.9925,5.0000,2,8,1.7985,publication
+PSI-26,fuel,1,8.8184,6.5000,3,13,1.3567,approach|publication
+PSI-26,ground-based,1,8.8159,4.0000,2,5,2.2040,objective|research_impacts
+PSI-26,method,1,8.8159,4.0000,2,5,2.2040,objective|research_impacts
+PSI-26,selection,1,8.8159,4.0000,2,5,2.2040,research_impacts
+PSI-26,flames burning,2,8.6914,3.0000,2,2,2.8971,objective|research_impacts
+PSI-26,ground-based microgravity,2,8.6914,3.0000,2,2,2.8971,objective|research_impacts
+PSI-26,nasa-std-6001 test,2,8.6914,3.0000,2,2,2.8971,research_impacts
+PSI-26,air,1,8.5847,6.0000,3,12,1.4308,approach
+PSI-26,heat,1,8.5847,6.0000,3,12,1.4308,research_impacts
+PSI-26,sandra,1,8.3520,3.5000,2,4,2.3863,people|publication
+PSI-26,blow-off,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-26,bundy,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-26,cartnignani,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-26,difference,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-26,ebisawa,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-26,endo,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-26,gr,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-26,ihara,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-26,invited,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-26,jr,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-26,os24,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-26,os24-1,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-26,patel,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-26,rohit,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-26,signature,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-26,tadayoshi,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-26,thermodynamics,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-26,tomoya,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-26,radiation,1,7.9892,5.0000,2,10,1.5978,publication
+PSI-26,heat release,2,7.8283,3.0000,2,3,2.6094,research_impacts
+PSI-26,current,1,7.6652,4.0000,2,7,1.9163,research_impacts
+PSI-26,hypothesis,1,7.6652,4.0000,2,7,1.9163,hypothesis
+PSI-26,material flammability,2,7.4384,3.3750,2,5,2.2040,objective|publication
+PSI-26,direction flame spread,3,7.2657,2.2000,2,1,3.3026,approach
+PSI-26,bornand,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-26,channel,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-26,effective,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-26,fletcher,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-26,jm,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-26,johnston,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-26,js,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-26,laue,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-26,luz,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-26,nakamura,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-26,narrow,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-26,pepper,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-26,platform,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-26,predicting,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-26,shuhei,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-26,thickness,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-26,tien,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-26,tran,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-26,villaraza,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-26,wichman,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-26,available,1,7.1940,4.0000,2,8,1.7985,hypothesis|objective
+PSI-26,samples,1,7.1940,4.0000,2,8,1.7985,approach
+PSI-26,material flammability microgravity,3,7.1704,2.4750,2,2,2.8971,objective|publication
+PSI-26,material normal gravity,3,7.1704,2.4750,2,2,2.8971,hypothesis|publication
+PSI-26,understanding,1,6.7726,4.0000,2,9,1.6931,research_impacts
+PSI-26,29-gage,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-26,accessible,1,6.6052,2.0000,1,1,3.3026,objective
+PSI-26,afforded,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-69,droplet,1,232.6548,113.5000,45,6,2.0498,approach|curated_keywords|experiment_hardware|objective|proposal_title|publication
+PSI-69,droplets,1,142.2144,54.5000,23,3,2.6094,approach|hypothesis|publication
+PSI-69,shaw,1,140.5103,48.5000,20,2,2.8971,people|publication
+PSI-69,combustion,1,116.5000,116.5000,47,19,1.0000,approach|experiment_hardware|hypothesis|objective|publication|research_area|research_impacts
+PSI-69,droplet combustion,2,111.8575,46.8750,25,4,2.3863,approach|experiment_hardware|publication
+PSI-69,avedisian,1,108.6420,37.5000,15,2,2.8971,publication
+PSI-69,flex,1,80.8926,31.0000,10,3,2.6094,acronym|approach|curated_keywords|hypothesis|objective|publication|research_impacts
+PSI-69,williams,1,79.9409,33.5000,14,4,2.3863,people|publication
+PSI-69,nayagam,1,79.3430,36.0000,15,5,2.2040,people|publication
+PSI-69,liu,1,71.7595,27.5000,11,3,2.6094,publication
+PSI-69,n-heptane,1,71.5888,30.0000,12,4,2.3863,publication
+PSI-69,dryer,1,67.8454,26.0000,11,3,2.6094,people|publication
+PSI-69,extinction,1,67.1092,42.0000,19,10,1.5978,approach|hypothesis|objective|publication
+PSI-69,hicks,1,61.3218,23.5000,10,3,2.6094,people|publication
+PSI-69,farouk,1,58.7124,22.5000,9,3,2.6094,publication
+PSI-69,yu,1,58.7124,22.5000,9,3,2.6094,publication
+PSI-69,cheng,1,57.9424,20.0000,8,2,2.8971,publication
+PSI-69,methanol,1,57.9424,20.0000,8,2,2.8971,publication
+PSI-69,forman,1,56.0779,23.5000,10,4,2.3863,people|publication
+PSI-69,thomas,1,55.0993,25.0000,10,5,2.2040,publication
+PSI-69,vedha,1,51.7934,23.5000,10,5,2.2040,people|publication
+PSI-69,dietrich,1,46.2834,21.0000,9,5,2.2040,people|publication
+PSI-69,fire,1,46.1269,34.0000,13,13,1.3567,curated_keywords|hypothesis|objective|research_impacts|sub_research_area
+PSI-69,microgravity,1,45.5000,45.5000,20,19,1.0000,hypothesis|objective|project_type|proposal_title|publication|research_impacts
+PSI-69,avedisian thomas,2,43.4568,15.0000,8,2,2.8971,publication
+PSI-69,liu yu,2,43.4568,15.0000,8,2,2.8971,publication
+PSI-69,yu cheng,2,43.4568,15.0000,8,2,2.8971,publication
+PSI-69,burning,1,43.1753,25.5000,11,9,1.6931,approach|objective|publication
+PSI-69,flame,1,41.8507,36.0000,14,16,1.1625,approach|objective|proposal_title|publication|title
+PSI-69,benjamin,1,41.7510,16.0000,7,3,2.6094,people|publication
+PSI-69,frederick,1,41.7510,16.0000,7,3,2.6094,people|publication
+PSI-69,ambient,1,40.7735,18.5000,9,5,2.2040,approach|objective|publication
+PSI-69,reduced,1,40.6355,24.0000,10,9,1.6931,objective|publication|research_impacts
+PSI-69,williams forman,2,40.2687,16.8750,9,4,2.3863,publication
+PSI-69,tanvir,1,39.1416,15.0000,6,3,2.6094,publication
+PSI-69,nayagam vedha,2,37.1920,16.8750,9,5,2.2040,publication
+PSI-69,savas,1,36.2140,12.5000,5,2,2.8971,publication
+PSI-69,wei,1,36.2140,12.5000,5,2,2.8971,publication
+PSI-69,flames,1,36.0551,28.0000,7,14,1.2877,curated_keywords|publication|research_impacts
+PSI-69,safety,1,35.2735,26.0000,9,13,1.3567,curated_keywords|hypothesis|objective|research_impacts|sub_research_area
+PSI-69,environments,1,34.5952,25.5000,11,13,1.3567,hypothesis|objective|publication|research_impacts
+PSI-69,gravity,1,34.1236,26.5000,11,14,1.2877,hypothesis|objective|publication
+PSI-69,loi,1,33.0259,10.0000,5,1,3.3026,approach
+PSI-69,shaw benjamin,2,32.5926,11.2500,6,2,2.8971,publication
+PSI-69,liu yu cheng,3,31.8683,11.0000,8,2,2.8971,publication
+PSI-69,numerical,1,31.4739,17.5000,7,8,1.7985,publication
+PSI-69,methanol droplet,2,30.9617,9.3750,5,1,3.3026,publication
+PSI-69,tests,1,30.2165,20.0000,10,11,1.5108,approach|objective
+PSI-69,characteristics,1,29.7224,14.5000,6,6,2.0498,hypothesis|publication
+PSI-69,dryer frederick,2,29.3562,11.2500,6,3,2.6094,publication
+PSI-69,farouk tanvir,2,29.3562,11.2500,6,3,2.6094,publication
+PSI-69,air-diluent,1,28.9712,10.0000,4,2,2.8971,publication
+PSI-69,anthony,1,28.9712,10.0000,4,2,2.8971,publication
+PSI-69,gasoline,1,28.9712,10.0000,4,2,2.8971,publication
+PSI-69,spherically,1,28.9712,10.0000,4,2,2.8971,publication
+PSI-69,extinguishment,1,28.7038,11.0000,3,3,2.6094,objective|proposal_title|title
+PSI-69,reduced gravity,2,28.0258,14.6250,8,7,1.9163,objective|publication
+PSI-69,oxygen,1,27.1632,17.0000,8,10,1.5978,approach|publication
+PSI-69,modeling,1,26.9776,15.0000,6,8,1.7985,publication
+PSI-69,daniel,1,26.2492,11.0000,5,4,2.3863,people|publication
+PSI-69,fibers,1,26.0944,10.0000,4,3,2.6094,publication
+PSI-69,oxygen mole,2,24.7694,7.5000,5,1,3.3026,approach
+PSI-69,influences,1,24.6255,8.5000,4,2,2.8971,approach|publication
+PSI-69,michael,1,24.2437,11.0000,5,5,2.2040,people|publication
+PSI-69,flame extinguishment,2,23.9012,8.2500,3,2,2.8971,objective|proposal_title|title
+PSI-69,conditions,1,23.7418,17.5000,8,13,1.3567,approach|hypothesis|objective|publication
+PSI-69,liquid,1,23.5730,11.5000,5,6,2.0498,hypothesis|objective|publication
+PSI-69,suppressant,1,23.1770,8.0000,4,2,2.8971,approach|hypothesis|objective
+PSI-69,fuel,1,23.0635,17.0000,5,13,1.3567,curated_keywords|hypothesis|publication|research_impacts
+PSI-69,fire safety,2,22.3851,16.5000,7,13,1.3567,curated_keywords|hypothesis|objective|research_impacts|sub_research_area
+PSI-69,air-diluent environments,2,21.7284,7.5000,4,2,2.8971,publication
+PSI-69,ambient oxygen,2,21.7284,7.5000,5,2,2.8971,approach
+PSI-69,bd,1,21.7284,7.5000,3,2,2.8971,publication
+PSI-69,dwyer,1,21.7284,7.5000,3,2,2.8971,publication
+PSI-69,fiber,1,21.7284,7.5000,3,2,2.8971,publication
+PSI-69,hicks michael,2,21.7284,7.5000,4,2,2.8971,publication
+PSI-69,n-butanol,1,21.7284,7.5000,3,2,2.8971,publication
+PSI-69,savas anthony,2,21.7284,7.5000,4,2,2.8971,publication
+PSI-69,shringi,1,21.7284,7.5000,3,2,2.8971,publication
+PSI-69,symmetric,1,21.7284,7.5000,3,2,2.8971,publication
+PSI-69,droplet combustion microgravity,3,21.5279,8.2500,6,3,2.6094,publication
+PSI-69,diffusion,1,20.7719,13.0000,3,10,1.5978,curated_keywords|publication
+PSI-69,mole,1,20.4982,10.0000,5,6,2.0498,approach
+PSI-69,quasi-steady,1,20.4982,10.0000,4,6,2.0498,publication
+PSI-69,fiber-supported,1,20.2798,7.0000,3,2,2.8971,approach|publication
+PSI-69,fuel sooting,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-69,procedure,1,19.8155,6.0000,3,1,3.3026,approach
+PSI-69,slow,1,19.8155,6.0000,3,1,3.3026,approach
+PSI-69,cool-flame,1,19.5708,7.5000,3,3,2.6094,publication
+PSI-69,fa,1,19.5708,7.5000,3,3,2.6094,publication
+PSI-69,n-heptane droplet,2,19.5708,7.5000,4,3,2.6094,publication
+PSI-69,tanvir dryer,2,19.5708,7.5000,4,3,2.6094,publication
+PSI-69,cool,1,19.4733,9.5000,4,6,2.0498,publication|research_impacts
+PSI-69,sooting,1,19.0904,8.0000,1,4,2.3863,curated_keywords
+PSI-69,combustion microgravity,2,19.0479,11.2500,6,9,1.6931,publication
+PSI-69,flame extinction,2,18.7921,7.8750,5,4,2.3863,approach|objective|publication
+PSI-69,flammability,1,18.6246,11.0000,5,9,1.6931,hypothesis|objective|publication
+PSI-69,ignition,1,18.4484,9.0000,4,6,2.0498,approach|publication
+PSI-69,detailed,1,18.2048,9.5000,4,7,1.9163,objective|publication
+PSI-69,ambient oxygen mole,3,18.1642,5.5000,5,1,3.3026,approach
+PSI-69,dietrich daniel,2,17.8972,7.5000,4,4,2.3863,publication
+PSI-69,fraction,1,17.6318,8.0000,4,5,2.2040,approach
+PSI-69,choi,1,17.3827,6.0000,3,2,2.8971,people|publication
+PSI-69,continue,1,17.3827,6.0000,3,2,2.8971,approach
+PSI-69,mole fraction,2,17.3827,6.0000,4,2,2.8971,approach
+PSI-69,select,1,17.3827,6.0000,3,2,2.8971,approach
+PSI-69,carbon-dioxide,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-69,bd shaw,2,16.2963,5.6250,3,2,2.8971,publication
+PSI-69,cheng avedisian,2,16.2963,5.6250,3,2,2.8971,publication
+PSI-69,cheng savas,2,16.2963,5.6250,3,2,2.8971,publication
+PSI-69,computational modeling,2,16.2963,5.6250,3,2,2.8971,publication
+PSI-69,numerical modeling,2,16.2963,5.6250,3,2,2.8971,publication
+PSI-69,shaw wei,2,16.2963,5.6250,3,2,2.8971,publication
+PSI-69,spherically symmetric,2,16.2963,5.6250,3,2,2.8971,publication
+PSI-69,symmetric droplet,2,16.2963,5.6250,3,2,2.8971,publication
+PSI-69,vedha williams,2,16.2963,5.6250,3,2,2.8971,publication
+PSI-69,effects,1,16.2801,12.0000,5,13,1.3567,objective|publication
+PSI-69,spacecraft,1,16.2801,12.0000,2,13,1.3567,curated_keywords|sub_research_area
+PSI-69,cool flames,2,15.7033,7.1250,4,5,2.2040,publication|research_impacts
+PSI-69,extinction characteristics,2,15.2099,5.2500,3,2,2.8971,hypothesis|publication
+PSI-69,extinction droplet,2,14.8616,4.5000,3,1,3.3026,approach
+PSI-69,fa williams,2,14.6781,5.6250,3,3,2.6094,publication
+PSI-69,n-heptane droplets,2,14.6781,5.6250,3,3,2.6094,publication
+PSI-69,vedha dietrich,2,14.6781,5.6250,3,3,2.6094,publication
+PSI-69,oxygen mole fraction,3,14.5314,4.4000,4,1,3.3026,approach
+PSI-69,enriched,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-69,evaporation,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-69,ghata,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-69,jet-a,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-69,jin,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-69,methyl,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-69,oxygen-inert,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-69,propanol,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-69,sub-millimeter,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-69,submillimeter,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-69,surrogates,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-69,xu,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-69,mixtures,1,14.3722,7.5000,3,7,1.9163,publication
+PSI-69,farouk tanvir dryer,3,14.3519,5.5000,4,3,2.6094,publication
+PSI-69,n-heptane droplet combustion,3,14.3519,5.5000,4,3,2.6094,publication
+PSI-69,tanvir dryer frederick,3,14.3519,5.5000,4,3,2.6094,publication
+PSI-69,ground-based,1,14.3258,6.5000,3,5,2.2040,approach|objective|publication
+PSI-69,fuel droplets,2,13.6995,5.2500,3,3,2.6094,hypothesis|publication
+PSI-69,microgravity conditions,2,13.6536,7.1250,4,7,1.9163,hypothesis|publication
+PSI-69,methanol droplet combustion,3,13.6232,4.1250,3,1,3.3026,publication
+PSI-69,spacecraft fire,2,13.5974,9.0000,2,11,1.5108,curated_keywords|sub_research_area
+PSI-69,convection,1,13.4140,7.0000,3,7,1.9163,hypothesis|publication
+PSI-69,completion,1,13.2103,4.0000,2,1,3.3026,approach
+PSI-69,efficacy,1,13.2103,4.0000,2,1,3.3026,hypothesis
+PSI-69,enhancing,1,13.2103,4.0000,2,1,3.3026,objective|research_impacts
+PSI-98,fire,1,77.3305,57.0000,18,13,1.3567,curated_keywords|hypothesis|objective|proposal_title|publication|research_impacts|sub_research_area|title
+PSI-98,saffire,1,50.8840,19.5000,6,3,2.6094,curated_keywords|experiment_hardware|filenames|publication
+PSI-98,cygnus,1,39.1416,15.0000,4,3,2.6094,approach|curated_keywords|experiment_hardware|research_impacts
+PSI-98,spacecraft,1,38.6652,28.5000,10,13,1.3567,hypothesis|proposal_title|publication|research_impacts|sub_research_area|title
+PSI-98,safety,1,35.9519,26.5000,8,13,1.3567,curated_keywords|hypothesis|publication|research_impacts|title
+PSI-98,saffire-i,1,33.9227,13.0000,5,3,2.6094,acronym|approach|filenames|research_impacts
+PSI-98,ruff,1,30.7473,15.0000,6,6,2.0498,publication
+PSI-98,flame,1,29.0630,25.0000,9,16,1.1625,approach|curated_keywords|publication|research_impacts
+PSI-98,spread,1,28.6516,13.0000,3,5,2.2040,curated_keywords|publication
+PSI-98,oxidizer,1,26.4207,8.0000,1,1,3.3026,curated_keywords
+PSI-98,spacecraft fire,2,25.4952,16.8750,7,11,1.5108,hypothesis|proposal_title|publication|sub_research_area|title
+PSI-98,fire safety,2,24.9289,18.3750,7,13,1.3567,curated_keywords|hypothesis|publication|research_impacts|title
+PSI-98,solid,1,23.9536,12.5000,3,7,1.9163,approach|curated_keywords|publication
+PSI-98,urban,1,22.8575,13.5000,6,9,1.6931,people|publication
+PSI-98,gary,1,22.0397,10.0000,4,5,2.2040,publication
+PSI-98,large,1,21.5231,10.5000,5,6,2.0498,approach|hypothesis|objective|publication
+PSI-98,cotton,1,20.8755,8.0000,4,3,2.6094,approach
+PSI-98,vehicle,1,20.8755,8.0000,4,3,2.6094,approach|hypothesis|research_impacts
+PSI-98,experiment-i,1,19.8155,6.0000,1,1,3.3026,title
+PSI-98,oxidizer flux,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-98,solid burning,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-98,flux,1,19.0904,8.0000,1,4,2.3863,curated_keywords
+PSI-98,david,1,18.6246,11.0000,5,9,1.6931,people|publication
+PSI-98,flammability,1,18.6246,11.0000,5,9,1.6931,objective|publication|research_impacts
+PSI-98,ien,1,17.8972,7.5000,3,4,2.3863,publication
+PSI-98,sandra,1,17.8972,7.5000,3,4,2.3863,publication
+PSI-98,smoldering,1,17.6318,8.0000,1,5,2.2040,curated_keywords
+PSI-98,flame spread,2,17.3563,7.8750,2,5,2.2040,curated_keywords|publication
+PSI-98,sample,1,17.2466,9.0000,5,7,1.9163,approach|filenames
+PSI-98,ferkul,1,16.9315,10.0000,4,9,1.6931,publication
+PSI-98,james,1,16.5298,7.5000,3,5,2.2040,publication
+PSI-98,olson,1,16.5298,7.5000,3,5,2.2040,publication
+PSI-98,saffire-1,1,16.5129,5.0000,3,1,3.3026,approach|filenames
+PSI-98,status,1,15.6566,6.0000,3,3,2.6094,filenames|publication
+PSI-98,fabric,1,15.5109,6.5000,3,4,2.3863,approach|publication
+PSI-98,microgravity,1,15.0000,15.0000,7,19,1.0000,hypothesis|project_type|proposal_title|publication|research_impacts
+PSI-98,safety experiment-i,2,14.8616,4.5000,1,1,3.3026,title
+PSI-98,fire saffire,2,14.6781,5.6250,3,3,2.6094,publication
+PSI-98,ien james,2,14.6781,5.6250,3,3,2.6094,publication
+PSI-98,solid burning rate,3,14.5314,4.4000,1,1,3.3026,curated_keywords
+PSI-98,chengyao,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-98,christian,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-98,easton,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-98,eigenbrod,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-98,fujita,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-98,jose,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-98,legros,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-98,nickolay,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-98,osamu,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-98,rouvreau,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-98,smirnov,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-98,torero,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-98,surface,1,14.3881,8.0000,1,8,1.7985,curated_keywords
+PSI-98,burning rate,2,14.3178,6.0000,1,4,2.3863,curated_keywords
+PSI-98,surface combustion,2,14.3178,6.0000,1,4,2.3863,curated_keywords
+PSI-98,flow,1,13.9502,12.0000,6,16,1.1625,approach
+PSI-98,burning,1,13.5452,8.0000,1,9,1.6931,curated_keywords
+PSI-98,paul,1,13.4888,7.5000,3,8,1.7985,publication
+PSI-98,olson sandra,2,13.4229,5.6250,3,4,2.3863,publication
+PSI-98,smoke,1,13.4140,7.0000,2,7,1.9163,proposal_title|sub_research_area
+PSI-98,duct,1,13.2238,6.0000,3,5,2.2040,approach
+PSI-98,risk,1,13.2238,6.0000,3,5,2.2040,hypothesis
+PSI-98,meters,1,13.2103,4.0000,2,1,3.3026,approach
+PSI-98,carlos,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-98,fernandez-pello,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-98,grunde,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-98,guillaume,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-98,jomaas,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-98,liao,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-98,niehaus,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-98,ya-ting,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-98,ruff gary,2,12.3973,5.6250,3,5,2.2040,publication
+PSI-98,combustion,1,12.0000,12.0000,2,19,1.0000,curated_keywords|research_area
+PSI-98,ga,1,11.9315,5.0000,2,4,2.3863,publication
+PSI-98,fiberglass,1,11.5885,4.0000,2,2,2.8971,approach
+PSI-98,ferkul paul,2,11.5302,5.6250,3,6,2.0498,publication
+PSI-98,urban david,2,11.5302,5.6250,3,6,2.0498,publication
+PSI-98,john,1,11.0199,5.0000,2,5,2.2040,publication
+PSI-98,fire safety experiment-i,3,10.8985,3.3000,1,1,3.3026,title
+PSI-98,david ferkul,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-98,easton john,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-98,eigenbrod christian,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-98,fernandez-pello carlos,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-98,fujita osamu,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-98,gary easton,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-98,legros guillaume,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-98,nickolay fujita,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-98,sandra ruff,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-98,smirnov nickolay,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-98,torero jose,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-98,rate,1,10.8534,8.0000,1,13,1.3567,curated_keywords
+PSI-98,material,1,10.7910,6.0000,3,8,1.7985,approach|objective|research_impacts
+PSI-98,spacecraft fire saffire,3,10.7639,4.1250,3,3,2.6094,publication
+PSI-98,scale,1,10.7383,4.5000,2,4,2.3863,objective|publication
+PSI-98,cargo,1,10.4378,4.0000,2,3,2.6094,research_impacts
+PSI-98,uncertainty,1,10.4378,4.0000,2,3,2.6094,hypothesis
+PSI-98,development status,2,9.7854,3.7500,2,3,2.6094,publication
+PSI-98,jomaas grunde,2,9.7854,3.7500,2,3,2.6094,publication
+PSI-98,liao ya-ting,2,9.7854,3.7500,2,3,2.6094,publication
+PSI-98,significant,1,9.5452,4.0000,2,4,2.3863,hypothesis
+PSI-98,samples,1,8.9925,5.0000,2,8,1.7985,publication
+PSI-98,ga ruff,2,8.9486,3.7500,2,4,2.3863,publication
+PSI-98,paul olson,2,8.9486,3.7500,2,4,2.3863,publication
+PSI-98,cotton fiberglass,2,8.6914,3.0000,2,2,2.8971,approach
+PSI-98,enclosure,1,8.6914,3.0000,1,2,2.8971,experiment_hardware
+PSI-98,fire smoke,2,8.6914,3.0000,1,2,2.8971,sub_research_area
+PSI-98,smoke distribution,2,8.6914,3.0000,1,2,2.8971,sub_research_area
+PSI-98,development,1,8.5847,6.0000,3,12,1.4308,filenames|publication
+PSI-98,adam,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-98,beyond,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-98,cowlard,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-98,sebastien,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-98,distribution,1,8.1993,4.0000,1,6,2.0498,sub_research_area
+PSI-98,small,1,8.0933,4.5000,2,8,1.7985,publication|research_impacts
+PSI-98,fires,1,7.9892,5.0000,2,10,1.5978,hypothesis|proposal_title
+PSI-98,david ferkul paul,3,7.9671,2.7500,2,2,2.8971,publication
+PSI-98,gary easton john,3,7.9671,2.7500,2,2,2.8971,publication
+PSI-98,nickolay fujita osamu,3,7.9671,2.7500,2,2,2.8971,publication
+PSI-98,olson sandra ruff,3,7.9671,2.7500,2,2,2.8971,publication
+PSI-98,ruff gary easton,3,7.9671,2.7500,2,2,2.8971,publication
+PSI-98,sandra ruff gary,3,7.9671,2.7500,2,2,2.8971,publication
+PSI-98,smirnov nickolay fujita,3,7.9671,2.7500,2,2,2.8971,publication
+PSI-98,urban david ferkul,3,7.9671,2.7500,2,2,2.8971,publication
+PSI-98,characterization,1,7.8283,3.0000,1,3,2.6094,proposal_title
+PSI-98,growth,1,7.6192,4.5000,2,9,1.6931,publication|research_impacts
+PSI-98,flame growth,2,7.4384,3.3750,2,5,2.2040,publication|research_impacts
+PSI-98,fires improved,2,7.4308,2.2500,1,1,3.3026,proposal_title
+PSI-98,fire smoke distribution,3,7.2657,2.2000,1,1,3.3026,sub_research_area
+PSI-98,spacecraft fire smoke,3,7.2657,2.2000,1,1,3.3026,sub_research_area
+PSI-98,balazs,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-98,bastien,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-98,low-speed,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-98,toth,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-98,exploration,1,7.1940,4.0000,2,8,1.7985,hypothesis|research_impacts
+PSI-98,measure,1,7.1940,4.0000,2,8,1.7985,approach|research_impacts
+PSI-98,objectives,1,7.0823,5.5000,3,14,1.2877,filenames|objective|publication
+PSI-98,effects,1,6.7834,5.0000,2,13,1.3567,publication
+PSI-98,cameras,1,6.7726,4.0000,2,9,1.6931,approach|research_impacts
+PSI-98,spacecraft fire safety,3,6.6476,4.4000,2,11,1.5108,hypothesis|title
+PSI-98,detection,1,6.6119,3.0000,1,5,2.2040,proposal_title
+PSI-98,flow duct,2,6.6119,3.0000,2,5,2.2040,approach
+PSI-98,flow velocity,2,6.6119,3.0000,2,5,2.2040,approach
+PSI-98,0.94,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-98,burns,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-98,called,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-98,consumed,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-98,flammable,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-98,integrity,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-98,maintains,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-98,piece,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-101,smoke,1,99.6471,52.0000,20,7,1.9163,curated_keywords|filenames|hypothesis|objective|publication|research_impacts|title
+PSI-101,same-r,1,82.5646,25.0000,11,1,3.3026,acronym|approach|filenames|hypothesis|objective|research_impacts
+PSI-101,aerosol,1,43.0557,16.5000,6,3,2.6094,filenames|hypothesis|publication|title
+PSI-101,cleary,1,41.7510,16.0000,7,3,2.6094,people|publication
+PSI-101,mulholland,1,41.7510,16.0000,7,3,2.6094,people|publication
+PSI-101,kapton,1,40.2700,13.9000,5,2,2.8971,cameras|curated_keywords|filenames|media_filenames
+PSI-101,pyrell,1,40.2700,13.9000,5,2,2.8971,approach|cameras|curated_keywords|filenames|media_filenames
+PSI-101,yuan,1,38.1807,16.0000,7,4,2.3863,people|publication
+PSI-101,yang,1,35.2636,16.0000,7,5,2.2040,people|publication
+PSI-101,bryg,1,32.6180,12.5000,5,3,2.6094,publication
+PSI-101,meyer,1,32.6180,12.5000,5,3,2.6094,publication
+PSI-101,ruff,1,30.7473,15.0000,6,6,2.0498,publication
+PSI-101,silicon,1,29.7233,9.0000,2,1,3.3026,curated_keywords|filenames
+PSI-101,technology,1,27.5226,9.5000,6,2,2.8971,affiliation|research_impacts
+PSI-101,urban,1,27.0904,16.0000,7,9,1.6931,people|publication
+PSI-101,detection,1,26.4477,12.0000,6,5,2.2040,filenames|publication|research_impacts
+PSI-101,microscopy,1,26.4207,8.0000,1,1,3.3026,curated_keywords
+PSI-101,rubber,1,26.4207,8.0000,1,1,3.3026,curated_keywords
+PSI-101,aerosol measurement,2,26.4206,10.1250,4,3,2.6094,publication|title
+PSI-101,smoke aerosol,2,26.4206,10.1250,4,3,2.6094,publication|title
+PSI-101,measurement,1,26.0784,14.5000,5,8,1.7985,filenames|publication|title
+PSI-101,same-2,1,26.0741,9.0000,2,2,2.8971,curated_keywords|filenames
+PSI-101,teflon,1,26.0741,9.0000,2,2,2.8971,curated_keywords|filenames
+PSI-101,spacecraft,1,25.7768,19.0000,5,13,1.3567,curated_keywords|publication|research_impacts|sub_research_area
+PSI-101,fire,1,25.0985,18.5000,5,13,1.3567,curated_keywords|publication|research_impacts|sub_research_area
+PSI-101,electron,1,23.1770,8.0000,1,2,2.8971,curated_keywords
+PSI-101,transmission,1,23.1770,8.0000,1,2,2.8971,curated_keywords
+PSI-101,george,1,22.1802,8.5000,4,3,2.6094,people|publication
+PSI-101,jiann,1,22.1802,8.5000,4,3,2.6094,people|publication
+PSI-101,victoria,1,21.7284,7.5000,3,2,2.8971,publication
+PSI-101,zg,1,21.7284,7.5000,3,2,2.8971,publication
+PSI-101,cotton,1,20.8755,8.0000,1,3,2.6094,curated_keywords
+PSI-101,detectors,1,20.8755,8.0000,4,3,2.6094,hypothesis|research_impacts
+PSI-101,particles,1,20.8755,8.0000,4,3,2.6094,hypothesis|objective
+PSI-101,zeng-guang,1,20.2835,8.5000,4,4,2.3863,people|publication
+PSI-101,electron microscopy,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-101,experiment-2,1,19.8155,6.0000,3,1,3.3026,filenames|publication
+PSI-101,experiment-reflight,1,19.8155,6.0000,1,1,3.3026,title
+PSI-101,original,1,19.8155,6.0000,3,1,3.3026,hypothesis|objective|research_impacts
+PSI-101,silicon rubber,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-101,ground,1,19.5708,7.5000,4,3,2.6094,approach|filenames|objective|publication
+PSI-101,marit,1,19.5708,7.5000,3,3,2.6094,publication
+PSI-101,smoke aerosol measurement,3,19.3751,7.4250,4,3,2.6094,publication|title
+PSI-101,detector,1,18.8313,6.5000,3,2,2.8971,approach|publication|research_impacts
+PSI-101,thomas,1,18.7338,8.5000,4,5,2.2040,people|publication
+PSI-101,david,1,18.6246,11.0000,5,9,1.6931,people|publication
+PSI-101,diagnostic,1,18.2661,7.0000,3,3,2.6094,approach|experiment_hardware|objective
+PSI-101,particle,1,17.8972,7.5000,4,4,2.3863,filenames|hypothesis|publication
+PSI-101,transmission electron,2,17.3827,6.0000,1,2,2.8971,curated_keywords
+PSI-101,lampwick,1,17.0930,5.9000,4,2,2.8971,cameras|filenames|media_filenames
+PSI-101,soot,1,16.6191,11.0000,2,11,1.5108,curated_keywords|experiment_hardware
+PSI-101,gary,1,16.5298,7.5000,3,5,2.2040,publication
+PSI-101,greenberg,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-101,spacecraft fire,2,16.4302,10.8750,3,11,1.5108,curated_keywords|publication|sub_research_area
+PSI-101,bryg victoria,2,16.2963,5.6250,3,2,2.8971,publication
+PSI-101,cleary yang,2,16.2963,5.6250,3,2,2.8971,publication
+PSI-101,zg yuan,2,16.2963,5.6250,3,2,2.8971,publication
+PSI-101,safety,1,16.2801,12.0000,2,13,1.3567,curated_keywords|sub_research_area
+PSI-101,larger,1,15.6566,6.0000,3,3,2.6094,hypothesis
+PSI-101,evaluation,1,15.4278,7.0000,3,5,2.2040,publication|research_impacts
+PSI-101,conditions,1,14.9234,11.0000,6,13,1.3567,approach|filenames|hypothesis|objective
+PSI-101,measurement experiment-reflight,2,14.8616,4.5000,1,1,3.3026,title
+PSI-101,reflight,1,14.8616,4.5000,2,1,3.3026,hypothesis|publication
+PSI-101,cleary thomas,2,14.6781,5.6250,3,3,2.6094,publication
+PSI-101,meyer marit,2,14.6781,5.6250,3,3,2.6094,publication
+PSI-101,mulholland george,2,14.6781,5.6250,3,3,2.6094,publication
+PSI-101,thomas yang,2,14.6781,5.6250,3,3,2.6094,publication
+PSI-101,yang jiann,2,14.6781,5.6250,3,3,2.6094,publication
+PSI-101,transmission electron microscopy,3,14.5314,4.4000,1,1,3.3026,curated_keywords
+PSI-101,yuan zeng-guang,2,13.4229,5.6250,3,4,2.3863,publication
+PSI-101,low-gravity,1,13.2238,6.0000,3,5,2.2040,filenames|publication
+PSI-101,experience,1,13.2103,4.0000,2,1,3.3026,approach|objective
+PSI-101,grids,1,13.2103,4.0000,2,1,3.3026,objective
+PSI-101,heating,1,13.2103,4.0000,2,1,3.3026,approach
+PSI-101,replace,1,13.2103,4.0000,2,1,3.3026,approach
+PSI-101,ruff gary,2,12.3973,5.6250,3,5,2.2040,publication
+PSI-101,measurement experiment-2,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-101,distribution,1,12.2989,6.0000,3,6,2.0498,approach|hypothesis|objective
+PSI-101,fire safety,2,12.2101,9.0000,2,13,1.3567,curated_keywords|sub_research_area
+PSI-101,size,1,11.9838,7.5000,4,10,1.5978,filenames|hypothesis|objective|publication
+PSI-101,hardware,1,11.9315,5.0000,2,4,2.3863,approach|experiment_hardware
+PSI-101,particulate,1,11.7425,4.5000,2,3,2.6094,objective|publication
+PSI-101,employed,1,11.5885,4.0000,2,2,2.8971,approach|objective
+PSI-101,smokes,1,11.5885,4.0000,2,2,2.8971,hypothesis|research_impacts
+PSI-101,urban david,2,11.5302,5.6250,3,6,2.0498,publication
+PSI-101,test,1,11.0439,9.5000,5,16,1.1625,approach|filenames|publication
+PSI-101,aerosol measurement experiment-reflight,3,10.8985,3.3000,1,1,3.3026,title
+PSI-101,marit urban,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-101,mulholland zg,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-101,urban ruff,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-101,victoria cleary,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-101,yang mulholland,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-101,zeng-guang bryg,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-101,cleary thomas yang,3,10.7639,4.1250,3,3,2.6094,publication
+PSI-101,thomas yang jiann,3,10.7639,4.1250,3,3,2.6094,publication
+PSI-101,density,1,10.4378,4.0000,2,3,2.6094,hypothesis
+PSI-101,produced,1,10.4378,4.0000,2,3,2.6094,hypothesis
+PSI-101,utilized,1,10.4378,4.0000,2,3,2.6094,approach|research_impacts
+PSI-101,flames,1,10.3015,8.0000,1,14,1.2877,curated_keywords
+PSI-101,gravity,1,10.3015,8.0000,4,14,1.2877,hypothesis|objective|research_impacts
+PSI-101,flight,1,10.1751,7.5000,4,13,1.3567,approach|filenames|publication
+PSI-101,reduced,1,10.1589,6.0000,3,9,1.6931,hypothesis|research_impacts
+PSI-101,morphology,1,10.1399,3.5000,2,2,2.8971,filenames|publication
+PSI-101,spacecraft fire safety,3,9.9714,6.6000,2,11,1.5108,curated_keywords|sub_research_area
+PSI-101,refer,1,9.9078,3.0000,1,1,3.3026,experiment_hardware
+PSI-101,same-r flight,2,9.9078,3.0000,2,1,3.3026,approach
+PSI-101,david ruff,2,9.7854,3.7500,2,3,2.6094,publication
+PSI-101,george yuan,2,9.7854,3.7500,2,3,2.6094,publication
+PSI-101,smoke particulate,2,9.7778,3.3750,2,2,2.8971,objective|publication
+PSI-101,developed,1,9.5452,4.0000,2,4,2.3863,approach|research_impacts
+PSI-101,higher,1,9.5452,4.0000,2,4,2.3863,approach|hypothesis
+PSI-101,sizes,1,9.5452,4.0000,2,4,2.3863,hypothesis|objective
+PSI-101,aerosol measurement experiment-2,3,9.0821,2.7500,2,1,3.3026,publication
+PSI-101,tests,1,9.0650,6.0000,3,11,1.5108,approach
+PSI-101,detection smoke,2,8.8069,3.3750,2,3,2.6094,publication|research_impacts
+PSI-101,baseline,1,8.6914,3.0000,2,2,2.8971,filenames|research_impacts
+PSI-101,coagulation,1,8.6914,3.0000,2,2,2.8971,filenames|hypothesis
+PSI-101,comparitive,1,8.6914,3.0000,1,2,2.8971,experiment_hardware
+PSI-101,larger particles,2,8.6914,3.0000,2,2,2.8971,hypothesis
+PSI-101,mp4,1,8.6914,3.0000,3,2,2.8971,filenames
+PSI-101,number density,2,8.6914,3.0000,2,2,2.8971,hypothesis
+PSI-101,size distribution,2,8.6914,3.0000,2,2,2.8971,hypothesis|objective
+PSI-101,smoke detectors,2,8.6914,3.0000,2,2,2.8971,hypothesis|research_impacts
+PSI-101,fischer,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-101,droplet,1,8.1993,4.0000,2,6,2.0498,hypothesis|objective
+PSI-101,final,1,8.1993,4.0000,2,6,2.0498,experiment_hardware|filenames
+PSI-101,lead,1,8.1993,4.0000,2,6,2.0498,hypothesis|research_impacts
+PSI-101,liquid,1,8.1993,4.0000,2,6,2.0498,hypothesis|objective
+PSI-101,bryg victoria cleary,3,7.9671,2.7500,2,2,2.8971,publication
+PSI-101,cleary yang mulholland,3,7.9671,2.7500,2,2,2.8971,publication
+PSI-101,marit urban david,3,7.9671,2.7500,2,2,2.8971,publication
+PSI-101,meyer marit urban,3,7.9671,2.7500,2,2,2.8971,publication
+PSI-101,mulholland zg yuan,3,7.9671,2.7500,2,2,2.8971,publication
+PSI-101,victoria cleary thomas,3,7.9671,2.7500,2,2,2.8971,publication
+PSI-101,yang mulholland zg,3,7.9671,2.7500,2,2,2.8971,publication
+PSI-101,yuan zeng-guang bryg,3,7.9671,2.7500,2,2,2.8971,publication
+PSI-101,zeng-guang bryg victoria,3,7.9671,2.7500,2,2,2.8971,publication
+PSI-101,flight tests,2,7.8283,3.0000,2,3,2.6094,approach
+PSI-101,future,1,7.7261,6.0000,3,14,1.2877,research_impacts
+PSI-101,hardware refer,2,7.4308,2.2500,1,1,3.3026,experiment_hardware
+PSI-101,refer final,2,7.4308,2.2500,1,1,3.3026,experiment_hardware
+PSI-101,same-r flight tests,3,7.2657,2.2000,2,1,3.3026,approach
+PSI-101,number,1,7.1940,4.0000,2,8,1.7985,hypothesis
+PSI-101,david ruff gary,3,7.1760,2.7500,2,3,2.6094,publication
+PSI-101,george yuan zeng-guang,3,7.1760,2.7500,2,3,2.6094,publication
+PSI-101,mulholland george yuan,3,7.1760,2.7500,2,3,2.6094,publication
+PSI-101,urban david ruff,3,7.1760,2.7500,2,3,2.6094,publication
+PSI-101,comparison,1,6.7070,3.5000,2,7,1.9163,filenames|publication
+PSI-101,applicable,1,6.6052,2.0000,1,1,3.3026,hypothesis
+PSI-101,assumption,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-102,smoke,1,154.2614,80.5000,32,7,1.9163,approach|curated_keywords|filenames|hypothesis|objective|publication|research_impacts|title
+PSI-102,mulholland,1,74.3690,28.5000,12,3,2.6094,people|publication
+PSI-102,cleary,1,67.8454,26.0000,11,3,2.6094,people|publication
+PSI-102,yuan,1,65.6231,27.5000,11,4,2.3863,publication
+PSI-102,yang,1,57.3033,26.0000,11,5,2.2040,people|publication
+PSI-102,urban,1,56.7204,33.5000,14,9,1.6931,people|publication
+PSI-102,ruff,1,56.3701,27.5000,11,6,2.0498,publication
+PSI-102,detection,1,53.9973,24.5000,11,5,2.2040,filenames|publication|research_impacts
+PSI-102,gary,1,44.0795,20.0000,8,5,2.2040,publication
+PSI-102,george,1,41.7510,16.0000,7,3,2.6094,people|publication
+PSI-102,jiann,1,41.7510,16.0000,7,3,2.6094,people|publication
+PSI-102,fire,1,38.6652,28.5000,9,13,1.3567,curated_keywords|publication|research_impacts|sub_research_area
+PSI-102,david,1,35.5561,21.0000,9,9,1.6931,people|publication
+PSI-102,thomas,1,35.2636,16.0000,7,5,2.2040,people|publication
+PSI-102,spacecraft,1,34.5952,25.5000,10,13,1.3567,approach|publication|research_impacts|sub_research_area
+PSI-102,low-gravity,1,33.0596,15.0000,6,5,2.2040,publication
+PSI-102,ruff gary,2,33.0596,15.0000,8,5,2.2040,publication
+PSI-102,bryg,1,32.6180,12.5000,5,3,2.6094,publication
+PSI-102,detectors,1,31.3133,12.0000,6,3,2.6094,approach|hypothesis|research_impacts
+PSI-102,particle,1,31.0218,13.0000,6,4,2.3863,approach|hypothesis|publication
+PSI-102,urban david,2,30.7473,15.0000,8,6,2.0498,publication
+PSI-102,cleary thomas,2,29.3562,11.2500,6,3,2.6094,publication
+PSI-102,mulholland george,2,29.3562,11.2500,6,3,2.6094,publication
+PSI-102,thomas yang,2,29.3562,11.2500,6,3,2.6094,publication
+PSI-102,yang jiann,2,29.3562,11.2500,6,3,2.6094,publication
+PSI-102,victoria,1,28.9712,10.0000,4,2,2.8971,publication
+PSI-102,technology,1,27.5226,9.5000,6,2,2.8971,affiliation|research_impacts
+PSI-102,bio-astronautics,1,26.4207,8.0000,1,1,3.3026,curated_keywords
+PSI-102,characterization,1,26.0944,10.0000,4,3,2.6094,publication
+PSI-102,david ruff,2,24.4635,9.3750,5,3,2.6094,publication
+PSI-102,zeng-guang,1,23.8629,10.0000,4,4,2.3863,publication
+PSI-102,particulate,1,23.4849,9.0000,4,3,2.6094,approach|objective|publication
+PSI-102,smoldering,1,22.0397,10.0000,2,5,2.2040,curated_keywords|hypothesis
+PSI-102,bryg victoria,2,21.7284,7.5000,4,2,2.8971,publication
+PSI-102,zg,1,21.7284,7.5000,3,2,2.8971,publication
+PSI-102,cleary thomas yang,3,21.5279,8.2500,6,3,2.6094,publication
+PSI-102,thomas yang jiann,3,21.5279,8.2500,6,3,2.6094,publication
+PSI-102,glovebox,1,21.4766,9.0000,4,4,2.3863,approach|publication
+PSI-102,pyrolysis,1,21.4668,6.5000,3,1,3.3026,objective|publication
+PSI-102,aerosol,1,20.8755,8.0000,2,3,2.6094,hypothesis|title
+PSI-102,detector,1,20.2798,7.0000,3,2,2.8971,publication|research_impacts
+PSI-102,marit,1,19.5708,7.5000,3,3,2.6094,publication
+PSI-102,meyer,1,19.5708,7.5000,3,3,2.6094,publication
+PSI-102,combustion,1,19.0000,19.0000,5,19,1.0000,approach|curated_keywords|publication|research_area
+PSI-102,smoke characterization,2,18.5770,5.6250,3,1,3.3026,publication
+PSI-102,david ruff gary,3,17.9399,6.8750,5,3,2.6094,publication
+PSI-102,urban david ruff,3,17.9399,6.8750,5,3,2.6094,publication
+PSI-102,msg,1,17.8972,7.5000,3,4,2.3863,publication
+PSI-102,yuan zeng-guang,2,17.8972,7.5000,4,4,2.3863,publication
+PSI-102,conditions,1,17.6368,13.0000,6,13,1.3567,approach|hypothesis|objective|publication
+PSI-102,fire detection,2,16.5298,7.5000,4,5,2.2040,publication
+PSI-102,brooker,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-102,gw,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-102,sheredy,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-102,tg,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-102,zengguang,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-102,zg yuan,2,16.2963,5.6250,3,2,2.8971,publication
+PSI-102,safety,1,16.2801,12.0000,2,13,1.3567,curated_keywords|sub_research_area
+PSI-102,spacecraft fire,2,15.8637,10.5000,5,11,1.5108,publication|sub_research_area
+PSI-102,field,1,15.6566,6.0000,3,3,2.6094,approach
+PSI-102,larger,1,15.6566,6.0000,3,3,2.6094,hypothesis
+PSI-102,sizes,1,15.5109,6.5000,3,4,2.3863,hypothesis|objective|publication
+PSI-102,properties,1,15.4278,7.0000,3,5,2.2040,objective|publication
+PSI-102,measurement,1,15.2873,8.5000,2,8,1.7985,publication|title
+PSI-102,smoke particle,2,15.2099,5.2500,3,2,2.8971,hypothesis|publication
+PSI-102,smoke particulate,2,15.2099,5.2500,3,2,2.8971,objective|publication
+PSI-102,overheated,1,14.8616,4.5000,2,1,3.3026,approach|publication
+PSI-102,meyer marit,2,14.6781,5.6250,3,3,2.6094,publication
+PSI-102,gravity-dependent,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-102,surface,1,14.3881,8.0000,1,8,1.7985,curated_keywords
+PSI-102,spacecraft fire detection,3,14.3519,5.5000,4,3,2.6094,publication
+PSI-102,surface combustion,2,14.3178,6.0000,1,4,2.3863,curated_keywords
+PSI-102,microgravity,1,14.0000,14.0000,7,19,1.0000,filenames|hypothesis|project_type|publication
+PSI-102,detection smoke,2,13.6995,5.2500,3,3,2.6094,publication|research_impacts
+PSI-102,mass,1,13.2238,6.0000,3,5,2.2040,approach|hypothesis
+PSI-102,thermophoretic,1,13.2103,4.0000,2,1,3.3026,approach
+PSI-102,diagnostic,1,13.0472,5.0000,2,3,2.6094,approach|experiment_hardware
+PSI-102,reggie,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-102,spivey,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-102,smoke detectors,2,13.0370,4.5000,3,2,2.8971,approach|hypothesis|research_impacts
+PSI-102,analyzed,1,12.6728,5.7500,4,5,2.2040,approach|file_folders|filenames
+PSI-102,brooker john,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-102,cleary zg,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-102,george cleary,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-102,gw mulholland,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-102,jiann yuan,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-102,low-gravity conditions,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-102,mulholland yang,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-102,tg cleary,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-102,urban gw,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-102,yang tg,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-102,yuan zengguang,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-102,droplet,1,12.2989,6.0000,3,6,2.0498,hypothesis|objective
+PSI-102,loss,1,12.2989,6.0000,3,6,2.0498,approach
+PSI-102,fire safety,2,12.2101,9.0000,2,13,1.3567,curated_keywords|sub_research_area
+PSI-102,plan,1,12.1219,5.5000,3,5,2.2040,filenames|publication|research_impacts
+PSI-102,size,1,11.9838,7.5000,4,10,1.5978,filenames|hypothesis|objective|publication
+PSI-102,hardware,1,11.9315,5.0000,2,4,2.3863,approach|experiment_hardware
+PSI-102,aerosol measurement,2,11.7425,4.5000,1,3,2.6094,title
+PSI-102,generated,1,11.7425,4.5000,2,3,2.6094,approach|publication
+PSI-102,smoke aerosol,2,11.7425,4.5000,1,3,2.6094,title
+PSI-102,smokes,1,11.5885,4.0000,2,2,2.8971,hypothesis|research_impacts
+PSI-102,vapor,1,11.5885,4.0000,2,2,2.8971,hypothesis|objective
+PSI-102,video,1,11.4977,6.0000,3,7,1.9163,approach
+PSI-102,overheated spacecraft,2,11.1462,3.3750,2,1,3.3026,approach|publication
+PSI-102,smoke generated,2,11.1462,3.3750,2,1,3.3026,approach|publication
+PSI-102,john,1,11.0199,5.0000,2,5,2.2040,publication
+PSI-102,characterization smoke,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-102,cleary yang,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-102,gary mulholland,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-102,george bryg,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-102,marit urban,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-102,particulate spacecraft,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-102,smoke detector,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-102,spacecraft smoke,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-102,yang mulholland,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-102,zeng-guang ruff,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-102,density,1,10.4378,4.0000,2,3,2.6094,hypothesis
+PSI-102,particles,1,10.4378,4.0000,2,3,2.6094,hypothesis
+PSI-102,produced,1,10.4378,4.0000,2,3,2.6094,hypothesis
+PSI-102,gravity,1,10.3015,8.0000,4,14,1.2877,hypothesis|objective|research_impacts
+PSI-102,reduced,1,10.1589,6.0000,3,9,1.6931,hypothesis|research_impacts
+PSI-102,evaluation,1,9.9179,4.5000,2,5,2.2040,publication|research_impacts
+PSI-102,mass loss,2,9.9078,3.0000,2,1,3.3026,approach
+PSI-102,gary cleary,2,9.7854,3.7500,2,3,2.6094,publication
+PSI-102,glovebox msg,2,9.7854,3.7500,2,3,2.6094,publication
+PSI-102,sample,1,9.5815,5.0000,3,7,1.9163,approach|filenames
+PSI-102,developed,1,9.5452,4.0000,2,4,2.3863,objective|research_impacts
+PSI-102,duration,1,9.5452,4.0000,2,4,2.3863,approach|research_impacts
+PSI-102,response,1,9.5452,4.0000,2,4,2.3863,approach|hypothesis
+PSI-102,environment,1,9.3001,6.5000,3,12,1.4308,hypothesis|objective|publication
+PSI-102,prevention,1,9.2242,4.5000,2,6,2.0498,publication|research_impacts
+PSI-102,characterization smoke particulate,3,9.0821,2.7500,2,1,3.3026,publication
+PSI-102,cleary zg yuan,3,9.0821,2.7500,2,1,3.3026,publication
+PSI-102,george cleary thomas,3,9.0821,2.7500,2,1,3.3026,publication
+PSI-102,gw mulholland yang,3,9.0821,2.7500,2,1,3.3026,publication
+PSI-102,jiann yuan zengguang,3,9.0821,2.7500,2,1,3.3026,publication
+PSI-102,mulholland george cleary,3,9.0821,2.7500,2,1,3.3026,publication
+PSI-102,mulholland yang tg,3,9.0821,2.7500,2,1,3.3026,publication
+PSI-102,smoke characterization smoke,3,9.0821,2.7500,2,1,3.3026,publication
+PSI-102,tg cleary zg,3,9.0821,2.7500,2,1,3.3026,publication
+PSI-102,urban gw mulholland,3,9.0821,2.7500,2,1,3.3026,publication
+PSI-102,yang jiann yuan,3,9.0821,2.7500,2,1,3.3026,publication
+PSI-102,yang tg cleary,3,9.0821,2.7500,2,1,3.3026,publication
+PSI-102,microgravity glovebox,2,8.9486,3.7500,2,4,2.3863,publication
+PSI-102,fire prevention,2,8.8069,3.3750,2,3,2.6094,publication|research_impacts
+PSI-102,prevention detection,2,8.8069,3.3750,2,3,2.6094,publication|research_impacts
+PSI-102,aging,1,8.6914,3.0000,2,2,2.8971,approach|filenames
+PSI-102,baseline,1,8.6914,3.0000,2,2,2.8971,filenames|research_impacts
+PSI-102,comparitive,1,8.6914,3.0000,1,2,2.8971,experiment_hardware
+PSI-159,cool,1,73.7936,36.0000,15,6,2.0498,hypothesis|objective|proposal_title|publication|research_impacts|title
+PSI-159,cool diffusion,2,54.4927,16.5000,10,1,3.3026,hypothesis|objective|proposal_title|publication|research_impacts
+PSI-159,flames,1,52.7950,41.0000,17,14,1.2877,approach|filenames|hypothesis|objective|proposal_title|publication|research_impacts|sub_research_area|title
+PSI-159,diffusion,1,41.5438,26.0000,12,10,1.5978,approach|hypothesis|objective|proposal_title|publication|research_impacts
+PSI-159,cool diffusion flames,3,39.9613,12.1000,10,1,3.3026,hypothesis|objective|proposal_title|publication|research_impacts
+PSI-159,n-butane,1,39.6310,12.0000,3,1,3.3026,curated_keywords|hypothesis|objective
+PSI-159,combustion,1,29.0000,29.0000,8,19,1.0000,curated_keywords|experiment_hardware|research_area|research_impacts|title
+PSI-159,kinetics,1,28.6975,14.0000,4,6,2.0498,curated_keywords|hypothesis|objective|research_impacts
+PSI-159,ethane,1,26.4207,8.0000,1,1,3.3026,curated_keywords
+PSI-159,intensified,1,26.4207,8.0000,1,1,3.3026,curated_keywords
+PSI-159,negative-temperature,1,26.4207,8.0000,1,1,3.3026,curated_keywords
+PSI-159,diffusion flames,2,26.3643,16.5000,10,10,1.5978,hypothesis|objective|proposal_title|publication|research_impacts
+PSI-159,porous,1,26.0944,10.0000,2,3,2.6094,curated_keywords|hypothesis
+PSI-159,coefficient,1,23.1770,8.0000,1,2,2.8971,curated_keywords
+PSI-159,formaldehyde,1,23.1770,8.0000,1,2,2.8971,curated_keywords
+PSI-159,cfi-g,1,23.1181,7.0000,2,1,3.3026,acronym|filenames
+PSI-159,acme,1,20.4982,10.0000,3,6,2.0498,acronym|experiment_hardware|filenames
+PSI-159,chemical,1,20.4982,10.0000,2,6,2.0498,curated_keywords|objective
+PSI-159,inverse,1,20.2798,7.0000,4,2,2.8971,approach|filenames|hypothesis|objective
+PSI-159,intensified video,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-159,negative-temperature coefficient,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-159,video camera,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-159,low-temperature,1,19.0904,8.0000,1,4,2.3863,curated_keywords
+PSI-159,spherical,1,18.2048,9.5000,4,7,1.9163,approach|hypothesis|proposal_title|publication
+PSI-159,axelbaum,1,17.3827,6.0000,3,2,2.8971,people|publication
+PSI-159,cool flames,2,16.5298,7.5000,3,5,2.2040,hypothesis|research_impacts|title
+PSI-159,camera,1,16.3986,8.0000,1,6,2.0498,curated_keywords
+PSI-159,dilution,1,16.3986,8.0000,1,6,2.0498,curated_keywords
+PSI-159,loss,1,16.3986,8.0000,1,6,2.0498,curated_keywords
+PSI-159,low-temperature combustion,2,15.6566,6.0000,1,3,2.6094,curated_keywords
+PSI-159,porous burner,2,15.6566,6.0000,1,3,2.6094,curated_keywords
+PSI-159,chemical kinetics,2,15.3737,7.5000,2,6,2.0498,curated_keywords|objective
+PSI-159,burner,1,15.3303,8.0000,1,7,1.9163,curated_keywords
+PSI-159,video,1,15.3303,8.0000,1,7,1.9163,curated_keywords
+PSI-159,acme cfi-g,2,14.8616,4.5000,1,1,3.3026,acronym
+PSI-159,intensified video camera,3,14.5314,4.4000,1,1,3.3026,curated_keywords
+PSI-159,kendyl,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-159,waddell,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-159,gases,1,14.3178,6.0000,1,4,2.3863,title
+PSI-159,heat loss,2,14.3178,6.0000,1,4,2.3863,curated_keywords
+PSI-159,sunderland,1,14.3178,6.0000,3,4,2.3863,people|publication
+PSI-159,engines,1,13.2238,6.0000,3,5,2.2040,research_impacts
+PSI-159,peter,1,13.2238,6.0000,3,5,2.2040,people|publication
+PSI-159,richard,1,13.2238,6.0000,3,5,2.2040,people|publication
+PSI-159,efficiencies,1,13.2103,4.0000,2,1,3.3026,research_impacts
+PSI-159,fluent,1,13.2103,4.0000,2,1,3.3026,hypothesis|objective
+PSI-159,n-pentane,1,13.2103,4.0000,2,1,3.3026,hypothesis|objective
+PSI-159,tad,1,13.2103,4.0000,2,1,3.3026,hypothesis|objective
+PSI-159,flames gases,2,13.0370,4.5000,1,2,2.8971,title
+PSI-159,advanced,1,12.7827,8.0000,2,10,1.5978,objective|title
+PSI-159,gaseous,1,12.5896,7.0000,2,8,1.7985,proposal_title|sub_research_area
+PSI-159,gaseous fuels,2,12.5280,5.2500,2,4,2.3863,proposal_title|sub_research_area
+PSI-159,range,1,12.2989,6.0000,3,6,2.0498,approach|hypothesis|objective
+PSI-159,fuels,1,12.2101,9.0000,3,13,1.3567,approach|proposal_title|sub_research_area
+PSI-159,ju,1,11.9315,5.0000,2,4,2.3863,publication
+PSI-159,microgravity cool,2,11.7425,4.5000,1,3,2.6094,title
+PSI-159,cause,1,11.5885,4.0000,2,2,2.8971,hypothesis
+PSI-159,cfd,1,11.5885,4.0000,2,2,2.8971,objective
+PSI-159,hot,1,11.5885,4.0000,2,2,2.8971,hypothesis
+PSI-159,propane,1,11.5885,4.0000,2,2,2.8971,hypothesis|objective
+PSI-159,zst,1,11.5885,4.0000,2,2,2.8971,hypothesis|objective
+PSI-159,heat,1,11.4463,8.0000,1,12,1.4308,curated_keywords
+PSI-159,flow,1,11.0439,9.5000,5,16,1.1625,approach|filenames|hypothesis|objective|publication
+PSI-159,nayagam,1,11.0199,5.0000,2,5,2.2040,publication
+PSI-159,vedha,1,11.0199,5.0000,2,5,2.2040,publication
+PSI-159,cool flames gases,3,10.8985,3.3000,1,1,3.3026,title
+PSI-159,axelbaum richard,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-159,flames burning,2,10.8642,3.7500,2,2,2.8971,hypothesis|proposal_title
+PSI-159,waddell kendyl,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-159,broad,1,10.4378,4.0000,2,3,2.6094,approach|objective
+PSI-159,internal,1,10.4378,4.0000,2,3,2.6094,research_impacts
+PSI-159,transportation,1,10.4378,4.0000,2,3,2.6094,research_impacts
+PSI-159,collaborative,1,9.9078,3.0000,1,1,3.3026,proposal_title
+PSI-159,flame kinetics,2,9.9078,3.0000,2,1,3.3026,hypothesis|research_impacts
+PSI-159,flames cool,2,9.9078,3.0000,2,1,3.3026,hypothesis|research_impacts
+PSI-159,fluent flow,2,9.9078,3.0000,2,1,3.3026,hypothesis|objective
+PSI-159,internal combustion,2,9.9078,3.0000,2,1,3.3026,research_impacts
+PSI-159,n-butane n-pentane,2,9.9078,3.0000,2,1,3.3026,hypothesis|objective
+PSI-159,propane n-butane,2,9.9078,3.0000,2,1,3.3026,hypothesis|objective
+PSI-159,range zst,2,9.9078,3.0000,2,1,3.3026,hypothesis|objective
+PSI-159,zst tad,2,9.9078,3.0000,2,1,3.3026,hypothesis|objective
+PSI-159,energy,1,9.5452,4.0000,2,4,2.3863,research_impacts
+PSI-159,flame,1,9.3002,8.0000,4,16,1.1625,approach|hypothesis|research_impacts
+PSI-159,diffusion flames burning,3,9.0821,2.7500,2,1,3.3026,hypothesis|proposal_title
+PSI-159,sunderland peter,2,8.9486,3.7500,2,4,2.3863,publication
+PSI-159,flames broad,2,8.6914,3.0000,2,2,2.8971,approach|objective
+PSI-159,normal inverse,2,8.6914,3.0000,2,2,2.8971,approach|objective
+PSI-159,advanced combustion,2,8.6233,4.5000,1,7,1.9163,title
+PSI-159,combustion microgravity cool,3,8.6111,3.3000,1,3,2.6094,title
+PSI-159,microgravity cool flames,3,8.6111,3.3000,1,3,2.6094,title
+PSI-159,burning,1,8.4657,5.0000,2,9,1.6931,hypothesis|proposal_title
+PSI-159,forman,1,8.3520,3.5000,2,4,2.3863,people|publication
+PSI-159,williams,1,8.3520,3.5000,2,4,2.3863,people|publication
+PSI-159,nayagam vedha,2,8.2649,3.7500,2,5,2.2040,publication
+PSI-159,stably,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-159,stratified,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-159,increase,1,8.1993,4.0000,2,6,2.0498,hypothesis|research_impacts
+PSI-159,combustion engines,2,7.8283,3.0000,2,3,2.6094,research_impacts
+PSI-159,cool flame,2,7.8283,3.0000,2,3,2.6094,hypothesis|research_impacts
+PSI-159,possible,1,7.6652,4.0000,2,7,1.9163,hypothesis|objective
+PSI-159,thermal,1,7.6652,4.0000,2,7,1.9163,research_impacts
+PSI-159,combustion microgravity,2,7.6192,4.5000,1,9,1.6931,title
+PSI-159,burning gaseous,2,7.4308,2.2500,1,1,3.3026,proposal_title
+PSI-159,collaborative spherical,2,7.4308,2.2500,1,1,3.3026,proposal_title
+PSI-159,spherical cool,2,7.4308,2.2500,1,1,3.3026,proposal_title
+PSI-159,cool flame kinetics,3,7.2657,2.2000,2,1,3.3026,hypothesis|research_impacts
+PSI-159,flames cool diffusion,3,7.2657,2.2000,2,1,3.3026,hypothesis|research_impacts
+PSI-159,fluent flow rate,3,7.2657,2.2000,2,1,3.3026,hypothesis|objective
+PSI-159,internal combustion engines,3,7.2657,2.2000,2,1,3.3026,research_impacts
+PSI-159,propane n-butane n-pentane,3,7.2657,2.2000,2,1,3.3026,hypothesis|objective
+PSI-159,range zst tad,3,7.2657,2.2000,2,1,3.3026,hypothesis|objective
+PSI-159,gas-fueled,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-159,han,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-159,irace,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-159,minhyeng,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-159,phillip,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-159,stagnation,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-159,pressures,1,7.1940,4.0000,2,8,1.7985,approach|hypothesis
+PSI-159,microgravity,1,7.0000,7.0000,2,19,1.0000,project_type|title
+PSI-159,testing,1,6.7726,4.0000,2,9,1.6931,hypothesis|objective
+PSI-159,understanding,1,6.7726,4.0000,2,9,1.6931,hypothesis|research_impacts
+PSI-159,advanced combustion microgravity,3,6.7644,3.3000,1,6,2.0498,title
+PSI-159,dennis,1,6.7070,3.5000,2,7,1.9163,people|publication
+PSI-159,flames gaseous,2,6.6119,3.0000,1,5,2.2040,sub_research_area
+PSI-159,flow rate,2,6.6119,3.0000,2,5,2.2040,hypothesis|objective
+PSI-159,advantage,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-159,discovered,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-159,disseminate,1,6.6052,2.0000,1,1,3.3026,objective
+PSI-159,even,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-159,exponentially,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-159,facilitate,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-159,grown,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-159,impeded,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-159,lower,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-159,since,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-159,ultra-lean,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-159,whose,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-159,widely,1,6.6052,2.0000,1,1,3.3026,objective
+PSI-159,world,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-159,yields,1,6.6052,2.0000,1,1,3.3026,objective
+PSI-159,kim,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-159,yiguang,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-159,acme combustion,2,6.5185,2.2500,1,2,2.8971,experiment_hardware
+PSI-159,measurements,1,6.3913,4.0000,2,10,1.5978,objective|research_impacts
+PSI-159,21112a1,1,6.2749,1.9000,2,1,3.3026,filenames|media_filenames
+PSI-159,21112a2,1,6.2749,1.9000,2,1,3.3026,filenames|media_filenames
+PSI-159,21112a3,1,6.2749,1.9000,2,1,3.3026,filenames|media_filenames
+PSI-159,21222a1,1,6.2749,1.9000,2,1,3.3026,filenames|media_filenames
+PSI-159,21222a2,1,6.2749,1.9000,2,1,3.3026,filenames|media_filenames
+PSI-159,21222a3,1,6.2749,1.9000,2,1,3.3026,filenames|media_filenames
+PSI-10,axelbaum,1,220.1811,76.0000,31,2,2.8971,people|publication
+PSI-10,flames,1,115.2475,89.5000,37,14,1.2877,approach|hypothesis|objective|proposal_title|publication|sub_research_area
+PSI-10,diffusion,1,112.6475,70.5000,29,10,1.5978,approach|hypothesis|objective|proposal_title|publication
+PSI-10,spherical,1,99.6471,52.0000,22,7,1.9163,approach|hypothesis|objective|publication
+PSI-10,sunderland,1,91.8723,38.5000,16,4,2.3863,people|publication
+PSI-10,richard,1,90.3629,41.0000,17,5,2.2040,people|publication
+PSI-10,axelbaum richard,2,86.9136,30.0000,16,2,2.8971,publication
+PSI-10,chao,1,82.5646,25.0000,10,1,3.3026,publication
+PSI-10,diffusion flames,2,76.0970,47.6250,26,10,1.5978,hypothesis|objective|proposal_title|publication
+PSI-10,yablonsky,1,66.0517,20.0000,8,1,3.3026,publication
+PSI-10,spherical diffusion,2,61.9867,28.1250,16,5,2.2040,approach|hypothesis|objective|publication
+PSI-10,flame,1,55.8009,48.0000,15,16,1.1625,acronym|approach|curated_keywords|filenames|objective|proposal_title|publication|title
+PSI-10,peter axelbaum,2,49.5388,15.0000,8,1,3.3026,publication
+PSI-10,peter,1,46.2834,21.0000,9,5,2.2040,people|publication
+PSI-10,irace,1,43.4568,15.0000,6,2,2.8971,publication
+PSI-10,kendyl,1,43.4568,15.0000,6,2,2.8971,publication
+PSI-10,waddell,1,43.4568,15.0000,6,2,2.8971,publication
+PSI-10,flame design,2,43.3464,13.1250,4,1,3.3026,acronym|proposal_title|publication|title
+PSI-10,spherical diffusion flames,3,43.3112,18.1500,14,4,2.3863,hypothesis|objective|publication
+PSI-10,extinction,1,43.1416,27.0000,9,10,1.5978,curated_keywords|objective|publication
+PSI-10,gregory,1,41.2823,12.5000,5,1,3.3026,publication
+PSI-10,inception,1,41.2823,12.5000,5,1,3.3026,publication
+PSI-10,inverse,1,39.1111,13.5000,7,2,2.8971,approach|filenames|objective|publication
+PSI-10,peter axelbaum richard,3,36.3284,11.0000,8,1,3.3026,publication
+PSI-10,sunderland peter axelbaum,3,36.3284,11.0000,8,1,3.3026,publication
+PSI-10,soot,1,36.2598,24.0000,10,11,1.5108,hypothesis|objective|publication
+PSI-10,phillip,1,36.2140,12.5000,5,2,2.8971,publication
+PSI-10,radiative,1,35.9513,22.5000,7,10,1.5978,curated_keywords|objective|publication
+PSI-10,sunderland peter,2,35.7944,15.0000,8,4,2.3863,publication
+PSI-10,constales,1,33.0259,10.0000,4,1,3.3026,publication
+PSI-10,denis,1,33.0259,10.0000,4,1,3.3026,publication
+PSI-10,kumfer,1,33.0259,10.0000,4,1,3.3026,publication
+PSI-10,oxygen-enriched,1,33.0259,10.0000,4,1,3.3026,publication
+PSI-10,skeen,1,33.0259,10.0000,4,1,3.3026,publication
+PSI-10,waddell kendyl,2,32.5926,11.2500,6,2,2.8971,publication
+PSI-10,kinetics,1,31.7722,15.5000,4,6,2.0498,curated_keywords|publication
+PSI-10,combustion,1,31.5000,31.5000,10,19,1.0000,experiment_hardware|publication|research_area|title
+PSI-10,chao axelbaum,2,30.9617,9.3750,5,1,3.3026,publication
+PSI-10,soot inception,2,30.9617,9.3750,5,1,3.3026,publication
+PSI-10,yablonsky gregory,2,30.9617,9.3750,5,1,3.3026,publication
+PSI-10,microgravity spherical,2,29.7233,9.0000,5,1,3.3026,hypothesis|publication
+PSI-10,microgravity,1,29.5000,29.5000,11,19,1.0000,experiment_hardware|hypothesis|project_type|publication|title
+PSI-10,limits,1,29.3310,20.5000,9,12,1.4308,objective|publication
+PSI-10,frolov,1,28.0720,8.5000,4,1,3.3026,people|publication
+PSI-10,design,1,27.9503,18.5000,5,11,1.5108,acronym|filenames|proposal_title|publication|title
+PSI-10,irace phillip,2,27.1605,9.3750,5,2,2.8971,publication
+PSI-10,ethylene,1,26.6477,13.0000,3,6,2.0498,curated_keywords|publication
+PSI-10,effects,1,26.4552,19.5000,8,13,1.3567,objective|publication
+PSI-10,filament,1,26.4207,8.0000,1,1,3.3026,curated_keywords
+PSI-10,stoichiometric,1,26.4207,8.0000,1,1,3.3026,curated_keywords
+PSI-10,structure,1,25.6228,12.5000,5,6,2.0498,publication
+PSI-10,radiative extinction,2,25.6212,11.6250,4,5,2.2040,curated_keywords|publication
+PSI-10,constales denis,2,24.7694,7.5000,4,1,3.3026,publication
+PSI-10,lecoustre,1,24.7694,7.5000,3,1,3.3026,publication
+PSI-10,wendong,1,24.7694,7.5000,3,1,3.3026,publication
+PSI-10,obtain,1,23.1770,8.0000,4,2,2.8971,objective
+PSI-10,pyrometry,1,23.1770,8.0000,1,2,2.8971,curated_keywords
+PSI-10,fraction,1,22.0397,10.0000,2,5,2.2040,curated_keywords|objective
+PSI-10,microgravity spherical diffusion,3,21.7971,6.6000,5,1,3.3026,hypothesis|publication
+PSI-10,burner-stabilized,1,21.7284,7.5000,3,2,2.8971,publication
+PSI-10,wu,1,21.7284,7.5000,3,2,2.8971,publication
+PSI-10,dilution,1,21.5231,10.5000,2,6,2.0498,curated_keywords|publication
+PSI-10,thin,1,20.8755,8.0000,1,3,2.6094,curated_keywords
+PSI-10,gaseous,1,20.6828,11.5000,4,8,1.7985,publication|sub_research_area
+PSI-10,acme,1,20.4982,10.0000,3,6,2.0498,acronym|experiment_hardware|filenames
+PSI-10,presence,1,20.2798,7.0000,3,2,2.8971,objective|publication
+PSI-10,ratio,1,20.2798,7.0000,3,2,2.8971,hypothesis|publication
+PSI-10,filament pyrometry,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-10,mixture fraction,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-10,stoichiometric mixture,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-10,thin filament,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-10,fei,1,19.5708,7.5000,3,3,2.6094,publication
+PSI-10,laminar,1,19.1629,10.0000,4,7,1.9163,publication
+PSI-10,hot,1,18.8313,6.5000,3,2,2.8971,objective|publication
+PSI-10,stocker,1,18.6246,11.0000,5,9,1.6931,people|publication
+PSI-10,burner-stabilized diffusion,2,18.5770,5.6250,3,1,3.3026,publication
+PSI-10,denis sunderland,2,18.5770,5.6250,3,1,3.3026,publication
+PSI-10,lecoustre sunderland,2,18.5770,5.6250,3,1,3.3026,publication
+PSI-10,spherical burner-stabilized,2,18.5770,5.6250,3,1,3.3026,publication
+PSI-10,sunderland chao,2,18.5770,5.6250,3,1,3.3026,publication
+PSI-10,urban stocker,2,18.5770,5.6250,3,1,3.3026,publication
+PSI-10,wu wendong,2,18.5770,5.6250,3,1,3.3026,publication
+PSI-10,chemical,1,17.9359,8.7500,2,6,2.0498,affiliation|curated_keywords
+PSI-10,sooting,1,17.8972,7.5000,3,4,2.3863,publication
+PSI-10,amount,1,17.3827,6.0000,3,2,2.8971,objective
+PSI-10,normal inverse,2,17.3827,6.0000,4,2,2.8971,approach|objective
+PSI-10,zst,1,17.3827,6.0000,3,2,2.8971,objective
+PSI-10,temperature,1,17.3745,11.5000,5,11,1.5108,hypothesis|objective|publication
+PSI-10,wang,1,16.5298,7.5000,3,5,2.2040,publication
+PSI-10,gopan,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-10,oxygen-enhanced,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-10,santa,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-10,undefined,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-10,warm,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-10,zhengyang,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-10,normal,1,16.5124,13.5000,7,15,1.2231,approach|filenames|objective|publication
+PSI-10,mixture,1,16.3986,8.0000,1,6,2.0498,curated_keywords
+PSI-10,c2h4,1,15.6566,6.0000,3,3,2.6094,objective
+PSI-10,ch4,1,15.6566,6.0000,3,3,2.6094,objective
+PSI-10,identify,1,15.6566,6.0000,3,3,2.6094,objective
+PSI-10,n2,1,15.6566,6.0000,3,3,2.6094,objective
+PSI-10,c2h4 ch4,2,14.8616,4.5000,3,1,3.3026,objective
+PSI-10,inverse spherical,2,14.8616,4.5000,3,1,3.3026,objective
+PSI-10,zst amount,2,14.8616,4.5000,3,1,3.3026,objective
+PSI-10,stoichiometric mixture fraction,3,14.5314,4.4000,1,1,3.3026,curated_keywords
+PSI-10,thin filament pyrometry,3,14.5314,4.4000,1,1,3.3026,curated_keywords
+PSI-10,chen,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-10,hydrogen,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-10,xia,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-10,urban,1,14.3918,8.5000,4,9,1.6931,people|publication
+PSI-10,advanced,1,14.3805,9.0000,2,10,1.5978,experiment_hardware|title
+PSI-10,burner-stabilized diffusion flames,3,13.6232,4.1250,3,1,3.3026,publication
+PSI-10,constales denis sunderland,3,13.6232,4.1250,3,1,3.3026,publication
+PSI-10,denis sunderland peter,3,13.6232,4.1250,3,1,3.3026,publication
+PSI-10,lecoustre sunderland chao,3,13.6232,4.1250,3,1,3.3026,publication
+PSI-10,spherical burner-stabilized diffusion,3,13.6232,4.1250,3,1,3.3026,publication
+PSI-10,sunderland chao axelbaum,3,13.6232,4.1250,3,1,3.3026,publication
+PSI-10,growth,1,13.5452,8.0000,1,9,1.6931,curated_keywords
+PSI-10,numerical,1,13.4888,7.5000,3,8,1.7985,publication
+PSI-10,flame growth,2,13.2238,6.0000,1,5,2.2040,curated_keywords
+PSI-10,functions,1,13.2103,4.0000,2,1,3.3026,objective
+PSI-10,benjamin,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-10,liu,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-10,novel,1,13.0472,5.0000,2,3,2.6094,proposal_title|research_impacts
+PSI-10,observations,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-10,acme flame,2,13.0370,4.5000,1,2,2.8971,acronym
+PSI-10,existence,1,13.0370,4.5000,2,2,2.8971,objective|publication
+PSI-10,steady-state,1,13.0370,4.5000,2,2,2.8971,hypothesis|publication
+PSI-10,advanced combustion,2,12.9350,6.7500,2,7,1.9163,experiment_hardware|title
+PSI-10,flame structure,2,12.3973,5.6250,3,5,2.2040,publication
+PSI-10,chao sunderland,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-10,characteristics non-premixed,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-10,chen axelbaum,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-10,fei axelbaum,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-10,gregory axelbaum,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-10,gregory constales,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-10,inception limits,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-10,kendyl constales,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-10,kumfer benjamin,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-10,kumfer skeen,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-10,non-premixed oxygen-enhanced,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-10,oxygen-enhanced combustion,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-10,oxygen-enriched air,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-10,phillip waddell,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-10,phillip yablonsky,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-10,skeen yablonsky,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-10,sooting limits,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-10,wang zhengyang,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-10,xia fei,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-10,yablonsky axelbaum,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-99,fire,1,64.4421,47.5000,15,13,1.3567,curated_keywords|hypothesis|objective|publication|research_impacts|title
+PSI-99,saffire-ii,1,59.4465,18.0000,7,1,3.3026,acronym|approach|objective|research_impacts
+PSI-99,cygnus,1,43.0557,16.5000,5,3,2.6094,approach|curated_keywords|experiment_hardware|flight_program|research_impacts
+PSI-99,saffire,1,41.7510,16.0000,4,3,2.6094,curated_keywords|experiment_hardware|publication
+PSI-99,ruff,1,32.7972,16.0000,7,6,2.0498,people|publication
+PSI-99,nomex,1,28.9712,10.0000,2,2,2.8971,approach|curated_keywords
+PSI-99,spacecraft,1,27.8118,20.5000,8,13,1.3567,flight_program|hypothesis|publication|research_impacts|title
+PSI-99,shs,1,26.4207,8.0000,1,1,3.3026,curated_keywords
+PSI-99,pmma,1,26.2492,11.0000,5,4,2.3863,approach|publication
+PSI-99,flame,1,25.5754,22.0000,10,16,1.1625,approach|publication|research_impacts
+PSI-99,safety,1,24.4201,18.0000,6,13,1.3567,curated_keywords|hypothesis|research_impacts
+PSI-99,gary,1,24.2437,11.0000,5,5,2.2040,people|publication
+PSI-99,urban,1,22.8575,13.5000,6,9,1.6931,people|publication
+PSI-99,spread,1,22.0397,10.0000,4,5,2.2040,publication
+PSI-99,concurrent,1,20.9377,9.5000,4,5,2.2040,approach|publication
+PSI-99,vehicle,1,20.8755,8.0000,4,3,2.6094,approach|hypothesis|research_impacts
+PSI-99,experiment-ii,1,19.8155,6.0000,1,1,3.3026,title
+PSI-99,david,1,18.6246,11.0000,5,9,1.6931,people|publication
+PSI-99,cargo,1,18.2661,7.0000,3,3,2.6094,experiment_hardware|research_impacts
+PSI-99,sandra,1,17.8972,7.5000,3,4,2.3863,publication
+PSI-99,smoldering,1,17.6318,8.0000,1,5,2.2040,curated_keywords
+PSI-99,large,1,17.4235,8.5000,4,6,2.0498,approach|hypothesis|objective|publication
+PSI-99,smoke distribution,2,17.3827,6.0000,1,2,2.8971,curated_keywords
+PSI-99,ferkul,1,16.9315,10.0000,4,9,1.6931,publication
+PSI-99,john,1,16.5298,7.5000,3,5,2.2040,publication
+PSI-99,olson,1,16.5298,7.5000,3,5,2.2040,publication
+PSI-99,ruff gary,2,16.5298,7.5000,4,5,2.2040,publication
+PSI-99,thick,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-99,distribution,1,16.3986,8.0000,1,6,2.0498,curated_keywords
+PSI-99,fire safety,2,16.2801,12.0000,5,13,1.3567,curated_keywords|hypothesis|research_impacts
+PSI-99,flow,1,16.2753,14.0000,7,16,1.1625,approach
+PSI-99,urban david,2,15.3737,7.5000,4,6,2.0498,publication
+PSI-99,sample,1,15.3303,8.0000,4,7,1.9163,approach
+PSI-99,smoke,1,15.3303,8.0000,1,7,1.9163,curated_keywords
+PSI-99,samples,1,15.2873,8.5000,4,8,1.7985,approach|publication
+PSI-99,fire experiment-ii,2,14.8616,4.5000,1,1,3.3026,title
+PSI-99,spacecraft fire,2,14.7305,9.7500,4,11,1.5108,hypothesis|publication|title
+PSI-99,microgravity,1,14.5000,14.5000,7,19,1.0000,hypothesis|project_type|publication|research_impacts
+PSI-99,balazs,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-99,chengyao,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-99,christian,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-99,conference,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-99,easton,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-99,eigenbrod,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-99,module,1,14.4856,5.0000,2,2,2.8971,approach|experiment_hardware
+PSI-99,toth,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-99,flammability,1,14.3918,8.5000,4,9,1.6931,objective|publication|research_impacts
+PSI-99,paul,1,13.4888,7.5000,3,8,1.7985,publication
+PSI-99,olson sandra,2,13.4229,5.6250,3,4,2.3863,publication
+PSI-99,duct,1,13.2238,6.0000,3,5,2.2040,approach
+PSI-99,risk,1,13.2238,6.0000,3,5,2.2040,hypothesis
+PSI-99,carlos,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-99,fernandez-pello,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-99,grunde,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-99,jomaas,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-99,liao,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-99,meyer,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-99,ya-ting,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-99,flame spread,2,12.3973,5.6250,3,5,2.2040,publication
+PSI-99,thick pmma,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-99,ga,1,11.9315,5.0000,2,4,2.3863,publication
+PSI-99,ien,1,11.9315,5.0000,2,4,2.3863,publication
+PSI-99,ferkul paul,2,11.5302,5.6250,3,6,2.0498,publication
+PSI-99,james,1,11.0199,5.0000,2,5,2.2040,publication
+PSI-99,spacecraft fire experiment-ii,3,10.8985,3.3000,1,1,3.3026,title
+PSI-99,concurrent flame,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-99,david ferkul,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-99,easton john,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-99,eigenbrod christian,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-99,fernandez-pello carlos,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-99,gary easton,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-99,sandra ruff,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-99,toth balazs,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-99,material,1,10.7910,6.0000,3,8,1.7985,approach|objective|research_impacts
+PSI-99,scale,1,10.7383,4.5000,2,4,2.3863,objective|publication
+PSI-99,sensors,1,10.7383,4.5000,2,4,2.3863,approach|publication
+PSI-99,card,1,10.4378,4.0000,2,3,2.6094,approach
+PSI-99,uncertainty,1,10.4378,4.0000,2,3,2.6094,hypothesis
+PSI-99,effects,1,10.1751,7.5000,3,13,1.3567,publication
+PSI-99,silicone,1,9.9179,4.5000,2,5,2.2040,approach|publication
+PSI-99,pressurized,1,9.9078,3.0000,1,1,3.3026,experiment_hardware
+PSI-99,fire saffire,2,9.7854,3.7500,2,3,2.6094,publication
+PSI-99,ien james,2,9.7854,3.7500,2,3,2.6094,publication
+PSI-99,jomaas grunde,2,9.7854,3.7500,2,3,2.6094,publication
+PSI-99,liao ya-ting,2,9.7854,3.7500,2,3,2.6094,publication
+PSI-99,details,1,9.5452,4.0000,2,4,2.3863,approach
+PSI-99,significant,1,9.5452,4.0000,2,4,2.3863,hypothesis
+PSI-99,concurrent flame spread,3,9.0821,2.7500,2,1,3.3026,publication
+PSI-99,ga ruff,2,8.9486,3.7500,2,4,2.3863,publication
+PSI-99,paul olson,2,8.9486,3.7500,2,4,2.3863,publication
+PSI-99,sample card,2,8.6914,3.0000,2,2,2.8971,approach
+PSI-99,solid,1,8.6233,4.5000,2,7,1.9163,approach|publication
+PSI-99,arnott,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-99,chow,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-99,firouzkouhi,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-99,florian,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-99,hans,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-99,hao,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-99,hatef,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-99,judith,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-99,ller,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-99,maria,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-99,moosm,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-99,samuel,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-99,spacecraft-relevant,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-99,taylor,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-99,thomsen,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-99,two-sided,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-99,watson,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-99,xiaoliang,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-99,zhou,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-99,combustion,1,8.0000,8.0000,2,19,1.0000,research_area|sub_research_area
+PSI-99,david ferkul paul,3,7.9671,2.7500,2,2,2.8971,publication
+PSI-99,gary easton john,3,7.9671,2.7500,2,2,2.8971,publication
+PSI-99,olson sandra ruff,3,7.9671,2.7500,2,2,2.8971,publication
+PSI-99,ruff gary easton,3,7.9671,2.7500,2,2,2.8971,publication
+PSI-99,sandra ruff gary,3,7.9671,2.7500,2,2,2.8971,publication
+PSI-99,urban david ferkul,3,7.9671,2.7500,2,2,2.8971,publication
+PSI-99,growth,1,7.6192,4.5000,2,9,1.6931,publication|research_impacts
+PSI-99,flame growth,2,7.4384,3.3750,2,5,2.2040,publication|research_impacts
+PSI-99,cargo module,2,7.4308,2.2500,1,1,3.3026,experiment_hardware
+PSI-99,cygnus pressurized,2,7.4308,2.2500,1,1,3.3026,experiment_hardware
+PSI-99,module saffire,2,7.4308,2.2500,1,1,3.3026,experiment_hardware
+PSI-99,pressurized cargo,2,7.4308,2.2500,1,1,3.3026,experiment_hardware
+PSI-99,12-16,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-99,45th,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-99,bastien,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-99,bellevue,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-99,detecting,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-99,fujita,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-99,ices-2015,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-99,jose,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-99,legros,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-99,low-speed,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-99,nickolay,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-99,osamu,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-99,patrick,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-99,rouvreau,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-99,slabs,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-99,smirnov,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-99,torero,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-99,exploration,1,7.1940,4.0000,2,8,1.7985,hypothesis|research_impacts
+PSI-99,measure,1,7.1940,4.0000,2,8,1.7985,approach|research_impacts
+PSI-99,surface,1,7.1940,4.0000,1,8,1.7985,sub_research_area
+PSI-99,spacecraft fire saffire,3,7.1760,2.7500,2,3,2.6094,publication
+PSI-99,surface combustion,2,7.1589,3.0000,1,4,2.3863,sub_research_area
+PSI-99,cameras,1,6.7726,4.0000,2,9,1.6931,approach|research_impacts
+PSI-99,flow duct,2,6.6119,3.0000,2,5,2.2040,approach
+PSI-99,flow velocity,2,6.6119,3.0000,2,5,2.2040,approach
+PSI-99,added,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-39,flex,1,417.5101,160.0000,80,3,2.6094,cameras
+PSI-39,n-dodecane,1,74.3082,22.5000,8,1,3.3026,approach|curated_keywords|hypothesis|objective|publication
+PSI-39,droplet,1,70.5139,34.4000,13,6,2.0498,approach|curated_keywords|experiment_hardware|hypothesis|media_filenames|objective|publication
+PSI-39,cool,1,68.6690,33.5000,11,6,2.0498,curated_keywords|objective|publication|research_impacts|title
+PSI-39,combustion,1,62.5000,62.5000,22,19,1.0000,approach|curated_keywords|experiment_hardware|hypothesis|objective|publication|research_area|research_impacts
+PSI-39,cool flames,2,45.4569,20.6250,8,5,2.2040,curated_keywords|publication|research_impacts|title
+PSI-39,droplet combustion,2,41.1636,17.2500,7,4,2.3863,approach|curated_keywords|experiment_hardware|publication
+PSI-39,chemistry,1,40.2421,21.0000,4,7,1.9163,curated_keywords|publication
+PSI-39,williams,1,38.1807,16.0000,7,4,2.3863,people|publication
+PSI-39,flames,1,37.9866,29.5000,9,14,1.2877,approach|curated_keywords|publication|research_impacts|title
+PSI-39,fuel,1,32.5602,24.0000,6,13,1.3567,approach|curated_keywords|research_impacts
+PSI-39,flame,1,32.5505,28.0000,11,16,1.1625,approach|curated_keywords|hypothesis|objective|research_impacts
+PSI-39,extinction,1,30.3589,19.0000,6,10,1.5978,approach|curated_keywords|hypothesis|objective|publication
+PSI-39,nayagam,1,29.7536,13.5000,6,5,2.2040,people|publication
+PSI-39,cfi,1,29.7233,9.0000,3,1,3.3026,acronym|filenames|research_impacts
+PSI-39,helium,1,28.6355,12.0000,3,4,2.3863,approach|curated_keywords|objective
+PSI-39,low-temperature,1,28.6355,12.0000,3,4,2.3863,curated_keywords|hypothesis|research_impacts
+PSI-39,alkane,1,27.3991,10.5000,2,3,2.6094,curated_keywords|publication
+PSI-39,droplets,1,27.3991,10.5000,4,3,2.6094,approach|publication|sub_research_area
+PSI-39,negative,1,26.4207,8.0000,1,1,3.3026,curated_keywords
+PSI-39,renewable,1,26.4207,8.0000,1,1,3.3026,curated_keywords
+PSI-39,forman,1,26.2492,11.0000,5,4,2.3863,people|publication
+PSI-39,dynamics,1,25.1791,14.0000,4,8,1.7985,approach|curated_keywords|hypothesis|research_impacts
+PSI-39,helium dilution,2,24.7694,7.5000,2,1,3.3026,curated_keywords|objective
+PSI-39,dietrich,1,24.2437,11.0000,5,5,2.2040,people|publication
+PSI-39,hydrocarbon,1,23.8629,10.0000,2,4,2.3863,curated_keywords|hypothesis
+PSI-39,flame dynamics,2,23.4849,9.0000,3,3,2.6094,curated_keywords|hypothesis|research_impacts
+PSI-39,coefficient,1,23.1770,8.0000,1,2,2.8971,curated_keywords
+PSI-39,ntc,1,23.1770,8.0000,1,2,2.8971,curated_keywords
+PSI-39,mdca,1,20.8755,8.0000,4,3,2.6094,approach|cameras|experiment_hardware|filenames
+PSI-39,dilution,1,20.4982,10.0000,2,6,2.0498,curated_keywords|objective
+PSI-39,ignition,1,20.4982,10.0000,5,6,2.0498,approach|research_impacts
+PSI-39,quasi-steady,1,20.4982,10.0000,4,6,2.0498,publication
+PSI-39,alkane chemistry,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-39,coefficient ntc,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-39,hydrocarbon fuel,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-39,iso-dodecane,1,19.8155,6.0000,3,1,3.3026,approach|hypothesis|objective
+PSI-39,jet fuel,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-39,low-temperature chemistry,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-39,n-dodecane cool,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-39,negative temperature,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-39,renewable jet,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-39,temperature coefficient,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-39,cool-flame,1,19.5708,7.5000,3,3,2.6094,publication
+PSI-39,vedha,1,18.7338,8.5000,4,5,2.2040,people|publication
+PSI-39,williams forman,2,17.8972,7.5000,4,4,2.3863,publication
+PSI-39,fuels,1,16.2801,12.0000,6,13,1.3567,approach|hypothesis|research_impacts
+PSI-39,temperature,1,15.8637,10.5000,2,11,1.5108,curated_keywords|publication
+PSI-39,atm,1,15.6566,6.0000,3,3,2.6094,approach|objective
+PSI-39,fuel combustion,2,15.6566,6.0000,1,3,2.6094,curated_keywords
+PSI-39,jet,1,15.3303,8.0000,1,7,1.9163,curated_keywords
+PSI-39,n-dodecane iso-dodecane,2,14.8616,4.5000,3,1,3.3026,approach|hypothesis|objective
+PSI-39,hydrocarbon fuel combustion,3,14.5314,4.4000,1,1,3.3026,curated_keywords
+PSI-39,n-dodecane cool flames,3,14.5314,4.4000,1,1,3.3026,curated_keywords
+PSI-39,negative temperature coefficient,3,14.5314,4.4000,1,1,3.3026,curated_keywords
+PSI-39,renewable jet fuel,3,14.5314,4.4000,1,1,3.3026,curated_keywords
+PSI-39,temperature coefficient ntc,3,14.5314,4.4000,1,1,3.3026,curated_keywords
+PSI-39,daniel,1,14.3178,6.0000,3,4,2.3863,people|publication
+PSI-39,understanding,1,13.5452,8.0000,4,9,1.6931,research_impacts
+PSI-39,engines,1,13.2238,6.0000,3,5,2.2040,research_impacts
+PSI-39,0.25,1,13.2103,4.0000,2,1,3.3026,approach|objective
+PSI-39,fa,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-39,guenter,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-39,hicks,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-39,kalyanasundaram,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-39,multi-user,1,13.0472,5.0000,2,3,2.6094,approach|experiment_hardware
+PSI-39,norbert,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-39,paczko,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-39,peters,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-39,seshadri,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-39,nayagam vedha,2,12.3973,5.6250,3,5,2.2040,publication
+PSI-39,apparatus mdca,2,12.3847,3.7500,2,1,3.3026,approach|experiment_hardware
+PSI-39,n-heptane,1,11.9315,5.0000,2,4,2.3863,publication
+PSI-39,cool flame,2,11.7425,4.5000,3,3,2.6094,objective|research_impacts
+PSI-39,mixtures,1,11.4977,6.0000,3,7,1.9163,approach|hypothesis|objective
+PSI-39,combustion apparatus,2,10.8642,3.7500,2,2,2.8971,approach|experiment_hardware
+PSI-39,examine,1,10.4378,4.0000,2,3,2.6094,objective
+PSI-39,ranging,1,10.4378,4.0000,2,3,2.6094,approach|objective
+PSI-39,apparatus,1,10.2491,5.0000,2,6,2.0498,approach|experiment_hardware
+PSI-39,camera,1,10.2491,5.0000,3,6,2.0498,approach|filenames
+PSI-39,role,1,9.9179,4.5000,2,5,2.2040,publication|research_impacts
+PSI-39,issnl,1,9.9078,3.0000,2,1,3.3026,funding|space_program
+PSI-39,mixtures n-dodecane,2,9.9078,3.0000,2,1,3.3026,approach|objective
+PSI-39,nl-nsf,1,9.9078,3.0000,2,1,3.3026,funding|space_program
+PSI-39,ranging 0.25,2,9.9078,3.0000,2,1,3.3026,approach|objective
+PSI-39,cool-flame chemistry,2,9.7854,3.7500,2,3,2.6094,publication
+PSI-39,fa williams,2,9.7854,3.7500,2,3,2.6094,publication
+PSI-39,hicks fa,2,9.7854,3.7500,2,3,2.6094,publication
+PSI-39,multi-user droplet,2,9.7854,3.7500,2,3,2.6094,approach|experiment_hardware
+PSI-39,nayagam dietrich,2,9.7854,3.7500,2,3,2.6094,publication
+PSI-39,paczko guenter,2,9.7854,3.7500,2,3,2.6094,publication
+PSI-39,peters norbert,2,9.7854,3.7500,2,3,2.6094,publication
+PSI-39,seshadri kalyanasundaram,2,9.7854,3.7500,2,3,2.6094,publication
+PSI-39,size,1,9.5870,6.0000,3,10,1.5978,approach|objective
+PSI-39,dryer,1,9.1330,3.5000,2,3,2.6094,people|publication
+PSI-39,farouk,1,9.1330,3.5000,2,3,2.6094,people|publication
+PSI-39,frederick,1,9.1330,3.5000,2,3,2.6094,people|publication
+PSI-39,tanvir,1,9.1330,3.5000,2,3,2.6094,people|publication
+PSI-39,combustion apparatus mdca,3,9.0821,2.7500,2,1,3.3026,approach|experiment_hardware
+PSI-39,dietrich daniel,2,8.9486,3.7500,2,4,2.3863,publication
+PSI-39,flame combustion,2,8.6914,3.0000,2,2,2.8971,hypothesis|objective
+PSI-39,foundation,1,8.6914,3.0000,2,2,2.8971,funding|space_program
+PSI-39,laboratory,1,8.6914,3.0000,2,2,2.8971,funding|space_program
+PSI-39,understanding cool,2,8.6914,3.0000,2,2,2.8971,research_impacts
+PSI-39,cir,1,8.4657,5.0000,2,9,1.6931,approach|experiment_hardware
+PSI-39,rack,1,8.4657,5.0000,2,9,1.6931,approach|experiment_hardware
+PSI-39,barry,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-39,krause,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-39,rachel,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-39,timmothy,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-39,chemical,1,8.1993,4.0000,2,6,2.0498,hypothesis|research_impacts
+PSI-39,critical,1,8.1993,4.0000,2,6,2.0498,hypothesis|research_impacts
+PSI-39,observed,1,8.1993,4.0000,2,6,2.0498,approach
+PSI-39,practical,1,8.1993,4.0000,2,6,2.0498,research_impacts
+PSI-39,behavior,1,8.1400,6.0000,3,13,1.3567,objective
+PSI-39,droplet combustion apparatus,3,7.9671,2.7500,2,2,2.8971,approach|experiment_hardware
+PSI-39,gas,1,7.6652,4.0000,2,7,1.9163,approach
+PSI-39,integrated,1,7.5541,5.0000,2,11,1.5108,approach|experiment_hardware
+PSI-39,microgravity,1,7.5000,7.5000,4,19,1.0000,hypothesis|project_type|publication|research_impacts
+PSI-39,foundation nl-nsf,2,7.4308,2.2500,2,1,3.3026,funding|space_program
+PSI-39,issnl national,2,7.4308,2.2500,2,1,3.3026,funding|space_program
+PSI-39,laboratory national,2,7.4308,2.2500,2,1,3.3026,funding|space_program
+PSI-39,mdca combustion,2,7.4308,2.2500,1,1,3.3026,experiment_hardware
+PSI-39,national laboratory,2,7.4308,2.2500,2,1,3.3026,funding|space_program
+PSI-39,mixtures n-dodecane iso-dodecane,3,7.2657,2.2000,2,1,3.3026,approach|objective
+PSI-39,asymptotic,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-39,partial-burning,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-39,hicks fa williams,3,7.1760,2.7500,2,3,2.6094,publication
+PSI-39,multi-user droplet combustion,3,7.1760,2.7500,2,3,2.6094,approach|experiment_hardware
+PSI-39,flame extinction,2,7.1589,3.0000,2,4,2.3863,approach|objective
+PSI-39,droplet size,2,6.6119,3.0000,2,5,2.2040,approach|objective
+PSI-39,additives,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-39,atomic,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-39,black-and-white,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-39,bottles,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-39,cetane,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-39,charge,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-39,chemists,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-39,compression,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-39,compute,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-39,consequence,1,6.6052,2.0000,1,1,3.3026,objective
+PSI-39,delivers,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-39,determines,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-39,diesel,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-39,documentation,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-39,facilitates,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-39,faresane,1,6.6052,2.0000,1,1,3.3026,hypothesis
+PSI-39,farnesane,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-39,hcci,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-39,high-efficiency,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-100,fire,1,69.8688,51.5000,16,13,1.3567,curated_keywords|hypothesis|objective|publication|research_impacts|sub_research_area|title
+PSI-100,saffire,1,66.5407,25.5000,9,3,2.6094,approach|curated_keywords|experiment_hardware|filenames|publication
+PSI-100,spacecraft,1,34.5952,25.5000,9,13,1.3567,hypothesis|publication|research_impacts|sub_research_area|title
+PSI-100,safety,1,29.8468,22.0000,7,13,1.3567,curated_keywords|hypothesis|research_impacts|sub_research_area
+PSI-100,flammability,1,27.9369,16.5000,5,9,1.6931,curated_keywords|objective|publication|research_impacts
+PSI-100,saffire-iii,1,26.0741,9.0000,3,2,2.8971,acronym|approach|filenames
+PSI-100,flame,1,23.2504,20.0000,7,16,1.1625,approach|curated_keywords|research_impacts
+PSI-100,spacecraft fire,2,22.0958,14.6250,6,11,1.5108,hypothesis|publication|sub_research_area|title
+PSI-100,low-gravity,1,22.0397,10.0000,2,5,2.2040,curated_keywords|objective
+PSI-100,vehicle,1,20.8755,8.0000,4,3,2.6094,approach|hypothesis|research_impacts
+PSI-100,fire safety,2,20.3501,15.0000,6,13,1.3567,curated_keywords|hypothesis|research_impacts|sub_research_area
+PSI-100,experiment-iii,1,19.8155,6.0000,1,1,3.3026,title
+PSI-100,fire testing,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-100,low-gravity fire,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-100,cygnus,1,18.2661,7.0000,3,3,2.6094,approach|experiment_hardware|research_impacts
+PSI-100,smoldering,1,17.6318,8.0000,1,5,2.2040,curated_keywords
+PSI-100,spread,1,17.6318,8.0000,1,5,2.2040,curated_keywords
+PSI-100,status,1,15.6566,6.0000,3,3,2.6094,filenames|publication
+PSI-100,testing,1,15.2383,9.0000,2,9,1.6931,curated_keywords|filenames
+PSI-100,fire experiment-iii,2,14.8616,4.5000,1,1,3.3026,title
+PSI-100,fire saffire,2,14.6781,5.6250,3,3,2.6094,publication
+PSI-100,low-gravity fire testing,3,14.5314,4.4000,1,1,3.3026,curated_keywords
+PSI-100,conference,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-100,surface,1,14.3881,8.0000,1,8,1.7985,curated_keywords
+PSI-100,surface combustion,2,14.3178,6.0000,1,4,2.3863,curated_keywords
+PSI-100,flame spread,2,13.2238,6.0000,1,5,2.2040,curated_keywords
+PSI-100,risk,1,13.2238,6.0000,3,5,2.2040,hypothesis
+PSI-100,environmental,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-100,july,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-100,combustion,1,12.0000,12.0000,2,19,1.0000,curated_keywords|research_area
+PSI-100,ga,1,11.9315,5.0000,2,4,2.3863,publication
+PSI-100,46th,1,11.5590,3.5000,2,1,3.3026,filenames|publication
+PSI-100,spacecraft fire experiment-iii,3,10.8985,3.3000,1,1,3.3026,title
+PSI-100,conference environmental,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-100,environmental systems,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-100,material,1,10.7910,6.0000,3,8,1.7985,approach|objective|research_impacts
+PSI-100,spacecraft fire saffire,3,10.7639,4.1250,3,3,2.6094,publication
+PSI-100,cargo,1,10.4378,4.0000,2,3,2.6094,research_impacts
+PSI-100,uncertainty,1,10.4378,4.0000,2,3,2.6094,hypothesis
+PSI-100,ruff,1,10.2491,5.0000,2,6,2.0498,publication
+PSI-100,development status,2,9.7854,3.7500,2,3,2.6094,publication
+PSI-100,sample,1,9.5815,5.0000,3,7,1.9163,approach|filenames
+PSI-100,details,1,9.5452,4.0000,2,4,2.3863,approach
+PSI-100,significant,1,9.5452,4.0000,2,4,2.3863,hypothesis
+PSI-100,systems,1,9.4967,7.0000,3,13,1.3567,hypothesis|publication
+PSI-100,flow,1,9.3002,8.0000,4,16,1.1625,approach
+PSI-100,ga ruff,2,8.9486,3.7500,2,4,2.3863,publication
+PSI-100,enclosure,1,8.6914,3.0000,1,2,2.8971,experiment_hardware
+PSI-100,file,1,8.6914,3.0000,2,2,2.8971,approach|filenames
+PSI-100,development,1,8.5847,6.0000,3,12,1.4308,filenames|publication
+PSI-100,citations,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-100,ices,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-100,ntrs.nasa.gov,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-100,large,1,8.1993,4.0000,2,6,2.0498,hypothesis|objective
+PSI-100,samples,1,8.0933,4.5000,2,8,1.7985,approach|publication
+PSI-100,conference environmental systems,3,7.9671,2.7500,2,2,2.8971,publication
+PSI-100,saffire-i,1,7.8283,3.0000,2,3,2.6094,filenames|research_impacts
+PSI-100,12-16,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-100,45th,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-100,bellevue,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-100,ices-2015,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-100,compared,1,7.1940,4.0000,2,8,1.7985,approach|objective
+PSI-100,exploration,1,7.1940,4.0000,2,8,1.7985,hypothesis|research_impacts
+PSI-100,measure,1,7.1940,4.0000,2,8,1.7985,approach|research_impacts
+PSI-100,sensors,1,7.1589,3.0000,2,4,2.3863,approach|filenames
+PSI-100,objectives,1,7.0823,5.5000,3,14,1.2877,filenames|objective|publication
+PSI-100,microgravity,1,7.0000,7.0000,4,19,1.0000,hypothesis|project_type|research_impacts
+PSI-100,cameras,1,6.7726,4.0000,2,9,1.6931,approach|research_impacts
+PSI-100,flow velocity,2,6.6119,3.0000,2,5,2.2040,approach
+PSI-100,je,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-100,niehaus,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-100,operation,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-100,schoren,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-100,enclosure cygnus,2,6.5185,2.2500,1,2,2.8971,experiment_hardware
+PSI-100,saffire enclosure,2,6.5185,2.2500,1,2,2.8971,experiment_hardware
+PSI-100,earth,1,6.3913,4.0000,2,10,1.5978,hypothesis|research_impacts
+PSI-100,missions,1,6.3913,4.0000,2,10,1.5978,hypothesis|research_impacts
+PSI-100,oxygen,1,6.3913,4.0000,2,10,1.5978,research_impacts
+PSI-100,46th conference,2,6.1923,1.8750,1,1,3.3026,publication
+PSI-100,ices july,2,6.1923,1.8750,1,1,3.3026,publication
+PSI-100,ntrs.nasa.gov citations,2,6.1923,1.8750,1,1,3.3026,publication
+PSI-100,saffire 45th,2,6.1923,1.8750,1,1,3.3026,publication
+PSI-100,saffire 46th,2,6.1923,1.8750,1,1,3.3026,publication
+PSI-100,systems ices,2,6.1923,1.8750,1,1,3.3026,publication
+PSI-100,velocity,1,6.0433,4.0000,2,11,1.5108,approach
+PSI-100,gokoglu,1,5.9657,2.5000,1,4,2.3863,publication
+PSI-100,sa,1,5.9657,2.5000,1,4,2.3863,publication
+PSI-100,washington,1,5.9657,2.5000,1,4,2.3863,publication
+PSI-100,urban,1,5.9260,3.5000,2,9,1.6931,people|publication
+PSI-100,folder,1,5.7942,2.0000,1,2,2.8971,approach
+PSI-100,follow,1,5.7942,2.0000,1,2,2.8971,approach
+PSI-100,flammability limits,2,5.7489,3.0000,2,7,1.9163,objective|research_impacts
+PSI-100,limits,1,5.7231,4.0000,2,12,1.4308,objective|research_impacts
+PSI-100,pressure,1,5.7231,4.0000,2,12,1.4308,approach|research_impacts
+PSI-100,planned,1,5.5099,2.5000,1,5,2.2040,publication
+PSI-100,silicone,1,5.5099,2.5000,1,5,2.2040,publication
+PSI-100,12-16 july,2,5.4321,1.8750,1,2,2.8971,publication
+PSI-100,45th conference,2,5.4321,1.8750,1,2,2.8971,publication
+PSI-100,bellevue washington,2,5.4321,1.8750,1,2,2.8971,publication
+PSI-100,ices-2015 12-16,2,5.4321,1.8750,1,2,2.8971,publication
+PSI-100,july bellevue,2,5.4321,1.8750,1,2,2.8971,publication
+PSI-100,operation development,2,5.4321,1.8750,1,2,2.8971,publication
+PSI-100,status spacecraft,2,5.4321,1.8750,1,2,2.8971,publication
+PSI-100,systems ices-2015,2,5.4321,1.8750,1,2,2.8971,publication
+PSI-100,determine,1,5.4267,4.0000,2,13,1.3567,objective|research_impacts
+PSI-100,experimental,1,5.4267,4.0000,2,13,1.3567,approach
+PSI-100,address,1,5.2189,2.0000,1,3,2.6094,hypothesis
+PSI-100,airplanes,1,5.2189,2.0000,1,3,2.6094,research_impacts
+PSI-100,anemometer,1,5.2189,2.0000,1,3,2.6094,approach
+PSI-100,compressed,1,5.2189,2.0000,1,3,2.6094,approach
+PSI-100,conduct,1,5.2189,2.0000,1,3,2.6094,hypothesis
+PSI-100,considerably,1,5.2189,2.0000,1,3,2.6094,hypothesis
+PSI-100,criteria,1,5.2189,2.0000,1,3,2.6094,research_impacts
+PSI-100,deberthed,1,5.2189,2.0000,1,3,2.6094,approach
+PSI-100,designers,1,5.2189,2.0000,1,3,2.6094,hypothesis
+PSI-100,downlinked,1,5.2189,2.0000,1,3,2.6094,approach
+PSI-100,expendable,1,5.2189,2.0000,1,3,2.6094,hypothesis
+PSI-100,faction,1,5.2189,2.0000,1,3,2.6094,approach
+PSI-100,grows,1,5.2189,2.0000,1,3,2.6094,objective
+PSI-100,large-scale,1,5.2189,2.0000,1,3,2.6094,hypothesis
+PSI-100,low-g,1,5.2189,2.0000,1,3,2.6094,objective
+PSI-100,mines,1,5.2189,2.0000,1,3,2.6094,research_impacts
+PSI-100,orbital,1,5.2189,2.0000,1,3,2.6094,approach
+PSI-100,past,1,5.2189,2.0000,1,3,2.6094,research_impacts
+PSI-100,plume,1,5.2189,2.0000,1,3,2.6094,approach
+PSI-100,presents,1,5.2189,2.0000,1,3,2.6094,hypothesis
+PSI-100,rapidly,1,5.2189,2.0000,1,3,2.6094,objective
+PSI-100,related,1,5.2189,2.0000,1,3,2.6094,approach
+PSI-100,resupply,1,5.2189,2.0000,1,3,2.6094,approach
+PSI-100,return,1,5.2189,2.0000,1,3,2.6094,hypothesis
+PSI-100,risks,1,5.2189,2.0000,1,3,2.6094,research_impacts
+PSI-100,safe,1,5.2189,2.0000,1,3,2.6094,hypothesis
+PSI-100,screening,1,5.2189,2.0000,1,3,2.6094,objective
+PSI-100,sealed,1,5.2189,2.0000,1,3,2.6094,research_impacts
+PSI-100,sibal,1,5.2189,2.0000,1,3,2.6094,approach
+PSI-100,supply,1,5.2189,2.0000,1,3,2.6094,research_impacts
+PSI-100,tracked,1,5.2189,2.0000,1,3,2.6094,approach
+PSI-100,transit,1,5.2189,2.0000,1,3,2.6094,hypothesis
+PSI-100,unmanned,1,5.2189,2.0000,1,3,2.6094,research_impacts
+PSI-100,venture,1,5.2189,2.0000,1,3,2.6094,hypothesis
+PSI-100,vessel,1,5.2189,2.0000,1,3,2.6094,research_impacts
+PSI-100,views,1,5.2189,2.0000,1,3,2.6094,research_impacts
+PSI-100,way,1,5.2189,2.0000,1,3,2.6094,research_impacts
+PSI-100,gravity,1,5.1507,4.0000,2,14,1.2877,hypothesis|objective
+PSI-100,spacecraft fire safety,3,4.9857,3.3000,2,11,1.5108,hypothesis|sub_research_area
+PSI-100,compared saffire,2,4.9539,1.5000,1,1,3.3026,approach
+PSI-100,conducted flow,2,4.9539,1.5000,1,1,3.3026,approach
+PSI-100,follow saffire,2,4.9539,1.5000,1,1,3.3026,approach
+PSI-100,material conducted,2,4.9539,1.5000,1,1,3.3026,approach
+PSI-100,saffire flow,2,4.9539,1.5000,1,1,3.3026,approach
+PSI-107,co-flow,1,46.3539,16.0000,6,2,2.8971,approach|objective|title
+PSI-107,laminar,1,39.2840,20.5000,7,7,1.9163,curated_keywords|filenames|hypothesis|objective|publication
+PSI-107,smoke,1,39.2840,20.5000,8,7,1.9163,approach|filenames|objective|publication|title
+PSI-107,diffusion,1,32.7557,20.5000,7,10,1.5978,curated_keywords|filenames|hypothesis|objective|publication
+PSI-107,sunderland,1,32.2150,13.5000,6,4,2.3863,people|publication
+PSI-107,flames,1,31.5482,24.5000,9,14,1.2877,approach|curated_keywords|filenames|hypothesis|objective|publication
+PSI-107,flame,1,30.8068,26.5000,10,16,1.1625,approach|curated_keywords|hypothesis|objective|publication|research_impacts
+PSI-107,points,1,30.4198,10.5000,5,2,2.8971,filenames|objective|publication
+PSI-107,spice,1,28.6815,9.9000,4,2,2.8971,acronym|filenames|media_filenames|objective
+PSI-107,butane-lighter,1,26.4207,8.0000,1,1,3.3026,curated_keywords
+PSI-107,emisssions,1,26.4207,8.0000,1,1,3.3026,curated_keywords
+PSI-107,microgravity,1,25.5000,25.5000,12,19,1.0000,approach|experiment_hardware|filenames|objective|project_type|publication
+PSI-107,soot,1,24.9286,16.5000,5,11,1.5108,approach|curated_keywords|publication|research_impacts
+PSI-107,point,1,24.2437,11.0000,4,5,2.2040,approach|filenames|objective|title
+PSI-107,glovebox,1,23.8629,10.0000,4,4,2.3863,approach|experiment_hardware|publication
+PSI-107,yuan,1,23.8629,10.0000,4,4,2.3863,publication
+PSI-107,smoke points,2,23.5309,7.1250,4,1,3.3026,objective|publication
+PSI-107,urban,1,22.8575,13.5000,6,9,1.6931,people|publication
+PSI-107,dotson,1,21.7284,7.5000,3,2,2.8971,publication
+PSI-107,smoke point,2,21.7284,7.5000,3,2,2.8971,approach|objective|title
+PSI-107,diffusion flames,2,20.3724,12.7500,5,10,1.5978,curated_keywords|hypothesis|objective|publication
+PSI-107,butane-lighter flame,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-107,propylene,1,19.8155,6.0000,3,1,3.3026,approach|objective
+PSI-107,lengths,1,18.8313,6.5000,3,2,2.8971,approach|objective|publication
+PSI-107,luminous,1,18.8313,6.5000,3,2,2.8971,objective|publication
+PSI-107,microgravity glovebox,2,17.8972,7.5000,4,4,2.3863,approach|experiment_hardware|publication
+PSI-107,non-buoyant,1,17.3827,6.0000,3,2,2.8971,hypothesis|objective|research_impacts
+PSI-107,nonbuoyant,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-107,round,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-107,air,1,15.7386,11.0000,5,12,1.4308,approach|objective|publication
+PSI-107,point co-flow,2,14.8616,4.5000,1,1,3.3026,title
+PSI-107,faeth,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-107,propane,1,14.4856,5.0000,3,2,2.8971,approach|filenames|objective
+PSI-107,phenomena,1,14.3258,6.5000,3,5,2.2040,hypothesis|objective|publication
+PSI-107,flame lengths,2,14.1235,4.8750,3,2,2.8971,approach|objective|publication
+PSI-107,jet diffusion,2,14.1235,4.8750,3,2,2.8971,hypothesis|objective|publication
+PSI-107,coflow,1,13.2238,6.0000,3,5,2.2040,filenames|publication
+PSI-107,peter,1,13.2238,6.0000,3,5,2.2040,people|publication
+PSI-107,properties,1,13.2238,6.0000,3,5,2.2040,hypothesis|objective
+PSI-107,smoke-point,1,13.2103,4.0000,2,1,3.3026,hypothesis|objective
+PSI-107,msg,1,13.1246,5.5000,2,4,2.3863,experiment_hardware|publication
+PSI-107,still,1,13.1246,5.5000,3,4,2.3863,approach|filenames|publication
+PSI-107,shapes,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-107,spivey,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-107,jet,1,12.4559,6.5000,3,7,1.9163,hypothesis|objective|publication
+PSI-107,faeth sunderland,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-107,laminar smoke,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-107,nonbuoyant round,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-107,shapes nonbuoyant,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-107,urban yuan,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-107,laminar diffusion,2,12.2989,6.0000,1,6,2.0498,curated_keywords
+PSI-107,conditions,1,11.5317,8.5000,4,13,1.3567,objective|publication|research_impacts
+PSI-107,smoke point co-flow,3,10.8985,3.3000,1,1,3.3026,title
+PSI-107,sunderland urban,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-107,fuel,1,10.8534,8.0000,4,13,1.3567,approach|objective|research_impacts
+PSI-107,glovebox msg,2,10.7639,4.1250,2,3,2.6094,experiment_hardware|publication
+PSI-107,identify,1,10.4378,4.0000,2,3,2.6094,approach|objective
+PSI-107,jet diffusion flames,3,10.3572,3.5750,3,2,2.8971,hypothesis|objective|publication
+PSI-107,gravity,1,10.3015,8.0000,4,14,1.2877,filenames|hypothesis|publication
+PSI-107,ethylene,1,10.2491,5.0000,3,6,2.0498,approach|filenames|objective
+PSI-107,david,1,10.1589,6.0000,3,9,1.6931,people|publication
+PSI-107,co-flow air,2,9.9078,3.0000,2,1,3.3026,approach
+PSI-107,ethylene propane,2,9.9078,3.0000,2,1,3.3026,approach|objective
+PSI-107,laminar smoke-point,2,9.9078,3.0000,2,1,3.3026,hypothesis|objective
+PSI-107,luminous flame,2,9.9078,3.0000,2,1,3.3026,objective
+PSI-107,non-buoyant jet,2,9.9078,3.0000,2,1,3.3026,hypothesis|objective
+PSI-107,propane propylene,2,9.9078,3.0000,2,1,3.3026,approach|objective
+PSI-107,properties non-buoyant,2,9.9078,3.0000,2,1,3.3026,hypothesis|objective
+PSI-107,propylene mixtures,2,9.9078,3.0000,2,1,3.3026,approach|objective
+PSI-107,smoke-point properties,2,9.9078,3.0000,2,1,3.3026,hypothesis|objective
+PSI-107,normal,1,9.7851,8.0000,4,15,1.2231,filenames|hypothesis|publication
+PSI-107,laminar diffusion flames,3,9.6975,4.4000,1,5,2.2040,curated_keywords
+PSI-107,measured,1,9.1330,3.5000,2,3,2.6094,filenames|publication
+PSI-107,faeth sunderland urban,3,9.0821,2.7500,2,1,3.3026,publication
+PSI-107,laminar smoke points,3,9.0821,2.7500,2,1,3.3026,publication
+PSI-107,shapes nonbuoyant round,3,9.0821,2.7500,2,1,3.3026,publication
+PSI-107,sunderland urban yuan,3,9.0821,2.7500,2,1,3.3026,publication
+PSI-107,sunderland peter,2,8.9486,3.7500,2,4,2.3863,publication
+PSI-107,height,1,8.6914,3.0000,2,2,2.8971,approach|filenames
+PSI-107,aalburg,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-107,coflowing,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-107,diez,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-107,hydrocarbon-fueled,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-107,keenan,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-107,kt,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-107,laminar-jet,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-107,lb,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-107,lin,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-107,ra,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-107,flow,1,8.1376,7.0000,4,16,1.1625,approach|filenames|objective
+PSI-107,combustion,1,8.0000,8.0000,3,19,1.0000,objective|research_area|research_impacts
+PSI-107,microgravity glovebox msg,3,7.8935,3.0250,2,3,2.6094,experiment_hardware|publication
+PSI-107,fuel flow,2,7.8283,3.0000,2,3,2.6094,approach|objective
+PSI-107,urban david,2,7.6868,3.7500,2,6,2.0498,publication
+PSI-107,burner,1,7.6652,4.0000,2,7,1.9163,approach|objective
+PSI-107,mixtures,1,7.6652,4.0000,2,7,1.9163,approach|objective
+PSI-107,computational,1,7.6192,4.5000,2,9,1.6931,publication|research_impacts
+PSI-107,formation,1,7.6192,4.5000,2,9,1.6931,publication|research_impacts
+PSI-107,velocity,1,7.5541,5.0000,3,11,1.5108,approach|filenames|objective
+PSI-107,video,1,7.4735,3.9000,3,7,1.9163,approach|filenames|media_filenames
+PSI-107,ethylene propane propylene,3,7.2657,2.2000,2,1,3.3026,approach|objective
+PSI-107,laminar smoke-point properties,3,7.2657,2.2000,2,1,3.3026,hypothesis|objective
+PSI-107,non-buoyant jet diffusion,3,7.2657,2.2000,2,1,3.3026,hypothesis|objective
+PSI-107,properties non-buoyant jet,3,7.2657,2.2000,2,1,3.3026,hypothesis|objective
+PSI-107,smoke-point properties non-buoyant,3,7.2657,2.2000,2,1,3.3026,hypothesis|objective
+PSI-107,gas-jet,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-107,gravity-dependent,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-107,jeter,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-107,luz,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-107,platform,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-107,resource,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-107,vonk,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-107,better,1,7.1940,4.0000,2,8,1.7985,objective|research_impacts
+PSI-107,flames microgravity,2,6.9181,3.3750,2,6,2.0498,objective|publication
+PSI-107,safety,1,6.7834,5.0000,2,13,1.3567,filenames|sub_research_area
+PSI-107,cameras,1,6.7726,4.0000,2,9,1.6931,approach
+PSI-107,duct,1,6.6119,3.0000,2,5,2.2040,approach|filenames
+PSI-107,0.41,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-107,0.76,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-107,1.6,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-107,5.4,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-107,adjusted,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-107,analogous,1,6.6052,2.0000,1,1,3.3026,objective
+PSI-107,behaviors,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-107,delivery,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-107,differ,1,6.6052,2.0000,1,1,3.3026,hypothesis
+PSI-107,distributions,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-107,emitting,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-107,formulations,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-107,gravity-driven,1,6.6052,2.0000,1,1,3.3026,hypothesis
+PSI-107,marked,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-107,minimizing,1,6.6052,2.0000,1,1,3.3026,hypothesis
+PSI-107,nozzles,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-107,propensity,1,6.6052,2.0000,1,1,3.3026,objective
+PSI-107,scientists,1,6.6052,2.0000,1,1,3.3026,hypothesis
+PSI-107,studied,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-107,tested,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-107,total,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-107,colket,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-107,combined,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-107,dobbins,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-107,hall,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-107,joseph,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-107,marshall,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-107,meredith,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-107,mitchell,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-107,reggie,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-107,robert,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-107,scaling,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-107,smooke,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-106,smooke,1,35.2274,13.5000,6,3,2.6094,people|publication
+PSI-106,diffusion,1,34.3535,21.5000,7,10,1.5978,curated_keywords|hypothesis|objective|publication
+PSI-106,fuel dilution,2,32.5926,11.2500,4,2,2.8971,curated_keywords|objective|publication
+PSI-106,coflow,1,30.8556,14.0000,6,5,2.2040,approach|hypothesis|publication
+PSI-106,dilution,1,30.7473,15.0000,4,6,2.0498,curated_keywords|objective|publication
+PSI-106,inlet,1,30.4198,10.5000,2,2,2.8971,curated_keywords|publication
+PSI-106,flame,1,29.0630,25.0000,9,16,1.1625,approach|curated_keywords|objective|publication|research_impacts
+PSI-106,bennett,1,28.9712,10.0000,4,2,2.8971,publication
+PSI-106,cao,1,28.9712,10.0000,4,2,2.8971,publication
+PSI-106,giassi,1,28.9712,10.0000,4,2,2.8971,publication
+PSI-106,structure,1,28.6975,14.0000,5,6,2.0498,approach|hypothesis|objective|title
+PSI-106,flames,1,27.6852,21.5000,10,14,1.2877,approach|hypothesis|objective|publication
+PSI-106,takahashi,1,26.2492,11.0000,5,4,2.3863,people|publication
+PSI-106,stability,1,26.0944,10.0000,5,3,2.6094,approach|hypothesis|objective|research_impacts
+PSI-106,slice,1,26.0741,9.0000,3,2,2.8971,acronym|approach|filenames
+PSI-106,laminar,1,25.8699,13.5000,6,7,1.9163,hypothesis|objective|publication
+PSI-106,long,1,25.8699,13.5000,6,7,1.9163,people|publication
+PSI-106,fuel,1,25.7768,19.0000,6,13,1.3567,approach|curated_keywords|hypothesis|objective|publication
+PSI-106,velocity,1,24.9286,16.5000,5,11,1.5108,approach|curated_keywords|hypothesis|objective|publication
+PSI-106,liftoff,1,23.1770,8.0000,2,2,2.8971,objective|title
+PSI-106,inlet velocity,2,22.8148,7.8750,2,2,2.8971,curated_keywords|publication
+PSI-106,marshall,1,22.1802,8.5000,4,3,2.6094,people|publication
+PSI-106,mitchell,1,22.1802,8.5000,4,3,2.6094,people|publication
+PSI-106,ma,1,21.7284,7.5000,3,2,2.8971,publication
+PSI-106,soot,1,19.6407,13.0000,6,11,1.5108,approach|objective|publication|research_impacts
+PSI-106,stocker,1,18.6246,11.0000,5,9,1.6931,people|publication
+PSI-106,fumiaki,1,17.3827,6.0000,3,2,2.8971,people|publication
+PSI-106,computational,1,16.9315,10.0000,4,9,1.6931,publication
+PSI-106,microgravity,1,16.5000,16.5000,8,19,1.0000,hypothesis|objective|project_type|publication
+PSI-106,fuels,1,16.2801,12.0000,3,13,1.3567,approach|curated_keywords|objective
+PSI-106,diffusion flames,2,16.1781,10.1250,6,10,1.5978,hypothesis|objective|publication
+PSI-106,experimental,1,15.9409,11.7500,6,13,1.3567,file_folders|filenames|publication
+PSI-106,gravity,1,15.4522,12.0000,5,14,1.2877,objective|publication
+PSI-106,formation,1,15.2383,9.0000,4,9,1.6931,objective|publication|research_impacts
+PSI-106,liftoff combustion,2,14.8616,4.5000,1,1,3.3026,title
+PSI-106,structure liftoff,2,14.8616,4.5000,1,1,3.3026,title
+PSI-106,structure stability,2,14.8616,4.5000,3,1,3.3026,approach|hypothesis|objective
+PSI-106,long marshall,2,14.6781,5.6250,3,3,2.6094,publication
+PSI-106,smooke mitchell,2,14.6781,5.6250,3,3,2.6094,publication
+PSI-106,anne,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-106,beth,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-106,davide,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-106,su,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-106,combustion,1,14.0000,14.0000,4,19,1.0000,research_area|research_impacts|title
+PSI-106,flames microgravity,2,13.0676,6.3750,4,6,2.0498,hypothesis|objective|publication
+PSI-106,soot formation,2,12.9350,6.7500,4,7,1.9163,objective|publication|research_impacts
+PSI-106,normal,1,11.6199,9.5000,4,15,1.2231,objective|publication
+PSI-106,burner,1,11.4977,6.0000,3,7,1.9163,approach|hypothesis|objective
+PSI-106,dennis,1,11.4977,6.0000,3,7,1.9163,people|publication
+PSI-106,diffusion flames microgravity,3,11.1559,4.6750,4,4,2.3863,hypothesis|objective|publication
+PSI-106,structure liftoff combustion,3,10.8985,3.3000,1,1,3.3026,title
+PSI-106,bennett beth,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-106,beth anne,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-106,cao su,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-106,computational experimental,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-106,dennis takahashi,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-106,effects fuel,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-106,giassi davide,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-106,long smooke,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-106,mitchell long,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-106,stocker takahashi,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-106,takahashi fumiaki,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-106,diffusion flame,2,10.7910,6.0000,1,8,1.7985,curated_keywords
+PSI-106,methane,1,9.9179,4.5000,2,5,2.2040,approach|publication
+PSI-106,models flame,2,9.9078,3.0000,2,1,3.3026,objective|research_impacts
+PSI-106,name,1,9.9078,3.0000,1,1,3.3026,experiment_hardware
+PSI-106,numerical models,2,9.9078,3.0000,2,1,3.3026,objective|research_impacts
+PSI-106,stability laminar,2,9.9078,3.0000,2,1,3.3026,hypothesis|objective
+PSI-106,computational soot,2,9.7854,3.7500,2,3,2.6094,publication
+PSI-106,laminar coflow,2,9.7854,3.7500,2,3,2.6094,publication
+PSI-106,understand,1,9.5452,4.0000,2,4,2.3863,objective
+PSI-106,effects,1,9.4967,7.0000,3,13,1.3567,objective|publication
+PSI-106,laminar diffusion,2,9.2242,4.5000,3,6,2.0498,hypothesis|objective
+PSI-106,experimental computational,2,8.9486,3.7500,2,4,2.3863,publication
+PSI-106,conditions,1,8.8184,6.5000,3,13,1.3567,approach|objective|publication
+PSI-106,captured,1,8.8159,4.0000,2,5,2.2040,approach
+PSI-106,flame stability,2,8.6914,3.0000,2,2,2.8971,objective|research_impacts
+PSI-106,images,1,8.5847,6.0000,3,12,1.4308,approach
+PSI-106,microgravity normal,2,8.2649,3.7500,2,5,2.2040,publication
+PSI-106,bav,1,8.2565,2.5000,1,1,3.3026,publication
+PSI-106,different,1,8.1993,4.0000,2,6,2.0498,hypothesis|objective
+PSI-106,efficient,1,8.1993,4.0000,2,6,2.0498,research_impacts
+PSI-106,observed,1,8.1993,4.0000,2,6,2.0498,approach|hypothesis
+PSI-106,bennett beth anne,3,7.9671,2.7500,2,2,2.8971,publication
+PSI-106,dennis takahashi fumiaki,3,7.9671,2.7500,2,2,2.8971,publication
+PSI-106,effects fuel dilution,3,7.9671,2.7500,2,2,2.8971,publication
+PSI-106,mitchell long marshall,3,7.9671,2.7500,2,2,2.8971,publication
+PSI-106,smooke mitchell long,3,7.9671,2.7500,2,2,2.8971,publication
+PSI-106,stocker dennis takahashi,3,7.9671,2.7500,2,2,2.8971,publication
+PSI-106,link,1,7.8283,3.0000,1,3,2.6094,experiment_hardware
+PSI-106,stocker dennis,2,7.6868,3.7500,2,6,2.0498,publication
+PSI-106,objective,1,7.6652,4.0000,2,7,1.9163,objective
+PSI-106,name link,2,7.4308,2.2500,1,1,3.3026,experiment_hardware
+PSI-106,laminar diffusion flames,3,7.2731,3.3000,3,5,2.2040,hypothesis|objective
+PSI-106,numerical models flame,3,7.2657,2.2000,2,1,3.3026,objective|research_impacts
+PSI-106,stability laminar diffusion,3,7.2657,2.2000,2,1,3.3026,hypothesis|objective
+PSI-106,structure stability laminar,3,7.2657,2.2000,2,1,3.3026,hypothesis|objective
+PSI-106,bin,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-106,mb,1,7.2428,2.5000,1,2,2.8971,publication
+PSI-106,dynamics,1,7.1940,4.0000,2,8,1.7985,approach|objective
+PSI-106,numerical,1,7.1940,4.0000,2,8,1.7985,objective|research_impacts
+PSI-106,computational soot formation,3,7.1760,2.7500,2,3,2.6094,publication
+PSI-106,experimental computational soot,3,7.1760,2.7500,2,3,2.6094,publication
+PSI-106,normal gravity,2,7.1225,5.2500,3,13,1.3567,objective|publication
+PSI-106,flow,1,6.9751,6.0000,3,16,1.1625,approach
+PSI-106,models,1,6.7726,4.0000,2,9,1.6931,objective|research_impacts
+PSI-106,accuracy,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-106,aids,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-106,correlate,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-106,designing,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-106,exchangeable,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-106,fan-driven,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-106,influenced,1,6.6052,2.0000,1,1,3.3026,hypothesis
+PSI-106,length,1,6.6052,2.0000,1,1,3.3026,objective
+PSI-106,manually,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-106,minimum,1,6.6052,2.0000,1,1,3.3026,research_impacts
+PSI-106,nitrogen-diluted,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-106,overlaid,1,6.6052,2.0000,1,1,3.3026,approach
+PSI-106,stabilizing,1,6.6052,2.0000,1,1,3.3026,objective
+PSI-106,ch,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-106,colket,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-106,combined,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-106,dobbins,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-106,hall,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-106,joseph,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-106,meredith,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-106,methane-air,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-106,robert,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-106,squeo,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-106,tinjero,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-106,xinyu,1,6.5236,2.5000,1,3,2.6094,publication
+PSI-106,air,1,6.4385,4.5000,2,12,1.4308,approach|publication
+PSI-106,heat,1,6.4385,4.5000,2,12,1.4308,objective|publication
+PSI-106,earth,1,6.3913,4.0000,2,10,1.5978,hypothesis|research_impacts
+PSI-106,anne stocker,2,6.1923,1.8750,1,1,3.3026,publication
+PSI-106,bav bennett,2,6.1923,1.8750,1,1,3.3026,publication
+PSI-106,bennett ma,2,6.1923,1.8750,1,1,3.3026,publication
+PSI-106,cao bav,2,6.1923,1.8750,1,1,3.3026,publication
+PSI-106,davide cao,2,6.1923,1.8750,1,1,3.3026,publication
+PSI-106,dilution gravity,2,6.1923,1.8750,1,1,3.3026,publication
+PSI-106,fumiaki smooke,2,6.1923,1.8750,1,1,3.3026,publication
+PSI-106,giassi dp,2,6.1923,1.8750,1,1,3.3026,publication
+PSI-106,gravity laminar,2,6.1923,1.8750,1,1,3.3026,publication
+PSI-106,ma giassi,2,6.1923,1.8750,1,1,3.3026,publication
+PSI-106,su bennett,2,6.1923,1.8750,1,1,3.3026,publication
+PSI-106,takahashi mb,2,6.1923,1.8750,1,1,3.3026,publication
+PSI-106,microgravity normal gravity,3,6.0609,2.7500,2,5,2.2040,publication
+PSI-106,dp,1,5.9657,2.5000,1,4,2.3863,publication
+PSI-106,jesse,1,5.9657,2.5000,1,4,2.3863,publication
+PSI-106,release,1,5.9657,2.5000,1,4,2.3863,publication
+PSI-20,quintiere,1,110.6366,33.5000,14,1,3.3026,people|publication
+PSI-20,burning,1,94.8162,56.0000,23,9,1.6931,approach|hypothesis|objective|proposal_title|publication|research_impacts|title
+PSI-20,bre,1,85.8672,26.0000,11,1,3.3026,acronym|approach|filenames|hypothesis|objective|publication|research_impacts
+PSI-20,quintiere james,2,68.1158,20.6250,11,1,3.3026,publication
+PSI-20,james,1,62.8132,28.5000,12,5,2.2040,people|publication
+PSI-20,sunderland,1,62.0437,26.0000,11,4,2.3863,people|publication
+PSI-20,extinction,1,57.5221,36.0000,11,10,1.5978,approach|curated_keywords|objective|publication
+PSI-20,microgravity,1,56.5000,56.5000,24,19,1.0000,approach|hypothesis|objective|project_type|publication|research_impacts|title
+PSI-20,flux,1,53.6916,22.5000,8,4,2.3863,approach|curated_keywords|hypothesis|publication
+PSI-20,limit,1,52.1482,18.0000,6,2,2.8971,approach|curated_keywords
+PSI-20,heat flux,2,48.8889,16.8750,8,2,2.8971,approach|curated_keywords|hypothesis|publication
+PSI-20,burner,1,46.9491,24.5000,11,7,1.9163,approach|publication|research_impacts
+PSI-20,peter,1,46.2834,21.0000,9,5,2.2040,people|publication
+PSI-20,de,1,44.5849,13.5000,6,1,3.3026,people|publication
+PSI-20,emulator,1,44.5849,13.5000,4,1,3.3026,publication|title
+PSI-20,ris,1,44.5849,13.5000,6,1,3.3026,people|publication
+PSI-20,heat,1,43.6389,30.5000,12,12,1.4308,approach|curated_keywords|hypothesis|publication
+PSI-20,dehghani,1,41.2823,12.5000,5,1,3.3026,publication
+PSI-20,flames,1,38.6305,30.0000,10,14,1.2877,approach|curated_keywords|hypothesis|publication|research_impacts|sub_research_area
+PSI-20,condensed,1,37.9797,11.5000,5,1,3.3026,hypothesis|objective|publication
+PSI-20,peter quintiere,2,37.1541,11.2500,6,1,3.3026,publication
+PSI-20,acme,1,36.8968,18.0000,4,6,2.0498,acronym|curated_keywords|experiment_hardware|filenames
+PSI-20,sunderland peter,2,35.7944,15.0000,8,4,2.3863,publication
+PSI-20,john,1,35.2636,16.0000,7,5,2.2040,people|publication
+PSI-20,de ris,2,33.4387,10.1250,6,1,3.3026,people|publication
+PSI-20,parham,1,33.0259,10.0000,4,1,3.3026,publication
+PSI-20,microgravity burning,2,32.2002,9.7500,4,1,3.3026,approach|publication|title
+PSI-20,flammability,1,31.3232,18.5000,6,9,1.6931,approach|curated_keywords|hypothesis|publication|research_impacts
+PSI-20,porous,1,31.3133,12.0000,5,3,2.6094,objective|publication
+PSI-20,ris john,2,30.9617,9.3750,5,1,3.3026,publication
+PSI-20,rate,1,29.8468,22.0000,8,13,1.3567,approach|proposal_title|publication|title
+PSI-20,quiescent,1,29.7233,9.0000,4,1,3.3026,approach|objective|publication
+PSI-20,fuel,1,29.1685,21.5000,10,13,1.3567,approach|hypothesis|objective|publication
+PSI-20,peter quintiere james,3,27.2463,8.2500,6,1,3.3026,publication
+PSI-20,rate emulator,2,27.2463,8.2500,3,1,3.3026,publication|title
+PSI-20,sunderland peter quintiere,3,27.2463,8.2500,6,1,3.3026,publication
+PSI-20,conditions,1,27.1335,20.0000,10,13,1.3567,approach|hypothesis|objective
+PSI-20,ignition,1,26.6477,13.0000,6,6,2.0498,approach|publication
+PSI-20,triple,1,26.4207,8.0000,1,1,3.3026,curated_keywords
+PSI-20,flat,1,26.0944,10.0000,4,3,2.6094,publication
+PSI-20,burning rate,2,25.0561,10.5000,4,4,2.3863,proposal_title|publication|title
+PSI-20,burning microgravity,2,24.9877,8.6250,5,2,2.8971,hypothesis|publication
+PSI-20,akshit,1,24.7694,7.5000,3,1,3.3026,publication
+PSI-20,baum,1,24.7694,7.5000,3,1,3.3026,publication
+PSI-20,bustamante,1,24.7694,7.5000,3,1,3.3026,publication
+PSI-20,dehghani parham,2,24.7694,7.5000,4,1,3.3026,publication
+PSI-20,extinction limit,2,24.7694,7.5000,2,1,3.3026,approach|curated_keywords
+PSI-20,howard,1,24.7694,7.5000,3,1,3.3026,publication
+PSI-20,markan,1,24.7694,7.5000,3,1,3.3026,publication
+PSI-20,polymer,1,23.1770,8.0000,1,2,2.8971,curated_keywords
+PSI-20,steady,1,23.1417,10.5000,5,5,2.2040,approach|hypothesis|publication
+PSI-20,de ris john,3,22.7053,6.8750,5,1,3.3026,publication
+PSI-20,zhang,1,21.7284,7.5000,3,2,2.8971,publication
+PSI-20,combustion,1,21.5000,21.5000,7,19,1.0000,experiment_hardware|hypothesis|publication|research_area|research_impacts|title
+PSI-20,radiative extinction,2,21.4887,9.7500,3,5,2.2040,curated_keywords|publication
+PSI-20,temperature,1,21.1516,14.0000,7,11,1.5108,approach
+PSI-20,steady burning,2,21.0540,6.3750,4,1,3.3026,hypothesis|publication
+PSI-20,flow,1,20.9253,18.0000,9,16,1.1625,approach|research_impacts
+PSI-20,establish,1,20.8755,8.0000,4,3,2.6094,approach|objective
+PSI-20,diffusion,1,20.7719,13.0000,3,10,1.5978,curated_keywords|publication
+PSI-20,radiative,1,20.7719,13.0000,3,10,1.5978,curated_keywords|publication
+PSI-20,observed,1,20.4982,10.0000,5,6,2.0498,approach|research_impacts
+PSI-20,burning rate emulator,3,19.9806,6.0500,3,1,3.3026,publication|title
+PSI-20,ambient,1,19.8358,9.0000,4,5,2.2040,objective|publication
+PSI-20,psia,1,19.8155,6.0000,3,1,3.3026,objective
+PSI-20,surface temperature,2,19.8155,6.0000,4,1,3.3026,approach
+PSI-20,triple flame,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-20,fuels,1,19.6718,14.5000,6,13,1.3567,approach|hypothesis|objective|publication|sub_research_area
+PSI-20,flame,1,19.1816,16.5000,5,16,1.1625,approach|curated_keywords|hypothesis|publication
+PSI-20,calorimeter,1,18.8313,6.5000,3,2,2.8971,hypothesis|publication|research_impacts
+PSI-20,test,1,18.6003,16.0000,8,16,1.1625,approach|hypothesis|research_impacts
+PSI-20,baum howard,2,18.5770,5.6250,3,1,3.3026,publication
+PSI-20,burner microgravity,2,18.5770,5.6250,3,1,3.3026,publication
+PSI-20,condensed fuel,2,18.5770,5.6250,3,1,3.3026,publication
+PSI-20,james de,2,18.5770,5.6250,3,1,3.3026,publication
+PSI-20,markan akshit,2,18.5770,5.6250,3,1,3.3026,publication
+PSI-20,buoyancy,1,17.6318,8.0000,1,5,2.2040,curated_keywords
+PSI-20,real,1,17.3827,6.0000,3,2,2.8971,hypothesis
+PSI-20,deris,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-20,emulation,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-20,frida,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-20,hees,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-20,kuznetsov,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-20,markus,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-20,snegirev,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-20,van,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-20,vermina,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-20,range,1,16.3986,8.0000,4,6,2.0498,approach|hypothesis|objective
+PSI-20,flight,1,16.2801,12.0000,6,13,1.3567,approach|objective
+PSI-20,consider,1,15.6566,6.0000,3,3,2.6094,objective
+PSI-20,gaseous,1,15.2873,8.5000,3,8,1.7985,approach|publication|sub_research_area
+PSI-20,materials,1,15.2873,8.5000,4,8,1.7985,hypothesis|publication|research_impacts
+PSI-20,tests,1,15.1083,10.0000,5,11,1.5108,approach|hypothesis
+PSI-20,acme bre,2,14.8616,4.5000,1,1,3.3026,acronym
+PSI-20,burning conditions,2,14.8616,4.5000,3,1,3.3026,hypothesis|objective
+PSI-20,condensed-phase,1,14.8616,4.5000,2,1,3.3026,publication|research_impacts
+PSI-20,flux sensor,2,14.8616,4.5000,3,1,3.3026,approach
+PSI-20,maps,1,14.8616,4.5000,2,1,3.3026,hypothesis|publication
+PSI-20,quasi-steady burning,2,14.8616,4.5000,3,1,3.3026,hypothesis|research_impacts
+PSI-20,porous burner,2,14.6781,5.6250,3,3,2.6094,publication
+PSI-20,patrick,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-20,yi,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-20,modeling,1,14.3881,8.0000,1,8,1.7985,curated_keywords
+PSI-20,surface,1,14.3881,8.0000,4,8,1.7985,approach
+PSI-20,gas,1,14.3722,7.5000,3,7,1.9163,publication
+PSI-20,james de ris,3,13.6232,4.1250,3,1,3.3026,publication
+PSI-20,porous burner microgravity,3,13.6232,4.1250,3,1,3.3026,publication
+PSI-20,quintiere james de,3,13.6232,4.1250,3,1,3.3026,publication
+PSI-20,fire,1,13.5667,10.0000,2,13,1.3567,curated_keywords|research_impacts
+PSI-20,safety,1,13.5667,10.0000,2,13,1.3567,curated_keywords|research_impacts
+PSI-20,liquid,1,13.3238,6.5000,3,6,2.0498,approach|hypothesis|publication
+PSI-20,experimental,1,13.2276,9.7500,5,13,1.3567,file_folders|filenames|proposal_title|publication
+PSI-20,flow rate,2,13.2238,6.0000,4,5,2.2040,approach
+PSI-20,properties,1,13.2238,6.0000,3,5,2.2040,hypothesis|objective|research_impacts
+PSI-20,achieved,1,13.2103,4.0000,2,1,3.3026,hypothesis
+PSI-20,ambients,1,13.2103,4.0000,2,1,3.3026,objective
+PSI-20,establishing,1,13.2103,4.0000,2,1,3.3026,hypothesis
+PSI-20,gasification,1,13.2103,4.0000,2,1,3.3026,hypothesis
+PSI-20,represent,1,13.2103,4.0000,2,1,3.3026,hypothesis
+PSI-20,steadied,1,13.2103,4.0000,2,1,3.3026,approach
+PSI-20,oxygen,1,12.7827,8.0000,4,10,1.5978,approach|objective|research_impacts
+PSI-20,small,1,12.5896,7.0000,3,8,1.7985,approach|publication
+PSI-20,diffusion flames,2,12.5830,7.8750,2,10,1.5978,curated_keywords|publication
+PSI-20,akshit sunderland,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-20,burning small,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-20,emulation condensed,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-20,emulator bre,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-20,gas burner,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-20,hees patrick,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-20,james van,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-20,john stocker,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-20,parham quintiere,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-20,quiescent ambient,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-20,small flat,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-20,van hees,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-20,zhang yi,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-20,o2,1,12.2989,6.0000,3,6,2.0498,objective
+PSI-20,proposed,1,12.2989,6.0000,3,6,2.0498,approach|hypothesis
+PSI-20,quasi-steady,1,12.2989,6.0000,3,6,2.0498,hypothesis|research_impacts
+PSI-20,sensor,1,12.2989,6.0000,3,6,2.0498,approach
+PSI-20,transient,1,11.9315,5.0000,2,4,2.3863,publication
+PSI-20,fuel flow,2,11.7425,4.5000,3,3,2.6094,approach
+PSI-20,material,1,11.6903,6.5000,3,8,1.7985,objective|publication|research_impacts
+PSI-20,gaseous fuels,2,11.6332,4.8750,2,4,2.3863,publication|sub_research_area
+PSI-20,considered,1,11.5885,4.0000,2,2,2.8971,objective|research_impacts
+PSI-20,established,1,11.5885,4.0000,2,2,2.8971,approach|research_impacts
+PSI-20,dennis,1,11.4977,6.0000,3,7,1.9163,people|publication
+PSI-20,solid,1,11.4977,6.0000,3,7,1.9163,approach|hypothesis
+PSI-20,flammability maps,2,11.1462,3.3750,2,1,3.3026,hypothesis|publication
+PSI-20,ignition extinction,2,11.1462,3.3750,2,1,3.3026,approach|publication
+PSI-21,smooke,1,114.8153,44.0000,19,3,2.6094,hypothesis|people|publication
+PSI-21,long,1,107.3123,56.0000,24,7,1.9163,hypothesis|objective|people|publication
+PSI-21,diffusion,1,98.2670,61.5000,23,10,1.5978,approach|curated_keywords|hypothesis|objective|proposal_title|publication|research_impacts|title
+PSI-21,flames,1,89.4939,69.5000,25,14,1.2877,approach|curated_keywords|hypothesis|objective|proposal_title|publication|research_impacts|sub_research_area
+PSI-21,coflow,1,83.7510,38.0000,14,5,2.2040,hypothesis|objective|proposal_title|publication|title
+PSI-21,laminar,1,72.8190,38.0000,12,7,1.9163,curated_keywords|hypothesis|proposal_title|publication|title
+PSI-21,marshall,1,67.8454,26.0000,11,3,2.6094,people|publication
+PSI-21,flame,1,66.8448,57.5000,21,16,1.1625,acronym|approach|curated_keywords|filenames|hypothesis|objective|publication|research_impacts|title
+PSI-21,bennett,1,57.9424,20.0000,8,2,2.8971,publication
+PSI-21,connelly,1,57.7952,17.5000,7,1,3.3026,publication
+PSI-21,soot,1,55.9005,37.0000,17,11,1.5108,approach|hypothesis|objective|publication|research_impacts
+PSI-21,diffusion flames,2,53.3278,33.3750,17,10,1.5978,approach|curated_keywords|hypothesis|objective|proposal_title|publication|research_impacts
+PSI-21,long marshall,2,48.9270,18.7500,10,3,2.6094,publication
+PSI-21,computational,1,46.5615,27.5000,12,9,1.6931,approach|hypothesis|objective|publication|research_impacts
+PSI-21,giassi,1,43.4568,15.0000,6,2,2.8971,publication
+PSI-21,ma,1,43.4568,15.0000,6,2,2.8971,publication
+PSI-21,mitchell,1,41.7510,16.0000,7,3,2.6094,people|publication
+PSI-21,coflow laminar,2,41.0986,15.7500,7,3,2.6094,hypothesis|proposal_title|publication|title
+PSI-21,experimental,1,39.6827,29.2500,14,13,1.3567,approach|file_folders|filenames|hypothesis|objective|publication|research_impacts
+PSI-21,combustion,1,39.5000,39.5000,13,19,1.0000,curated_keywords|experiment_hardware|hypothesis|publication|research_area|research_impacts|title
+PSI-21,laminar diffusion,2,39.2028,19.1250,7,6,2.0498,curated_keywords|hypothesis|proposal_title|publication|title
+PSI-21,acme,1,38.9466,19.0000,4,6,2.0498,acronym|approach|curated_keywords|experiment_hardware
+PSI-21,long smooke,2,36.9383,12.7500,7,2,2.8971,hypothesis|publication
+PSI-21,cao,1,36.2140,12.5000,5,2,2.8971,publication
+PSI-21,fuel dilution,2,35.8519,12.3750,7,2,2.8971,objective|proposal_title|publication
+PSI-21,acme flame,2,34.7654,12.0000,3,2,2.8971,acronym|approach|curated_keywords
+PSI-21,dilution,1,33.8221,16.5000,7,6,2.0498,objective|proposal_title|publication
+PSI-21,computational experimental,2,31.5062,10.8750,6,2,2.8971,publication|research_impacts
+PSI-21,sooting,1,29.8287,12.5000,6,4,2.3863,approach|hypothesis|objective|publication
+PSI-21,microgravity,1,29.5000,29.5000,9,19,1.0000,approach|curated_keywords|project_type|proposal_title|publication|research_impacts|title
+PSI-21,smooke mitchell,2,29.3562,11.2500,6,3,2.6094,publication
+PSI-21,bin,1,28.9712,10.0000,4,2,2.8971,publication
+PSI-21,coflow diffusion,2,28.3776,10.8750,6,3,2.6094,objective|publication
+PSI-21,fuel,1,27.8118,20.5000,8,13,1.3567,objective|proposal_title|publication|sub_research_area
+PSI-21,ch,1,27.3991,10.5000,5,3,2.6094,approach|hypothesis|publication
+PSI-21,doi.org,1,26.4207,8.0000,4,1,3.3026,hypothesis
+PSI-21,methane,1,25.3457,11.5000,5,5,2.2040,approach|objective|publication
+PSI-21,colket,1,24.7897,9.5000,4,3,2.6094,hypothesis|publication
+PSI-21,hall,1,24.7897,9.5000,4,3,2.6094,hypothesis|publication
+PSI-21,dworkin,1,24.7694,7.5000,3,1,3.3026,publication
+PSI-21,takahashi,1,23.8629,10.0000,4,4,2.3863,publication
+PSI-21,interaction,1,23.1181,7.0000,3,1,3.3026,publication|research_impacts
+PSI-21,ethylene,1,22.5480,11.0000,5,6,2.0498,approach|hypothesis|objective|publication
+PSI-21,davide,1,21.7284,7.5000,3,2,2.8971,publication
+PSI-21,ma bin,2,21.7284,7.5000,4,2,2.8971,publication
+PSI-21,coflow laminar diffusion,3,21.5111,7.4250,4,2,2.8971,hypothesis|proposal_title|publication|title
+PSI-21,computations,1,21.4668,6.5000,3,1,3.3026,approach|publication
+PSI-21,diagnostics,1,20.2798,7.0000,3,2,2.8971,approach|publication
+PSI-21,laser,1,20.2798,7.0000,3,2,2.8971,approach|publication
+PSI-21,pyrometry,1,20.2798,7.0000,3,2,2.8971,approach|publication
+PSI-21,diffusion flame,2,20.2332,11.2500,5,8,1.7985,hypothesis|publication|title
+PSI-21,10.1016,1,19.8155,6.0000,3,1,3.3026,hypothesis
+PSI-21,walsh,1,19.8155,6.0000,3,1,3.3026,hypothesis
+PSI-21,miller,1,19.5708,7.5000,3,3,2.6094,publication
+PSI-21,laminar diffusion flames,3,18.7889,8.5250,4,5,2.2040,curated_keywords|hypothesis|proposal_title|publication
+PSI-21,rack,1,18.6246,11.0000,2,9,1.6931,curated_keywords|experiment_hardware
+PSI-21,stocker,1,18.6246,11.0000,5,9,1.6931,people|publication
+PSI-21,connelly long,2,18.5770,5.6250,3,1,3.3026,publication
+PSI-21,effects,1,18.3151,13.5000,6,13,1.3567,publication|research_impacts
+PSI-21,gravity,1,18.0275,14.0000,6,14,1.2877,publication|research_impacts
+PSI-21,temperatures,1,17.9851,10.0000,5,8,1.7985,approach|objective
+PSI-21,air,1,17.8848,12.5000,5,12,1.4308,publication
+PSI-21,hall colket,2,17.3386,5.2500,3,1,3.3026,hypothesis|publication
+PSI-21,smooke hall,2,17.3386,5.2500,3,1,3.3026,hypothesis|publication
+PSI-21,integrated,1,16.6191,11.0000,2,11,1.5108,curated_keywords|experiment_hardware
+PSI-21,blair,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-21,kempema,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-21,nathan,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-21,puccio,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-21,schaffer,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-21,time-dependent,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-21,giassi davide,2,16.2963,5.6250,3,2,2.8971,publication
+PSI-21,mitchell long,2,16.2963,5.6250,3,2,2.8971,publication
+PSI-21,stocker takahashi,2,16.2963,5.6250,3,2,2.8971,publication
+PSI-21,experimental computational,2,16.1075,6.7500,4,4,2.3863,hypothesis|publication
+PSI-21,coflow diffusion flames,3,15.1375,5.2250,4,2,2.8971,objective|publication
+PSI-21,doi.org 10.1016,2,14.8616,4.5000,3,1,3.3026,hypothesis
+PSI-21,microgravity coflow,2,14.8616,4.5000,1,1,3.3026,title
+PSI-21,thin-filament,1,14.8616,4.5000,2,1,3.3026,approach|publication
+PSI-21,marshall smooke,2,14.6781,5.6250,3,3,2.6094,publication
+PSI-21,anne,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-21,beth,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-21,inlet,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-21,su,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-21,laminar diffusion flame,3,14.3519,5.5000,3,3,2.6094,hypothesis|title
+PSI-21,oh,1,14.3178,6.0000,3,4,2.3863,approach|hypothesis
+PSI-21,normal,1,14.0662,11.5000,5,15,1.2231,publication|research_impacts
+PSI-21,combustion integrated,2,13.9685,8.2500,2,9,1.6931,curated_keywords|experiment_hardware
+PSI-21,integrated rack,2,13.9685,8.2500,2,9,1.6931,curated_keywords|experiment_hardware
+PSI-21,connelly long smooke,3,13.6232,4.1250,3,1,3.3026,publication
+PSI-21,dilution coflow,2,13.6232,4.1250,2,1,3.3026,proposal_title|publication
+PSI-21,velocity,1,13.5974,9.0000,4,11,1.5108,objective|publication
+PSI-21,advanced,1,13.5816,8.5000,2,10,1.5978,publication|title
+PSI-21,measurements,1,13.5816,8.5000,4,10,1.5978,approach|publication
+PSI-21,a-x,1,13.2103,4.0000,2,1,3.3026,hypothesis
+PSI-21,dilute,1,13.2103,4.0000,2,1,3.3026,approach
+PSI-21,fielding,1,13.2103,4.0000,2,1,3.3026,hypothesis
+PSI-21,lift-off,1,13.2103,4.0000,2,1,3.3026,approach|objective
+PSI-21,proceedings,1,13.2103,4.0000,2,1,3.3026,hypothesis
+PSI-21,s0082-0784,1,13.2103,4.0000,2,1,3.3026,hypothesis
+PSI-21,tendencies,1,13.2103,4.0000,2,1,3.3026,approach|objective
+PSI-21,dobbins,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-21,forced,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-21,methane-air,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-21,extinction,1,12.7827,8.0000,4,10,1.5978,approach|objective|research_impacts
+PSI-21,smooke hall colket,3,12.7150,3.8500,3,1,3.3026,hypothesis|publication
+PSI-21,blair smooke,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-21,connelly blair,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-21,ethylene air,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-21,forced time-dependent,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-21,kempema nathan,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-21,smooke puccio,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-21,shape,1,12.2989,6.0000,3,6,2.0498,approach|objective
+PSI-21,mitchell long marshall,3,11.9506,4.1250,3,2,2.8971,publication
+PSI-21,smooke mitchell long,3,11.9506,4.1250,3,2,2.8971,publication
+PSI-21,non-premixed,1,11.9315,5.0000,2,4,2.3863,publication
+PSI-21,release,1,11.9315,5.0000,2,4,2.3863,publication
+PSI-21,formation,1,11.8520,7.0000,3,9,1.6931,publication|research_impacts
+PSI-21,computation,1,11.7425,4.5000,2,3,2.6094,hypothesis|publication
+PSI-21,flame shape,2,11.7425,4.5000,3,3,2.6094,approach|objective
+PSI-21,axisymmetric,1,11.5885,4.0000,2,2,2.8971,hypothesis
+PSI-21,luminosity,1,11.5885,4.0000,2,2,2.8971,approach|objective
+PSI-21,flames microgravity,2,11.5302,5.6250,3,6,2.0498,proposal_title|publication|research_impacts
+PSI-21,smooke long,2,11.1462,3.3750,2,1,3.3026,hypothesis|publication
+PSI-21,thin-filament pyrometry,2,11.1462,3.3750,2,1,3.3026,approach|publication
+PSI-21,imaging,1,11.0199,5.0000,2,5,2.2040,publication
+PSI-21,richard,1,11.0199,5.0000,2,5,2.2040,publication
+PSI-21,combustion microgravity coflow,3,10.8985,3.3000,1,1,3.3026,title
+PSI-21,microgravity coflow laminar,3,10.8985,3.3000,1,1,3.3026,title
+PSI-21,air diffusion,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-21,bennett beth,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-21,bennett giassi,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-21,beth anne,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-21,cao ma,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-21,cao su,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-21,dilution inlet,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-21,effects fuel,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-21,experimental coflow,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-21,giassi stocker,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-21,inlet velocity,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-21,laminar methane,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-21,ma bennett,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-21,release rate,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-21,takahashi long,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-21,velocity gravity,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-21,fuels,1,10.8534,8.0000,1,13,1.3567,curated_keywords
+PSI-21,processes,1,10.7910,6.0000,3,8,1.7985,approach|research_impacts
+PSI-21,long marshall smooke,3,10.7639,4.1250,3,3,2.6094,publication
+PSI-21,marshall smooke mitchell,3,10.7639,4.1250,3,3,2.6094,publication
+PSI-21,characterize,1,10.4378,4.0000,2,3,2.6094,objective
+PSI-25,olson,1,77.1390,35.0000,14,5,2.2040,publication
+PSI-25,spread,1,74.9351,34.0000,12,5,2.2040,approach|curated_keywords|hypothesis|objective|publication
+PSI-25,bass-ii,1,72.6569,22.0000,9,1,3.3026,acronym|approach|filenames|hypothesis|objective|publication|research_impacts
+PSI-25,forced,1,50.8840,19.5000,6,3,2.6094,curated_keywords|objective|publication
+PSI-25,bhattacharjee,1,50.6996,17.5000,7,2,2.8971,publication
+PSI-25,miller,1,48.2746,18.5000,8,3,2.6094,people|publication
+PSI-25,ferkul,1,48.2547,28.5000,12,9,1.6931,people|publication
+PSI-25,microgravity,1,48.0000,48.0000,21,19,1.0000,approach|experiment_hardware|hypothesis|objective|project_type|publication
+PSI-25,flame,1,46.5008,40.0000,15,16,1.1625,approach|curated_keywords|hypothesis|objective|publication|research_impacts
+PSI-25,fire,1,42.0569,31.0000,8,13,1.3567,curated_keywords|objective|publication|research_impacts|sub_research_area
+PSI-25,sandra,1,41.7602,17.5000,7,4,2.3863,publication
+PSI-25,flame spread,2,40.4980,18.3750,8,5,2.2040,curated_keywords|hypothesis|objective|publication
+PSI-25,subrata,1,39.1111,13.5000,6,2,2.8971,people|publication
+PSI-25,forced flow,2,38.0247,13.1250,5,2,2.8971,curated_keywords|objective|publication
+PSI-25,suppression,1,37.7687,21.0000,5,8,1.7985,curated_keywords|objective|publication|title
+PSI-25,flow,1,36.6193,31.5000,11,16,1.1625,approach|curated_keywords|hypothesis|objective|publication
+PSI-25,burning,1,33.0164,19.5000,7,9,1.6931,hypothesis|objective|publication|research_impacts|title
+PSI-25,msg,1,32.2150,13.5000,3,4,2.3863,curated_keywords|experiment_hardware|publication
+PSI-25,solids,1,31.8683,11.0000,3,2,2.8971,publication|title
+PSI-25,olson sandra,2,31.3201,13.1250,7,4,2.3863,publication
+PSI-25,opposed-flow,1,28.9712,10.0000,4,2,2.8971,publication
+PSI-25,wichman,1,28.9712,10.0000,4,2,2.8971,publication
+PSI-25,bass,1,28.6815,9.9000,3,2,2.8971,curated_keywords|filenames|media_filenames
+PSI-25,extinction,1,27.1632,17.0000,5,10,1.5978,curated_keywords|hypothesis|objective|publication
+PSI-25,bhattacharjee subrata,2,27.1605,9.3750,5,2,2.8971,publication
+PSI-25,speed,1,26.2492,11.0000,5,4,2.3863,approach|hypothesis|objective|publication
+PSI-25,sl,1,26.0944,10.0000,4,3,2.6094,publication
+PSI-25,olson pv,2,24.7694,7.5000,4,1,3.3026,publication
+PSI-25,fletcher,1,24.6255,8.5000,4,2,2.8971,people|publication
+PSI-25,paul,1,24.2799,13.5000,6,8,1.7985,people|publication
+PSI-25,burning suppression,2,23.9012,8.2500,3,2,2.8971,publication|title
+PSI-25,suppression solids,2,23.9012,8.2500,3,2,2.8971,publication|title
+PSI-25,glovebox,1,23.8629,10.0000,4,4,2.3863,approach|experiment_hardware|publication
+PSI-25,rods,1,23.1181,7.0000,3,1,3.3026,objective|publication
+PSI-25,pv,1,22.4813,12.5000,5,8,1.7985,publication
+PSI-25,fuels,1,22.3851,16.5000,5,13,1.3567,curated_keywords|objective|publication|research_impacts
+PSI-25,safety,1,22.3851,16.5000,4,13,1.3567,curated_keywords|publication|research_impacts|sub_research_area
+PSI-25,flammability,1,22.0109,13.0000,6,9,1.6931,hypothesis|objective|publication
+PSI-25,js,1,21.7284,7.5000,3,2,2.8971,publication
+PSI-25,opposed-flow flame,2,21.7284,7.5000,4,2,2.8971,publication
+PSI-25,solid fuels,2,21.7284,7.5000,2,2,2.8971,curated_keywords|objective
+PSI-25,tien,1,21.7284,7.5000,3,2,2.8971,publication
+PSI-25,limits,1,21.4617,15.0000,4,12,1.4308,curated_keywords|objective|publication
+PSI-25,concurrent,1,20.9377,9.5000,4,5,2.2040,approach|publication
+PSI-25,flow velocity,2,20.6622,9.3750,3,5,2.2040,curated_keywords|objective|publication
+PSI-25,fj,1,19.5708,7.5000,3,3,2.6094,publication
+PSI-25,sl olson,2,19.5708,7.5000,4,3,2.6094,publication
+PSI-25,ferkul paul,2,19.2171,9.3750,5,6,2.0498,publication
+PSI-25,comparison,1,19.1629,10.0000,4,7,1.9163,publication
+PSI-25,solid,1,19.1629,10.0000,2,7,1.9163,curated_keywords|objective
+PSI-25,velocity,1,18.8853,12.5000,3,11,1.5108,curated_keywords|objective|publication
+PSI-25,fletcher olson,2,18.5770,5.6250,3,1,3.3026,publication
+PSI-25,forced flow velocity,3,18.1642,5.5000,2,1,3.3026,curated_keywords|objective
+PSI-25,olson pv ferkul,3,18.1642,5.5000,4,1,3.3026,publication
+PSI-25,sl olson pv,3,18.1642,5.5000,4,1,3.3026,publication
+PSI-25,microgravity glovebox,2,17.8972,7.5000,4,4,2.3863,approach|experiment_hardware|publication
+PSI-25,pmma,1,17.8972,7.5000,3,4,2.3863,publication
+PSI-25,burning suppression solids,3,17.5276,6.0500,3,2,2.8971,publication|title
+PSI-25,pv ferkul,2,16.8610,9.3750,5,8,1.7985,publication
+PSI-25,fire safety,2,16.7889,12.3750,4,13,1.3567,curated_keywords|publication|research_impacts|sub_research_area
+PSI-25,fabric,1,16.7041,7.0000,3,4,2.3863,objective|publication
+PSI-25,extinction limits,2,16.5298,7.5000,2,5,2.2040,curated_keywords|objective
+PSI-25,aslihan,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-25,indrek,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-25,marcum,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-25,purely,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-25,shah,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-25,simsek,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-25,wynn,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-25,combustion,1,16.5000,16.5000,7,19,1.0000,approach|objective|publication|research_area|research_impacts
+PSI-25,fj miller,2,16.2963,5.6250,3,2,2.8971,publication
+PSI-25,js tien,2,16.2963,5.6250,3,2,2.8971,publication
+PSI-25,miller fletcher,2,16.2963,5.6250,3,2,2.8971,publication
+PSI-25,sandra ferkul,2,16.2963,5.6250,3,2,2.8971,publication
+PSI-25,spread extinction,2,16.1001,4.8750,3,1,3.3026,hypothesis|objective|publication
+PSI-25,earth,1,15.9784,10.0000,5,10,1.5978,hypothesis|objective|research_impacts
+PSI-25,opposed-flow flame spread,3,15.9342,5.5000,4,2,2.8971,publication
+PSI-25,fernandez-pello,1,15.6566,6.0000,3,3,2.6094,people|publication
+PSI-25,fire suppression,2,15.6566,6.0000,1,3,2.6094,curated_keywords
+PSI-25,growth,1,15.2383,9.0000,4,9,1.6931,approach|objective|publication
+PSI-25,flame growth,2,14.8768,6.7500,4,5,2.2040,approach|objective|publication
+PSI-25,blowoff,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-25,boundary,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-25,channel,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-25,composite,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-25,laue,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-25,narrow,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-25,paolini,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-25,tran,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-25,material,1,14.3881,8.0000,4,8,1.7985,hypothesis|objective
+PSI-25,gravity,1,14.1645,11.0000,5,14,1.2877,hypothesis|objective|publication
+PSI-25,growth spread,2,13.6995,5.2500,3,3,2.6094,approach|publication
+PSI-25,fletcher olson sandra,3,13.6232,4.1250,3,1,3.3026,publication
+PSI-25,miller fletcher olson,3,13.6232,4.1250,3,1,3.3026,publication
+PSI-25,experimental,1,13.5667,10.0000,4,13,1.3567,publication
+PSI-25,normal,1,13.4546,11.0000,5,15,1.2231,hypothesis|objective|publication
+PSI-25,tunnel,1,13.2103,4.0000,2,1,3.3026,approach
+PSI-25,upward,1,13.2103,4.0000,2,1,3.3026,hypothesis|research_impacts
+PSI-25,correlation,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-25,matthew,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-25,thin,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-25,low,1,12.5896,7.0000,3,8,1.7985,hypothesis|publication
+PSI-25,samples,1,12.5896,7.0000,3,8,1.7985,approach|publication
+PSI-25,bhattacharjee fj,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-25,blowoff limits,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-25,comparison experimental,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-25,ferkul bhattacharjee,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-25,flow microgravity,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-25,low speed,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-25,pmma rods,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-25,purely forced,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-25,samples low,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-25,sandra wichman,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-25,simsek aslihan,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-25,speed purely,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-25,subrata simsek,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-25,tran wynn,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-25,wichman indrek,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-25,tests,1,12.0866,8.0000,4,11,1.5108,approach|hypothesis|objective
+PSI-25,olson sandra ferkul,3,11.9506,4.1250,3,2,2.8971,publication
+PSI-25,sandra ferkul paul,3,11.9506,4.1250,3,2,2.8971,publication
+PSI-25,christopher,1,11.9315,5.0000,2,4,2.3863,publication
+PSI-25,computational,1,11.8520,7.0000,3,9,1.6931,objective|publication
+PSI-25,geometry,1,11.5885,4.0000,2,2,2.8971,hypothesis|objective
+PSI-25,slabs,1,11.5885,4.0000,2,2,2.8971,objective
+PSI-25,variables,1,11.5885,4.0000,2,2,2.8971,approach|objective
+PSI-25,wind,1,11.5885,4.0000,2,2,2.8971,approach
+PSI-25,normal gravity,2,11.1926,8.2500,5,13,1.3567,hypothesis|objective|publication
+PSI-25,concurrent flow,2,11.1462,3.3750,2,1,3.3026,approach|publication
+PSI-25,kinetic,1,11.0199,5.0000,2,5,2.2040,publication
+PSI-25,regime,1,11.0199,5.0000,2,5,2.2040,publication
+PSI-25,zhao,1,11.0199,5.0000,2,5,2.2040,publication
+PSI-25,channel apparatus,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-25,composite fabric,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-25,concurrent flame,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-25,fabric samples,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-25,laue matthew,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-25,narrow channel,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-25,paolini christopher,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-25,spread comparison,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-25,concentration,1,10.7910,6.0000,3,8,1.7985,approach|hypothesis|objective
+PSI-25,materials,1,10.7910,6.0000,3,8,1.7985,hypothesis|research_impacts
+PSI-25,glovebox msg,2,10.7639,4.1250,2,3,2.6094,experiment_hardware|publication
+PSI-25,energy,1,10.7383,4.5000,2,4,2.3863,publication|research_impacts
+PSI-25,burn,1,10.4378,4.0000,2,3,2.6094,hypothesis|research_impacts
+PSI-25,apparatus,1,10.2491,5.0000,2,6,2.0498,publication
+PSI-25,models,1,10.1589,6.0000,3,9,1.6931,objective|research_impacts
+PSI-25,flame growth spread,3,10.0463,3.8500,3,3,2.6094,approach|publication
+PSI-25,opposed,1,9.9179,4.5000,2,5,2.2040,approach|publication
+PSI-25,sheets,1,9.9179,4.5000,2,5,2.2040,objective|publication
+PSI-22,dunn-rankin,1,176.6883,53.5000,22,1,3.3026,people|publication
+PSI-22,electric,1,165.1293,50.0000,20,1,3.3026,approach|curated_keywords|hypothesis|objective|publication|research_impacts
+PSI-22,derek,1,127.1495,38.5000,16,1,3.3026,people|publication
+PSI-22,flames,1,110.0968,85.5000,26,14,1.2877,acronym|approach|curated_keywords|hypothesis|objective|publication|research_impacts|sub_research_area|title
+PSI-22,field,1,100.4634,38.5000,15,3,2.6094,approach|curated_keywords|objective|publication
+PSI-22,dunn-rankin derek,2,92.8852,28.1250,15,1,3.3026,publication
+PSI-22,electric field,2,85.4544,25.8750,13,1,3.3026,approach|curated_keywords|objective|publication
+PSI-22,chien,1,77.6107,23.5000,10,1,3.3026,people|publication
+PSI-22,ion-driven,1,71.0056,21.5000,7,1,3.3026,approach|curated_keywords|hypothesis|publication
+PSI-22,impinging,1,67.7030,20.5000,6,1,3.3026,curated_keywords|publication
+PSI-22,coflow,1,61.7112,28.0000,10,5,2.2040,approach|curated_keywords|publication
+PSI-22,plif,1,61.0978,18.5000,3,1,3.3026,curated_keywords|publication
+PSI-22,flame,1,61.0322,52.5000,21,16,1.1625,approach|curated_keywords|hypothesis|publication
+PSI-22,diffusion,1,51.9297,32.5000,10,10,1.5978,approach|curated_keywords|hypothesis|publication|title
+PSI-22,methane,1,49.5894,22.5000,7,5,2.2040,approach|curated_keywords|publication
+PSI-22,weinberg,1,49.5388,15.0000,6,1,3.3026,publication
+PSI-22,yu-chien,1,49.5388,15.0000,6,1,3.3026,publication
+PSI-22,ion,1,46.2362,14.0000,6,1,3.3026,approach|publication
+PSI-22,burner,1,43.1165,22.5000,8,7,1.9163,approach|curated_keywords|publication
+PSI-22,carleton,1,41.2823,12.5000,5,1,3.3026,publication
+PSI-22,e-field,1,41.2823,12.5000,4,1,3.3026,acronym|approach|publication|research_impacts
+PSI-22,chemi-ionization,1,39.6310,12.0000,3,1,3.3026,approach|curated_keywords|hypothesis
+PSI-22,chien yu-chien,2,37.1541,11.2500,6,1,3.3026,publication
+PSI-22,convection,1,35.4514,18.5000,6,7,1.9163,approach|curated_keywords|hypothesis|publication
+PSI-22,laminar,1,35.4514,18.5000,6,7,1.9163,approach|hypothesis|publication|sub_research_area|title
+PSI-22,co,1,34.6771,10.5000,2,1,3.3026,curated_keywords|publication
+PSI-22,ion-driven convection,2,34.6771,10.5000,4,1,3.3026,approach|curated_keywords|hypothesis
+PSI-22,monoxide,1,34.6771,10.5000,2,1,3.3026,curated_keywords|publication
+PSI-22,fields,1,33.9227,13.0000,6,3,2.6094,approach|hypothesis|publication|research_impacts
+PSI-22,combustion,1,33.5000,33.5000,13,19,1.0000,approach|experiment_hardware|hypothesis|publication|research_area|research_impacts|title
+PSI-22,felix,1,33.0259,10.0000,4,1,3.3026,publication
+PSI-22,fred,1,33.0259,10.0000,4,1,3.3026,publication
+PSI-22,karnani,1,33.0259,10.0000,4,1,3.3026,publication
+PSI-22,methane flames,2,32.2002,9.7500,3,1,3.3026,curated_keywords|publication
+PSI-22,e-field flames,2,30.9617,9.3750,4,1,3.3026,acronym|approach|publication|research_impacts
+PSI-22,coflow burner,2,29.7233,9.0000,3,1,3.3026,approach|curated_keywords
+PSI-22,electric-field,1,28.0720,8.5000,2,1,3.3026,publication|title
+PSI-22,diffusion flames,2,27.5627,17.2500,6,10,1.5978,approach|curated_keywords|hypothesis|publication|title
+PSI-22,electric fields,2,27.2463,8.2500,5,1,3.3026,approach|hypothesis|publication|research_impacts
+PSI-22,strength,1,26.4207,8.0000,4,1,3.3026,approach
+PSI-22,small,1,26.0784,14.5000,6,8,1.7985,approach|publication
+PSI-22,carbon monoxide,2,26.0079,7.8750,2,1,3.3026,curated_keywords|publication
+PSI-22,current,1,25.8699,13.5000,6,7,1.9163,approach|objective|publication
+PSI-22,oh,1,25.0561,10.5000,2,4,2.3863,curated_keywords|publication
+PSI-22,carleton fred,2,24.7694,7.5000,4,1,3.3026,publication
+PSI-22,escofet-martin,1,24.7694,7.5000,3,1,3.3026,publication
+PSI-22,felix carleton,2,24.7694,7.5000,4,1,3.3026,publication
+PSI-22,rickard,1,24.7694,7.5000,3,1,3.3026,publication
+PSI-22,tinajero,1,24.7694,7.5000,3,1,3.3026,publication
+PSI-22,weinberg felix,2,24.7694,7.5000,4,1,3.3026,publication
+PSI-22,non-premixed,1,23.8629,10.0000,4,4,2.3863,publication
+PSI-22,acme,1,23.5730,11.5000,3,6,2.0498,acronym|experiment_hardware|publication
+PSI-22,ion current,2,23.5309,7.1250,4,1,3.3026,approach|publication
+PSI-22,electrical,1,23.1181,7.0000,3,1,3.3026,publication|research_impacts
+PSI-22,effects,1,23.0635,17.0000,6,13,1.3567,approach|publication|title
+PSI-22,wind,1,21.7284,7.5000,3,2,2.8971,publication
+PSI-22,soot,1,21.1516,14.0000,7,11,1.5108,approach|hypothesis|objective|research_impacts
+PSI-22,acme e-field,2,21.0540,6.3750,2,1,3.3026,acronym|publication
+PSI-22,electric-field effects,2,21.0540,6.3750,2,1,3.3026,publication|title
+PSI-22,behavior,1,20.3501,15.0000,7,13,1.3567,approach|hypothesis|publication
+PSI-22,changes,1,20.2798,7.0000,3,2,2.8971,objective|publication
+PSI-22,carbon,1,20.1211,10.5000,2,7,1.9163,curated_keywords|publication
+PSI-22,co plif,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-22,field flames,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-22,impinging flame,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-22,oh plif,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-22,matthew,1,19.5708,7.5000,3,3,2.6094,publication
+PSI-22,escofet-martin david,2,18.5770,5.6250,3,1,3.3026,publication
+PSI-22,rickard matthew,2,18.5770,5.6250,3,1,3.3026,publication
+PSI-22,microgravity,1,18.5000,18.5000,7,19,1.0000,approach|hypothesis|project_type|publication|title
+PSI-22,laminar diffusion,2,18.4484,9.0000,4,6,2.0498,approach|hypothesis|title
+PSI-22,felix carleton fred,3,18.1642,5.5000,4,1,3.3026,publication
+PSI-22,weinberg felix carleton,3,18.1642,5.5000,4,1,3.3026,publication
+PSI-22,fuel,1,16.9584,12.5000,6,13,1.3567,approach|publication|research_impacts
+PSI-22,driven,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-22,hegde,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-22,papac,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-22,sunny,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-22,y-c,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-22,yamashita,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-22,generated,1,15.6566,6.0000,3,3,2.6094,approach
+PSI-22,stability,1,15.6566,6.0000,3,3,2.6094,approach|hypothesis
+PSI-22,control,1,15.5109,6.5000,3,4,2.3863,approach|publication|research_impacts
+PSI-22,acme e-field flames,3,15.4396,4.6750,2,1,3.3026,acronym|publication
+PSI-22,curves,1,14.8616,4.5000,2,1,3.3026,approach|publication
+PSI-22,high-voltage,1,14.8616,4.5000,2,1,3.3026,approach|publication
+PSI-22,microgravity electric-field,2,14.8616,4.5000,1,1,3.3026,title
+PSI-22,soot behavior,2,14.8616,4.5000,3,1,3.3026,approach|hypothesis
+PSI-22,stability soot,2,14.8616,4.5000,3,1,3.3026,approach|hypothesis
+PSI-22,electric field flames,3,14.5314,4.4000,1,1,3.3026,curated_keywords
+PSI-22,chemiluminescence,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-22,conducted,1,14.3881,8.0000,4,8,1.7985,approach|research_impacts
+PSI-22,influence,1,14.3258,6.5000,3,5,2.2040,approach|hypothesis|publication
+PSI-22,gas,1,13.4140,7.0000,3,7,1.9163,publication|research_impacts
+PSI-22,chemi-ion,1,13.2103,4.0000,2,1,3.3026,approach|objective
+PSI-22,mesh,1,13.2103,4.0000,2,1,3.3026,approach
+PSI-22,polarity,1,13.2103,4.0000,2,1,3.3026,approach
+PSI-22,aspects,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-22,methane-air,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-22,effects laminar,2,13.0370,4.5000,1,2,2.8971,title
+PSI-22,flame stability,2,13.0370,4.5000,3,2,2.8971,approach|hypothesis
+PSI-22,diffusion flame,2,12.8144,7.1250,4,8,1.7985,approach|publication
+PSI-22,david,1,12.6986,7.5000,3,9,1.6931,publication
+PSI-22,david dunn-rankin,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-22,electrical aspects,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-22,ion-driven wind,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-22,karnani sunny,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-22,matthew dunn-rankin,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-22,sunny dunn-rankin,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-22,tinajero jesse,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-22,y-c chien,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-22,yu-chien dunn-rankin,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-22,yu-chien escofet-martin,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-22,laminar diffusion flames,3,12.1219,5.5000,3,5,2.2040,approach|hypothesis|title
+PSI-22,elevated,1,11.9315,5.0000,2,4,2.3863,publication
+PSI-22,jesse,1,11.9315,5.0000,2,4,2.3863,publication
+PSI-22,stabilized,1,11.7425,4.5000,2,3,2.6094,objective|publication
+PSI-22,relationship,1,11.5885,4.0000,2,2,2.8971,approach|objective
+PSI-22,voltage,1,11.5885,4.0000,2,2,2.8971,approach|objective
+PSI-22,current flame,2,11.1462,3.3750,2,1,3.3026,approach|publication
+PSI-22,field effects,2,11.1462,3.3750,2,1,3.3026,approach|publication
+PSI-22,fields control,2,11.1462,3.3750,2,1,3.3026,publication|research_impacts
+PSI-22,fields microgravity,2,11.1462,3.3750,2,1,3.3026,hypothesis|publication
+PSI-22,flame electric,2,11.1462,3.3750,2,1,3.3026,approach|publication
+PSI-22,combustion microgravity electric-field,3,10.8985,3.3000,1,1,3.3026,title
+PSI-22,effects laminar diffusion,3,10.8985,3.3000,1,1,3.3026,title
+PSI-22,electric-field effects laminar,3,10.8985,3.3000,1,1,3.3026,title
+PSI-22,flame stability soot,3,10.8985,3.3000,3,1,3.3026,approach|hypothesis
+PSI-22,microgravity electric-field effects,3,10.8985,3.3000,1,1,3.3026,title
+PSI-22,stability soot behavior,3,10.8985,3.3000,3,1,3.3026,approach|hypothesis
+PSI-22,coflow methane-air,2,10.8642,3.7500,2,2,2.8971,publication
+PSI-22,emissions,1,10.7910,6.0000,3,8,1.7985,approach|research_impacts
+PSI-22,production,1,10.4378,4.0000,2,3,2.6094,approach|research_impacts
+PSI-22,varied,1,10.4378,4.0000,2,3,2.6094,approach
+PSI-22,stocker,1,10.1589,6.0000,3,9,1.6931,people|publication
+PSI-22,buoyancy,1,9.9179,4.5000,2,5,2.2040,approach|publication
+PSI-22,chemi-ion current,2,9.9078,3.0000,2,1,3.3026,approach|objective
+PSI-22,combustion dynamics,2,9.9078,3.0000,2,1,3.3026,approach|hypothesis
+PSI-22,field strength,2,9.9078,3.0000,2,1,3.3026,approach
+PSI-22,laminar flames,2,9.9078,3.0000,1,1,3.3026,sub_research_area
+PSI-22,relationship electric,2,9.9078,3.0000,2,1,3.3026,approach|objective
+PSI-22,advanced,1,9.5870,6.0000,1,10,1.5978,title
+PSI-22,response,1,9.5452,4.0000,2,4,2.3863,approach|objective
+PSI-22,air,1,9.3001,6.5000,3,12,1.4308,approach|publication
+PSI-22,chien yu-chien dunn-rankin,3,9.0821,2.7500,2,1,3.3026,publication
+PSI-22,chien yu-chien escofet-martin,3,9.0821,2.7500,2,1,3.3026,publication
+PSI-22,david dunn-rankin derek,3,9.0821,2.7500,2,1,3.3026,publication
+PSI-22,escofet-martin david dunn-rankin,3,9.0821,2.7500,2,1,3.3026,publication
+PSI-22,karnani sunny dunn-rankin,3,9.0821,2.7500,2,1,3.3026,publication
+PSI-22,matthew dunn-rankin derek,3,9.0821,2.7500,2,1,3.3026,publication
+PSI-68,droplet,1,269.5516,131.5000,52,6,2.0498,approach|curated_keywords|experiment_hardware|hypothesis|objective|proposal_title|publication|research_impacts
+PSI-68,droplet combustion,2,138.7034,58.1250,27,4,2.3863,curated_keywords|experiment_hardware|hypothesis|objective|proposal_title|publication
+PSI-68,droplets,1,135.6908,52.0000,21,3,2.6094,objective|publication
+PSI-68,combustion,1,132.5000,132.5000,47,19,1.0000,approach|curated_keywords|experiment_hardware|hypothesis|objective|proposal_title|publication|research_area|research_impacts
+PSI-68,shaw,1,126.0247,43.5000,18,2,2.8971,people|publication
+PSI-68,avedisian,1,111.5391,38.5000,16,2,2.8971,people|publication
+PSI-68,williams,1,85.9066,36.0000,15,4,2.3863,people|publication
+PSI-68,extinction,1,80.6908,50.5000,14,10,1.5978,curated_keywords|objective|publication
+PSI-68,liu,1,71.7595,27.5000,11,3,2.6094,publication
+PSI-68,nayagam,1,68.3232,31.0000,13,5,2.2040,people|publication
+PSI-68,forman,1,62.0437,26.0000,11,4,2.3863,people|publication
+PSI-68,n-heptane,1,59.6574,25.0000,10,4,2.3863,publication
+PSI-68,dryer,1,54.7982,21.0000,9,3,2.6094,people|publication
+PSI-68,hicks,1,54.7982,21.0000,9,3,2.6094,people|publication
+PSI-68,farouk,1,52.1888,20.0000,8,3,2.6094,publication
+PSI-68,dietrich,1,51.7934,23.5000,10,5,2.2040,people|publication
+PSI-68,vedha,1,51.7934,23.5000,10,5,2.2040,people|publication
+PSI-68,ct,1,50.6996,17.5000,7,2,2.8971,publication
+PSI-68,burning,1,49.9478,29.5000,12,9,1.6931,objective|publication
+PSI-68,benjamin,1,48.2746,18.5000,8,3,2.6094,people|publication
+PSI-68,williams forman,2,44.7430,18.7500,10,4,2.3863,publication
+PSI-68,yc,1,43.4568,15.0000,6,2,2.8971,publication
+PSI-68,diffusive,1,41.2823,12.5000,3,1,3.3026,curated_keywords|hypothesis|publication
+PSI-68,flame,1,41.2694,35.5000,11,16,1.1625,approach|curated_keywords|hypothesis|objective|proposal_title|publication|title
+PSI-68,microgravity,1,40.0000,40.0000,15,19,1.0000,approach|curated_keywords|hypothesis|objective|project_type|proposal_title|publication
+PSI-68,flex-2,1,39.6310,12.0000,4,1,3.3026,acronym|approach|hypothesis|objective
+PSI-68,daniel,1,38.1807,16.0000,7,4,2.3863,people|publication
+PSI-68,ct avedisian,2,38.0247,13.1250,7,2,2.8971,publication
+PSI-68,shaw benjamin,2,38.0247,13.1250,7,2,2.8971,publication
+PSI-68,nayagam vedha,2,37.1920,16.8750,9,5,2.2040,publication
+PSI-68,yc liu,2,37.1541,11.2500,6,1,3.3026,publication
+PSI-68,savas,1,36.2140,12.5000,5,2,2.8971,publication
+PSI-68,wei,1,36.2140,12.5000,5,2,2.8971,publication
+PSI-68,thomas,1,35.2636,16.0000,7,5,2.2040,people|publication
+PSI-68,decane,1,34.6771,10.5000,2,1,3.3026,curated_keywords|publication
+PSI-68,reduced,1,33.8629,20.0000,8,9,1.6931,publication
+PSI-68,numerical,1,33.2724,18.5000,8,8,1.7985,hypothesis|objective|publication
+PSI-68,yu,1,32.6180,12.5000,5,3,2.6094,publication
+PSI-68,avedisian thomas,2,32.5926,11.2500,6,2,2.8971,publication
+PSI-68,fuel,1,31.8819,23.5000,11,13,1.3567,approach|objective|publication|research_impacts
+PSI-68,ethanol,1,30.4198,10.5000,2,2,2.8971,curated_keywords|publication
+PSI-68,initial,1,30.4198,10.5000,5,2,2.8971,approach|hypothesis|objective|publication
+PSI-68,gravity,1,28.9728,22.5000,9,14,1.2877,publication
+PSI-68,air-diluent,1,28.9712,10.0000,4,2,2.8971,publication
+PSI-68,cheng,1,28.9712,10.0000,4,2,2.8971,publication
+PSI-68,gasoline,1,28.9712,10.0000,4,2,2.8971,publication
+PSI-68,spherically,1,28.9712,10.0000,4,2,2.8971,publication
+PSI-68,fiber,1,27.5226,9.5000,4,2,2.8971,approach|publication
+PSI-68,modeling,1,26.9776,15.0000,6,8,1.7985,publication
+PSI-68,dietrich daniel,2,26.8458,11.2500,6,4,2.3863,publication
+PSI-68,bi-component,1,26.4207,8.0000,4,1,3.3026,hypothesis|objective
+PSI-68,cool-flame,1,26.0944,10.0000,4,3,2.6094,publication
+PSI-68,diffusive extinction,2,26.0079,7.8750,2,1,3.3026,curated_keywords|publication
+PSI-68,mixtures,1,25.8699,13.5000,6,7,1.9163,approach|hypothesis|publication|research_impacts
+PSI-68,reduced gravity,2,25.1513,13.1250,7,7,1.9163,publication
+PSI-68,aj,1,24.7694,7.5000,3,1,3.3026,publication
+PSI-68,characteristics,1,24.5979,12.0000,5,6,2.0498,objective|publication
+PSI-68,vedha dietrich,2,24.4635,9.3750,5,3,2.6094,publication
+PSI-68,radiative,1,23.9676,15.0000,4,10,1.5978,curated_keywords|hypothesis|publication
+PSI-68,extinguishment,1,23.4849,9.0000,2,3,2.6094,proposal_title|title
+PSI-68,multiple,1,23.1770,8.0000,1,2,2.8971,curated_keywords
+PSI-68,environments,1,23.0635,17.0000,7,13,1.3567,objective|publication
+PSI-68,experimental,1,23.0635,17.0000,8,13,1.3567,approach|hypothesis|objective|publication
+PSI-68,liquid,1,22.5480,11.0000,5,6,2.0498,hypothesis|objective|publication|research_impacts
+PSI-68,flame extinction,2,22.3715,9.3750,3,4,2.3863,curated_keywords|objective|publication
+PSI-68,frederick,1,22.1802,8.5000,4,3,2.6094,people|publication
+PSI-68,air-diluent environments,2,21.7284,7.5000,4,2,2.8971,publication
+PSI-68,bd,1,21.7284,7.5000,3,2,2.8971,publication
+PSI-68,fl,1,21.7284,7.5000,3,2,2.8971,publication
+PSI-68,liu yu,2,21.7284,7.5000,4,2,2.8971,publication
+PSI-68,methanol,1,21.7284,7.5000,3,2,2.8971,publication
+PSI-68,symmetric,1,21.7284,7.5000,3,2,2.8971,publication
+PSI-68,xu,1,21.7284,7.5000,3,2,2.8971,publication
+PSI-68,yu cheng,2,21.7284,7.5000,4,2,2.8971,publication
+PSI-68,radiative extinction,2,21.4887,9.7500,3,5,2.2040,curated_keywords|publication
+PSI-68,pressure,1,21.4617,15.0000,7,12,1.4308,approach|publication
+PSI-68,flex,1,20.8755,8.0000,1,3,2.6094,curated_keywords
+PSI-68,surrogates,1,20.2798,7.0000,3,2,2.8971,publication|research_impacts
+PSI-68,diameter,1,19.8358,9.0000,4,5,2.2040,approach|publication
+PSI-68,benchmark,1,19.8155,6.0000,3,1,3.3026,hypothesis|objective
+PSI-68,multiple droplet,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-68,fuels,1,19.6718,14.5000,7,13,1.3567,objective|publication|research_impacts
+PSI-68,daniel williams,2,19.5708,7.5000,4,3,2.6094,publication
+PSI-68,fa,1,19.5708,7.5000,3,3,2.6094,publication
+PSI-68,fibers,1,19.5708,7.5000,3,3,2.6094,publication
+PSI-68,heptane,1,19.5708,7.5000,3,3,2.6094,publication
+PSI-68,tanvir,1,19.5708,7.5000,3,3,2.6094,publication
+PSI-68,flame extinguishment,2,19.5556,6.7500,2,2,2.8971,proposal_title|title
+PSI-68,gas,1,19.1629,10.0000,5,7,1.9163,approach|hypothesis|research_impacts
+PSI-68,deployment,1,18.8313,6.5000,3,2,2.8971,approach|publication
+PSI-68,aj savas,2,18.5770,5.6250,3,1,3.3026,publication
+PSI-68,soot,1,18.1299,12.0000,3,11,1.5108,curated_keywords|objective
+PSI-68,nayagam vedha dietrich,3,17.9399,6.8750,5,3,2.6094,publication
+PSI-68,vedha dietrich daniel,3,17.9399,6.8750,5,3,2.6094,publication
+PSI-68,combustion apparatus,2,17.3827,6.0000,1,2,2.8971,curated_keywords
+PSI-68,real,1,17.3827,6.0000,3,2,2.8971,approach|objective|research_impacts
+PSI-68,retracted,1,17.3827,6.0000,3,2,2.8971,approach
+PSI-68,conditions,1,16.9584,12.5000,6,13,1.3567,approach|hypothesis|objective|publication
+PSI-68,formation,1,16.9315,10.0000,2,9,1.6931,curated_keywords|objective
+PSI-68,unsteady,1,16.7041,7.0000,3,4,2.3863,objective|publication
+PSI-68,burke-schumann,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-68,butanol,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-68,ha,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-68,ti,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-68,apparatus,1,16.3986,8.0000,1,6,2.0498,curated_keywords
+PSI-68,bd shaw,2,16.2963,5.6250,3,2,2.8971,publication
+PSI-68,cheng avedisian,2,16.2963,5.6250,3,2,2.8971,publication
+PSI-68,computational modeling,2,16.2963,5.6250,3,2,2.8971,publication
+PSI-68,fl dryer,2,16.2963,5.6250,3,2,2.8971,publication
+PSI-68,numerical modeling,2,16.2963,5.6250,3,2,2.8971,publication
+PSI-68,spherically symmetric,2,16.2963,5.6250,3,2,2.8971,publication
+PSI-68,symmetric droplet,2,16.2963,5.6250,3,2,2.8971,publication
+PSI-68,effects,1,16.2801,12.0000,5,13,1.3567,hypothesis|publication
+PSI-68,fire,1,16.2801,12.0000,2,13,1.3567,curated_keywords|sub_research_area
+PSI-68,safety,1,16.2801,12.0000,2,13,1.3567,curated_keywords|sub_research_area
+PSI-68,spacecraft,1,16.2801,12.0000,2,13,1.3567,curated_keywords|sub_research_area
+PSI-68,liu yu cheng,3,15.9342,5.5000,4,2,2.8971,publication
+PSI-68,field,1,15.6566,6.0000,3,3,2.6094,approach|hypothesis
+PSI-68,ignitor,1,15.6566,6.0000,3,3,2.6094,approach
+PSI-68,order,1,15.6566,6.0000,3,3,2.6094,approach|objective
+PSI-68,simulations,1,15.6566,6.0000,3,3,2.6094,hypothesis|objective
+PSI-68,role,1,15.4278,7.0000,3,5,2.2040,objective|publication
+PSI-68,cool,1,15.3737,7.5000,3,6,2.0498,publication
+PSI-68,quasi-steady,1,15.3737,7.5000,3,6,2.0498,publication
+PSI-68,structure,1,15.3737,7.5000,3,6,2.0498,publication
+PSI-68,burning characteristics,2,15.2099,5.2500,3,2,2.8971,objective|publication
+PSI-68,theoretical models,2,14.8616,4.5000,3,1,3.3026,hypothesis|objective
+PSI-68,dryer frederick,2,14.6781,5.6250,3,3,2.6094,publication
+PSI-68,fa williams,2,14.6781,5.6250,3,3,2.6094,publication
+PSI-68,farouk tanvir,2,14.6781,5.6250,3,3,2.6094,publication
+PSI-68,n-heptane droplet,2,14.6781,5.6250,3,3,2.6094,publication
+PSI-68,multiple droplet combustion,3,14.5314,4.4000,1,1,3.3026,curated_keywords
+PSI-68,dwyer,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-68,fiber-supported,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-68,ghata,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-68,isolated,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-68,jet-a,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-68,jin,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-68,methyl,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-68,oxygen-inert,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-68,propanol,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-68,shringi,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-68,sub-millimeter,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-68,submillimeter,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-68,chamber,1,14.3881,8.0000,4,8,1.7985,approach
+PSI-68,soot formation,2,14.3722,7.5000,2,7,1.9163,curated_keywords|objective
+PSI-68,daniel williams forman,3,14.3519,5.5000,4,3,2.6094,publication
+PSI-68,dietrich daniel williams,3,14.3519,5.5000,4,3,2.6094,publication
+PSI-68,droplet combustion microgravity,3,14.3519,5.5000,4,3,2.6094,publication
+PSI-68,ignition,1,14.3488,7.0000,3,6,2.0498,approach|publication
+PSI-23,law,1,278.1235,96.0000,39,2,2.8971,people|publication
+PSI-23,flames,1,164.1795,127.5000,46,14,1.2877,approach|curated_keywords|hypothesis|objective|proposal_title|publication|research_impacts|sub_research_area|title
+PSI-23,diffusion,1,139.8107,87.5000,30,10,1.5978,curated_keywords|objective|proposal_title|publication|research_impacts|title
+PSI-23,spherical,1,127.4333,66.5000,26,7,1.9163,approach|hypothesis|objective|proposal_title|publication|title
+PSI-23,chung,1,111.5391,38.5000,16,2,2.8971,people|publication
+PSI-23,zhu,1,94.1564,32.5000,13,2,2.8971,publication
+PSI-23,law chung,2,81.4815,28.1250,15,2,2.8971,publication
+PSI-23,sung,1,79.6708,27.5000,11,2,2.8971,publication
+PSI-23,spherical diffusion,2,76.0371,34.5000,17,5,2.2040,objective|proposal_title|publication|title
+PSI-23,diffusion flames,2,75.4978,47.2500,22,10,1.5978,curated_keywords|objective|proposal_title|publication|research_impacts|title
+PSI-23,yoo,1,74.3082,22.5000,9,1,3.3026,publication
+PSI-23,structure,1,60.4698,29.5000,10,6,2.0498,approach|curated_keywords|hypothesis|objective|proposal_title|publication
+PSI-23,soret,1,59.4465,18.0000,5,1,3.3026,curated_keywords|publication
+PSI-23,response,1,57.2711,24.0000,8,4,2.3863,proposal_title|publication|title
+PSI-23,spherical diffusion flames,3,57.0921,23.9250,16,4,2.3863,objective|proposal_title|publication|title
+PSI-23,acme,1,55.1402,26.9000,9,6,2.0498,acronym|cameras|curated_keywords|experiment_hardware|filenames|media_filenames
+PSI-23,tse,1,53.5967,18.5000,8,2,2.8971,people|publication
+PSI-23,response spherical,2,53.2542,16.1250,7,1,3.3026,proposal_title|publication|title
+PSI-23,rotation,1,49.5388,15.0000,6,1,3.3026,publication
+PSI-23,flame,1,46.5008,40.0000,16,16,1.1625,approach|curated_keywords|hypothesis|objective|publication|research_impacts
+PSI-23,hydrogen-air,1,42.9336,13.0000,3,1,3.3026,curated_keywords|publication
+PSI-23,premixed,1,41.2823,12.5000,5,1,3.3026,publication
+PSI-23,delin,1,36.2140,12.5000,5,2,2.8971,publication
+PSI-23,response spherical diffusion,3,34.5120,10.4500,6,1,3.3026,proposal_title|publication|title
+PSI-23,liang,1,33.0259,10.0000,4,1,3.3026,publication
+PSI-23,wenkai,1,33.0259,10.0000,4,1,3.3026,publication
+PSI-23,hydrogen-air flames,2,32.2002,9.7500,3,1,3.3026,curated_keywords|publication
+PSI-23,combustion,1,32.0000,32.0000,11,19,1.0000,approach|experiment_hardware|publication|research_area|research_impacts|title
+PSI-23,stephen,1,31.8683,11.0000,5,2,2.8971,people|publication
+PSI-23,dynamics,1,30.5746,17.0000,7,8,1.7985,publication|research_impacts
+PSI-23,simulation,1,29.7536,13.5000,6,5,2.2040,hypothesis|objective|publication
+PSI-23,numbers,1,29.7233,9.0000,4,1,3.3026,objective|publication
+PSI-23,zhang,1,28.9712,10.0000,4,2,2.8971,publication
+PSI-23,zhu delin,2,27.1605,9.3750,5,2,2.8971,publication
+PSI-23,activation-energy,1,26.4207,8.0000,1,1,3.3026,curated_keywords
+PSI-23,enthalpy,1,26.4207,8.0000,1,1,3.3026,curated_keywords
+PSI-23,excess,1,26.4207,8.0000,1,1,3.3026,curated_keywords
+PSI-23,fickian,1,26.4207,8.0000,1,1,3.3026,curated_keywords
+PSI-23,ratios,1,26.4207,8.0000,4,1,3.3026,objective
+PSI-23,sooty,1,26.4207,8.0000,4,1,3.3026,approach|objective
+PSI-23,diluent,1,26.0944,10.0000,5,3,2.6094,objective
+PSI-23,bechtold,1,24.7694,7.5000,3,1,3.3026,publication
+PSI-23,chaudhuri,1,24.7694,7.5000,3,1,3.3026,publication
+PSI-23,ck,1,24.7694,7.5000,3,1,3.3026,publication
+PSI-23,eng,1,24.7694,7.5000,3,1,3.3026,publication
+PSI-23,flames rotation,2,24.7694,7.5000,4,1,3.3026,publication
+PSI-23,law sung,2,24.7694,7.5000,4,1,3.3026,publication
+PSI-23,liang wenkai,2,24.7694,7.5000,4,1,3.3026,publication
+PSI-23,mechanistic,1,24.7694,7.5000,3,1,3.3026,publication
+PSI-23,micro-buoyancy,1,24.7694,7.5000,3,1,3.3026,publication
+PSI-23,qian,1,24.7694,7.5000,3,1,3.3026,publication
+PSI-23,sacksteder,1,24.7694,7.5000,3,1,3.3026,publication
+PSI-23,sean,1,24.7694,7.5000,3,1,3.3026,publication
+PSI-23,soret diffusion,2,24.7694,7.5000,4,1,3.3026,publication
+PSI-23,different,1,24.5979,12.0000,6,6,2.0498,objective
+PSI-23,microgravity,1,24.0000,24.0000,9,19,1.0000,project_type|publication|research_impacts|title
+PSI-23,detailed,1,23.9536,12.5000,6,7,1.9163,approach|hypothesis|objective|publication
+PSI-23,spherical flames,2,23.5309,7.1250,4,1,3.3026,hypothesis|publication
+PSI-23,asymptotics,1,23.1770,8.0000,1,2,2.8971,curated_keywords
+PSI-23,yang,1,22.0397,10.0000,4,5,2.2040,publication
+PSI-23,cylindrical,1,21.7284,7.5000,3,2,2.8971,publication
+PSI-23,morphology,1,21.7284,7.5000,3,2,2.8971,publication
+PSI-23,tse stephen,2,21.7284,7.5000,4,2,2.8971,publication
+PSI-23,flame structure,2,20.6622,9.3750,3,5,2.2040,curated_keywords|hypothesis|publication
+PSI-23,droplet,1,20.4982,10.0000,4,6,2.0498,publication
+PSI-23,mixtures,1,20.1211,10.5000,5,7,1.9163,approach|objective|publication
+PSI-23,activation-energy asymptotics,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-23,diluent ratios,2,19.8155,6.0000,4,1,3.3026,objective
+PSI-23,excess enthalpy,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-23,experiments-structure,1,19.8155,6.0000,1,1,3.3026,title
+PSI-23,fickian diffusion,2,19.8155,6.0000,1,1,3.3026,curated_keywords
+PSI-23,s-flame,1,19.8155,6.0000,1,1,3.3026,acronym
+PSI-23,computation,1,19.5708,7.5000,3,3,2.6094,publication
+PSI-23,mechanisms,1,19.4733,9.5000,4,6,2.0498,hypothesis|publication
+PSI-23,hydrogen,1,18.8313,6.5000,3,2,2.8971,approach|publication
+PSI-23,instabilities,1,18.8313,6.5000,3,2,2.8971,hypothesis|objective|publication
+PSI-23,ck law,2,18.5770,5.6250,3,1,3.3026,publication
+PSI-23,delin law,2,18.5770,5.6250,3,1,3.3026,publication
+PSI-23,premixed flames,2,18.5770,5.6250,3,1,3.3026,publication
+PSI-23,wenkai law,2,18.5770,5.6250,3,1,3.3026,publication
+PSI-23,yoo sean,2,18.5770,5.6250,3,1,3.3026,publication
+PSI-23,zhu law,2,18.5770,5.6250,3,1,3.3026,publication
+PSI-23,extinction,1,18.3751,11.5000,5,10,1.5978,objective|publication
+PSI-23,computational simulation,2,17.3386,5.2500,3,1,3.3026,objective|publication
+PSI-23,burner,1,17.2466,9.0000,4,7,1.9163,approach|publication
+PSI-23,wang,1,16.5298,7.5000,3,5,2.2040,publication
+PSI-23,cj,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-23,colliding,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-23,experimentation,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-23,kurt,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-23,stabilization,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-23,weakly,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-23,xin,1,16.5129,5.0000,2,1,3.3026,publication
+PSI-23,chemistry,1,16.2885,8.5000,4,7,1.9163,approach|hypothesis|publication|research_impacts
+PSI-23,burning,1,16.0849,9.5000,4,9,1.6931,publication|research_impacts
+PSI-23,limits,1,15.7386,11.0000,5,12,1.4308,hypothesis|objective|publication
+PSI-23,aspects,1,15.6566,6.0000,3,3,2.6094,hypothesis|research_impacts
+PSI-23,soot-free,1,15.6566,6.0000,3,3,2.6094,objective
+PSI-23,cool,1,15.3737,7.5000,3,6,2.0498,publication
+PSI-23,numerical,1,15.2873,8.5000,4,8,1.7985,approach|hypothesis|publication
+PSI-23,acme s-flame,2,14.8616,4.5000,1,1,3.3026,acronym
+PSI-23,aerodynamic,1,14.8616,4.5000,2,1,3.3026,publication|research_impacts
+PSI-23,experiments-structure response,2,14.8616,4.5000,1,1,3.3026,title
+PSI-23,microgravity experiments-structure,2,14.8616,4.5000,1,1,3.3026,title
+PSI-23,pulsating,1,14.8616,4.5000,2,1,3.3026,objective|publication
+PSI-23,reaction,1,14.8616,4.5000,2,1,3.3026,approach|publication
+PSI-23,burner-generated,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-23,chih-jen,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-23,comprehensive,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-23,propagation,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-23,subjected,1,14.4856,5.0000,2,2,2.8971,publication
+PSI-23,gaseous,1,14.3881,8.0000,3,8,1.7985,approach|sub_research_area
+PSI-23,methane,1,14.3258,6.5000,3,5,2.2040,approach|publication
+PSI-23,gaseous fuels,2,14.3178,6.0000,3,4,2.3863,approach|sub_research_area
+PSI-23,transient,1,14.3178,6.0000,3,4,2.3863,hypothesis|objective
+PSI-23,fuel,1,14.2451,10.5000,5,13,1.3567,approach|objective|publication
+PSI-23,delin law chung,3,13.6232,4.1250,3,1,3.3026,publication
+PSI-23,diffusion flames rotation,3,13.6232,4.1250,3,1,3.3026,publication
+PSI-23,liang wenkai law,3,13.6232,4.1250,3,1,3.3026,publication
+PSI-23,wenkai law chung,3,13.6232,4.1250,3,1,3.3026,publication
+PSI-23,zhu delin law,3,13.6232,4.1250,3,1,3.3026,publication
+PSI-23,chemical,1,13.3238,6.5000,3,6,2.0498,hypothesis|objective|publication
+PSI-23,ethylene,1,13.3238,6.5000,3,6,2.0498,approach|publication
+PSI-23,chemical-kinetic,1,13.2103,4.0000,2,1,3.3026,objective
+PSI-23,damk,1,13.2103,4.0000,2,1,3.3026,objective
+PSI-23,diluents,1,13.2103,4.0000,2,1,3.3026,approach
+PSI-23,front,1,13.2103,4.0000,2,1,3.3026,hypothesis
+PSI-23,h2,1,13.2103,4.0000,2,1,3.3026,objective
+PSI-23,hler,1,13.2103,4.0000,2,1,3.3026,objective
+PSI-23,series,1,13.2103,4.0000,2,1,3.3026,approach|objective
+PSI-23,simplest,1,13.2103,4.0000,2,1,3.3026,approach
+PSI-23,peng,1,13.0472,5.0000,2,3,2.6094,publication
+PSI-23,cool flames,2,12.3973,5.6250,3,5,2.2040,publication
+PSI-23,bechtold law,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-23,cj sung,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-23,colliding spherical,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-23,diffusion hydrogen-air,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-23,dynamics morphology,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-23,eng law,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-23,evaluation soret,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-23,flames micro-buoyancy,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-23,flames subjected,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-23,law zhu,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-23,mechanistic soret,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-23,qian bechtold,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-23,sacksteder kurt,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-23,subjected rotation,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-23,sung ck,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-23,sung zhang,2,12.3847,3.7500,2,1,3.3026,publication
+PSI-23,sung zhu,2,12.3847,3.7500,2,1,3.3026,publication

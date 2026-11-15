@@ -1,0 +1,1112 @@
+# keywords for PSI-39 (score, weight, count, df, fields)
+flex	417.510	160.000	80	3	cameras
+n-dodecane	74.308	22.500	8	1	approach,curated_keywords,hypothesis,objective,publication
+droplet	70.514	34.400	13	6	approach,curated_keywords,experiment_hardware,hypothesis,media_filenames,objective,publication
+cool	68.669	33.500	11	6	curated_keywords,objective,publication,research_impacts,title
+combustion	62.500	62.500	22	19	approach,curated_keywords,experiment_hardware,hypothesis,objective,publication,research_area,research_impacts
+cool flames	45.457	20.625	8	5	curated_keywords,publication,research_impacts,title
+droplet combustion	41.164	17.250	7	4	approach,curated_keywords,experiment_hardware,publication
+chemistry	40.242	21.000	4	7	curated_keywords,publication
+williams	38.181	16.000	7	4	people,publication
+flames	37.987	29.500	9	14	approach,curated_keywords,publication,research_impacts,title
+fuel	32.560	24.000	6	13	approach,curated_keywords,research_impacts
+flame	32.551	28.000	11	16	approach,curated_keywords,hypothesis,objective,research_impacts
+extinction	30.359	19.000	6	10	approach,curated_keywords,hypothesis,objective,publication
+nayagam	29.754	13.500	6	5	people,publication
+cfi	29.723	9.000	3	1	acronym,filenames,research_impacts
+helium	28.636	12.000	3	4	approach,curated_keywords,objective
+low-temperature	28.636	12.000	3	4	curated_keywords,hypothesis,research_impacts
+alkane	27.399	10.500	2	3	curated_keywords,publication
+droplets	27.399	10.500	4	3	approach,publication,sub_research_area
+negative	26.421	8.000	1	1	curated_keywords
+renewable	26.421	8.000	1	1	curated_keywords
+forman	26.249	11.000	5	4	people,publication
+dynamics	25.179	14.000	4	8	approach,curated_keywords,hypothesis,research_impacts
+helium dilution	24.769	7.500	2	1	curated_keywords,objective
+dietrich	24.244	11.000	5	5	people,publication
+hydrocarbon	23.863	10.000	2	4	curated_keywords,hypothesis
+flame dynamics	23.485	9.000	3	3	curated_keywords,hypothesis,research_impacts
+coefficient	23.177	8.000	1	2	curated_keywords
+ntc	23.177	8.000	1	2	curated_keywords
+mdca	20.876	8.000	4	3	approach,cameras,experiment_hardware,filenames
+dilution	20.498	10.000	2	6	curated_keywords,objective
+ignition	20.498	10.000	5	6	approach,research_impacts
+quasi-steady	20.498	10.000	4	6	publication
+alkane chemistry	19.816	6.000	1	1	curated_keywords
+coefficient ntc	19.816	6.000	1	1	curated_keywords
+hydrocarbon fuel	19.816	6.000	1	1	curated_keywords
+iso-dodecane	19.816	6.000	3	1	approach,hypothesis,objective
+jet fuel	19.816	6.000	1	1	curated_keywords
+low-temperature chemistry	19.816	6.000	1	1	curated_keywords
+n-dodecane cool	19.816	6.000	1	1	curated_keywords
+negative temperature	19.816	6.000	1	1	curated_keywords
+renewable jet	19.816	6.000	1	1	curated_keywords
+temperature coefficient	19.816	6.000	1	1	curated_keywords
+cool-flame	19.571	7.500	3	3	publication
+vedha	18.734	8.500	4	5	people,publication
+williams forman	17.897	7.500	4	4	publication
+fuels	16.280	12.000	6	13	approach,hypothesis,research_impacts
+temperature	15.864	10.500	2	11	curated_keywords,publication
+atm	15.657	6.000	3	3	approach,objective
+fuel combustion	15.657	6.000	1	3	curated_keywords
+jet	15.330	8.000	1	7	curated_keywords
+n-dodecane iso-dodecane	14.862	4.500	3	1	approach,hypothesis,objective
+hydrocarbon fuel combustion	14.531	4.400	1	1	curated_keywords
+n-dodecane cool flames	14.531	4.400	1	1	curated_keywords
+negative temperature coefficient	14.531	4.400	1	1	curated_keywords
+renewable jet fuel	14.531	4.400	1	1	curated_keywords
+temperature coefficient ntc	14.531	4.400	1	1	curated_keywords
+daniel	14.318	6.000	3	4	people,publication
+understanding	13.545	8.000	4	9	research_impacts
+engines	13.224	6.000	3	5	research_impacts
+0.25	13.210	4.000	2	1	approach,objective
+fa	13.047	5.000	2	3	publication
+guenter	13.047	5.000	2	3	publication
+hicks	13.047	5.000	2	3	publication
+kalyanasundaram	13.047	5.000	2	3	publication
+multi-user	13.047	5.000	2	3	approach,experiment_hardware
+norbert	13.047	5.000	2	3	publication
+paczko	13.047	5.000	2	3	publication
+peters	13.047	5.000	2	3	publication
+seshadri	13.047	5.000	2	3	publication
+nayagam vedha	12.397	5.625	3	5	publication
+apparatus mdca	12.385	3.750	2	1	approach,experiment_hardware
+n-heptane	11.931	5.000	2	4	publication
+cool flame	11.742	4.500	3	3	objective,research_impacts
+mixtures	11.498	6.000	3	7	approach,hypothesis,objective
+combustion apparatus	10.864	3.750	2	2	approach,experiment_hardware
+examine	10.438	4.000	2	3	objective
+ranging	10.438	4.000	2	3	approach,objective
+apparatus	10.249	5.000	2	6	approach,experiment_hardware
+camera	10.249	5.000	3	6	approach,filenames
+role	9.918	4.500	2	5	publication,research_impacts
+issnl	9.908	3.000	2	1	funding,space_program
+mixtures n-dodecane	9.908	3.000	2	1	approach,objective
+nl-nsf	9.908	3.000	2	1	funding,space_program
+ranging 0.25	9.908	3.000	2	1	approach,objective
+cool-flame chemistry	9.785	3.750	2	3	publication
+fa williams	9.785	3.750	2	3	publication
+hicks fa	9.785	3.750	2	3	publication
+multi-user droplet	9.785	3.750	2	3	approach,experiment_hardware
+nayagam dietrich	9.785	3.750	2	3	publication
+paczko guenter	9.785	3.750	2	3	publication
+peters norbert	9.785	3.750	2	3	publication
+seshadri kalyanasundaram	9.785	3.750	2	3	publication
+size	9.587	6.000	3	10	approach,objective
+dryer	9.133	3.500	2	3	people,publication
+farouk	9.133	3.500	2	3	people,publication
+frederick	9.133	3.500	2	3	people,publication
+tanvir	9.133	3.500	2	3	people,publication
+combustion apparatus mdca	9.082	2.750	2	1	approach,experiment_hardware
+dietrich daniel	8.949	3.750	2	4	publication
+flame combustion	8.691	3.000	2	2	hypothesis,objective
+foundation	8.691	3.000	2	2	funding,space_program
+laboratory	8.691	3.000	2	2	funding,space_program
+understanding cool	8.691	3.000	2	2	research_impacts
+cir	8.466	5.000	2	9	approach,experiment_hardware
+rack	8.466	5.000	2	9	approach,experiment_hardware
+barry	8.256	2.500	1	1	publication
+krause	8.256	2.500	1	1	publication
+rachel	8.256	2.500	1	1	publication
+timmothy	8.256	2.500	1	1	publication
+chemical	8.199	4.000	2	6	hypothesis,research_impacts
+critical	8.199	4.000	2	6	hypothesis,research_impacts
+observed	8.199	4.000	2	6	approach
+practical	8.199	4.000	2	6	research_impacts
+behavior	8.140	6.000	3	13	objective
+droplet combustion apparatus	7.967	2.750	2	2	approach,experiment_hardware
+gas	7.665	4.000	2	7	approach
+integrated	7.554	5.000	2	11	approach,experiment_hardware
+microgravity	7.500	7.500	4	19	hypothesis,project_type,publication,research_impacts
+foundation nl-nsf	7.431	2.250	2	1	funding,space_program
+issnl national	7.431	2.250	2	1	funding,space_program
+laboratory national	7.431	2.250	2	1	funding,space_program
+mdca combustion	7.431	2.250	1	1	experiment_hardware
+national laboratory	7.431	2.250	2	1	funding,space_program
+mixtures n-dodecane iso-dodecane	7.266	2.200	2	1	approach,objective
+asymptotic	7.243	2.500	1	2	publication
+partial-burning	7.243	2.500	1	2	publication
+hicks fa williams	7.176	2.750	2	3	publication
+multi-user droplet combustion	7.176	2.750	2	3	approach,experiment_hardware
+flame extinction	7.159	3.000	2	4	approach,objective
+droplet size	6.612	3.000	2	5	approach,objective
+additives	6.605	2.000	1	1	research_impacts
+atomic	6.605	2.000	1	1	approach
+black-and-white	6.605	2.000	1	1	approach
+bottles	6.605	2.000	1	1	approach
+cetane	6.605	2.000	1	1	research_impacts
+charge	6.605	2.000	1	1	research_impacts
+chemists	6.605	2.000	1	1	research_impacts
+compression	6.605	2.000	1	1	research_impacts
+compute	6.605	2.000	1	1	research_impacts
+consequence	6.605	2.000	1	1	objective
+delivers	6.605	2.000	1	1	approach
+determines	6.605	2.000	1	1	research_impacts
+diesel	6.605	2.000	1	1	research_impacts
+documentation	6.605	2.000	1	1	approach
+facilitates	6.605	2.000	1	1	approach
+faresane	6.605	2.000	1	1	hypothesis
+farnesane	6.605	2.000	1	1	approach
+hcci	6.605	2.000	1	1	research_impacts
+high-efficiency	6.605	2.000	1	1	research_impacts
+homogeneous	6.605	2.000	1	1	research_impacts
+hot-wire	6.605	2.000	1	1	approach
+hypodermic	6.605	2.000	1	1	approach
+molecular	6.605	2.000	1	1	approach
+monitoring	6.605	2.000	1	1	approach
+narrow-band	6.605	2.000	1	1	approach
+observable	6.605	2.000	1	1	hypothesis
+octane	6.605	2.000	1	1	research_impacts
+play	6.605	2.000	1	1	research_impacts
+radical	6.605	2.000	1	1	approach
+reactivity	6.605	2.000	1	1	research_impacts
+silicon-carbide	6.605	2.000	1	1	approach
+spark	6.605	2.000	1	1	research_impacts
+syringes	6.605	2.000	1	1	approach
+uv	6.605	2.000	1	1	approach
+wide-band	6.605	2.000	1	1	approach
+arthur	6.524	2.500	1	3	publication
+n-alkane	6.524	2.500	1	3	publication
+national foundation	6.519	2.250	2	2	funding,space_program
+earth	6.391	4.000	2	10	hypothesis,research_impacts
+combustion integrated	6.349	3.750	2	9	approach,experiment_hardware
+integrated rack	6.349	3.750	2	9	approach,experiment_hardware
+rack cir	6.349	3.750	2	9	approach,experiment_hardware
+national	6.308	6.000	4	18	funding,space_program
+2017-06-22-15h11m57s	6.275	1.900	2	1	filenames,media_filenames
+2017-06-22-15h29m07s	6.275	1.900	2	1	filenames,media_filenames
+2017-06-22-15h48m10s	6.275	1.900	2	1	filenames,media_filenames
+2017-06-22-16h42m18s	6.275	1.900	2	1	filenames,media_filenames
+f173e01	6.275	1.900	2	1	filenames,media_filenames
+f173e02	6.275	1.900	2	1	filenames,media_filenames
+f173e03	6.275	1.900	2	1	filenames,media_filenames
+f173e05	6.275	1.900	2	1	filenames,media_filenames
+f173e06	6.275	1.900	2	1	filenames,media_filenames
+f177d01	6.275	1.900	2	1	filenames,media_filenames
+f177d03	6.275	1.900	2	1	filenames,media_filenames
+f177d04	6.275	1.900	2	1	filenames,media_filenames
+f177d05	6.275	1.900	2	1	filenames,media_filenames
+f180d01	6.275	1.900	2	1	filenames,media_filenames
+f180d02	6.275	1.900	2	1	filenames,media_filenames
+f180d04	6.275	1.900	2	1	filenames,media_filenames
+f186d01	6.275	1.900	2	1	filenames,media_filenames
+f186d04	6.275	1.900	2	1	filenames,media_filenames
+f186d06	6.275	1.900	2	1	filenames,media_filenames
+f191d02	6.275	1.900	2	1	filenames,media_filenames
+f191d03	6.275	1.900	2	1	filenames,media_filenames
+f191d04	6.275	1.900	2	1	filenames,media_filenames
+f191d05	6.275	1.900	2	1	filenames,media_filenames
+f195d01	6.275	1.900	2	1	filenames,media_filenames
+f195d02	6.275	1.900	2	1	filenames,media_filenames
+f195d07	6.275	1.900	2	1	filenames,media_filenames
+f195d10	6.275	1.900	2	1	filenames,media_filenames
+f195d11	6.275	1.900	2	1	filenames,media_filenames
+f200d01	6.275	1.900	2	1	filenames,media_filenames
+f200d04	6.275	1.900	2	1	filenames,media_filenames
+f200d05	6.275	1.900	2	1	filenames,media_filenames
+f205d01	6.275	1.900	2	1	filenames,media_filenames
+f205d02	6.275	1.900	2	1	filenames,media_filenames
+f208d01	6.275	1.900	2	1	filenames,media_filenames
+f208d02	6.275	1.900	2	1	filenames,media_filenames
+f208d03	6.275	1.900	2	1	filenames,media_filenames
+f208d04	6.275	1.900	2	1	filenames,media_filenames
+f213d01	6.275	1.900	2	1	filenames,media_filenames
+flex-1285	6.275	1.900	2	1	filenames,media_filenames
+flex-1286	6.275	1.900	2	1	filenames,media_filenames
+flex-1287	6.275	1.900	2	1	filenames,media_filenames
+flex-1288	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2017-06-22-15h01m56s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2017-06-22-15h18m19s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2017-06-22-15h37m19s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2017-06-22-16h31m26s-udp	6.275	1.900	2	1	filenames,media_filenames
+daniel krause	6.192	1.875	1	1	publication
+frederick williams	6.192	1.875	1	1	publication
+krause timmothy	6.192	1.875	1	1	publication
+low temperature	6.192	1.875	1	1	publication
+n-dodecane droplet	6.192	1.875	1	1	publication
+rachel barry	6.192	1.875	1	1	publication
+short cool	6.192	1.875	1	1	publication
+temperature n-dodecane	6.192	1.875	1	1	publication
+timmothy nayagam	6.192	1.875	1	1	publication
+vedha farouk	6.192	1.875	1	1	publication
+analyzed	6.061	2.750	2	5	approach,file_folders
+design	6.043	4.000	2	11	research_impacts
+short	5.966	2.500	1	4	publication
+clean	5.794	2.000	1	2	research_impacts
+contains	5.794	2.000	1	2	approach
+desired	5.794	2.000	1	2	approach
+dispensed	5.794	2.000	1	2	approach
+instabilities	5.794	2.000	1	2	research_impacts
+needles	5.794	2.000	1	2	approach
+refining	5.794	2.000	1	2	research_impacts
+relationship	5.794	2.000	1	2	objective
+resolution	5.794	2.000	1	2	approach
+retracted	5.794	2.000	1	2	approach
+revealing	5.794	2.000	1	2	hypothesis
+safer	5.794	2.000	1	2	research_impacts
+suspended	5.794	2.000	1	2	approach
+tethered	5.794	2.000	1	2	approach
+combustion microgravity	5.714	3.375	2	9	publication,research_impacts
+regime	5.510	2.500	1	5	publication
+apparatus mdca combustion	5.449	1.650	1	1	experiment_hardware
+issnl national laboratory	5.449	1.650	2	1	funding,space_program
+laboratory national foundation	5.449	1.650	2	1	funding,space_program
+mdca combustion integrated	5.449	1.650	1	1	experiment_hardware
+national foundation nl-nsf	5.449	1.650	2	1	funding,space_program
+national laboratory national	5.449	1.650	2	1	funding,space_program
+analysis quasi-steady	5.432	1.875	1	2	publication
+asymptotic analysis	5.432	1.875	1	2	publication
+combustion cool	5.432	1.875	1	2	publication
+combustion cool-flame	5.432	1.875	1	2	publication
+dietrich pv	5.432	1.875	1	2	publication
+ferkul hicks	5.432	1.875	1	2	publication
+kalyanasundaram peters	5.432	1.875	1	2	publication
+norbert williams	5.432	1.875	1	2	publication
+partial-burning regime	5.432	1.875	1	2	publication
+quasi-steady droplet	5.432	1.875	1	2	publication
+quasi-steady n-heptane	5.432	1.875	1	2	publication
+vedha paczko	5.432	1.875	1	2	publication
+chamber	5.396	3.000	2	8	approach,filenames
+0.5	5.219	2.000	1	3	approach
+advance	5.219	2.000	1	3	research_impacts
+basic	5.219	2.000	1	3	research_impacts
+capturing	5.219	2.000	1	3	approach
+diluted	5.219	2.000	1	3	approach
+fibers	5.219	2.000	1	3	approach
+igniter	5.219	2.000	1	3	approach
+like	5.219	2.000	1	3	hypothesis
+positioned	5.219	2.000	1	3	approach
+0.25 0.5	4.954	1.500	1	1	approach
+0.25 atm	4.954	1.500	1	1	objective
+additives cool	4.954	1.500	1	1	research_impacts
+advance understanding	4.954	1.500	1	1	research_impacts
+advanced engines	4.954	1.500	1	1	research_impacts
+analyze effects	4.954	1.500	1	1	objective
+analyzed flame	4.954	1.500	1	1	approach
+applications earth	4.954	1.500	1	1	research_impacts
+atm analyze	4.954	1.500	1	1	objective
+atm atm	4.954	1.500	1	1	objective
+atm droplets	4.954	1.500	1	1	approach
+atomic nitrogen	4.954	1.500	1	1	approach
+basic understanding	4.954	1.500	1	1	research_impacts
+behavior examine	4.954	1.500	1	1	objective
+behavior n-dodecane	4.954	1.500	1	1	objective
+black-and-white camera	4.954	1.500	1	1	approach
+bottles fuel	4.954	1.500	1	1	approach
+camera capturing	4.954	1.500	1	1	approach
+camera droplet	4.954	1.500	1	1	approach
+cameras monitoring	4.954	1.500	1	1	approach
+capturing oh	4.954	1.500	1	1	approach
+cetane number	4.954	1.500	1	1	research_impacts
+cfi critical	4.954	1.500	1	1	research_impacts
+chamber ranging	4.954	1.500	1	1	approach
+characteristics relationship	4.954	1.500	1	1	objective
+charge compression	4.954	1.500	1	1	research_impacts
+chemists develop	4.954	1.500	1	1	research_impacts
+cir contains	4.954	1.500	1	1	approach
+clean high-efficiency	4.954	1.500	1	1	research_impacts
+combustion behavior	4.954	1.500	1	1	objective
+combustion characteristics	4.954	1.500	1	1	objective
+combustion chemists	4.954	1.500	1	1	research_impacts
+combustion design	4.954	1.500	1	1	research_impacts
+combustion performance	4.954	1.500	1	1	research_impacts
+complex chemical	4.954	1.500	1	1	research_impacts
+compression ignition	4.954	1.500	1	1	research_impacts
+compute combustion	4.954	1.500	1	1	research_impacts
+consequence soot	4.954	1.500	1	1	objective
+contains multi-user	4.954	1.500	1	1	approach
+controlled combustion	4.954	1.500	1	1	approach
+critical parameters	4.954	1.500	1	1	hypothesis
+critical validation	4.954	1.500	1	1	research_impacts
+delivers desired	4.954	1.500	1	1	approach
+desired gas	4.954	1.500	1	1	approach
+determines octane	4.954	1.500	1	1	research_impacts
+develop computational	4.954	1.500	1	1	research_impacts
+development selection	4.954	1.500	1	1	research_impacts
+diameters flame	4.954	1.500	1	1	hypothesis
+diesel engines	4.954	1.500	1	1	research_impacts
+diluted molecular	4.954	1.500	1	1	approach
+dilution cool	4.954	1.500	1	1	objective
+dispensed suspended	4.954	1.500	1	1	approach
+documentation narrow-band	4.954	1.500	1	1	approach
+droplet ignition	4.954	1.500	1	1	approach
+droplets fuel	4.954	1.500	1	1	approach
+droplets system	4.954	1.500	1	1	approach
+dynamics flames	4.954	1.500	1	1	approach
+dynamics instabilities	4.954	1.500	1	1	research_impacts
+dynamics observable	4.954	1.500	1	1	hypothesis
+effects helium	4.954	1.500	1	1	objective
+emissions flame	4.954	1.500	1	1	approach
+engines clean	4.954	1.500	1	1	research_impacts
+engines cool	4.954	1.500	1	1	research_impacts
+engines help	4.954	1.500	1	1	research_impacts
+examine behavior	4.954	1.500	1	1	objective
+examine combustion	4.954	1.500	1	1	objective
+extinction dynamics	4.954	1.500	1	1	approach
+extinction understand	4.954	1.500	1	1	objective
+facilitates controlled	4.954	1.500	1	1	approach
+faresane microgravity	4.954	1.500	1	1	hypothesis
+farnesane mixtures	4.954	1.500	1	1	approach
+fibers hot-wire	4.954	1.500	1	1	approach
+flame reactivity	4.954	1.500	1	1	research_impacts
+flames cfi	4.954	1.500	1	1	research_impacts
+flames play	4.954	1.500	1	1	research_impacts
+formation cool	4.954	1.500	1	1	objective
+fuel additives	4.954	1.500	1	1	research_impacts
+fuel syringes	4.954	1.500	1	1	approach
+fuels design	4.954	1.500	1	1	research_impacts
+fuels fuel	4.954	1.500	1	1	research_impacts
+fuels n-dodecane	4.954	1.500	1	1	hypothesis
+fuels observed	4.954	1.500	1	1	approach
+fuels spark	4.954	1.500	1	1	research_impacts
+gas bottles	4.954	1.500	1	1	approach
+gas mixture	4.954	1.500	1	1	approach
+hcci engines	4.954	1.500	1	1	research_impacts
+helium influence	4.954	1.500	1	1	approach
+help combustion	4.954	1.500	1	1	research_impacts
+high-efficiency homogeneous	4.954	1.500	1	1	research_impacts
+homogeneous charge	4.954	1.500	1	1	research_impacts
+hot-wire igniter	4.954	1.500	1	1	approach
+hydrocarbon fuels	4.954	1.500	1	1	hypothesis
+hypodermic needles	4.954	1.500	1	1	approach
+igniter positioned	4.954	1.500	1	1	approach
+ignition diesel	4.954	1.500	1	1	research_impacts
+ignition hcci	4.954	1.500	1	1	research_impacts
+ignition ignition	4.954	1.500	1	1	approach
+ignition phenomena	4.954	1.500	1	1	research_impacts
+ignition wire	4.954	1.500	1	1	approach
+important understanding	4.954	1.500	1	1	research_impacts
+insights low-temperature	4.954	1.500	1	1	hypothesis
+instabilities low-temperature	4.954	1.500	1	1	research_impacts
+iso-dodecane fuels	4.954	1.500	1	1	approach
+iso-dodecane mixtures	4.954	1.500	1	1	hypothesis
+iso-dodecane pressures	4.954	1.500	1	1	objective
+key role	4.954	1.500	1	1	research_impacts
+kinetic mechanisms	4.954	1.500	1	1	research_impacts
+kinetics revealing	4.954	1.500	1	1	hypothesis
+knowledge combustion	4.954	1.500	1	1	research_impacts
+like droplet	4.954	1.500	1	1	hypothesis
+liquid hydrocarbon	4.954	1.500	1	1	hypothesis
+low-temperature chemical	4.954	1.500	1	1	hypothesis
+mdca facilitates	4.954	1.500	1	1	approach
+measurements uv	4.954	1.500	1	1	approach
+mechanisms advance	4.954	1.500	1	1	research_impacts
+microgravity insights	4.954	1.500	1	1	hypothesis
+mixture combustion	4.954	1.500	1	1	approach
+mixtures faresane	4.954	1.500	1	1	hypothesis
+models compute	4.954	1.500	1	1	research_impacts
+molecular oxygen	4.954	1.500	1	1	approach
+monitoring documentation	4.954	1.500	1	1	approach
+n-dodecane farnesane	4.954	1.500	1	1	approach
+n-dodecane mixtures	4.954	1.500	1	1	objective
+n-dodecane n-dodecane	4.954	1.500	1	1	hypothesis
+narrow-band wide-band	4.954	1.500	1	1	approach
+near droplet	4.954	1.500	1	1	approach
+needles tethered	4.954	1.500	1	1	approach
+number fuels	4.954	1.500	1	1	research_impacts
+objectives examine	4.954	1.500	1	1	objective
+observable earth	4.954	1.500	1	1	hypothesis
+observed black-and-white	4.954	1.500	1	1	approach
+observed n-dodecane	4.954	1.500	1	1	approach
+octane cetane	4.954	1.500	1	1	research_impacts
+oh radical	4.954	1.500	1	1	approach
+oxygen atomic	4.954	1.500	1	1	approach
+parameters like	4.954	1.500	1	1	hypothesis
+performance practical	4.954	1.500	1	1	research_impacts
+phenomena practical	4.954	1.500	1	1	research_impacts
+play key	4.954	1.500	1	1	research_impacts
+positioned near	4.954	1.500	1	1	approach
+practical applications	4.954	1.500	1	1	research_impacts
+practical fuels	4.954	1.500	1	1	research_impacts
+pressures ranging	4.954	1.500	1	1	objective
+radical emissions	4.954	1.500	1	1	approach
+radiometers analyzed	4.954	1.500	1	1	approach
+reactivity determines	4.954	1.500	1	1	research_impacts
+refining knowledge	4.954	1.500	1	1	research_impacts
+relationship droplet	4.954	1.500	1	1	objective
+resolution cameras	4.954	1.500	1	1	approach
+retracted fuels	4.954	1.500	1	1	approach
+revealing critical	4.954	1.500	1	1	hypothesis
+role development	4.954	1.500	1	1	research_impacts
+selection fuels	4.954	1.500	1	1	research_impacts
+silicon-carbide fibers	4.954	1.500	1	1	approach
+size high	4.954	1.500	1	1	approach
+size measurements	4.954	1.500	1	1	approach
+size pressure	4.954	1.500	1	1	objective
+spacecraft systems	4.954	1.500	1	1	research_impacts
+spark ignition	4.954	1.500	1	1	research_impacts
+suspended hypodermic	4.954	1.500	1	1	approach
+syringes delivers	4.954	1.500	1	1	approach
+system gas	4.954	1.500	1	1	approach
+systems refining	4.954	1.500	1	1	research_impacts
+tethered silicon-carbide	4.954	1.500	1	1	approach
+understand consequence	4.954	1.500	1	1	objective
+understanding flame	4.954	1.500	1	1	research_impacts
+understanding ignition	4.954	1.500	1	1	research_impacts
+uv camera	4.954	1.500	1	1	approach
+validation complex	4.954	1.500	1	1	research_impacts
+wide-band radiometers	4.954	1.500	1	1	approach
+wire retracted	4.954	1.500	1	1	approach
+alkane droplet	4.893	1.875	1	3	publication
+chemistry quasi-steady	4.893	1.875	1	3	publication
+combustion extinction	4.893	1.875	1	3	publication
+cool-flame extinction	4.893	1.875	1	3	publication
+daniel williams	4.893	1.875	1	3	publication
+dietrich hicks	4.893	1.875	1	3	publication
+dryer frederick	4.893	1.875	1	3	publication
+extinction n-alkane	4.893	1.875	1	3	publication
+extinction n-heptane	4.893	1.875	1	3	publication
+farouk tanvir	4.893	1.875	1	3	publication
+flames quasi-steady	4.893	1.875	1	3	publication
+forman arthur	4.893	1.875	1	3	publication
+forman nayagam	4.893	1.875	1	3	publication
+guenter peters	4.893	1.875	1	3	publication
+kalyanasundaram williams	4.893	1.875	1	3	publication
+n-alkane droplet	4.893	1.875	1	3	publication
+n-heptane droplet	4.893	1.875	1	3	publication
+n-heptane droplets	4.893	1.875	1	3	publication
+norbert seshadri	4.893	1.875	1	3	publication
+quasi-steady alkane	4.893	1.875	1	3	publication
+quasi-steady combustion	4.893	1.875	1	3	publication
+regime quasi-steady	4.893	1.875	1	3	publication
+role cool-flame	4.893	1.875	1	3	publication
+tanvir dryer	4.893	1.875	1	3	publication
+vedha dietrich	4.893	1.875	1	3	publication
+analyze	4.773	2.000	1	4	objective
+applications	4.773	2.000	1	4	research_impacts
+complex	4.773	2.000	1	4	research_impacts
+oh	4.773	2.000	1	4	approach
+understand	4.773	2.000	1	4	objective
+validation	4.773	2.000	1	4	research_impacts
+wire	4.773	2.000	1	4	approach
+combustion integrated rack	4.656	2.750	2	9	approach,experiment_hardware
+integrated rack cir	4.656	2.750	2	9	approach,experiment_hardware
+daniel krause timmothy	4.541	1.375	1	1	publication
+dietrich daniel krause	4.541	1.375	1	1	publication
+dryer frederick williams	4.541	1.375	1	1	publication
+frederick williams forman	4.541	1.375	1	1	publication
+krause timmothy nayagam	4.541	1.375	1	1	publication
+low temperature n-dodecane	4.541	1.375	1	1	publication
+n-dodecane droplet combustion	4.541	1.375	1	1	publication
+nayagam vedha farouk	4.541	1.375	1	1	publication
+short cool flames	4.541	1.375	1	1	publication
+temperature n-dodecane droplet	4.541	1.375	1	1	publication
+timmothy nayagam vedha	4.541	1.375	1	1	publication
+vedha farouk tanvir	4.541	1.375	1	1	publication
+low	4.496	2.500	1	8	publication
+pv	4.496	2.500	1	8	publication
+droplet burning	4.474	1.875	1	4	publication
+develop	4.408	2.000	1	5	research_impacts
+diameters	4.408	2.000	1	5	hypothesis
+important	4.408	2.000	1	5	research_impacts
+influence	4.408	2.000	1	5	approach
+insights	4.408	2.000	1	5	hypothesis
+key	4.408	2.000	1	5	research_impacts
+kinetic	4.408	2.000	1	5	research_impacts
+knowledge	4.408	2.000	1	5	research_impacts
+phenomena	4.408	2.000	1	5	research_impacts
+selection	4.408	2.000	1	5	research_impacts
+0.5 atm	4.346	1.500	1	2	approach
+behavior combustion	4.346	1.500	1	2	objective
+chemical kinetic	4.346	1.500	1	2	research_impacts
+combustion chamber	4.346	1.500	1	2	approach
+combustion fuel	4.346	1.500	1	2	approach
+combustion liquid	4.346	1.500	1	2	hypothesis
+design advanced	4.346	1.500	1	2	research_impacts
+design safer	4.346	1.500	1	2	research_impacts
+droplet extinction	4.346	1.500	1	2	hypothesis
+earth understanding	4.346	1.500	1	2	research_impacts
+extinction diameters	4.346	1.500	1	2	hypothesis
+flames important	4.346	1.500	1	2	research_impacts
+fuel dispensed	4.346	1.500	1	2	approach
+fuels diluted	4.346	1.500	1	2	approach
+high resolution	4.346	1.500	1	2	approach
+influence flame	4.346	1.500	1	2	approach
+nitrogen helium	4.346	1.500	1	2	approach
+safer spacecraft	4.346	1.500	1	2	research_impacts
+burning	4.233	2.500	1	9	publication
+ferkul	4.233	2.500	1	9	publication
+characteristics	4.100	2.000	1	6	objective
+kinetics	4.100	2.000	1	6	hypothesis
+liquid	4.100	2.000	1	6	hypothesis
+mechanisms	4.100	2.000	1	6	research_impacts
+mixture	4.100	2.000	1	6	approach
+near	4.100	2.000	1	6	approach
+parameters	4.100	2.000	1	6	hypothesis
+performance	4.100	2.000	1	6	research_impacts
+radiometers	4.100	2.000	1	6	approach
+system	4.100	2.000	1	6	approach
+raw	4.004	2.650	3	11	file_folders,filenames,media_filenames
+analysis quasi-steady n-heptane	3.984	1.375	1	2	publication
+asymptotic analysis quasi-steady	3.984	1.375	1	2	publication
+combustion cool flames	3.984	1.375	1	2	publication
+combustion cool-flame chemistry	3.984	1.375	1	2	publication
+dietrich pv ferkul	3.984	1.375	1	2	publication
+droplet combustion cool	3.984	1.375	1	2	publication
+droplet combustion cool-flame	3.984	1.375	1	2	publication
+ferkul hicks fa	3.984	1.375	1	2	publication
+kalyanasundaram peters norbert	3.984	1.375	1	2	publication
+nayagam dietrich pv	3.984	1.375	1	2	publication
+nayagam vedha paczko	3.984	1.375	1	2	publication
+norbert williams forman	3.984	1.375	1	2	publication
+partial-burning regime quasi-steady	3.984	1.375	1	2	publication
+peters norbert williams	3.984	1.375	1	2	publication
+pv ferkul hicks	3.984	1.375	1	2	publication
+quasi-steady droplet combustion	3.984	1.375	1	2	publication
+quasi-steady n-heptane droplet	3.984	1.375	1	2	publication
+regime quasi-steady droplet	3.984	1.375	1	2	publication
+seshadri kalyanasundaram peters	3.984	1.375	1	2	publication
+vedha paczko guenter	3.984	1.375	1	2	publication
+fuel droplets	3.914	1.500	1	3	approach
+low-temperature combustion	3.914	1.500	1	3	research_impacts
+co-i	3.863	3.000	3	14	role
+co-investigator	3.863	3.000	3	14	role
+controlled	3.833	2.000	1	7	approach
+help	3.833	2.000	1	7	research_impacts
+nitrogen	3.833	2.000	1	7	approach
+university	3.669	3.000	4	15	affiliation
+0.25 0.5 atm	3.633	1.100	1	1	approach
+0.25 atm atm	3.633	1.100	1	1	objective
+0.5 atm droplets	3.633	1.100	1	1	approach
+additives cool flames	3.633	1.100	1	1	research_impacts
+advance understanding flame	3.633	1.100	1	1	research_impacts
+advanced engines clean	3.633	1.100	1	1	research_impacts
+analyze effects helium	3.633	1.100	1	1	objective
+analyzed flame radiation	3.633	1.100	1	1	approach
+apparatus mdca facilitates	3.633	1.100	1	1	approach
+applications earth understanding	3.633	1.100	1	1	research_impacts
+atm analyze effects	3.633	1.100	1	1	objective
+atm atm analyze	3.633	1.100	1	1	objective
+atm droplets fuel	3.633	1.100	1	1	approach
+atomic nitrogen helium	3.633	1.100	1	1	approach
+basic understanding cool	3.633	1.100	1	1	research_impacts
+behavior combustion characteristics	3.633	1.100	1	1	objective
+behavior examine behavior	3.633	1.100	1	1	objective
+behavior n-dodecane mixtures	3.633	1.100	1	1	objective
+black-and-white camera droplet	3.633	1.100	1	1	approach
+bottles fuel syringes	3.633	1.100	1	1	approach
+camera capturing oh	3.633	1.100	1	1	approach
+camera droplet size	3.633	1.100	1	1	approach
+cameras monitoring documentation	3.633	1.100	1	1	approach
+capturing oh radical	3.633	1.100	1	1	approach
+cetane number fuels	3.633	1.100	1	1	research_impacts
+cfi critical validation	3.633	1.100	1	1	research_impacts
+chamber ranging 0.25	3.633	1.100	1	1	approach
+characteristics relationship droplet	3.633	1.100	1	1	objective
+charge compression ignition	3.633	1.100	1	1	research_impacts
+chemical kinetic mechanisms	3.633	1.100	1	1	research_impacts
+chemical kinetics revealing	3.633	1.100	1	1	hypothesis
+chemists develop computational	3.633	1.100	1	1	research_impacts
+cir contains multi-user	3.633	1.100	1	1	approach
+clean high-efficiency homogeneous	3.633	1.100	1	1	research_impacts
+combustion behavior n-dodecane	3.633	1.100	1	1	objective
+combustion chamber ranging	3.633	1.100	1	1	approach
+combustion characteristics relationship	3.633	1.100	1	1	objective
+combustion chemists develop	3.633	1.100	1	1	research_impacts
+combustion design safer	3.633	1.100	1	1	research_impacts
+combustion fuel droplets	3.633	1.100	1	1	approach
+combustion liquid hydrocarbon	3.633	1.100	1	1	hypothesis
+combustion microgravity environments	3.633	1.100	1	1	research_impacts
+combustion performance practical	3.633	1.100	1	1	research_impacts
+complex chemical kinetic	3.633	1.100	1	1	research_impacts
+compression ignition hcci	3.633	1.100	1	1	research_impacts
+computational models compute	3.633	1.100	1	1	research_impacts
+compute combustion performance	3.633	1.100	1	1	research_impacts
+consequence soot formation	3.633	1.100	1	1	objective
+contains multi-user droplet	3.633	1.100	1	1	approach
+controlled combustion fuel	3.633	1.100	1	1	approach
+cool flame combustion	3.633	1.100	1	1	objective
+cool flame reactivity	3.633	1.100	1	1	research_impacts
+cool flames cfi	3.633	1.100	1	1	research_impacts
+cool flames important	3.633	1.100	1	1	research_impacts
+cool flames play	3.633	1.100	1	1	research_impacts
+critical parameters like	3.633	1.100	1	1	hypothesis
+critical validation complex	3.633	1.100	1	1	research_impacts
+delivers desired gas	3.633	1.100	1	1	approach
+design advanced engines	3.633	1.100	1	1	research_impacts
+desired gas mixture	3.633	1.100	1	1	approach
+determines octane cetane	3.633	1.100	1	1	research_impacts
+develop computational models	3.633	1.100	1	1	research_impacts
+development selection fuels	3.633	1.100	1	1	research_impacts
+diameters flame dynamics	3.633	1.100	1	1	hypothesis
+diesel engines cool	3.633	1.100	1	1	research_impacts
+diluted molecular oxygen	3.633	1.100	1	1	approach
+dilution cool flame	3.633	1.100	1	1	objective
+dispensed suspended hypodermic	3.633	1.100	1	1	approach
+documentation narrow-band wide-band	3.633	1.100	1	1	approach
+droplet extinction diameters	3.633	1.100	1	1	hypothesis
+droplet ignition ignition	3.633	1.100	1	1	approach
+droplet size measurements	3.633	1.100	1	1	approach
+droplet size pressure	3.633	1.100	1	1	objective
+droplets fuel dispensed	3.633	1.100	1	1	approach
+droplets system gas	3.633	1.100	1	1	approach
+dynamics flames observed	3.633	1.100	1	1	approach
+dynamics instabilities low-temperature	3.633	1.100	1	1	research_impacts
+dynamics observable earth	3.633	1.100	1	1	hypothesis
+earth understanding cool	3.633	1.100	1	1	research_impacts
+effects helium dilution	3.633	1.100	1	1	objective
+emissions flame size	3.633	1.100	1	1	approach
+engines clean high-efficiency	3.633	1.100	1	1	research_impacts
+engines cool flames	3.633	1.100	1	1	research_impacts
+engines help combustion	3.633	1.100	1	1	research_impacts
+examine behavior combustion	3.633	1.100	1	1	objective
+examine combustion behavior	3.633	1.100	1	1	objective
+extinction diameters flame	3.633	1.100	1	1	hypothesis
+extinction dynamics flames	3.633	1.100	1	1	approach
+extinction understand consequence	3.633	1.100	1	1	objective
+facilitates controlled combustion	3.633	1.100	1	1	approach
+faresane microgravity insights	3.633	1.100	1	1	hypothesis
+farnesane mixtures n-dodecane	3.633	1.100	1	1	approach
+fibers hot-wire igniter	3.633	1.100	1	1	approach
+flame behavior examine	3.633	1.100	1	1	objective
+flame combustion liquid	3.633	1.100	1	1	hypothesis
+flame dynamics instabilities	3.633	1.100	1	1	research_impacts
+flame dynamics observable	3.633	1.100	1	1	hypothesis
+flame extinction dynamics	3.633	1.100	1	1	approach
+flame extinction understand	3.633	1.100	1	1	objective
+flame reactivity determines	3.633	1.100	1	1	research_impacts
+flame size high	3.633	1.100	1	1	approach
+flames cfi critical	3.633	1.100	1	1	research_impacts
+flames important understanding	3.633	1.100	1	1	research_impacts
+flames observed black-and-white	3.633	1.100	1	1	approach
+flames play key	3.633	1.100	1	1	research_impacts
+formation cool flame	3.633	1.100	1	1	objective
+fuel additives cool	3.633	1.100	1	1	research_impacts
+fuel dispensed suspended	3.633	1.100	1	1	approach
+fuel droplets system	3.633	1.100	1	1	approach
+fuel syringes delivers	3.633	1.100	1	1	approach
+fuels design advanced	3.633	1.100	1	1	research_impacts
+fuels diluted molecular	3.633	1.100	1	1	approach
+fuels fuel additives	3.633	1.100	1	1	research_impacts
+fuels n-dodecane n-dodecane	3.633	1.100	1	1	hypothesis
+fuels observed n-dodecane	3.633	1.100	1	1	approach
+fuels spark ignition	3.633	1.100	1	1	research_impacts
+gas bottles fuel	3.633	1.100	1	1	approach
+gas mixture combustion	3.633	1.100	1	1	approach
+hcci engines help	3.633	1.100	1	1	research_impacts
+helium dilution cool	3.633	1.100	1	1	objective
+helium influence flame	3.633	1.100	1	1	approach
+help combustion chemists	3.633	1.100	1	1	research_impacts
+high resolution cameras	3.633	1.100	1	1	approach
+high-efficiency homogeneous charge	3.633	1.100	1	1	research_impacts
+homogeneous charge compression	3.633	1.100	1	1	research_impacts
+hot-wire igniter positioned	3.633	1.100	1	1	approach
+hydrocarbon fuels n-dodecane	3.633	1.100	1	1	hypothesis
+hypodermic needles tethered	3.633	1.100	1	1	approach
+igniter positioned near	3.633	1.100	1	1	approach
+ignition diesel engines	3.633	1.100	1	1	research_impacts
+ignition hcci engines	3.633	1.100	1	1	research_impacts
+ignition ignition wire	3.633	1.100	1	1	approach
+ignition phenomena practical	3.633	1.100	1	1	research_impacts
+ignition wire retracted	3.633	1.100	1	1	approach
+important understanding ignition	3.633	1.100	1	1	research_impacts
+influence flame extinction	3.633	1.100	1	1	approach
+insights low-temperature chemical	3.633	1.100	1	1	hypothesis
+instabilities low-temperature combustion	3.633	1.100	1	1	research_impacts
+iso-dodecane fuels diluted	3.633	1.100	1	1	approach
+iso-dodecane mixtures faresane	3.633	1.100	1	1	hypothesis
+iso-dodecane pressures ranging	3.633	1.100	1	1	objective
+key role development	3.633	1.100	1	1	research_impacts
+kinetic mechanisms advance	3.633	1.100	1	1	research_impacts
+kinetics revealing critical	3.633	1.100	1	1	hypothesis
+knowledge combustion microgravity	3.633	1.100	1	1	research_impacts
+like droplet extinction	3.633	1.100	1	1	hypothesis
+liquid hydrocarbon fuels	3.633	1.100	1	1	hypothesis
+low-temperature chemical kinetics	3.633	1.100	1	1	hypothesis
+low-temperature combustion design	3.633	1.100	1	1	research_impacts
+mdca facilitates controlled	3.633	1.100	1	1	approach
+measurements uv camera	3.633	1.100	1	1	approach
+mechanisms advance understanding	3.633	1.100	1	1	research_impacts
+microgravity insights low-temperature	3.633	1.100	1	1	hypothesis
+mixture combustion chamber	3.633	1.100	1	1	approach
+mixtures faresane microgravity	3.633	1.100	1	1	hypothesis
+models compute combustion	3.633	1.100	1	1	research_impacts
+molecular oxygen atomic	3.633	1.100	1	1	approach
+monitoring documentation narrow-band	3.633	1.100	1	1	approach
+n-dodecane farnesane mixtures	3.633	1.100	1	1	approach
+n-dodecane iso-dodecane fuels	3.633	1.100	1	1	approach
+n-dodecane iso-dodecane mixtures	3.633	1.100	1	1	hypothesis
+n-dodecane iso-dodecane pressures	3.633	1.100	1	1	objective
+n-dodecane mixtures n-dodecane	3.633	1.100	1	1	objective
+n-dodecane n-dodecane iso-dodecane	3.633	1.100	1	1	hypothesis
+narrow-band wide-band radiometers	3.633	1.100	1	1	approach
+near droplet ignition	3.633	1.100	1	1	approach
+needles tethered silicon-carbide	3.633	1.100	1	1	approach
+nitrogen helium influence	3.633	1.100	1	1	approach
+number fuels spark	3.633	1.100	1	1	research_impacts
+objectives examine combustion	3.633	1.100	1	1	objective
+observed black-and-white camera	3.633	1.100	1	1	approach
+observed n-dodecane farnesane	3.633	1.100	1	1	approach
+octane cetane number	3.633	1.100	1	1	research_impacts
+oh radical emissions	3.633	1.100	1	1	approach
+oxygen atomic nitrogen	3.633	1.100	1	1	approach
+parameters like droplet	3.633	1.100	1	1	hypothesis
+performance practical applications	3.633	1.100	1	1	research_impacts
+phenomena practical fuels	3.633	1.100	1	1	research_impacts
+play key role	3.633	1.100	1	1	research_impacts
+positioned near droplet	3.633	1.100	1	1	approach
+practical applications earth	3.633	1.100	1	1	research_impacts
+practical fuels fuel	3.633	1.100	1	1	research_impacts
+pressure flame extinction	3.633	1.100	1	1	objective
+pressures ranging 0.25	3.633	1.100	1	1	objective
+rack cir contains	3.633	1.100	1	1	approach
+radical emissions flame	3.633	1.100	1	1	approach
+radiometers analyzed flame	3.633	1.100	1	1	approach
+ranging 0.25 0.5	3.633	1.100	1	1	approach
+ranging 0.25 atm	3.633	1.100	1	1	objective
+reactivity determines octane	3.633	1.100	1	1	research_impacts
+refining knowledge combustion	3.633	1.100	1	1	research_impacts
+relationship droplet size	3.633	1.100	1	1	objective
+resolution cameras monitoring	3.633	1.100	1	1	approach
+retracted fuels observed	3.633	1.100	1	1	approach
+revealing critical parameters	3.633	1.100	1	1	hypothesis
+role development selection	3.633	1.100	1	1	research_impacts
+safer spacecraft systems	3.633	1.100	1	1	research_impacts
+selection fuels design	3.633	1.100	1	1	research_impacts
+silicon-carbide fibers hot-wire	3.633	1.100	1	1	approach
+size high resolution	3.633	1.100	1	1	approach
+size measurements uv	3.633	1.100	1	1	approach
+size pressure flame	3.633	1.100	1	1	objective
+soot formation cool	3.633	1.100	1	1	objective
+spacecraft systems refining	3.633	1.100	1	1	research_impacts
+spark ignition diesel	3.633	1.100	1	1	research_impacts
+suspended hypodermic needles	3.633	1.100	1	1	approach
+syringes delivers desired	3.633	1.100	1	1	approach
+system gas bottles	3.633	1.100	1	1	approach
+systems refining knowledge	3.633	1.100	1	1	research_impacts
+tethered silicon-carbide fibers	3.633	1.100	1	1	approach
+understand consequence soot	3.633	1.100	1	1	objective
+understanding cool flames	3.633	1.100	1	1	research_impacts
+understanding flame dynamics	3.633	1.100	1	1	research_impacts
+understanding ignition phenomena	3.633	1.100	1	1	research_impacts
+uv camera capturing	3.633	1.100	1	1	approach
+validation complex chemical	3.633	1.100	1	1	research_impacts
+wide-band radiometers analyzed	3.633	1.100	1	1	approach
+wire retracted fuels	3.633	1.100	1	1	approach
+emissions	3.597	2.000	1	8	approach
+number	3.597	2.000	1	8	research_impacts
+pressures	3.597	2.000	1	8	objective
+alkane droplet burning	3.588	1.375	1	3	publication
+chemistry quasi-steady combustion	3.588	1.375	1	3	publication
+combustion extinction n-heptane	3.588	1.375	1	3	publication
+cool flames quasi-steady	3.588	1.375	1	3	publication
+cool-flame chemistry quasi-steady	3.588	1.375	1	3	publication
+cool-flame extinction n-alkane	3.588	1.375	1	3	publication
+daniel williams forman	3.588	1.375	1	3	publication
+dietrich daniel williams	3.588	1.375	1	3	publication
+dietrich hicks fa	3.588	1.375	1	3	publication
+droplet combustion microgravity	3.588	1.375	1	3	publication
+extinction n-alkane droplet	3.588	1.375	1	3	publication
+extinction n-heptane droplets	3.588	1.375	1	3	publication
+farouk tanvir dryer	3.588	1.375	1	3	publication
+flames quasi-steady alkane	3.588	1.375	1	3	publication
+forman nayagam vedha	3.588	1.375	1	3	publication
+guenter peters norbert	3.588	1.375	1	3	publication
+kalyanasundaram williams forman	3.588	1.375	1	3	publication
+n-alkane droplet combustion	3.588	1.375	1	3	publication
+n-heptane droplet combustion	3.588	1.375	1	3	publication
+nayagam dietrich hicks	3.588	1.375	1	3	publication
+nayagam vedha dietrich	3.588	1.375	1	3	publication
+norbert seshadri kalyanasundaram	3.588	1.375	1	3	publication
+paczko guenter peters	3.588	1.375	1	3	publication
+peters norbert seshadri	3.588	1.375	1	3	publication
+quasi-steady alkane droplet	3.588	1.375	1	3	publication
+quasi-steady combustion extinction	3.588	1.375	1	3	publication
+role cool-flame chemistry	3.588	1.375	1	3	publication
+seshadri kalyanasundaram williams	3.588	1.375	1	3	publication
+tanvir dryer frederick	3.588	1.375	1	3	publication
+vedha dietrich daniel	3.588	1.375	1	3	publication
+williams forman arthur	3.588	1.375	1	3	publication
+williams forman nayagam	3.588	1.375	1	3	publication
+computational models	3.579	1.500	1	4	research_impacts
+flames observed	3.579	1.500	1	4	approach
+analysis	3.577	2.500	1	12	publication
+cameras	3.386	2.000	1	9	approach
+computational	3.386	2.000	1	9	research_impacts
+formation	3.386	2.000	1	9	objective
+models	3.386	2.000	1	9	research_impacts
+pv ferkul	3.372	1.875	1	8	publication
+metadata	3.354	1.750	2	7	file_folders,filenames
+flame behavior	3.306	1.500	1	5	objective
+flame radiation	3.306	1.500	1	5	approach
+flame size	3.306	1.500	1	5	approach
+microgravity environments	3.306	1.500	1	5	research_impacts
+pressure flame	3.306	1.500	1	5	objective
+00000.meta	3.303	1.000	1	1	filenames
+132450.184	3.303	1.000	1	1	filenames
+132450.185	3.303	1.000	1	1	filenames
+132617.955	3.303	1.000	1	1	filenames
+134333.092	3.303	1.000	1	1	filenames
+134504.662	3.303	1.000	1	1	filenames
+150616.684	3.303	1.000	1	1	filenames
+150755.913	3.303	1.000	1	1	filenames
+152352.061	3.303	1.000	1	1	filenames
+152523.359	3.303	1.000	1	1	filenames
+154245.901	3.303	1.000	1	1	filenames
+155204.173	3.303	1.000	1	1	filenames
+155333.976	3.303	1.000	1	1	filenames
+163701.455	3.303	1.000	1	1	filenames
+163832.103	3.303	1.000	1	1	filenames
+164817.635	3.303	1.000	1	1	filenames
+164956.686	3.303	1.000	1	1	filenames
+99999.meta	3.303	1.000	1	1	filenames
+f173e01.mp4	3.303	1.000	1	1	filenames
+f173e01.ts	3.303	1.000	1	1	filenames
+f173e01a	3.303	1.000	1	1	filenames
+f173e01c	3.303	1.000	1	1	filenames
+f173e01d	3.303	1.000	1	1	filenames
+f173e01e	3.303	1.000	1	1	filenames
+f173e02.mp4	3.303	1.000	1	1	filenames
+f173e02.ts	3.303	1.000	1	1	filenames
+f173e02a	3.303	1.000	1	1	filenames
+f173e02c	3.303	1.000	1	1	filenames
+f173e02d	3.303	1.000	1	1	filenames
+f173e02e	3.303	1.000	1	1	filenames
+f173e03.mp4	3.303	1.000	1	1	filenames
+f173e03.ts	3.303	1.000	1	1	filenames
+f173e03a	3.303	1.000	1	1	filenames
+f173e03d	3.303	1.000	1	1	filenames
+f173e03e	3.303	1.000	1	1	filenames
+f173e05.mp4	3.303	1.000	1	1	filenames
+f173e05a	3.303	1.000	1	1	filenames
+f173e05d	3.303	1.000	1	1	filenames
+f173e05e	3.303	1.000	1	1	filenames
+f173e06a	3.303	1.000	1	1	filenames
+f173e06c	3.303	1.000	1	1	filenames
+f173e06d	3.303	1.000	1	1	filenames
+f173e06e	3.303	1.000	1	1	filenames
+f177d02	3.303	1.000	1	1	filenames
+f179e01	3.303	1.000	1	1	filenames
+f179e01a	3.303	1.000	1	1	filenames
+f179e01c	3.303	1.000	1	1	filenames
+f179e01d	3.303	1.000	1	1	filenames
+f179e01e	3.303	1.000	1	1	filenames
+f179e02	3.303	1.000	1	1	filenames
+f179e02a	3.303	1.000	1	1	filenames
+f179e02c	3.303	1.000	1	1	filenames
+f179e02d	3.303	1.000	1	1	filenames
+f179e02e	3.303	1.000	1	1	filenames
+f179e05	3.303	1.000	1	1	filenames
+f179e05a	3.303	1.000	1	1	filenames
+f179e05d	3.303	1.000	1	1	filenames
+f179e05e	3.303	1.000	1	1	filenames
+f186d02	3.303	1.000	1	1	filenames
+f200d03	3.303	1.000	1	1	filenames
+filter	3.303	1.000	1	1	filenames
+ipsug	3.303	1.000	1	1	filenames
+positions	3.303	1.000	1	1	filenames
+psi-118	3.303	1.000	1	1	filenames
+radiometer	3.303	1.000	1	1	filenames
+testpoint	3.303	1.000	1	1	filenames
+advanced	3.196	2.000	1	10	research_impacts
+measurements	3.196	2.000	1	10	approach
+oxygen	3.196	2.000	1	10	approach
+radiation	3.196	2.000	1	10	approach
+cool flame behavior	3.187	1.100	1	2	objective
+design safer spacecraft	3.187	1.100	1	2	research_impacts
+understanding cool flame	3.187	1.100	1	2	research_impacts
+chemical kinetics	3.075	1.500	1	6	hypothesis
+soot	3.022	2.000	1	11	objective
+2017-05-10-15h41m31s	2.972	0.900	1	1	media_filenames
+2017-05-10-16h58m45s	2.972	0.900	1	1	media_filenames
+2017-05-10-17h10m55s	2.972	0.900	1	1	media_filenames
+2017-05-10-18h20m24s	2.972	0.900	1	1	media_filenames
+2017-05-10-18h48m30s	2.972	0.900	1	1	media_filenames
+2017-05-15-11h51m41s	2.972	0.900	1	1	media_filenames
+2017-05-15-12h18m26s	2.972	0.900	1	1	media_filenames
+2017-05-15-13h54m22s	2.972	0.900	1	1	media_filenames
+2017-05-19-17h44m36s	2.972	0.900	1	1	media_filenames
+2017-05-19-18h29m56s	2.972	0.900	1	1	media_filenames
+2017-05-26-15h41m43s	2.972	0.900	1	1	media_filenames
+2017-05-26-16h32m39s	2.972	0.900	1	1	media_filenames
+2017-05-26-16h52m57s	2.972	0.900	1	1	media_filenames
+2017-06-22-16h57m35s	2.972	0.900	1	1	media_filenames
+2017-06-29-15h53m44s	2.972	0.900	1	1	media_filenames
+2017-07-05-15h05m35s	2.972	0.900	1	1	media_filenames
+2017-07-14-14h53m22s	2.972	0.900	1	1	media_filenames
+2017-07-19-15h59m47s	2.972	0.900	1	1	media_filenames
+2017-08-01-12h59m43s	2.972	0.900	1	1	media_filenames
+2017-08-21-16h18m06s	2.972	0.900	1	1	media_filenames
+20176-06-26-13h34m29s	2.972	0.900	1	1	media_filenames
+f125a04	2.972	0.900	1	1	media_filenames
+f125a06	2.972	0.900	1	1	media_filenames
+f130a01	2.972	0.900	1	1	media_filenames
+f130a04	2.972	0.900	1	1	media_filenames
+f130a05	2.972	0.900	1	1	media_filenames
+f130a07	2.972	0.900	1	1	media_filenames
+f130a08	2.972	0.900	1	1	media_filenames
+f135a01	2.972	0.900	1	1	media_filenames
+f135a02	2.972	0.900	1	1	media_filenames
+f135a06	2.972	0.900	1	1	media_filenames
+f139a01	2.972	0.900	1	1	media_filenames
+f139a03	2.972	0.900	1	1	media_filenames
+f146a02	2.972	0.900	1	1	media_filenames
+f146a05	2.972	0.900	1	1	media_filenames
+f151a01	2.972	0.900	1	1	media_filenames
+f151a02	2.972	0.900	1	1	media_filenames
+f151a04	2.972	0.900	1	1	media_filenames
+f151a05	2.972	0.900	1	1	media_filenames
+f158a02	2.972	0.900	1	1	media_filenames
+f158a04	2.972	0.900	1	1	media_filenames
+f163a01	2.972	0.900	1	1	media_filenames
+f163a03	2.972	0.900	1	1	media_filenames
+f163a04	2.972	0.900	1	1	media_filenames
+f186d05	2.972	0.900	1	1	media_filenames
+f200d03a	2.972	0.900	1	1	media_filenames
+f200d03b	2.972	0.900	1	1	media_filenames
+f208d05	2.972	0.900	1	1	media_filenames
+f213d02	2.972	0.900	1	1	media_filenames
+f213d03	2.972	0.900	1	1	media_filenames
+f213d04	2.972	0.900	1	1	media_filenames
+f222d01	2.972	0.900	1	1	media_filenames
+f222d02	2.972	0.900	1	1	media_filenames
+f222d03	2.972	0.900	1	1	media_filenames
+f222d04	2.972	0.900	1	1	media_filenames
+f226d01	2.972	0.900	1	1	media_filenames
+f226d02	2.972	0.900	1	1	media_filenames
+f226d04	2.972	0.900	1	1	media_filenames
+f228d02	2.972	0.900	1	1	media_filenames
+f233d01	2.972	0.900	1	1	media_filenames
+f233d03	2.972	0.900	1	1	media_filenames
+f233d04	2.972	0.900	1	1	media_filenames
+f233d05	2.972	0.900	1	1	media_filenames
+f288d01	2.972	0.900	1	1	media_filenames
+flex-1254	2.972	0.900	1	1	media_filenames
+flex-1255	2.972	0.900	1	1	media_filenames
+flex-1256	2.972	0.900	1	1	media_filenames
+flex-1257	2.972	0.900	1	1	media_filenames
+flex-1258	2.972	0.900	1	1	media_filenames
+flex-1259	2.972	0.900	1	1	media_filenames
+flex-1260	2.972	0.900	1	1	media_filenames
+flex-1262	2.972	0.900	1	1	media_filenames
+flex-1263	2.972	0.900	1	1	media_filenames
+flex-1265	2.972	0.900	1	1	media_filenames
+flex-1267	2.972	0.900	1	1	media_filenames
+flex-1269	2.972	0.900	1	1	media_filenames
+flex-1270	2.972	0.900	1	1	media_filenames
+flex-1274	2.972	0.900	1	1	media_filenames
+flex-1289	2.972	0.900	1	1	media_filenames
+flex-1290	2.972	0.900	1	1	media_filenames
+flex-1303	2.972	0.900	1	1	media_filenames
+flex-1313	2.972	0.900	1	1	media_filenames
+flex-1329	2.972	0.900	1	1	media_filenames
+flex-1338	2.972	0.900	1	1	media_filenames
+flex-1355	2.972	0.900	1	1	media_filenames
+flex-1385	2.972	0.900	1	1	media_filenames
+video-pd	2.972	0.900	1	1	media_filenames
+video-science	2.972	0.900	1	1	media_filenames
+vlc-record-2017-05-10-15h30m47s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-05-10-16h46m59s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-05-10-16h57m57s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-05-10-18h18m29s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-05-10-18h38m03s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-05-15-11h41m26s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-05-15-12h07m57s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-05-15-13h43m53s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-05-19-17h33m25s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-05-19-18h18m45s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-05-26-15h28m21s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-05-26-16h28m57s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-05-26-16h42m59s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-06-12-16h09m58s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-06-22-16h44m14s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-06-26-14h23m38s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-06-26-14h37m20s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-06-26-15h04m21s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-06-29-14h35m31s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-06-29-14h59m25s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-07-05-13h25m30s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-07-05-14h31m45s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-07-05-15h23m14s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-07-10-14h39m46s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-07-10-15h30m11s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-07-10-16h00m16s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-07-10-16h15m31s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-07-14-14h16m14s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-07-14-16h50m43s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-07-14-17h40m43s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-07-14-18h19m27s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-07-19-12h57m44s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-07-19-14h39m31s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-07-19-15h13m18s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-07-19-15h23m18s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-07-24-13h58m54s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-07-24-15h01m44s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-07-27-13h58m14s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-07-27-14h59m42s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-07-27-15h28m13s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-07-27-15h54m34s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-07-27-16h11m15s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-08-01-13h25m38s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-08-01-14h06m34s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-08-01-14h32m55s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-08-10-15h00m17s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-08-10-15h15m09s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-08-10-15h47m02s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-08-10-16h25m47s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-08-14-16h28m11s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-08-14-17h36m29s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-08-14-18h17m27s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-08-16-19h53m57s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-08-16-20h45m37s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-08-21-15h11m10s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-08-21-16h06m40s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-08-21-16h23m58s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2017-08-21-16h34m10s-udp	2.972	0.900	1	1	media_filenames
+co-investigator co-i	2.897	2.250	3	14	role
+readings	2.897	1.000	1	2	filenames
+settings	2.897	1.000	1	2	filenames
+soot formation	2.874	1.500	1	7	objective
+development	2.862	2.000	1	12	research_impacts
+pressure	2.862	2.000	1	12	objective
+effects	2.713	2.000	1	13	objective
+environments	2.713	2.000	1	13	research_impacts
+high	2.713	2.000	1	13	approach
+spacecraft	2.713	2.000	1	13	research_impacts
+systems	2.713	2.000	1	13	research_impacts
+hibms	2.609	1.000	1	3	filenames
+downlink	2.607	0.900	1	2	media_filenames
+movie	2.607	0.900	1	2	media_filenames
+objectives	2.575	2.000	1	14	objective
+tanvir farouk	2.477	0.750	1	1	people
+comments	2.386	1.000	1	4	filenames
+intns	2.386	1.000	1	4	filenames
+view	2.348	0.900	1	3	media_filenames
+color	2.204	1.000	1	5	filenames
+carolina	2.173	0.750	1	2	affiliation
+south	2.173	0.750	1	2	affiliation
+documents	2.146	1.500	2	12	file_folders
+california	1.957	0.750	1	3	affiliation
+daniel dietrich	1.957	0.750	1	3	people
+frederick dryer	1.957	0.750	1	3	people
+princeton	1.957	0.750	1	3	affiliation
+vedha nayagam	1.957	0.750	1	3	people
+loss	1.845	0.900	1	6	media_filenames
+forman williams	1.790	0.750	1	4	people
+diego	1.653	0.750	1	5	affiliation
+san	1.653	0.750	1	5	affiliation
+south carolina	1.630	0.562	1	2	affiliation
+university south	1.630	0.562	1	2	affiliation
+california san	1.468	0.562	1	3	affiliation
+princeton university	1.468	0.562	1	3	affiliation
+university california	1.468	0.562	1	3	affiliation
+western university	1.468	0.562	1	3	affiliation
+case	1.349	0.750	1	8	affiliation
+presentations	1.349	0.750	1	8	file_folders
+western	1.349	0.750	1	8	affiliation
+scientist	1.288	1.000	1	14	role
+san diego	1.240	0.562	1	5	affiliation
+university south carolina	1.195	0.412	1	2	affiliation
+california san diego	1.076	0.412	1	3	affiliation
+case western university	1.076	0.412	1	3	affiliation
+university california san	1.076	0.412	1	3	affiliation
+investigator	1.051	1.000	1	18	role
+pi	1.051	1.000	1	18	role
+principal	1.051	1.000	1	18	role
+engineering	1.018	0.750	1	13	file_folders
+case western	1.012	0.562	1	8	affiliation
+engineering documents	0.805	0.562	1	12	file_folders
+grc	0.788	0.750	1	18	affiliation
+investigator pi	0.788	0.750	1	18	role
+principal investigator	0.788	0.750	1	18	role
+principal investigator pi	0.578	0.550	1	18	role

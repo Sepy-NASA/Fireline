@@ -1,0 +1,1100 @@
+# keywords for PSI-101 (score, weight, count, df, fields)
+smoke	99.647	52.000	20	7	curated_keywords,filenames,hypothesis,objective,publication,research_impacts,title
+same-r	82.565	25.000	11	1	acronym,approach,filenames,hypothesis,objective,research_impacts
+aerosol	43.056	16.500	6	3	filenames,hypothesis,publication,title
+cleary	41.751	16.000	7	3	people,publication
+mulholland	41.751	16.000	7	3	people,publication
+kapton	40.270	13.900	5	2	cameras,curated_keywords,filenames,media_filenames
+pyrell	40.270	13.900	5	2	approach,cameras,curated_keywords,filenames,media_filenames
+yuan	38.181	16.000	7	4	people,publication
+yang	35.264	16.000	7	5	people,publication
+bryg	32.618	12.500	5	3	publication
+meyer	32.618	12.500	5	3	publication
+ruff	30.747	15.000	6	6	publication
+silicon	29.723	9.000	2	1	curated_keywords,filenames
+technology	27.523	9.500	6	2	affiliation,research_impacts
+urban	27.090	16.000	7	9	people,publication
+detection	26.448	12.000	6	5	filenames,publication,research_impacts
+microscopy	26.421	8.000	1	1	curated_keywords
+rubber	26.421	8.000	1	1	curated_keywords
+aerosol measurement	26.421	10.125	4	3	publication,title
+smoke aerosol	26.421	10.125	4	3	publication,title
+measurement	26.078	14.500	5	8	filenames,publication,title
+same-2	26.074	9.000	2	2	curated_keywords,filenames
+teflon	26.074	9.000	2	2	curated_keywords,filenames
+spacecraft	25.777	19.000	5	13	curated_keywords,publication,research_impacts,sub_research_area
+fire	25.098	18.500	5	13	curated_keywords,publication,research_impacts,sub_research_area
+electron	23.177	8.000	1	2	curated_keywords
+transmission	23.177	8.000	1	2	curated_keywords
+george	22.180	8.500	4	3	people,publication
+jiann	22.180	8.500	4	3	people,publication
+victoria	21.728	7.500	3	2	publication
+zg	21.728	7.500	3	2	publication
+cotton	20.876	8.000	1	3	curated_keywords
+detectors	20.876	8.000	4	3	hypothesis,research_impacts
+particles	20.876	8.000	4	3	hypothesis,objective
+zeng-guang	20.284	8.500	4	4	people,publication
+electron microscopy	19.816	6.000	1	1	curated_keywords
+experiment-2	19.816	6.000	3	1	filenames,publication
+experiment-reflight	19.816	6.000	1	1	title
+original	19.816	6.000	3	1	hypothesis,objective,research_impacts
+silicon rubber	19.816	6.000	1	1	curated_keywords
+ground	19.571	7.500	4	3	approach,filenames,objective,publication
+marit	19.571	7.500	3	3	publication
+smoke aerosol measurement	19.375	7.425	4	3	publication,title
+detector	18.831	6.500	3	2	approach,publication,research_impacts
+thomas	18.734	8.500	4	5	people,publication
+david	18.625	11.000	5	9	people,publication
+diagnostic	18.266	7.000	3	3	approach,experiment_hardware,objective
+particle	17.897	7.500	4	4	filenames,hypothesis,publication
+transmission electron	17.383	6.000	1	2	curated_keywords
+lampwick	17.093	5.900	4	2	cameras,filenames,media_filenames
+soot	16.619	11.000	2	11	curated_keywords,experiment_hardware
+gary	16.530	7.500	3	5	publication
+greenberg	16.513	5.000	2	1	publication
+spacecraft fire	16.430	10.875	3	11	curated_keywords,publication,sub_research_area
+bryg victoria	16.296	5.625	3	2	publication
+cleary yang	16.296	5.625	3	2	publication
+zg yuan	16.296	5.625	3	2	publication
+safety	16.280	12.000	2	13	curated_keywords,sub_research_area
+larger	15.657	6.000	3	3	hypothesis
+evaluation	15.428	7.000	3	5	publication,research_impacts
+conditions	14.923	11.000	6	13	approach,filenames,hypothesis,objective
+measurement experiment-reflight	14.862	4.500	1	1	title
+reflight	14.862	4.500	2	1	hypothesis,publication
+cleary thomas	14.678	5.625	3	3	publication
+meyer marit	14.678	5.625	3	3	publication
+mulholland george	14.678	5.625	3	3	publication
+thomas yang	14.678	5.625	3	3	publication
+yang jiann	14.678	5.625	3	3	publication
+transmission electron microscopy	14.531	4.400	1	1	curated_keywords
+yuan zeng-guang	13.423	5.625	3	4	publication
+low-gravity	13.224	6.000	3	5	filenames,publication
+experience	13.210	4.000	2	1	approach,objective
+grids	13.210	4.000	2	1	objective
+heating	13.210	4.000	2	1	approach
+replace	13.210	4.000	2	1	approach
+ruff gary	12.397	5.625	3	5	publication
+measurement experiment-2	12.385	3.750	2	1	publication
+distribution	12.299	6.000	3	6	approach,hypothesis,objective
+fire safety	12.210	9.000	2	13	curated_keywords,sub_research_area
+size	11.984	7.500	4	10	filenames,hypothesis,objective,publication
+hardware	11.931	5.000	2	4	approach,experiment_hardware
+particulate	11.742	4.500	2	3	objective,publication
+employed	11.588	4.000	2	2	approach,objective
+smokes	11.588	4.000	2	2	hypothesis,research_impacts
+urban david	11.530	5.625	3	6	publication
+test	11.044	9.500	5	16	approach,filenames,publication
+aerosol measurement experiment-reflight	10.899	3.300	1	1	title
+marit urban	10.864	3.750	2	2	publication
+mulholland zg	10.864	3.750	2	2	publication
+urban ruff	10.864	3.750	2	2	publication
+victoria cleary	10.864	3.750	2	2	publication
+yang mulholland	10.864	3.750	2	2	publication
+zeng-guang bryg	10.864	3.750	2	2	publication
+cleary thomas yang	10.764	4.125	3	3	publication
+thomas yang jiann	10.764	4.125	3	3	publication
+density	10.438	4.000	2	3	hypothesis
+produced	10.438	4.000	2	3	hypothesis
+utilized	10.438	4.000	2	3	approach,research_impacts
+flames	10.301	8.000	1	14	curated_keywords
+gravity	10.301	8.000	4	14	hypothesis,objective,research_impacts
+flight	10.175	7.500	4	13	approach,filenames,publication
+reduced	10.159	6.000	3	9	hypothesis,research_impacts
+morphology	10.140	3.500	2	2	filenames,publication
+spacecraft fire safety	9.971	6.600	2	11	curated_keywords,sub_research_area
+refer	9.908	3.000	1	1	experiment_hardware
+same-r flight	9.908	3.000	2	1	approach
+david ruff	9.785	3.750	2	3	publication
+george yuan	9.785	3.750	2	3	publication
+smoke particulate	9.778	3.375	2	2	objective,publication
+developed	9.545	4.000	2	4	approach,research_impacts
+higher	9.545	4.000	2	4	approach,hypothesis
+sizes	9.545	4.000	2	4	hypothesis,objective
+aerosol measurement experiment-2	9.082	2.750	2	1	publication
+tests	9.065	6.000	3	11	approach
+detection smoke	8.807	3.375	2	3	publication,research_impacts
+baseline	8.691	3.000	2	2	filenames,research_impacts
+coagulation	8.691	3.000	2	2	filenames,hypothesis
+comparitive	8.691	3.000	1	2	experiment_hardware
+larger particles	8.691	3.000	2	2	hypothesis
+mp4	8.691	3.000	3	2	filenames
+number density	8.691	3.000	2	2	hypothesis
+size distribution	8.691	3.000	2	2	hypothesis,objective
+smoke detectors	8.691	3.000	2	2	hypothesis,research_impacts
+fischer	8.256	2.500	1	1	publication
+droplet	8.199	4.000	2	6	hypothesis,objective
+final	8.199	4.000	2	6	experiment_hardware,filenames
+lead	8.199	4.000	2	6	hypothesis,research_impacts
+liquid	8.199	4.000	2	6	hypothesis,objective
+bryg victoria cleary	7.967	2.750	2	2	publication
+cleary yang mulholland	7.967	2.750	2	2	publication
+marit urban david	7.967	2.750	2	2	publication
+meyer marit urban	7.967	2.750	2	2	publication
+mulholland zg yuan	7.967	2.750	2	2	publication
+victoria cleary thomas	7.967	2.750	2	2	publication
+yang mulholland zg	7.967	2.750	2	2	publication
+yuan zeng-guang bryg	7.967	2.750	2	2	publication
+zeng-guang bryg victoria	7.967	2.750	2	2	publication
+flight tests	7.828	3.000	2	3	approach
+future	7.726	6.000	3	14	research_impacts
+hardware refer	7.431	2.250	1	1	experiment_hardware
+refer final	7.431	2.250	1	1	experiment_hardware
+same-r flight tests	7.266	2.200	2	1	approach
+number	7.194	4.000	2	8	hypothesis
+david ruff gary	7.176	2.750	2	3	publication
+george yuan zeng-guang	7.176	2.750	2	3	publication
+mulholland george yuan	7.176	2.750	2	3	publication
+urban david ruff	7.176	2.750	2	3	publication
+comparison	6.707	3.500	2	7	filenames,publication
+applicable	6.605	2.000	1	1	hypothesis
+assumption	6.605	2.000	1	1	approach
+broadened	6.605	2.000	1	1	approach
+certain	6.605	2.000	1	1	objective
+completing	6.605	2.000	1	1	approach
+contaminated	6.605	2.000	1	1	objective
+covering	6.605	2.000	1	1	objective
+enclosures	6.605	2.000	1	1	approach
+encountered	6.605	2.000	1	1	objective
+equipments	6.605	2.000	1	1	objective
+evaluated	6.605	2.000	1	1	research_impacts
+fire-retardant	6.605	2.000	1	1	approach
+foam	6.605	2.000	1	1	approach
+foamex	6.605	2.000	1	1	approach
+foreign	6.605	2.000	1	1	objective
+in-house	6.605	2.000	1	1	approach
+introduced	6.605	2.000	1	1	approach
+intumescent	6.605	2.000	1	1	approach
+lognormal	6.605	2.000	1	1	approach
+m-pass	6.605	2.000	1	1	approach
+no-flow	6.605	2.000	1	1	approach
+post-flight	6.605	2.000	1	1	approach
+precipitators	6.605	2.000	1	1	objective
+reduction	6.605	2.000	1	1	approach
+returned	6.605	2.000	1	1	objective
+september	6.605	2.000	1	1	approach
+severely	6.605	2.000	1	1	objective
+showed	6.605	2.000	1	1	objective
+successfully	6.605	2.000	1	1	approach
+types	6.605	2.000	1	1	objective
+unidentified	6.605	2.000	1	1	objective
+unusable	6.605	2.000	1	1	objective
+griffin	6.524	2.500	1	3	publication
+preliminary	6.524	2.500	1	3	publication
+comparitive soot	6.519	2.250	1	2	experiment_hardware
+diagnostic hardware	6.519	2.250	1	2	experiment_hardware
+soot diagnostic	6.519	2.250	1	2	experiment_hardware
+microgravity	6.500	6.500	4	19	filenames,hypothesis,project_type,publication
+environment	6.439	4.500	2	12	hypothesis,publication
+vlc-record-2010-07-30-13h25m07s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2010-07-30-14h12m08s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2010-07-30-15h06m31s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2010-09-07-16h18m22s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2010-09-07-17h19m24s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2010-09-08-11h37m29s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2010-09-08-12h10m02s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2010-09-08-14h26m11s-udp	6.275	1.900	2	1	filenames,media_filenames
+comparison flight	6.192	1.875	1	1	publication
+david meyer	6.192	1.875	1	1	publication
+evaluation low-gravity	6.192	1.875	1	1	publication
+experiment-2 comparison	6.192	1.875	1	1	publication
+fischer david	6.192	1.875	1	1	publication
+flight ground	6.192	1.875	1	1	publication
+gary greenberg	6.192	1.875	1	1	publication
+greenberg bryg	6.192	1.875	1	1	publication
+greenberg paul	6.192	1.875	1	1	publication
+low-gravity smoke	6.192	1.875	1	1	publication
+measurement reflight	6.192	1.875	1	1	publication
+meyer cleary	6.192	1.875	1	1	publication
+meyer zg	6.192	1.875	1	1	publication
+morphology size	6.192	1.875	1	1	publication
+mulholland meyer	6.192	1.875	1	1	publication
+particle morphology	6.192	1.875	1	1	publication
+paul fischer	6.192	1.875	1	1	publication
+preliminary smoke	6.192	1.875	1	1	publication
+ruff meyer	6.192	1.875	1	1	publication
+size smoke	6.192	1.875	1	1	publication
+yang greenberg	6.192	1.875	1	1	publication
+yuan bryg	6.192	1.875	1	1	publication
+yuan cleary	6.192	1.875	1	1	publication
+1g	5.794	2.000	1	2	hypothesis
+achieves	5.794	2.000	1	2	objective
+adequacy	5.794	2.000	1	2	research_impacts
+alarm	5.794	2.000	1	2	hypothesis
+buoyancy-induced	5.794	2.000	1	2	hypothesis
+capability	5.794	2.000	1	2	research_impacts
+change	5.794	2.000	1	2	hypothesis
+condensation	5.794	2.000	1	2	hypothesis
+dbp	5.794	2.000	1	2	approach
+developments	5.794	2.000	1	2	research_impacts
+dusttrak	5.794	2.000	1	2	approach
+exhibit	5.794	2.000	1	2	hypothesis
+existing	5.794	2.000	1	2	research_impacts
+exposed	5.794	2.000	1	2	hypothesis
+extreme	5.794	2.000	1	2	research_impacts
+favored	5.794	2.000	1	2	hypothesis
+found	5.794	2.000	1	2	objective
+fpds	5.794	2.000	1	2	research_impacts
+instrument	5.794	2.000	1	2	approach
+ionization	5.794	2.000	1	2	approach
+major	5.794	2.000	1	2	approach
+making	5.794	2.000	1	2	objective
+modifications	5.794	2.000	1	2	approach
+moment	5.794	2.000	1	2	approach
+motivated	5.794	2.000	1	2	hypothesis
+nucleation	5.794	2.000	1	2	hypothesis
+on-orbit	5.794	2.000	1	2	approach
+operating	5.794	2.000	1	2	objective
+particular	5.794	2.000	1	2	hypothesis
+points	5.794	2.000	1	2	approach
+producing	5.794	2.000	1	2	hypothesis
+pyrolyzing	5.794	2.000	1	2	hypothesis
+re-evaluation	5.794	2.000	1	2	research_impacts
+relate	5.794	2.000	1	2	objective
+strong	5.794	2.000	1	2	hypothesis
+substantially	5.794	2.000	1	2	hypothesis
+tem	5.794	2.000	1	2	objective
+turn	5.794	2.000	1	2	hypothesis
+useful	5.794	2.000	1	2	research_impacts
+vapor	5.794	2.000	1	2	hypothesis
+reduced gravity	5.749	3.000	2	7	research_impacts
+sample	5.749	3.000	2	7	approach,filenames
+thermal	5.749	3.000	2	7	filenames,objective
+fires	5.592	3.500	2	10	filenames,publication
+diagnostic hardware refer	5.449	1.650	1	1	experiment_hardware
+hardware refer final	5.449	1.650	1	1	experiment_hardware
+david mulholland	5.432	1.875	1	2	publication
+detector performance	5.432	1.875	1	2	publication
+evaluation spacecraft	5.432	1.875	1	2	publication
+gary mulholland	5.432	1.875	1	2	publication
+george bryg	5.432	1.875	1	2	publication
+griffin ruff	5.432	1.875	1	2	publication
+ground test	5.432	1.875	1	2	publication
+low-gravity environment	5.432	1.875	1	2	publication
+marit mulholland	5.432	1.875	1	2	publication
+particulate spacecraft	5.432	1.875	1	2	publication
+performance low-gravity	5.432	1.875	1	2	publication
+ruff cleary	5.432	1.875	1	2	publication
+ruff mulholland	5.432	1.875	1	2	publication
+smoke detector	5.432	1.875	1	2	publication
+spacecraft smoke	5.432	1.875	1	2	publication
+urban griffin	5.432	1.875	1	2	publication
+victoria yuan	5.432	1.875	1	2	publication
+zeng-guang ruff	5.432	1.875	1	2	publication
+environments	5.427	4.000	2	13	research_impacts
+absence	5.219	2.000	1	3	hypothesis
+accurate	5.219	2.000	1	3	research_impacts
+commercial	5.219	2.000	1	3	approach
+decrease	5.219	2.000	1	3	hypothesis
+expected	5.219	2.000	1	3	hypothesis
+gained	5.219	2.000	1	3	approach
+july	5.219	2.000	1	3	approach
+laboratories	5.219	2.000	1	3	research_impacts
+lives	5.219	2.000	1	3	research_impacts
+mixing	5.219	2.000	1	3	hypothesis
+modification	5.219	2.000	1	3	objective
+possibly	5.219	2.000	1	3	hypothesis
+problems	5.219	2.000	1	3	objective
+relevant	5.219	2.000	1	3	research_impacts
+save	5.219	2.000	1	3	research_impacts
+sensitivity	5.219	2.000	1	3	research_impacts
+shapes	5.219	2.000	1	3	objective
+underwater	5.219	2.000	1	3	research_impacts
+co-i	5.151	4.000	4	14	role
+co-investigator	5.151	4.000	4	14	role
+performance	5.125	2.500	1	6	publication
+applicable reflight	4.954	1.500	1	1	hypothesis
+assumption key	4.954	1.500	1	1	approach
+broadened higher	4.954	1.500	1	1	approach
+certain types	4.954	1.500	1	1	objective
+commercial diagnostic	4.954	1.500	1	1	approach
+completing test	4.954	1.500	1	1	approach
+conditions broadened	4.954	1.500	1	1	approach
+conditions diagnostic	4.954	1.500	1	1	objective
+conditions problems	4.954	1.500	1	1	objective
+conducted july	4.954	1.500	1	1	approach
+contaminated unidentified	4.954	1.500	1	1	objective
+covering materials	4.954	1.500	1	1	objective
+dbp samples	4.954	1.500	1	1	approach
+detector same-r	4.954	1.500	1	1	approach
+developed in-house	4.954	1.500	1	1	approach
+developments evaluated	4.954	1.500	1	1	research_impacts
+diagnostic enclosures	4.954	1.500	1	1	approach
+diagnostic equipments	4.954	1.500	1	1	objective
+distribution assumption	4.954	1.500	1	1	approach
+dusttrak ionization	4.954	1.500	1	1	approach
+employed modification	4.954	1.500	1	1	objective
+employed same-r	4.954	1.500	1	1	approach
+enclosures dusttrak	4.954	1.500	1	1	approach
+encountered thermal	4.954	1.500	1	1	objective
+evaluated smoke	4.954	1.500	1	1	research_impacts
+experience gained	4.954	1.500	1	1	approach
+experience same-r	4.954	1.500	1	1	objective
+extended operating	4.954	1.500	1	1	objective
+fire-retardant foam	4.954	1.500	1	1	approach
+foam foamex	4.954	1.500	1	1	approach
+foamex introduced	4.954	1.500	1	1	approach
+following modifications	4.954	1.500	1	1	approach
+foreign particles	4.954	1.500	1	1	objective
+found tem	4.954	1.500	1	1	objective
+gained same-r	4.954	1.500	1	1	approach
+grc replace	4.954	1.500	1	1	approach
+grids severely	4.954	1.500	1	1	objective
+grids unusable	4.954	1.500	1	1	objective
+ground found	4.954	1.500	1	1	objective
+ground tests	4.954	1.500	1	1	approach
+hardware on-orbit	4.954	1.500	1	1	approach
+heating temperatures	4.954	1.500	1	1	approach
+heating time	4.954	1.500	1	1	approach
+higher heating	4.954	1.500	1	1	approach
+improve reduction	4.954	1.500	1	1	approach
+in-house grc	4.954	1.500	1	1	approach
+instrument m-pass	4.954	1.500	1	1	approach
+introduced replace	4.954	1.500	1	1	approach
+intumescent fire-retardant	4.954	1.500	1	1	approach
+ionization detector	4.954	1.500	1	1	approach
+july september	4.954	1.500	1	1	approach
+key moment	4.954	1.500	1	1	approach
+lead technology	4.954	1.500	1	1	research_impacts
+lognormal distribution	4.954	1.500	1	1	approach
+m-pass developed	4.954	1.500	1	1	approach
+major post-flight	4.954	1.500	1	1	approach
+making grids	4.954	1.500	1	1	objective
+material pyrell	4.954	1.500	1	1	approach
+method employed	4.954	1.500	1	1	approach
+modification covering	4.954	1.500	1	1	objective
+modifications test	4.954	1.500	1	1	approach
+motivated original	4.954	1.500	1	1	hypothesis
+no-flow sample	4.954	1.500	1	1	approach
+objective same-r	4.954	1.500	1	1	objective
+on-orbit experience	4.954	1.500	1	1	approach
+original applicable	4.954	1.500	1	1	hypothesis
+original primary	4.954	1.500	1	1	objective
+original same-r	4.954	1.500	1	1	research_impacts
+particles experience	4.954	1.500	1	1	objective
+particles making	4.954	1.500	1	1	objective
+performed improve	4.954	1.500	1	1	approach
+points same-r	4.954	1.500	1	1	approach
+post-flight ground	4.954	1.500	1	1	approach
+precipitators returned	4.954	1.500	1	1	objective
+problems encountered	4.954	1.500	1	1	objective
+process validate	4.954	1.500	1	1	approach
+pyrell intumescent	4.954	1.500	1	1	approach
+reduction process	4.954	1.500	1	1	approach
+reflight same-r	4.954	1.500	1	1	hypothesis
+replace commercial	4.954	1.500	1	1	approach
+replace dbp	4.954	1.500	1	1	approach
+returned ground	4.954	1.500	1	1	objective
+same-r employed	4.954	1.500	1	1	objective
+same-r environment	4.954	1.500	1	1	hypothesis
+same-r following	4.954	1.500	1	1	approach
+same-r lead	4.954	1.500	1	1	research_impacts
+same-r quantify	4.954	1.500	1	1	objective
+same-r utilized	4.954	1.500	1	1	approach
+sample heating	4.954	1.500	1	1	approach
+samples test	4.954	1.500	1	1	approach
+september successfully	4.954	1.500	1	1	approach
+severely contaminated	4.954	1.500	1	1	objective
+shapes certain	4.954	1.500	1	1	objective
+showed shapes	4.954	1.500	1	1	objective
+similar original	4.954	1.500	1	1	objective
+smoke particles	4.954	1.500	1	1	objective
+successfully completing	4.954	1.500	1	1	approach
+tem grids	4.954	1.500	1	1	objective
+temperatures no-flow	4.954	1.500	1	1	approach
+test material	4.954	1.500	1	1	approach
+test points	4.954	1.500	1	1	approach
+tests major	4.954	1.500	1	1	approach
+thermal precipitators	4.954	1.500	1	1	objective
+time instrument	4.954	1.500	1	1	approach
+types smoke	4.954	1.500	1	1	objective
+unidentified foreign	4.954	1.500	1	1	objective
+unusable showed	4.954	1.500	1	1	objective
+utilized hardware	4.954	1.500	1	1	approach
+validate lognormal	4.954	1.500	1	1	approach
+gary cleary	4.893	1.875	1	3	publication
+comparitive soot diagnostic	4.780	1.650	1	2	experiment_hardware
+soot diagnostic hardware	4.780	1.650	1	2	experiment_hardware
+corresponding	4.773	2.000	1	4	hypothesis
+duration	4.773	2.000	1	4	research_impacts
+extended	4.773	2.000	1	4	objective
+hypotheses	4.773	2.000	1	4	hypothesis
+hypothesized	4.773	2.000	1	4	hypothesis
+improve	4.773	2.000	1	4	approach
+quantitative	4.773	2.000	1	4	research_impacts
+residence	4.773	2.000	1	4	hypothesis
+response	4.773	2.000	1	4	hypothesis
+similar	4.773	2.000	1	4	objective
+velocities	4.773	2.000	1	4	hypothesis
+aerosol measurement reflight	4.541	1.375	1	1	publication
+cleary yang greenberg	4.541	1.375	1	1	publication
+comparison flight ground	4.541	1.375	1	1	publication
+david meyer marit	4.541	1.375	1	1	publication
+evaluation low-gravity smoke	4.541	1.375	1	1	publication
+experiment-2 comparison flight	4.541	1.375	1	1	publication
+fischer david meyer	4.541	1.375	1	1	publication
+flight ground test	4.541	1.375	1	1	publication
+gary greenberg paul	4.541	1.375	1	1	publication
+greenberg paul fischer	4.541	1.375	1	1	publication
+low-gravity smoke particulate	4.541	1.375	1	1	publication
+measurement experiment-2 comparison	4.541	1.375	1	1	publication
+meyer cleary yang	4.541	1.375	1	1	publication
+meyer zg yuan	4.541	1.375	1	1	publication
+morphology size smoke	4.541	1.375	1	1	publication
+mulholland meyer zg	4.541	1.375	1	1	publication
+particle morphology size	4.541	1.375	1	1	publication
+paul fischer david	4.541	1.375	1	1	publication
+preliminary smoke aerosol	4.541	1.375	1	1	publication
+ruff gary greenberg	4.541	1.375	1	1	publication
+ruff meyer cleary	4.541	1.375	1	1	publication
+ruff mulholland meyer	4.541	1.375	1	1	publication
+size smoke aerosol	4.541	1.375	1	1	publication
+urban ruff meyer	4.541	1.375	1	1	publication
+yang greenberg bryg	4.541	1.375	1	1	publication
+yuan cleary yang	4.541	1.375	1	1	publication
+zg yuan bryg	4.541	1.375	1	1	publication
+zg yuan cleary	4.541	1.375	1	1	publication
+paul	4.496	2.500	1	8	publication
+microgravity fires	4.474	1.875	1	4	publication
+smoke microgravity	4.474	1.875	1	4	publication
+grc	4.468	4.250	4	18	affiliation,approach
+following	4.408	2.000	1	5	approach
+generation	4.408	2.000	1	5	objective
+key	4.408	2.000	1	5	approach
+mass	4.408	2.000	1	5	hypothesis
+method	4.408	2.000	1	5	approach
+needed	4.408	2.000	1	5	research_impacts
+plan	4.408	2.000	1	5	research_impacts
+smoldering	4.408	2.000	1	5	hypothesis
+technologies	4.408	2.000	1	5	research_impacts
+1g formation	4.346	1.500	1	2	hypothesis
+absence strong	4.346	1.500	1	2	hypothesis
+achieves low	4.346	1.500	1	2	objective
+adequacy existing	4.346	1.500	1	2	research_impacts
+advanced fire	4.346	1.500	1	2	research_impacts
+aerosol smokes	4.346	1.500	1	2	hypothesis
+affect response	4.346	1.500	1	2	hypothesis
+alarm exposed	4.346	1.500	1	2	hypothesis
+baseline future	4.346	1.500	1	2	research_impacts
+buoyancy-induced flows	4.346	1.500	1	2	hypothesis
+capability utilized	4.346	1.500	1	2	research_impacts
+change size	4.346	1.500	1	2	hypothesis
+coagulation lead	4.346	1.500	1	2	hypothesis
+compared produced	4.346	1.500	1	2	hypothesis
+concentration smoke	4.346	1.500	1	2	hypothesis
+condensation coagulation	4.346	1.500	1	2	hypothesis
+conditions normal	4.346	1.500	1	2	hypothesis
+conditions particular	4.346	1.500	1	2	hypothesis
+corresponding decrease	4.346	1.500	1	2	hypothesis
+current fire	4.346	1.500	1	2	research_impacts
+decrease particle	4.346	1.500	1	2	hypothesis
+density mass	4.346	1.500	1	2	hypothesis
+density turn	4.346	1.500	1	2	hypothesis
+detection technology	4.346	1.500	1	2	research_impacts
+detector future	4.346	1.500	1	2	research_impacts
+detectors developed	4.346	1.500	1	2	research_impacts
+detectors possibly	4.346	1.500	1	2	hypothesis
+detectors producing	4.346	1.500	1	2	hypothesis
+detectors reduced	4.346	1.500	1	2	research_impacts
+developed useful	4.346	1.500	1	2	research_impacts
+distribution number	4.346	1.500	1	2	hypothesis
+distribution smoke	4.346	1.500	1	2	objective
+due reduced	4.346	1.500	1	2	hypothesis
+duration missions	4.346	1.500	1	2	research_impacts
+earth submarines	4.346	1.500	1	2	research_impacts
+environment absence	4.346	1.500	1	2	hypothesis
+environments earth	4.346	1.500	1	2	research_impacts
+environments save	4.346	1.500	1	2	research_impacts
+evaluation adequacy	4.346	1.500	1	2	research_impacts
+exhibit substantially	4.346	1.500	1	2	hypothesis
+existing technologies	4.346	1.500	1	2	research_impacts
+expected higher	4.346	1.500	1	2	hypothesis
+exposed smoke	4.346	1.500	1	2	hypothesis
+extreme environments	4.346	1.500	1	2	research_impacts
+favored expected	4.346	1.500	1	2	hypothesis
+fire detector	4.346	1.500	1	2	research_impacts
+flows smoke	4.346	1.500	1	2	hypothesis
+formation larger	4.346	1.500	1	2	hypothesis
+fpds plan	4.346	1.500	1	2	research_impacts
+future detection	4.346	1.500	1	2	research_impacts
+future sensor	4.346	1.500	1	2	research_impacts
+generation smoke	4.346	1.500	1	2	objective
+gravity baseline	4.346	1.500	1	2	research_impacts
+gravity corresponding	4.346	1.500	1	2	hypothesis
+gravity relate	4.346	1.500	1	2	objective
+gravity smokes	4.346	1.500	1	2	research_impacts
+growth pyrolyzing	4.346	1.500	1	2	hypothesis
+higher vapor	4.346	1.500	1	2	hypothesis
+hypotheses motivated	4.346	1.500	1	2	hypothesis
+hypothesized liquid	4.346	1.500	1	2	hypothesis
+larger droplet	4.346	1.500	1	2	hypothesis
+lead larger	4.346	1.500	1	2	hypothesis
+liquid aerosol	4.346	1.500	1	2	hypothesis
+liquid smoke	4.346	1.500	1	2	objective
+mass smoke	4.346	1.500	1	2	hypothesis
+materials extended	4.346	1.500	1	2	objective
+microgravity exhibit	4.346	1.500	1	2	hypothesis
+missions quantitative	4.346	1.500	1	2	research_impacts
+mixing conditions	4.346	1.500	1	2	hypothesis
+moment method	4.346	1.500	1	2	approach
+near due	4.346	1.500	1	2	hypothesis
+needed reduced	4.346	1.500	1	2	research_impacts
+nist	4.346	1.500	2	2	affiliation
+nucleation condensation	4.346	1.500	1	2	hypothesis
+operating conditions	4.346	1.500	1	2	objective
+particle growth	4.346	1.500	1	2	hypothesis
+particle number	4.346	1.500	1	2	hypothesis
+particles favored	4.346	1.500	1	2	hypothesis
+particular hypothesized	4.346	1.500	1	2	hypothesis
+particulate achieves	4.346	1.500	1	2	objective
+plan re-evaluation	4.346	1.500	1	2	research_impacts
+possibly detectors	4.346	1.500	1	2	hypothesis
+primary objective	4.346	1.500	1	2	objective
+produced 1g	4.346	1.500	1	2	hypothesis
+produced microgravity	4.346	1.500	1	2	hypothesis
+producing alarm	4.346	1.500	1	2	hypothesis
+pyrolyzing smoldering	4.346	1.500	1	2	hypothesis
+quantify sizes	4.346	1.500	1	2	objective
+quantitative sensitivity	4.346	1.500	1	2	research_impacts
+re-evaluation future	4.346	1.500	1	2	research_impacts
+reduced velocities	4.346	1.500	1	2	hypothesis
+relate droplet	4.346	1.500	1	2	objective
+relevant current	4.346	1.500	1	2	research_impacts
+response smoke	4.346	1.500	1	2	hypothesis
+sensitivity detectors	4.346	1.500	1	2	research_impacts
+sensor technology	4.346	1.500	1	2	research_impacts
+sizes conditions	4.346	1.500	1	2	hypothesis
+sizes liquid	4.346	1.500	1	2	objective
+smoke change	4.346	1.500	1	2	hypothesis
+smoke environments	4.346	1.500	1	2	research_impacts
+smoke generation	4.346	1.500	1	2	objective
+smoke particle	4.346	1.500	1	2	hypothesis
+smoke residence	4.346	1.500	1	2	hypothesis
+smoke transport	4.346	1.500	1	2	objective
+smokes evaluation	4.346	1.500	1	2	research_impacts
+smokes produced	4.346	1.500	1	2	hypothesis
+smoldering nucleation	4.346	1.500	1	2	hypothesis
+spacecraft long	4.346	1.500	1	2	research_impacts
+strong buoyancy-induced	4.346	1.500	1	2	hypothesis
+substantially larger	4.346	1.500	1	2	hypothesis
+suppression fpds	4.346	1.500	1	2	research_impacts
+technologies relevant	4.346	1.500	1	2	research_impacts
+technology advanced	4.346	1.500	1	2	research_impacts
+technology capability	4.346	1.500	1	2	research_impacts
+technology developments	4.346	1.500	1	2	research_impacts
+technology technology	4.346	1.500	1	2	research_impacts
+tests conducted	4.346	1.500	1	2	approach
+times near	4.346	1.500	1	2	hypothesis
+transport conditions	4.346	1.500	1	2	objective
+turn affect	4.346	1.500	1	2	hypothesis
+useful extreme	4.346	1.500	1	2	research_impacts
+utilized needed	4.346	1.500	1	2	research_impacts
+vapor concentration	4.346	1.500	1	2	hypothesis
+velocities mixing	4.346	1.500	1	2	hypothesis
+fire detection	4.132	1.875	1	5	publication
+affect	4.100	2.000	1	6	hypothesis
+near	4.100	2.000	1	6	hypothesis
+prevention	4.100	2.000	1	6	research_impacts
+quantify	4.100	2.000	1	6	objective
+sensor	4.100	2.000	1	6	research_impacts
+raw	4.004	2.650	3	11	file_folders,filenames,media_filenames
+combustion	4.000	4.000	1	19	research_area
+bryg victoria yuan	3.984	1.375	1	2	publication
+david mulholland george	3.984	1.375	1	2	publication
+detector performance low-gravity	3.984	1.375	1	2	publication
+evaluation spacecraft smoke	3.984	1.375	1	2	publication
+gary mulholland george	3.984	1.375	1	2	publication
+george bryg victoria	3.984	1.375	1	2	publication
+griffin ruff cleary	3.984	1.375	1	2	publication
+marit mulholland george	3.984	1.375	1	2	publication
+meyer marit mulholland	3.984	1.375	1	2	publication
+mulholland george bryg	3.984	1.375	1	2	publication
+particulate spacecraft fire	3.984	1.375	1	2	publication
+performance low-gravity environment	3.984	1.375	1	2	publication
+ruff cleary yang	3.984	1.375	1	2	publication
+ruff gary mulholland	3.984	1.375	1	2	publication
+smoke detector performance	3.984	1.375	1	2	publication
+smoke particulate spacecraft	3.984	1.375	1	2	publication
+spacecraft smoke detector	3.984	1.375	1	2	publication
+urban david mulholland	3.984	1.375	1	2	publication
+urban griffin ruff	3.984	1.375	1	2	publication
+urban ruff mulholland	3.984	1.375	1	2	publication
+victoria yuan zeng-guang	3.984	1.375	1	2	publication
+yuan zeng-guang ruff	3.984	1.375	1	2	publication
+zeng-guang ruff gary	3.984	1.375	1	2	publication
+accurate detection	3.914	1.500	1	3	research_impacts
+fire prevention	3.914	1.500	1	3	research_impacts
+future spacecraft	3.914	1.500	1	3	research_impacts
+laboratories accurate	3.914	1.500	1	3	research_impacts
+long duration	3.914	1.500	1	3	research_impacts
+low gravity	3.914	1.500	1	3	objective
+particles compared	3.914	1.500	1	3	hypothesis
+prevention detection	3.914	1.500	1	3	research_impacts
+residence times	3.914	1.500	1	3	hypothesis
+save lives	3.914	1.500	1	3	research_impacts
+submarines underwater	3.914	1.500	1	3	research_impacts
+tests performed	3.914	1.500	1	3	approach
+underwater laboratories	3.914	1.500	1	3	research_impacts
+co-investigator co-i	3.863	3.000	4	14	role
+analyzed	3.857	1.750	2	5	file_folders,filenames
+reference	3.857	1.750	2	5	file_folders,filenames
+current	3.833	2.000	1	7	research_impacts
+long	3.833	2.000	1	7	research_impacts
+objective	3.833	2.000	1	7	objective
+submarines	3.833	2.000	1	7	research_impacts
+times	3.833	2.000	1	7	hypothesis
+transport	3.833	2.000	1	7	objective
+applicable reflight same-r	3.633	1.100	1	1	hypothesis
+assumption key moment	3.633	1.100	1	1	approach
+broadened higher heating	3.633	1.100	1	1	approach
+certain types smoke	3.633	1.100	1	1	objective
+commercial diagnostic enclosures	3.633	1.100	1	1	approach
+completing test points	3.633	1.100	1	1	approach
+conditions broadened higher	3.633	1.100	1	1	approach
+conditions diagnostic equipments	3.633	1.100	1	1	objective
+conditions problems encountered	3.633	1.100	1	1	objective
+conducted july september	3.633	1.100	1	1	approach
+contaminated unidentified foreign	3.633	1.100	1	1	objective
+covering materials extended	3.633	1.100	1	1	objective
+dbp samples test	3.633	1.100	1	1	approach
+detector same-r flight	3.633	1.100	1	1	approach
+developed in-house grc	3.633	1.100	1	1	approach
+developments evaluated smoke	3.633	1.100	1	1	research_impacts
+diagnostic enclosures dusttrak	3.633	1.100	1	1	approach
+distribution assumption key	3.633	1.100	1	1	approach
+dusttrak ionization detector	3.633	1.100	1	1	approach
+employed modification covering	3.633	1.100	1	1	objective
+enclosures dusttrak ionization	3.633	1.100	1	1	approach
+encountered thermal precipitators	3.633	1.100	1	1	objective
+evaluated smoke detectors	3.633	1.100	1	1	research_impacts
+experience gained same-r	3.633	1.100	1	1	approach
+experience same-r employed	3.633	1.100	1	1	objective
+extended operating conditions	3.633	1.100	1	1	objective
+fire-retardant foam foamex	3.633	1.100	1	1	approach
+flight tests conducted	3.633	1.100	1	1	approach
+flight tests major	3.633	1.100	1	1	approach
+foam foamex introduced	3.633	1.100	1	1	approach
+foamex introduced replace	3.633	1.100	1	1	approach
+following modifications test	3.633	1.100	1	1	approach
+foreign particles making	3.633	1.100	1	1	objective
+found tem grids	3.633	1.100	1	1	objective
+gained same-r following	3.633	1.100	1	1	approach
+grc replace commercial	3.633	1.100	1	1	approach
+grids severely contaminated	3.633	1.100	1	1	objective
+grids unusable showed	3.633	1.100	1	1	objective
+ground found tem	3.633	1.100	1	1	objective
+ground tests performed	3.633	1.100	1	1	approach
+hardware on-orbit experience	3.633	1.100	1	1	approach
+heating temperatures no-flow	3.633	1.100	1	1	approach
+heating time instrument	3.633	1.100	1	1	approach
+higher heating temperatures	3.633	1.100	1	1	approach
+hypotheses motivated original	3.633	1.100	1	1	hypothesis
+improve reduction process	3.633	1.100	1	1	approach
+in-house grc replace	3.633	1.100	1	1	approach
+instrument m-pass developed	3.633	1.100	1	1	approach
+introduced replace dbp	3.633	1.100	1	1	approach
+intumescent fire-retardant foam	3.633	1.100	1	1	approach
+ionization detector same-r	3.633	1.100	1	1	approach
+july september successfully	3.633	1.100	1	1	approach
+key moment method	3.633	1.100	1	1	approach
+lead technology advanced	3.633	1.100	1	1	research_impacts
+lognormal distribution assumption	3.633	1.100	1	1	approach
+m-pass developed in-house	3.633	1.100	1	1	approach
+major post-flight ground	3.633	1.100	1	1	approach
+making grids unusable	3.633	1.100	1	1	objective
+material pyrell intumescent	3.633	1.100	1	1	approach
+materials extended operating	3.633	1.100	1	1	objective
+method employed same-r	3.633	1.100	1	1	approach
+modification covering materials	3.633	1.100	1	1	objective
+modifications test material	3.633	1.100	1	1	approach
+moment method employed	3.633	1.100	1	1	approach
+motivated original applicable	3.633	1.100	1	1	hypothesis
+no-flow sample heating	3.633	1.100	1	1	approach
+objective same-r quantify	3.633	1.100	1	1	objective
+on-orbit experience gained	3.633	1.100	1	1	approach
+operating conditions diagnostic	3.633	1.100	1	1	objective
+original applicable reflight	3.633	1.100	1	1	hypothesis
+original primary objective	3.633	1.100	1	1	objective
+original same-r lead	3.633	1.100	1	1	research_impacts
+particles experience same-r	3.633	1.100	1	1	objective
+particles making grids	3.633	1.100	1	1	objective
+performed improve reduction	3.633	1.100	1	1	approach
+points same-r flight	3.633	1.100	1	1	approach
+post-flight ground tests	3.633	1.100	1	1	approach
+precipitators returned ground	3.633	1.100	1	1	objective
+primary objective same-r	3.633	1.100	1	1	objective
+problems encountered thermal	3.633	1.100	1	1	objective
+process validate lognormal	3.633	1.100	1	1	approach
+pyrell intumescent fire-retardant	3.633	1.100	1	1	approach
+reduction process validate	3.633	1.100	1	1	approach
+reflight same-r environment	3.633	1.100	1	1	hypothesis
+replace commercial diagnostic	3.633	1.100	1	1	approach
+replace dbp samples	3.633	1.100	1	1	approach
+returned ground found	3.633	1.100	1	1	objective
+same-r employed modification	3.633	1.100	1	1	objective
+same-r environment absence	3.633	1.100	1	1	hypothesis
+same-r following modifications	3.633	1.100	1	1	approach
+same-r lead technology	3.633	1.100	1	1	research_impacts
+same-r quantify sizes	3.633	1.100	1	1	objective
+same-r utilized hardware	3.633	1.100	1	1	approach
+sample heating time	3.633	1.100	1	1	approach
+samples test conditions	3.633	1.100	1	1	approach
+september successfully completing	3.633	1.100	1	1	approach
+severely contaminated unidentified	3.633	1.100	1	1	objective
+shapes certain types	3.633	1.100	1	1	objective
+showed shapes certain	3.633	1.100	1	1	objective
+similar original primary	3.633	1.100	1	1	objective
+smoke particles experience	3.633	1.100	1	1	objective
+successfully completing test	3.633	1.100	1	1	approach
+technology developments evaluated	3.633	1.100	1	1	research_impacts
+tem grids severely	3.633	1.100	1	1	objective
+temperatures no-flow sample	3.633	1.100	1	1	approach
+test conditions broadened	3.633	1.100	1	1	approach
+test material pyrell	3.633	1.100	1	1	approach
+test points same-r	3.633	1.100	1	1	approach
+tests conducted july	3.633	1.100	1	1	approach
+tests major post-flight	3.633	1.100	1	1	approach
+tests performed improve	3.633	1.100	1	1	approach
+thermal precipitators returned	3.633	1.100	1	1	objective
+time instrument m-pass	3.633	1.100	1	1	approach
+transport conditions problems	3.633	1.100	1	1	objective
+types smoke particles	3.633	1.100	1	1	objective
+unidentified foreign particles	3.633	1.100	1	1	objective
+unusable showed shapes	3.633	1.100	1	1	objective
+utilized hardware on-orbit	3.633	1.100	1	1	approach
+validate lognormal distribution	3.633	1.100	1	1	approach
+compared	3.597	2.000	1	8	hypothesis
+concentration	3.597	2.000	1	8	hypothesis
+conducted	3.597	2.000	1	8	approach
+low	3.597	2.000	1	8	objective
+material	3.597	2.000	1	8	approach
+materials	3.597	2.000	1	8	objective
+performed	3.597	2.000	1	8	approach
+primary	3.597	2.000	1	8	objective
+samples	3.597	2.000	1	8	approach
+suppression	3.597	2.000	1	8	research_impacts
+temperatures	3.597	2.000	1	8	approach
+detection smoke microgravity	3.588	1.375	1	3	publication
+gary cleary thomas	3.588	1.375	1	3	publication
+ruff gary cleary	3.588	1.375	1	3	publication
+spacecraft fire detection	3.588	1.375	1	3	publication
+detection suppression	3.579	1.500	1	4	research_impacts
+droplet sizes	3.579	1.500	1	4	hypothesis
+institute	3.579	1.500	2	4	affiliation
+test conditions	3.579	1.500	1	4	approach
+documents	3.577	2.500	3	12	file_folders,filenames
+due	3.386	2.000	1	9	hypothesis
+formation	3.386	2.000	1	9	hypothesis
+growth	3.386	2.000	1	9	hypothesis
+process	3.386	2.000	1	9	approach
+validate	3.386	2.000	1	9	approach
+droplet size	3.306	1.500	1	5	objective
+02-25-05	3.303	1.000	1	1	filenames
+10k.tif	3.303	1.000	1	1	filenames
+11t	3.303	1.000	1	1	filenames
+13s	3.303	1.000	1	1	filenames
+15k	3.303	1.000	1	1	filenames
+16p	3.303	1.000	1	1	filenames
+17p	3.303	1.000	1	1	filenames
+2.00	3.303	1.000	1	1	filenames
+20s	3.303	1.000	1	1	filenames
+21l	3.303	1.000	1	1	filenames
+22t	3.303	1.000	1	1	filenames
+233.1.14.11	3.303	1.000	1	1	filenames
+233.1.14.5	3.303	1.000	1	1	filenames
+233.1.14.7	3.303	1.000	1	1	filenames
+24p	3.303	1.000	1	1	filenames
+25s	3.303	1.000	1	1	filenames
+26k	3.303	1.000	1	1	filenames
+27p	3.303	1.000	1	1	filenames
+28k	3.303	1.000	1	1	filenames
+29p	3.303	1.000	1	1	filenames
+30k	3.303	1.000	1	1	filenames
+31l	3.303	1.000	1	1	filenames
+32t	3.303	1.000	1	1	filenames
+33l	3.303	1.000	1	1	filenames
+34t	3.303	1.000	1	1	filenames
+35l	3.303	1.000	1	1	filenames
+36t	3.303	1.000	1	1	filenames
+37p	3.303	1.000	1	1	filenames
+40p	3.303	1.000	1	1	filenames
+46k	3.303	1.000	1	1	filenames
+47k	3.303	1.000	1	1	filenames
+48p	3.303	1.000	1	1	filenames
+5-2-12	3.303	1.000	1	1	filenames
+50p	3.303	1.000	1	1	filenames
+51l	3.303	1.000	1	1	filenames
+52-5p	3.303	1.000	1	1	filenames
+53t	3.303	1.000	1	1	filenames
+54k	3.303	1.000	1	1	filenames
+58t	3.303	1.000	1	1	filenames
+59l	3.303	1.000	1	1	filenames
+60p	3.303	1.000	1	1	filenames
+61k	3.303	1.000	1	1	filenames
+6x-1y	3.303	1.000	1	1	filenames
+70-23k	3.303	1.000	1	1	filenames
+age	3.303	1.000	1	1	filenames
+aged	3.303	1.000	1	1	filenames
+binneddatacorr	3.303	1.000	1	1	filenames
+bins	3.303	1.000	1	1	filenames
+corrected	3.303	1.000	1	1	filenames
+descriptions	3.303	1.000	1	1	filenames
+gmt214	3.303	1.000	1	1	filenames
+gmt235	3.303	1.000	1	1	filenames
+gmt236	3.303	1.000	1	1	filenames
+gmt238	3.303	1.000	1	1	filenames
+gmt239	3.303	1.000	1	1	filenames
+gmt242	3.303	1.000	1	1	filenames
+gmt250	3.303	1.000	1	1	filenames
+gmt251	3.303	1.000	1	1	filenames
+gwm	3.303	1.000	1	1	filenames
+hkpdata	3.303	1.000	1	1	filenames
+issue	3.303	1.000	1	1	filenames
+k01-4k	3.303	1.000	1	1	filenames
+l13	3.303	1.000	1	1	filenames
+post	3.303	1.000	1	1	filenames
+postage	3.303	1.000	1	1	filenames
+pre	3.303	1.000	1	1	filenames
+preage	3.303	1.000	1	1	filenames
+precipitator	3.303	1.000	1	1	filenames
+quarters	3.303	1.000	1	1	filenames
+rev	3.303	1.000	1	1	filenames
+run48	3.303	1.000	1	1	filenames
+run49	3.303	1.000	1	1	filenames
+run50	3.303	1.000	1	1	filenames
+run52	3.303	1.000	1	1	filenames
+run53	3.303	1.000	1	1	filenames
+run54	3.303	1.000	1	1	filenames
+run55	3.303	1.000	1	1	filenames
+run56	3.303	1.000	1	1	filenames
+run57	3.303	1.000	1	1	filenames
+run58	3.303	1.000	1	1	filenames
+run59	3.303	1.000	1	1	filenames
+run60	3.303	1.000	1	1	filenames
+run61	3.303	1.000	1	1	filenames
+run62	3.303	1.000	1	1	filenames
+run63	3.303	1.000	1	1	filenames
+run63a	3.303	1.000	1	1	filenames
+run66	3.303	1.000	1	1	filenames
+run89	3.303	1.000	1	1	filenames
+side-1	3.303	1.000	1	1	filenames
+silcon	3.303	1.000	1	1	filenames
+t01-3t	3.303	1.000	1	1	filenames
+tables	3.303	1.000	1	1	filenames
+temflowvsnoflow	3.303	1.000	1	1	filenames
+unaged	3.303	1.000	1	1	filenames
+updated	3.303	1.000	1	1	filenames
+wrong	3.303	1.000	1	1	filenames
+smoke microgravity fires	3.281	1.375	1	4	publication
+institute standards	3.259	1.125	2	2	affiliation
+national institute	3.259	1.125	2	2	affiliation
+standards technology	3.259	1.125	2	2	affiliation
+technology nist	3.259	1.125	2	2	affiliation
+advanced	3.196	2.000	1	10	research_impacts
+earth	3.196	2.000	1	10	research_impacts
+flows	3.196	2.000	1	10	hypothesis
+missions	3.196	2.000	1	10	research_impacts
+1g formation larger	3.187	1.100	1	2	hypothesis
+absence strong buoyancy-induced	3.187	1.100	1	2	hypothesis
+achieves low gravity	3.187	1.100	1	2	objective
+adequacy existing technologies	3.187	1.100	1	2	research_impacts
+advanced fire detector	3.187	1.100	1	2	research_impacts
+aerosol smokes produced	3.187	1.100	1	2	hypothesis
+affect response smoke	3.187	1.100	1	2	hypothesis
+alarm exposed smoke	3.187	1.100	1	2	hypothesis
+baseline future detection	3.187	1.100	1	2	research_impacts
+buoyancy-induced flows smoke	3.187	1.100	1	2	hypothesis
+capability utilized needed	3.187	1.100	1	2	research_impacts
+change size distribution	3.187	1.100	1	2	hypothesis
+coagulation lead larger	3.187	1.100	1	2	hypothesis
+compared produced 1g	3.187	1.100	1	2	hypothesis
+concentration smoke residence	3.187	1.100	1	2	hypothesis
+condensation coagulation lead	3.187	1.100	1	2	hypothesis
+conditions normal gravity	3.187	1.100	1	2	hypothesis
+conditions particular hypothesized	3.187	1.100	1	2	hypothesis
+corresponding decrease particle	3.187	1.100	1	2	hypothesis
+current fire prevention	3.187	1.100	1	2	research_impacts
+decrease particle number	3.187	1.100	1	2	hypothesis
+density mass smoke	3.187	1.100	1	2	hypothesis
+density turn affect	3.187	1.100	1	2	hypothesis
+detection smoke environments	3.187	1.100	1	2	research_impacts
+detection suppression fpds	3.187	1.100	1	2	research_impacts
+detection technology developments	3.187	1.100	1	2	research_impacts
+detector future spacecraft	3.187	1.100	1	2	research_impacts
+detectors developed useful	3.187	1.100	1	2	research_impacts
+detectors possibly detectors	3.187	1.100	1	2	hypothesis
+detectors producing alarm	3.187	1.100	1	2	hypothesis
+detectors reduced gravity	3.187	1.100	1	2	research_impacts
+developed useful extreme	3.187	1.100	1	2	research_impacts
+distribution number density	3.187	1.100	1	2	hypothesis
+distribution smoke generation	3.187	1.100	1	2	objective
+droplet size distribution	3.187	1.100	1	2	objective
+droplet sizes conditions	3.187	1.100	1	2	hypothesis
+due reduced velocities	3.187	1.100	1	2	hypothesis
+duration missions quantitative	3.187	1.100	1	2	research_impacts
+earth submarines underwater	3.187	1.100	1	2	research_impacts
+environment absence strong	3.187	1.100	1	2	hypothesis
+environments earth submarines	3.187	1.100	1	2	research_impacts
+environments save lives	3.187	1.100	1	2	research_impacts
+evaluation adequacy existing	3.187	1.100	1	2	research_impacts
+exhibit substantially larger	3.187	1.100	1	2	hypothesis
+existing technologies relevant	3.187	1.100	1	2	research_impacts
+expected higher vapor	3.187	1.100	1	2	hypothesis
+extreme environments earth	3.187	1.100	1	2	research_impacts
+favored expected higher	3.187	1.100	1	2	hypothesis
+fire detector future	3.187	1.100	1	2	research_impacts
+flows smoke particle	3.187	1.100	1	2	hypothesis
+formation larger particles	3.187	1.100	1	2	hypothesis
+fpds plan re-evaluation	3.187	1.100	1	2	research_impacts
+future detection technology	3.187	1.100	1	2	research_impacts
+future sensor technology	3.187	1.100	1	2	research_impacts
+future spacecraft long	3.187	1.100	1	2	research_impacts
+generation smoke transport	3.187	1.100	1	2	objective
+gravity baseline future	3.187	1.100	1	2	research_impacts
+gravity corresponding decrease	3.187	1.100	1	2	hypothesis
+gravity relate droplet	3.187	1.100	1	2	objective
+gravity smokes evaluation	3.187	1.100	1	2	research_impacts
+growth pyrolyzing smoldering	3.187	1.100	1	2	hypothesis
+higher vapor concentration	3.187	1.100	1	2	hypothesis
+hypothesized liquid aerosol	3.187	1.100	1	2	hypothesis
+larger droplet sizes	3.187	1.100	1	2	hypothesis
+larger particles compared	3.187	1.100	1	2	hypothesis
+larger particles favored	3.187	1.100	1	2	hypothesis
+lead larger particles	3.187	1.100	1	2	hypothesis
+liquid aerosol smokes	3.187	1.100	1	2	hypothesis
+liquid smoke particulate	3.187	1.100	1	2	objective
+long duration missions	3.187	1.100	1	2	research_impacts
+low gravity relate	3.187	1.100	1	2	objective
+mass smoke change	3.187	1.100	1	2	hypothesis
+microgravity exhibit substantially	3.187	1.100	1	2	hypothesis
+missions quantitative sensitivity	3.187	1.100	1	2	research_impacts
+mixing conditions particular	3.187	1.100	1	2	hypothesis
+near due reduced	3.187	1.100	1	2	hypothesis
+needed reduced gravity	3.187	1.100	1	2	research_impacts
+normal gravity corresponding	3.187	1.100	1	2	hypothesis
+nucleation condensation coagulation	3.187	1.100	1	2	hypothesis
+number density mass	3.187	1.100	1	2	hypothesis
+number density turn	3.187	1.100	1	2	hypothesis
+particle growth pyrolyzing	3.187	1.100	1	2	hypothesis
+particle number density	3.187	1.100	1	2	hypothesis
+particles compared produced	3.187	1.100	1	2	hypothesis
+particles favored expected	3.187	1.100	1	2	hypothesis
+particular hypothesized liquid	3.187	1.100	1	2	hypothesis
+particulate achieves low	3.187	1.100	1	2	objective
+plan re-evaluation future	3.187	1.100	1	2	research_impacts
+possibly detectors producing	3.187	1.100	1	2	hypothesis
+produced 1g formation	3.187	1.100	1	2	hypothesis
+produced microgravity exhibit	3.187	1.100	1	2	hypothesis
+producing alarm exposed	3.187	1.100	1	2	hypothesis
+pyrolyzing smoldering nucleation	3.187	1.100	1	2	hypothesis
+quantify sizes liquid	3.187	1.100	1	2	objective
+quantitative sensitivity detectors	3.187	1.100	1	2	research_impacts
+re-evaluation future sensor	3.187	1.100	1	2	research_impacts
+reduced gravity baseline	3.187	1.100	1	2	research_impacts
+reduced gravity smokes	3.187	1.100	1	2	research_impacts
+reduced velocities mixing	3.187	1.100	1	2	hypothesis
+relate droplet size	3.187	1.100	1	2	objective
+relevant current fire	3.187	1.100	1	2	research_impacts
+residence times near	3.187	1.100	1	2	hypothesis
+response smoke detectors	3.187	1.100	1	2	hypothesis
+sensitivity detectors reduced	3.187	1.100	1	2	research_impacts
+sensor technology technology	3.187	1.100	1	2	research_impacts
+size distribution number	3.187	1.100	1	2	hypothesis
+size distribution smoke	3.187	1.100	1	2	objective
+sizes conditions normal	3.187	1.100	1	2	hypothesis
+sizes liquid smoke	3.187	1.100	1	2	objective
+smoke change size	3.187	1.100	1	2	hypothesis
+smoke detectors developed	3.187	1.100	1	2	research_impacts
+smoke detectors possibly	3.187	1.100	1	2	hypothesis
+smoke environments save	3.187	1.100	1	2	research_impacts
+smoke generation smoke	3.187	1.100	1	2	objective
+smoke particle growth	3.187	1.100	1	2	hypothesis
+smoke particulate achieves	3.187	1.100	1	2	objective
+smoke residence times	3.187	1.100	1	2	hypothesis
+smoke transport conditions	3.187	1.100	1	2	objective
+smokes evaluation adequacy	3.187	1.100	1	2	research_impacts
+smokes produced microgravity	3.187	1.100	1	2	hypothesis
+smoldering nucleation condensation	3.187	1.100	1	2	hypothesis
+spacecraft long duration	3.187	1.100	1	2	research_impacts
+strong buoyancy-induced flows	3.187	1.100	1	2	hypothesis
+substantially larger droplet	3.187	1.100	1	2	hypothesis
+suppression fpds plan	3.187	1.100	1	2	research_impacts
+technologies relevant current	3.187	1.100	1	2	research_impacts
+technology advanced fire	3.187	1.100	1	2	research_impacts
+technology capability utilized	3.187	1.100	1	2	research_impacts
+technology technology capability	3.187	1.100	1	2	research_impacts
+times near due	3.187	1.100	1	2	hypothesis
+turn affect response	3.187	1.100	1	2	hypothesis
+useful extreme environments	3.187	1.100	1	2	research_impacts
+utilized needed reduced	3.187	1.100	1	2	research_impacts
+vapor concentration smoke	3.187	1.100	1	2	hypothesis
+velocities mixing conditions	3.187	1.100	1	2	hypothesis
+national	3.154	3.000	3	18	affiliation,space_program
+presentations	3.147	1.750	2	8	file_folders,filenames
+standards	3.075	1.500	2	6	affiliation
+80089mfhp000-e	2.897	1.000	1	2	filenames
+aging	2.897	1.000	1	2	filenames
+coil	2.897	1.000	1	2	filenames
+drawing	2.897	1.000	1	2	filenames
+eird	2.897	1.000	1	2	filenames
+gmt211	2.897	1.000	1	2	filenames
+gmt252	2.897	1.000	1	2	filenames
+linear	2.897	1.000	1	2	filenames
+pln-005	2.897	1.000	1	2	filenames
+run	2.897	1.000	1	2	filenames
+schematic	2.897	1.000	1	2	filenames
+software	2.897	1.000	1	2	filenames
+vpred	2.897	1.000	1	2	filenames
+accurate detection smoke	2.870	1.100	1	3	research_impacts
+fire prevention detection	2.870	1.100	1	3	research_impacts
+laboratories accurate detection	2.870	1.100	1	3	research_impacts
+prevention detection suppression	2.870	1.100	1	3	research_impacts
+submarines underwater laboratories	2.870	1.100	1	3	research_impacts
+underwater laboratories accurate	2.870	1.100	1	3	research_impacts
+time	2.862	2.000	1	12	approach
+assembly	2.609	1.000	1	3	filenames
+claire	2.609	1.000	1	3	people
+description	2.609	1.000	1	3	filenames
+fluids	2.609	1.000	1	3	filenames
+fortenberry	2.609	1.000	1	3	people
+ignitor	2.609	1.000	1	3	filenames
+tube	2.609	1.000	1	3	filenames
+zeng-guang yuan	2.477	0.750	1	1	people
+normal	2.446	2.000	1	15	hypothesis
+institute standards technology	2.390	0.825	2	2	affiliation
+national institute standards	2.390	0.825	2	2	affiliation
+standards technology nist	2.390	0.825	2	2	affiliation
+document	2.386	1.000	1	4	filenames
+map	2.386	1.000	1	4	filenames
+wire	2.386	1.000	1	4	filenames
+engineering	2.374	1.750	2	13	file_folders,filenames
+matrix	2.204	1.000	1	5	filenames
+silicone	2.204	1.000	1	5	filenames
+george mulholland	2.173	0.750	1	2	people
+jiann yang	2.173	0.750	1	2	people
+thomas cleary	2.173	0.750	1	2	people
+system	2.050	1.000	1	6	filenames
+normal gravity	2.035	1.500	1	13	hypothesis
+claire fortenberry	1.957	0.750	1	3	people
+chamber	1.799	1.000	1	8	filenames
+administration	1.744	1.500	1	16	space_program
+aeronautics	1.744	1.500	1	16	space_program
+image	1.598	1.000	1	10	filenames
+maryland	1.537	0.750	1	6	affiliation
+analysis	1.431	1.000	1	12	filenames
+images	1.431	1.000	1	12	filenames
+high	1.357	1.000	1	13	filenames
+david urban	1.349	0.750	1	8	people
+aeronautics administration	1.308	1.125	1	16	space_program
+national aeronautics	1.308	1.125	1	16	space_program
+scientist	1.288	1.000	1	14	role
+university maryland	1.153	0.562	1	6	affiliation
+investigator	1.051	1.000	1	18	role
+pi	1.051	1.000	1	18	role
+principal	1.051	1.000	1	18	role
+national aeronautics administration	0.959	0.825	1	16	space_program
+university	0.917	0.750	1	15	affiliation
+engineering documents	0.805	0.562	1	12	file_folders
+investigator pi	0.788	0.750	1	18	role
+principal investigator	0.788	0.750	1	18	role
+principal investigator pi	0.578	0.550	1	18	role

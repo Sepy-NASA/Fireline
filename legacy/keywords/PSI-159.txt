@@ -1,0 +1,942 @@
+# keywords for PSI-159 (score, weight, count, df, fields)
+cool	73.794	36.000	15	6	hypothesis,objective,proposal_title,publication,research_impacts,title
+cool diffusion	54.493	16.500	10	1	hypothesis,objective,proposal_title,publication,research_impacts
+flames	52.795	41.000	17	14	approach,filenames,hypothesis,objective,proposal_title,publication,research_impacts,sub_research_area,title
+diffusion	41.544	26.000	12	10	approach,hypothesis,objective,proposal_title,publication,research_impacts
+cool diffusion flames	39.961	12.100	10	1	hypothesis,objective,proposal_title,publication,research_impacts
+n-butane	39.631	12.000	3	1	curated_keywords,hypothesis,objective
+combustion	29.000	29.000	8	19	curated_keywords,experiment_hardware,research_area,research_impacts,title
+kinetics	28.698	14.000	4	6	curated_keywords,hypothesis,objective,research_impacts
+ethane	26.421	8.000	1	1	curated_keywords
+intensified	26.421	8.000	1	1	curated_keywords
+negative-temperature	26.421	8.000	1	1	curated_keywords
+diffusion flames	26.364	16.500	10	10	hypothesis,objective,proposal_title,publication,research_impacts
+porous	26.094	10.000	2	3	curated_keywords,hypothesis
+coefficient	23.177	8.000	1	2	curated_keywords
+formaldehyde	23.177	8.000	1	2	curated_keywords
+cfi-g	23.118	7.000	2	1	acronym,filenames
+acme	20.498	10.000	3	6	acronym,experiment_hardware,filenames
+chemical	20.498	10.000	2	6	curated_keywords,objective
+inverse	20.280	7.000	4	2	approach,filenames,hypothesis,objective
+intensified video	19.816	6.000	1	1	curated_keywords
+negative-temperature coefficient	19.816	6.000	1	1	curated_keywords
+video camera	19.816	6.000	1	1	curated_keywords
+low-temperature	19.090	8.000	1	4	curated_keywords
+spherical	18.205	9.500	4	7	approach,hypothesis,proposal_title,publication
+axelbaum	17.383	6.000	3	2	people,publication
+cool flames	16.530	7.500	3	5	hypothesis,research_impacts,title
+camera	16.399	8.000	1	6	curated_keywords
+dilution	16.399	8.000	1	6	curated_keywords
+loss	16.399	8.000	1	6	curated_keywords
+low-temperature combustion	15.657	6.000	1	3	curated_keywords
+porous burner	15.657	6.000	1	3	curated_keywords
+chemical kinetics	15.374	7.500	2	6	curated_keywords,objective
+burner	15.330	8.000	1	7	curated_keywords
+video	15.330	8.000	1	7	curated_keywords
+acme cfi-g	14.862	4.500	1	1	acronym
+intensified video camera	14.531	4.400	1	1	curated_keywords
+kendyl	14.486	5.000	2	2	publication
+waddell	14.486	5.000	2	2	publication
+gases	14.318	6.000	1	4	title
+heat loss	14.318	6.000	1	4	curated_keywords
+sunderland	14.318	6.000	3	4	people,publication
+engines	13.224	6.000	3	5	research_impacts
+peter	13.224	6.000	3	5	people,publication
+richard	13.224	6.000	3	5	people,publication
+efficiencies	13.210	4.000	2	1	research_impacts
+fluent	13.210	4.000	2	1	hypothesis,objective
+n-pentane	13.210	4.000	2	1	hypothesis,objective
+tad	13.210	4.000	2	1	hypothesis,objective
+flames gases	13.037	4.500	1	2	title
+advanced	12.783	8.000	2	10	objective,title
+gaseous	12.590	7.000	2	8	proposal_title,sub_research_area
+gaseous fuels	12.528	5.250	2	4	proposal_title,sub_research_area
+range	12.299	6.000	3	6	approach,hypothesis,objective
+fuels	12.210	9.000	3	13	approach,proposal_title,sub_research_area
+ju	11.931	5.000	2	4	publication
+microgravity cool	11.742	4.500	1	3	title
+cause	11.588	4.000	2	2	hypothesis
+cfd	11.588	4.000	2	2	objective
+hot	11.588	4.000	2	2	hypothesis
+propane	11.588	4.000	2	2	hypothesis,objective
+zst	11.588	4.000	2	2	hypothesis,objective
+heat	11.446	8.000	1	12	curated_keywords
+flow	11.044	9.500	5	16	approach,filenames,hypothesis,objective,publication
+nayagam	11.020	5.000	2	5	publication
+vedha	11.020	5.000	2	5	publication
+cool flames gases	10.899	3.300	1	1	title
+axelbaum richard	10.864	3.750	2	2	publication
+flames burning	10.864	3.750	2	2	hypothesis,proposal_title
+waddell kendyl	10.864	3.750	2	2	publication
+broad	10.438	4.000	2	3	approach,objective
+internal	10.438	4.000	2	3	research_impacts
+transportation	10.438	4.000	2	3	research_impacts
+collaborative	9.908	3.000	1	1	proposal_title
+flame kinetics	9.908	3.000	2	1	hypothesis,research_impacts
+flames cool	9.908	3.000	2	1	hypothesis,research_impacts
+fluent flow	9.908	3.000	2	1	hypothesis,objective
+internal combustion	9.908	3.000	2	1	research_impacts
+n-butane n-pentane	9.908	3.000	2	1	hypothesis,objective
+propane n-butane	9.908	3.000	2	1	hypothesis,objective
+range zst	9.908	3.000	2	1	hypothesis,objective
+zst tad	9.908	3.000	2	1	hypothesis,objective
+energy	9.545	4.000	2	4	research_impacts
+flame	9.300	8.000	4	16	approach,hypothesis,research_impacts
+diffusion flames burning	9.082	2.750	2	1	hypothesis,proposal_title
+sunderland peter	8.949	3.750	2	4	publication
+flames broad	8.691	3.000	2	2	approach,objective
+normal inverse	8.691	3.000	2	2	approach,objective
+advanced combustion	8.623	4.500	1	7	title
+combustion microgravity cool	8.611	3.300	1	3	title
+microgravity cool flames	8.611	3.300	1	3	title
+burning	8.466	5.000	2	9	hypothesis,proposal_title
+forman	8.352	3.500	2	4	people,publication
+williams	8.352	3.500	2	4	people,publication
+nayagam vedha	8.265	3.750	2	5	publication
+stably	8.256	2.500	1	1	publication
+stratified	8.256	2.500	1	1	publication
+increase	8.199	4.000	2	6	hypothesis,research_impacts
+combustion engines	7.828	3.000	2	3	research_impacts
+cool flame	7.828	3.000	2	3	hypothesis,research_impacts
+possible	7.665	4.000	2	7	hypothesis,objective
+thermal	7.665	4.000	2	7	research_impacts
+combustion microgravity	7.619	4.500	1	9	title
+burning gaseous	7.431	2.250	1	1	proposal_title
+collaborative spherical	7.431	2.250	1	1	proposal_title
+spherical cool	7.431	2.250	1	1	proposal_title
+cool flame kinetics	7.266	2.200	2	1	hypothesis,research_impacts
+flames cool diffusion	7.266	2.200	2	1	hypothesis,research_impacts
+fluent flow rate	7.266	2.200	2	1	hypothesis,objective
+internal combustion engines	7.266	2.200	2	1	research_impacts
+propane n-butane n-pentane	7.266	2.200	2	1	hypothesis,objective
+range zst tad	7.266	2.200	2	1	hypothesis,objective
+gas-fueled	7.243	2.500	1	2	publication
+han	7.243	2.500	1	2	publication
+irace	7.243	2.500	1	2	publication
+minhyeng	7.243	2.500	1	2	publication
+phillip	7.243	2.500	1	2	publication
+stagnation	7.243	2.500	1	2	publication
+pressures	7.194	4.000	2	8	approach,hypothesis
+microgravity	7.000	7.000	2	19	project_type,title
+testing	6.773	4.000	2	9	hypothesis,objective
+understanding	6.773	4.000	2	9	hypothesis,research_impacts
+advanced combustion microgravity	6.764	3.300	1	6	title
+dennis	6.707	3.500	2	7	people,publication
+flames gaseous	6.612	3.000	1	5	sub_research_area
+flow rate	6.612	3.000	2	5	hypothesis,objective
+advantage	6.605	2.000	1	1	research_impacts
+discovered	6.605	2.000	1	1	research_impacts
+disseminate	6.605	2.000	1	1	objective
+even	6.605	2.000	1	1	research_impacts
+exponentially	6.605	2.000	1	1	research_impacts
+facilitate	6.605	2.000	1	1	research_impacts
+grown	6.605	2.000	1	1	research_impacts
+impeded	6.605	2.000	1	1	research_impacts
+lower	6.605	2.000	1	1	research_impacts
+since	6.605	2.000	1	1	research_impacts
+ultra-lean	6.605	2.000	1	1	research_impacts
+whose	6.605	2.000	1	1	research_impacts
+widely	6.605	2.000	1	1	objective
+world	6.605	2.000	1	1	research_impacts
+yields	6.605	2.000	1	1	objective
+kim	6.524	2.500	1	3	publication
+yiguang	6.524	2.500	1	3	publication
+acme combustion	6.519	2.250	1	2	experiment_hardware
+measurements	6.391	4.000	2	10	objective,research_impacts
+21112a1	6.275	1.900	2	1	filenames,media_filenames
+21112a2	6.275	1.900	2	1	filenames,media_filenames
+21112a3	6.275	1.900	2	1	filenames,media_filenames
+21222a1	6.275	1.900	2	1	filenames,media_filenames
+21222a2	6.275	1.900	2	1	filenames,media_filenames
+21222a3	6.275	1.900	2	1	filenames,media_filenames
+21222a4	6.275	1.900	2	1	filenames,media_filenames
+21222a5	6.275	1.900	2	1	filenames,media_filenames
+21222b1	6.275	1.900	2	1	filenames,media_filenames
+21222c1	6.275	1.900	2	1	filenames,media_filenames
+21222c2	6.275	1.900	2	1	filenames,media_filenames
+21222f1	6.275	1.900	2	1	filenames,media_filenames
+21222f2	6.275	1.900	2	1	filenames,media_filenames
+21228a1	6.275	1.900	2	1	filenames,media_filenames
+21228a2	6.275	1.900	2	1	filenames,media_filenames
+21228a3	6.275	1.900	2	1	filenames,media_filenames
+21228a4	6.275	1.900	2	1	filenames,media_filenames
+21228b1	6.275	1.900	2	1	filenames,media_filenames
+21228c1	6.275	1.900	2	1	filenames,media_filenames
+21228c2	6.275	1.900	2	1	filenames,media_filenames
+21228c3	6.275	1.900	2	1	filenames,media_filenames
+21228c4	6.275	1.900	2	1	filenames,media_filenames
+21228f1	6.275	1.900	2	1	filenames,media_filenames
+21228h1	6.275	1.900	2	1	filenames,media_filenames
+21228h2	6.275	1.900	2	1	filenames,media_filenames
+21228j1	6.275	1.900	2	1	filenames,media_filenames
+21228k1	6.275	1.900	2	1	filenames,media_filenames
+21228k2	6.275	1.900	2	1	filenames,media_filenames
+21228l1	6.275	1.900	2	1	filenames,media_filenames
+21228l2	6.275	1.900	2	1	filenames,media_filenames
+21235a1	6.275	1.900	2	1	filenames,media_filenames
+21235a2	6.275	1.900	2	1	filenames,media_filenames
+21235b1	6.275	1.900	2	1	filenames,media_filenames
+21235c1	6.275	1.900	2	1	filenames,media_filenames
+21235f1	6.275	1.900	2	1	filenames,media_filenames
+21235f2	6.275	1.900	2	1	filenames,media_filenames
+21235h1	6.275	1.900	2	1	filenames,media_filenames
+21235j1	6.275	1.900	2	1	filenames,media_filenames
+21235k1	6.275	1.900	2	1	filenames,media_filenames
+21235l1	6.275	1.900	2	1	filenames,media_filenames
+21242a1	6.275	1.900	2	1	filenames,media_filenames
+21242f1	6.275	1.900	2	1	filenames,media_filenames
+21242f2	6.275	1.900	2	1	filenames,media_filenames
+21242f3	6.275	1.900	2	1	filenames,media_filenames
+21242f4	6.275	1.900	2	1	filenames,media_filenames
+21242p1	6.275	1.900	2	1	filenames,media_filenames
+21242p2	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2021-08-16-17h28m58s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2021-08-16-17h43m33s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2021-08-16-18h00m51s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2021-08-16-18h13m11s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2021-08-16-18h28m50s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2021-08-16-18h58m27s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2021-08-16-19h15m12s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2021-08-16-19h30m40s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2021-08-16-19h44m56s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2021-08-16-19h58m53s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2021-08-16-20h49m18s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2021-08-16-21h03m09s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2021-08-16-21h25m04s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2021-08-16-21h42m27s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2021-08-30-15h32m07s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2021-08-30-15h47m54s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2021-08-30-16h48m40s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2021-08-30-17h00m09s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2021-08-30-18h06m59s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2021-08-30-18h21m07s-udp	6.275	1.900	2	1	filenames,media_filenames
+vlc-record-2021-08-30-20h56m50s-udp	6.275	1.900	2	1	filenames,media_filenames
+daniel ju	6.192	1.875	1	1	publication
+dennis dietrich	6.192	1.875	1	1	publication
+flames stably	6.192	1.875	1	1	publication
+forman irace	6.192	1.875	1	1	publication
+gas-fueled cool	6.192	1.875	1	1	publication
+ju nayagam	6.192	1.875	1	1	publication
+kendyl lee	6.192	1.875	1	1	publication
+kendyl sunderland	6.192	1.875	1	1	publication
+minhyeng waddell	6.192	1.875	1	1	publication
+peter nayagam	6.192	1.875	1	1	publication
+phillip axelbaum	6.192	1.875	1	1	publication
+richard sunderland	6.192	1.875	1	1	publication
+spherical gas-fueled	6.192	1.875	1	1	publication
+stably stratified	6.192	1.875	1	1	publication
+stratified stagnation	6.192	1.875	1	1	publication
+vedha axelbaum	6.192	1.875	1	1	publication
+vedha stocker	6.192	1.875	1	1	publication
+yiguang williams	6.192	1.875	1	1	publication
+normal	6.116	5.000	3	15	approach,filenames,objective
+tests	6.043	4.000	2	11	approach,objective
+daniel	5.966	2.500	1	4	publication
+lee	5.966	2.500	1	4	publication
+stocker	5.926	3.500	2	9	people,publication
+agreement	5.794	2.000	1	2	objective
+contributing	5.794	2.000	1	2	hypothesis
+demonstrate	5.794	2.000	1	2	hypothesis
+dilutions	5.794	2.000	1	2	approach
+directions	5.794	2.000	1	2	approach
+losses	5.794	2.000	1	2	research_impacts
+multiple	5.794	2.000	1	2	approach
+occur	5.794	2.000	1	2	objective
+oscillation	5.794	2.000	1	2	hypothesis
+photomultiplier	5.794	2.000	1	2	approach
+progress	5.794	2.000	1	2	research_impacts
+steady-state	5.794	2.000	1	2	hypothesis
+suite	5.794	2.000	1	2	approach
+take	5.794	2.000	1	2	research_impacts
+whereas	5.794	2.000	1	2	hypothesis
+dietrich	5.510	2.500	1	5	publication
+burning gaseous fuels	5.449	1.650	1	1	proposal_title
+collaborative spherical cool	5.449	1.650	1	1	proposal_title
+flames burning gaseous	5.449	1.650	1	1	proposal_title
+spherical cool diffusion	5.449	1.650	1	1	proposal_title
+han ju	5.432	1.875	1	2	publication
+irace phillip	5.432	1.875	1	2	publication
+kim minhyeng	5.432	1.875	1	2	publication
+lee han	5.432	1.875	1	2	publication
+stagnation flow	5.432	1.875	1	2	publication
+flight	5.427	4.000	2	13	objective
+rate	5.427	4.000	2	13	hypothesis,objective
+diffusion flame	5.396	3.000	2	8	approach,hypothesis
+flames gaseous fuels	5.250	2.200	1	4	sub_research_area
+advance	5.219	2.000	1	3	research_impacts
+consider	5.219	2.000	1	3	approach
+decrease	5.219	2.000	1	3	hypothesis
+good	5.219	2.000	1	3	objective
+identify	5.219	2.000	1	3	objective
+peak	5.219	2.000	1	3	research_impacts
+perform	5.219	2.000	1	3	approach
+predictions	5.219	2.000	1	3	objective
+reactant	5.219	2.000	1	3	approach
+simulations	5.219	2.000	1	3	objective
+transition	5.219	2.000	1	3	hypothesis
+cir	5.079	3.000	1	9	experiment_hardware
+rack	5.079	3.000	1	9	experiment_hardware
+advance cool	4.954	1.500	1	1	research_impacts
+advanced cfd	4.954	1.500	1	1	objective
+advancement	4.954	1.500	1	1	space_program
+advantage ultra-lean	4.954	1.500	1	1	research_impacts
+agreement cfd	4.954	1.500	1	1	objective
+burners cool	4.954	1.500	1	1	hypothesis
+burning propane	4.954	1.500	1	1	hypothesis
+casis	4.954	1.500	1	1	space_program
+cause extinction	4.954	1.500	1	1	hypothesis
+cause transition	4.954	1.500	1	1	hypothesis
+cfd predictions	4.954	1.500	1	1	objective
+cfd simulations	4.954	1.500	1	1	objective
+chemistry cool	4.954	1.500	1	1	research_impacts
+combustion progress	4.954	1.500	1	1	research_impacts
+combustion world	4.954	1.500	1	1	research_impacts
+conditions cool	4.954	1.500	1	1	objective
+consider multiple	4.954	1.500	1	1	approach
+contributing improved	4.954	1.500	1	1	hypothesis
+decrease fluent	4.954	1.500	1	1	hypothesis
+demonstrate following	4.954	1.500	1	1	hypothesis
+determine conditions	4.954	1.500	1	1	objective
+develop chemical	4.954	1.500	1	1	objective
+discovered measurements	4.954	1.500	1	1	research_impacts
+disseminate widely	4.954	1.500	1	1	objective
+efficiencies increase	4.954	1.500	1	1	research_impacts
+efficiencies lower	4.954	1.500	1	1	research_impacts
+efficient internal	4.954	1.500	1	1	research_impacts
+energy even	4.954	1.500	1	1	research_impacts
+engines take	4.954	1.500	1	1	research_impacts
+engines transportation	4.954	1.500	1	1	research_impacts
+even higher	4.954	1.500	1	1	research_impacts
+exponentially since	4.954	1.500	1	1	research_impacts
+extinction whereas	4.954	1.500	1	1	hypothesis
+facilitate development	4.954	1.500	1	1	research_impacts
+flame oscillation	4.954	1.500	1	1	hypothesis
+flames decrease	4.954	1.500	1	1	hypothesis
+flames occur	4.954	1.500	1	1	objective
+flames spherical	4.954	1.500	1	1	hypothesis
+flames whose	4.954	1.500	1	1	research_impacts
+flight testing	4.954	1.500	1	1	objective
+following time	4.954	1.500	1	1	hypothesis
+fraction energy	4.954	1.500	1	1	research_impacts
+fuels range	4.954	1.500	1	1	approach
+future engines	4.954	1.500	1	1	research_impacts
+good agreement	4.954	1.500	1	1	objective
+grown exponentially	4.954	1.500	1	1	research_impacts
+help test	4.954	1.500	1	1	research_impacts
+higher fraction	4.954	1.500	1	1	research_impacts
+hot cool	4.954	1.500	1	1	hypothesis
+hot diffusion	4.954	1.500	1	1	hypothesis
+hypotheses testing	4.954	1.500	1	1	hypothesis
+identify develop	4.954	1.500	1	1	objective
+impeded limited	4.954	1.500	1	1	research_impacts
+increase cause	4.954	1.500	1	1	hypothesis
+increase future	4.954	1.500	1	1	research_impacts
+inverse cool	4.954	1.500	1	1	hypothesis
+inverse flames	4.954	1.500	1	1	objective
+kinetics mechanism	4.954	1.500	1	1	objective
+kinetics mechanisms	4.954	1.500	1	1	research_impacts
+kinetics steady-state	4.954	1.500	1	1	hypothesis
+limited understanding	4.954	1.500	1	1	research_impacts
+losses efficiencies	4.954	1.500	1	1	research_impacts
+lower thermal	4.954	1.500	1	1	research_impacts
+measurements disseminate	4.954	1.500	1	1	objective
+measurements performed	4.954	1.500	1	1	research_impacts
+mechanism yields	4.954	1.500	1	1	objective
+mechanisms facilitate	4.954	1.500	1	1	research_impacts
+multiple fuels	4.954	1.500	1	1	approach
+n-pentane cool	4.954	1.500	1	1	hypothesis
+n-pentane normal	4.954	1.500	1	1	objective
+nsf	4.954	1.500	1	1	space_program
+occur propane	4.954	1.500	1	1	objective
+oscillation possible	4.954	1.500	1	1	hypothesis
+peak temperatures	4.954	1.500	1	1	research_impacts
+performed help	4.954	1.500	1	1	research_impacts
+plan flight	4.954	1.500	1	1	objective
+porous burners	4.954	1.500	1	1	hypothesis
+possible hot	4.954	1.500	1	1	hypothesis
+predictions measurements	4.954	1.500	1	1	objective
+pressures inverse	4.954	1.500	1	1	hypothesis
+progress impeded	4.954	1.500	1	1	research_impacts
+rate cause	4.954	1.500	1	1	hypothesis
+rate flight	4.954	1.500	1	1	objective
+simulations identify	4.954	1.500	1	1	objective
+since discovered	4.954	1.500	1	1	research_impacts
+steady-state cool	4.954	1.500	1	1	hypothesis
+tad fluent	4.954	1.500	1	1	objective
+tad pressures	4.954	1.500	1	1	hypothesis
+take advantage	4.954	1.500	1	1	research_impacts
+temperatures grown	4.954	1.500	1	1	research_impacts
+test advance	4.954	1.500	1	1	research_impacts
+testing demonstrate	4.954	1.500	1	1	hypothesis
+testing determine	4.954	1.500	1	1	objective
+tests advanced	4.954	1.500	1	1	objective
+tests consider	4.954	1.500	1	1	approach
+thermal efficiencies	4.954	1.500	1	1	research_impacts
+thermal losses	4.954	1.500	1	1	research_impacts
+time contributing	4.954	1.500	1	1	hypothesis
+transition hot	4.954	1.500	1	1	hypothesis
+transportation internal	4.954	1.500	1	1	research_impacts
+transportation thermal	4.954	1.500	1	1	research_impacts
+ultra-lean combustion	4.954	1.500	1	1	research_impacts
+understanding chemistry	4.954	1.500	1	1	research_impacts
+whereas increase	4.954	1.500	1	1	hypothesis
+whose peak	4.954	1.500	1	1	research_impacts
+widely possible	4.954	1.500	1	1	objective
+world energy	4.954	1.500	1	1	research_impacts
+yields good	4.954	1.500	1	1	objective
+ju yiguang	4.893	1.875	1	3	publication
+acme combustion integrated	4.780	1.650	1	2	experiment_hardware
+burners	4.773	2.000	1	4	hypothesis
+higher	4.773	2.000	1	4	research_impacts
+hypotheses	4.773	2.000	1	4	hypothesis
+limited	4.773	2.000	1	4	research_impacts
+observe	4.773	2.000	1	4	approach
+tubes	4.773	2.000	1	4	approach
+axelbaum richard sunderland	4.541	1.375	1	1	publication
+daniel ju yiguang	4.541	1.375	1	1	publication
+dennis dietrich daniel	4.541	1.375	1	1	publication
+dietrich daniel ju	4.541	1.375	1	1	publication
+diffusion flames stably	4.541	1.375	1	1	publication
+flames stably stratified	4.541	1.375	1	1	publication
+forman irace phillip	4.541	1.375	1	1	publication
+gas-fueled cool diffusion	4.541	1.375	1	1	publication
+han ju nayagam	4.541	1.375	1	1	publication
+irace phillip axelbaum	4.541	1.375	1	1	publication
+ju nayagam vedha	4.541	1.375	1	1	publication
+ju yiguang williams	4.541	1.375	1	1	publication
+kendyl lee han	4.541	1.375	1	1	publication
+kendyl sunderland peter	4.541	1.375	1	1	publication
+kim minhyeng waddell	4.541	1.375	1	1	publication
+minhyeng waddell kendyl	4.541	1.375	1	1	publication
+nayagam vedha axelbaum	4.541	1.375	1	1	publication
+nayagam vedha stocker	4.541	1.375	1	1	publication
+peter nayagam vedha	4.541	1.375	1	1	publication
+phillip axelbaum richard	4.541	1.375	1	1	publication
+richard sunderland peter	4.541	1.375	1	1	publication
+spherical gas-fueled cool	4.541	1.375	1	1	publication
+stably stratified stagnation	4.541	1.375	1	1	publication
+stocker dennis dietrich	4.541	1.375	1	1	publication
+stratified stagnation flow	4.541	1.375	1	1	publication
+sunderland peter nayagam	4.541	1.375	1	1	publication
+vedha axelbaum richard	4.541	1.375	1	1	publication
+vedha stocker dennis	4.541	1.375	1	1	publication
+waddell kendyl lee	4.541	1.375	1	1	publication
+waddell kendyl sunderland	4.541	1.375	1	1	publication
+williams forman irace	4.541	1.375	1	1	publication
+yiguang williams forman	4.541	1.375	1	1	publication
+integrated	4.532	3.000	1	11	experiment_hardware
+dietrich daniel	4.474	1.875	1	4	publication
+williams forman	4.474	1.875	1	4	publication
+develop	4.408	2.000	1	5	objective
+following	4.408	2.000	1	5	hypothesis
+fraction	4.408	2.000	1	5	research_impacts
+mechanism	4.408	2.000	1	5	objective
+plan	4.408	2.000	1	5	objective
+wide	4.408	2.000	1	5	hypothesis
+broad suite	4.346	1.500	1	2	approach
+cameras radiometers	4.346	1.500	1	2	approach
+convection directions	4.346	1.500	1	2	approach
+development efficient	4.346	1.500	1	2	research_impacts
+dilutions flow	4.346	1.500	1	2	approach
+directions observe	4.346	1.500	1	2	approach
+energy transportation	4.346	1.500	1	2	research_impacts
+flame tests	4.346	1.500	1	2	approach
+flames wide	4.346	1.500	1	2	hypothesis
+foundation	4.346	1.500	1	2	space_program
+improved understanding	4.346	1.500	1	2	hypothesis
+inverse convection	4.346	1.500	1	2	approach
+observe flames	4.346	1.500	1	2	approach
+perform spherical	4.346	1.500	1	2	approach
+photomultiplier tubes	4.346	1.500	1	2	approach
+pressures normal	4.346	1.500	1	2	approach
+radiometers photomultiplier	4.346	1.500	1	2	approach
+range reactant	4.346	1.500	1	2	approach
+rates pressures	4.346	1.500	1	2	approach
+reactant dilutions	4.346	1.500	1	2	approach
+spherical porous	4.346	1.500	1	2	hypothesis
+suite cameras	4.346	1.500	1	2	approach
+tubes thermocouples	4.346	1.500	1	2	approach
+understanding cool	4.346	1.500	1	2	hypothesis
+efficient	4.100	2.000	1	6	research_impacts
+improved	4.100	2.000	1	6	hypothesis
+mechanisms	4.100	2.000	1	6	research_impacts
+radiometers	4.100	2.000	1	6	approach
+thermocouples	4.100	2.000	1	6	approach
+raw	4.004	2.650	3	11	file_folders,filenames,media_filenames
+lee han ju	3.984	1.375	1	2	publication
+broad range	3.914	1.500	1	3	objective
+center	3.914	1.500	1	3	space_program
+flight tests	3.914	1.500	1	3	objective
+wide range	3.914	1.500	1	3	hypothesis
+table	3.857	1.750	2	5	file_folders,filenames
+stocker dennis	3.843	1.875	1	6	publication
+chemistry	3.833	2.000	1	7	research_impacts
+convection	3.833	2.000	1	7	approach
+help	3.833	2.000	1	7	research_impacts
+combustion integrated	3.810	2.250	1	9	experiment_hardware
+integrated rack	3.810	2.250	1	9	experiment_hardware
+rack cir	3.810	2.250	1	9	experiment_hardware
+advancement casis	3.715	1.125	1	1	space_program
+center advancement	3.715	1.125	1	1	space_program
+foundation nsf	3.715	1.125	1	1	space_program
+nsf center	3.715	1.125	1	1	space_program
+advance cool flame	3.633	1.100	1	1	research_impacts
+advanced cfd simulations	3.633	1.100	1	1	objective
+advantage ultra-lean combustion	3.633	1.100	1	1	research_impacts
+agreement cfd predictions	3.633	1.100	1	1	objective
+broad range zst	3.633	1.100	1	1	objective
+burners cool diffusion	3.633	1.100	1	1	hypothesis
+burning propane n-butane	3.633	1.100	1	1	hypothesis
+cause extinction whereas	3.633	1.100	1	1	hypothesis
+cause transition hot	3.633	1.100	1	1	hypothesis
+cfd predictions measurements	3.633	1.100	1	1	objective
+cfd simulations identify	3.633	1.100	1	1	objective
+chemical kinetics mechanism	3.633	1.100	1	1	objective
+chemistry cool flames	3.633	1.100	1	1	research_impacts
+combustion engines transportation	3.633	1.100	1	1	research_impacts
+combustion progress impeded	3.633	1.100	1	1	research_impacts
+combustion world energy	3.633	1.100	1	1	research_impacts
+conditions cool diffusion	3.633	1.100	1	1	objective
+consider multiple fuels	3.633	1.100	1	1	approach
+contributing improved understanding	3.633	1.100	1	1	hypothesis
+cool flames cool	3.633	1.100	1	1	research_impacts
+decrease fluent flow	3.633	1.100	1	1	hypothesis
+demonstrate following time	3.633	1.100	1	1	hypothesis
+determine conditions cool	3.633	1.100	1	1	objective
+develop chemical kinetics	3.633	1.100	1	1	objective
+development efficient internal	3.633	1.100	1	1	research_impacts
+diffusion flame oscillation	3.633	1.100	1	1	hypothesis
+diffusion flames cool	3.633	1.100	1	1	hypothesis
+diffusion flames decrease	3.633	1.100	1	1	hypothesis
+diffusion flames occur	3.633	1.100	1	1	objective
+diffusion flames spherical	3.633	1.100	1	1	hypothesis
+diffusion flames whose	3.633	1.100	1	1	research_impacts
+discovered measurements performed	3.633	1.100	1	1	research_impacts
+disseminate widely possible	3.633	1.100	1	1	objective
+efficiencies increase future	3.633	1.100	1	1	research_impacts
+efficiencies lower thermal	3.633	1.100	1	1	research_impacts
+efficient internal combustion	3.633	1.100	1	1	research_impacts
+energy even higher	3.633	1.100	1	1	research_impacts
+energy transportation internal	3.633	1.100	1	1	research_impacts
+engines take advantage	3.633	1.100	1	1	research_impacts
+engines transportation thermal	3.633	1.100	1	1	research_impacts
+even higher fraction	3.633	1.100	1	1	research_impacts
+exponentially since discovered	3.633	1.100	1	1	research_impacts
+extinction whereas increase	3.633	1.100	1	1	hypothesis
+facilitate development efficient	3.633	1.100	1	1	research_impacts
+flame kinetics mechanisms	3.633	1.100	1	1	research_impacts
+flame kinetics steady-state	3.633	1.100	1	1	hypothesis
+flame oscillation possible	3.633	1.100	1	1	hypothesis
+flame tests consider	3.633	1.100	1	1	approach
+flames broad range	3.633	1.100	1	1	objective
+flames burning propane	3.633	1.100	1	1	hypothesis
+flames decrease fluent	3.633	1.100	1	1	hypothesis
+flames occur propane	3.633	1.100	1	1	objective
+flames spherical porous	3.633	1.100	1	1	hypothesis
+flames whose peak	3.633	1.100	1	1	research_impacts
+flight testing determine	3.633	1.100	1	1	objective
+flight tests advanced	3.633	1.100	1	1	objective
+flow rate cause	3.633	1.100	1	1	hypothesis
+flow rate flight	3.633	1.100	1	1	objective
+following time contributing	3.633	1.100	1	1	hypothesis
+fraction energy transportation	3.633	1.100	1	1	research_impacts
+fuels range reactant	3.633	1.100	1	1	approach
+future engines take	3.633	1.100	1	1	research_impacts
+good agreement cfd	3.633	1.100	1	1	objective
+grown exponentially since	3.633	1.100	1	1	research_impacts
+help test advance	3.633	1.100	1	1	research_impacts
+higher fraction energy	3.633	1.100	1	1	research_impacts
+hot cool flames	3.633	1.100	1	1	hypothesis
+hot diffusion flame	3.633	1.100	1	1	hypothesis
+hypotheses testing demonstrate	3.633	1.100	1	1	hypothesis
+identify develop chemical	3.633	1.100	1	1	objective
+impeded limited understanding	3.633	1.100	1	1	research_impacts
+improved understanding cool	3.633	1.100	1	1	hypothesis
+increase cause transition	3.633	1.100	1	1	hypothesis
+increase future engines	3.633	1.100	1	1	research_impacts
+inverse cool diffusion	3.633	1.100	1	1	hypothesis
+inverse flames broad	3.633	1.100	1	1	objective
+kinetics mechanism yields	3.633	1.100	1	1	objective
+kinetics mechanisms facilitate	3.633	1.100	1	1	research_impacts
+kinetics steady-state cool	3.633	1.100	1	1	hypothesis
+limited understanding chemistry	3.633	1.100	1	1	research_impacts
+losses efficiencies increase	3.633	1.100	1	1	research_impacts
+lower thermal losses	3.633	1.100	1	1	research_impacts
+measurements disseminate widely	3.633	1.100	1	1	objective
+measurements performed help	3.633	1.100	1	1	research_impacts
+mechanism yields good	3.633	1.100	1	1	objective
+mechanisms facilitate development	3.633	1.100	1	1	research_impacts
+multiple fuels range	3.633	1.100	1	1	approach
+n-butane n-pentane cool	3.633	1.100	1	1	hypothesis
+n-butane n-pentane normal	3.633	1.100	1	1	objective
+n-pentane cool diffusion	3.633	1.100	1	1	hypothesis
+n-pentane normal inverse	3.633	1.100	1	1	objective
+normal inverse flames	3.633	1.100	1	1	objective
+occur propane n-butane	3.633	1.100	1	1	objective
+oscillation possible hot	3.633	1.100	1	1	hypothesis
+peak temperatures grown	3.633	1.100	1	1	research_impacts
+performed help test	3.633	1.100	1	1	research_impacts
+plan flight testing	3.633	1.100	1	1	objective
+porous burners cool	3.633	1.100	1	1	hypothesis
+possible hot cool	3.633	1.100	1	1	hypothesis
+predictions measurements disseminate	3.633	1.100	1	1	objective
+pressures inverse cool	3.633	1.100	1	1	hypothesis
+progress impeded limited	3.633	1.100	1	1	research_impacts
+rate cause extinction	3.633	1.100	1	1	hypothesis
+rate flight tests	3.633	1.100	1	1	objective
+simulations identify develop	3.633	1.100	1	1	objective
+since discovered measurements	3.633	1.100	1	1	research_impacts
+spherical porous burners	3.633	1.100	1	1	hypothesis
+steady-state cool diffusion	3.633	1.100	1	1	hypothesis
+tad fluent flow	3.633	1.100	1	1	objective
+tad pressures inverse	3.633	1.100	1	1	hypothesis
+take advantage ultra-lean	3.633	1.100	1	1	research_impacts
+temperatures grown exponentially	3.633	1.100	1	1	research_impacts
+test advance cool	3.633	1.100	1	1	research_impacts
+testing demonstrate following	3.633	1.100	1	1	hypothesis
+testing determine conditions	3.633	1.100	1	1	objective
+tests advanced cfd	3.633	1.100	1	1	objective
+tests consider multiple	3.633	1.100	1	1	approach
+thermal efficiencies lower	3.633	1.100	1	1	research_impacts
+thermal losses efficiencies	3.633	1.100	1	1	research_impacts
+time contributing improved	3.633	1.100	1	1	hypothesis
+transition hot diffusion	3.633	1.100	1	1	hypothesis
+transportation internal combustion	3.633	1.100	1	1	research_impacts
+transportation thermal efficiencies	3.633	1.100	1	1	research_impacts
+ultra-lean combustion progress	3.633	1.100	1	1	research_impacts
+understanding chemistry cool	3.633	1.100	1	1	research_impacts
+whereas increase cause	3.633	1.100	1	1	hypothesis
+whose peak temperatures	3.633	1.100	1	1	research_impacts
+wide range zst	3.633	1.100	1	1	hypothesis
+world energy even	3.633	1.100	1	1	research_impacts
+yields good agreement	3.633	1.100	1	1	objective
+zst tad fluent	3.633	1.100	1	1	objective
+zst tad pressures	3.633	1.100	1	1	hypothesis
+performed	3.597	2.000	1	8	research_impacts
+temperatures	3.597	2.000	1	8	research_impacts
+test	3.488	3.000	2	16	filenames,research_impacts
+cameras	3.386	2.000	1	9	approach
+rates	3.386	2.000	1	9	approach
+metadata	3.354	1.750	2	7	file_folders,filenames
+flow rates	3.306	1.500	1	5	approach
+spherical diffusion	3.306	1.500	1	5	approach
+13-03	3.303	1.000	1	1	filenames
+14.54.46	3.303	1.000	1	1	filenames
+16.34.11	3.303	1.000	1	1	filenames
+17.42.29	3.303	1.000	1	1	filenames
+17.48.00	3.303	1.000	1	1	filenames
+2021-03-09	3.303	1.000	1	1	filenames
+2021-04-22	3.303	1.000	1	1	filenames
+2021-08-10	3.303	1.000	1	1	filenames
+2021-08-16	3.303	1.000	1	1	filenames
+2021-08-30	3.303	1.000	1	1	filenames
+2021-10-21	3.303	1.000	1	1	filenames
+21222a1.mdipsug	3.303	1.000	1	1	filenames
+21222a2.mdipsug	3.303	1.000	1	1	filenames
+21222a3.mdipsug	3.303	1.000	1	1	filenames
+21222a4.mdipsug	3.303	1.000	1	1	filenames
+21222a5.mdipsug	3.303	1.000	1	1	filenames
+21222b1.mdipsug	3.303	1.000	1	1	filenames
+21222c1.mdipsug	3.303	1.000	1	1	filenames
+21222c2.mdipsug	3.303	1.000	1	1	filenames
+21222f1.mdipsug	3.303	1.000	1	1	filenames
+21228a1.mdipsug	3.303	1.000	1	1	filenames
+21228a1.ts	3.303	1.000	1	1	filenames
+21228a2.mdipsug	3.303	1.000	1	1	filenames
+21228a2.ts	3.303	1.000	1	1	filenames
+21228a3.mdipsug	3.303	1.000	1	1	filenames
+21228a3.ts	3.303	1.000	1	1	filenames
+21228a4.mdipsug	3.303	1.000	1	1	filenames
+21228a4.ts	3.303	1.000	1	1	filenames
+21228b1.mdipsug	3.303	1.000	1	1	filenames
+21228b1.ts	3.303	1.000	1	1	filenames
+21228c1.mdipsug	3.303	1.000	1	1	filenames
+21228c1.ts	3.303	1.000	1	1	filenames
+21228c2.mdipsug	3.303	1.000	1	1	filenames
+21228c2.ts	3.303	1.000	1	1	filenames
+21228c3.mdipsug	3.303	1.000	1	1	filenames
+21228c3.ts	3.303	1.000	1	1	filenames
+21228c4.mdipsug	3.303	1.000	1	1	filenames
+21228c4.ts	3.303	1.000	1	1	filenames
+21228f1.mdipsug	3.303	1.000	1	1	filenames
+21228f1.ts	3.303	1.000	1	1	filenames
+21228h1.mdipsug	3.303	1.000	1	1	filenames
+21228h1.ts	3.303	1.000	1	1	filenames
+21228h2.mdipsug	3.303	1.000	1	1	filenames
+21228h2.ts	3.303	1.000	1	1	filenames
+21228j1.mdipsug	3.303	1.000	1	1	filenames
+21228j1.ts	3.303	1.000	1	1	filenames
+21228k1.mdipsug	3.303	1.000	1	1	filenames
+21228k1.ts	3.303	1.000	1	1	filenames
+21228k2.mdipsug	3.303	1.000	1	1	filenames
+21228l1.mdipsug	3.303	1.000	1	1	filenames
+21228l2.mdipsug	3.303	1.000	1	1	filenames
+21235a1.mdipsug	3.303	1.000	1	1	filenames
+21235a2.mdipsug	3.303	1.000	1	1	filenames
+21235b1.mdipsug	3.303	1.000	1	1	filenames
+21235c1.mdipsug	3.303	1.000	1	1	filenames
+21235f1.mdipsug	3.303	1.000	1	1	filenames
+21235f2.mdipsug	3.303	1.000	1	1	filenames
+21235h1.mdipsug	3.303	1.000	1	1	filenames
+21235j1.mdipsug	3.303	1.000	1	1	filenames
+21235k1.mdipsug	3.303	1.000	1	1	filenames
+21235l1.mdipsug	3.303	1.000	1	1	filenames
+21242a1.mdipsug	3.303	1.000	1	1	filenames
+21242a1.ts	3.303	1.000	1	1	filenames
+21242f2.ts	3.303	1.000	1	1	filenames
+21242f3.mdipsug	3.303	1.000	1	1	filenames
+21242f3.ts	3.303	1.000	1	1	filenames
+21242f4.ts	3.303	1.000	1	1	filenames
+21242p1.mdipsug	3.303	1.000	1	1	filenames
+21242p1.ts	3.303	1.000	1	1	filenames
+acme.cfi-g	3.303	1.000	1	1	filenames
+failedipsuerror.ts	3.303	1.000	1	1	filenames
+psi-159-isa	3.303	1.000	1	1	filenames
+run21228a1	3.303	1.000	1	1	filenames
+run21228a2	3.303	1.000	1	1	filenames
+run21228a3	3.303	1.000	1	1	filenames
+run21228a4	3.303	1.000	1	1	filenames
+run21228b1	3.303	1.000	1	1	filenames
+run21228c1	3.303	1.000	1	1	filenames
+run21228c2	3.303	1.000	1	1	filenames
+run21228c3	3.303	1.000	1	1	filenames
+run21228c4	3.303	1.000	1	1	filenames
+run21228f1	3.303	1.000	1	1	filenames
+run21228h1	3.303	1.000	1	1	filenames
+run21228h2	3.303	1.000	1	1	filenames
+run21228j1	3.303	1.000	1	1	filenames
+run21228k1	3.303	1.000	1	1	filenames
+run21242a1	3.303	1.000	1	1	filenames
+run21242f1	3.303	1.000	1	1	filenames
+run21242f2	3.303	1.000	1	1	filenames
+run21242f3	3.303	1.000	1	1	filenames
+run21242f4	3.303	1.000	1	1	filenames
+run21242p1	3.303	1.000	1	1	filenames
+run21242p2	3.303	1.000	1	1	filenames
+national foundation	3.259	1.125	1	2	space_program
+extinction	3.196	2.000	1	10	hypothesis
+broad suite cameras	3.187	1.100	1	2	approach
+cameras radiometers photomultiplier	3.187	1.100	1	2	approach
+convection directions observe	3.187	1.100	1	2	approach
+diffusion flame tests	3.187	1.100	1	2	approach
+diffusion flames wide	3.187	1.100	1	2	hypothesis
+dilutions flow rates	3.187	1.100	1	2	approach
+directions observe flames	3.187	1.100	1	2	approach
+flames broad suite	3.187	1.100	1	2	approach
+flames wide range	3.187	1.100	1	2	hypothesis
+flow rates pressures	3.187	1.100	1	2	approach
+inverse convection directions	3.187	1.100	1	2	approach
+normal inverse convection	3.187	1.100	1	2	approach
+observe flames broad	3.187	1.100	1	2	approach
+perform spherical diffusion	3.187	1.100	1	2	approach
+photomultiplier tubes thermocouples	3.187	1.100	1	2	approach
+pressures normal inverse	3.187	1.100	1	2	approach
+radiometers photomultiplier tubes	3.187	1.100	1	2	approach
+range reactant dilutions	3.187	1.100	1	2	approach
+rates pressures normal	3.187	1.100	1	2	approach
+reactant dilutions flow	3.187	1.100	1	2	approach
+suite cameras radiometers	3.187	1.100	1	2	approach
+understanding cool flame	3.187	1.100	1	2	hypothesis
+21102b1	2.972	0.900	1	1	media_filenames
+21112a4	2.972	0.900	1	1	media_filenames
+21112a5	2.972	0.900	1	1	media_filenames
+21112a6	2.972	0.900	1	1	media_filenames
+21112c1	2.972	0.900	1	1	media_filenames
+21112c2	2.972	0.900	1	1	media_filenames
+21112c3	2.972	0.900	1	1	media_filenames
+21112c4	2.972	0.900	1	1	media_filenames
+21112c5	2.972	0.900	1	1	media_filenames
+21112c6	2.972	0.900	1	1	media_filenames
+21112f1	2.972	0.900	1	1	media_filenames
+21112f2	2.972	0.900	1	1	media_filenames
+21112f3	2.972	0.900	1	1	media_filenames
+21112f4	2.972	0.900	1	1	media_filenames
+21112f5	2.972	0.900	1	1	media_filenames
+21112h2	2.972	0.900	1	1	media_filenames
+21112h3	2.972	0.900	1	1	media_filenames
+21130a1	2.972	0.900	1	1	media_filenames
+21130a2	2.972	0.900	1	1	media_filenames
+21130a3	2.972	0.900	1	1	media_filenames
+21130a4	2.972	0.900	1	1	media_filenames
+21130a5	2.972	0.900	1	1	media_filenames
+21130a6	2.972	0.900	1	1	media_filenames
+21130a7	2.972	0.900	1	1	media_filenames
+21130a8	2.972	0.900	1	1	media_filenames
+21130g1	2.972	0.900	1	1	media_filenames
+21130g2	2.972	0.900	1	1	media_filenames
+21130g3	2.972	0.900	1	1	media_filenames
+21130g4	2.972	0.900	1	1	media_filenames
+21130g5	2.972	0.900	1	1	media_filenames
+21130g6	2.972	0.900	1	1	media_filenames
+21130g7	2.972	0.900	1	1	media_filenames
+21130m1	2.972	0.900	1	1	media_filenames
+21130m2	2.972	0.900	1	1	media_filenames
+21130m3	2.972	0.900	1	1	media_filenames
+21130n2	2.972	0.900	1	1	media_filenames
+21130n3	2.972	0.900	1	1	media_filenames
+21130n4	2.972	0.900	1	1	media_filenames
+21130n5	2.972	0.900	1	1	media_filenames
+21137a1	2.972	0.900	1	1	media_filenames
+21137a2	2.972	0.900	1	1	media_filenames
+21137a3	2.972	0.900	1	1	media_filenames
+21137a4	2.972	0.900	1	1	media_filenames
+21137a5	2.972	0.900	1	1	media_filenames
+21137a6	2.972	0.900	1	1	media_filenames
+21137a7	2.972	0.900	1	1	media_filenames
+21137b1	2.972	0.900	1	1	media_filenames
+21137b2	2.972	0.900	1	1	media_filenames
+21137c1	2.972	0.900	1	1	media_filenames
+21137d1	2.972	0.900	1	1	media_filenames
+21196m2	2.972	0.900	1	1	media_filenames
+failedipsuerror	2.972	0.900	1	1	media_filenames
+vlc-record-2021-04-12-19h41m39s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-04-22-13h40m05s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-04-22-14h11m18s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-04-22-14h27m51s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-04-22-14h51m29s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-04-22-15h11m10s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-04-22-15h31m52s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-04-22-16h12m10s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-04-22-16h31m52s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-04-22-16h51m12s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-04-22-17h18m28s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-04-22-17h30m23s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-04-22-17h42m10s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-04-22-18h43m41s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-04-22-19h33m06s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-04-22-19h53m52s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-04-22-20h39m50s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-04-22-22h21m02s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-04-22-22h45m34s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-04-22-22h56m04s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-10-15h05m51s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-10-15h22m32s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-10-16h17m46s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-10-17h20m41s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-10-18h03m38s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-10-18h24m49s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-10-18h38m40s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-10-18h54m22s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-10-19h41m36s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-10-19h57m55s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-10-20h11m04s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-10-20h50m20s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-10-21h15m43s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-10-21h31m46s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-10-21h54m36s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-10-22h11m22s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-10-22h23m18s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-10-22h52m50s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-10-23h38m53s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-11-01h11m38s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-11-01h53m24s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-11-02h42m42s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-17-13h35m21s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-17-13h56m08s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-17-14h06m53s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-17-14h26m22s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-17-14h45m43s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-17-15h38m23s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-17-15h57m14s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-17-16h09m11s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-17-16h28m19s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-17-17h30m17s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-05-17-18h10m57s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-08-10-17h01m57s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-08-10-17h16m24s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-08-10-17h29m08s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-08-10-17h43m16s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-08-10-17h55m32s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-08-10-18h15m51s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-08-10-19h00m27s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-08-10-19h12m42s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-08-10-19h50m44s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-08-10-20h12m21s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-08-16-22h02m00s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-08-16-22h16m30s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-08-16-22h31m25s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-08-23-14h04m54s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-08-23-14h20m24s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-08-23-14h32m48s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-08-23-14h46m04s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-08-23-15h07m16s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-08-23-15h20m17s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-08-23-15h30m49s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-08-23-15h53m14s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-08-23-16h24m44s-udp	2.972	0.900	1	1	media_filenames
+vlc-record-2021-08-23-16h44m04s-udp	2.972	0.900	1	1	media_filenames
+acmecameraconfigure	2.897	1.000	1	2	filenames
+calculator	2.897	1.000	1	2	filenames
+daily	2.897	1.000	1	2	filenames
+finalrpt	2.897	1.000	1	2	filenames
+fusedsilica	2.897	1.000	1	2	filenames
+implementation	2.897	1.000	1	2	filenames
+notes	2.897	1.000	1	2	filenames
+parameter	2.897	1.000	1	2	filenames
+rpt	2.897	1.000	1	2	filenames
+traces	2.897	1.000	1	2	filenames
+spherical diffusion flame	2.870	1.100	1	3	approach
+development	2.862	2.000	1	12	research_impacts
+time	2.862	2.000	1	12	hypothesis
+combustion integrated rack	2.794	1.650	1	9	experiment_hardware
+integrated rack cir	2.794	1.650	1	9	experiment_hardware
+center advancement casis	2.725	0.825	1	1	space_program
+foundation nsf center	2.725	0.825	1	1	space_program
+national foundation nsf	2.725	0.825	1	1	space_program
+nsf center advancement	2.725	0.825	1	1	space_program
+conditions	2.713	2.000	1	13	objective
+determine	2.713	2.000	1	13	objective
+acme.log	2.609	1.000	1	3	filenames
+converted	2.609	1.000	1	3	filenames
+log	2.609	1.000	1	3	filenames
+mfcsetpoints	2.609	1.000	1	3	filenames
+runacmecameraconfigure	2.609	1.000	1	3	filenames
+co-i	2.575	2.000	2	14	role
+co-investigator	2.575	2.000	2	14	role
+future	2.575	2.000	1	14	research_impacts
+documents	2.504	1.750	2	12	file_folders,filenames
+uc	2.477	0.750	1	1	affiliation
+comments	2.386	1.000	1	4	filenames
+intns	2.386	1.000	1	4	filenames
+engineering	2.374	1.750	2	13	file_folders,filenames
+experimental	2.374	1.750	2	13	file_folders,filenames
+point	2.204	1.000	1	5	filenames
+sheets	2.204	1.000	1	5	filenames
+louis	2.173	0.750	1	2	affiliation
+richard axelbaum	2.173	0.750	1	2	people
+st	2.173	0.750	1	2	affiliation
+final	2.050	1.000	1	6	filenames
+co-investigator co-i	1.932	1.500	2	14	role
+uc san	1.858	0.562	1	1	affiliation
+university	1.835	1.500	2	15	affiliation
+chamber	1.799	1.000	1	8	filenames
+forman williams	1.790	0.750	1	4	people
+peter sunderland	1.790	0.750	1	4	people
+representative	1.790	0.750	1	4	file_folders
+washington	1.790	0.750	1	4	affiliation
+diego	1.653	0.750	1	5	affiliation
+san	1.653	0.750	1	5	affiliation
+st louis	1.630	0.562	1	2	affiliation
+university st	1.630	0.562	1	2	affiliation
+washington university	1.630	0.562	1	2	affiliation
+national	1.577	1.500	1	18	space_program
+maryland	1.537	0.750	1	6	affiliation
+dennis stocker	1.437	0.750	1	7	people
+images	1.431	1.000	1	12	filenames
+uc san diego	1.362	0.412	1	1	affiliation
+representative image	1.342	0.562	1	4	file_folders
+scientist	1.288	1.000	1	14	role
+experimental table	1.240	0.562	1	5	file_folders
+san diego	1.240	0.562	1	5	affiliation
+image	1.198	0.750	1	10	file_folders
+university st louis	1.195	0.412	1	2	affiliation
+washington university st	1.195	0.412	1	2	affiliation
+university maryland	1.153	0.562	1	6	affiliation
+investigator	1.051	1.000	1	18	role
+pi	1.051	1.000	1	18	role
+principal	1.051	1.000	1	18	role
+engineering documents	0.805	0.562	1	12	file_folders
+grc	0.788	0.750	1	18	affiliation
+investigator pi	0.788	0.750	1	18	role
+principal investigator	0.788	0.750	1	18	role
+principal investigator pi	0.578	0.550	1	18	role

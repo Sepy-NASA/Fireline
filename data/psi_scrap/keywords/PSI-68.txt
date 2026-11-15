@@ -1,0 +1,2211 @@
+# keywords for PSI-68 (score, weight, count, df, fields)
+droplet	269.552	131.500	52	6	approach,curated_keywords,experiment_hardware,hypothesis,objective,proposal_title,publication,research_impacts
+droplet combustion	138.703	58.125	27	4	curated_keywords,experiment_hardware,hypothesis,objective,proposal_title,publication
+droplets	135.691	52.000	21	3	objective,publication
+combustion	132.500	132.500	47	19	approach,curated_keywords,experiment_hardware,hypothesis,objective,proposal_title,publication,research_area,research_impacts
+shaw	126.025	43.500	18	2	people,publication
+avedisian	111.539	38.500	16	2	people,publication
+williams	85.907	36.000	15	4	people,publication
+extinction	80.691	50.500	14	10	curated_keywords,objective,publication
+liu	71.760	27.500	11	3	publication
+nayagam	68.323	31.000	13	5	people,publication
+forman	62.044	26.000	11	4	people,publication
+n-heptane	59.657	25.000	10	4	publication
+dryer	54.798	21.000	9	3	people,publication
+hicks	54.798	21.000	9	3	people,publication
+farouk	52.189	20.000	8	3	publication
+dietrich	51.793	23.500	10	5	people,publication
+vedha	51.793	23.500	10	5	people,publication
+ct	50.700	17.500	7	2	publication
+burning	49.948	29.500	12	9	objective,publication
+benjamin	48.275	18.500	8	3	people,publication
+williams forman	44.743	18.750	10	4	publication
+yc	43.457	15.000	6	2	publication
+diffusive	41.282	12.500	3	1	curated_keywords,hypothesis,publication
+flame	41.269	35.500	11	16	approach,curated_keywords,hypothesis,objective,proposal_title,publication,title
+microgravity	40.000	40.000	15	19	approach,curated_keywords,hypothesis,objective,project_type,proposal_title,publication
+flex-2	39.631	12.000	4	1	acronym,approach,hypothesis,objective
+daniel	38.181	16.000	7	4	people,publication
+ct avedisian	38.025	13.125	7	2	publication
+shaw benjamin	38.025	13.125	7	2	publication
+nayagam vedha	37.192	16.875	9	5	publication
+yc liu	37.154	11.250	6	1	publication
+savas	36.214	12.500	5	2	publication
+wei	36.214	12.500	5	2	publication
+thomas	35.264	16.000	7	5	people,publication
+decane	34.677	10.500	2	1	curated_keywords,publication
+reduced	33.863	20.000	8	9	publication
+numerical	33.272	18.500	8	8	hypothesis,objective,publication
+yu	32.618	12.500	5	3	publication
+avedisian thomas	32.593	11.250	6	2	publication
+fuel	31.882	23.500	11	13	approach,objective,publication,research_impacts
+ethanol	30.420	10.500	2	2	curated_keywords,publication
+initial	30.420	10.500	5	2	approach,hypothesis,objective,publication
+gravity	28.973	22.500	9	14	publication
+air-diluent	28.971	10.000	4	2	publication
+cheng	28.971	10.000	4	2	publication
+gasoline	28.971	10.000	4	2	publication
+spherically	28.971	10.000	4	2	publication
+fiber	27.523	9.500	4	2	approach,publication
+modeling	26.978	15.000	6	8	publication
+dietrich daniel	26.846	11.250	6	4	publication
+bi-component	26.421	8.000	4	1	hypothesis,objective
+cool-flame	26.094	10.000	4	3	publication
+diffusive extinction	26.008	7.875	2	1	curated_keywords,publication
+mixtures	25.870	13.500	6	7	approach,hypothesis,publication,research_impacts
+reduced gravity	25.151	13.125	7	7	publication
+aj	24.769	7.500	3	1	publication
+characteristics	24.598	12.000	5	6	objective,publication
+vedha dietrich	24.463	9.375	5	3	publication
+radiative	23.968	15.000	4	10	curated_keywords,hypothesis,publication
+extinguishment	23.485	9.000	2	3	proposal_title,title
+multiple	23.177	8.000	1	2	curated_keywords
+environments	23.063	17.000	7	13	objective,publication
+experimental	23.063	17.000	8	13	approach,hypothesis,objective,publication
+liquid	22.548	11.000	5	6	hypothesis,objective,publication,research_impacts
+flame extinction	22.372	9.375	3	4	curated_keywords,objective,publication
+frederick	22.180	8.500	4	3	people,publication
+air-diluent environments	21.728	7.500	4	2	publication
+bd	21.728	7.500	3	2	publication
+fl	21.728	7.500	3	2	publication
+liu yu	21.728	7.500	4	2	publication
+methanol	21.728	7.500	3	2	publication
+symmetric	21.728	7.500	3	2	publication
+xu	21.728	7.500	3	2	publication
+yu cheng	21.728	7.500	4	2	publication
+radiative extinction	21.489	9.750	3	5	curated_keywords,publication
+pressure	21.462	15.000	7	12	approach,publication
+flex	20.876	8.000	1	3	curated_keywords
+surrogates	20.280	7.000	3	2	publication,research_impacts
+diameter	19.836	9.000	4	5	approach,publication
+benchmark	19.816	6.000	3	1	hypothesis,objective
+multiple droplet	19.816	6.000	1	1	curated_keywords
+fuels	19.672	14.500	7	13	objective,publication,research_impacts
+daniel williams	19.571	7.500	4	3	publication
+fa	19.571	7.500	3	3	publication
+fibers	19.571	7.500	3	3	publication
+heptane	19.571	7.500	3	3	publication
+tanvir	19.571	7.500	3	3	publication
+flame extinguishment	19.556	6.750	2	2	proposal_title,title
+gas	19.163	10.000	5	7	approach,hypothesis,research_impacts
+deployment	18.831	6.500	3	2	approach,publication
+aj savas	18.577	5.625	3	1	publication
+soot	18.130	12.000	3	11	curated_keywords,objective
+nayagam vedha dietrich	17.940	6.875	5	3	publication
+vedha dietrich daniel	17.940	6.875	5	3	publication
+combustion apparatus	17.383	6.000	1	2	curated_keywords
+real	17.383	6.000	3	2	approach,objective,research_impacts
+retracted	17.383	6.000	3	2	approach
+conditions	16.958	12.500	6	13	approach,hypothesis,objective,publication
+formation	16.931	10.000	2	9	curated_keywords,objective
+unsteady	16.704	7.000	3	4	objective,publication
+burke-schumann	16.513	5.000	2	1	publication
+butanol	16.513	5.000	2	1	publication
+ha	16.513	5.000	2	1	publication
+ti	16.513	5.000	2	1	publication
+apparatus	16.399	8.000	1	6	curated_keywords
+bd shaw	16.296	5.625	3	2	publication
+cheng avedisian	16.296	5.625	3	2	publication
+computational modeling	16.296	5.625	3	2	publication
+fl dryer	16.296	5.625	3	2	publication
+numerical modeling	16.296	5.625	3	2	publication
+spherically symmetric	16.296	5.625	3	2	publication
+symmetric droplet	16.296	5.625	3	2	publication
+effects	16.280	12.000	5	13	hypothesis,publication
+fire	16.280	12.000	2	13	curated_keywords,sub_research_area
+safety	16.280	12.000	2	13	curated_keywords,sub_research_area
+spacecraft	16.280	12.000	2	13	curated_keywords,sub_research_area
+liu yu cheng	15.934	5.500	4	2	publication
+field	15.657	6.000	3	3	approach,hypothesis
+ignitor	15.657	6.000	3	3	approach
+order	15.657	6.000	3	3	approach,objective
+simulations	15.657	6.000	3	3	hypothesis,objective
+role	15.428	7.000	3	5	objective,publication
+cool	15.374	7.500	3	6	publication
+quasi-steady	15.374	7.500	3	6	publication
+structure	15.374	7.500	3	6	publication
+burning characteristics	15.210	5.250	3	2	objective,publication
+theoretical models	14.862	4.500	3	1	hypothesis,objective
+dryer frederick	14.678	5.625	3	3	publication
+fa williams	14.678	5.625	3	3	publication
+farouk tanvir	14.678	5.625	3	3	publication
+n-heptane droplet	14.678	5.625	3	3	publication
+multiple droplet combustion	14.531	4.400	1	1	curated_keywords
+dwyer	14.486	5.000	2	2	publication
+fiber-supported	14.486	5.000	2	2	publication
+ghata	14.486	5.000	2	2	publication
+isolated	14.486	5.000	2	2	publication
+jet-a	14.486	5.000	2	2	publication
+jin	14.486	5.000	2	2	publication
+methyl	14.486	5.000	2	2	publication
+oxygen-inert	14.486	5.000	2	2	publication
+propanol	14.486	5.000	2	2	publication
+shringi	14.486	5.000	2	2	publication
+sub-millimeter	14.486	5.000	2	2	publication
+submillimeter	14.486	5.000	2	2	publication
+chamber	14.388	8.000	4	8	approach
+soot formation	14.372	7.500	2	7	curated_keywords,objective
+daniel williams forman	14.352	5.500	4	3	publication
+dietrich daniel williams	14.352	5.500	4	3	publication
+droplet combustion microgravity	14.352	5.500	4	3	publication
+ignition	14.349	7.000	3	6	approach,publication
+ambient	14.326	6.500	3	5	approach,publication
+theoretical	14.318	6.000	3	4	hypothesis,objective
+analysis	14.308	10.000	4	12	publication
+time	14.308	10.000	5	12	approach
+fuel droplets	13.700	5.250	3	3	objective,publication
+spacecraft fire	13.597	9.000	2	11	curated_keywords,sub_research_area
+models	13.545	8.000	4	9	hypothesis,objective,research_impacts
+chemistry	13.414	7.000	3	7	hypothesis,publication
+detailed	13.414	7.000	3	7	objective,publication
+near	13.324	6.500	3	6	approach,publication
+michael	13.224	6.000	3	5	people,publication
+microgravity combustion	13.224	6.000	1	5	curated_keywords
+combustor	13.210	4.000	2	1	objective,research_impacts
+dispensing	13.210	4.000	2	1	approach
+gas-phase	13.210	4.000	2	1	hypothesis,objective
+initiating	13.210	4.000	2	1	approach
+monitor	13.210	4.000	2	1	approach
+pure	13.210	4.000	2	1	objective,research_impacts
+settling	13.210	4.000	2	1	approach
+alkane	13.047	5.000	2	3	publication
+commercial	13.047	5.000	2	3	publication
+n-alkane	13.047	5.000	2	3	publication
+developing	13.037	4.500	2	2	publication,research_impacts
+numerical simulations	13.037	4.500	3	2	hypothesis,objective
+temperature	12.842	8.500	4	11	approach,publication
+droplet combustion apparatus	12.747	4.400	1	2	curated_keywords
+combustion microgravity	12.699	7.500	4	9	publication
+computational	12.699	7.500	3	9	publication
+burke-schumann analysis	12.385	3.750	2	1	publication
+butanol gasoline	12.385	3.750	2	1	publication
+ha dwyer	12.385	3.750	2	1	publication
+liu aj	12.385	3.750	2	1	publication
+liu ct	12.385	3.750	2	1	publication
+savas ct	12.385	3.750	2	1	publication
+ti farouk	12.385	3.750	2	1	publication
+fire safety	12.210	9.000	2	13	curated_keywords,sub_research_area
+cheng avedisian thomas	11.951	4.125	3	2	publication
+spherically symmetric droplet	11.951	4.125	3	2	publication
+yu cheng avedisian	11.951	4.125	3	2	publication
+fundamental	11.931	5.000	2	4	hypothesis,proposal_title
+low-temperature	11.931	5.000	2	4	publication
+flammability	11.852	7.000	3	9	objective,publication
+atmosphere	11.742	4.500	2	3	approach,publication
+binary	11.742	4.500	2	3	approach,publication
+composition	11.742	4.500	2	3	approach,publication
+induced	11.742	4.500	2	3	approach,publication
+transportation	11.742	4.500	2	3	publication,research_impacts
+amount	11.588	4.000	2	2	approach
+engine	11.588	4.000	2	2	research_impacts
+prior	11.588	4.000	2	2	approach,research_impacts
+seconds	11.588	4.000	2	2	approach
+environment	11.446	8.000	4	12	approach,hypothesis
+effect	11.020	5.000	2	5	publication
+burning droplet	10.864	3.750	2	2	publication
+combustion air-diluent	10.864	3.750	2	2	publication
+combustion methanol	10.864	3.750	2	2	publication
+droplets air-diluent	10.864	3.750	2	2	publication
+droplets oxygen-inert	10.864	3.750	2	2	publication
+droplets reduced	10.864	3.750	2	2	publication
+hicks michael	10.864	3.750	2	2	publication
+images droplet	10.864	3.750	2	2	publication
+jin shaw	10.864	3.750	2	2	publication
+methanol heptane	10.864	3.750	2	2	publication
+shaw wei	10.864	3.750	2	2	publication
+structure burning	10.864	3.750	2	2	publication
+wei shaw	10.864	3.750	2	2	publication
+n-heptane droplet combustion	10.764	4.125	3	3	publication
+atm	10.438	4.000	2	3	approach
+followed	10.438	4.000	2	3	approach
+motion	10.438	4.000	2	3	approach
+overall	10.438	4.000	2	3	approach
+varied	10.438	4.000	2	3	approach
+validate	10.159	6.000	3	9	hypothesis,objective
+choi	10.140	3.500	2	2	people,publication
+mun	10.140	3.500	2	2	people,publication
+spacecraft fire safety	9.971	6.600	2	11	curated_keywords,sub_research_area
+influence	9.918	4.500	2	5	objective,publication
+simulation	9.918	4.500	2	5	hypothesis,publication
+benchmark experimental	9.908	3.000	2	1	hypothesis,objective
+bi-component droplet	9.908	3.000	2	1	hypothesis,objective
+combustion wide	9.908	3.000	2	1	hypothesis,objective
+develop theoretical	9.908	3.000	2	1	hypothesis,objective
+diameter droplet	9.908	3.000	2	1	approach
+experimental bi-component	9.908	3.000	2	1	hypothesis,objective
+ignitor retracted	9.908	3.000	2	1	approach
+initial conditions	9.908	3.000	2	1	hypothesis,objective
+pressure temperature	9.908	3.000	2	1	approach
+range initial	9.908	3.000	2	1	hypothesis,objective
+settling time	9.908	3.000	2	1	approach
+simulations develop	9.908	3.000	2	1	hypothesis,objective
+alkane droplet	9.785	3.750	2	3	publication
+combustion flame	9.785	3.750	2	3	objective,proposal_title
+cool-flame chemistry	9.785	3.750	2	3	publication
+detailed numerical	9.785	3.750	2	3	publication
+forman nayagam	9.785	3.750	2	3	publication
+gravity combustion	9.785	3.750	2	3	publication
+hicks fa	9.785	3.750	2	3	publication
+n-heptane droplets	9.785	3.750	2	3	publication
+nayagam dietrich	9.785	3.750	2	3	publication
+quasi-steady combustion	9.785	3.750	2	3	publication
+tanvir dryer	9.785	3.750	2	3	publication
+ambient pressure	9.778	3.375	2	2	approach,publication
+induced deployment	9.778	3.375	2	2	approach,publication
+initial diameter	9.778	3.375	2	2	approach,publication
+flames	9.658	7.500	3	14	publication
+comparison	9.581	5.000	2	7	publication
+convection	9.581	5.000	2	7	publication
+spherical	9.581	5.000	2	7	publication
+analyze	9.545	4.000	2	4	approach,objective
+energy	9.545	4.000	2	4	research_impacts
+goal	9.545	4.000	2	4	hypothesis,objective
+mixture	9.224	4.500	2	6	approach,publication
+aj savas ct	9.082	2.750	2	1	publication
+liu aj savas	9.082	2.750	2	1	publication
+liu ct avedisian	9.082	2.750	2	1	publication
+savas ct avedisian	9.082	2.750	2	1	publication
+yc liu aj	9.082	2.750	2	1	publication
+yc liu ct	9.082	2.750	2	1	publication
+burning rate	8.949	3.750	2	4	publication
+droplet burning	8.949	3.750	2	4	publication
+behavior	8.818	6.500	3	13	objective,publication,research_impacts
+develop	8.816	4.000	2	5	hypothesis,objective
+efficiency	8.816	4.000	2	5	research_impacts
+fraction	8.816	4.000	2	5	approach,objective
+phenomena	8.816	4.000	2	5	hypothesis,objective
+wide	8.816	4.000	2	5	hypothesis,objective
+appartatus	8.691	3.000	1	2	experiment_hardware
+flow field	8.691	3.000	2	2	approach,hypothesis
+fuel efficiency	8.691	3.000	2	2	research_impacts
+primary goal	8.691	3.000	2	2	hypothesis,objective
+validate numerical	8.691	3.000	2	2	hypothesis,objective
+carbon	8.623	4.500	2	7	publication,research_impacts
+microgravity environment	8.623	4.500	3	7	approach,hypothesis
+ferkul	8.466	5.000	2	9	publication
+cool flames	8.265	3.750	2	5	publication
+flame structure	8.265	3.750	2	5	publication
+ap	8.256	2.500	1	1	publication
+assessment	8.256	2.500	1	1	publication
+calabria	8.256	2.500	1	1	publication
+circle	8.256	2.500	1	1	publication
+condition	8.256	2.500	1	1	publication
+diffusion-flame	8.256	2.500	1	1	publication
+dodecane-droplet	8.256	2.500	1	1	publication
+ds	8.256	2.500	1	1	publication
+dual-flame	8.256	2.500	1	1	publication
+expansion	8.256	2.500	1	1	publication
+fe	8.256	2.500	1	1	publication
+ge	8.256	2.500	1	1	publication
+hexanol	8.256	2.500	1	1	publication
+jc	8.256	2.500	1	1	publication
+jingbin	8.256	2.500	1	1	publication
+jk	8.256	2.500	1	1	publication
+kn	8.256	2.500	1	1	publication
+massoli	8.256	2.500	1	1	publication
+multistage	8.256	2.500	1	1	publication
+normal-alkane	8.256	2.500	1	1	publication
+precision	8.256	2.500	1	1	publication
+rasul	8.256	2.500	1	1	publication
+rb	8.256	2.500	1	1	publication
+reeves	8.256	2.500	1	1	publication
+parameters	8.199	4.000	2	6	approach
+range	8.199	4.000	2	6	hypothesis,objective
+combustion air-diluent environments	7.967	2.750	2	2	publication
+detailed numerical modeling	7.967	2.750	2	2	publication
+droplets air-diluent environments	7.967	2.750	2	2	publication
+droplets reduced gravity	7.967	2.750	2	2	publication
+images droplet combustion	7.967	2.750	2	2	publication
+reduced gravity combustion	7.967	2.750	2	2	publication
+symmetric droplet combustion	7.967	2.750	2	2	publication
+mdca	7.828	3.000	1	3	experiment_hardware
+multi-user	7.828	3.000	1	3	experiment_hardware
+wide range	7.828	3.000	2	3	hypothesis,objective
+co-i	7.726	6.000	6	14	role
+co-investigator	7.726	6.000	6	14	role
+cir multi-user	7.431	2.250	1	1	experiment_hardware
+fundamental droplet	7.431	2.250	1	1	proposal_title
+benchmark experimental bi-component	7.266	2.200	2	1	hypothesis,objective
+bi-component droplet combustion	7.266	2.200	2	1	hypothesis,objective
+combustion wide range	7.266	2.200	2	1	hypothesis,objective
+develop theoretical models	7.266	2.200	2	1	hypothesis,objective
+droplet combustion wide	7.266	2.200	2	1	hypothesis,objective
+experimental bi-component droplet	7.266	2.200	2	1	hypothesis,objective
+numerical simulations develop	7.266	2.200	2	1	hypothesis,objective
+range initial conditions	7.266	2.200	2	1	hypothesis,objective
+simulations develop theoretical	7.266	2.200	2	1	hypothesis,objective
+validate numerical simulations	7.266	2.200	2	1	hypothesis,objective
+wide range initial	7.266	2.200	2	1	hypothesis,objective
+1-propanol	7.243	2.500	1	2	publication
+acetone	7.243	2.500	1	2	publication
+aharon	7.243	2.500	1	2	publication
+alam	7.243	2.500	1	2	publication
+anthony	7.243	2.500	1	2	publication
+automated	7.243	2.500	1	2	publication
+backlit	7.243	2.500	1	2	publication
+bae	7.243	2.500	1	2	publication
+biofuels	7.243	2.500	1	2	publication
+burner-supported	7.243	2.500	1	2	publication
+butanoate	7.243	2.500	1	2	publication
+camelina	7.243	2.500	1	2	publication
+chang	7.243	2.500	1	2	publication
+consecutive	7.243	2.500	1	2	publication
+convection-free	7.243	2.500	1	2	publication
+decanoate	7.243	2.500	1	2	publication
+dembia	7.243	2.500	1	2	publication
+derived	7.243	2.500	1	2	publication
+differential	7.243	2.500	1	2	publication
+dzik	7.243	2.500	1	2	publication
+enriched	7.243	2.500	1	2	publication
+evaporating	7.243	2.500	1	2	publication
+evaporation	7.243	2.500	1	2	publication
+fluorescence	7.243	2.500	1	2	publication
+free	7.243	2.500	1	2	publication
+grade	7.243	2.500	1	2	publication
+heated	7.243	2.500	1	2	publication
+hyun	7.243	2.500	1	2	publication
+indolene	7.243	2.500	1	2	publication
+influences	7.243	2.500	1	2	publication
+iso-octane	7.243	2.500	1	2	publication
+kyu	7.243	2.500	1	2	publication
+micro-convection	7.243	2.500	1	2	publication
+miscible	7.243	2.500	1	2	publication
+n-butanol	7.243	2.500	1	2	publication
+n-decane	7.243	2.500	1	2	publication
+n-octane	7.243	2.500	1	2	publication
+narugopal	7.243	2.500	1	2	publication
+needle	7.243	2.500	1	2	publication
+nonane	7.243	2.500	1	2	publication
+optic	7.243	2.500	1	2	publication
+oscillations	7.243	2.500	1	2	publication
+oscillatory	7.243	2.500	1	2	publication
+ovando	7.243	2.500	1	2	publication
+prince	7.243	2.500	1	2	publication
+propanol-acetone	7.243	2.500	1	2	publication
+rah	7.243	2.500	1	2	publication
+reduced-gravity	7.243	2.500	1	2	publication
+retraction	7.243	2.500	1	2	publication
+sized	7.243	2.500	1	2	publication
+spectroscopy	7.243	2.500	1	2	publication
+structures	7.243	2.500	1	2	publication
+suh	7.243	2.500	1	2	publication
+symmetrical	7.243	2.500	1	2	publication
+tallow	7.243	2.500	1	2	publication
+tam	7.243	2.500	1	2	publication
+tethering	7.243	2.500	1	2	publication
+toluene	7.243	2.500	1	2	publication
+trenou	7.243	2.500	1	2	publication
+two-stage	7.243	2.500	1	2	publication
+unleaded	7.243	2.500	1	2	publication
+unsupported	7.243	2.500	1	2	publication
+vang	7.243	2.500	1	2	publication
+vaporizing	7.243	2.500	1	2	publication
+xiao	7.243	2.500	1	2	publication
+yan	7.243	2.500	1	2	publication
+yuhao	7.243	2.500	1	2	publication
+emissions	7.194	4.000	2	8	research_impacts
+primary	7.194	4.000	2	8	hypothesis,objective
+farouk tanvir dryer	7.176	2.750	2	3	publication
+forman nayagam vedha	7.176	2.750	2	3	publication
+hicks fa williams	7.176	2.750	2	3	publication
+tanvir dryer frederick	7.176	2.750	2	3	publication
+williams forman nayagam	7.176	2.750	2	3	publication
+images	7.154	5.000	2	12	publication
+rate	6.783	5.000	2	13	publication
+0.1	6.605	2.000	1	1	approach
+3.0	6.605	2.000	1	1	approach
+allowing	6.605	2.000	1	1	hypothesis
+appropriate	6.605	2.000	1	1	approach
+approximations	6.605	2.000	1	1	hypothesis
+array	6.605	2.000	1	1	approach
+arrays	6.605	2.000	1	1	objective
+assumptions	6.605	2.000	1	1	hypothesis
+carefully	6.605	2.000	1	1	approach
+characterized	6.605	2.000	1	1	hypothesis
+clear	6.605	2.000	1	1	hypothesis
+combustions	6.605	2.000	1	1	approach
+conducting	6.605	2.000	1	1	hypothesis
+confirmed	6.605	2.000	1	1	hypothesis
+controlling	6.605	2.000	1	1	approach
+coupling	6.605	2.000	1	1	hypothesis
+decade	6.605	2.000	1	1	hypothesis
+degrees	6.605	2.000	1	1	hypothesis
+deploy	6.605	2.000	1	1	approach
+deployed	6.605	2.000	1	1	approach
+download	6.605	2.000	1	1	approach
+dwell	6.605	2.000	1	1	approach
+elapsed	6.605	2.000	1	1	approach
+equations	6.605	2.000	1	1	hypothesis
+evolution	6.605	2.000	1	1	approach
+extension	6.605	2.000	1	1	hypothesis
+fairly	6.605	2.000	1	1	hypothesis
+fashion	6.605	2.000	1	1	approach
+fill	6.605	2.000	1	1	approach
+filled	6.605	2.000	1	1	approach
+flex-1	6.605	2.000	1	1	objective
+footprint	6.605	2.000	1	1	research_impacts
+freely	6.605	2.000	1	1	approach
+full	6.605	2.000	1	1	hypothesis
+humidity	6.605	2.000	1	1	approach
+inclusion	6.605	2.000	1	1	hypothesis
+independently	6.605	2.000	1	1	approach
+interactions	6.605	2.000	1	1	objective
+itemized	6.605	2.000	1	1	objective
+liquid-phase	6.605	2.000	1	1	objective
+manufacturers	6.605	2.000	1	1	research_impacts
+minimal	6.605	2.000	1	1	research_impacts
+minimized	6.605	2.000	1	1	hypothesis
+navier-stokes	6.605	2.000	1	1	hypothesis
+onto	6.605	2.000	1	1	approach
+overwhelming	6.605	2.000	1	1	research_impacts
+phases	6.605	2.000	1	1	hypothesis
+photography	6.605	2.000	1	1	approach
+pollution	6.605	2.000	1	1	research_impacts
+predetermined	6.605	2.000	1	1	approach
+present	6.605	2.000	1	1	hypothesis
+problem	6.605	2.000	1	1	hypothesis
+sector	6.605	2.000	1	1	research_impacts
+selectable	6.605	2.000	1	1	approach
+selected	6.605	2.000	1	1	approach
+simulate	6.605	2.000	1	1	research_impacts
+solutalcapillary	6.605	2.000	1	1	hypothesis
+soot-shell	6.605	2.000	1	1	objective
+spacing	6.605	2.000	1	1	approach
+stabilize	6.605	2.000	1	1	approach
+stresses	6.605	2.000	1	1	hypothesis
+subside	6.605	2.000	1	1	approach
+sufficient	6.605	2.000	1	1	approach
+sustainable	6.605	2.000	1	1	research_impacts
+target	6.605	2.000	1	1	approach
+thermocapillary	6.605	2.000	1	1	hypothesis
+track	6.605	2.000	1	1	approach
+transitions	6.605	2.000	1	1	hypothesis
+translation	6.605	2.000	1	1	approach
+treating	6.605	2.000	1	1	hypothesis
+validity	6.605	2.000	1	1	hypothesis
+alcohol	6.524	2.500	1	3	publication
+application	6.524	2.500	1	3	publication
+arthur	6.524	2.500	1	3	publication
+comparisons	6.524	2.500	1	3	publication
+component	6.524	2.500	1	3	publication
+dynamic	6.524	2.500	1	3	publication
+fei	6.524	2.500	1	3	publication
+guenter	6.524	2.500	1	3	publication
+justin	6.524	2.500	1	3	publication
+kalyanasundaram	6.524	2.500	1	3	publication
+norbert	6.524	2.500	1	3	publication
+observations	6.524	2.500	1	3	publication
+paczko	6.524	2.500	1	3	publication
+peng	6.524	2.500	1	3	publication
+peters	6.524	2.500	1	3	publication
+scaling	6.524	2.500	1	3	publication
+seshadri	6.524	2.500	1	3	publication
+uncertainties	6.524	2.500	1	3	publication
+appartatus mdca	6.519	2.250	1	2	experiment_hardware
+combustion appartatus	6.519	2.250	1	2	experiment_hardware
+extinguishment microgravity	6.519	2.250	1	2	proposal_title
+size	6.391	4.000	2	10	approach
+alam yc	6.192	1.875	1	1	publication
+analysis diffusion-flame	6.192	1.875	1	1	publication
+analysis dual-flame	6.192	1.875	1	1	publication
+ap reeves	6.192	1.875	1	1	publication
+application burning	6.192	1.875	1	1	publication
+assessment application	6.192	1.875	1	1	publication
+avedisian fl	6.192	1.875	1	1	publication
+avedisian kn	6.192	1.875	1	1	publication
+avedisian xu	6.192	1.875	1	1	publication
+behavior isolated	6.192	1.875	1	1	publication
+benjamin wei	6.192	1.875	1	1	publication
+burning decane	6.192	1.875	1	1	publication
+burning droplets	6.192	1.875	1	1	publication
+calabria massoli	6.192	1.875	1	1	publication
+chemistry near	6.192	1.875	1	1	publication
+circle diameter	6.192	1.875	1	1	publication
+combustion butanol	6.192	1.875	1	1	publication
+combustion elevated	6.192	1.875	1	1	publication
+combustion normal-alkane	6.192	1.875	1	1	publication
+cool-flame dodecane-droplet	6.192	1.875	1	1	publication
+decane hexanol	6.192	1.875	1	1	publication
+diameter measurement	6.192	1.875	1	1	publication
+dietrich calabria	6.192	1.875	1	1	publication
+differential image	6.192	1.875	1	1	publication
+diffusion-flame structures	6.192	1.875	1	1	publication
+dodecane-droplet extinction	6.192	1.875	1	1	publication
+droplets cool-flame	6.192	1.875	1	1	publication
+droplets microgravity	6.192	1.875	1	1	publication
+dryer ct	6.192	1.875	1	1	publication
+dryer ti	6.192	1.875	1	1	publication
+ds shringi	6.192	1.875	1	1	publication
+dual-flame structure	6.192	1.875	1	1	publication
+dwyer bd	6.192	1.875	1	1	publication
+dynamic differential	6.192	1.875	1	1	publication
+extinction burner-supported	6.192	1.875	1	1	publication
+extinction large	6.192	1.875	1	1	publication
+farouk aj	6.192	1.875	1	1	publication
+farouk hicks	6.192	1.875	1	1	publication
+fe alam	6.192	1.875	1	1	publication
+flames scaling	6.192	1.875	1	1	publication
+fuel thermal	6.192	1.875	1	1	publication
+gasoline butanol	6.192	1.875	1	1	publication
+ge ovando	6.192	1.875	1	1	publication
+heptane droplets	6.192	1.875	1	1	publication
+hexanol droplets	6.192	1.875	1	1	publication
+hicks ap	6.192	1.875	1	1	publication
+hicks fl	6.192	1.875	1	1	publication
+image circle	6.192	1.875	1	1	publication
+isolated alkane	6.192	1.875	1	1	publication
+jc prince	6.192	1.875	1	1	publication
+jk rah	6.192	1.875	1	1	publication
+kn trenou	6.192	1.875	1	1	publication
+large n-alkane	6.192	1.875	1	1	publication
+liu farouk	6.192	1.875	1	1	publication
+low-temperature burning	6.192	1.875	1	1	publication
+massoli nayagam	6.192	1.875	1	1	publication
+measurement precision	6.192	1.875	1	1	publication
+microgravity condition	6.192	1.875	1	1	publication
+multistage oscillatory	6.192	1.875	1	1	publication
+n-alkane droplets	6.192	1.875	1	1	publication
+nayagam williams	6.192	1.875	1	1	publication
+near diffusive	6.192	1.875	1	1	publication
+normal-alkane droplets	6.192	1.875	1	1	publication
+observations low-temperature	6.192	1.875	1	1	publication
+oscillatory cool	6.192	1.875	1	1	publication
+oxygen-inert mixtures	6.192	1.875	1	1	publication
+precision assessment	6.192	1.875	1	1	publication
+pressure microgravity	6.192	1.875	1	1	publication
+prince fa	6.192	1.875	1	1	publication
+rah hicks	6.192	1.875	1	1	publication
+rasul ct	6.192	1.875	1	1	publication
+rb rasul	6.192	1.875	1	1	publication
+savas fl	6.192	1.875	1	1	publication
+scaling analysis	6.192	1.875	1	1	publication
+shaw ha	6.192	1.875	1	1	publication
+shringi bd	6.192	1.875	1	1	publication
+shringi ha	6.192	1.875	1	1	publication
+structures burning	6.192	1.875	1	1	publication
+thermal expansion	6.192	1.875	1	1	publication
+trenou jk	6.192	1.875	1	1	publication
+unsteady droplet	6.192	1.875	1	1	publication
+wei jingbin	6.192	1.875	1	1	publication
+williams ge	6.192	1.875	1	1	publication
+xu ct	6.192	1.875	1	1	publication
+xu hicks	6.192	1.875	1	1	publication
+normal	6.116	5.000	2	15	publication
+high	6.105	4.500	2	13	approach,publication
+christopher	5.966	2.500	1	4	publication
+elevated	5.966	2.500	1	4	publication
+helium	5.966	2.500	1	4	publication
+interpretation	5.966	2.500	1	4	publication
+laser-induced	5.966	2.500	1	4	publication
+lee	5.966	2.500	1	4	publication
+lewis	5.966	2.500	1	4	publication
+short	5.966	2.500	1	4	publication
+sizes	5.966	2.500	1	4	publication
+standard	5.966	2.500	1	4	publication
+multi-user droplet	5.871	2.250	1	3	experiment_hardware
+co-investigator co-i	5.795	4.500	6	14	role
+0.4	5.794	2.000	1	2	approach
+acceleration	5.794	2.000	1	2	approach
+adjust	5.794	2.000	1	2	approach
+approximately	5.794	2.000	1	2	approach
+balance	5.794	2.000	1	2	approach
+boundaries	5.794	2.000	1	2	objective
+cleaner	5.794	2.000	1	2	research_impacts
+collection	5.794	2.000	1	2	objective
+combustors	5.794	2.000	1	2	research_impacts
+commence	5.794	2.000	1	2	approach
+complexity	5.794	2.000	1	2	hypothesis
+comprehensive	5.794	2.000	1	2	objective
+contribution	5.794	2.000	1	2	hypothesis
+dispensed	5.794	2.000	1	2	approach
+employed	5.794	2.000	1	2	approach
+extend	5.794	2.000	1	2	objective
+greenhouse	5.794	2.000	1	2	research_impacts
+ignite	5.794	2.000	1	2	approach
+last	5.794	2.000	1	2	hypothesis
+linear	5.794	2.000	1	2	approach
+making	5.794	2.000	1	2	approach
+maximum	5.794	2.000	1	2	research_impacts
+minutes	5.794	2.000	1	2	approach
+needles	5.794	2.000	1	2	approach
+observation	5.794	2.000	1	2	hypothesis
+period	5.794	2.000	1	2	approach
+progress	5.794	2.000	1	2	approach
+real-time	5.794	2.000	1	2	approach
+sophisticated	5.794	2.000	1	2	hypothesis
+summarized	5.794	2.000	1	2	approach
+translating	5.794	2.000	1	2	approach
+type	5.794	2.000	1	2	approach
+uniform	5.794	2.000	1	2	approach
+varying	5.794	2.000	1	2	hypothesis
+verify	5.794	2.000	1	2	approach
+diameters	5.510	2.500	1	5	publication
+ground-based	5.510	2.500	1	5	publication
+imaging	5.510	2.500	1	5	publication
+mechanism	5.510	2.500	1	5	publication
+wang	5.510	2.500	1	5	publication
+cir multi-user droplet	5.449	1.650	1	1	experiment_hardware
+combustion flame extinguishment	5.449	1.650	1	1	proposal_title
+droplet combustion flame	5.449	1.650	1	1	proposal_title
+fundamental droplet combustion	5.449	1.650	1	1	proposal_title
+rack cir multi-user	5.449	1.650	1	1	experiment_hardware
+1-propanol droplets	5.432	1.875	1	2	publication
+acetone inside	5.432	1.875	1	2	publication
+aharon tam	5.432	1.875	1	2	publication
+air helium	5.432	1.875	1	2	publication
+alcohol droplet	5.432	1.875	1	2	publication
+analysis consecutive	5.432	1.875	1	2	publication
+anthony avedisian	5.432	1.875	1	2	publication
+atmosphere n-heptane	5.432	1.875	1	2	publication
+automated analysis	5.432	1.875	1	2	publication
+avedisian dryer	5.432	1.875	1	2	publication
+avedisian hicks	5.432	1.875	1	2	publication
+backlit droplet	5.432	1.875	1	2	publication
+bae avedisian	5.432	1.875	1	2	publication
+benjamin suh	5.432	1.875	1	2	publication
+benjamin vang	5.432	1.875	1	2	publication
+binary mixtures	5.432	1.875	1	2	publication
+biofuels derived	5.432	1.875	1	2	publication
+buoyant convection	5.432	1.875	1	2	publication
+burner-supported spherical	5.432	1.875	1	2	publication
+burning fuel	5.432	1.875	1	2	publication
+butanoate droplet	5.432	1.875	1	2	publication
+camelina tallow	5.432	1.875	1	2	publication
+characteristics alcohol	5.432	1.875	1	2	publication
+characteristics indolene	5.432	1.875	1	2	publication
+characteristics jet-a	5.432	1.875	1	2	publication
+characteristics sub-millimeter	5.432	1.875	1	2	publication
+cheng savas	5.432	1.875	1	2	publication
+choi mun	5.432	1.875	1	2	publication
+christopher lee	5.432	1.875	1	2	publication
+combustion buoyant	5.432	1.875	1	2	publication
+combustion component	5.432	1.875	1	2	publication
+combustion effect	5.432	1.875	1	2	publication
+combustion flammability	5.432	1.875	1	2	publication
+combustion fuel	5.432	1.875	1	2	publication
+combustion methyl	5.432	1.875	1	2	publication
+combustion n-heptane	5.432	1.875	1	2	publication
+combustion numerical	5.432	1.875	1	2	publication
+combustion propanol	5.432	1.875	1	2	publication
+combustion reduced	5.432	1.875	1	2	publication
+combustion standard	5.432	1.875	1	2	publication
+combustion submillimeter	5.432	1.875	1	2	publication
+combustion uncertainties	5.432	1.875	1	2	publication
+commercial grade	5.432	1.875	1	2	publication
+commercial unleaded	5.432	1.875	1	2	publication
+comparison burning	5.432	1.875	1	2	publication
+comparison spherical	5.432	1.875	1	2	publication
+comparisons detailed	5.432	1.875	1	2	publication
+component miscible	5.432	1.875	1	2	publication
+composition measurements	5.432	1.875	1	2	publication
+consecutive images	5.432	1.875	1	2	publication
+convection flame	5.432	1.875	1	2	publication
+convection-free droplet	5.432	1.875	1	2	publication
+daniel hicks	5.432	1.875	1	2	publication
+daniel nayagam	5.432	1.875	1	2	publication
+decanoate droplets	5.432	1.875	1	2	publication
+dembia christopher	5.432	1.875	1	2	publication
+deployment needle	5.432	1.875	1	2	publication
+derived camelina	5.432	1.875	1	2	publication
+developing surrogates	5.432	1.875	1	2	publication
+diameter effects	5.432	1.875	1	2	publication
+dietrich pv	5.432	1.875	1	2	publication
+dioxide enriched	5.432	1.875	1	2	publication
+droplet flame	5.432	1.875	1	2	publication
+droplet flammability	5.432	1.875	1	2	publication
+droplet images	5.432	1.875	1	2	publication
+droplets binary	5.432	1.875	1	2	publication
+droplets carbon	5.432	1.875	1	2	publication
+droplets comparisons	5.432	1.875	1	2	publication
+droplets convection	5.432	1.875	1	2	publication
+droplets induced	5.432	1.875	1	2	publication
+dzik justin	5.432	1.875	1	2	publication
+effect fibers	5.432	1.875	1	2	publication
+effect tethering	5.432	1.875	1	2	publication
+effects convection-free	5.432	1.875	1	2	publication
+effects fibers	5.432	1.875	1	2	publication
+effects reduced	5.432	1.875	1	2	publication
+enriched environments	5.432	1.875	1	2	publication
+environments normal	5.432	1.875	1	2	publication
+environments reduced	5.432	1.875	1	2	publication
+environments reduced-gravity	5.432	1.875	1	2	publication
+ethanol droplets	5.432	1.875	1	2	publication
+evaporating burning	5.432	1.875	1	2	publication
+evaporation fiber-supported	5.432	1.875	1	2	publication
+experimental initial	5.432	1.875	1	2	publication
+experimental observations	5.432	1.875	1	2	publication
+extinction air	5.432	1.875	1	2	publication
+extinction characteristics	5.432	1.875	1	2	publication
+extinction diameters	5.432	1.875	1	2	publication
+farouk dryer	5.432	1.875	1	2	publication
+farouk liu	5.432	1.875	1	2	publication
+fei shaw	5.432	1.875	1	2	publication
+ferkul hicks	5.432	1.875	1	2	publication
+fiber burning	5.432	1.875	1	2	publication
+fiber effects	5.432	1.875	1	2	publication
+fiber optic	5.432	1.875	1	2	publication
+fiber-supported droplets	5.432	1.875	1	2	publication
+fiber-supported n-heptane	5.432	1.875	1	2	publication
+fibers evaporation	5.432	1.875	1	2	publication
+fibers micro-convection	5.432	1.875	1	2	publication
+fibers vaporizing	5.432	1.875	1	2	publication
+flame characteristics	5.432	1.875	1	2	publication
+flames two-stage	5.432	1.875	1	2	publication
+flammability combustion	5.432	1.875	1	2	publication
+flammability n-heptane	5.432	1.875	1	2	publication
+flows shape	5.432	1.875	1	2	publication
+fluorescence imaging	5.432	1.875	1	2	publication
+frederick farouk	5.432	1.875	1	2	publication
+free droplet	5.432	1.875	1	2	publication
+fuels role	5.432	1.875	1	2	publication
+gasoline droplets	5.432	1.875	1	2	publication
+gasoline mixture	5.432	1.875	1	2	publication
+ghata bd	5.432	1.875	1	2	publication
+ghata narugopal	5.432	1.875	1	2	publication
+grade gasoline	5.432	1.875	1	2	publication
+gravity ambient	5.432	1.875	1	2	publication
+gravity fiber	5.432	1.875	1	2	publication
+heated propanol-acetone	5.432	1.875	1	2	publication
+heptane ethanol	5.432	1.875	1	2	publication
+heptane methanol	5.432	1.875	1	2	publication
+high pressures	5.432	1.875	1	2	publication
+hyun kyu	5.432	1.875	1	2	publication
+ignition n-heptane	5.432	1.875	1	2	publication
+imaging acetone	5.432	1.875	1	2	publication
+indolene commercial	5.432	1.875	1	2	publication
+influence gravity	5.432	1.875	1	2	publication
+influences fibers	5.432	1.875	1	2	publication
+inside evaporating	5.432	1.875	1	2	publication
+interpretation backlit	5.432	1.875	1	2	publication
+iso-octane n-heptane	5.432	1.875	1	2	publication
+isolated n-heptane	5.432	1.875	1	2	publication
+jet-a biofuels	5.432	1.875	1	2	publication
+justin nayagam	5.432	1.875	1	2	publication
+kyu choi	5.432	1.875	1	2	publication
+laser-induced fluorescence	5.432	1.875	1	2	publication
+lee liu	5.432	1.875	1	2	publication
+liquid droplets	5.432	1.875	1	2	publication
+liquid transportation	5.432	1.875	1	2	publication
+liu savas	5.432	1.875	1	2	publication
+liu xu	5.432	1.875	1	2	publication
+low-temperature ignition	5.432	1.875	1	2	publication
+measurements heated	5.432	1.875	1	2	publication
+mechanism low-temperature	5.432	1.875	1	2	publication
+methanol droplets	5.432	1.875	1	2	publication
+methyl butanoate	5.432	1.875	1	2	publication
+methyl decanoate	5.432	1.875	1	2	publication
+michael ferkul	5.432	1.875	1	2	publication
+michael williams	5.432	1.875	1	2	publication
+micro-convection droplet	5.432	1.875	1	2	publication
+microgravity detailed	5.432	1.875	1	2	publication
+microgravity droplet	5.432	1.875	1	2	publication
+miscible mixtures	5.432	1.875	1	2	publication
+mixture droplets	5.432	1.875	1	2	publication
+mixtures microgravity	5.432	1.875	1	2	publication
+mixtures n-heptane	5.432	1.875	1	2	publication
+mixtures surrogates	5.432	1.875	1	2	publication
+modeling effects	5.432	1.875	1	2	publication
+modeling n-heptane	5.432	1.875	1	2	publication
+modeling reduced	5.432	1.875	1	2	publication
+modeling unsupported	5.432	1.875	1	2	publication
+mun liu	5.432	1.875	1	2	publication
+n-butanol droplet	5.432	1.875	1	2	publication
+n-decane ground-based	5.432	1.875	1	2	publication
+n-heptane 1-propanol	5.432	1.875	1	2	publication
+n-heptane high	5.432	1.875	1	2	publication
+n-heptane iso-octane	5.432	1.875	1	2	publication
+n-heptane n-octane	5.432	1.875	1	2	publication
+n-heptane toluene	5.432	1.875	1	2	publication
+n-octane n-decane	5.432	1.875	1	2	publication
+narugopal shaw	5.432	1.875	1	2	publication
+needle retraction	5.432	1.875	1	2	publication
+nonane droplet	5.432	1.875	1	2	publication
+number effects	5.432	1.875	1	2	publication
+optic spectroscopy	5.432	1.875	1	2	publication
+oscillations liquid	5.432	1.875	1	2	publication
+oxygen lewis	5.432	1.875	1	2	publication
+oxygen-inert environments	5.432	1.875	1	2	publication
+paul dryer	5.432	1.875	1	2	publication
+pressure combustion	5.432	1.875	1	2	publication
+propanol droplet	5.432	1.875	1	2	publication
+propanol droplets	5.432	1.875	1	2	publication
+propanol-acetone droplets	5.432	1.875	1	2	publication
+rate flame	5.432	1.875	1	2	publication
+reduced normal	5.432	1.875	1	2	publication
+role spherically	5.432	1.875	1	2	publication
+savas anthony	5.432	1.875	1	2	publication
+savas avedisian	5.432	1.875	1	2	publication
+shape oscillations	5.432	1.875	1	2	publication
+shaw peng	5.432	1.875	1	2	publication
+shaw wang	5.432	1.875	1	2	publication
+short mechanism	5.432	1.875	1	2	publication
+simulation unsteady	5.432	1.875	1	2	publication
+sized methyl	5.432	1.875	1	2	publication
+sizes burning	5.432	1.875	1	2	publication
+spectroscopy composition	5.432	1.875	1	2	publication
+spherically symmetrical	5.432	1.875	1	2	publication
+standard atmosphere	5.432	1.875	1	2	publication
+sub-millimeter droplets	5.432	1.875	1	2	publication
+sub-millimeter sized	5.432	1.875	1	2	publication
+submillimeter free	5.432	1.875	1	2	publication
+submillimeter heptane	5.432	1.875	1	2	publication
+suh hyun	5.432	1.875	1	2	publication
+surrogates jet-a	5.432	1.875	1	2	publication
+surrogates liquid	5.432	1.875	1	2	publication
+symmetrical combustion	5.432	1.875	1	2	publication
+tam shaw	5.432	1.875	1	2	publication
+tanvir shaw	5.432	1.875	1	2	publication
+temperature fiber	5.432	1.875	1	2	publication
+tethering fiber	5.432	1.875	1	2	publication
+thomas williams	5.432	1.875	1	2	publication
+toluene commercial	5.432	1.875	1	2	publication
+transportation fuels	5.432	1.875	1	2	publication
+two-stage combustion	5.432	1.875	1	2	publication
+uncertainties droplet	5.432	1.875	1	2	publication
+unleaded gasoline	5.432	1.875	1	2	publication
+unsteady flows	5.432	1.875	1	2	publication
+unsupported fiber-supported	5.432	1.875	1	2	publication
+vang chang	5.432	1.875	1	2	publication
+vaporizing fuel	5.432	1.875	1	2	publication
+vedha hicks	5.432	1.875	1	2	publication
+vedha williams	5.432	1.875	1	2	publication
+xiao wei	5.432	1.875	1	2	publication
+xu yuhao	5.432	1.875	1	2	publication
+yan jin	5.432	1.875	1	2	publication
+yu fei	5.432	1.875	1	2	publication
+yuhao avedisian	5.432	1.875	1	2	publication
+flight	5.427	4.000	2	13	hypothesis,objective
+0.5	5.219	2.000	1	3	approach
+contribute	5.219	2.000	1	3	research_impacts
+convective	5.219	2.000	1	3	hypothesis
+determined	5.219	2.000	1	3	approach
+diluent	5.219	2.000	1	3	approach
+environmental	5.219	2.000	1	3	objective
+examine	5.219	2.000	1	3	objective
+fluid	5.219	2.000	1	3	approach
+gained	5.219	2.000	1	3	research_impacts
+generated	5.219	2.000	1	3	approach
+internal	5.219	2.000	1	3	approach
+mixing	5.219	2.000	1	3	objective
+pollutant	5.219	2.000	1	3	research_impacts
+production	5.219	2.000	1	3	research_impacts
+ranging	5.219	2.000	1	3	approach
+stabilized	5.219	2.000	1	3	approach
+view	5.219	2.000	1	3	approach
+future	5.151	4.000	2	14	research_impacts
+dioxide	5.125	2.500	1	6	publication
+large	5.125	2.500	1	6	publication
+shape	5.125	2.500	1	6	publication
+cir	5.079	3.000	1	9	experiment_hardware
+rack	5.079	3.000	1	9	experiment_hardware
+0.1 0.4	4.954	1.500	1	1	approach
+0.4 mole	4.954	1.500	1	1	approach
+3.0 atm	4.954	1.500	1	1	approach
+acceleration droplet	4.954	1.500	1	1	approach
+addition microgravity	4.954	1.500	1	1	hypothesis
+adjust experimental	4.954	1.500	1	1	approach
+allowing clear	4.954	1.500	1	1	hypothesis
+ambient gas	4.954	1.500	1	1	approach
+amount fuel	4.954	1.500	1	1	approach
+amount time	4.954	1.500	1	1	approach
+analyze independently	4.954	1.500	1	1	approach
+analyze soot	4.954	1.500	1	1	objective
+approach summarized	4.954	1.500	1	1	approach
+appropriate atmosphere	4.954	1.500	1	1	approach
+approximately minutes	4.954	1.500	1	1	approach
+approximations made	4.954	1.500	1	1	hypothesis
+arrays validate	4.954	1.500	1	1	objective
+assumptions hypothesis	4.954	1.500	1	1	hypothesis
+atm 3.0	4.954	1.500	1	1	approach
+atm o2	4.954	1.500	1	1	approach
+atmosphere varied	4.954	1.500	1	1	approach
+balance settling	4.954	1.500	1	1	approach
+behavior droplet	4.954	1.500	1	1	objective
+behavior real	4.954	1.500	1	1	research_impacts
+benchmark conducting	4.954	1.500	1	1	hypothesis
+better fuels	4.954	1.500	1	1	research_impacts
+bi-component fuel	4.954	1.500	1	1	objective
+bi-component mixtures	4.954	1.500	1	1	hypothesis
+binary linear	4.954	1.500	1	1	approach
+boundaries analyze	4.954	1.500	1	1	objective
+buoyancy minimized	4.954	1.500	1	1	hypothesis
+camera video	4.954	1.500	1	1	approach
+carbon footprint	4.954	1.500	1	1	research_impacts
+carefully controlling	4.954	1.500	1	1	approach
+chamber environment	4.954	1.500	1	1	approach
+chamber filled	4.954	1.500	1	1	approach
+chamber gases	4.954	1.500	1	1	approach
+chamber selected	4.954	1.500	1	1	approach
+characteristics bi-component	4.954	1.500	1	1	objective
+characterized function	4.954	1.500	1	1	hypothesis
+chemistry radiation	4.954	1.500	1	1	hypothesis
+cleaner combustion	4.954	1.500	1	1	research_impacts
+clear observation	4.954	1.500	1	1	hypothesis
+collection microgravity	4.954	1.500	1	1	objective
+color camera	4.954	1.500	1	1	approach
+combustion comprehensive	4.954	1.500	1	1	objective
+combustion developed	4.954	1.500	1	1	hypothesis
+combustions track	4.954	1.500	1	1	approach
+combustor conditions	4.954	1.500	1	1	objective
+combustor designs	4.954	1.500	1	1	research_impacts
+combustors development	4.954	1.500	1	1	research_impacts
+commence time	4.954	1.500	1	1	approach
+complexity problem	4.954	1.500	1	1	hypothesis
+composition ambient	4.954	1.500	1	1	approach
+comprehensive experimental	4.954	1.500	1	1	objective
+concentration 0.1	4.954	1.500	1	1	approach
+conditions needed	4.954	1.500	1	1	approach
+conditions order	4.954	1.500	1	1	objective
+conditions real	4.954	1.500	1	1	objective
+conditions well	4.954	1.500	1	1	objective
+conducting microgravity	4.954	1.500	1	1	hypothesis
+confirmed benchmark	4.954	1.500	1	1	hypothesis
+contribute sustainable	4.954	1.500	1	1	research_impacts
+contribution inclusion	4.954	1.500	1	1	hypothesis
+controlled fashion	4.954	1.500	1	1	approach
+controlling droplet	4.954	1.500	1	1	approach
+convective droplet	4.954	1.500	1	1	hypothesis
+coupling gas	4.954	1.500	1	1	hypothesis
+crucial reducing	4.954	1.500	1	1	research_impacts
+decade key	4.954	1.500	1	1	hypothesis
+degrees approximations	4.954	1.500	1	1	hypothesis
+deploy droplet	4.954	1.500	1	1	approach
+deployed sufficient	4.954	1.500	1	1	approach
+deployment ignition	4.954	1.500	1	1	approach
+deployment subside	4.954	1.500	1	1	approach
+designs minimal	4.954	1.500	1	1	research_impacts
+detailed experimental	4.954	1.500	1	1	objective
+determine influence	4.954	1.500	1	1	objective
+determined pressure	4.954	1.500	1	1	approach
+developed last	4.954	1.500	1	1	hypothesis
+developing better	4.954	1.500	1	1	research_impacts
+development surrogates	4.954	1.500	1	1	research_impacts
+diffusive extension	4.954	1.500	1	1	hypothesis
+diluent gas	4.954	1.500	1	1	approach
+dispensed dispensing	4.954	1.500	1	1	approach
+dispensing needles	4.954	1.500	1	1	approach
+dispensing predetermined	4.954	1.500	1	1	approach
+download color	4.954	1.500	1	1	approach
+droplet arrays	4.954	1.500	1	1	objective
+droplet carefully	4.954	1.500	1	1	approach
+droplet characterized	4.954	1.500	1	1	hypothesis
+droplet deployment	4.954	1.500	1	1	approach
+droplet diameter	4.954	1.500	1	1	approach
+droplet droplet	4.954	1.500	1	1	approach
+droplet freely	4.954	1.500	1	1	approach
+droplet initial	4.954	1.500	1	1	approach
+droplet interactions	4.954	1.500	1	1	objective
+droplet internal	4.954	1.500	1	1	approach
+droplet motion	4.954	1.500	1	1	approach
+droplet spacing	4.954	1.500	1	1	approach
+droplet stabilize	4.954	1.500	1	1	approach
+droplet translation	4.954	1.500	1	1	approach
+droplets examine	4.954	1.500	1	1	objective
+due inherent	4.954	1.500	1	1	hypothesis
+dwell period	4.954	1.500	1	1	approach
+dynamics determine	4.954	1.500	1	1	objective
+efficiency developing	4.954	1.500	1	1	research_impacts
+efficient cleaner	4.954	1.500	1	1	research_impacts
+elapsed prior	4.954	1.500	1	1	approach
+emissions improving	4.954	1.500	1	1	research_impacts
+emissions quantitative	4.954	1.500	1	1	research_impacts
+employed order	4.954	1.500	1	1	approach
+energy production	4.954	1.500	1	1	research_impacts
+engine manufacturers	4.954	1.500	1	1	research_impacts
+engine models	4.954	1.500	1	1	research_impacts
+ensure temperature	4.954	1.500	1	1	approach
+environment effects	4.954	1.500	1	1	hypothesis
+environment ignite	4.954	1.500	1	1	approach
+environment phenomena	4.954	1.500	1	1	hypothesis
+environment recorded	4.954	1.500	1	1	approach
+environmental conditions	4.954	1.500	1	1	objective
+equations gas-phase	4.954	1.500	1	1	hypothesis
+evaluation performance	4.954	1.500	1	1	research_impacts
+evolution high	4.954	1.500	1	1	approach
+examine steady	4.954	1.500	1	1	objective
+experimental collection	4.954	1.500	1	1	objective
+experimental conditions	4.954	1.500	1	1	approach
+experimental objectives	4.954	1.500	1	1	objective
+extend flex-1	4.954	1.500	1	1	objective
+extension flame	4.954	1.500	1	1	hypothesis
+fairly sophisticated	4.954	1.500	1	1	hypothesis
+fashion monitor	4.954	1.500	1	1	approach
+fiber tests	4.954	1.500	1	1	approach
+field due	4.954	1.500	1	1	hypothesis
+field view	4.954	1.500	1	1	approach
+fill combustion	4.954	1.500	1	1	approach
+filled appropriate	4.954	1.500	1	1	approach
+flame evolution	4.954	1.500	1	1	approach
+flame primary	4.954	1.500	1	1	hypothesis
+flex-1 fuels	4.954	1.500	1	1	objective
+flex-2 bi-component	4.954	1.500	1	1	hypothesis
+flex-2 flight	4.954	1.500	1	1	objective
+flex-2 fuel	4.954	1.500	1	1	approach
+flight benchmark	4.954	1.500	1	1	hypothesis
+flight extend	4.954	1.500	1	1	objective
+followed dispensing	4.954	1.500	1	1	approach
+followed initiating	4.954	1.500	1	1	approach
+footprint maximum	4.954	1.500	1	1	research_impacts
+formation process	4.954	1.500	1	1	objective
+fraction diluent	4.954	1.500	1	1	approach
+fraction soot-shell	4.954	1.500	1	1	objective
+freely deployed	4.954	1.500	1	1	approach
+fuel target	4.954	1.500	1	1	approach
+fuel type	4.954	1.500	1	1	approach
+fuels combustors	4.954	1.500	1	1	research_impacts
+fuels contribute	4.954	1.500	1	1	research_impacts
+fuels environmental	4.954	1.500	1	1	objective
+fuels overwhelming	4.954	1.500	1	1	research_impacts
+fuels simulate	4.954	1.500	1	1	research_impacts
+fuels validation	4.954	1.500	1	1	research_impacts
+full navier-stokes	4.954	1.500	1	1	hypothesis
+function thermocapillary	4.954	1.500	1	1	hypothesis
+fundamental combustion	4.954	1.500	1	1	hypothesis
+future combustor	4.954	1.500	1	1	research_impacts
+future fuels	4.954	1.500	1	1	research_impacts
+gained lead	4.954	1.500	1	1	research_impacts
+gas composition	4.954	1.500	1	1	approach
+gas emissions	4.954	1.500	1	1	research_impacts
+gas liquid	4.954	1.500	1	1	hypothesis
+gas making	4.954	1.500	1	1	approach
+gas mixtures	4.954	1.500	1	1	approach
+gas-phase flow	4.954	1.500	1	1	hypothesis
+gas-phase phenomena	4.954	1.500	1	1	objective
+gases stabilized	4.954	1.500	1	1	approach
+generated translating	4.954	1.500	1	1	approach
+goal flex-2	4.954	1.500	1	1	objective
+goal flight	4.954	1.500	1	1	hypothesis
+high speed	4.954	1.500	1	1	approach
+humidity fill	4.954	1.500	1	1	approach
+hypothesis simulation	4.954	1.500	1	1	hypothesis
+ignite droplet	4.954	1.500	1	1	approach
+ignition overall	4.954	1.500	1	1	approach
+ignitor selectable	4.954	1.500	1	1	approach
+improving fuel	4.954	1.500	1	1	research_impacts
+inclusion full	4.954	1.500	1	1	hypothesis
+independently varied	4.954	1.500	1	1	approach
+influence droplet	4.954	1.500	1	1	objective
+inherent complexity	4.954	1.500	1	1	hypothesis
+initial size	4.954	1.500	1	1	approach
+initiating power	4.954	1.500	1	1	approach
+initiating test	4.954	1.500	1	1	approach
+interactions flammability	4.954	1.500	1	1	objective
+internal fluid	4.954	1.500	1	1	approach
+itemized role	4.954	1.500	1	1	objective
+jet engine	4.954	1.500	1	1	research_impacts
+key contribution	4.954	1.500	1	1	hypothesis
+last decade	4.954	1.500	1	1	hypothesis
+limits extinction	4.954	1.500	1	1	objective
+linear array	4.954	1.500	1	1	approach
+liquid gas-phase	4.954	1.500	1	1	objective
+liquid phases	4.954	1.500	1	1	hypothesis
+liquid-phase mixing	4.954	1.500	1	1	objective
+made treating	4.954	1.500	1	1	hypothesis
+making balance	4.954	1.500	1	1	approach
+manufacturers prior	4.954	1.500	1	1	research_impacts
+maximum fuel	4.954	1.500	1	1	research_impacts
+mechanisms boundaries	4.954	1.500	1	1	objective
+minimal carbon	4.954	1.500	1	1	research_impacts
+minimized droplet	4.954	1.500	1	1	hypothesis
+minutes elapsed	4.954	1.500	1	1	approach
+mixing burning	4.954	1.500	1	1	objective
+mixture humidity	4.954	1.500	1	1	approach
+mixtures addition	4.954	1.500	1	1	hypothesis
+mixtures deploy	4.954	1.500	1	1	approach
+mixtures pure	4.954	1.500	1	1	research_impacts
+models detailed	4.954	1.500	1	1	objective
+models droplet	4.954	1.500	1	1	objective
+models engine	4.954	1.500	1	1	research_impacts
+monitor adjust	4.954	1.500	1	1	approach
+monitor combustions	4.954	1.500	1	1	approach
+motion commence	4.954	1.500	1	1	approach
+motion induced	4.954	1.500	1	1	approach
+navier-stokes equations	4.954	1.500	1	1	hypothesis
+near real	4.954	1.500	1	1	approach
+near real-time	4.954	1.500	1	1	approach
+needed analyze	4.954	1.500	1	1	approach
+needles retracted	4.954	1.500	1	1	approach
+nnx16ar09a	4.954	1.500	1	1	funding
+objectives itemized	4.954	1.500	1	1	objective
+observation fundamental	4.954	1.500	1	1	hypothesis
+onto fiber	4.954	1.500	1	1	approach
+order ensure	4.954	1.500	1	1	approach
+order validate	4.954	1.500	1	1	objective
+order verify	4.954	1.500	1	1	approach
+overall approach	4.954	1.500	1	1	approach
+overall progress	4.954	1.500	1	1	approach
+overwhelming energy	4.954	1.500	1	1	research_impacts
+parameters determined	4.954	1.500	1	1	approach
+parameters flex-2	4.954	1.500	1	1	approach
+performance future	4.954	1.500	1	1	research_impacts
+period seconds	4.954	1.500	1	1	approach
+phases validity	4.954	1.500	1	1	hypothesis
+phenomena pure	4.954	1.500	1	1	objective
+phenomena transitions	4.954	1.500	1	1	hypothesis
+photography monitor	4.954	1.500	1	1	approach
+pollution greenhouse	4.954	1.500	1	1	research_impacts
+power ignitor	4.954	1.500	1	1	approach
+predetermined amount	4.954	1.500	1	1	approach
+present flex-2	4.954	1.500	1	1	hypothesis
+pressure chamber	4.954	1.500	1	1	approach
+pressure droplet	4.954	1.500	1	1	approach
+prior droplet	4.954	1.500	1	1	research_impacts
+prior initiating	4.954	1.500	1	1	approach
+problem varying	4.954	1.500	1	1	hypothesis
+process soot	4.954	1.500	1	1	objective
+processes present	4.954	1.500	1	1	hypothesis
+production future	4.954	1.500	1	1	research_impacts
+progress pressure	4.954	1.500	1	1	approach
+pure fuel	4.954	1.500	1	1	objective
+pure fuels	4.954	1.500	1	1	research_impacts
+quantitative evaluation	4.954	1.500	1	1	research_impacts
+radiation coupling	4.954	1.500	1	1	hypothesis
+radiative diffusive	4.954	1.500	1	1	hypothesis
+ranging seconds	4.954	1.500	1	1	approach
+real combustor	4.954	1.500	1	1	objective
+real fuels	4.954	1.500	1	1	research_impacts
+real time	4.954	1.500	1	1	approach
+real-time download	4.954	1.500	1	1	approach
+recorded near	4.954	1.500	1	1	approach
+reducing pollution	4.954	1.500	1	1	research_impacts
+retracted dwell	4.954	1.500	1	1	approach
+retracted field	4.954	1.500	1	1	approach
+retracted near	4.954	1.500	1	1	approach
+role liquid-phase	4.954	1.500	1	1	objective
+seconds droplet	4.954	1.500	1	1	approach
+seconds ignitor	4.954	1.500	1	1	approach
+sector insights	4.954	1.500	1	1	research_impacts
+selectable amount	4.954	1.500	1	1	approach
+selected gas	4.954	1.500	1	1	approach
+simulate behavior	4.954	1.500	1	1	research_impacts
+simulation confirmed	4.954	1.500	1	1	hypothesis
+simulations convective	4.954	1.500	1	1	hypothesis
+size binary	4.954	1.500	1	1	approach
+size onto	4.954	1.500	1	1	approach
+solutalcapillary stresses	4.954	1.500	1	1	hypothesis
+soot-shell dynamics	4.954	1.500	1	1	objective
+spacing initial	4.954	1.500	1	1	approach
+speed photography	4.954	1.500	1	1	approach
+stabilize microgravity	4.954	1.500	1	1	approach
+stabilized settling	4.954	1.500	1	1	approach
+steady unsteady	4.954	1.500	1	1	objective
+stresses allowing	4.954	1.500	1	1	hypothesis
+subside followed	4.954	1.500	1	1	approach
+successful droplet	4.954	1.500	1	1	approach
+sufficient fuel	4.954	1.500	1	1	approach
+summarized test	4.954	1.500	1	1	approach
+surrogates mixtures	4.954	1.500	1	1	research_impacts
+sustainable energy	4.954	1.500	1	1	research_impacts
+target droplet	4.954	1.500	1	1	approach
+technologies crucial	4.954	1.500	1	1	research_impacts
+temperature chamber	4.954	1.500	1	1	approach
+temperature fuel	4.954	1.500	1	1	approach
+temperature pressure	4.954	1.500	1	1	approach
+test order	4.954	1.500	1	1	approach
+test parameters	4.954	1.500	1	1	approach
+tests droplet	4.954	1.500	1	1	approach
+thermocapillary solutalcapillary	4.954	1.500	1	1	hypothesis
+time approximately	4.954	1.500	1	1	approach
+time followed	4.954	1.500	1	1	approach
+time ignitor	4.954	1.500	1	1	approach
+time overall	4.954	1.500	1	1	approach
+time ranging	4.954	1.500	1	1	approach
+track flame	4.954	1.500	1	1	approach
+transitions radiative	4.954	1.500	1	1	hypothesis
+translation velocity	4.954	1.500	1	1	approach
+transportation sector	4.954	1.500	1	1	research_impacts
+treating chemistry	4.954	1.500	1	1	hypothesis
+type ambient	4.954	1.500	1	1	approach
+uniform controlled	4.954	1.500	1	1	approach
+unsteady liquid	4.954	1.500	1	1	objective
+validate theoretical	4.954	1.500	1	1	objective
+validation jet	4.954	1.500	1	1	research_impacts
+validity assumptions	4.954	1.500	1	1	hypothesis
+varied experimental	4.954	1.500	1	1	approach
+varied pressure	4.954	1.500	1	1	approach
+varying degrees	4.954	1.500	1	1	hypothesis
+velocity acceleration	4.954	1.500	1	1	approach
+verify successful	4.954	1.500	1	1	approach
+video employed	4.954	1.500	1	1	approach
+view flow	4.954	1.500	1	1	approach
+well benchmark	4.954	1.500	1	1	objective
+burning rates	4.893	1.875	1	3	publication
+chemistry quasi-steady	4.893	1.875	1	3	publication
+combustion extinction	4.893	1.875	1	3	publication
+conditions numerical	4.893	1.875	1	3	publication
+cool flame	4.893	1.875	1	3	publication
+cool-flame extinction	4.893	1.875	1	3	publication
+dietrich hicks	4.893	1.875	1	3	publication
+elevated pressure	4.893	1.875	1	3	publication
+extinction n-alkane	4.893	1.875	1	3	publication
+extinction n-heptane	4.893	1.875	1	3	publication
+flames quasi-steady	4.893	1.875	1	3	publication
+forman arthur	4.893	1.875	1	3	publication
+guenter peters	4.893	1.875	1	3	publication
+ignition combustion	4.893	1.875	1	3	publication
+kalyanasundaram williams	4.893	1.875	1	3	publication
+microgravity cool	4.893	1.875	1	3	publication
+n-alkane droplet	4.893	1.875	1	3	publication
+norbert seshadri	4.893	1.875	1	3	publication
+paczko guenter	4.893	1.875	1	3	publication
+peters norbert	4.893	1.875	1	3	publication
+quasi-steady alkane	4.893	1.875	1	3	publication
+role cool-flame	4.893	1.875	1	3	publication
+seshadri kalyanasundaram	4.893	1.875	1	3	publication
+spherical flame	4.893	1.875	1	3	publication
+buoyant	4.791	2.500	1	7	publication
+thermal	4.791	2.500	1	7	publication
+combustion appartatus mdca	4.780	1.650	1	2	experiment_hardware
+droplet combustion appartatus	4.780	1.650	1	2	experiment_hardware
+flame extinguishment microgravity	4.780	1.650	1	2	proposal_title
+crucial	4.773	2.000	1	4	research_impacts
+developed	4.773	2.000	1	4	hypothesis
+ensure	4.773	2.000	1	4	approach
+gases	4.773	2.000	1	4	approach
+improving	4.773	2.000	1	4	research_impacts
+inherent	4.773	2.000	1	4	hypothesis
+made	4.773	2.000	1	4	hypothesis
+quantitative	4.773	2.000	1	4	research_impacts
+reducing	4.773	2.000	1	4	research_impacts
+speed	4.773	2.000	1	4	approach
+validation	4.773	2.000	1	4	research_impacts
+well	4.773	2.000	1	4	objective
+flow	4.650	4.000	2	16	approach,hypothesis
+test	4.650	4.000	2	16	approach
+university	4.587	3.750	5	15	affiliation
+aj savas fl	4.541	1.375	1	1	publication
+alam yc liu	4.541	1.375	1	1	publication
+alkane droplet combustion	4.541	1.375	1	1	publication
+analysis diffusion-flame structures	4.541	1.375	1	1	publication
+analysis dual-flame structure	4.541	1.375	1	1	publication
+application burning droplets	4.541	1.375	1	1	publication
+assessment application burning	4.541	1.375	1	1	publication
+avedisian fl dryer	4.541	1.375	1	1	publication
+avedisian kn trenou	4.541	1.375	1	1	publication
+avedisian xu hicks	4.541	1.375	1	1	publication
+bd shaw ha	4.541	1.375	1	1	publication
+behavior isolated alkane	4.541	1.375	1	1	publication
+benjamin wei jingbin	4.541	1.375	1	1	publication
+burke-schumann analysis diffusion-flame	4.541	1.375	1	1	publication
+burke-schumann analysis dual-flame	4.541	1.375	1	1	publication
+burning decane hexanol	4.541	1.375	1	1	publication
+butanol gasoline butanol	4.541	1.375	1	1	publication
+butanol gasoline mixture	4.541	1.375	1	1	publication
+calabria massoli nayagam	4.541	1.375	1	1	publication
+chemistry near diffusive	4.541	1.375	1	1	publication
+circle diameter measurement	4.541	1.375	1	1	publication
+combustion butanol gasoline	4.541	1.375	1	1	publication
+combustion elevated pressure	4.541	1.375	1	1	publication
+combustion fuel thermal	4.541	1.375	1	1	publication
+combustion methanol heptane	4.541	1.375	1	1	publication
+combustion normal-alkane droplets	4.541	1.375	1	1	publication
+cool-flame chemistry near	4.541	1.375	1	1	publication
+cool-flame dodecane-droplet extinction	4.541	1.375	1	1	publication
+ct avedisian fl	4.541	1.375	1	1	publication
+ct avedisian hicks	4.541	1.375	1	1	publication
+ct avedisian kn	4.541	1.375	1	1	publication
+ct avedisian xu	4.541	1.375	1	1	publication
+decane hexanol droplets	4.541	1.375	1	1	publication
+diameter measurement precision	4.541	1.375	1	1	publication
+dietrich calabria massoli	4.541	1.375	1	1	publication
+differential image circle	4.541	1.375	1	1	publication
+diffusion flames scaling	4.541	1.375	1	1	publication
+diffusion-flame structures burning	4.541	1.375	1	1	publication
+dodecane-droplet extinction diameters	4.541	1.375	1	1	publication
+droplet combustion elevated	4.541	1.375	1	1	publication
+droplet combustion fuel	4.541	1.375	1	1	publication
+droplets cool-flame chemistry	4.541	1.375	1	1	publication
+droplets oxygen-inert mixtures	4.541	1.375	1	1	publication
+dryer ct avedisian	4.541	1.375	1	1	publication
+dryer ti farouk	4.541	1.375	1	1	publication
+ds shringi bd	4.541	1.375	1	1	publication
+dual-flame structure burning	4.541	1.375	1	1	publication
+dwyer bd shaw	4.541	1.375	1	1	publication
+dynamic differential image	4.541	1.375	1	1	publication
+elevated pressure microgravity	4.541	1.375	1	1	publication
+experimental observations low-temperature	4.541	1.375	1	1	publication
+extinction burner-supported spherical	4.541	1.375	1	1	publication
+extinction large n-alkane	4.541	1.375	1	1	publication
+fa williams ge	4.541	1.375	1	1	publication
+farouk aj savas	4.541	1.375	1	1	publication
+farouk hicks fl	4.541	1.375	1	1	publication
+fe alam yc	4.541	1.375	1	1	publication
+fl dryer ct	4.541	1.375	1	1	publication
+fl dryer ti	4.541	1.375	1	1	publication
+flame behavior isolated	4.541	1.375	1	1	publication
+flames scaling analysis	4.541	1.375	1	1	publication
+fuel thermal expansion	4.541	1.375	1	1	publication
+gasoline butanol gasoline	4.541	1.375	1	1	publication
+ha dwyer bd	4.541	1.375	1	1	publication
+hexanol droplets microgravity	4.541	1.375	1	1	publication
+hicks ap reeves	4.541	1.375	1	1	publication
+hicks fl dryer	4.541	1.375	1	1	publication
+image circle diameter	4.541	1.375	1	1	publication
+isolated alkane droplet	4.541	1.375	1	1	publication
+jc prince fa	4.541	1.375	1	1	publication
+jk rah hicks	4.541	1.375	1	1	publication
+kn trenou jk	4.541	1.375	1	1	publication
+large n-alkane droplets	4.541	1.375	1	1	publication
+liu farouk aj	4.541	1.375	1	1	publication
+liu xu ct	4.541	1.375	1	1	publication
+low-temperature burning decane	4.541	1.375	1	1	publication
+massoli nayagam williams	4.541	1.375	1	1	publication
+measurement precision assessment	4.541	1.375	1	1	publication
+methanol heptane droplets	4.541	1.375	1	1	publication
+multistage oscillatory cool	4.541	1.375	1	1	publication
+n-alkane droplets oxygen-inert	4.541	1.375	1	1	publication
+near diffusive extinction	4.541	1.375	1	1	publication
+normal-alkane droplets cool-flame	4.541	1.375	1	1	publication
+observations low-temperature burning	4.541	1.375	1	1	publication
+oscillatory cool flame	4.541	1.375	1	1	publication
+oxygen-inert mixtures microgravity	4.541	1.375	1	1	publication
+precision assessment application	4.541	1.375	1	1	publication
+pressure microgravity condition	4.541	1.375	1	1	publication
+prince fa williams	4.541	1.375	1	1	publication
+quasi-steady combustion normal-alkane	4.541	1.375	1	1	publication
+radiative extinction burner-supported	4.541	1.375	1	1	publication
+radiative extinction large	4.541	1.375	1	1	publication
+rasul ct avedisian	4.541	1.375	1	1	publication
+rb rasul ct	4.541	1.375	1	1	publication
+savas fl dryer	4.541	1.375	1	1	publication
+shaw benjamin wei	4.541	1.375	1	1	publication
+shaw ha dwyer	4.541	1.375	1	1	publication
+shringi bd shaw	4.541	1.375	1	1	publication
+shringi ha dwyer	4.541	1.375	1	1	publication
+structure burning droplet	4.541	1.375	1	1	publication
+structures burning droplet	4.541	1.375	1	1	publication
+ti farouk hicks	4.541	1.375	1	1	publication
+trenou jk rah	4.541	1.375	1	1	publication
+unsteady droplet combustion	4.541	1.375	1	1	publication
+williams ge ovando	4.541	1.375	1	1	publication
+xu ct avedisian	4.541	1.375	1	1	publication
+xu hicks ap	4.541	1.375	1	1	publication
+yc liu farouk	4.541	1.375	1	1	publication
+yc liu xu	4.541	1.375	1	1	publication
+integrated	4.532	3.000	1	11	experiment_hardware
+inside	4.496	2.500	1	8	publication
+measurement	4.496	2.500	1	8	publication
+number	4.496	2.500	1	8	publication
+paul	4.496	2.500	1	8	publication
+pressures	4.496	2.500	1	8	publication
+pv	4.496	2.500	1	8	publication
+droplet sizes	4.474	1.875	1	4	publication
+lewis number	4.474	1.875	1	4	publication
+rate extinction	4.474	1.875	1	4	publication
+buoyancy	4.408	2.000	1	5	hypothesis
+color	4.408	2.000	1	5	approach
+designs	4.408	2.000	1	5	research_impacts
+evaluation	4.408	2.000	1	5	research_impacts
+insights	4.408	2.000	1	5	research_impacts
+key	4.408	2.000	1	5	hypothesis
+needed	4.408	2.000	1	5	approach
+power	4.408	2.000	1	5	approach
+steady	4.408	2.000	1	5	objective
+successful	4.408	2.000	1	5	approach
+technologies	4.408	2.000	1	5	research_impacts
+volume	4.408	2.000	1	5	objective
+0.5 atm	4.346	1.500	1	2	approach
+combustion chamber	4.346	1.500	1	2	approach
+combustion liquid	4.346	1.500	1	2	research_impacts
+combustion technologies	4.346	1.500	1	2	research_impacts
+conditions validate	4.346	1.500	1	2	hypothesis
+droplet uniform	4.346	1.500	1	2	approach
+effects buoyancy	4.346	1.500	1	2	hypothesis
+efficiency pollutant	4.346	1.500	1	2	research_impacts
+energy transportation	4.346	1.500	1	2	research_impacts
+extinction behavior	4.346	1.500	1	2	objective
+extinction mechanisms	4.346	1.500	1	2	objective
+field generated	4.346	1.500	1	2	approach
+fluid motion	4.346	1.500	1	2	approach
+fuel dispensed	4.346	1.500	1	2	approach
+fuel mixture	4.346	1.500	1	2	approach
+greenhouse gas	4.346	1.500	1	2	research_impacts
+insights gained	4.346	1.500	1	2	research_impacts
+lead efficient	4.346	1.500	1	2	research_impacts
+liquid fuels	4.346	1.500	1	2	research_impacts
+mole fraction	4.346	1.500	1	2	approach
+o2 concentration	4.346	1.500	1	2	approach
+pressure 0.5	4.346	1.500	1	2	approach
+sophisticated numerical	4.346	1.500	1	2	hypothesis
+translating droplet	4.346	1.500	1	2	approach
+multi-user droplet combustion	4.306	1.650	1	3	experiment_hardware
+rates	4.233	2.500	1	9	publication
+flame behavior	4.132	1.875	1	5	publication
+normal reduced	4.132	1.875	1	5	publication
+numerical simulation	4.132	1.875	1	5	publication
+spherical diffusion	4.132	1.875	1	5	publication
+camera	4.100	2.000	1	6	approach
+efficient	4.100	2.000	1	6	research_impacts
+lead	4.100	2.000	1	6	research_impacts
+mechanisms	4.100	2.000	1	6	objective
+mole	4.100	2.000	1	6	approach
+o2	4.100	2.000	1	6	approach
+performance	4.100	2.000	1	6	research_impacts
+recorded	4.100	2.000	1	6	approach
+diffusion	3.995	2.500	1	10	publication
+flows	3.995	2.500	1	10	publication
+image	3.995	2.500	1	10	publication
+measurements	3.995	2.500	1	10	publication
+oxygen	3.995	2.500	1	10	publication
+1-propanol droplets air-diluent	3.984	1.375	1	2	publication
+acetone inside evaporating	3.984	1.375	1	2	publication
+aharon tam shaw	3.984	1.375	1	2	publication
+air-diluent environments normal	3.984	1.375	1	2	publication
+air-diluent environments reduced	3.984	1.375	1	2	publication
+air-diluent environments reduced-gravity	3.984	1.375	1	2	publication
+alcohol droplet combustion	3.984	1.375	1	2	publication
+ambient pressure combustion	3.984	1.375	1	2	publication
+analysis consecutive images	3.984	1.375	1	2	publication
+anthony avedisian thomas	3.984	1.375	1	2	publication
+atmosphere n-heptane n-octane	3.984	1.375	1	2	publication
+automated analysis consecutive	3.984	1.375	1	2	publication
+avedisian thomas williams	3.984	1.375	1	2	publication
+backlit droplet images	3.984	1.375	1	2	publication
+benjamin suh hyun	3.984	1.375	1	2	publication
+benjamin vang chang	3.984	1.375	1	2	publication
+binary mixtures n-heptane	3.984	1.375	1	2	publication
+biofuels derived camelina	3.984	1.375	1	2	publication
+buoyant convection flame	3.984	1.375	1	2	publication
+burner-supported spherical diffusion	3.984	1.375	1	2	publication
+burning characteristics indolene	3.984	1.375	1	2	publication
+burning characteristics jet-a	3.984	1.375	1	2	publication
+burning fuel droplets	3.984	1.375	1	2	publication
+burning rate extinction	3.984	1.375	1	2	publication
+burning rate flame	3.984	1.375	1	2	publication
+butanoate droplet combustion	3.984	1.375	1	2	publication
+carbon dioxide enriched	3.984	1.375	1	2	publication
+characteristics alcohol droplet	3.984	1.375	1	2	publication
+characteristics indolene commercial	3.984	1.375	1	2	publication
+characteristics jet-a biofuels	3.984	1.375	1	2	publication
+characteristics sub-millimeter droplets	3.984	1.375	1	2	publication
+cheng savas anthony	3.984	1.375	1	2	publication
+choi mun liu	3.984	1.375	1	2	publication
+christopher lee liu	3.984	1.375	1	2	publication
+combustion buoyant convection	3.984	1.375	1	2	publication
+combustion component miscible	3.984	1.375	1	2	publication
+combustion effect tethering	3.984	1.375	1	2	publication
+combustion flammability n-heptane	3.984	1.375	1	2	publication
+combustion methanol droplets	3.984	1.375	1	2	publication
+combustion methyl decanoate	3.984	1.375	1	2	publication
+combustion microgravity conditions	3.984	1.375	1	2	publication
+combustion microgravity detailed	3.984	1.375	1	2	publication
+combustion n-heptane droplets	3.984	1.375	1	2	publication
+combustion numerical modeling	3.984	1.375	1	2	publication
+combustion propanol droplets	3.984	1.375	1	2	publication
+combustion reduced gravity	3.984	1.375	1	2	publication
+combustion standard atmosphere	3.984	1.375	1	2	publication
+combustion submillimeter heptane	3.984	1.375	1	2	publication
+combustion uncertainties droplet	3.984	1.375	1	2	publication
+commercial grade gasoline	3.984	1.375	1	2	publication
+commercial unleaded gasoline	3.984	1.375	1	2	publication
+comparison burning characteristics	3.984	1.375	1	2	publication
+comparison spherical flame	3.984	1.375	1	2	publication
+comparisons detailed numerical	3.984	1.375	1	2	publication
+component miscible mixtures	3.984	1.375	1	2	publication
+composition measurements heated	3.984	1.375	1	2	publication
+computational modeling effects	3.984	1.375	1	2	publication
+computational modeling n-heptane	3.984	1.375	1	2	publication
+computational modeling unsupported	3.984	1.375	1	2	publication
+consecutive images droplet	3.984	1.375	1	2	publication
+convection flame structure	3.984	1.375	1	2	publication
+convection-free droplet combustion	3.984	1.375	1	2	publication
+cool flame behavior	3.984	1.375	1	2	publication
+cool flames two-stage	3.984	1.375	1	2	publication
+daniel hicks michael	3.984	1.375	1	2	publication
+daniel nayagam vedha	3.984	1.375	1	2	publication
+decanoate droplets comparisons	3.984	1.375	1	2	publication
+dembia christopher lee	3.984	1.375	1	2	publication
+deployment needle retraction	3.984	1.375	1	2	publication
+derived camelina tallow	3.984	1.375	1	2	publication
+developing surrogates liquid	3.984	1.375	1	2	publication
+diameter effects convection-free	3.984	1.375	1	2	publication
+dietrich daniel hicks	3.984	1.375	1	2	publication
+dietrich daniel nayagam	3.984	1.375	1	2	publication
+dietrich pv ferkul	3.984	1.375	1	2	publication
+dioxide enriched environments	3.984	1.375	1	2	publication
+droplet burning characteristics	3.984	1.375	1	2	publication
+droplet combustion air-diluent	3.984	1.375	1	2	publication
+droplet combustion buoyant	3.984	1.375	1	2	publication
+droplet combustion component	3.984	1.375	1	2	publication
+droplet combustion effect	3.984	1.375	1	2	publication
+droplet combustion numerical	3.984	1.375	1	2	publication
+droplet combustion reduced	3.984	1.375	1	2	publication
+droplet combustion standard	3.984	1.375	1	2	publication
+droplet combustion uncertainties	3.984	1.375	1	2	publication
+droplet flame extinction	3.984	1.375	1	2	publication
+droplet flammability combustion	3.984	1.375	1	2	publication
+droplet images droplet	3.984	1.375	1	2	publication
+droplet sizes burning	3.984	1.375	1	2	publication
+droplets binary mixtures	3.984	1.375	1	2	publication
+droplets carbon dioxide	3.984	1.375	1	2	publication
+droplets comparisons detailed	3.984	1.375	1	2	publication
+droplets induced deployment	3.984	1.375	1	2	publication
+droplets oxygen-inert environments	3.984	1.375	1	2	publication
+dryer frederick farouk	3.984	1.375	1	2	publication
+dzik justin nayagam	3.984	1.375	1	2	publication
+effect fibers micro-convection	3.984	1.375	1	2	publication
+effect tethering fiber	3.984	1.375	1	2	publication
+effects convection-free droplet	3.984	1.375	1	2	publication
+effects fibers evaporation	3.984	1.375	1	2	publication
+effects reduced gravity	3.984	1.375	1	2	publication
+environments normal reduced	3.984	1.375	1	2	publication
+environments reduced normal	3.984	1.375	1	2	publication
+ethanol droplets reduced	3.984	1.375	1	2	publication
+evaporating burning fuel	3.984	1.375	1	2	publication
+evaporation fiber-supported droplets	3.984	1.375	1	2	publication
+experimental initial diameter	3.984	1.375	1	2	publication
+extinction air helium	3.984	1.375	1	2	publication
+extinction characteristics alcohol	3.984	1.375	1	2	publication
+farouk liu savas	3.984	1.375	1	2	publication
+farouk tanvir shaw	3.984	1.375	1	2	publication
+fei shaw benjamin	3.984	1.375	1	2	publication
+ferkul hicks fa	3.984	1.375	1	2	publication
+ferkul paul dryer	3.984	1.375	1	2	publication
+fiber burning rate	3.984	1.375	1	2	publication
+fiber optic spectroscopy	3.984	1.375	1	2	publication
+fiber-supported droplets reduced	3.984	1.375	1	2	publication
+fiber-supported n-heptane droplet	3.984	1.375	1	2	publication
+fibers evaporation fiber-supported	3.984	1.375	1	2	publication
+fibers micro-convection droplet	3.984	1.375	1	2	publication
+fibers vaporizing fuel	3.984	1.375	1	2	publication
+flame characteristics sub-millimeter	3.984	1.375	1	2	publication
+flame structure burning	3.984	1.375	1	2	publication
+flames two-stage combustion	3.984	1.375	1	2	publication
+flammability combustion air-diluent	3.984	1.375	1	2	publication
+flammability n-heptane 1-propanol	3.984	1.375	1	2	publication
+flows shape oscillations	3.984	1.375	1	2	publication
+fluorescence imaging acetone	3.984	1.375	1	2	publication
+frederick farouk tanvir	3.984	1.375	1	2	publication
+free droplet flame	3.984	1.375	1	2	publication
+fuels role spherically	3.984	1.375	1	2	publication
+gasoline droplets convection	3.984	1.375	1	2	publication
+gasoline mixture droplets	3.984	1.375	1	2	publication
+ghata bd shaw	3.984	1.375	1	2	publication
+ghata narugopal shaw	3.984	1.375	1	2	publication
+grade gasoline droplets	3.984	1.375	1	2	publication
+gravity ambient pressure	3.984	1.375	1	2	publication
+gravity combustion methanol	3.984	1.375	1	2	publication
+gravity combustion propanol	3.984	1.375	1	2	publication
+gravity fiber effects	3.984	1.375	1	2	publication
+heated propanol-acetone droplets	3.984	1.375	1	2	publication
+heptane ethanol droplets	3.984	1.375	1	2	publication
+heptane methanol heptane	3.984	1.375	1	2	publication
+hicks michael ferkul	3.984	1.375	1	2	publication
+hicks michael williams	3.984	1.375	1	2	publication
+hyun kyu choi	3.984	1.375	1	2	publication
+ignition combustion n-heptane	3.984	1.375	1	2	publication
+ignition n-heptane high	3.984	1.375	1	2	publication
+imaging acetone inside	3.984	1.375	1	2	publication
+indolene commercial grade	3.984	1.375	1	2	publication
+induced deployment needle	3.984	1.375	1	2	publication
+influence gravity ambient	3.984	1.375	1	2	publication
+influences fibers vaporizing	3.984	1.375	1	2	publication
+initial diameter effects	3.984	1.375	1	2	publication
+inside evaporating burning	3.984	1.375	1	2	publication
+interpretation backlit droplet	3.984	1.375	1	2	publication
+iso-octane n-heptane toluene	3.984	1.375	1	2	publication
+isolated n-heptane droplet	3.984	1.375	1	2	publication
+jet-a biofuels derived	3.984	1.375	1	2	publication
+jin shaw benjamin	3.984	1.375	1	2	publication
+justin nayagam vedha	3.984	1.375	1	2	publication
+kyu choi mun	3.984	1.375	1	2	publication
+laser-induced fluorescence imaging	3.984	1.375	1	2	publication
+lee liu yu	3.984	1.375	1	2	publication
+lewis number effects	3.984	1.375	1	2	publication
+liquid droplets induced	3.984	1.375	1	2	publication
+liquid transportation fuels	3.984	1.375	1	2	publication
+liu savas avedisian	3.984	1.375	1	2	publication
+low-temperature ignition n-heptane	3.984	1.375	1	2	publication
+measurements heated propanol-acetone	3.984	1.375	1	2	publication
+mechanism low-temperature ignition	3.984	1.375	1	2	publication
+methanol droplets air-diluent	3.984	1.375	1	2	publication
+methanol heptane ethanol	3.984	1.375	1	2	publication
+methyl butanoate droplet	3.984	1.375	1	2	publication
+methyl decanoate droplets	3.984	1.375	1	2	publication
+michael ferkul paul	3.984	1.375	1	2	publication
+michael williams forman	3.984	1.375	1	2	publication
+micro-convection droplet combustion	3.984	1.375	1	2	publication
+microgravity conditions numerical	3.984	1.375	1	2	publication
+microgravity detailed numerical	3.984	1.375	1	2	publication
+microgravity droplet combustion	3.984	1.375	1	2	publication
+miscible mixtures surrogates	3.984	1.375	1	2	publication
+mixtures n-heptane iso-octane	3.984	1.375	1	2	publication
+mixtures surrogates jet-a	3.984	1.375	1	2	publication
+modeling effects fibers	3.984	1.375	1	2	publication
+modeling n-heptane droplet	3.984	1.375	1	2	publication
+modeling reduced gravity	3.984	1.375	1	2	publication
+modeling unsupported fiber-supported	3.984	1.375	1	2	publication
+mun liu yu	3.984	1.375	1	2	publication
+n-butanol droplet combustion	3.984	1.375	1	2	publication
+n-heptane 1-propanol droplets	3.984	1.375	1	2	publication
+n-heptane droplets carbon	3.984	1.375	1	2	publication
+n-heptane high pressures	3.984	1.375	1	2	publication
+n-heptane iso-octane n-heptane	3.984	1.375	1	2	publication
+n-heptane n-octane n-decane	3.984	1.375	1	2	publication
+n-heptane toluene commercial	3.984	1.375	1	2	publication
+n-octane n-decane ground-based	3.984	1.375	1	2	publication
+narugopal shaw benjamin	3.984	1.375	1	2	publication
+nayagam dietrich pv	3.984	1.375	1	2	publication
+nayagam vedha hicks	3.984	1.375	1	2	publication
+nayagam vedha williams	3.984	1.375	1	2	publication
+nonane droplet combustion	3.984	1.375	1	2	publication
+number effects reduced	3.984	1.375	1	2	publication
+numerical modeling reduced	3.984	1.375	1	2	publication
+numerical simulation unsteady	3.984	1.375	1	2	publication
+optic spectroscopy composition	3.984	1.375	1	2	publication
+oscillations liquid droplets	3.984	1.375	1	2	publication
+oxygen lewis number	3.984	1.375	1	2	publication
+paul dryer frederick	3.984	1.375	1	2	publication
+pressure combustion flammability	3.984	1.375	1	2	publication
+propanol droplet flammability	3.984	1.375	1	2	publication
+propanol droplets oxygen-inert	3.984	1.375	1	2	publication
+pv ferkul hicks	3.984	1.375	1	2	publication
+rate extinction air	3.984	1.375	1	2	publication
+rate flame structure	3.984	1.375	1	2	publication
+reduced gravity fiber	3.984	1.375	1	2	publication
+reduced normal gravity	3.984	1.375	1	2	publication
+role spherically symmetric	3.984	1.375	1	2	publication
+savas anthony avedisian	3.984	1.375	1	2	publication
+savas avedisian dryer	3.984	1.375	1	2	publication
+shape oscillations liquid	3.984	1.375	1	2	publication
+shaw benjamin suh	3.984	1.375	1	2	publication
+shaw benjamin vang	3.984	1.375	1	2	publication
+short mechanism low-temperature	3.984	1.375	1	2	publication
+simulation unsteady flows	3.984	1.375	1	2	publication
+sized methyl butanoate	3.984	1.375	1	2	publication
+sizes burning rates	3.984	1.375	1	2	publication
+spectroscopy composition measurements	3.984	1.375	1	2	publication
+spherical flame characteristics	3.984	1.375	1	2	publication
+spherically symmetrical combustion	3.984	1.375	1	2	publication
+standard atmosphere n-heptane	3.984	1.375	1	2	publication
+structure burning rate	3.984	1.375	1	2	publication
+sub-millimeter droplets binary	3.984	1.375	1	2	publication
+sub-millimeter sized methyl	3.984	1.375	1	2	publication
+submillimeter free droplet	3.984	1.375	1	2	publication
+submillimeter heptane methanol	3.984	1.375	1	2	publication
+suh hyun kyu	3.984	1.375	1	2	publication
+surrogates liquid transportation	3.984	1.375	1	2	publication
+symmetric droplet burning	3.984	1.375	1	2	publication
+symmetrical combustion methyl	3.984	1.375	1	2	publication
+tanvir shaw benjamin	3.984	1.375	1	2	publication
+temperature fiber optic	3.984	1.375	1	2	publication
+tethering fiber burning	3.984	1.375	1	2	publication
+thomas williams forman	3.984	1.375	1	2	publication
+toluene commercial unleaded	3.984	1.375	1	2	publication
+transportation fuels role	3.984	1.375	1	2	publication
+uncertainties droplet sizes	3.984	1.375	1	2	publication
+unsteady flows shape	3.984	1.375	1	2	publication
+unsupported fiber-supported n-heptane	3.984	1.375	1	2	publication
+vaporizing fuel droplets	3.984	1.375	1	2	publication
+vedha hicks michael	3.984	1.375	1	2	publication
+vedha williams forman	3.984	1.375	1	2	publication
+wei shaw peng	3.984	1.375	1	2	publication
+xiao wei shaw	3.984	1.375	1	2	publication
+xu yuhao avedisian	3.984	1.375	1	2	publication
+yan jin shaw	3.984	1.375	1	2	publication
+yu cheng savas	3.984	1.375	1	2	publication
+yu fei shaw	3.984	1.375	1	2	publication
+yuhao avedisian thomas	3.984	1.375	1	2	publication
+experimental parameters	3.914	1.500	1	3	approach
+fuel combustion	3.914	1.500	1	3	objective
+pollutant emissions	3.914	1.500	1	3	research_impacts
+volume fraction	3.914	1.500	1	3	objective
+carbon dioxide	3.843	1.875	1	6	publication
+ferkul paul	3.843	1.875	1	6	publication
+addition	3.833	2.000	1	7	hypothesis
+approach	3.833	2.000	1	7	approach
+controlled	3.833	2.000	1	7	approach
+hypothesis	3.833	2.000	1	7	hypothesis
+jet	3.833	2.000	1	7	research_impacts
+video	3.833	2.000	1	7	approach
+combustion integrated	3.810	2.250	1	9	experiment_hardware
+integrated rack	3.810	2.250	1	9	experiment_hardware
+rack cir	3.810	2.250	1	9	experiment_hardware
+0.1 0.4 mole	3.633	1.100	1	1	approach
+0.4 mole fraction	3.633	1.100	1	1	approach
+0.5 atm 3.0	3.633	1.100	1	1	approach
+3.0 atm o2	3.633	1.100	1	1	approach
+acceleration droplet spacing	3.633	1.100	1	1	approach
+addition microgravity environment	3.633	1.100	1	1	hypothesis
+adjust experimental conditions	3.633	1.100	1	1	approach
+allowing clear observation	3.633	1.100	1	1	hypothesis
+ambient gas composition	3.633	1.100	1	1	approach
+ambient pressure droplet	3.633	1.100	1	1	approach
+amount fuel target	3.633	1.100	1	1	approach
+amount time ranging	3.633	1.100	1	1	approach
+analyze independently varied	3.633	1.100	1	1	approach
+analyze soot formation	3.633	1.100	1	1	objective
+approach summarized test	3.633	1.100	1	1	approach
+appropriate atmosphere varied	3.633	1.100	1	1	approach
+approximately minutes elapsed	3.633	1.100	1	1	approach
+approximations made treating	3.633	1.100	1	1	hypothesis
+arrays validate theoretical	3.633	1.100	1	1	objective
+assumptions hypothesis simulation	3.633	1.100	1	1	hypothesis
+atm 3.0 atm	3.633	1.100	1	1	approach
+atm o2 concentration	3.633	1.100	1	1	approach
+atmosphere varied pressure	3.633	1.100	1	1	approach
+balance settling time	3.633	1.100	1	1	approach
+behavior droplet arrays	3.633	1.100	1	1	objective
+behavior real fuels	3.633	1.100	1	1	research_impacts
+benchmark conducting microgravity	3.633	1.100	1	1	hypothesis
+better fuels contribute	3.633	1.100	1	1	research_impacts
+bi-component fuel droplets	3.633	1.100	1	1	objective
+bi-component mixtures addition	3.633	1.100	1	1	hypothesis
+binary linear array	3.633	1.100	1	1	approach
+boundaries analyze soot	3.633	1.100	1	1	objective
+buoyancy minimized droplet	3.633	1.100	1	1	hypothesis
+burning characteristics bi-component	3.633	1.100	1	1	objective
+camera video employed	3.633	1.100	1	1	approach
+carbon footprint maximum	3.633	1.100	1	1	research_impacts
+carefully controlling droplet	3.633	1.100	1	1	approach
+chamber environment recorded	3.633	1.100	1	1	approach
+chamber filled appropriate	3.633	1.100	1	1	approach
+chamber gases stabilized	3.633	1.100	1	1	approach
+chamber selected gas	3.633	1.100	1	1	approach
+characteristics bi-component fuel	3.633	1.100	1	1	objective
+characterized function thermocapillary	3.633	1.100	1	1	hypothesis
+chemistry radiation coupling	3.633	1.100	1	1	hypothesis
+cleaner combustion technologies	3.633	1.100	1	1	research_impacts
+clear observation fundamental	3.633	1.100	1	1	hypothesis
+collection microgravity environments	3.633	1.100	1	1	objective
+color camera video	3.633	1.100	1	1	approach
+combustion chamber selected	3.633	1.100	1	1	approach
+combustion comprehensive experimental	3.633	1.100	1	1	objective
+combustion developed last	3.633	1.100	1	1	hypothesis
+combustion flame extinction	3.633	1.100	1	1	objective
+combustion liquid fuels	3.633	1.100	1	1	research_impacts
+combustion processes present	3.633	1.100	1	1	hypothesis
+combustion technologies crucial	3.633	1.100	1	1	research_impacts
+combustions track flame	3.633	1.100	1	1	approach
+combustor conditions well	3.633	1.100	1	1	objective
+combustor designs minimal	3.633	1.100	1	1	research_impacts
+combustors development surrogates	3.633	1.100	1	1	research_impacts
+commence time ignitor	3.633	1.100	1	1	approach
+complexity problem varying	3.633	1.100	1	1	hypothesis
+composition ambient pressure	3.633	1.100	1	1	approach
+comprehensive experimental collection	3.633	1.100	1	1	objective
+concentration 0.1 0.4	3.633	1.100	1	1	approach
+conditions needed analyze	3.633	1.100	1	1	approach
+conditions order validate	3.633	1.100	1	1	objective
+conditions real combustor	3.633	1.100	1	1	objective
+conditions well benchmark	3.633	1.100	1	1	objective
+conducting microgravity environment	3.633	1.100	1	1	hypothesis
+confirmed benchmark conducting	3.633	1.100	1	1	hypothesis
+contribute sustainable energy	3.633	1.100	1	1	research_impacts
+contribution inclusion full	3.633	1.100	1	1	hypothesis
+controlled fashion monitor	3.633	1.100	1	1	approach
+controlling droplet diameter	3.633	1.100	1	1	approach
+convective droplet combustion	3.633	1.100	1	1	hypothesis
+coupling gas liquid	3.633	1.100	1	1	hypothesis
+crucial reducing pollution	3.633	1.100	1	1	research_impacts
+decade key contribution	3.633	1.100	1	1	hypothesis
+degrees approximations made	3.633	1.100	1	1	hypothesis
+deploy droplet carefully	3.633	1.100	1	1	approach
+deployed sufficient fuel	3.633	1.100	1	1	approach
+deployment ignition overall	3.633	1.100	1	1	approach
+deployment subside followed	3.633	1.100	1	1	approach
+designs minimal carbon	3.633	1.100	1	1	research_impacts
+detailed experimental objectives	3.633	1.100	1	1	objective
+determine influence droplet	3.633	1.100	1	1	objective
+determined pressure temperature	3.633	1.100	1	1	approach
+developed last decade	3.633	1.100	1	1	hypothesis
+developing better fuels	3.633	1.100	1	1	research_impacts
+development surrogates mixtures	3.633	1.100	1	1	research_impacts
+diameter droplet stabilize	3.633	1.100	1	1	approach
+diameter droplet translation	3.633	1.100	1	1	approach
+diffusive extension flame	3.633	1.100	1	1	hypothesis
+diluent gas making	3.633	1.100	1	1	approach
+dispensed dispensing needles	3.633	1.100	1	1	approach
+dispensing needles retracted	3.633	1.100	1	1	approach
+dispensing predetermined amount	3.633	1.100	1	1	approach
+download color camera	3.633	1.100	1	1	approach
+droplet arrays validate	3.633	1.100	1	1	objective
+droplet carefully controlling	3.633	1.100	1	1	approach
+droplet characterized function	3.633	1.100	1	1	hypothesis
+droplet combustion comprehensive	3.633	1.100	1	1	objective
+droplet combustion developed	3.633	1.100	1	1	hypothesis
+droplet deployment ignition	3.633	1.100	1	1	approach
+droplet diameter droplet	3.633	1.100	1	1	approach
+droplet droplet motion	3.633	1.100	1	1	approach
+droplet freely deployed	3.633	1.100	1	1	approach
+droplet initial diameter	3.633	1.100	1	1	approach
+droplet interactions flammability	3.633	1.100	1	1	objective
+droplet internal fluid	3.633	1.100	1	1	approach
+droplet motion commence	3.633	1.100	1	1	approach
+droplet size onto	3.633	1.100	1	1	approach
+droplet spacing initial	3.633	1.100	1	1	approach
+droplet stabilize microgravity	3.633	1.100	1	1	approach
+droplet translation velocity	3.633	1.100	1	1	approach
+droplet uniform controlled	3.633	1.100	1	1	approach
+droplets examine steady	3.633	1.100	1	1	objective
+due inherent complexity	3.633	1.100	1	1	hypothesis
+dwell period seconds	3.633	1.100	1	1	approach
+dynamics determine influence	3.633	1.100	1	1	objective
+effects buoyancy minimized	3.633	1.100	1	1	hypothesis
+efficiency developing better	3.633	1.100	1	1	research_impacts
+efficient cleaner combustion	3.633	1.100	1	1	research_impacts
+elapsed prior initiating	3.633	1.100	1	1	approach
+emissions improving fuel	3.633	1.100	1	1	research_impacts
+emissions quantitative evaluation	3.633	1.100	1	1	research_impacts
+employed order verify	3.633	1.100	1	1	approach
+energy production future	3.633	1.100	1	1	research_impacts
+energy transportation sector	3.633	1.100	1	1	research_impacts
+engine manufacturers prior	3.633	1.100	1	1	research_impacts
+engine models engine	3.633	1.100	1	1	research_impacts
+ensure temperature pressure	3.633	1.100	1	1	approach
+environment effects buoyancy	3.633	1.100	1	1	hypothesis
+environment ignite droplet	3.633	1.100	1	1	approach
+environment phenomena transitions	3.633	1.100	1	1	hypothesis
+environment recorded near	3.633	1.100	1	1	approach
+environmental conditions real	3.633	1.100	1	1	objective
+equations gas-phase flow	3.633	1.100	1	1	hypothesis
+evaluation performance future	3.633	1.100	1	1	research_impacts
+evolution high speed	3.633	1.100	1	1	approach
+examine steady unsteady	3.633	1.100	1	1	objective
+experimental collection microgravity	3.633	1.100	1	1	objective
+experimental conditions needed	3.633	1.100	1	1	approach
+experimental objectives itemized	3.633	1.100	1	1	objective
+experimental parameters flex-2	3.633	1.100	1	1	approach
+extend flex-1 fuels	3.633	1.100	1	1	objective
+extension flame primary	3.633	1.100	1	1	hypothesis
+extinction behavior droplet	3.633	1.100	1	1	objective
+extinction mechanisms boundaries	3.633	1.100	1	1	objective
+fairly sophisticated numerical	3.633	1.100	1	1	hypothesis
+fashion monitor combustions	3.633	1.100	1	1	approach
+fiber tests droplet	3.633	1.100	1	1	approach
+field due inherent	3.633	1.100	1	1	hypothesis
+field generated translating	3.633	1.100	1	1	approach
+field view flow	3.633	1.100	1	1	approach
+fill combustion chamber	3.633	1.100	1	1	approach
+filled appropriate atmosphere	3.633	1.100	1	1	approach
+flame evolution high	3.633	1.100	1	1	approach
+flame extinction mechanisms	3.633	1.100	1	1	objective
+flame primary goal	3.633	1.100	1	1	hypothesis
+flammability limits extinction	3.633	1.100	1	1	objective
+flex-1 fuels environmental	3.633	1.100	1	1	objective
+flex-2 bi-component mixtures	3.633	1.100	1	1	hypothesis
+flex-2 flight extend	3.633	1.100	1	1	objective
+flex-2 fuel type	3.633	1.100	1	1	approach
+flight benchmark experimental	3.633	1.100	1	1	hypothesis
+flight extend flex-1	3.633	1.100	1	1	objective
+flow field due	3.633	1.100	1	1	hypothesis
+flow field generated	3.633	1.100	1	1	approach
+fluid motion induced	3.633	1.100	1	1	approach
+followed dispensing predetermined	3.633	1.100	1	1	approach
+followed initiating power	3.633	1.100	1	1	approach
+footprint maximum fuel	3.633	1.100	1	1	research_impacts
+formation process soot	3.633	1.100	1	1	objective
+fraction diluent gas	3.633	1.100	1	1	approach
+fraction soot-shell dynamics	3.633	1.100	1	1	objective
+freely deployed sufficient	3.633	1.100	1	1	approach
+fuel combustion flame	3.633	1.100	1	1	objective
+fuel dispensed dispensing	3.633	1.100	1	1	approach
+fuel droplets examine	3.633	1.100	1	1	objective
+fuel efficiency developing	3.633	1.100	1	1	research_impacts
+fuel efficiency pollutant	3.633	1.100	1	1	research_impacts
+fuel mixture humidity	3.633	1.100	1	1	approach
+fuel target droplet	3.633	1.100	1	1	approach
+fuel type ambient	3.633	1.100	1	1	approach
+fuels combustors development	3.633	1.100	1	1	research_impacts
+fuels contribute sustainable	3.633	1.100	1	1	research_impacts
+fuels environmental conditions	3.633	1.100	1	1	objective
+fuels overwhelming energy	3.633	1.100	1	1	research_impacts
+fuels simulate behavior	3.633	1.100	1	1	research_impacts
+fuels validation jet	3.633	1.100	1	1	research_impacts
+full navier-stokes equations	3.633	1.100	1	1	hypothesis
+function thermocapillary solutalcapillary	3.633	1.100	1	1	hypothesis
+fundamental combustion processes	3.633	1.100	1	1	hypothesis
+future combustor designs	3.633	1.100	1	1	research_impacts
+future fuels combustors	3.633	1.100	1	1	research_impacts
+gained lead efficient	3.633	1.100	1	1	research_impacts
+gas composition ambient	3.633	1.100	1	1	approach
+gas emissions improving	3.633	1.100	1	1	research_impacts
+gas liquid phases	3.633	1.100	1	1	hypothesis
+gas making balance	3.633	1.100	1	1	approach
+gas mixtures deploy	3.633	1.100	1	1	approach
+gas-phase flow field	3.633	1.100	1	1	hypothesis
+gas-phase phenomena pure	3.633	1.100	1	1	objective
+gases stabilized settling	3.633	1.100	1	1	approach
+generated translating droplet	3.633	1.100	1	1	approach
+goal flex-2 flight	3.633	1.100	1	1	objective
+goal flight benchmark	3.633	1.100	1	1	hypothesis
+greenhouse gas emissions	3.633	1.100	1	1	research_impacts
+high speed photography	3.633	1.100	1	1	approach
+humidity fill combustion	3.633	1.100	1	1	approach
+hypothesis simulation confirmed	3.633	1.100	1	1	hypothesis
+ignite droplet uniform	3.633	1.100	1	1	approach
+ignition overall progress	3.633	1.100	1	1	approach
+ignitor retracted field	3.633	1.100	1	1	approach
+ignitor retracted near	3.633	1.100	1	1	approach
+ignitor selectable amount	3.633	1.100	1	1	approach
+improving fuel efficiency	3.633	1.100	1	1	research_impacts
+inclusion full navier-stokes	3.633	1.100	1	1	hypothesis
+independently varied experimental	3.633	1.100	1	1	approach
+induced deployment subside	3.633	1.100	1	1	approach
+influence droplet interactions	3.633	1.100	1	1	objective
+inherent complexity problem	3.633	1.100	1	1	hypothesis
+initial conditions order	3.633	1.100	1	1	objective
+initial conditions validate	3.633	1.100	1	1	hypothesis
+initial diameter droplet	3.633	1.100	1	1	approach
+initial size binary	3.633	1.100	1	1	approach
+initiating power ignitor	3.633	1.100	1	1	approach
+initiating test order	3.633	1.100	1	1	approach
+insights gained lead	3.633	1.100	1	1	research_impacts
+interactions flammability limits	3.633	1.100	1	1	objective
+internal fluid motion	3.633	1.100	1	1	approach
+itemized role liquid-phase	3.633	1.100	1	1	objective
+jet engine models	3.633	1.100	1	1	research_impacts
+key contribution inclusion	3.633	1.100	1	1	hypothesis
+last decade key	3.633	1.100	1	1	hypothesis
+lead efficient cleaner	3.633	1.100	1	1	research_impacts
+limits extinction behavior	3.633	1.100	1	1	objective
+liquid fuels overwhelming	3.633	1.100	1	1	research_impacts
+liquid gas-phase phenomena	3.633	1.100	1	1	objective
+liquid phases validity	3.633	1.100	1	1	hypothesis
+liquid-phase mixing burning	3.633	1.100	1	1	objective
+made treating chemistry	3.633	1.100	1	1	hypothesis
+making balance settling	3.633	1.100	1	1	approach
+manufacturers prior droplet	3.633	1.100	1	1	research_impacts
+maximum fuel efficiency	3.633	1.100	1	1	research_impacts
+mechanisms boundaries analyze	3.633	1.100	1	1	objective
+microgravity environment effects	3.633	1.100	1	1	hypothesis
+microgravity environment ignite	3.633	1.100	1	1	approach
+microgravity environment phenomena	3.633	1.100	1	1	hypothesis
+minimal carbon footprint	3.633	1.100	1	1	research_impacts
+minimized droplet characterized	3.633	1.100	1	1	hypothesis
+minutes elapsed prior	3.633	1.100	1	1	approach
+mixing burning characteristics	3.633	1.100	1	1	objective
+mixture humidity fill	3.633	1.100	1	1	approach
+mixtures addition microgravity	3.633	1.100	1	1	hypothesis
+mixtures deploy droplet	3.633	1.100	1	1	approach
+mixtures pure fuels	3.633	1.100	1	1	research_impacts
+models detailed experimental	3.633	1.100	1	1	objective
+models droplet combustion	3.633	1.100	1	1	objective
+models engine manufacturers	3.633	1.100	1	1	research_impacts
+mole fraction diluent	3.633	1.100	1	1	approach
+monitor adjust experimental	3.633	1.100	1	1	approach
+monitor combustions track	3.633	1.100	1	1	approach
+motion commence time	3.633	1.100	1	1	approach
+motion induced deployment	3.633	1.100	1	1	approach
+navier-stokes equations gas-phase	3.633	1.100	1	1	hypothesis
+near real time	3.633	1.100	1	1	approach
+near real-time download	3.633	1.100	1	1	approach
+needed analyze independently	3.633	1.100	1	1	approach
+needles retracted dwell	3.633	1.100	1	1	approach
+numerical simulations convective	3.633	1.100	1	1	hypothesis
+o2 concentration 0.1	3.633	1.100	1	1	approach
+objectives itemized role	3.633	1.100	1	1	objective
+observation fundamental combustion	3.633	1.100	1	1	hypothesis
+onto fiber tests	3.633	1.100	1	1	approach
+order ensure temperature	3.633	1.100	1	1	approach
+order validate numerical	3.633	1.100	1	1	objective
+order verify successful	3.633	1.100	1	1	approach
+overall approach summarized	3.633	1.100	1	1	approach
+overall progress pressure	3.633	1.100	1	1	approach
+overwhelming energy transportation	3.633	1.100	1	1	research_impacts
+parameters determined pressure	3.633	1.100	1	1	approach
+parameters flex-2 fuel	3.633	1.100	1	1	approach
+performance future fuels	3.633	1.100	1	1	research_impacts
+period seconds droplet	3.633	1.100	1	1	approach
+phases validity assumptions	3.633	1.100	1	1	hypothesis
+phenomena pure fuel	3.633	1.100	1	1	objective
+phenomena transitions radiative	3.633	1.100	1	1	hypothesis
+photography monitor adjust	3.633	1.100	1	1	approach
+pollutant emissions quantitative	3.633	1.100	1	1	research_impacts
+pollution greenhouse gas	3.633	1.100	1	1	research_impacts
+power ignitor selectable	3.633	1.100	1	1	approach
+predetermined amount fuel	3.633	1.100	1	1	approach
+present flex-2 bi-component	3.633	1.100	1	1	hypothesis
+pressure 0.5 atm	3.633	1.100	1	1	approach
+pressure chamber gases	3.633	1.100	1	1	approach
+pressure droplet initial	3.633	1.100	1	1	approach
+pressure temperature chamber	3.633	1.100	1	1	approach
+pressure temperature fuel	3.633	1.100	1	1	approach
+primary goal flex-2	3.633	1.100	1	1	objective
+primary goal flight	3.633	1.100	1	1	hypothesis
+prior initiating test	3.633	1.100	1	1	approach
+problem varying degrees	3.633	1.100	1	1	hypothesis
+process soot volume	3.633	1.100	1	1	objective
+processes present flex-2	3.633	1.100	1	1	hypothesis
+production future combustor	3.633	1.100	1	1	research_impacts
+progress pressure temperature	3.633	1.100	1	1	approach
+pure fuel combustion	3.633	1.100	1	1	objective
+pure fuels simulate	3.633	1.100	1	1	research_impacts
+quantitative evaluation performance	3.633	1.100	1	1	research_impacts
+radiation coupling gas	3.633	1.100	1	1	hypothesis
+radiative diffusive extension	3.633	1.100	1	1	hypothesis
+ranging seconds ignitor	3.633	1.100	1	1	approach
+real combustor conditions	3.633	1.100	1	1	objective
+real fuels validation	3.633	1.100	1	1	research_impacts
+real time overall	3.633	1.100	1	1	approach
+real-time download color	3.633	1.100	1	1	approach
+recorded near real	3.633	1.100	1	1	approach
+reducing pollution greenhouse	3.633	1.100	1	1	research_impacts
+retracted dwell period	3.633	1.100	1	1	approach
+retracted field view	3.633	1.100	1	1	approach
+retracted near real-time	3.633	1.100	1	1	approach
+role liquid-phase mixing	3.633	1.100	1	1	objective
+seconds droplet internal	3.633	1.100	1	1	approach
+seconds ignitor retracted	3.633	1.100	1	1	approach
+sector insights gained	3.633	1.100	1	1	research_impacts
+selectable amount time	3.633	1.100	1	1	approach
+selected gas mixtures	3.633	1.100	1	1	approach
+settling time approximately	3.633	1.100	1	1	approach
+settling time followed	3.633	1.100	1	1	approach
+simulate behavior real	3.633	1.100	1	1	research_impacts
+simulation confirmed benchmark	3.633	1.100	1	1	hypothesis
+simulations convective droplet	3.633	1.100	1	1	hypothesis
+size binary linear	3.633	1.100	1	1	approach
+size onto fiber	3.633	1.100	1	1	approach
+solutalcapillary stresses allowing	3.633	1.100	1	1	hypothesis
+soot formation process	3.633	1.100	1	1	objective
+soot-shell dynamics determine	3.633	1.100	1	1	objective
+sophisticated numerical simulations	3.633	1.100	1	1	hypothesis
+spacing initial size	3.633	1.100	1	1	approach
+speed photography monitor	3.633	1.100	1	1	approach
+stabilize microgravity environment	3.633	1.100	1	1	approach
+stabilized settling time	3.633	1.100	1	1	approach
+steady unsteady liquid	3.633	1.100	1	1	objective
+stresses allowing clear	3.633	1.100	1	1	hypothesis
+subside followed initiating	3.633	1.100	1	1	approach
+successful droplet deployment	3.633	1.100	1	1	approach
+sufficient fuel dispensed	3.633	1.100	1	1	approach
+summarized test parameters	3.633	1.100	1	1	approach
+surrogates mixtures pure	3.633	1.100	1	1	research_impacts
+sustainable energy production	3.633	1.100	1	1	research_impacts
+target droplet size	3.633	1.100	1	1	approach
+technologies crucial reducing	3.633	1.100	1	1	research_impacts
+temperature chamber environment	3.633	1.100	1	1	approach
+temperature fuel mixture	3.633	1.100	1	1	approach
+temperature pressure chamber	3.633	1.100	1	1	approach
+test order ensure	3.633	1.100	1	1	approach
+test parameters determined	3.633	1.100	1	1	approach
+tests droplet freely	3.633	1.100	1	1	approach
+theoretical models detailed	3.633	1.100	1	1	objective
+theoretical models droplet	3.633	1.100	1	1	objective
+thermocapillary solutalcapillary stresses	3.633	1.100	1	1	hypothesis
+time approximately minutes	3.633	1.100	1	1	approach
+time followed dispensing	3.633	1.100	1	1	approach
+time ignitor retracted	3.633	1.100	1	1	approach
+time overall approach	3.633	1.100	1	1	approach
+time ranging seconds	3.633	1.100	1	1	approach
+track flame evolution	3.633	1.100	1	1	approach
+transitions radiative diffusive	3.633	1.100	1	1	hypothesis
+translating droplet droplet	3.633	1.100	1	1	approach
+translation velocity acceleration	3.633	1.100	1	1	approach
+transportation sector insights	3.633	1.100	1	1	research_impacts
+treating chemistry radiation	3.633	1.100	1	1	hypothesis
+type ambient gas	3.633	1.100	1	1	approach
+uniform controlled fashion	3.633	1.100	1	1	approach
+unsteady liquid gas-phase	3.633	1.100	1	1	objective
+validate theoretical models	3.633	1.100	1	1	objective
+validation jet engine	3.633	1.100	1	1	research_impacts
+validity assumptions hypothesis	3.633	1.100	1	1	hypothesis
+varied experimental parameters	3.633	1.100	1	1	approach
+varied pressure 0.5	3.633	1.100	1	1	approach
+varying degrees approximations	3.633	1.100	1	1	hypothesis
+velocity acceleration droplet	3.633	1.100	1	1	approach
+verify successful droplet	3.633	1.100	1	1	approach
+video employed order	3.633	1.100	1	1	approach
+view flow field	3.633	1.100	1	1	approach
+volume fraction soot-shell	3.633	1.100	1	1	objective
+well benchmark experimental	3.633	1.100	1	1	objective
+better	3.597	2.000	1	8	research_impacts
+concentration	3.597	2.000	1	8	approach
+dynamics	3.597	2.000	1	8	objective
+function	3.597	2.000	1	8	hypothesis
+processes	3.597	2.000	1	8	hypothesis
+microgravity conditions	3.593	1.875	1	7	publication
+alkane droplet burning	3.588	1.375	1	3	publication
+chemistry quasi-steady combustion	3.588	1.375	1	3	publication
+combustion extinction n-heptane	3.588	1.375	1	3	publication
+combustion microgravity cool	3.588	1.375	1	3	publication
+cool flames quasi-steady	3.588	1.375	1	3	publication
+cool-flame chemistry quasi-steady	3.588	1.375	1	3	publication
+cool-flame extinction n-alkane	3.588	1.375	1	3	publication
+dietrich hicks fa	3.588	1.375	1	3	publication
+extinction n-alkane droplet	3.588	1.375	1	3	publication
+extinction n-heptane droplets	3.588	1.375	1	3	publication
+flames quasi-steady alkane	3.588	1.375	1	3	publication
+guenter peters norbert	3.588	1.375	1	3	publication
+kalyanasundaram williams forman	3.588	1.375	1	3	publication
+microgravity cool flames	3.588	1.375	1	3	publication
+n-alkane droplet combustion	3.588	1.375	1	3	publication
+nayagam dietrich hicks	3.588	1.375	1	3	publication
+norbert seshadri kalyanasundaram	3.588	1.375	1	3	publication
+paczko guenter peters	3.588	1.375	1	3	publication
+peters norbert seshadri	3.588	1.375	1	3	publication
+quasi-steady alkane droplet	3.588	1.375	1	3	publication
+quasi-steady combustion extinction	3.588	1.375	1	3	publication
+role cool-flame chemistry	3.588	1.375	1	3	publication
+seshadri kalyanasundaram williams	3.588	1.375	1	3	publication
+williams forman arthur	3.588	1.375	1	3	publication
+combustion processes	3.579	1.500	1	4	hypothesis
+soot volume	3.579	1.500	1	4	objective
+air	3.577	2.500	1	12	publication
+due	3.386	2.000	1	9	hypothesis
+process	3.386	2.000	1	9	objective
+pv ferkul	3.372	1.875	1	8	publication
+droplet size	3.306	1.500	1	5	approach
+microgravity environments	3.306	1.500	1	5	objective
+spherical diffusion flames	3.281	1.375	1	4	publication
+radiation	3.196	2.000	1	10	hypothesis
+conditions validate numerical	3.187	1.100	1	2	hypothesis
+efficiency pollutant emissions	3.187	1.100	1	2	research_impacts
+normal reduced gravity	3.030	1.375	1	5	publication
+tests	3.022	2.000	1	11	approach
+velocity	3.022	2.000	1	11	approach
+diffusion flames	2.996	1.875	1	10	publication
+flammability limits	2.874	1.500	1	7	objective
+soot volume fraction	2.870	1.100	1	3	objective
+development	2.862	2.000	1	12	research_impacts
+limits	2.862	2.000	1	12	objective
+combustion integrated rack	2.794	1.650	1	9	experiment_hardware
+integrated rack cir	2.794	1.650	1	9	experiment_hardware
+determine	2.713	2.000	1	13	objective
+objectives	2.575	2.000	1	14	objective
+normal gravity	2.544	1.875	1	13	publication
+connecticut	2.477	0.750	1	1	affiliation
+cornell	2.477	0.750	1	1	affiliation
+benjamin shaw	2.173	0.750	1	2	people
+michael hicks	2.173	0.750	1	2	people
+mun choi	2.173	0.750	1	2	people
+thomas avedisian	2.173	0.750	1	2	people
+california	1.957	0.750	1	3	affiliation
+daniel dietrich	1.957	0.750	1	3	people
+frederick dryer	1.957	0.750	1	3	people
+princeton	1.957	0.750	1	3	affiliation
+vedha nayagam	1.957	0.750	1	3	people
+cornell university	1.858	0.562	1	1	affiliation
+university connecticut	1.858	0.562	1	1	affiliation
+forman williams	1.790	0.750	1	4	people
+administration	1.744	1.500	1	16	space_program
+aeronautics	1.744	1.500	1	16	space_program
+diego	1.653	0.750	1	5	affiliation
+reserve	1.653	0.750	1	5	affiliation
+san	1.653	0.750	1	5	affiliation
+grc	1.577	1.500	2	18	affiliation
+national	1.577	1.500	1	18	space_program
+california san	1.468	0.562	1	3	affiliation
+princeton university	1.468	0.562	1	3	affiliation
+university california	1.468	0.562	1	3	affiliation
+case	1.349	0.750	1	8	affiliation
+western	1.349	0.750	1	8	affiliation
+aeronautics administration	1.308	1.125	1	16	space_program
+national aeronautics	1.308	1.125	1	16	space_program
+scientist	1.288	1.000	1	14	role
+reserve university	1.240	0.562	1	5	affiliation
+san diego	1.240	0.562	1	5	affiliation
+western reserve	1.240	0.562	1	5	affiliation
+california san diego	1.076	0.412	1	3	affiliation
+university california san	1.076	0.412	1	3	affiliation
+investigator	1.051	1.000	1	18	role
+pi	1.051	1.000	1	18	role
+principal	1.051	1.000	1	18	role
+case western	1.012	0.562	1	8	affiliation
+national aeronautics administration	0.959	0.825	1	16	space_program
+case western reserve	0.909	0.412	1	5	affiliation
+western reserve university	0.909	0.412	1	5	affiliation
+investigator pi	0.788	0.750	1	18	role
+principal investigator	0.788	0.750	1	18	role
+principal investigator pi	0.578	0.550	1	18	role
