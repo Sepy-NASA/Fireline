@@ -37,6 +37,13 @@ or scientific certification.
 *The guided evidence-review workspace, with the local PSI investigation index
 available for the analysis canvas.*
 
+### Analyze — goal created
+
+![Analyze workspace — research question created as the root node of the evidence canvas](screenshots/analyze-goal.png)
+
+*After setting the rover-material review question, Analyze creates the root
+node and separates the next evidence-gathering step from the user’s inputs.*
+
 ### Explore
 
 ![Explore workspace — filters, indexed experiments and working set](screenshots/explore-workspace.png)
