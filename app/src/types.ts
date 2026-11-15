@@ -23,6 +23,7 @@ export type NodeKind =
   | 'externalSource'
   | 'missionParam'
   | 'gap'
+  | 'conclusion'
 
 /** Where a statement on the canvas comes from — kept visually distinct. */
 export type Provenance = 'measured' | 'engineer' | 'provisional' | 'unknown' | 'agent' | 'context'

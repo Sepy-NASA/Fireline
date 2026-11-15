@@ -150,6 +150,16 @@ export const KIND_META: Record<NodeKind, NodeKindMeta> = {
     desc: 'Engineer-provided mission assumption — an input, not an experimental result.',
     addable: false,
   },
+  conclusion: {
+    kind: 'conclusion',
+    label: 'Conclusion',
+    plural: 'Conclusions',
+    color: '#7a8bff',
+    ring: 'border-violet text-[#a5b1ff]',
+    text: 'text-[#a5b1ff]',
+    desc: 'Engineering conclusion drawn from measured rows — agent interpretation with a decision.',
+    addable: false,
+  },
   gap: {
     kind: 'gap',
     label: 'Evidence gap',

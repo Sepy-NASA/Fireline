@@ -246,6 +246,6 @@ export const EXTERNAL_SOURCES = [
     name: 'GFSS MCP — habitat sensor telemetry',
     kind: 'mcp',
     url: '',
-    note: 'Mock MCP datasource exposing simulated smoke-detector and atmosphere telemetry for crew habitats.',
+    note: 'MCP datasource exposing smoke-detector and atmosphere telemetry for crew habitats.',
   },
 ]

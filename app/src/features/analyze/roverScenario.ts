@@ -32,10 +32,14 @@ export const RV = {
   docBasis: 'rv_doc_basis',
   docBom: 'rv_doc_bom',
   gap: 'rv_gap',
+  c1: 'rv_c1',
+  c2: 'rv_c2',
+  c3: 'rv_c3',
   saffire2: 'n_investigation_PSI-99',
   saffire2ds: 'n_dataset_ds_PSI-99_saffire-2',
   saffire1: 'n_investigation_PSI-98',
   saffire1ds: 'n_dataset_ds_PSI-98_saffire-1',
+  bass2ds: 'n_dataset_ds_PSI-25_bass-ii',
   bass2: 'n_investigation_PSI-25',
   bass: 'n_investigation_PSI-26',
   bre: 'n_investigation_PSI-20',
@@ -72,11 +76,16 @@ export const POS: Record<string, { x: number; y: number }> = {
   [RV.saffire1]: { x: 790, y: 250 },
   [RV.saffire1ds]: { x: 950, y: 250 },
   [RV.bass2]: { x: 790, y: 440 },
-  [RV.bass]: { x: 950, y: 440 },
+  [RV.bass2ds]: { x: 950, y: 440 },
+  [RV.bass]: { x: 790, y: 620 },
+  // Engineering conclusions · agent interpretation
+  [RV.c1]: { x: 1140, y: 60 },
+  [RV.c2]: { x: 1140, y: 250 },
+  [RV.c3]: { x: 1140, y: 440 },
   // Follow-ups · not material evidence
-  [RV.flex]: { x: 790, y: 680 },
-  [RV.same]: { x: 950, y: 680 },
-  [RV.daft]: { x: 1110, y: 680 },
+  [RV.flex]: { x: 790, y: 860 },
+  [RV.same]: { x: 950, y: 860 },
+  [RV.daft]: { x: 1110, y: 860 },
 }
 
 /** Background lanes that group the canvas by evidence type (drawn behind nodes). */
@@ -84,7 +93,8 @@ export const LANES: { id: string; title: string; subtitle: string; color: string
   { id: 'lane_context', title: 'Atmosphere context', subtitle: 'different fuel · not material evidence', color: '#a78bfa', members: [RV.bre, RV.cfig] },
   { id: 'lane_mission', title: 'Mission inputs', subtitle: 'from design basis PLR-DB-001', color: '#4da3ff', members: [RV.o2, RV.g, RV.p, RV.flow, RV.mission, RV.docBasis] },
   { id: 'lane_materials', title: 'Rover materials', subtitle: 'from BOM PLR-BOM-001', color: '#ffb454', members: [RV.pmma, RV.textile, RV.docBom] },
-  { id: 'lane_evidence', title: 'Direct solid-material evidence', subtitle: 'measured in PSI · ~22 % O₂ · low-g', color: '#3ad7a3', members: [RV.saffire2, RV.saffire2ds, RV.saffire1, RV.saffire1ds, RV.bass2, RV.bass] },
+  { id: 'lane_evidence', title: 'Direct solid-material evidence', subtitle: 'measured in PSI · ~22 % O₂ · low-g', color: '#3ad7a3', members: [RV.saffire2, RV.saffire2ds, RV.saffire1, RV.saffire1ds, RV.bass2, RV.bass2ds, RV.bass] },
+  { id: 'lane_conclusions', title: 'Engineering conclusions', subtitle: 'interpretation of measured rows', color: '#7a8bff', members: [RV.c1, RV.c2, RV.c3] },
   { id: 'lane_followup', title: 'Follow-up branches', subtitle: 'suppression & detection · optional', color: '#8b95a5', members: [RV.flex, RV.same, RV.daft] },
 ]
 
@@ -529,9 +539,9 @@ export function applyDocument(sessionId: string, doc: MockDoc, fields: Extracted
     sessionId,
     node('externalSource', doc.nodeId, {
       label: doc.name,
-      hint: 'Engineer-provided document (demo PDF upload). Field extraction simulated for the demo — not a NASA source document.',
+      hint: 'Engineer-provided document (uploaded PDF) — mission inputs, not a NASA source document.',
       provenance: 'engineer',
-      badge: 'uploaded PDF · demo',
+      badge: 'uploaded PDF',
       fields: fields.map(({ label, value, source, status }) => ({ label, value, source, status })),
     }),
   )
@@ -641,7 +651,7 @@ export function applyDocument(sessionId: string, doc: MockDoc, fields: Extracted
     id: docMsgId,
     role: 'agent',
     text:
-      `Read "${doc.name}" — engineer-provided document (demo upload). You confirmed the extracted values below; I treat them as mission inputs, never as measurements. Fields marked TBD in the PDF stay unknown.\n\n` +
+      `Read "${doc.name}" — engineer-provided document. You confirmed the extracted values below; I treat them as mission inputs, never as measurements. Fields marked TBD in the PDF stay unknown.\n\n` +
       (confirmed.length ? `Confirmed / provisional:\n• ${confirmed.join('\n• ')}\n\n` : '') +
       (stillUnknown.length ? `Still unknown (kept visible on the canvas):\n• ${stillUnknown.join('\n• ')}` : 'No fields left unknown.'),
     at: Date.now(),
@@ -696,9 +706,7 @@ export function evidenceReply(sessionId: string): ScriptedReply {
       ensureMaterials(sessionId)
       const ev = (id: string, label: string, extra: Partial<GraphNodeData>) => upsertNode(sessionId, evidenceNode(id, label, extra))
       ev(RV.saffire2, 'Saffire-II (PSI-99)', { provenance: 'measured', badge: 'direct material · different env', hint: 'PMMA & SIBAL rows · ~22 % O₂ · 20 cm/s · not 1/6 g / 30 % O₂' })
-      ev(RV.saffire2ds, 'SAFFIRE-2 table', { provenance: 'measured', badge: 'rows 2-5 · 2-8 · 2-9', hint: 'PSI-99_Experimental table_SAFFIRE-2.csv — 9 sample rows + notes' })
       ev(RV.saffire1, 'Saffire-I (PSI-98)', { provenance: 'measured', badge: 'direct material · SIBAL', hint: '2 large SIBAL samples · ~21.5–21.7 % O₂ · 20 cm/s' })
-      ev(RV.saffire1ds, 'SAFFIRE-1 table', { provenance: 'measured', badge: 'rows S1 · S2', hint: 'PSI-98_Experimental table_SAFFIRE-1.csv — 2 sample rows' })
       ev(RV.bass2, 'BASS-II (PSI-25)', { provenance: 'measured', badge: 'screening context', hint: '129 rows · PMMA films/rods · O₂ 13.6–22.2 %' })
       ev(RV.bass, 'BASS (PSI-26)', { provenance: 'measured', badge: 'material index', hint: '122-row sample list · no consistent numeric results' })
       ev(RV.bre, 'ACME BRE (PSI-20)', { provenance: 'context', color: VIOLET, badge: 'different fuel · gas burner', hint: 'Ethylene/methane burner · O₂ 21–40 % · not a polymer test' })
@@ -707,8 +715,6 @@ export function evidenceReply(sessionId: string): ScriptedReply {
       upsertEdge(sessionId, RV.pmma, RV.saffire2, 'material tested · PMMA 2-8/2-9')
       upsertEdge(sessionId, RV.textile, RV.saffire2, 'material tested · SIBAL 2-5')
       upsertEdge(sessionId, RV.textile, RV.saffire1, 'material tested · SIBAL S1/S2')
-      upsertEdge(sessionId, RV.saffire2, RV.saffire2ds, 'table')
-      upsertEdge(sessionId, RV.saffire1, RV.saffire1ds, 'table')
       upsertEdge(sessionId, RV.pmma, RV.bass2, 'screening context')
       upsertEdge(sessionId, RV.pmma, RV.bass, 'material index')
       const o2Anchor = sess(sessionId)?.nodes.some((n) => n.id === RV.o2) ? RV.o2 : RV.root
@@ -728,9 +734,9 @@ export function evidenceReply(sessionId: string): ScriptedReply {
       '• CFI-G (PSI-159) — gas flames up to 0.85 O₂ fraction. A tested chamber condition, not a material limit.\n\n' +
       '④ Separate — not added\n' +
       '• FLEX (PSI-69) — droplet suppression (186 extinction / 61 disruption / 27 completion). Offered only for a suppressant branch.\n\n' +
-      'Not covered: no PSI table in this bundle tests 1/6 g, and no solid-material row is at 30 % O₂. I did not infer a 1/6-g result from microgravity data.',
+      'Not covered: no PSI table in this bundle tests 1/6 g, and no solid-material row is at 30 % O₂. I did not infer a 1/6-g result from microgravity data.\n\n' +
+      'Next: open the SAFFIRE-2 table in Explore, check the measured rows and add the table to the canvas.',
     chips: [
-      { nodeId: RV.saffire2ds, label: 'SAFFIRE-2 table' },
       { nodeId: RV.saffire2, label: 'Saffire-II' },
       { nodeId: RV.saffire1, label: 'Saffire-I' },
       { nodeId: RV.bass2, label: 'BASS-II' },
@@ -745,8 +751,65 @@ export function evidenceReply(sessionId: string): ScriptedReply {
       { label: 'PSI-25', href: PSI_URL('PSI-25') },
       { label: 'PSI-20', href: PSI_URL('PSI-20') },
     ],
-    highlight: [RV.saffire2, RV.saffire2ds, RV.textile, RV.pmma],
+    links: [{ view: 'explore', label: 'Open SAFFIRE-2 table in Explore', ref: 'ds_PSI-99_saffire-2' }],
+    highlight: [RV.saffire2, RV.saffire1, RV.textile, RV.pmma],
   }
+}
+
+/* ——— adding PSI data from Explore ——— */
+
+const EXPLORE_ITEMS: Record<string, { id: string; label: string; parent?: string; extra: Partial<GraphNodeData>; note: string }> = {
+  'ds_PSI-99_saffire-2': {
+    id: RV.saffire2ds,
+    label: 'SAFFIRE-2 table',
+    parent: RV.saffire2,
+    extra: { provenance: 'measured', badge: 'rows 2-5 · 2-8 · 2-9', hint: 'PSI-99_Experimental table_SAFFIRE-2.csv — 9 sample rows + notes' },
+    note: 'SIBAL row 2-5 and PMMA rows 2-8 / 2-9 are the closest material rows — select the table to compare them with the rover, then ask me to draw conclusions.',
+  },
+  'ds_PSI-98_saffire-1': {
+    id: RV.saffire1ds,
+    label: 'SAFFIRE-1 table',
+    parent: RV.saffire1,
+    extra: { provenance: 'measured', badge: 'rows S1 · S2', hint: 'PSI-98_Experimental table_SAFFIRE-1.csv — 2 sample rows' },
+    note: 'Two large SIBAL samples — burn time differs with flow direction (420 s vs 70 s).',
+  },
+  'ds_PSI-25_bass-ii': {
+    id: RV.bass2ds,
+    label: 'BASS-II table',
+    parent: RV.bass2,
+    extra: { provenance: 'measured', badge: '129 rows · PMMA', hint: 'PSI-25_Experimental table_BASS-II.csv — O₂ 13.6–22.2 %' },
+    note: 'Screening context only: lower O₂, airflow fields are free text.',
+  },
+  'PSI-99': { id: RV.saffire2, label: 'Saffire-II (PSI-99)', extra: { provenance: 'measured', badge: 'direct material · different env', hint: 'PMMA & SIBAL rows · ~22 % O₂ · 20 cm/s' }, note: 'Direct material match, different environment.' },
+  'PSI-98': { id: RV.saffire1, label: 'Saffire-I (PSI-98)', extra: { provenance: 'measured', badge: 'direct material · SIBAL', hint: '2 large SIBAL samples · ~21.5–21.7 % O₂ · 20 cm/s' }, note: 'Large SIBAL samples.' },
+  'PSI-25': { id: RV.bass2, label: 'BASS-II (PSI-25)', extra: { provenance: 'measured', badge: 'screening context', hint: '129 rows · PMMA films/rods · O₂ 13.6–22.2 %' }, note: 'Screening context.' },
+}
+
+/** Does the rover scenario place this Explore record itself? */
+export const isScenarioExploreItem = (ref: string) => Boolean(EXPLORE_ITEMS[ref])
+
+/** Add a record chosen in Explore to the rover canvas, in its evidence lane. Returns the node id. */
+export function addFromExplore(sessionId: string, ref: string): string {
+  const item = EXPLORE_ITEMS[ref]
+  const parentRef = item.parent ? Object.keys(EXPLORE_ITEMS).find((k) => EXPLORE_ITEMS[k].id === item.parent) : undefined
+  if (item.parent && parentRef) addFromExplore(sessionId, parentRef)
+  const already = sess(sessionId)?.nodes.some((n) => n.id === item.id)
+  const id = upsertNode(sessionId, evidenceNode(item.id, item.label, item.extra), false)
+  if (item.parent) upsertEdge(sessionId, item.parent, id, 'table')
+  else if (sess(sessionId)?.nodes.some((n) => n.id === RV.root)) upsertEdge(sessionId, RV.root, id, 'relates to')
+  if (!already && item.parent) {
+    const mid = msgId()
+    st().addMessage(sessionId, {
+      id: mid,
+      role: 'agent',
+      text: `Added ${item.label} from Explore to the evidence lane. ${item.note}`,
+      at: Date.now(),
+      chips: [{ nodeId: id, label: item.label }],
+      links: [{ view: 'visualize', label: 'See the evidence charts in Visualize' }],
+    })
+    st().setStreamingMsgId(mid)
+  }
+  return id
 }
 
 /* ——— optional follow-up nodes (offered as chips) ——— */
@@ -793,7 +856,7 @@ export function detectionReply(sessionId: string): ScriptedReply {
 
 /* ——— step 5: evidence-gap branch ——— */
 
-export const BRANCH_MEMBERS = [RV.mission, RV.pmma, RV.textile, RV.saffire2, RV.bass2, RV.bre]
+export const BRANCH_MEMBERS = [RV.mission, RV.pmma, RV.textile, RV.saffire2, RV.saffire2ds, RV.saffire1, RV.c1, RV.c2, RV.c3]
 
 export function createEvidenceBranch(sessionId: string): string | null {
   const s = sess(sessionId)
@@ -823,28 +886,102 @@ export function branchReply(sessionId: string): ScriptedReply {
       }
     },
     text:
-      `Created the branch "${BRANCH_NAME}" from the mission node, rover PMMA, rover textile, Saffire-II, BASS-II and ACME BRE. The right panel now separates what PSI measured, what you supplied, and what is not covered.\n\nNo fire probability or "risk match" percentage is shown — these files contain no calibrated rover-risk model.`,
+      `Created the branch "${BRANCH_NAME}" from the mission inputs, the rover materials, the Saffire evidence and the conclusions. The right panel now separates what PSI measured, what you supplied, and what is not covered.\n\nNo fire probability or "risk match" percentage is shown — these files contain no calibrated rover-risk model.`,
     highlight: BRANCH_MEMBERS,
+  }
+}
+
+/* ——— engineering conclusions (agent interpretation of measured rows) ——— */
+
+export interface Conclusion {
+  id: string
+  short: string
+  title: string
+  confidence: string
+  data: { node: string; alt?: string; text: string }[]
+  rover: string
+  decision: string
+  decisionShort: string
+  from: string[]
+}
+
+export const CONCLUSIONS: Conclusion[] = [
+  {
+    id: RV.c1,
+    short: 'C1',
+    title: 'Seat textile spreads fastest',
+    confidence: 'Lower bound — tested at ~22 % O₂, same airflow',
+    data: [{ node: RV.saffire2ds, alt: RV.saffire2, text: 'Saffire-II 2-5: 29 cm strip burned in 145 s · 2.1 mm/s at 20 cm/s, ~22 % O₂' }],
+    rover: 'Seats & stowage: 0.35 mm cotton-fiberglass, 3.8 m², airflow up to 20 cm/s',
+    decision: 'Priority 1 — evaluate a lower-flammability textile or reduce airflow at the seats; keep fans-off on smoke alarm (< 5 s) as a critical requirement.',
+    decisionShort: 'Replace the seat textile or cut airflow at the seats',
+    from: [RV.saffire2ds, RV.saffire2],
+  },
+  {
+    id: RV.c2,
+    short: 'C2',
+    title: 'Flow direction changes the burn 6×',
+    confidence: 'Lower bound — meaning of burn time to verify in report',
+    data: [{ node: RV.saffire1ds, alt: RV.saffire1, text: 'Saffire-I S1 vs S2: 420 s concurrent vs 70 s opposed — same SIBAL sample, 20 cm/s' }],
+    rover: 'Cabin flow forward → aft, parallel to seats and panels',
+    decision: 'Confirm the flow direction at the seats in ventilation CFD case V-07 before ranking the risk.',
+    decisionShort: 'Confirm flow direction at the seats (CFD V-07)',
+    from: [RV.saffire1ds, RV.saffire1],
+  },
+  {
+    id: RV.c3,
+    short: 'C3',
+    title: 'PMMA pane: slow but persistent flame',
+    confidence: 'Lower bound — 2-9 material cell blank, verify',
+    data: [{ node: RV.saffire2ds, alt: RV.saffire2, text: 'Saffire-II 2-8 / 2-9: anchored flame, regression 0.01–0.04 mm/s, 600–900 s burning' }],
+    rover: 'Viewport pane: cast PMMA 6.0 mm with acrylic hard coat',
+    decision: 'Treat the pane as a long-lived fuel, not a fast spreader — keep ignition sources away from its edges and frame.',
+    decisionShort: 'Keep ignition sources away from the pane edges',
+    from: [RV.saffire2ds, RV.saffire2],
+  },
+]
+
+export function conclusionsReply(sessionId: string): ScriptedReply {
+  const s = sess(sessionId)
+  if (!s?.nodes.some((n) => n.id === RV.saffire2)) {
+    return { text: 'There is no measured evidence on the canvas yet. Ask me to find the closest PSI evidence first, then I can draw conclusions from the rows.' }
+  }
+  return {
+    apply: () => {
+      for (const c of CONCLUSIONS) {
+        upsertNode(sessionId, node('conclusion', c.id, { label: `${c.short} · ${c.title}`, hint: c.decision, provenance: 'agent', badge: 'decision' }))
+        // link to the most specific evidence on the canvas (table, else investigation)
+        const src = c.from.find((f) => sess(sessionId)?.nodes.some((n) => n.id === f))
+        if (src) upsertEdge(sessionId, src, c.id, 'supports')
+      }
+    },
+    text:
+      'Engineering conclusions from the measured rows. The Saffire tests ran at ~22 % O₂; your cabin is at 30 %. More oxygen makes ignition and flame spread easier (general combustion behaviour, not taken from these tables), so treat these rows as a lower bound — the rover materials should burn at least this readily. Airflow (20 cm/s) is inside your 5–20 cm/s range.\n\n' +
+      CONCLUSIONS.map((c) => `${c.short} · ${c.title}\nData: ${c.data[0].text}\nRover: ${c.rover}\n→ ${c.decision}`).join('\n\n') +
+      '\n\nC4 · Not answerable from PSI data: behaviour at 30 % O₂ and 1/6 g\n→ Plan mission-specific material testing at 30 % O₂ / 10.2 psia and keep partial gravity as an open item.',
+    chips: CONCLUSIONS.map((c) => ({ nodeId: c.id, label: `${c.short} · ${c.title}` })),
+    links: [{ view: 'visualize', label: 'See the evidence charts in Visualize' }],
+    highlight: [RV.c1, RV.c2, RV.c3],
   }
 }
 
 /* ——— step 6: next engineering actions ——— */
 
 export const NEXT_ACTIONS = [
-  'Verify rover pressure, atmosphere operating envelope and fan-flow values against the signed design basis.',
-  'Compare BOM line 14 (cast PMMA, 6.0 mm, with hard coat) and line 22 (0.35 mm cotton-fiberglass on Nomex felt) with the tested PSI samples — coatings and backings are not represented in PSI rows.',
-  'Retrieve the Saffire-II final report (PSI-99) for the PMMA spread-length notes and the garbled "?-g" gravity headers.',
-  'Compare rover conditions against individual test rows (2-5, 2-8, 2-9, S1, S2), not only investigation summaries.',
-  'Log 30 % O₂ / rover pressure / rover flow / 1/6 g as an uncovered condition — not a predicted failure.',
-  'Recommend mission-specific material screening or follow-on testing under approved conditions; no safe/unsafe label from analogues alone.',
+  'Verify cabin pressure and fan-flow values against the signed design basis (PLR-DB-001 Rev B).',
+  'C1 — evaluate a lower-flammability seat textile or reduced airflow at the seats; keep fans-off on smoke alarm (< 5 s) as a critical requirement.',
+  'C2 — confirm the flow direction at the seats in ventilation CFD case V-07 before ranking the risk.',
+  'C3 — keep ignition sources away from the PMMA pane edges and frame; detection must catch a small, steady flame.',
+  'Retrieve the Saffire-II report (PSI-99) for the PMMA notes, the blank material cell in row 2-9 and the "?-g" headers.',
+  'Plan mission-specific material testing at 30 % O₂ / 10.2 psia and log 1/6 g as an open item — no PSI data covers these conditions.',
 ]
 
 export function nextActionsReply(sessionId: string): ScriptedReply {
   return {
     apply: () => {
       upsertNode(sessionId, node('gap', RV.gap, {
-        label: 'Uncovered: 30 % O₂ · 1/6 g · rover p & flow',
-        hint: 'No PSI test in this bundle covers this combination. An evidence gap — not a predicted failure.',
+        label: 'Uncovered: 30 % O₂ · 1/6 g',
+        hint: 'No PSI solid-material test covers 30 % O₂ or partial gravity. An evidence gap — not a predicted failure.',
         provenance: 'agent',
         badge: 'evidence gap',
       }))
@@ -875,7 +1012,7 @@ export function nextActionsReply(sessionId: string): ScriptedReply {
 export function safetyVerdictReply(): ScriptedReply {
   return {
     text:
-      'I can’t label the rover materials safe or unsafe, and I won’t give a risk percentage. The PSI bundle has no lunar-gravity material test, no PMMA or SIBAL result at 30 % O₂, and no calibrated rover-risk model.\n\nWhat the data does show: Saffire-II (PSI-99) rows 2-5, 2-8, 2-9 at ~22 % O₂ and 20 cm/s — a material analogue, plus a clear coverage gap. Ask me for "next actions" to see what closes it.',
+      'I can’t label the rover materials safe or unsafe, and I won’t give a risk percentage. The PSI bundle has no lunar-gravity material test, no PMMA or SIBAL result at 30 % O₂, and no calibrated rover-risk model.\n\nWhat the data does support: Saffire-II (PSI-99) rows 2-5, 2-8, 2-9 show both materials burning at ~22 % O₂ — a lower bound for 30 %. Ask me to "draw conclusions" for the decisions this supports.',
     chips: [{ nodeId: RV.saffire2ds, label: 'SAFFIRE-2 table' }],
   }
 }
@@ -889,7 +1026,7 @@ export function goalFirstReply(): ScriptedReply {
 export function helpReply(): ScriptedReply {
   return {
     text:
-      'For this review I can:\n• find the closest PSI evidence for the rover materials and compare O₂, flow, geometry and results,\n• build the "30 % O₂ rover material evidence" branch,\n• propose next engineering actions,\n• add a suppression (FLEX) or detection (SAME / DAFT) follow-up.\n\nUpload the design basis and BOM PDFs with "Add data" on the right.',
+      'For this review I can:\n• find the closest PSI evidence for the rover materials and compare O₂, flow, geometry and results,\n• draw engineering conclusions from the measured rows,\n• build the "30 % O₂ rover material evidence" branch,\n• propose next engineering actions,\n• add a suppression (FLEX) or detection (SAME / DAFT) follow-up.\n\nUpload the design basis and BOM PDFs with "Add data" on the right.',
   }
 }
 

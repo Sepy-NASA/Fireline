@@ -1,5 +1,5 @@
 import { Flame } from 'lucide-react'
-import { lazy, Suspense, useEffect } from 'react'
+import { Component, lazy, Suspense, useEffect, type ReactNode } from 'react'
 import { TooltipProvider } from './components/ui/tooltip'
 import { AnalyzeView } from './features/analyze/AnalyzeView'
 import { ExploreView } from './features/explore/ExploreView'
@@ -11,8 +11,33 @@ import { cn } from './lib/utils'
 
 // lazy-load the WebGL/three.js view so it does not bloat the initial bundle
 const FlameVrView = lazy(() =>
-  import('./features/vr/FlameVrView').then((m) => ({ default: m.FlameVrView })),
+  import('./features/vr/FlameVrView')
+    .then((m) => ({ default: m.FlameVrView }))
+    // a failed chunk (e.g. missing `three` dependency) must not take the whole app down
+    .catch((err: unknown) => ({ default: () => <VrUnavailable error={err} /> })),
 )
+
+function VrUnavailable({ error }: { error: unknown }) {
+  const msg = error instanceof Error ? error.message : String(error)
+  return (
+    <div className="flex h-full flex-col items-center justify-center gap-2 p-6 text-center">
+      <p className="text-sm font-semibold text-text">The 3D flame view could not be loaded.</p>
+      <p className="max-w-md text-xs text-dim">Install the project dependencies (<code className="font-mono">pnpm install</code>) and restart the dev server.</p>
+      <p className="max-w-lg font-mono text-[10px] text-faint">{msg}</p>
+    </div>
+  )
+}
+
+/** Keeps a crashing view from blanking the whole app. */
+class ViewBoundary extends Component<{ children: ReactNode }, { error: unknown }> {
+  state = { error: null as unknown }
+  static getDerivedStateFromError(error: unknown) {
+    return { error }
+  }
+  render() {
+    return this.state.error ? <VrUnavailable error={this.state.error} /> : this.props.children
+  }
+}
 
 const BOOKMARKS: { view: View; label: string }[] = [
   { view: 'analyze', label: 'Analyze' },
@@ -101,6 +126,7 @@ export default function App() {
           {view === 'explore' && <ExploreView />}
           {view === 'visualize' && <VisualizeView />}
           {view === 'vr' && (
+            <ViewBoundary>
             <Suspense
               fallback={
                 <div className="flex h-full items-center justify-center text-sm text-faint">
@@ -110,6 +136,7 @@ export default function App() {
             >
               <FlameVrView />
             </Suspense>
+            </ViewBoundary>
           )}
         </main>
 

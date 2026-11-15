@@ -1,6 +1,7 @@
 import { useAppStore } from '../../store/appStore'
 import { newId } from '../analyze/catalog'
 import { buildDemoSession } from '../analyze/sessionSeed'
+import { addFromExplore, isRoverSession, isScenarioExploreItem } from '../analyze/roverScenario'
 import { INVESTIGATIONS } from '../../generated/investigations'
 import type { EdgeKind, GraphNode, NodeKind, Session } from '../../types'
 
@@ -69,6 +70,11 @@ export function addToAnalyze(items: AnalyzeItem[]): string[] {
   const anchor = nodes.find((n) => n.type === 'researchQuestion')
 
   for (const item of items) {
+    // rover review: known PSI records land in their evidence lane, wired to the scenario nodes
+    if (isRoverSession(session) && isScenarioExploreItem(item.ref)) {
+      touched.push(addFromExplore(sid, item.ref))
+      continue
+    }
     let parentId: string | null = null
     if (item.accession && item.ref !== item.accession) {
       const inv = INVESTIGATIONS.find((i) => i.accession === item.accession)

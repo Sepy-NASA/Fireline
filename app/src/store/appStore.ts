@@ -63,6 +63,9 @@ interface AppState {
   /* mock agent "thinking" indicator (shared by chat + panel actions) */
   agentThinking: boolean
   setAgentThinking: (v: boolean) => void
+  /** Explore deep-link: open Explore with this query / dataset selected */
+  exploreFocus: { q: string; datasetId?: string } | null
+  setExploreFocus: (f: { q: string; datasetId?: string } | null) => void
   /** id of the agent message currently being "typed out" */
   streamingMsgId: string | null
   setStreamingMsgId: (id: string | null) => void
@@ -258,6 +261,8 @@ export const useAppStore = create<AppState>()(
 
       agentThinking: false,
       setAgentThinking: (v) => set({ agentThinking: v }),
+      exploreFocus: null,
+      setExploreFocus: (f) => set({ exploreFocus: f }),
       streamingMsgId: null,
       setStreamingMsgId: (id) => set({ streamingMsgId: id }),
 

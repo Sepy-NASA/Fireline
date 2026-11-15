@@ -30,14 +30,15 @@ const TEMPLATES: { id: Template; label: string; icon: React.ReactNode }[] = [
   { id: 'line', label: 'Line', icon: <LineIcon className="size-3.5" /> },
   { id: 'bar', label: 'Bar', icon: <BarChart2 className="size-3.5" /> },
   { id: 'coverage', label: 'Coverage map', icon: <Grid3X3 className="size-3.5" /> },
-  { id: 'rover', label: 'Rover O₂ coverage', icon: <Grid3X3 className="size-3.5" /> },
+  { id: 'rover', label: 'Rover evidence', icon: <Grid3X3 className="size-3.5" /> },
 ]
 
 const PALETTE = ['#4da3ff', '#ffb454', '#3ad7a3', '#7a8bff', '#ff6b6b', '#9ad84a', '#e9eef5']
 
 export function VisualizeView() {
   const vizPreset = useAppStore((s) => s.vizPreset)
-  const [template, setTemplate] = useState<Template>(vizPreset === 'rover' ? 'rover' : 'scatter')
+  const roverActive = useAppStore((s) => s.activeSessionId?.startsWith('ses_rover') ?? false)
+  const [template, setTemplate] = useState<Template>(vizPreset === 'rover' || roverActive ? 'rover' : 'scatter')
   const [datasetId, setDatasetId] = useState<string | null>(null)
   const workingItems = useAppStore((s) => s.workingItems)
 
@@ -75,7 +76,7 @@ export function VisualizeView() {
           ))}
         </div>
 
-        <div className="ml-auto flex items-center gap-2">
+        <div className={cn('ml-auto flex items-center gap-2', template === 'rover' && 'hidden')}>
           <label className="text-[11px] text-faint">Dataset</label>
           <select
             value={datasetId ?? ''}
@@ -94,7 +95,7 @@ export function VisualizeView() {
 
       <div className="min-h-0 flex-1">
         {template === 'rover' ? (
-          <RoverCoverage />
+          <RoverEvidence />
         ) : !dataset ? (
           <EmptyChart />
         ) : template === 'coverage' ? (
@@ -419,72 +420,197 @@ function CoverageMap({ dataset }: { dataset: (typeof DATASETS)[number] }) {
   )
 }
 
-/* ——— Demo: rover condition coverage (O₂ ranges from the supplied PSI tables) ——— */
+/* ——— Rover evidence: what the PSI tables measured vs the rover inputs ——— */
 
-const ROVER_ROWS: { label: string; file: string; kind: 'solid' | 'gas'; min: number; max: number; points?: number[]; note: string }[] = [
-  { label: 'Saffire-II (PSI-99)', file: 'SAFFIRE-2.csv · rows 2-5, 2-8, 2-9', kind: 'solid', min: 21.5, max: 22.1, note: 'PMMA & SIBAL · 20 cm/s' },
-  { label: 'Saffire-I (PSI-98)', file: 'SAFFIRE-1.csv · rows S1, S2', kind: 'solid', min: 21.5, max: 21.7, note: 'SIBAL · 20 cm/s' },
-  { label: 'BASS-II (PSI-25)', file: 'BASS-II.csv · 129 rows', kind: 'solid', min: 13.6, max: 22.2, note: 'PMMA films/rods · flow free text' },
-  { label: 'ACME BRE (PSI-20)', file: 'ACME BRE.csv · 18 daily summaries', kind: 'gas', min: 21, max: 40, points: [21, 25, 26.5, 34, 40], note: 'gas burner · different fuel' },
-  { label: 'CFI-G (PSI-159)', file: 'CFI-G Normal + Inverse Flames.csv', kind: 'gas', min: 12, max: 85, note: 'gas flames · different fuel' },
+const SOLID = '#ffb454'
+const GAS = '#a78bfa'
+const ROVER = '#4da3ff'
+
+const O2_ROWS: { label: string; file: string; kind: 'solid' | 'gas'; min: number; max: number; points?: number[]; note: string }[] = [
+  { label: 'Saffire-II (PSI-99)', file: 'SAFFIRE-2 · rows 2-5, 2-8, 2-9', kind: 'solid', min: 21.5, max: 22.1, note: 'PMMA & SIBAL' },
+  { label: 'Saffire-I (PSI-98)', file: 'SAFFIRE-1 · rows S1, S2', kind: 'solid', min: 21.5, max: 21.7, note: 'SIBAL' },
+  { label: 'BASS-II (PSI-25)', file: 'BASS-II · 129 rows', kind: 'solid', min: 13.6, max: 22.2, note: 'PMMA films / rods' },
+  { label: 'ACME BRE (PSI-20)', file: 'ACME BRE · 18 summaries', kind: 'gas', min: 21, max: 40, points: [21, 25, 26.5, 34, 40], note: 'gas burner' },
+  { label: 'CFI-G (PSI-159)', file: 'CFI-G normal + inverse', kind: 'gas', min: 12, max: 85, note: 'gas flames' },
 ]
 
-function RoverCoverage() {
-  const W = 760
-  const left = 190
-  const right = 30
-  const x0 = 10
-  const x1 = 90
-  const sx = (v: number) => left + ((v - x0) / (x1 - x0)) * (W - left - right)
-  const rowH = 46
-  const top = 40
-  const H = top + ROVER_ROWS.length * rowH + 50
-  const ticks = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+/** Burn time per sample, straight from the tables (s). */
+const BURN_ROWS: { id: string; src: string; material: string; value: number; flow: string; flag?: string }[] = [
+  { id: '2-5', src: 'Saffire-II', material: 'SIBAL', value: 145, flow: 'concurrent' },
+  { id: '2-8', src: 'Saffire-II', material: 'PMMA', value: 600, flow: 'concurrent' },
+  { id: '2-9', src: 'Saffire-II', material: 'PMMA?', value: 900, flow: 'concurrent', flag: 'material cell blank in table' },
+  { id: 'S1', src: 'Saffire-I', material: 'SIBAL', value: 420, flow: 'concurrent' },
+  { id: 'S2', src: 'Saffire-I', material: 'SIBAL', value: 70, flow: 'opposed' },
+]
+
+function Panel({ title, sub, children }: { title: string; sub: string; children: React.ReactNode }) {
   return (
-    <div className="flex h-full flex-col items-center justify-center gap-4 overflow-auto p-6">
-      <div className="w-full max-w-[800px]">
-        <p className="text-sm font-semibold text-text">Tested O₂ range vs rover target — PSI evidence in this bundle</p>
-        <p className="mt-0.5 text-xs text-dim">
-          Amber = solid-material tests · violet = gas flames (different fuel, context only) · blue line = rover target 30 % O₂ (engineer input)
-        </p>
-      </div>
-      <svg viewBox={`0 0 ${W} ${H}`} className="w-full max-w-[800px]" role="img" aria-label="O2 coverage of PSI evidence vs rover target">
-        {ticks.map((t) => (
-          <g key={t}>
-            <line x1={sx(t)} x2={sx(t)} y1={top - 10} y2={H - 40} stroke="#1c2430" />
-            <text x={sx(t)} y={H - 22} textAnchor="middle" fontSize="10" fill="#5b6472">{t} %</text>
+    <div className="rounded-lg border border-edge bg-panel p-4">
+      <p className="text-[13px] font-semibold text-text">{title}</p>
+      <p className="mb-3 text-[11px] text-faint">{sub}</p>
+      {children}
+    </div>
+  )
+}
+
+function RangeChart({
+  rows,
+  min,
+  max,
+  ticks,
+  unit,
+  rover,
+  roverLabel,
+}: {
+  rows: { label: string; file: string; color: string; from: number; to: number; points?: number[]; note: string; faint?: boolean }[]
+  min: number
+  max: number
+  ticks: number[]
+  unit: string
+  rover: { from: number; to: number } | null
+  roverLabel: string
+}) {
+  const W = 640
+  const left = 170
+  const right = 16
+  const sx = (v: number) => left + ((v - min) / (max - min)) * (W - left - right)
+  const rowH = 38
+  const top = 28
+  const H = top + rows.length * rowH + 34
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} className="w-full" role="img">
+      {ticks.map((t) => (
+        <g key={t}>
+          <line x1={sx(t)} x2={sx(t)} y1={top - 6} y2={H - 30} stroke="#1c2430" />
+          <text x={sx(t)} y={H - 14} textAnchor="middle" fontSize="10" fill="#5b6472">{t}{unit}</text>
+        </g>
+      ))}
+      {rover && (
+        <>
+          <rect x={sx(rover.from) - (rover.from === rover.to ? 1.5 : 0)} y={top - 6} width={Math.max(sx(rover.to) - sx(rover.from), 3)} height={H - 24 - top} fill={ROVER} fillOpacity={0.14} stroke={ROVER} strokeDasharray="4 3" />
+          <text x={sx((rover.from + rover.to) / 2)} y={top - 12} textAnchor="middle" fontSize="10.5" fontWeight={600} fill={ROVER}>{roverLabel}</text>
+        </>
+      )}
+      {rows.map((r, i) => {
+        const y = top + i * rowH + rowH / 2
+        return (
+          <g key={r.label} opacity={r.faint ? 0.8 : 1}>
+            <text x={4} y={y - 3} fontSize="11.5" fill="#e9eef5" fontWeight={600}>{r.label}</text>
+            <text x={4} y={y + 11} fontSize="9" fill="#5b6472">{r.file}</text>
+            <rect x={sx(r.from)} y={y - 6} width={Math.max(sx(r.to) - sx(r.from), 4)} height={12} rx={3} fill={r.color} fillOpacity={r.faint ? 0.3 : 0.85} stroke={r.color} />
+            {r.points?.map((p) => <circle key={p} cx={sx(p)} cy={y} r={3.2} fill={r.color} />)}
           </g>
-        ))}
-        <text x={(left + W - right) / 2} y={H - 4} textAnchor="middle" fontSize="10" fill="#8b95a5">Oxygen (% by volume)</text>
-        {ROVER_ROWS.map((r, i) => {
-          const y = top + i * rowH + rowH / 2
-          const color = r.kind === 'solid' ? '#ffb454' : '#a78bfa'
-          return (
-            <g key={r.label}>
-              <text x={8} y={y - 4} fontSize="11.5" fill="#e9eef5" fontWeight={600}>{r.label}</text>
-              <text x={8} y={y + 10} fontSize="9" fill="#5b6472">{r.file}</text>
-              <rect x={sx(r.min)} y={y - 7} width={Math.max(sx(r.max) - sx(r.min), 4)} height={14} rx={3} fill={color} fillOpacity={r.kind === 'solid' ? 0.85 : 0.3} stroke={color} />
-              {r.points?.map((p) => <circle key={p} cx={sx(p)} cy={y} r={3.5} fill={color} />)}
-              <text x={sx(r.max) + 6 > W - 200 ? sx(r.min) : sx(r.max) + 6} y={sx(r.max) + 6 > W - 200 ? y + 20 : y + 4} fontSize="9.5" fill="#8b95a5">{r.min}–{r.max} % · {r.note}</text>
-            </g>
-          )
-        })}
-        <line x1={sx(30)} x2={sx(30)} y1={top - 18} y2={H - 40} stroke="#4da3ff" strokeWidth={2} strokeDasharray="5 3" />
-        <text x={sx(30)} y={top - 22} textAnchor="middle" fontSize="10.5" fill="#4da3ff" fontWeight={600}>Rover target 30 %</text>
-      </svg>
-      <div className="grid w-full max-w-[800px] grid-cols-3 gap-2 text-[11.5px]">
-        <div className="rounded-md border border-teal/30 bg-teal/5 p-2.5 text-dim">
-          <p className="mb-0.5 font-semibold text-teal">Measured</p>
-          Solid-material rows (PMMA, SIBAL) stop at ~22 % O₂, all from low-g orbital tests.
+        )
+      })}
+    </svg>
+  )
+}
+
+function RoverEvidence() {
+  const session = useAppStore((s) => s.sessions.find((x) => x.id === s.activeSessionId))
+  const val = (id: string) => session?.nodes.find((n) => n.id === id)?.data.value || ''
+  const o2 = val('rv_o2') || '30 %'
+  const flow = val('rv_airflow')
+  const pressure = val('rv_pressure')
+  const gravity = val('rv_gravity') || '1/6 g'
+  const flowRange = flow.match(/([\d.]+)\s*[–-]\s*([\d.]+)/)
+  const o2num = parseFloat(o2) || 30
+  const burnMax = 1000
+  return (
+    <div className="h-full overflow-y-auto p-5">
+      <div className="mx-auto max-w-[1180px] space-y-4">
+        <div className="flex flex-wrap items-end justify-between gap-3">
+          <div>
+            <p className="text-[16px] font-semibold text-text">Rover evidence — measured in PSI vs rover inputs</p>
+            <p className="text-[12px] text-dim">Saffire, BASS and ACME tables against the rover design basis.</p>
+          </div>
+          <div className="flex flex-wrap gap-1.5 text-[11px]">
+            {[
+              ['Gravity', gravity],
+              ['O₂', o2],
+              ['Pressure', pressure || '—'],
+              ['Airflow', flow || '—'],
+            ].map(([k, v]) => (
+              <span key={k} className="rounded-md border border-bright/40 bg-bright/10 px-2 py-1 text-bright">
+                <span className="text-faint">{k} </span>
+                {v}
+              </span>
+            ))}
+          </div>
         </div>
-        <div className="rounded-md border border-flame/30 bg-flame/5 p-2.5 text-dim">
-          <p className="mb-0.5 font-semibold text-flame">Not covered</p>
-          No solid-material row at 30 % O₂ and no test at 1/6 g. Rover pressure & airflow not tabulated in the Saffire rows.
+
+        <div className="grid grid-cols-3 gap-3">
+          {[
+            o2num >= 20 && o2num <= 23
+              ? ['Oxygen', `Saffire rows at ~22 % O₂. Rover: ${o2}.`, 'Covered', 'text-teal border-teal/40 bg-teal/5']
+              : ['Oxygen', `Solid-material tests stop at ~22 %. Rover: ${o2}.`, 'Not covered', 'text-flame border-flame/40 bg-flame/5'],
+            ['Gravity', `All tests in orbital low-g. Rover: ${gravity}.`, 'Not covered', 'text-flame border-flame/40 bg-flame/5'],
+            ['Airflow', `Saffire rows at 20 cm/s. Rover: ${flow || 'unknown'}.`, flow ? 'Speed overlaps' : 'Unknown', 'text-amber border-amber/40 bg-amber/5'],
+          ].map(([k, t, v, cls]) => (
+            <div key={k} className={`rounded-lg border p-3 ${cls}`}>
+              <p className="text-[11px] font-semibold uppercase tracking-wider">{k} · {v}</p>
+              <p className="mt-1 text-[12px] text-dim">{t}</p>
+            </div>
+          ))}
         </div>
-        <div className="rounded-md border border-[#a78bfa]/30 bg-[#a78bfa]/5 p-2.5 text-dim">
-          <p className="mb-0.5 font-semibold text-[#c4b5fd]">Context only</p>
-          Gas-flame data spans 30 % but cannot serve as a solid-polymer flammability threshold.
+
+        <div className="grid grid-cols-2 gap-3">
+          <Panel title="Tested O₂ range" sub="Amber = solid-material tests · violet = gas flames (different fuel, context only)">
+            <RangeChart
+              rows={O2_ROWS.map((r) => ({ label: r.label, file: r.file, color: r.kind === 'solid' ? SOLID : GAS, from: r.min, to: r.max, points: r.points, note: r.note, faint: r.kind === 'gas' }))}
+              min={10}
+              max={90}
+              ticks={[10, 20, 30, 40, 50, 60, 70, 80, 90]}
+              unit="%"
+              rover={{ from: o2num, to: o2num }}
+              roverLabel={`Rover ${o2}`}
+            />
+          </Panel>
+          <Panel title="Air flow at the sample" sub="Saffire tables list 20 cm/s · BASS-II flow fields are free text (not plotted)">
+            <RangeChart
+              rows={[
+                { label: 'Saffire-II (PSI-99)', file: 'SAFFIRE-2 · all rows', color: SOLID, from: 20, to: 20, note: '' },
+                { label: 'Saffire-I (PSI-98)', file: 'SAFFIRE-1 · S1, S2', color: SOLID, from: 20, to: 20, note: '' },
+              ]}
+              min={0}
+              max={40}
+              ticks={[0, 5, 10, 15, 20, 25, 30, 35, 40]}
+              unit=""
+              rover={flowRange ? { from: parseFloat(flowRange[1]), to: parseFloat(flowRange[2]) } : null}
+              roverLabel={`Rover ${flow} (1/6-g flow field)`}
+            />
+            <p className="mt-1 text-[10.5px] text-faint">cm/s. Same speed does not mean the same flow field: 1/6 g adds buoyant flow.</p>
+          </Panel>
         </div>
+
+        <Panel title="Burn time per sample" sub="Measured in the Saffire tables, ~22 % O₂, 20 cm/s · different sample sizes — not a flammability limit">
+          <div className="space-y-1.5">
+            {BURN_ROWS.map((r) => (
+              <div key={r.id} className="grid grid-cols-[150px_1fr_70px] items-center gap-3">
+                <div>
+                  <p className="text-[12px] font-semibold text-text">
+                    {r.src} · {r.id}
+                  </p>
+                  <p className="text-[10px] text-faint">
+                    {r.material} · {r.flow}
+                    {r.flag ? ` · ${r.flag}` : ''}
+                  </p>
+                </div>
+                <div className="h-4 rounded-sm bg-edge/40">
+                  <div
+                    className="h-4 rounded-sm"
+                    style={{ width: `${(r.value / burnMax) * 100}%`, background: r.material.startsWith('PMMA') ? SOLID : '#3ad7a3', opacity: r.flag ? 0.6 : 0.9 }}
+                  />
+                </div>
+                <span className="text-right font-mono text-[12px] text-text">{r.value} s</span>
+              </div>
+            ))}
+          </div>
+          <div className="mt-2 flex gap-3 text-[10.5px] text-faint">
+            <span><span className="mr-1 inline-block size-2 rounded-sm" style={{ background: SOLID }} />PMMA</span>
+            <span><span className="mr-1 inline-block size-2 rounded-sm bg-teal" />Cotton-fiberglass (SIBAL)</span>
+          </div>
+        </Panel>
       </div>
     </div>
   )

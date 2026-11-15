@@ -197,4 +197,5 @@ export const nodeTypes = {
   lane: memo(LaneNode),
   missionParam: memo(CircleNode),
   gap: memo(CircleNode),
+  conclusion: memo(CircleNode),
 }
