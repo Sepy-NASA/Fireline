@@ -64,8 +64,8 @@ interface AppState {
   agentThinking: boolean
   setAgentThinking: (v: boolean) => void
   /** Explore deep-link: open Explore with this query / dataset selected */
-  exploreFocus: { q: string; datasetId?: string } | null
-  setExploreFocus: (f: { q: string; datasetId?: string } | null) => void
+  exploreFocus: { q: string; datasetId?: string; tab?: 'data' | 'files' } | null
+  setExploreFocus: (f: { q: string; datasetId?: string; tab?: 'data' | 'files' } | null) => void
   /** id of the agent message currently being "typed out" */
   streamingMsgId: string | null
   setStreamingMsgId: (id: string | null) => void

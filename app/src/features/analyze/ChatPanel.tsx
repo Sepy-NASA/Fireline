@@ -260,7 +260,7 @@ function Message({
               key={l.label}
               onClick={() => {
                 if (l.view === 'visualize') useAppStore.getState().setVizPreset('figures')
-                if (l.view === 'explore' && l.ref) useAppStore.getState().setExploreFocus({ q: 'saffire', datasetId: l.ref })
+                if (l.view === 'explore') useAppStore.getState().setExploreFocus({ q: '', tab: 'files' })
                 setView(l.view)
               }}
               className="inline-flex items-center gap-1.5 rounded-md border border-bright/60 bg-bright/15 px-2.5 py-1.5 text-[12px] font-semibold text-bright transition-colors hover:bg-bright/25"

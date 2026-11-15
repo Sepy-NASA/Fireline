@@ -110,7 +110,7 @@ export function ExploreView() {
   const setExploreFocus = useAppStore((s) => s.setExploreFocus)
   useEffect(() => {
     if (!exploreFocus) return
-    setTab('data')
+    setTab(exploreFocus.tab ?? 'data')
     setFilters({ ...EMPTY_FILTERS, q: exploreFocus.q })
     if (exploreFocus.datasetId) {
       setSelectedDataId(exploreFocus.datasetId)
@@ -246,7 +246,7 @@ export function ExploreView() {
           <input
             value={filters.q}
             onChange={(e) => setFilters((f) => ({ ...f, q: e.target.value }))}
-            placeholder={tab === 'data' ? 'Search datasets, investigations, columns…' : 'Search file names, paths, investigations…'}
+            placeholder={tab === 'data' ? 'Search experiments, investigations, columns…' : 'Search file names, paths, investigations…'}
             className="h-8 min-w-0 flex-1 bg-transparent text-sm text-text placeholder:text-faint focus:outline-none"
             aria-label="Search"
           />
@@ -275,7 +275,7 @@ export function ExploreView() {
               )}
             >
               {icon}
-              {t}
+              {t === 'data' ? 'experiments' : t}
               <span className="tnum font-mono text-[10px] text-faint">
                 {n == null ? <Loader2 className="inline size-3 animate-spin" /> : n.toLocaleString()}
               </span>
@@ -368,7 +368,7 @@ export function ExploreView() {
             />
           ) : (
             <div className="p-4 text-sm text-faint">
-              Select a {tab === 'data' ? 'dataset' : 'file'} to preview it, open its data, or add it to your working set
+              Select {tab === 'data' ? 'an experiment' : 'a file'} to preview it, open its data, or add it to your working set
               or the Analyze canvas.
             </div>
           )}

@@ -5,7 +5,7 @@ import type { Branch, GraphNode, Session } from '../../types'
 import { Button } from '../../components/ui/button'
 import { cn } from '../../lib/utils'
 import { PROVENANCE_META } from './nodeSystem'
-import { CONCLUSIONS, DOI, EVIDENCE, PSI_URL, RV, nextActionsReply, roverInputs, type Evidence } from './roverScenario'
+import { CONCLUSIONS, DOI, EVIDENCE, PSI_URL, RV, nextActionsReply, roverInputs, withoutConclusionRefs, type Evidence } from './roverScenario'
 
 /* ————————————————————————————————————————————
    Right-panel details for the rover review.
@@ -172,13 +172,12 @@ function ExploreTableButton({ ev, session }: { ev: Evidence; session: Session })
   return (
     <button
       onClick={() => {
-        const st = useAppStore.getState()
-        st.setExploreFocus({ q: t.label.toLowerCase().split('-')[0], datasetId: t.ds })
-        st.setView('explore')
+        // the engineer searches for the experiment in Explore
+        useAppStore.getState().setView('explore')
       }}
       className="flex w-full items-center justify-center gap-1.5 rounded-md border border-bright/60 bg-bright/15 px-2.5 py-2 text-[12.5px] font-semibold text-bright transition-colors hover:bg-bright/25"
     >
-      <Search className="size-3.5" /> Open {t.label} table in Explore →
+      <Search className="size-3.5" /> Search {t.label} in Explore →
     </button>
   )
 }
@@ -485,6 +484,9 @@ function DocDetails({ node }: { node: GraphNode }) {
 }
 
 function GapDetails({ node }: { node: GraphNode }) {
+  const hasConclusions = useAppStore((s) =>
+    !!s.sessions.find((x) => x.id === s.activeSessionId)?.nodes.some((n) => n.type === 'conclusion'),
+  )
   return (
     <div className="space-y-3">
       <Head title="Uncovered condition">
@@ -494,7 +496,7 @@ function GapDetails({ node }: { node: GraphNode }) {
       <p className="text-[12px] text-dim">{node.data.hint}</p>
       <Card title="Next actions" tone="agent">
         <ol className="list-decimal space-y-1 pl-4 text-[12px] text-text">
-          {NEXT_SHORT.map((a) => (
+          {withoutConclusionRefs(NEXT_SHORT, hasConclusions).map((a) => (
             <li key={a}>{a}</li>
           ))}
         </ol>
@@ -534,6 +536,49 @@ function ConclusionDetails({ node, session }: { node: GraphNode; session: Sessio
   )
 }
 
+/** A file from the PSI repository inventory (added by the agent or from Explore → files). */
+function FileDetails({ node }: { node: GraphNode }) {
+  const [acc, rest = ''] = node.data.ref.split('::')
+  const [category, ...nameParts] = rest.split('/')
+  const name = nameParts.join('/')
+  const isReadme = node.id === RV.fReadme
+  const isReport = node.id === RV.fBassReport
+  return (
+    <div className="space-y-3">
+      <Head title={node.data.label} sub={`${acc} · ${category}`}>
+        <Chip cls="border-edge2 text-dim">Repository file</Chip>
+      </Head>
+      <Card title="File" tone="measured">
+        <KV
+          rows={[
+            { k: 'Investigation', v: acc },
+            { k: 'Category', v: category },
+            { k: 'Type / size', v: node.data.hint.split(' — ')[0] },
+          ]}
+        />
+      </Card>
+      {isReport && (
+        <Card title="Why it matters" tone="agent">
+          <p className="text-[12px] text-text">The only results report among the solid-material investigations here — read it for the findings behind the BASS-II table before relying on individual rows.</p>
+        </Card>
+      )}
+      {isReadme && (
+        <Card title="Why it matters" tone="agent">
+          <p className="text-[12px] text-text">Check the Saffire-II table notes and the garbled “?-g” headers here before quoting rows 2-8 / 2-9.</p>
+        </Card>
+      )}
+      <a
+        href={`https://psi.nasa.gov/geode-py/ws/studies/${encodeURIComponent(acc)}/download?file=${encodeURIComponent(name)}`}
+        target="_blank"
+        rel="noreferrer"
+        className="inline-flex items-center gap-1 text-[12px] text-teal hover:underline"
+      >
+        Download from PSI <ExternalLink className="size-3" />
+      </a>
+    </div>
+  )
+}
+
 export function ScenarioNodeDetails({ node, session, onOpenAddData }: { node: GraphNode; session: Session; onOpenAddData: () => void }) {
   const ev = EVIDENCE[node.data.ref]
   if (ev) return <EvidenceDetails node={node} ev={ev} session={session} />
@@ -542,6 +587,7 @@ export function ScenarioNodeDetails({ node, session, onOpenAddData }: { node: Gr
   if (node.type === 'missionParam') return <MissionDetails node={node} session={session} onOpenAddData={onOpenAddData} />
   if (node.type === 'material') return <MaterialDetails node={node} session={session} />
   if (node.type === 'externalSource') return <DocDetails node={node} />
+  if (node.type === 'publication') return <FileDetails node={node} />
   return null
 }
 
@@ -656,7 +702,7 @@ export function BranchSummary({ session, branch }: { session: Session; branch: B
       {actionsProposed && (
         <Card title="Next actions" tone="agent">
           <ol className="list-decimal space-y-1 pl-4 text-[12px] text-text">
-            {NEXT_SHORT.map((a) => (
+            {withoutConclusionRefs(NEXT_SHORT, session.nodes.some((n) => n.type === 'conclusion')).map((a) => (
               <li key={a}>{a}</li>
             ))}
           </ol>
